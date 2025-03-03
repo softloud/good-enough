@@ -1,0 +1,39 @@
+---
+title: Good Enough Data & Systems Lab
+---
+
+
+[**Dr Charles T. Gray, Data Punk**](https://www.linkedin.com/in/charles-t-gray/) founded Good Enough Data & Systems Lab to address universal failures at the intersection of data, wellbeing, and computational systems.  
+
+## [Bad data](data.qmd)
+
+Her primary motivation was to address the systemic [*garbage in, garbage out*](https://en.wikipedia.org/wiki/Garbage_in,_garbage_out) she encountered in working with data in scientific research, scale-ups, and the corporate industry. By applying principles of ethical AI, Good Enough Data & Sytems Lab mitigate the common pitfalls of living analysis development lifecycles.
+
+## [Ethical AI](systems.qmd)
+
+Misunderstood in methodological data governance, such as [FAIR data principles](https://www.go-fair.org/), is the myriad ways this mitigates bad data, whilst democratising AI. Fundamental to this is the distinction between data and a data product, developed by people who work with data, who are riding wave after wave of technological change. 
+
+Good Enough Data & Systems Lab takes a metascientific approach to computational systems, considering what practices within development are questionable. For example, it's questionable to ignore the wellbeing  of people who work with data.
+
+## [Trauma-informed development strategy](career.qmd)
+
+Good Enough Data & Systems recognises data developers and analysts are traumatised by changes to their job descriptions and disruptions to workflows because of stack development. Change management is privileged as otherwise people who work with data will revert to familiar practices that lead to bad data.
+
+## [Applied abstract algebra](games.qmd)
+
+Good Enough Data Lab takes a mathematically-rigorous approach to determining what makes data good enough, pioneering change-management and data strategy for living analysis development and reusable data architecture. 
+
+## Game Design
+
+
+## Data simulation
+
+
+## AI-assisted content
+
+The content of this website was written with the assistance of ChatGPT trained on Good Enough Data & Systems Lab publications, current work, code, and more. 
+
+## Upcoming talks
+
+- [DBT Meetup Copenhagen](https://www.linkedin.com/posts/charles-t-gray_copenhagen-dbt-meetup-vol-6-wed-mar-26-activity-7298622005187096578-wIol?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAUfEOsBIconzRRBLb3Eyv-XLdA9Q9bX8MQ)
+

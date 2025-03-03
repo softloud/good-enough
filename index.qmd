@@ -1,7 +1,33 @@
 ---
-title: "good-enough"
+title: "Good Enough Data & Systems Lab"
+subtitle: "Mathematically-rigorous architecture + empathy = development strategy"
 ---
 
-This is a Quarto website.
+[Good Enough](career.qmd) Data & Systems [Lab](lab.qmd) research and implement trauma-informed [development strategy for data](data) and [mathematically-rigorous computational systems](systems.qmd), whilst prioritising developer wellbeing in a way that meets data governance objectives efficiently. 
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+## People + data + systems - structure
+
+> insert video game here
+
+## Questionable Analytical Observations
+
+Read the [founding manuscript for the Good Enough Data & Systems Lab](link goes here).
+
+## Abstract algebra + systems architecture
+
+The Good Enough Data & Systems Lab specialises in two technical areas.
+
+- Good enough data governance proofs via tests and documentation.
+- Good enough mathematical systems of narrative game design. 
+
+This intersection creates a virtuous research and implementation cycle, bridged by data simulation, and the delicious statistical parameters that underlie random number generators. 
+
+## People + systems strategy
+
+**The Good Enough Data Lab is a place for data, people, and computational systems to be good enough, all at the same time.** 
+
+The Lab solves problems in data and games using trauma theory to inform agile development strategy for systems architecture defined by abstract algebra. If we do not prioritise the workflows of people building and interacting with the systems then innovation stagnates.
+
+## Tools
+
+The Good Enough Data & Systems Lab is tool and language agnostic with one exception. To protect against the trauma of unconscious bias, the Lab is JIRA-oriented, as it is a graph-structured data analytics tool for agile development. The Lab otherwise prefers open-source, interoperable tools with active communities.
