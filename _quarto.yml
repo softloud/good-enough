@@ -2,18 +2,27 @@ project:
   type: website
 
 website:
-  title: "good-enough"
+  title: "Good Enough Lab"
   navbar:
-    left:
-      - href: index.qmd
-        text: Home
-      - about.qmd
+    left: 
+      - text: Singularities
+        href: singularities.qmd
+      - text: Questionable Analytical Observations
+        href: qao.qmd
+    right:
+      - text: Collaborate
+        href: collab.qmd
+      - text: Lab
+        href: lab.qmd
+      - text: Values
+        href: values.qmd
 
 format:
   html:
-    theme: cosmo
+    theme: 
+      - superhero
+    font:
+      heading: "courier"
+      body: "courier"
     css: styles.css
     toc: true
-
-
-

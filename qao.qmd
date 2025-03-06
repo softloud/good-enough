@@ -1,0 +1,5 @@
+---
+title: "Questionable Analytical Observations"
+subtitle: "And what to do about them"
+author: "Dr Charles T. Gray, Data Punk" 
+---
