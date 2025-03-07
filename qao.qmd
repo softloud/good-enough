@@ -12,7 +12,7 @@ But porting the mansucript to interoperate with the slides - and game - proved s
 
 QAO paper will be presented on [March 26 Copenhagen meetup](https://www.meetup.com/copenhagen-dbt-meetup/events/306219858/?eventOrigin=your_events), so I have a firm deadline for this. It's coming. I just needed to finish the first draft of the formal approach first.
 
-In the meantime, please watch this informative documentary about working on the modern data stack.
+In the meantime, please watch this informative Documentary about working on the modern data stack.
 
 ## What it's like working on the modern data stack 
 

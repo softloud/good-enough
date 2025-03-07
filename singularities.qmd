@@ -115,7 +115,7 @@ Baroque musicians, for example, aethetically governed benign singularities of po
 
 
 
-A world obsessed with the singularity has only now realized that governance is the missing piece. We need a formal foundation for structured intelligence governance before chaos overtakes order, and humans cannot do this without machine help.
+A world obsessed with the singularity has only now realized that governance is the missing piece. We need a formal foundation for structured intelligence [@badreddin_structured_2006] governance before chaos overtakes order, and humans cannot do this without machine help.
 
 
 ## A formal approach to structured intelligence governance
