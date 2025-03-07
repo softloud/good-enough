@@ -1,0 +1,51 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Good Enough Data & Systems Lab",
+    "section": "",
+    "text": "The Good Enough Data & Systems Lab researches and implements trauma-informed development strategy for data and mathematically-rigorous computational systems, while prioritizing developer wellbeing in a way that efficiently meets data governance objectives."
+  },
+  {
+    "objectID": "index.html#mathematically-rigorous-architecture-empathy-development-strategy",
+    "href": "index.html#mathematically-rigorous-architecture-empathy-development-strategy",
+    "title": "Good Enough Data & Systems Lab",
+    "section": "",
+    "text": "The Good Enough Data & Systems Lab researches and implements trauma-informed development strategy for data and mathematically-rigorous computational systems, while prioritizing developer wellbeing in a way that efficiently meets data governance objectives."
+  },
+  {
+    "objectID": "index.html#people-data-systems---structure-bad-data",
+    "href": "index.html#people-data-systems---structure-bad-data",
+    "title": "Good Enough Data & Systems Lab",
+    "section": "People + Data + Systems - Structure = Bad Data",
+    "text": "People + Data + Systems - Structure = Bad Data\nIt’s not enough to explain the burnout of experienced by people who work with data, you have to experience it to understand it.\n\ninsert video game here (interactive model of Good Enough strategy)\n\nPress a Button Now is the proof, and motivating manuscript for the Good Enough Data & Systems Lab is the theorem."
+  },
+  {
+    "objectID": "index.html#questionable-analytical-observations-qaos",
+    "href": "index.html#questionable-analytical-observations-qaos",
+    "title": "Good Enough Data & Systems Lab",
+    "section": "🚨 Questionable Analytical Observations (QAOs)",
+    "text": "🚨 Questionable Analytical Observations (QAOs)\nA core concept in the Lab’s philosophy is Questionable Analytical Observations (QAOs):\n🚨 If data is compromised at the source, every downstream decision is questionable.\n🚨 If an AI system lacks structural rigor, its outputs cannot be trusted.\n🚨 If people working on a system are burned out, governance and quality will fail.\nGovernance must begin at the point of observation, not as an afterthought."
+  },
+  {
+    "objectID": "index.html#abstract-algebra-systems-architecture",
+    "href": "index.html#abstract-algebra-systems-architecture",
+    "title": "Good Enough Data & Systems Lab",
+    "section": "🔢 Abstract Algebra + Systems Architecture",
+    "text": "🔢 Abstract Algebra + Systems Architecture\nThe Good Enough Data & Systems Lab specializes in two core technical areas:\n✅ Good enough data governance proofs via tests & documentation.\n✅ Good enough mathematical systems for narrative game design.\nThese two domains create a virtuous research & implementation cycle, bridged by:\n\nData simulation as a governance validation method.\n\nRandom number generators as the statistical backbone of procedural systems.\n\nMathematical rigor, when combined with an empathetic development approach, ensures that computational systems remain both precise and adaptable."
+  },
+  {
+    "objectID": "index.html#people-systems-strategy",
+    "href": "index.html#people-systems-strategy",
+    "title": "Good Enough Data & Systems Lab",
+    "section": "🧑‍💻 People + Systems Strategy",
+    "text": "🧑‍💻 People + Systems Strategy\n🚀 The Good Enough Data & Systems Lab is a place for data, people, and computational systems to be good enough—all at the same time.\n📌 The Lab solves problems in data and game development using trauma theory to inform agile development strategy.\n📌 The Lab applies abstract algebra & systems architecture to design structured, scalable, and resilient computational workflows.\n📌 If we do not prioritize the workflows of the people building and interacting with these systems, then innovation stagnates.\n💡 Good governance is not just about rules. It is about designing systems that respect both computational logic and human needs."
+  },
+  {
+    "objectID": "index.html#tools-tech-stack",
+    "href": "index.html#tools-tech-stack",
+    "title": "Good Enough Data & Systems Lab",
+    "section": "🛠️ Tools & Tech Stack",
+    "text": "🛠️ Tools & Tech Stack\nThe Good Enough Data & Systems Lab is tool and language agnostic with two graph-oriented exceptions.\n📌 To protect against the trauma of unconscious bias, the Lab is JIRA-oriented—as it is a graph-structured data analytics tool designed for agile development.\nDBT core’s relational structure for data engineering also is preferred as it is not only graph-based but open source with a thriving community.\nGraph-defined tools.\nBeyond this, the Lab prioritizes:\n✅ Open-source, interoperable tools\n✅ Actively maintained, community-driven ecosystems\n✅ Technologies that align with FAIR (Findable, Accessible, Interoperable, Reusable) principles\n🚀 Tools should support structured thinking—not create additional complexity."
+  }
+]
