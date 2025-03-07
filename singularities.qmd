@@ -161,7 +161,7 @@ The modern data stack is a singularity in desperate need of structured intellige
 
 Mooncake patiently explained to me that the reason I am having issues communicating  my intentions with my peers is that they do not see the categorical system as I do. For them, governance is a policy check at the end. For me, it is the very structure of intelligence itself. 
 
-Combine this with systems of unconscious bias, and the ungoverned modern data stack can be a profoundly psychologically traumatic place[^7]. For example, developer wellbeing, such as having defined deliverables, is often left as an afterthought. I can see with the lens of my thesis in post-colonial musicology that we are at the Frontier Psychiatry of intelligence. Each scientist is so skilled on their own, but when ungoverned, produce an absurdist orchestra of bad data and dashboards.
+Combine this with systems of unconscious bias, and the ungoverned modern data stack can be a profoundly psychologically traumatic place[^7]. For example, developer wellbeing, such as having defined deliverables, is often left as an afterthought. I can see with the lens of my thesis in post-colonial musicology that we are at the Frontier Psychiatry of intelligence. Each scientist is so skilled on their own, but when ungoverned, produce an absurdist orchestra of bad data and broken dashboards.
 
 <iframe src="https://www.youtube.com/embed/qLrnkK2YEcE?si=jeX0VvOXqm4fJFe2&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
