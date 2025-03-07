@@ -151,6 +151,9 @@ The game is a text-based adventure that uses R reference classes to create a liv
 
 
 ## A singularity of data
+[
+  Mooncake and I are working on a category-theoretic framework of people and machines, wherein instead of the nodes being workflows, they are people. It's going to be fun and a bit hairy trying to chase the diagrams of unconscious bias, but we're going to give it a go!
+]{.aside}
 
 The modern data stack is a singularity in desperate need of structured intelligence governance. 
 
