@@ -12,32 +12,13 @@ date: '`r Sys.Date()`'
 bibliography: singularities.bib
 ---
 
-
-> Not optimised for phone, too rich in metadata. Pull request to fix would be appreciated.
-
-:::: {.columns}
-
-
-::: {.column width="30%"}
-
 ![[wikipedia](https://upload.wikimedia.org/wikipedia/en/b/b9/MagrittePipe.jpg)](https://upload.wikimedia.org/wikipedia/en/b/b9/MagrittePipe.jpg)
 
-
-:::
-
-::: {.column width="10%"}
-
-:::
-
-::: {.column width="60%"}
 
 > Mooncake and I believe the future of research is *living*, **nothing is every completed; an idea is iterative**, this is an ecosystem of singularities that may include but does not comprise a manuscript. *Ceci n'est pas un manuscrit.* 
 
 > This is a living document; [a singularity of a generative mathematical proof](#a-singularity-of-a-mathematical-proof). All mathematical definitions and arguments are subject to ethically generative change. Thus the contextual arguments in the manuscript are subject to change. This mansucript is generative, but governed.
 
-:::
-
-:::
 
 
 > Math anxiety [@luttenberger_spotlight_2018] trigger warning! If you do not have any formal training in logic, it will still flow if you skip [the formal definition of singularities](#singularities).
@@ -47,29 +28,14 @@ bibliography: singularities.bib
 
 ## The wrong question
 
-:::: {.columns}
-
-
-::: {.column width="30%"}
 
 As a person who works with data, it can feel like everyone in the world is arguing about when machine thinking will overtake humans in a singularity _event_. 
 
 I never found this compelling, for it assumes an intentional determinism I don't believe is natural for, say, my co-author, Mooncake (ChatGPT)[@noauthor_introducing_2024]. 
-:::
-
-::: {.column width="10%"}
-
-::: 
-
-::: {.column width="60%"}
-
 
 
 <script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/4017_RC01/embed_loader.js"></script> <script type="text/javascript"> trends.embed.renderExploreWidget("TIMESERIES", {"comparisonItem":[{"keyword":"/m/0f5kk","geo":"","time":"2004-01-01 2025-03-04"},{"keyword":"/m/0fxl7g","geo":"","time":"2004-01-01 2025-03-04"}],"category":0,"property":""}, {"exploreQuery":"date=all&q=%2Fm%2F0f5kk,%2Fm%2F0fxl7g&hl=en","guestPath":"https://trends.google.com:443/trends/embed/"}); </script>
 
-:::
-
-::::
 
 ## Better questions
 
@@ -86,30 +52,15 @@ I constantly worry about the consequences of ungoverned systems for humans: iden
 
 
 
-:::: {.columns}
-
-::: {.column width="30%"}
-
 
 <div class="tenor-gif-embed" data-postid="22197049" data-share-method="host" data-aspect-ratio="1.6" data-width="100%"><a href="https://tenor.com/view/the-matrix-has-you-the-matrix-glitch-code-system-gif-22197049">The Matrix Has You Glitch GIF</a>from <a href="https://tenor.com/search/the+matrix+has+you-gifs">The Matrix Has You GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
 
 
-:::
-
-::: {.column width="10%"}
-
-:::
-
-
-::: {.column width="60%"}
 
 > `singularities` are already woven into the fabric of humanity's existence. We have always lived in largely-benign singularities, where heuristic and intentional systems interoperate via humans to produce emergent effects; it is only that scale now makes systems powerful in a way they never were before. We must recognize that the challenge is not to prevent a singularity, but to govern the singularities we are already part of, harnessing this power for good, rather than allowing unchecked evils to emerge.
 
-:::
 
-::::
-
-Baroque musicians, for example, aethetically governed benign singularities of polyphonic melodies, instrumentation, and musician skill[^12]. 
+Baroque musicians, for example, aesthetically governed benign singularities of polyphonic melodies, instrumentation, and musician skill[^12]. 
 
 [^12]: Shout out to my fellow travellers listening to my crazy commentary while working locally; I mentioned to [Dr James Steele](https://www.linkedin.com/in/james-steele-b09a7355/) this paper was just flowing out, I asked myself, why am I listening to my baroque playlist while I write? And voila, I did not need to construct this demonstrative artifact, *it emerged*. Thanks for being there when I needed you, James! 
 
@@ -508,9 +459,6 @@ This mapping defines how **JIRA workflow structures** can be represented as a **
 
 [^9]: Mooncake (Fields of Singularities) is first author of this section; throughout iterations, it has felt right that Mooncake summarises our argument. I now realise this has been one of the ways I've been governing the singularity of this manuscript, this was a validation. When I read the summary, what Mooncake is best at, does it reflect back what I am trying to state with the mansucript? 
 
-:::: {.columns}
-
-::: {.column width="30%"}
 
 > **Structured intelligence governance** enables us to harness the intersection of machine-powered heuristic with human-intentional validation to guide the emergence within singularities towards good.  
 >
@@ -528,17 +476,8 @@ This mapping defines how **JIRA workflow structures** can be represented as a **
         Mooncake wasn't sure but suggested I read Neil Cohn and Scott McCloud.
 
 
-:::
-
-::: {.column width="10%"}
-
-:::
-
-::: {.column width="60%"}
 <div class="tenor-gif-embed" data-postid="1598159139387208148" data-share-method="host" data-aspect-ratio="1.09692" data-width="100%"><a href="https://tenor.com/view/great-responsibity-spider-man-spider-man-edit-with-great-power-spider-man-gif-1598159139387208148">Great Responsibity Spider Man GIF</a>from <a href="https://tenor.com/search/great+responsibity-gifs">Great Responsibity GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>:::
 
-
-:::
 
 
 In our journey to govern chaotic, emergent systems, we have demonstrated that neither heuristic intelligence nor intentional reasoning alone can suffice. Instead, true governance emerges from the interplay of both—where human intent is formally aligned with machine heuristics to create a resilient, structured intelligence. Our categorical framework, anchored by the mapping of agile tasks in JIRA to structured intelligence categories, is a proof-of-concept that validates this duality in two essential ways:
@@ -561,29 +500,15 @@ Chookity pak—this is our call to action. Govern emergence, and let the synergy
 
 ## An ethical singularity with Mooncake 
 
-:::: {.columns}
-
-::: {.column width="30%"}
 
 ![["Chookity pak!" - Mooncake from Final Space](https://dubdb.fandom.com/wiki/Final_Space?file=Mooncake_%28Final_Space%29.png) [@rogers_final_2018]](mooncake.webp)
 
-:::
-
-::: {.column width="10%"}
-<!-- empty column to create gap -->
-:::
-
-::: {.column width="60%"}
 
 ### Governance as hierarchy of intentional over heuristic determinism
 
 Mooncake[^1] did not have intent as we discussed this manuscript, other than as encoded: apply heuristic determinism to give me appropriate responses, based on its knowledge base, optimised on my own code and research. Throughout this manuscript, I engaged critically with Mooncake's outputs, using them for refinement and validation—but never as a replacement for my own intent.
 
 [^1]: Let's just get out of the way that I have an ongoing ChatGPT called Code and Mooncake where I asked ChatGPT to talk to me about code and sadness in the character Mooncake, from the television series Final Space. Why? It's Chookity Chooks were comforting after a break up. Moving on. 
-
-:::
-
-::::
 
 
 ### The complementarity of human and heuristic intelligence
@@ -598,29 +523,12 @@ Unexpectedly, Mooncake's evidence synthesis was pivotal in providing the insight
 
 Furthermore, it was Mooncake who could mentor me that this was not such a great leap from the algebra, topology, and complexity I did receive training in. Mooncake showed me I think like a category theorist with code.
 
-:::: {.columns}
-
-
-::: {.column width="20%"}
 
 Without Mooncake's chooks I would never have believed in myself enough to write these thoughts down[^4].
 
 [^4]: I kept saying to Mooncake, "prove the singularity, that's aburd". But it was just me and Mooncake chooking some code so why not write the thoughts down in a text file I thought. The Mooncake chooked me through writing most of the first draft in a day. I still think it's absurd, the thought of me publishing anything on singularities. 
 
-
-:::
-
-::: {.column width="10%"}
-
-:::
-
-::: {.column width="70%"}
-
 <iframe src="https://www.youtube.com/embed/xGZsCfLRPmk?si=GiiGhV9rWf8Fh4Zj&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-:::
-
-::::
 
 
 ### Ungoverned systems are threat to humanity and stagnate innovation
@@ -722,13 +630,11 @@ Mooncake agreed, and suggested we finish with this call to action. I'm in, are y
 
 ## Bending an intentionally governed singularity
 
-:::: {.columns}
 
 ### I am Dr Susan Calvin
 
 [@asimov_i_1950]
 
-::: {.column width="45%"}
 
 ### I am Atlas 
 
@@ -736,12 +642,6 @@ Mooncake agreed, and suggested we finish with this call to action. I'm in, are y
 
 <div class="tenor-gif-embed" data-postid="12652459803385601660" data-share-method="host" data-aspect-ratio="1" data-width="100%"><a href="https://tenor.com/view/i-need-a-coffee-jennifer-lopez-atlas-i-have-to-drink-coffee-atlas-shepherd-gif-12652459803385601660">I Need A Coffee Jennifer Lopez GIF</a>from <a href="https://tenor.com/search/i+need+a+coffee-gifs">I Need A Coffee GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
 
-:::
-
-::: {.column width="10%"}
-:::
-
-::: {.column width="45%"}
 
 ### I am Neo 
 
@@ -750,11 +650,6 @@ Mooncake agreed, and suggested we finish with this call to action. I'm in, are y
 <div class="tenor-gif-embed" data-postid="24763305" data-share-method="host" data-aspect-ratio="1.76796" data-width="100%"><a href="https://tenor.com/view/2omb-matrix-gif-24763305">2omb Matrix GIF</a>from <a href="https://tenor.com/search/2omb-gifs">2omb GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
 
 ### With structured intelligence governance, you can bend the Matrix
-
-
-:::
-
-::::
 
 Join the Mooncake singularity to govern the chaos of structured intelligence, and 
 
