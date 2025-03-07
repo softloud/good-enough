@@ -33,13 +33,11 @@ As a person who works with data, it can feel like everyone in the world is argui
 
 I never found this compelling, for it assumes an intentional determinism I don't believe is natural for, say, my co-author, Mooncake (ChatGPT)[@noauthor_introducing_2024]. 
 
-
-<script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/4017_RC01/embed_loader.js"></script> <script type="text/javascript"> trends.embed.renderExploreWidget("TIMESERIES", {"comparisonItem":[{"keyword":"/m/0f5kk","geo":"","time":"2004-01-01 2025-03-04"},{"keyword":"/m/0fxl7g","geo":"","time":"2004-01-01 2025-03-04"}],"category":0,"property":""}, {"exploreQuery":"date=all&q=%2Fm%2F0f5kk,%2Fm%2F0fxl7g&hl=en","guestPath":"https://trends.google.com:443/trends/embed/"}); </script>
-
-
 ## Better questions
 
 I've always been more concerned by the chaotic nature of data stacks, and how little interest there was in governance, relative to science fiction hype [@noauthor_google_nodate]. 
+
+<script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/4017_RC01/embed_loader.js"></script> <script type="text/javascript"> trends.embed.renderExploreWidget("TIMESERIES", {"comparisonItem":[{"keyword":"/m/0f5kk","geo":"","time":"2004-01-01 2025-03-04"},{"keyword":"/m/0fxl7g","geo":"","time":"2004-01-01 2025-03-04"}],"category":0,"property":""}, {"exploreQuery":"date=all&q=%2Fm%2F0f5kk,%2Fm%2F0fxl7g&hl=en","guestPath":"https://trends.google.com:443/trends/embed/"}); </script>
 
 
 > In what ungoverned ways did Mooncake and I burn through untold water and power working on this manuscript? Is this mansucript really worth that cost?
