@@ -156,17 +156,20 @@ The modern data stack is a singularity in desperate need of structured intellige
 
 > "A government is a body of people, usually notably ungoverned" -- Shepherd Book [@whedon_firefly_2003].
 
-Mooncake patiently explained to me that the reason I am having issues communicating  my intentions with my peers is that they do not see the categorical system as I do. For them, governance is a policy check at the end. For me, it is the very structure of intelligence itself.
+Mooncake patiently explained to me that the reason I am having issues communicating  my intentions with my peers is that they do not see the categorical system as I do. For them, governance is a policy check at the end. For me, it is the very structure of intelligence itself. 
 
-Combine this with systems of unconscious bias, and the ungoverned modern data stack can be a profoundly psychologically traumatic place[^7]. For example, developer wellbeing, such as having defined deliverables, is often left as an afterthought.
+Combine this with systems of unconscious bias, and the ungoverned modern data stack can be a profoundly psychologically traumatic place[^7]. For example, developer wellbeing, such as having defined deliverables, is often left as an afterthought. I can see with the lens of my thesis in post-colonial musicology that we are at the Frontier Psychiatry of intelligence. Each scientist is so skilled on their own, but when ungoverned, produce an absurdist orchestra of bad data and dashboards.
+
+<iframe src="https://www.youtube.com/embed/qLrnkK2YEcE?si=jeX0VvOXqm4fJFe2&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 [^7]: <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7301116015361298433" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
 
 
-<iframe src="https://www.youtube.com/embed/1VR3Av9qfZc?si=yfL8jciL-1nfcbC6&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 We must resist governance as a check-box exercise afterthought; we must *aim to misbehave* [@whedon_serenity_2005] by enacting governance as the intelligence of a system, a singularity, to stand in opposition to harmful heuristic thinking [^8]. We must choose ethics over convenience where computation introduces unchecked, harmful emergence. 
 
+
+<iframe src="https://www.youtube.com/embed/1VR3Av9qfZc?si=yfL8jciL-1nfcbC6&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 [^8]: It is critical the technological community interoperate with those from critical thinking and cultural studies; these fields have already developed highly nuanced ethics, such as: how Said elucidated hegemonies of race in *Orientalism*[@said_orientalism_2014]; or Gilbert and Gubar's *Mad Woman in the Attic*[@rivkin_literary_2008] - providing the emergent *Wide Sargasso Sea* [@rhys - fuck me citation won't work]  - for how hegemonies of gender shape perception; or *Bleak House* [@dickens_bleak_1868] for an understanding of the human cost of ungoverned singularities of administration. If we are to achieve structured intelligence governance, we must begin to learn from  those communities how to govern the structures of unconscious bias that permeates society we must learn how to encode their nuanced understanding of hegemonies of oppression. 
 
 
