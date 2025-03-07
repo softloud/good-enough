@@ -284,7 +284,7 @@
     "href": "qao.html",
     "title": "Questionable Analytical Observations (QAO)",
     "section": "",
-    "text": "So.\nI swear I am on the third draft of this, I have all the code snippets, the argument.\nBut porting the mansucript to interoperate with the slides - and game - proved such a challenge I decided to take a more formal approach to how I will instantiate the QAO paper here.\nQAO paper will be presented on March 26 Copenhagen meetup, so I have a firm deadline for this. It’s coming. I just needed to finish the first draft of the formal approach first."
+    "text": "So.\nI swear I am on the third draft of this, I have all the code snippets, the argument.\nBut porting the mansucript to interoperate with the slides - and game - proved such a challenge I decided to take a more formal approach to how I will instantiate the QAO paper here.\nQAO paper will be presented on March 26 Copenhagen meetup, so I have a firm deadline for this. It’s coming. I just needed to finish the first draft of the formal approach first.\nIn the meantime, please watch this informative documentary about working on the modern data stack."
   },
   {
     "objectID": "values.html",
@@ -355,5 +355,12 @@
     "title": "press a button now",
     "section": "",
     "text": "This function sets the next edge-relation in the path \\(P \\subset V \\times V\\)."
+  },
+  {
+    "objectID": "qao.html#what-its-like-working-on-the-modern-data-stack",
+    "href": "qao.html#what-its-like-working-on-the-modern-data-stack",
+    "title": "Questionable Analytical Observations (QAO)",
+    "section": "What it’s like working on the modern data stack",
+    "text": "What it’s like working on the modern data stack"
   }
 ]
