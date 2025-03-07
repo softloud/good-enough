@@ -13,6 +13,8 @@ bibliography: singularities.bib
 ---
 
 
+> Not optimised for phone, too rich in metadata. Pull request to fix would be appreciated.
+
 :::: {.columns}
 
 
