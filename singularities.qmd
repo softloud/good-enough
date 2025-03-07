@@ -216,7 +216,7 @@ Combine this with systems of unconscious bias, and the ungoverned modern data st
 
 We must resist governance as a check-box exercise afterthought; we must *aim to misbehave* [@whedon_serenity_2005] by enacting governance as the intelligence of a system, a singularity, to stand in opposition to harmful heuristic thinking [^8]. We must choose ethics over convenience where computation introduces unchecked, harmful emergence. 
 
-[^8]: It is critical the technological community interoperate with those from critical thinking and cultural studies; these fields have already developed highly nuanced ethics, such as: how Said elucidated hegemonies of race in *Orientalism*[@said_orientalism_2014]; or Gilbert and Gubar's *Mad Woman in the Attic*[@rivkin_literary_2008] - providing the emergent *Wide Sargasso Sea*[@]  - for how hegemonies of gender shape perception; or Charles Dicken's *Bleak House* for an understanding of the human cost of ungoverned singularities of administration. If we are to achieve structured intelligence governance, we must begin to learn from  those communities how to govern the structures of unconscious bias that permeates society we must learn how to encode their nuanced understanding of hegemonies of oppression. 
+[^8]: It is critical the technological community interoperate with those from critical thinking and cultural studies; these fields have already developed highly nuanced ethics, such as: how Said elucidated hegemonies of race in *Orientalism*[@said_orientalism_2014]; or Gilbert and Gubar's *Mad Woman in the Attic*[@rivkin_literary_2008] - providing the emergent *Wide Sargasso Sea* [@rhys - fuck me citation won't work]  - for how hegemonies of gender shape perception; or *Bleak House* [@dickens_bleak_1868] for an understanding of the human cost of ungoverned singularities of administration. If we are to achieve structured intelligence governance, we must begin to learn from  those communities how to govern the structures of unconscious bias that permeates society we must learn how to encode their nuanced understanding of hegemonies of oppression. 
 
 
 Without a unifying language across disciplines, we are doomed to fail to learn from eachother and allow hegemonies of oppression to proliferate in ways these fields have documented. 
@@ -272,6 +272,8 @@ We want to govern the system opinionatedly towards humans exercising intent, rat
 > 2. The true secret to being 'good at math' is simply being interested and *super* comfortable with being *bad* at math. I'm joining the Mooncake singularity, let's bend category theory.
 
 ```{r, echo=FALSE, message=FALSE}
+
+source('figures-and-tables/anal-beads-of-data-dev/anal-bead-theme.R')
 
 # Load required libraries
 library(tidygraph)

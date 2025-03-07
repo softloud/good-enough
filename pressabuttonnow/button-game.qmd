@@ -1,0 +1,28 @@
+---
+title: press a button now
+subtitle: development
+format: 
+  html:
+    toc: true
+    toc-float: true
+    number-sections: true
+---
+
+# living analysis development lifecycle graph
+
+## vertices
+
+Let $v \in V$ be a vertex $v$ in a set of vertices $V$, where each vertex is a step in living analysis development.
+
+## edges
+
+Let $e = (v_\text{from}, \psi(v_\text{from})) = (v_\text{from}, v_\text{to})$ be an edge $E$ from a set of edges $E = V \times \Psi = V \times V$, representing a transition from one step of living analysis development to another where $\Psi : V \mapsto V$ determined casewise by $v_\text{from}$ in $e$.
+
+## determine path relation
+
+### cover node
+
+This function sets the next edge-relation in the path $P \subset V \times V$.
+
+### player choice
+
