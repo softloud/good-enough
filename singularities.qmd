@@ -18,6 +18,7 @@ bibliography: singularities.bib
 
 > This is a living document; [a singularity of a generative mathematical proof](#a-singularity-of-a-mathematical-proof). All mathematical definitions and arguments are subject to ethically generative change. Thus the contextual arguments in the manuscript are subject to change. This mansucript is generative, but governed.
 
+> It's perfectly legit to just scroll this.  Seriously. It's a work in  progress.
 
 > Math anxiety [@luttenberger_spotlight_2018] trigger warning! If you do not have any formal training in logic, it will still flow if you skip [the formal definition of singularities](#singularities).
 
