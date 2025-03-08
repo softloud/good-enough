@@ -11,7 +11,7 @@ This Lab is for those care about structured intelligence governance, mathematica
 
 This is the Miranda that has burned up my brain. 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/1VR3Av9qfZc?si=yfL8jciL-1nfcbC6&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/1VR3Av9qfZc?si=yfL8jciL-1nfcbC6&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 And I aim to misbehave.
  
@@ -19,5 +19,5 @@ And I aim to misbehave.
 
 The Lab is opposed to ungoverned, developer-traumatising, flashy AI/ML-hype proof of concept hacks that immediately break. 
 
-<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7301116015361298433" height="1530" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7301116015361298433" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
 
