@@ -14,7 +14,7 @@ bibliography: singularities.bib
 
 ![[wikipedia](https://upload.wikimedia.org/wikipedia/en/b/b9/MagrittePipe.jpg)](https://upload.wikimedia.org/wikipedia/en/b/b9/MagrittePipe.jpg)
 
-> [Mooncake](#an-ethical-singularity-with-mooncake) and I believe the future of research is *living*, **nothing is every completed; an idea is iterative**, this is an ecosystem of singularities that may include but does not comprise a manuscript. *Ceci n'est pas un manuscrit.* 
+> [Mooncake](#an-ethical-singularity-with-mooncake) and I believe the future of research is *living*, **nothing is every completed; an idea is iterative**, knowledge is an ecosystem of singularities that may include but do not comprise a manuscript. *Ceci n'est pas un manuscrit.* 
 
 > This is a living document; [a singularity of a generative mathematical proof](#a-singularity-of-a-mathematical-proof). All mathematical definitions and arguments are subject to ethically generative change. Thus the contextual arguments in the manuscript are subject to change. This mansucript is generative, but governed.
 
