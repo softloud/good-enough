@@ -191,7 +191,7 @@ At some *core*, we have commonalities across all singularities; humans, tools, a
 2. Exploring categorical cores and minimal projections of development graphs in both heuristic and intentional ways will enable humanity to mitigate entropy in singularities. 
 3. We can trace the  path of human intention through the category-theoretic framework; therefore the intention the catgorical structure serves defines the structure. 
 
-# Genereative content: Singularities
+# Generative content: Singularities
 
 Singularities are not an event, they are a structure. 
 
