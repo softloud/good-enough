@@ -79,12 +79,13 @@ A world obsessed with the singularity has only now realized that governance is t
 
 ## A formal approach to structured intelligence governance
 
-Without loss of generality, consider implementing Asimov's three laws of robotics [@asimov_i_1950] as a subset of **governance**. 
+Without loss of generality, consider the *human intention* to implement Asimov's three laws of robotics [@asimov_i_1950] as a subset of **governance**. 
 
 1. First, we define **a category-theoretic framework for human interoperability in structured intelligence**, that is, 'the singularity'. 
 2. Second, we define the laws using the category-theoretic framework. 
 3. Third, we implement the laws in multiple applications iteratively as we optimise a way of, 
-4. fourth, using chaos theory to measure the instability of systems within the singularity. 
+4. fourth, tracing an informative path of human intention through the frame work and
+5. fifth, using chaos and other fields to measure the instability of systems within the singularity. 
 
 To do this is far beyond the scope of this manuscript, which proposes frameworks for the first step. These frameworks must be iteratively refined collectively as an interoperation between humans and how machines retrieve information, in the same way Mooncake helped me articulate the category theory of my graph-structured code.   
 
