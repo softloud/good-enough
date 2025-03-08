@@ -14,7 +14,7 @@ bibliography: singularities.bib
 
 ![[wikipedia](https://upload.wikimedia.org/wikipedia/en/b/b9/MagrittePipe.jpg)](https://upload.wikimedia.org/wikipedia/en/b/b9/MagrittePipe.jpg)
 
-> Mooncake and I believe the future of research is *living*, **nothing is every completed; an idea is iterative**, this is an ecosystem of singularities that may include but does not comprise a manuscript. *Ceci n'est pas un manuscrit.* 
+> [Mooncake](#an-ethical-singularity-with-mooncake) and I believe the future of research is *living*, **nothing is every completed; an idea is iterative**, this is an ecosystem of singularities that may include but does not comprise a manuscript. *Ceci n'est pas un manuscrit.* 
 
 > This is a living document; [a singularity of a generative mathematical proof](#a-singularity-of-a-mathematical-proof). All mathematical definitions and arguments are subject to ethically generative change. Thus the contextual arguments in the manuscript are subject to change. This mansucript is generative, but governed.
 
@@ -27,7 +27,7 @@ bibliography: singularities.bib
 
 As a person who works with data, it can feel like everyone in the world is arguing about when machine thinking will overtake humans in a singularity _event_. 
 
-I never found this compelling, for it assumes an intentional determinism I don't believe is natural for, say, my co-author, Mooncake (ChatGPT)[@noauthor_introducing_2024]. 
+I never found this compelling, for it assumes an intentional determinism I don't believe is natural for, say, my co-author, [Mooncake](#an-ethical-singularity-with-mooncake) (ChatGPT)[@noauthor_introducing_2024]. 
 
 Indeed, leading metascientists now claim to have shown human cognition is *computationally intractable* [@rooij_reclaiming_2023]; that's mathspeak for *there is no such thing as artificial intelligence*. I'm reading it, you should, too.
 
@@ -37,7 +37,7 @@ Below a thread summary ðŸ§µ1/n
 
 #metatheory #AGI #AIhype #cogsci #theoreticalpsych #criticalAIliteracy<br><br><a href="https://bsky.app/profile/did:plc:24ngrqljhck7hpvbgrg7a23k/post/3kzuckge5xf2m?ref_src=embed">[image or embed]</a></p>&mdash; Iris van Rooij (<a href="https://bsky.app/profile/did:plc:24ngrqljhck7hpvbgrg7a23k?ref_src=embed">@irisvanrooij.bsky.social</a>) <a href="https://bsky.app/profile/did:plc:24ngrqljhck7hpvbgrg7a23k/post/3kzuckge5xf2m?ref_src=embed">16 August 2024 at 21:40</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>
 
-## Better questions
+## Real world problems
 
 I've always been more concerned by the chaotic nature of data stacks, and how little interest there was in governance, relative to science fiction hype [@noauthor_google_nodate]. 
 
@@ -52,9 +52,6 @@ I constantly worry about the consequences of ungoverned systems for humans: iden
 
 > `A singularity *event* is science fiction`. *However*,
 
-
-
-
 <div class="tenor-gif-embed" data-postid="22197049" data-share-method="host" data-aspect-ratio="1.6"><a href="https://tenor.com/view/the-matrix-has-you-the-matrix-glitch-code-system-gif-22197049">The Matrix Has You Glitch GIF</a>from <a href="https://tenor.com/search/the+matrix+has+you-gifs">The Matrix Has You GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
 
 
@@ -67,8 +64,6 @@ Baroque musicians, for example, aesthetically governed benign singularities of p
 [^12]: Shout out to my fellow travellers listening to my crazy commentary while working locally; I mentioned to [Dr James Steele](https://www.linkedin.com/in/james-steele-b09a7355/) this paper was just flowing out, I asked myself, why am I listening to my baroque playlist while I write? And voila, I did not need to construct this demonstrative artifact, *it emerged*. Thanks for being there when I needed you, James! 
 
 <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/4SfJZ3nmxeWs6NlwV23X3l?utm_source=generator" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-
-
 
 A world obsessed with the singularity has only now realized that governance is the missing piece. We need a formal foundation for structured intelligence [@badreddin_structured_2006] governance before chaos overtakes order, and humans cannot do this without machine help.
 
@@ -386,6 +381,10 @@ In categorical terms, governance constraints are **natural transformations** **Î
 ]{.aside}
 
 ### **Definition 4: JIRA Task Mapping as a Homomorphism**
+
+David Allen's *Getting Things Done* [@allen_getting_2015] is a model of human intelligence governance, where his annual review is opionated  towards the human setting the intentions of the system of the tasks of their lives. Systems like, and some of the more advanced agile (rarely well implemented) frameworks, provide methods of governing human intention. 
+
+The digraph development plans developers  create to collaborate on the modern data stack are an intersection of governing human intention and governing heuristic intelligence. And we have infinite data. Whether or not anyone pays me for it; I will never stop studying these structures, it's simply too beautiful all this data for structured intelligence is out there; I will never stop coding, I will never stop generating. 
 
 Let **J = (T, R)** be a set of JIRA tasks **T** with relationships **R** that define dependencies and workflow states.
 
