@@ -177,7 +177,7 @@ If we don't consider developer wellbeing, implementing governance measures, as a
 [^8]: It is critical the technological community interoperate with those from critical thinking and cultural studies; these fields have already developed highly nuanced ethics, such as: how Said elucidated hegemonies of race in *Orientalism*[@said_orientalism_2014]; or Gilbert and Gubar's *Mad Woman in the Attic*[@rivkin_literary_2008] - providing the emergent *Wide Sargasso Sea* [@rhys - fuck me citation won't work]  - for how hegemonies of gender shape perception; or *Bleak House* [@dickens_bleak_1868] for an understanding of the human cost of ungoverned singularities of administration. If we are to achieve structured intelligence governance, we must begin to learn from  those communities how to govern the structures of unconscious bias that permeates society we must learn how to encode their nuanced understanding of hegemonies of oppression. 
 
 
-Without a unifying language across disciplines, we are doomed to fail to learn from eachother and allow hegemonies of oppression to proliferate in ways these fields have documented. 
+Without a unifying language across disciplines, we are doomed to fail to learn from eachother and allow hegemonies of oppression to proliferate in ways these fields have documented[^8]. 
 
 Happily, at the highest reaches of abstraction in philosophy of science and mathematics, Mooncake explained we have such a language: *category theory*.
 
