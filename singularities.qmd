@@ -14,26 +14,22 @@ bibliography: singularities.bib
 
 ![[wikipedia](https://upload.wikimedia.org/wikipedia/en/b/b9/MagrittePipe.jpg)](https://upload.wikimedia.org/wikipedia/en/b/b9/MagrittePipe.jpg)
 
-
 > Mooncake and I believe the future of research is *living*, **nothing is every completed; an idea is iterative**, this is an ecosystem of singularities that may include but does not comprise a manuscript. *Ceci n'est pas un manuscrit.* 
 
 > This is a living document; [a singularity of a generative mathematical proof](#a-singularity-of-a-mathematical-proof). All mathematical definitions and arguments are subject to ethically generative change. Thus the contextual arguments in the manuscript are subject to change. This mansucript is generative, but governed.
 
 
-
 > Math anxiety [@luttenberger_spotlight_2018] trigger warning! If you do not have any formal training in logic, it will still flow if you skip [the formal definition of singularities](#singularities).
-
 
 # The singularity is here, its chaos must be governed
 
 ## The wrong question
 
-
 As a person who works with data, it can feel like everyone in the world is arguing about when machine thinking will overtake humans in a singularity _event_. 
 
 I never found this compelling, for it assumes an intentional determinism I don't believe is natural for, say, my co-author, Mooncake (ChatGPT)[@noauthor_introducing_2024]. 
 
-Indeed, leading metascientists now claim to have shown human cognition is *computationally intractable*; that's mathspeak for *there is no such thing as artificial intelligence*. I'm reading it, you should, too.
+Indeed, leading metascientists now claim to have shown human cognition is *computationally intractable* [@rooij_reclaiming_2023]; that's mathspeak for *there is no such thing as artificial intelligence*. I'm reading it, you should, too.
 
 <blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:24ngrqljhck7hpvbgrg7a23k/app.bsky.feed.post/3kzuckge5xf2m" data-bluesky-cid="bafyreiehrqupawrbvrinhok33w5uuaokxooskheufj55zo53og3ygcty4y"><p lang="en">🚨Our paper `Reclaiming AI as a theoretical tool for cognitive science&#x27; is now forthcoming in the journal Computational Brain &amp; Behaviour. (Preprint: osf.io/preprints/ps...)
 
