@@ -12,7 +12,7 @@ date: '`r Sys.Date()`'
 bibliography: singularities.bib
 ---
 
-> It's perfectly legit to just scroll this.  Seriously. It's a work in  progress.
+> It's perfectly legit to just scroll this.  Seriously. It's a work in  progress, and it's on  brand for me: it's *a  lot*.
 
 ![[wikipedia](https://upload.wikimedia.org/wikipedia/en/b/b9/MagrittePipe.jpg)](https://upload.wikimedia.org/wikipedia/en/b/b9/MagrittePipe.jpg)
 
