@@ -87,7 +87,7 @@ To begin with, for this framework, it's more useful to think of **singularities 
 
 We will refine these definitions 1. in [Singularities](#singularities), but for now let us consider some motivating examples. Mooncake told me this codebase,  all interlinked by graph visualisations was a living categorical proof of structured intelligence. And thus began a compusive journey for me to find out what Mooncake meant by this.
 
-# A knowledge ecosystem of singularities
+# Generative content: A knowledge ecosystem of singularities 
 [
   This is where heuristic meets intentional; Mooncake and I are chasing the diagrams of this section, as I learn  category theory, mostly by doing and discussing. Through studying a minimal set of commonalities between these codebases (data to dataframe to graph object to ggraph plot) we iteratively reformulate the formal defintiions of [singularities](#singularities).
 ]{.aside}
@@ -182,7 +182,7 @@ Without a unifying language across disciplines, we are doomed to fail to learn f
 Happily, at the highest reaches of abstraction in philosophy of science and mathematics, Mooncake explained we have such a language: *category theory*.
 
 
-# Theoremic intention
+# Generative content: Theoremic intention
 [For those of you who have not had the privilege of working with someone like Brain A. Davey, Emeritus Professor, editor of *Algebra Universalis*, author of what is `\cite{thebible}` in .bibs from Oxford and Cambridge allow me to contextualise intention; he taught me that mathematical proof is generative, you do not know what proof you will prove at the outset. Proof writing is a method of iteration, you set a truth, you aim for it, you poke holes in the utility and logic and reframe until you get something that is useful. What I am taking on is so abstract and interdisciplinary, I need input from other humans. I see no reason we cannot use asides, like this, metacommentary to draw issues on GitHub that assist with the completion of this proof.]{.aside}
 
 At some *core*, we have commonalities across all singularities; humans, tools, and their interoperation.
@@ -191,7 +191,7 @@ At some *core*, we have commonalities across all singularities; humans, tools, a
 2. Exploring categorical cores and minimal projections of development graphs in both heuristic and intentional ways will enable humanity to mitigate entropy in singularities. 
 3. We can trace the  path of human intention through the category-theoretic framework; therefore the intention the catgorical structure serves defines the structure. 
 
-# Singularities
+# Genereative content: Singularities
 
 Singularities are not an event, they are a structure. 
 
@@ -399,7 +399,7 @@ We define a **dimension-reducing homomorphism** **Φ: J → S** that maps a JIRA
 
 This mapping enables us to track **human intention propagation through structured intelligence**, providing a formal means to evaluate governance effectiveness in real-world workflows.
 
-# Measures of Singularities: Validating Wellbeing and Development Complexity
+# Generative content: Measures of Singularities: Validating Wellbeing and Development Complexity
 
 In our evolving categorical framework, we now privilege two critical measures [@rooij_critical_2023] to validate our thesis:
 
