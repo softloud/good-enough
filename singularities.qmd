@@ -60,7 +60,7 @@ I constantly worry about the consequences of ungoverned systems for humans: iden
 > `singularities` are already woven into the fabric of humanity's existence. We have always lived in largely-benign singularities, where heuristic and intentional systems interoperate via humans to produce emergent effects; it is only that scale now makes systems powerful in a way they never were before. We must recognize that the challenge is not to prevent a singularity, but to govern the singularities we are already part of, harnessing this power for good, rather than allowing unchecked evils to emerge.
 
 
-Baroque musicians, for example, aesthetically governed benign singularities of polyphonic melodies, instrumentation, and musician skill[^12]. 
+Baroque musicians, for example, aesthetically governed emergence in benign singularities of polyphonic melodies, instrumentation, and musician skill[^12]. 
 
 [^12]: Shout out to my fellow travellers listening to my crazy commentary while working locally; I mentioned to [Dr James Steele](https://www.linkedin.com/in/james-steele-b09a7355/) this paper was just flowing out, I asked myself, why am I listening to my baroque playlist while I write? And voila, I did not need to construct this demonstrative artifact, *it emerged*. Thanks for being there when I needed you, James! 
 
