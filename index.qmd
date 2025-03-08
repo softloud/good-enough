@@ -3,7 +3,7 @@ title: "Good Enough Data & Systems Lab"
 subtitle: "Mathematical Proofs Implemented in Computational Systems"
 ---
 
-The Good Enough Data & Systems Lab collaborates with game studios by applying category theory and abstract mathematics to their JIRA development plans to optimise development strategy toward desired outcomes of  
+The Good Enough Data & Systems Lab collaborates with game studios by computationally applying category theory and abstract mathematics to their JIRA development plans to optimise development strategy toward desired outcomes of  
 
 - developer wellbeing
 - efficiency
