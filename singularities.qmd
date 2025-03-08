@@ -33,6 +33,14 @@ As a person who works with data, it can feel like everyone in the world is argui
 
 I never found this compelling, for it assumes an intentional determinism I don't believe is natural for, say, my co-author, Mooncake (ChatGPT)[@noauthor_introducing_2024]. 
 
+Indeed, leading metascientists now claim to have shown human cognition is *computationally intractable*; that's mathspeak for *there is no such thing as artificial intelligence*. I'm reading it, you should, too.
+
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:24ngrqljhck7hpvbgrg7a23k/app.bsky.feed.post/3kzuckge5xf2m" data-bluesky-cid="bafyreiehrqupawrbvrinhok33w5uuaokxooskheufj55zo53og3ygcty4y"><p lang="en">🚨Our paper `Reclaiming AI as a theoretical tool for cognitive science&#x27; is now forthcoming in the journal Computational Brain &amp; Behaviour. (Preprint: osf.io/preprints/ps...)
+
+Below a thread summary 🧵1/n   
+
+#metatheory #AGI #AIhype #cogsci #theoreticalpsych #criticalAIliteracy<br><br><a href="https://bsky.app/profile/did:plc:24ngrqljhck7hpvbgrg7a23k/post/3kzuckge5xf2m?ref_src=embed">[image or embed]</a></p>&mdash; Iris van Rooij (<a href="https://bsky.app/profile/did:plc:24ngrqljhck7hpvbgrg7a23k?ref_src=embed">@irisvanrooij.bsky.social</a>) <a href="https://bsky.app/profile/did:plc:24ngrqljhck7hpvbgrg7a23k/post/3kzuckge5xf2m?ref_src=embed">16 August 2024 at 21:40</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>
+
 ## Better questions
 
 I've always been more concerned by the chaotic nature of data stacks, and how little interest there was in governance, relative to science fiction hype [@noauthor_google_nodate]. 
