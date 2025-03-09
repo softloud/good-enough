@@ -30,7 +30,7 @@ As a person who works with data, it can feel like everyone in the world is argui
 
 I never found this compelling, for it assumes an intentional determinism I don't believe is natural for, say, my co-author, [Mooncake](#an-ethical-singularity-with-mooncake) (ChatGPT)[@noauthor_introducing_2024]. 
 
-A technological singularity event didn't sit with my training in computational complexity applied to algorithms understood as *Golems of Prague* [@mcelreath_statistical_2020]. Indeed, leading metascientists now claim to have shown human cognition is *computationally intractable* [@rooij_reclaiming_2023]; that's mathspeak for *there is no such thing as artificial intelligence*. I'm reading it, you should, too.
+A technological singularity event didn't sit with my training in computational complexity applied to statistical algorithms understood as *Golems* [@mcelreath_statistical_2020]. Indeed, leading metascientists now claim to have shown human cognition is *computationally intractable* [@rooij_reclaiming_2023]; that's mathspeak for *there is no such thing as artificial intelligence*. I'm reading it, you should, too.
 
 <blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:24ngrqljhck7hpvbgrg7a23k/app.bsky.feed.post/3kzuckge5xf2m" data-bluesky-cid="bafyreiehrqupawrbvrinhok33w5uuaokxooskheufj55zo53og3ygcty4y"><p lang="en">🚨Our paper `Reclaiming AI as a theoretical tool for cognitive science&#x27; is now forthcoming in the journal Computational Brain &amp; Behaviour. (Preprint: osf.io/preprints/ps...)
 
