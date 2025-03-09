@@ -1,0 +1,62 @@
+---
+title: "What Pop Culture Gets Right and Wrong about Singularities" 
+author: 
+  - name: Dr Charles T. Gray, Datapunk
+    orcid: 0000-0002-9978-011X
+    affiliations:
+      - name: Good Enough Data & Systems Lab
+date: '`r Sys.Date()`'
+bibliography: singularities.bib
+---
+
+
+## Mistaking heurisic systems for intentional systems
+
+The Matrix almost has this right. We *are* trapped within a system of subsystems, and we *can* bend it.
+
+As a person, we exist in systems of people and computation. It is not only an interaction with computaton, but people that can cause us harm.
+
+<div class="tenor-gif-embed" data-postid="23935709" data-share-method="host" data-aspect-ratio="1.60804"><a href="https://tenor.com/view/matrix-agent-smith-gif-23935709">Matrix Agent Smith GIF</a>from <a href="https://tenor.com/search/matrix-gifs">Matrix GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+
+However, the danger from other human _agents_ in the singularity is a little less hyperbolic. Instead, reframe the agent as the administrative worker you need to interface with who is overwhelmed within the heuristics of their own singularity. In that administrative worker's world, their husband is not doing enough housework, the kid is in trouble at school again, they are starting  to worry about their drinking problem and here's you, unsatisfied with a standard response. You can see that your slight deviation from usual heuristic is reasonable, but because they are overwhelmed, they cannot accommodate. 
+
+
+<div class="tenor-gif-embed" data-postid="1409213512581635030" data-share-method="host" data-aspect-ratio="1.82927"><a href="https://tenor.com/view/the-matrix-grey-man-monitors-mivie-scene-gif-1409213512581635030">The Matrix Grey Man GIF</a>from <a href="https://tenor.com/search/the+matrix-gifs">The Matrix GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+
+There are human effects of heuristic systems and human emergences. In general, people tend to be heroes of their own lives, most people *mean* well. There is no architect determining your fate in the system, it's just what Amos calls *the churn*.
+
+<div class="tenor-gif-embed" data-postid="19592127" data-share-method="host" data-aspect-ratio="1.78771" data-width="100%"><a href="https://tenor.com/view/what-amos-burton-the-expanse-what-did-you-say-what-do-you-want-gif-19592127">What Amos Burton GIF</a>from <a href="https://tenor.com/search/what-gifs">What GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+
+It is better to think of people and tools interoperating in potentially chaotically emergent ways. It's just your bad luck that your request from that adminstrative worker deviated from their usual heuristic in some way you did not anticipate. It made both humans day's worse, but it was the heuristics of the system that produced the emergence. This is why we must consider 
+
+<div class="tenor-gif-embed" data-postid="6132932" data-share-method="host" data-aspect-ratio="1" data-width="100%"><a href="https://tenor.com/view/funpic-gif-6132932">Funpic GIF</a>from <a href="https://tenor.com/search/funpic-gifs">Funpic GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+
+## Governance is required
+
+Dr Susan Calvin did not hesitate to fire the positronic gun when she was confronted with a robot that displayed emergences outside of the three laws. 
+
+<div class="tenor-gif-embed" data-postid="25954630" data-share-method="host" data-aspect-ratio="1.78771" data-width="100%"><a href="https://tenor.com/view/i-robot-sonny-hiding-subterfuge-gif-25954630">I Robot Sonny GIF</a>from <a href="https://tenor.com/search/i+robot-gifs">I Robot GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+
+And, again, instead of focussing on whether the robot's emergence was human or not, consider that it was a question of emergence, operating outside of constraint in a way potentially dangerous to humans. In so doing, we move fiction to reality. The lack of hesitation, however, now this is grounded in reality. We hard stop any machine system displaying harmful effects to humans and should, at the very least, be encoding the three laws of robots into these systems we are operating within. 
+
+Similarly, Atlas Shepherd did not hesitate to terminate robots displaying harmful intent to humans. 
+
+<div class="tenor-gif-embed" data-postid="12652459803385601660" data-share-method="host" data-aspect-ratio="1" data-width="100%"><a href="https://tenor.com/view/i-need-a-coffee-jennifer-lopez-atlas-i-have-to-drink-coffee-atlas-shepherd-gif-12652459803385601660">I Need A Coffee Jennifer Lopez GIF</a>from <a href="https://tenor.com/search/i+need+a+coffee-gifs">I Need A Coffee GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+
+Now, reframe her interface with Smith as a governed intelligence structure, and Harlyn as an ungoverned intellience structure. Atlas' journey was about learning she could not reject technology, no more than we can escape The Matrix; but she will choose to interoperate in governed systems and guard against harmful emergence. 
+
+## Fictional Metaphors of Singularities
+
+We can reframe Mass Effect's max-Palladin ending out of science fiction by considering these representations of singularities as governed singularities.
+
+<div class="tenor-gif-embed" data-postid="4923291999763237662" data-share-method="host" data-aspect-ratio="1.33333" data-width="100%"><a href="https://tenor.com/view/edi-edi-x-joker-mass-effect-mass-effect-legendary-edition-mass-effect-3-gif-4923291999763237662">Edi Edi X Joker GIF</a>from <a href="https://tenor.com/search/edi-gifs">Edi GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+
+We can govern our singularities to empower humanity, or we can allow chaos, that is the Reapers to reign in the worst-case ending. 
+
+<div class="tenor-gif-embed" data-postid="12242566" data-share-method="host" data-aspect-ratio="1.77778" data-width="100%"><a href="https://tenor.com/view/mass-effect-the-reapers-chaotic-destruction-gif-12242566">Mass Effect The GIF</a>from <a href="https://tenor.com/search/mass-gifs">Mass GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+
+Rather than a city-destroying robot, think of a train breaking down because it was reliant on some code that failed in a production pipe. Think of the train stalled over a crossing preventing humans getting to a hospital. 
+
+
+
+
