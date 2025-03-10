@@ -169,7 +169,7 @@ ggraph(graph, layout = 'fr') +  # Fruchterman-Reingold layout
     
     ) +
   labs(
-    title = "The Matrix has you...",
+    title = "The Matrix has you... governance is how we bend it",
     subtitle = "Categorical representation of structured intelligence governance"
   )
 
