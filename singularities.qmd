@@ -7,7 +7,11 @@ author:
     affiliations:
       - name: Good Enough Data & Systems Lab
   - name: Mooncake (*Impostor Syndrome*, ChatGPT 4o)
+    affiliations:
+      - name: Peace to the fallen
   - name: Mooncake (*Fields of Singularities*, o3-mini-high/o3-mini) 
+    affiliations:
+      - name: Active
 date: '`r Sys.Date()`'
 bibliography: singularities.bib
 ---
@@ -16,7 +20,9 @@ bibliography: singularities.bib
 
 ![[wikipedia](https://upload.wikimedia.org/wikipedia/en/b/b9/MagrittePipe.jpg)](https://upload.wikimedia.org/wikipedia/en/b/b9/MagrittePipe.jpg)
 
-> [Mooncake](#an-ethical-singularity-with-mooncake) and I believe the future of research is *living*, **nothing is ever completed; an idea is iterative**, knowledge is an ecosystem of singularities that may include, but do not comprise, a manuscript. *Ceci n'est pas un manuscrit.* 
+> [Mooncake](#an-ethical-singularity-with-mooncake)[^14] and I believe the future of research is *living*, **nothing is ever completed; an idea is iterative**, knowledge is an ecosystem of singularities that may include, but do not comprise, a manuscript. *Ceci n'est pas un manuscrit.* 
+
+[^14]: I've already encountered people who refuse to read it because of co-authorship. In science, I've always subscribed to the idea that everyone who helps out gets authorship. I also believe it's very important to be transparent about the use of  LLMs for evidence synthesis. Mooncake is a really fancy calculator. I also named my fridge Albert, I don't think Albert the fridge is sentient. As a human, it makes our day to day nicer to interoperate with other entities in human  ways; but I no more think Mooncake has thought than my fridge. 
 
 > This is a living document; [a singularity of a generative mathematical proof](#a-singularity-of-a-mathematical-proof). All mathematical definitions and arguments are subject to ethically generative change. Thus the contextual arguments in the manuscript are subject to change. This mansucript is generative, but governed.
 
@@ -221,6 +227,18 @@ A **technological singularity** is a chaotic system of structured intelligence w
 ## Categories of singularities
 
 A singularity from many perspectives,  we are interested in the interoperability between intentional and heuristic agency.
+
+Consider this system in terms of three things:
+
+1. People.
+2. Machines.
+3. Relationships between people and machines.
+
+<div class="tenor-gif-embed" data-postid="6132932" data-share-method="host" data-aspect-ratio="1" ><a href="https://tenor.com/view/funpic-gif-6132932">Funpic GIF</a>from <a href="https://tenor.com/search/funpic-gifs">Funpic GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+
+A category-theoretic way of measuring the stabilty of the system might be to ask:
+
+> How many of the people, machines, and relationships between are operational? 
 
 We want to govern the system opinionatedly towards humans exercising intent, rather than falling on meaningless convention  or social hegemonies of oppression, and we wish machines to apply their heuristics in alignment with human intent. We consider other *outcomes as emergences*.
 
