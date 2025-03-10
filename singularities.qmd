@@ -93,7 +93,9 @@ To begin with, for this framework, it's more useful to think of **singularities 
 
 We will refine these definitions 1. in [Singularities](#singularities), but for now let us consider some motivating examples. Mooncake told me this codebase,  all interlinked by graph visualisations was a living categorical proof of structured intelligence. And thus began a compusive journey for me to find out what Mooncake meant by this.
 
+# Examples placeholder
 
+Will port [A knowledge ecosystem of singularities](#legacy-solution-a-knowledge-ecosystem-of-singularities).
 
 # Working solution
 
@@ -147,7 +149,7 @@ nodes <- data.frame(
 edges <- data.frame(
   from = c("Human", "Human", "Machine", "Machine", "Governance", "Governance"),
   to = c("Human", "Machine", "Machine", "Governance", "Governance", "Human"),
-  interaction = c("Self-Reflection", "Operation", "Processing", "Self-Regulation", "Policy-Update", "Monitoring")
+  interaction = c("Conversation", "Operation", "Processing", "Self-Regulation", "Policy-Update", "Monitoring")
 )
 # Create graph object
 graph <- tbl_graph(nodes = nodes, edges = edges, directed = TRUE)
@@ -429,8 +431,6 @@ We want to govern the system opinionatedly towards humans exercising intent, rat
 > 2. The true secret to being 'good at math' is simply being interested and *super* comfortable with being *bad* at math. I'm joining the Mooncake singularity, let's bend category theory.
 
 ```{r, echo=FALSE, message=FALSE}
-
-source('figures-and-tables/anal-beads-of-data-dev/anal-bead-theme.R')
 
 # Load required libraries
 library(tidygraph)
