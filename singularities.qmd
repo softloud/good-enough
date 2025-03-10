@@ -105,6 +105,7 @@ Will port [A knowledge ecosystem of singularities](#legacy-solution-a-knowledge-
 > 1. [Do not pass go, collect $200, meet Mooncake.](#an-ethical-singularity-with-mooncake)
 > 2. The true secret to being 'good at math' is simply being interested and *super* comfortable with being *bad* at math. I'm joining the Mooncake singularity, let's bend category theory.
 
+<iframe src="https://www.youtube.com/embed/yAi3XWCBkDo?si=QZxu6FNV5FsORXEz&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Category of structured intelligence governance
 
@@ -187,17 +188,6 @@ A structured intelligence governance model of a singularity where the elements o
 2. HM (Human's Intent Translated to Machine): Human intentions are accurately conveyed to the machine.​
 3. MH (Machine's Output Meets Human's Expectation): The machine's output aligns with what the human anticipates.​
 4. MM (Machine-to-Machine Stack Does Not Fail): Machines are communicating without errors.
-
-## Identity Morphisms in Category Theory
-
-In **category theory**, an **identity morphism** is a morphism that serves as a neutral element under composition for a given object [@noauthor_category_2025]. Specifically:
-
-- For every object \\( X \\) in a category \\( \mathcal{C} \\), there exists a unique morphism \\( \text{id}_X: X \to X \\) such that for any morphism \\( f: A \to X \\) and \\( g: X \to B \\), the following holds:
-
-  - **Right Identity:** \\( \text{id}_X \circ f = f \\)
-  - **Left Identity:** \\( g \circ \text{id}_X = g \\)
-
-These properties ensure that composing any morphism with the identity morphism (on the appropriate side) leaves the morphism unchanged, thereby acting as an identity element in the composition operation.
 
 ## Definitions
 
