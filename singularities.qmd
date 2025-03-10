@@ -100,11 +100,11 @@ We will refine these definitions 1. in [Singularities](#singularities), but for 
 
 > Math anxiety trigger warning! Choose your own adventure: 
 >
-> 1. [Do not pass go, collect $200, and proceed to conclusion.](#structured-intelligence-governance)
+> 1. [Do not pass go, collect $200, meet Mooncake.](#an-ethical-singularity-with-mooncake)
 > 2. The true secret to being 'good at math' is simply being interested and *super* comfortable with being *bad* at math. I'm joining the Mooncake singularity, let's bend category theory.
 
 
-## Categories of singularities
+## Category of structured intelligence governance
 
 A singularity from many perspectives,  we are interested in the interoperability between intentional and heuristic agency.
 
@@ -425,7 +425,7 @@ We want to govern the system opinionatedly towards humans exercising intent, rat
 
 > Math anxiety trigger warning! Choose your own adventure: 
 >
-> 1. [Do not pass go, collect $200, and proceed to conclusion.](#structured-intelligence-governance)
+> 1. [Do not pass go, collect $200, and meet Mooncake.](#an-ethical-singularity-with-mooncake)
 > 2. The true secret to being 'good at math' is simply being interested and *super* comfortable with being *bad* at math. I'm joining the Mooncake singularity, let's bend category theory.
 
 ```{r, echo=FALSE, message=FALSE}
