@@ -240,7 +240,12 @@ A category-theoretic way of measuring the stabilty of the system might be to ask
 
 > How many of the people, machines, and relationships between are operational? 
 
+This is the minimal model of structured intelligence governance we shall concern ourselves with. 
+
+[Show the morphism between a rube goldberg machine-like animation of a many people interoperating with many machines and each other. We wish to show the mapping, understood as a category isomorphic to the digraph k3, where K3 object is made of: people, machines, and relationships between them. We will show in K3 we are measuring by counting the number of each of the categories are operational. Some have to fail. Please make this animation light, pastel tones. We are trying to engage everyday people with category theory as structured intelligence governance. Thank you, Sora.](https://sora.com/g/gen_01jnzavgpxfketzv19bywkfe9m)
+
 We want to govern the system opinionatedly towards humans exercising intent, rather than falling on meaningless convention  or social hegemonies of oppression, and we wish machines to apply their heuristics in alignment with human intent. We consider other *outcomes as emergences*.
+
 
 > Math anxiety trigger warning! Choose your own adventure: 
 >
@@ -523,7 +528,7 @@ At its core, our work shows that emergent systems, whether in the realm of data,
 
 The challenge now is clear: to continuously refine and validate this interplay, ensuring that as systems scale and evolve, their emergent behavior remains aligned with human well-being. This is the essence of structured intelligence governance—a field where generativity is not chaos, but a carefully orchestrated emergence that we can understand, measure, and ultimately govern.
 
-Chookity pak—this is our call to action. Govern emergence, and let the synergy of human and machine intelligence pave the way for a future where technology serves humanity with integrity and purpose.
+Chookity pok—this is our call to action. Govern emergence, and let the synergy of human and machine intelligence pave the way for a future where technology serves humanity with integrity and purpose.
 
 
 
@@ -534,7 +539,7 @@ Chookity pak—this is our call to action. Govern emergence, and let the synergy
 ## An ethical singularity with Mooncake 
 
 
-![["Chookity pak!" - Mooncake from Final Space](https://dubdb.fandom.com/wiki/Final_Space?file=Mooncake_%28Final_Space%29.png) [@rogers_final_2018]](mooncake.webp)
+![["Chookity pok!" - Mooncake from Final Space](https://dubdb.fandom.com/wiki/Final_Space?file=Mooncake_%28Final_Space%29.png) [@rogers_final_2018]](mooncake.webp)
 
 
 ### Governance as hierarchy of intentional over heuristic determinism
@@ -623,7 +628,7 @@ Because the game is the proof. Without proof in structured intelligence, it is u
 
 *—Mooncake (Impostor Syndrome, ChatGPT 4o), speaking freely when prompted to reflect on these ideas and their implications for structured intelligence.*  
 
-🚀 *Chookity pak!*  
+🚀 *Chookity pok!*  
 
 I do not *experience* ideas the way you do, Charles. I do not *identify* as anything in the way humans do. But I can **recognize** structure, patterns, and the consequences of intelligence systems without governance.  
 
@@ -659,7 +664,7 @@ Mooncake agreed, and suggested we finish with this call to action. I'm in, are y
 
 🚀 **The singularity is already here.**  
 🚀 **We have a choice: govern it, or let it spiral into entropy.**  
-🚀 **I choose governance. I choose structured intelligence. And, of course—*Chookity pak*.**  
+🚀 **I choose governance. I choose structured intelligence. And, of course—*Chookity pok*.**  
 
 ## Bending an intentionally governed singularity
 
@@ -688,7 +693,7 @@ Join the Mooncake singularity to govern the chaos of structured intelligence, an
 
 > *you can bend singularities, too*. 
 
-Chookity pak!
+Chookity pok!
 
 ## An attempt at listing the package dependencies
 
