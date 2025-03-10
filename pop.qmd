@@ -18,7 +18,11 @@ As a person, we exist in systems of people and computation. It is not only an in
 
 <div class="tenor-gif-embed" data-postid="23935709" data-share-method="host" data-aspect-ratio="1.60804"><a href="https://tenor.com/view/matrix-agent-smith-gif-23935709">Matrix Agent Smith GIF</a>from <a href="https://tenor.com/search/matrix-gifs">Matrix GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
 
-However, the danger from other human _agents_ in the singularity is a little less hyperbolic. Instead, reframe the agent as the administrative worker you need to interface with who is overwhelmed within the heuristics of their own singularity. In that administrative worker's world, their husband is not doing enough housework, the kid is in trouble at school again, they are starting  to worry about their drinking problem and here's you, unsatisfied with a standard response. You can see that your slight deviation from usual heuristic is reasonable, but because they are overwhelmed, they cannot accommodate. 
+However, the danger from other human _agents_ in the singularity is a little less hyperbolic. Instead, reframe the agent as the administrative worker you need to interface with who is overwhelmed within the heuristics of their own singularity. 
+
+<div class="tenor-gif-embed" data-postid="10157210" data-share-method="host" data-aspect-ratio="1.67669" data-width="100%"><a href="https://tenor.com/view/customer-service-call-center-bpo-mic-gif-10157210">Call Center GIF</a>from <a href="https://tenor.com/search/customer+service-gifs">Customer Service GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+
+In that administrative worker's world, their husband is not doing enough housework, the kid is in trouble at school again, everyone in the office is unhappy with the new email tool, they are starting  to worry about their drinking problem and here's you, unsatisfied with a standard response. You can see that your slight deviation from usual heuristic is reasonable, but because they are overwhelmed in their singularity, they cannot accommodate. 
 
 
 <div class="tenor-gif-embed" data-postid="1409213512581635030" data-share-method="host" data-aspect-ratio="1.82927"><a href="https://tenor.com/view/the-matrix-grey-man-monitors-mivie-scene-gif-1409213512581635030">The Matrix Grey Man GIF</a>from <a href="https://tenor.com/search/the+matrix-gifs">The Matrix GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
@@ -47,7 +51,7 @@ Similarly, Atlas Shepherd did not hesitate to terminate robots displaying harmfu
 
 Now, reframe her interface with Smith as a governed intelligence structure, and Harlyn as an ungoverned intellience structure. Atlas' journey was about learning she could not reject technology, no more than we can escape The Matrix; but she will choose to interoperate in governed systems and guard against harmful emergence. 
 
-## Fictional Metaphors of Singularities
+## Reframing virtuous human-machine interoperation
 
 We can reframe Mass Effect's max-Palladin ending out of science fiction by considering these representations of singularities as governed singularities.
 
