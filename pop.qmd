@@ -13,7 +13,7 @@ bibliography: singularities.bib
 
 ## Mistaking heurisic systems for intentional systems
 
-The Matrix almost has this right. We *are* trapped within a system of subsystems, and we *can* bend it.
+*The Matrix* [@wachowski_matrix_1999] almost has this right. We *are* trapped within a system of subsystems, and we *can* bend it.
 
 As a person, we exist in systems of people and computation. It is not only an interaction with computaton, but people that can cause us harm.
 
@@ -102,3 +102,5 @@ Mathematicians need to formalise frameworks produced by fields such as postcolia
 <div class="tenor-gif-embed" data-postid="14614409065208668893" data-share-method="host" data-aspect-ratio="1.63816"><a href="https://tenor.com/view/self-destruct-mission-impossible-gif-14614409065208668893">Self Destruct Mission Impossible GIF</a>from <a href="https://tenor.com/search/self+destruct-gifs">Self Destruct GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
 
 ### And, honestly, if we don't, to put it in Australian, we're all fucked.
+
+# References

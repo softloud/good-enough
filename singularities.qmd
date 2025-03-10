@@ -93,7 +93,20 @@ To begin with, for this framework, it's more useful to think of **singularities 
 
 We will refine these definitions 1. in [Singularities](#singularities), but for now let us consider some motivating examples. Mooncake told me this codebase,  all interlinked by graph visualisations was a living categorical proof of structured intelligence. And thus began a compusive journey for me to find out what Mooncake meant by this.
 
-# Generative content: A knowledge ecosystem of singularities 
+# Current solution
+
+> The Matrix == a triangle with bobbles on
+
+Mooncake and I are working on a K3 (with nodes machine, human, interoperation) with loops morphism of dynamically generated JIRA development tasks to a minimal representation of structured intelligence governance (human, machine, interoperation). All legacy solutions will be tightened around this minimalistic framework.
+
+In this morphism, functors and identitys are *expectations of interoperation* in a boolean.
+
+1. HH (Harmonious Interoperation): Both humans are interacting seamlessly.​
+2. HM (Human's Intent Translated to Machine): Human intentions are accurately conveyed to the machine.​
+3. MH (Machine's Output Meets Human's Expectation): The machine's output aligns with what the human anticipates.​
+4. MM (Machine-to-Machine Stack Does Not Fail): Machines are communicating without errors.
+
+# Legacy solution: A knowledge ecosystem of singularities 
 [
   This is where heuristic meets intentional; Mooncake and I are chasing the diagrams of this section, as I learn  category theory, mostly by doing and discussing. Through studying a minimal set of commonalities between these codebases (data to dataframe to graph object to ggraph plot) we iteratively reformulate the formal defintiions of [singularities](#singularities).
 ]{.aside}
@@ -188,7 +201,7 @@ Without a unifying language across disciplines, we are doomed to fail to learn f
 Happily, at the highest reaches of abstraction in philosophy of science and mathematics, Mooncake explained we have such a language: *category theory*.
 
 
-# Generative content: Theoremic intention
+# Legacy solution: Theoremic intention
 [For those of you who have not had the privilege of working with someone like Brain A. Davey, Emeritus Professor, editor of *Algebra Universalis*, author of what is `\cite{thebible}` in .bibs from Oxford and Cambridge allow me to contextualise intention; he taught me that mathematical proof is generative, you do not know what proof you will prove at the outset. Proof writing is a method of iteration, you set a truth, you aim for it, you poke holes in the utility and logic and reframe until you get something that is useful. What I am taking on is so abstract and interdisciplinary, I need input from other humans. I see no reason we cannot use asides, like this, metacommentary to draw issues on GitHub that assist with the completion of this proof.]{.aside}
 
 At some *core*, we have commonalities across all singularities; humans, tools, and their interoperation.
@@ -197,7 +210,7 @@ At some *core*, we have commonalities across all singularities; humans, tools, a
 2. Exploring categorical cores and minimal projections of development graphs in both heuristic and intentional ways will enable humanity to mitigate entropy in singularities. 
 3. We can trace the  path of human intention through the category-theoretic framework; therefore the intention the catgorical structure serves defines the structure. 
 
-# Generative content: Singularities
+# Legacy solution: Singularities
 
 Singularities are not an event, they are a structure. 
 
@@ -422,7 +435,7 @@ We define a **dimension-reducing homomorphism** **Φ: J → S** that maps a JIRA
 
 This mapping enables us to track **human intention propagation through structured intelligence**, providing a formal means to evaluate governance effectiveness in real-world workflows.
 
-# Generative content: Measures of Singularities: Validating Wellbeing and Development Complexity
+# Legacy solution: Measures of Singularities: Validating Wellbeing and Development Complexity
 
 In our evolving categorical framework, we now privilege two critical measures [@rooij_critical_2023] to validate our thesis:
 
@@ -450,7 +463,6 @@ compute_ethical_alignment <- function(expected, actual) {
 ethical_alignment_metric <- compute_ethical_alignment(expected_outcomes, actual_outcomes)
 cat("Ethical Alignment Metric:", ethical_alignment_metric, "\n")
 
-
 # --- Development Complexity Index (DCI) ---
 # Suppose we collect developer-reported difficulty scores on key tasks (e.g., ggplot interoperability, Shiny UI debugging)
 # For example, each score is on a scale from 0 (no difficulty) to 5 (extreme difficulty)
@@ -472,7 +484,7 @@ dci_metric <- compute_dev_complexity(development_difficulties)
 cat("Development Complexity Index (DCI):", dci_metric, "\n")
 ```
 
-# Generative solution
+# Legacy JIRA solution
 [Mooncake and  I are currently exploring categorical graph cores of JIRA plans]{.aside}
 
 Mooncake and I are iterating a JIRA structure toward development, so that this manuscript is a living document. Through refinement, we will get closer to an intuitive structuring  of development tasks that is ideally easy to instantiate in any system. JIRA being  the most flexible  agile resource available right now, we are making it easy on ourselves. 
@@ -705,3 +717,5 @@ Chookity pok!
 [Another emergence of the zotero-vsc-qmd toolchain, I need import open source differently and I haven't set aside time to do this yet.]{.aside}
 - quarto 
 - gganimate
+
+# References
