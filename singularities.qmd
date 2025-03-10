@@ -151,14 +151,18 @@ edges <- data.frame(
 # Create graph object
 graph <- tbl_graph(nodes = nodes, edges = edges, directed = TRUE)
 
+
 # Plot the graph
-ggraph(graph, layout = 'fr') +  # 'fr' refers to the Fruchterman-Reingold layout
-  geom_edge_loop(aes(label = interaction), arrow = arrow(length = unit(4, 'mm')), end_cap = circle(3, 'mm')) +
+ggraph(graph, layout = 'fr') +  # Fruchterman-Reingold layout
   geom_edge_link(aes(label = interaction), arrow = arrow(length = unit(4, 'mm')), end_cap = circle(3, 'mm')) +
+  geom_edge_loop(aes(label = interaction), 
+                 arrow = arrow(length = unit(4, 'mm')), 
+                 end_cap = circle(3, 'mm')) + 
   geom_node_point(aes(color = type), size = 5) +
   geom_node_text(aes(label = name), vjust = 1.5) +
   theme_void() +
   theme(legend.position = "none")
+
 
 
 ```
