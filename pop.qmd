@@ -27,9 +27,11 @@ There are human effects of heuristic systems and human emergences. In general, p
 
 <div class="tenor-gif-embed" data-postid="19592127" data-share-method="host" data-aspect-ratio="1.78771" data-width="100%"><a href="https://tenor.com/view/what-amos-burton-the-expanse-what-did-you-say-what-do-you-want-gif-19592127">What Amos Burton GIF</a>from <a href="https://tenor.com/search/what-gifs">What GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
 
-It is better to think of people and tools interoperating in potentially chaotically emergent ways. It's just your bad luck that your request from that adminstrative worker deviated from their usual heuristic in some way you did not anticipate. It made both humans day's worse, but it was the heuristics of the system that produced the emergence. This is why we must consider 
+It is better to think of people and tools interoperating in potentially chaotically emergent ways. It's just your bad luck that your request from that adminstrative worker deviated from their usual heuristic in some way you did not anticipate. It made both humans day's worse, but it was the heuristics of the system that produced the emergence. 
 
 <div class="tenor-gif-embed" data-postid="6132932" data-share-method="host" data-aspect-ratio="1" data-width="100%"><a href="https://tenor.com/view/funpic-gif-6132932">Funpic GIF</a>from <a href="https://tenor.com/search/funpic-gifs">Funpic GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+
+Humans are harmful to each other when they default to heuristic thinking; machines are harmful to humans when humans misplace expectations on machines thining with intent. All interoperations need to be governed.
 
 ## Governance is required
 
