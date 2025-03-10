@@ -71,7 +71,7 @@ Dr Susan Calvin did not hesitate to fire the positronic gun when she was confron
 
 <div class="tenor-gif-embed" data-postid="25954630" data-share-method="host" data-aspect-ratio="1.78771" ><a href="https://tenor.com/view/i-robot-sonny-hiding-subterfuge-gif-25954630">I Robot Sonny GIF</a>from <a href="https://tenor.com/search/i+robot-gifs">I Robot GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
 
-And, again, instead of focussing on whether the robot's emergence was human or not, consider that it was a question of emergence, operating outside of constraint in a way potentially dangerous to humans. In so doing, we move fiction to reality. The lack of hesitation, however, now this is grounded in reality. We hard stop any machine system displaying harmful effects to humans and should, at the very least, be encoding the three laws of robots into these systems we are operating within. 
+And, again, instead of focussing on whether the robot's emergence was human or not, consider that it was a question of emergence, operating outside of constraint in a way potentially dangerous to humans. In so doing, we move fiction to reality. The lack of hesitation, however, now this is grounded in reality. We hard stop any machine system displaying harmful effects to humans and should, at the very least, be encoding the three laws of robotics into these systems we are operating within. 
 
 Similarly, Atlas Shepherd did not hesitate to terminate robots displaying harmful intent to humans. 
 
