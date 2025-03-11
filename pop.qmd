@@ -95,6 +95,16 @@ We can reframe Mass Effect's max-Palladin ending out of science fiction by consi
 
 ## Our mission, resist the heuristic chaos of The Matrix overriding the system of humanity 
 
+## Without governance, chaos reigns
+
+Any developer, or any person on a team for that matter, will tell you that at kick off, leadership are convinced that the plan is well defined. However, any developer will also tell you they've never seen a well-defined plan. Every developer is living in a singularity of tasks that are required to be computationally isolated, perhaps change a number from `3`to `4` i n particular file. All of these  tasks are meant to reassemble into leadership's vision. Despite the advances of agile, chaos still reigns. Development tasks are dinosaurs in the Jurassic Park of structured intelligence systems.  
+
+<div class="tenor-gif-embed" data-postid="15354606320925778627" data-share-method="host" data-aspect-ratio="1.77857"><a href="https://tenor.com/view/raptors-what-gif-15354606320925778627">Raptors What GIF</a>from <a href="https://tenor.com/search/raptors+what-gifs">Raptors What GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+
+The result of ungoverned structured intelligence systems? Developers are blamed and traumatised by unfair demans; the wellbeing of humans in the system they interoperate within, the singularity, is not considered. This is shredding the very talent we need to solve critical problems facing humanity, such as climate change and inequality.
+
+## A virtuous singularity is possible
+
 loop(Critical theory -> Mathematicians ->  Developers -> Data scientists -> Decision makers ->) 
 
 Mathematicians need to formalise frameworks produced by fields such as postcolianlism, queer theory, and poststructuralism. These need to be instantiated in opinionated tools by those who can understand the categorical frameworks mathematicians develop for structured intelligence governance. Those opinions need to be reported in a way that serve those who have power to make category-level changes to the singularities we all exist in.
