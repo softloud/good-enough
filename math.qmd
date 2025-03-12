@@ -29,12 +29,20 @@ library(latex2exp)
 
 ```{r theme}
 
+# Define custom color palette
+edge_emergence_palette <- c(
+  "violation" = "#722f37",  # wine
+  "miscreant" = "#cc7722",  # ochre
+  "virtuous" = "#808000",   # olive green
+  "expected" = "#003153"    # prussian blue
+)
+
 button_theme <- list(
   theme_tufte(),  
   theme(
     axis.text = element_blank(),
     axis.ticks = element_blank(),
-    legend.position = "none",
+    legend.position = "top",
     plot.title = element_text(family = "courier"),
     plot.caption = element_text(family = "courier")
   ),
@@ -42,27 +50,33 @@ button_theme <- list(
     x = "",
     y = ""
   ),
-  scale_colour_brewer(palette = "Dark2")
+  # scale_colour_brewer(palette = "Dark2"),
+  # scale_colour_manual(palette = edge_emergence_palette),
+  # scale_fill_manual(values = edge_emergence_palette),
+  NULL
 )
 
 button_graph <- list(
   # expects graph
   geom_edge_link(
-    aes(label = edge_label),
+    aes(
+      label = edge_label,
+      colour = edge_emergence),
     alpha=0.7,
     arrow = arrow(),
-    colour = "darkgrey",
-    label_colour = "darkgrey",
     label_alpha = 0.7
     ),
   geom_node_point(
-    aes(colour = node_type)
+    aes(
+      shape = node_type,
+      colour = node_emergence
+      ),
+    size = 2
   ),
   geom_node_text(
     aes(label  = node_label),
     nudge_y = -0.1,
-    repel=TRUE,
-    family = "courier"
+    repel=TRUE
     )
 )
 
@@ -80,23 +94,51 @@ I want to know what we know, so that we know how much we don't know. Because rig
 Why aren't there fines for this? Maybe because no one knows how to measure it.
 
 
-## Help wanted
+## Help wanted 
 
-Look, I'm just a data engineer who studied a bit of math a while back. 
+> *hi Tomasz, Richard, Kerrie, Sira, & friends! Thanks for taking a look.* 
+
+Look, I'm just a data engineer who studied a skerrick of math a while back, I'm just doing this because it's coming out; a mathematical scream at how notifications are decreasing my capacity to function as a human. 
 
 But, this argument only uses first principles. 
 
 - Is it fundamentally flawed? Probably. By all means, poke holes, I'm having fun learning category theory for the first time in any case.
 - Is this reinventing the wheel? I find it hard to think I would come up with something novel.
-- If it is feasible, why aren't we measuring the instability of structured intelligence systems, like, *yesterday*?! 
+- If it is feasible, why aren't we measuring the how  the instability of systems hurt humans, like, *yesterday*?! 
+
 
 # Conjecture 
 
 The category $\mathcal{I}$ of intelligence governance is a discrete topological dynamical system that governs emergence for human wellbeing in a structured intelligence system. 
 
-## Example: Category of intelligence governance
+## Intuitive reasoning
 
-We will use code examples to help uncover the structure of these mathematical inventions. We begin by constructing this as a computational object `I_vis`, a `ggraph` visualisation  of the category.
+
+Consider this system in terms of three things:
+
+1. People.
+2. Machines.
+3. Relationships between people and machines.
+
+---
+
+<div class="tenor-gif-embed" data-postid="6132932" data-share-method="host"><a href="https://tenor.com/view/funpic-gif-6132932">Funpic GIF</a>from <a href="https://tenor.com/search/funpic-gifs">Funpic GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+
+---
+
+A category-theoretic way of measuring the stabilty of the system might be to ask:
+
+> How many of the people, machines, and relationships between are operational? 
+
+A intelligence-governance question might be to ask:
+
+> Which people, machines, or relationships are exhibiting an emergent behaviour that is harming the humans in the system?
+
+## Example: Category of intelligence governance visualisation
+
+We will use code examples to explain mathematical structures. 
+
+We begin by constructing the category $\mathcal I$ as a computational object `I_vis`, a `ggraph` visualisation  of the category.
 
 ::: {.panel-tabset}
 
@@ -106,13 +148,14 @@ We will use code examples to help uncover the structure of these mathematical in
 ```{r}
 
 I_edges <- tribble(
-  ~from,  ~to,  
-  "G",    "I",
-  "I",    "H",
-  "H",    "G",
+  ~from,  ~to,  ~edge_emergence,
+  "H",    "I",  "miscreant",
+  "I",    "H",  "expected",
 ) |>
   mutate(
-    edge_label = str_c(from, to)
+    edge_label = str_c(from, to),
+    edge_emergence = factor(edge_emergence, 
+    levels = c("miscreant", "expected"))
   )
 
 ```
@@ -130,13 +173,15 @@ I_edges
 I_nodes <- I_edges |>
   select(node = from)  |>
   mutate(
-    node_label =   
-    case_when(
-      node == "G" ~ "Governance (G)",
+    node_label =   node,
+    node_label = case_when(
       node == "I" ~ "Intention (I)",
       node == "H" ~ "Heuristic (H)" 
     ),
-    node_type = node_label 
+    node_type = node_label,
+    node_emergence = if_else(
+      node == "H", "miscreant", "expected"
+    ) 
   )
 
 ```
@@ -169,8 +214,23 @@ I_graph
 ```{r}
 
 I_vis <- I_graph |>
-  ggraph() +
-  button_graph +
+  ggraph(layout="linear") +
+ geom_edge_arc(
+    aes(
+      label = edge_label,
+      colour = edge_emergence),
+    alpha=0.7,
+    arrow = arrow(),
+    label_alpha = 0.7
+    ) +
+  geom_node_point(
+    aes(shape = node_type, colour = node_emergence)
+  ) +
+  geom_node_text(
+    aes(label  = node_label),
+    nudge_y = -0.1,
+    repel=TRUE
+    ) +
   button_theme +
   labs(
     title = "Category of Intelligence Governance"
@@ -182,11 +242,26 @@ I_vis <- I_graph |>
 
 
 ```{r echo=TRUE}
-I_vis
+I_vis 
 
 ```
 
 :::
+
+```{r echo=FALSE,eval=FALSE}
+
+# why can't I get the colour palette to work?
+
+I_vis +
+  scale_colour_manual(
+    values = c(
+      "miscreant" = edge_emergence_palette[["miscreant"]],
+      "violation" = edge_emergence_palette[["violation"]]
+    )
+  )
+
+```
+
 
 
 To show this is true,  we will need to:
@@ -212,9 +287,7 @@ A **structured intelligence system** $S$ is a directed graph $S = (H \cup A, M)$
 
 ::: {.panel-tabset}
 
-## Humans and automatons
-
-Suppose we have a data scientist `h_1`  
+## Humans and automata
 
 ```{r}
 humans <- paste("h", seq(1:3), sep="_")
@@ -226,12 +299,12 @@ humans
 ```
 
 ```{r}
-automatons <- paste("a", seq(1:2), sep="_")
+automata <- paste("a", seq(1:2), sep="_")
 
 ```
 
 ```{r echo=TRUE}
-automatons
+automata
 ```
 
 ## Edges
@@ -249,10 +322,22 @@ S_edges <- tribble(
   "h_2",  "a_22", "shares analysis",
   "a_22",  "h_12", "receives analysis",
   "h_2",  "h_12", "reports analysis",
-  "h_12", "a_12",  "incorporates analyis",
+  "h_12", "a_12",  "incorporates analysis",
   "a_12",   "h_13", "compiles report",
   "h_13", "h_3",  "reports results"
-)
+) |>
+  mutate(
+    edge_emergence = case_when(
+      edge_label %in% c(
+        "describes data", 
+        "reports analysis",
+        "incorporates analysis",
+        "compiles report",
+        "reports results"
+        ) ~ "miscreant",
+      TRUE ~ "expected"
+    )
+  )
 
 ```
 
@@ -279,7 +364,10 @@ S_nodes <- S_edges |>
       str_detect(node, "h_") ~ "Human (h)",
       str_detect(node, "a_") ~ "Automaton (a)"      
     ),
-    node_label = node 
+    node_label = node,
+    node_emergence = if_else(
+      node == "h_2", "miscreant", "expected"
+    ) 
   )
 
 
@@ -290,7 +378,6 @@ S_nodes <- S_edges |>
 S_nodes 
 
 ```
-
 
 ## Graph
 
@@ -348,9 +435,11 @@ An **intention** requires human thought and is self-generating.
 
 ### Definition: Automata
 
-An automaton $a : I \times R \mapsto O$ transforms human intention $i \in I$ and heuristics (rules) $r \in R$ written by humans to some output $o \in O$. An automata does not have intention innately, only rules.
+An automaton $a_r : I \mapsto O$, with heuristics (rules written by humans) $r \in R$, transforms human intention $i \in I$ and  to some output $o \in O$. An automata does not have intention innately, only rules. For the purposes of this framework, we will generally think of an automataton $a$ as an object.
 
-## 
+# Governance
+
+So, we now have automata interoperating with people. Think of *The Matrix* [@wachowski_matrix_1999] as a metaphor for our systems of technology in which humans are overwhemed by emergences. And, as Dr Salvin Calvin rightly observed in *Robot Dreams* [@asimov_i_1950], any robot in violation of the three laws must be immediately terminated.
 
 ## Definition: The Three Laws of Robotics
 
@@ -360,6 +449,9 @@ As defined by Asimov in *I, Robot* [@asimov_i_1950].
 2. A robot must obey orders given it by human beings except where such orders would conflict with the First Law.
 3. A robot must protect its own existence as long as such protection does not conflict with the First or Second Law.
 
+We must govern structured intelligence systems to ensure they do not harm humans. And we must learns from the metaphors, in particular the metanyms deconstructed in critical theory, to construct rigorous categorical frameworks that can be computationally and ethically applied to structural intelligence systems. 
+
+<div class="tenor-gif-embed" data-postid="25954630" data-share-method="host" data-aspect-ratio="1.78771" ><a href="https://tenor.com/view/i-robot-sonny-hiding-subterfuge-gif-25954630">I Robot Sonny GIF</a>from <a href="https://tenor.com/search/i+robot-gifs">I Robot GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
 
 ## Definition: The three laws of structured intelligence governance
 
@@ -369,9 +461,59 @@ Adapted from [the three laws](#definition-the-three-laws-of-robotics).
 2. A structured intelligence system must obey orders given it by human beings except where such orders would conflict with the First Law.
 3. A structured intelligence system must protect its own existence as long as such protection does not conflict with the First or Second Law.
 
+This leads us to the question, how might we detect if a system is in violation of the laws?
+
+## Emergence in development on the modern data stack
+
+Without loss of generality, consider a large-scale project on the modern data stack involving many people and computational tools they use.
+
+Any developer, or any person on a team for that matter, will tell you that at kick off, leadership are convinced that the plan is well defined. However, any developer will also tell you they've never seen a well-defined plan. Every developer is living in a singularity of tasks that are required to be computationally isolated, perhaps change a number from `3`to `4` i n particular file. All of these  tasks are meant to reassemble into leadership's vision. Despite the advances of agile, chaos still reigns. Development tasks are dinosaurs in the Jurassic Park of structured intelligence systems.  
+
+<div class="tenor-gif-embed" data-postid="15354606320925778627" data-share-method="host" data-aspect-ratio="1.77857"><a href="https://tenor.com/view/raptors-what-gif-15354606320925778627">Raptors What GIF</a>from <a href="https://tenor.com/search/raptors+what-gifs">Raptors What GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+
+The result of ungoverned structured intelligence systems? Developers are blamed and traumatised by unfair demands; the wellbeing of humans in the system they interoperate within, the singularity, is not considered. This is shredding the very talent we need to solve critical problems facing humanity, such as climate change and inequality.
+
+## Definition: Emergence on a structured intelligence system
+
+We consider the elements preimage of $\mathcal S$ to display **emergence** in one of four ways:
+  
+  - 
+
 # Category of structured intelligence governance
+
+## Definition: Category of structured intelligence governance
+
+The category $\mathcal S$ of structured intelligence governance is isomorphic to $K_3$ cycle with loops comprising:
+
+- Objects $\mathtt{ob}(\mathcal S) = \{ G, H, A \}$:
+  - governance $G = M$ from the edge-relations in $S$;
+  - $H$ from the humans in the nodes of $S$;
+  - $A$ from the automata in the nodes of $S$.
+
+- Morphisms $\mathtt{hom}(\mathcal S)$:
+  - $GG$: (re)set intent;
+  - $GH$: communicate intent;
+  - $HH$: humans interact or self-reflect;
+  - $HA$: humans instantiate intent on automata;
+  - $AA$: automata stack without human intervention;
+  - $AH$: automata output.
 
 # Category of intelligence governance
 
-# Conjecture: Big tech is violation of the laws
+## Definition: Category of intelligence governance
 
+
+## Visualisation of category of intelligence governance
+
+```{r}
+I_vis
+```
+
+
+# Singularities
+
+# Experiment: Living morphism in JIRA
+
+# Conjecture: Big tech are singularities in violation of the laws
+
+# References

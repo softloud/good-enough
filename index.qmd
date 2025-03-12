@@ -4,6 +4,10 @@ subtitle: "Mathematical Proofs Implemented in Computational Systems"
 date: '`r Sys.Date()`'
 ---
 
+*Order from the chaos of development.*
+
+---
+
 The Good Enough Data & Systems Lab collaborates with game studios by computationally applying category theory and abstract mathematics to codebases and digraph-oriented game development (e.g., JIRA) plans. The Lab uses a mix of category theory, visualisation, and data simulation to explore frameworks such as  
 
 - player behaviour
@@ -13,5 +17,7 @@ The Good Enough Data & Systems Lab collaborates with game studios by computation
 - trustworthiness
 - expectation
 - and most of all, human intentionality in a chaotic system.
+
+A key priority is to to have *no* disruption on developer workflow, the Lab works at a metalevel on existing plans to provide strategic analyses.
 
 The Good Enough Data & Systems Lab develops and publishes on a categorically-defined *structured intelligence governance* framework with collaborators, creating a virtuous cycle between research and industry. 

@@ -10,10 +10,10 @@ website:
         href: singularities-placeholder.qmd
       - text: Singularities as Math
         href: math.qmd
-      - text: Questionable Analytical Observations
-        href: qao.qmd
       - text: Singularities in Pop Culture
         href: pop.qmd
+      - text: Questionable Analytical Observations
+        href: qao.qmd
     right:
       - text: Collaborate
         href: collab.qmd

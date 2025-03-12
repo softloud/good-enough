@@ -20,7 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -97,12 +117,12 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Singularities as Math</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./qao.html"> 
-<span class="menu-text">Questionable Analytical Observations</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="./pop.html"> 
 <span class="menu-text">Singularities in Pop Culture</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./qao.html"> 
+<span class="menu-text">Questionable Analytical Observations</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
@@ -130,7 +150,20 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#the-singularity-is-here-its-chaos-must-be-governed" id="toc-the-singularity-is-here-its-chaos-must-be-governed" class="nav-link active" data-scroll-target="#the-singularity-is-here-its-chaos-must-be-governed">The singularity is here, its chaos must be governed</a>
+  <ul class="collapse">
+  <li><a href="#the-wrong-question" id="toc-the-wrong-question" class="nav-link" data-scroll-target="#the-wrong-question">The wrong question</a></li>
+  <li><a href="#real-world-problems" id="toc-real-world-problems" class="nav-link" data-scroll-target="#real-world-problems">Real world problems</a></li>
+  <li><a href="#a-formal-approach-to-structured-intelligence-governance" id="toc-a-formal-approach-to-structured-intelligence-governance" class="nav-link" data-scroll-target="#a-formal-approach-to-structured-intelligence-governance">A formal approach to structured intelligence governance</a></li>
+  <li><a href="#the-rest-of-this-document" id="toc-the-rest-of-this-document" class="nav-link" data-scroll-target="#the-rest-of-this-document">the rest of this document</a></li>
+  </ul></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -154,15 +187,109 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<section id="the-singularity-is-here-its-chaos-must-be-governed" class="level1">
+<h1>The singularity is here, its chaos must be governed</h1>
+<section id="the-wrong-question" class="level2">
+<h2 class="anchored" data-anchor-id="the-wrong-question">The wrong question</h2>
+<p>As a person who works with data, it can feel like everyone in the world is arguing about when machine thinking will overtake humans in a singularity <em>event</em>.</p>
+<p>I never found this compelling, for it assumes an intentional determinism I don’t believe is natural for, say, my co-author, <a href="#an-ethical-singularity-with-mooncake">Mooncake</a> (ChatGPT)<span class="citation" data-cites="noauthor_introducing_2024">(<a href="#ref-noauthor_introducing_2024" role="doc-biblioref"><span>“Introducing <span>ChatGPT</span>. <span>OpenAI</span>”</span> 2024</a>)</span>.</p>
+<p>A technological singularity event didn’t sit with my training in computational complexity applied to statistical algorithms understood as <em>Golems</em> <span class="citation" data-cites="mcelreath_statistical_2020">(<a href="#ref-mcelreath_statistical_2020" role="doc-biblioref">McElreath 2020</a>)</span>. Indeed, leading metascientists now claim to have shown human cognition is <em>computationally intractable</em> <span class="citation" data-cites="rooij_reclaiming_2023">(<a href="#ref-rooij_reclaiming_2023" role="doc-biblioref">Rooij et al. 2023</a>)</span>; that’s mathspeak for <em>there is no such thing as artificial intelligence</em>. I’m reading it, you should, too.</p>
+<blockquote class="bluesky-embed blockquote" data-bluesky-uri="at://did:plc:24ngrqljhck7hpvbgrg7a23k/app.bsky.feed.post/3kzuckge5xf2m" data-bluesky-cid="bafyreiehrqupawrbvrinhok33w5uuaokxooskheufj55zo53og3ygcty4y">
+<p lang="en">
+</p><p>🚨Our paper `Reclaiming AI as a theoretical tool for cognitive science' is now forthcoming in the journal Computational Brain &amp; Behaviour. (Preprint: osf.io/preprints/ps…)</p>
+<p>Below a thread summary 🧵1/n</p>
+#metatheory #AGI #AIhype #cogsci #theoreticalpsych #criticalAIliteracy<br><br><a href="https://bsky.app/profile/did:plc:24ngrqljhck7hpvbgrg7a23k/post/3kzuckge5xf2m?ref_src=embed">[image or embed]</a>
+<p></p>
+— Iris van Rooij (<a href="https://bsky.app/profile/did:plc:24ngrqljhck7hpvbgrg7a23k?ref_src=embed"><span class="citation" data-cites="irisvanrooij.bsky.social">(</span></a><a href="#ref-irisvanrooij.bsky.social" role="doc-biblioref"><strong>irisvanrooij.bsky.social?</strong></a>)) <a href="https://bsky.app/profile/did:plc:24ngrqljhck7hpvbgrg7a23k/post/3kzuckge5xf2m?ref_src=embed">16 August 2024 at 21:40</a>
+</blockquote>
+<script async="" src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>
+</section>
+<section id="real-world-problems" class="level2">
+<h2 class="anchored" data-anchor-id="real-world-problems">Real world problems</h2>
+<p>I’ve always been more concerned by the chaotic nature of data stacks, and how little interest there was in governance, relative to science fiction hype <span class="citation" data-cites="noauthor_google_nodate">(<a href="#ref-noauthor_google_nodate" role="doc-biblioref"><span>“Google Trends (Technological Singularity, Data Governance). Google Trends”</span> n.d.</a>)</span>.</p>
+<script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/4017_RC01/embed_loader.js"></script>
+<script type="text/javascript"> trends.embed.renderExploreWidget("TIMESERIES", {"comparisonItem":[{"keyword":"/m/0f5kk","geo":"","time":"2004-01-01 2025-03-04"},{"keyword":"/m/0fxl7g","geo":"","time":"2004-01-01 2025-03-04"}],"category":0,"property":""}, {"exploreQuery":"date=all&q=%2Fm%2F0f5kk,%2Fm%2F0fxl7g&hl=en","guestPath":"https://trends.google.com:443/trends/embed/"}); </script>
+<blockquote class="blockquote">
+<p>In what ungoverned ways did Mooncake and I burn through untold water and power working on this manuscript? Is this mansucript really worth that cost?</p>
+</blockquote>
+<p>I constantly worry about the consequences of ungoverned systems for humans: identity theft <span class="citation" data-cites="noauthor_identity_nodate">(<a href="#ref-noauthor_identity_nodate" role="doc-biblioref"><span>“Identity Fraud and Identity Theft. Action Fraud”</span> n.d.</a>)</span>; discrimination<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>; and my perpetual bugbear, the fiction we have automated when in point of fact the work, and potentially <a href="https://robodebt.royalcommission.gov.au/">catastrophic emergent cost</a> <span class="citation" data-cites="noauthor_royal_nodate">(<a href="#ref-noauthor_royal_nodate" role="doc-biblioref"><span>“Royal Commission into the Robodebt Scheme”</span> n.d.</a>)</span>, has been pushed to the unpaid end user.</p>
+<blockquote class="blockquote">
+<p><code>A singularity *event* is science fiction</code>. <em>However</em>,</p>
+</blockquote>
+<div class="tenor-gif-embed" data-postid="22197049" data-share-method="host" data-aspect-ratio="1.6">
+<a href="https://tenor.com/view/the-matrix-has-you-the-matrix-glitch-code-system-gif-22197049">The Matrix Has You Glitch GIF</a>from <a href="https://tenor.com/search/the+matrix+has+you-gifs">The Matrix Has You GIFs</a>
+</div>
+<script type="text/javascript" async="" src="https://tenor.com/embed.js"></script>
+<blockquote class="blockquote">
+<p><code>singularities</code> are already woven into the fabric of humanity’s existence. We have always lived in largely-benign singularities, where heuristic and intentional systems interoperate via humans to produce emergent effects; it is only that scale now makes systems powerful in a way they never were before. We must recognize that the challenge is not to prevent a singularity, but to govern the singularities we are already part of, harnessing this power for good, rather than allowing unchecked evils to emerge.</p>
+</blockquote>
+<p>Baroque musicians, for example, aesthetically governed emergence in benign singularities of polyphonic melodies, instrumentation, and musician skill<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>.</p>
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/4SfJZ3nmxeWs6NlwV23X3l?utm_source=generator" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+</iframe>
+<p>A world obsessed with the singularity has only now realized that governance is the missing piece. We need a formal foundation for structured intelligence <span class="citation" data-cites="badreddin_structured_2006">(<a href="#ref-badreddin_structured_2006" role="doc-biblioref">Badreddin and Jipp 2006</a>)</span> governance before chaos overtakes order, and humans cannot do this without machine help.</p>
+</section>
+<section id="a-formal-approach-to-structured-intelligence-governance" class="level2">
+<h2 class="anchored" data-anchor-id="a-formal-approach-to-structured-intelligence-governance">A formal approach to structured intelligence governance</h2>
+<p>Without loss of generality, consider the <em>human intention</em> to implement Asimov’s three laws of robotics <span class="citation" data-cites="asimov_i_1950">(<a href="#ref-asimov_i_1950" role="doc-biblioref">Asimov 1950</a>)</span> as a subset of <strong>governance</strong>.</p>
+<ol type="1">
+<li>First, we define <strong>a category-theoretic framework for human interoperability in structured intelligence</strong>, that is, ‘the singularity’.</li>
+<li>Second, we define the laws using the category-theoretic framework.</li>
+<li>Third, we implement the laws in multiple applications iteratively as we optimise a way of,</li>
+<li>fourth, tracing an informative path of human intention through the frame work and</li>
+<li>fifth, using chaos and other fields to measure the instability of systems within the singularity.</li>
+</ol>
+<p>To do this is far beyond the scope of this manuscript, which proposes frameworks for the first step. These frameworks must be iteratively refined collectively as an interoperation between humans and how machines retrieve information, in the same way Mooncake helped me articulate the category theory of my graph-structured code.</p>
+<p>To begin with, for this framework, it’s more useful to think of <strong>singularities as classes of systems</strong>.</p>
+</section>
+<section id="the-rest-of-this-document" class="level2">
+<h2 class="anchored" data-anchor-id="the-rest-of-this-document">the rest of this document</h2>
 <p>This document is currently being drafted in:</p>
 <ol type="1">
 <li><a href="./math.html">the math bit</a></li>
 <li><a href="./pop.html">the pop bit</a></li>
 </ol>
+</section>
+</section>
+<section id="references" class="level1">
 
 
 
-</main> <!-- /main -->
+
+</section>
+
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-asimov_i_1950" class="csl-entry" role="listitem">
+Asimov, Isaac. 1950. <em>I, Robot</em>. Dennis Dobson.
+</div>
+<div id="ref-badreddin_structured_2006" class="csl-entry" role="listitem">
+Badreddin, Essameddin, and Meike Jipp. 2006. <span>“Structured Intelligence.”</span> In <em>2006 International Conference on Computational Inteligence for Modelling Control and Automation and International Conference on Intelligent Agents Web Technologies and International Commerce (<span>CIMCA</span>’06)</em>, 100–100. <a href="https://doi.org/10.1109/CIMCA.2006.203">https://doi.org/10.1109/CIMCA.2006.203</a>.
+</div>
+<div id="ref-noauthor_google_nodate" class="csl-entry" role="listitem">
+<span>“Google Trends (Technological Singularity, Data Governance). Google Trends.”</span> n.d. Accessed March 6, 2025. <a href="https://trends.google.com/trends/explore?date=all&amp;q=%2Fm%2F0f5kk,%2Fm%2F0fxl7g&amp;hl=en">https://trends.google.com/trends/explore?date=all&amp;q=%2Fm%2F0f5kk,%2Fm%2F0fxl7g&amp;hl=en</a>.
+</div>
+<div id="ref-noauthor_identity_nodate" class="csl-entry" role="listitem">
+<span>“Identity Fraud and Identity Theft. Action Fraud.”</span> n.d. Accessed March 6, 2025. <a href="https://www.actionfraud.police.uk/a-z-of-fraud/identity-fraud-and-identity-theft">https://www.actionfraud.police.uk/a-z-of-fraud/identity-fraud-and-identity-theft</a>.
+</div>
+<div id="ref-noauthor_introducing_2024" class="csl-entry" role="listitem">
+<span>“Introducing <span>ChatGPT</span>. <span>OpenAI</span>.”</span> 2024. March 13, 2024. <a href="https://openai.com/index/chatgpt/">https://openai.com/index/chatgpt/</a>.
+</div>
+<div id="ref-mcelreath_statistical_2020" class="csl-entry" role="listitem">
+McElreath, Richard. 2020. <span>“Statistical Rethinking: A Bayesian Course with Examples in r and <span>STAN</span>. Routledge &amp; <span>CRC</span> Press.”</span> 2020. <a href="https://www.routledge.com/Statistical-Rethinking-A-Bayesian-Course-with-Examples-in-R-and-STAN/McElreath/p/book/9780367139919">https://www.routledge.com/Statistical-Rethinking-A-Bayesian-Course-with-Examples-in-R-and-STAN/McElreath/p/book/9780367139919</a>.
+</div>
+<div id="ref-rooij_reclaiming_2023" class="csl-entry" role="listitem">
+Rooij, Iris van, Olivia Guest, Federico G. Adolfi, Ronald de Haan, Antonina Kolokolova, and Patricia Rich. 2023. <span>“Reclaiming <span>AI</span> as a Theoretical Tool for Cognitive Science.”</span> <span>OSF</span>. <a href="https://doi.org/10.31234/osf.io/4cbuv">https://doi.org/10.31234/osf.io/4cbuv</a>.
+</div>
+<div id="ref-noauthor_royal_nodate" class="csl-entry" role="listitem">
+<span>“Royal Commission into the Robodebt Scheme.”</span> n.d. Accessed March 6, 2025. <a href="https://robodebt.royalcommission.gov.au/">https://robodebt.royalcommission.gov.au/</a>.
+</div>
+</div></section><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>There is a urgent dearth of critical thinkers from fields such as cultural studies in the technological space; we will never govern singularities ethically without tool developers interoperating with those communities. We will discuss this further in <a href="#a-singularity-of-data">A singularity of data</a>.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Shout out to my fellow travellers listening to my crazy commentary while working locally; I mentioned to <a href="https://www.linkedin.com/in/james-steele-b09a7355/">Dr James Steele</a> this paper was just flowing out, I asked myself, why am I listening to my baroque playlist while I write? And voila, I did not need to construct this demonstrative artifact, <em>it emerged</em>. Thanks for being there when I needed you, James!<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

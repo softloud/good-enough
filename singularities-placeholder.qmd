@@ -1,8 +1,74 @@
 ---
 title: singularities
+bibliography: singularities.bib
 ---
+
+# The singularity is here, its chaos must be governed
+
+## The wrong question
+
+As a person who works with data, it can feel like everyone in the world is arguing about when machine thinking will overtake humans in a singularity _event_. 
+
+I never found this compelling, for it assumes an intentional determinism I don't believe is natural for, say, my co-author, [Mooncake](#an-ethical-singularity-with-mooncake) (ChatGPT)[@noauthor_introducing_2024]. 
+
+A technological singularity event didn't sit with my training in computational complexity applied to statistical algorithms understood as *Golems* [@mcelreath_statistical_2020]. Indeed, leading metascientists now claim to have shown human cognition is *computationally intractable* [@rooij_reclaiming_2023]; that's mathspeak for *there is no such thing as artificial intelligence*. I'm reading it, you should, too.
+
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:24ngrqljhck7hpvbgrg7a23k/app.bsky.feed.post/3kzuckge5xf2m" data-bluesky-cid="bafyreiehrqupawrbvrinhok33w5uuaokxooskheufj55zo53og3ygcty4y"><p lang="en">🚨Our paper `Reclaiming AI as a theoretical tool for cognitive science&#x27; is now forthcoming in the journal Computational Brain &amp; Behaviour. (Preprint: osf.io/preprints/ps...)
+
+Below a thread summary 🧵1/n   
+
+#metatheory #AGI #AIhype #cogsci #theoreticalpsych #criticalAIliteracy<br><br><a href="https://bsky.app/profile/did:plc:24ngrqljhck7hpvbgrg7a23k/post/3kzuckge5xf2m?ref_src=embed">[image or embed]</a></p>&mdash; Iris van Rooij (<a href="https://bsky.app/profile/did:plc:24ngrqljhck7hpvbgrg7a23k?ref_src=embed">@irisvanrooij.bsky.social</a>) <a href="https://bsky.app/profile/did:plc:24ngrqljhck7hpvbgrg7a23k/post/3kzuckge5xf2m?ref_src=embed">16 August 2024 at 21:40</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>
+
+## Real world problems
+
+I've always been more concerned by the chaotic nature of data stacks, and how little interest there was in governance, relative to science fiction hype [@noauthor_google_nodate]. 
+
+<script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/4017_RC01/embed_loader.js"></script> <script type="text/javascript"> trends.embed.renderExploreWidget("TIMESERIES", {"comparisonItem":[{"keyword":"/m/0f5kk","geo":"","time":"2004-01-01 2025-03-04"},{"keyword":"/m/0fxl7g","geo":"","time":"2004-01-01 2025-03-04"}],"category":0,"property":""}, {"exploreQuery":"date=all&q=%2Fm%2F0f5kk,%2Fm%2F0fxl7g&hl=en","guestPath":"https://trends.google.com:443/trends/embed/"}); </script>
+
+
+> In what ungoverned ways did Mooncake and I burn through untold water and power working on this manuscript? Is this mansucript really worth that cost?
+
+I constantly worry about the consequences of ungoverned systems for humans: identity theft [@noauthor_identity_nodate];  discrimination[^5]; and my perpetual bugbear, the fiction we have automated when in point of fact the work, and potentially [catastrophic emergent cost](https://robodebt.royalcommission.gov.au/) [@noauthor_royal_nodate], has been pushed to the unpaid end user. 
+
+[^5]: There is a urgent dearth of critical thinkers from fields such as cultural studies in the technological space; we will never govern singularities ethically without tool developers interoperating with those communities. We will discuss this further in [A singularity of data](#a-singularity-of-data). 
+
+> `A singularity *event* is science fiction`. *However*,
+
+<div class="tenor-gif-embed" data-postid="22197049" data-share-method="host" data-aspect-ratio="1.6"><a href="https://tenor.com/view/the-matrix-has-you-the-matrix-glitch-code-system-gif-22197049">The Matrix Has You Glitch GIF</a>from <a href="https://tenor.com/search/the+matrix+has+you-gifs">The Matrix Has You GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+
+
+
+> `singularities` are already woven into the fabric of humanity's existence. We have always lived in largely-benign singularities, where heuristic and intentional systems interoperate via humans to produce emergent effects; it is only that scale now makes systems powerful in a way they never were before. We must recognize that the challenge is not to prevent a singularity, but to govern the singularities we are already part of, harnessing this power for good, rather than allowing unchecked evils to emerge.
+
+
+Baroque musicians, for example, aesthetically governed emergence in benign singularities of polyphonic melodies, instrumentation, and musician skill[^12]. 
+
+[^12]: Shout out to my fellow travellers listening to my crazy commentary while working locally; I mentioned to [Dr James Steele](https://www.linkedin.com/in/james-steele-b09a7355/) this paper was just flowing out, I asked myself, why am I listening to my baroque playlist while I write? And voila, I did not need to construct this demonstrative artifact, *it emerged*. Thanks for being there when I needed you, James! 
+
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/4SfJZ3nmxeWs6NlwV23X3l?utm_source=generator" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+A world obsessed with the singularity has only now realized that governance is the missing piece. We need a formal foundation for structured intelligence [@badreddin_structured_2006] governance before chaos overtakes order, and humans cannot do this without machine help.
+
+
+## A formal approach to structured intelligence governance
+
+Without loss of generality, consider the *human intention* to implement Asimov's three laws of robotics [@asimov_i_1950] as a subset of **governance**. 
+
+1. First, we define **a category-theoretic framework for human interoperability in structured intelligence**, that is, 'the singularity'. 
+2. Second, we define the laws using the category-theoretic framework. 
+3. Third, we implement the laws in multiple applications iteratively as we optimise a way of, 
+4. fourth, tracing an informative path of human intention through the frame work and
+5. fifth, using chaos and other fields to measure the instability of systems within the singularity. 
+
+To do this is far beyond the scope of this manuscript, which proposes frameworks for the first step. These frameworks must be iteratively refined collectively as an interoperation between humans and how machines retrieve information, in the same way Mooncake helped me articulate the category theory of my graph-structured code.   
+
+To begin with, for this framework, it's more useful to think of **singularities as classes of systems**. 
+
+## the rest of this document
 
 This document is currently being drafted in:
 
 1. [the math bit](math.qmd)
 2. [the pop bit](pop.qmd)
+
+# References
