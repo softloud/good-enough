@@ -7,6 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Dr Charles T. Gray, Datapunk">
+<meta name="dcterms.date" content="2025-03-12">
 
 <title>Good Enough Lab - The Math Bit</title>
 <style>
@@ -21,7 +22,61 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -90,7 +145,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./singularities.html"> 
+    <a class="nav-link" href="./singularities-placeholder.html"> 
 <span class="menu-text">Singularities</span></a>
   </li>  
   <li class="nav-item">
@@ -131,10 +186,37 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#work-in-progress" id="toc-work-in-progress" class="nav-link active" data-scroll-target="#work-in-progress"><span class="header-section-number">0.1</span> Work in progress</a></li>
+  <li><a href="#help-wanted" id="toc-help-wanted" class="nav-link" data-scroll-target="#help-wanted"><span class="header-section-number">0.2</span> Help wanted</a></li>
+  <li><a href="#conjecture" id="toc-conjecture" class="nav-link" data-scroll-target="#conjecture"><span class="header-section-number">1</span> Conjecture</a>
+  <ul class="collapse">
+  <li><a href="#example-category-of-intelligence-governance" id="toc-example-category-of-intelligence-governance" class="nav-link" data-scroll-target="#example-category-of-intelligence-governance"><span class="header-section-number">1.1</span> Example: Category of intelligence governance</a></li>
+  </ul></li>
+  <li><a href="#definition-structured-intelligence-system" id="toc-definition-structured-intelligence-system" class="nav-link" data-scroll-target="#definition-structured-intelligence-system"><span class="header-section-number">2</span> Definition: Structured intelligence system</a>
+  <ul class="collapse">
+  <li><a href="#example-structured-intelligence-system" id="toc-example-structured-intelligence-system" class="nav-link" data-scroll-target="#example-structured-intelligence-system"><span class="header-section-number">2.1</span> Example: Structured intelligence system</a></li>
+  <li><a href="#terms-in-s" id="toc-terms-in-s" class="nav-link" data-scroll-target="#terms-in-s"><span class="header-section-number">2.2</span> Terms in <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math></a>
+  <ul class="collapse">
+  <li><a href="#definition-humans" id="toc-definition-humans" class="nav-link" data-scroll-target="#definition-humans"><span class="header-section-number">2.2.1</span> Definition: Humans</a></li>
+  <li><a href="#definition-intention" id="toc-definition-intention" class="nav-link" data-scroll-target="#definition-intention"><span class="header-section-number">2.2.2</span> Definition: Intention</a></li>
+  <li><a href="#definition-automata" id="toc-definition-automata" class="nav-link" data-scroll-target="#definition-automata"><span class="header-section-number">2.2.3</span> Definition: Automata</a></li>
+  </ul></li>
+  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"><span class="header-section-number">2.3</span> </a></li>
+  <li><a href="#definition-the-three-laws-of-robotics" id="toc-definition-the-three-laws-of-robotics" class="nav-link" data-scroll-target="#definition-the-three-laws-of-robotics"><span class="header-section-number">2.4</span> Definition: The Three Laws of Robotics</a></li>
+  <li><a href="#definition-the-three-laws-of-structured-intelligence-governance" id="toc-definition-the-three-laws-of-structured-intelligence-governance" class="nav-link" data-scroll-target="#definition-the-three-laws-of-structured-intelligence-governance"><span class="header-section-number">2.5</span> Definition: The three laws of structured intelligence governance</a></li>
+  </ul></li>
+  <li><a href="#category-of-structured-intelligence-governance" id="toc-category-of-structured-intelligence-governance" class="nav-link" data-scroll-target="#category-of-structured-intelligence-governance"><span class="header-section-number">3</span> Category of structured intelligence governance</a></li>
+  <li><a href="#category-of-intelligence-governance" id="toc-category-of-intelligence-governance" class="nav-link" data-scroll-target="#category-of-intelligence-governance"><span class="header-section-number">4</span> Category of intelligence governance</a></li>
+  <li><a href="#conjecture-big-tech-is-violation-of-the-laws" id="toc-conjecture-big-tech-is-violation-of-the-laws" class="nav-link" data-scroll-target="#conjecture-big-tech-is-violation-of-the-laws"><span class="header-section-number">5</span> Conjecture: Big tech is violation of the laws</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content page-columns page-full" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -162,7 +244,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">Invalid Date</p>
+      <p class="date">March 12, 2025</p>
     </div>
   </div>
   
@@ -174,11 +256,278 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>–&gt; in development</p>
+<section id="work-in-progress" class="level2 page-columns page-full" data-number="0.1">
+<h2 data-number="0.1" class="anchored" data-anchor-id="work-in-progress"><span class="header-section-number">0.1</span> Work in progress</h2>
+<div class="page-columns page-full"><p>Without ways of bounding and measuring how technology affects us, we have no chance of governing the choas of technology in our lives. </p><div class="no-row-height column-margin column-container"><span class="margin-aside">Although in the experimental paper I made use of LLMs, at some point a human needs to unplug to do math. This is the typed version of what I wrote in my notebook. The writing and ideas in this document is <em>entirely</em> human emergence.</span></div></div>
+<p>I want to know what we know, so that we know how much we don’t know. Because right now I think we all have structured intelligence governance levels in <strong>violation</strong> of the laws of robotics.</p>
+<p>Why aren’t there fines for this? Maybe because no one knows how to measure it.</p>
+</section>
+<section id="help-wanted" class="level2" data-number="0.2">
+<h2 data-number="0.2" class="anchored" data-anchor-id="help-wanted"><span class="header-section-number">0.2</span> Help wanted</h2>
+<p>Look, I’m just a data engineer who studied a bit of math a while back.</p>
+<p>But, this argument only uses first principles.</p>
+<ul>
+<li>Is it fundamentally flawed? Probably. By all means, poke holes, I’m having fun learning category theory for the first time in any case.</li>
+<li>Is this reinventing the wheel? I find it hard to think I would come up with something novel.</li>
+<li>If it is feasible, why aren’t we measuring the instability of structured intelligence systems, like, <em>yesterday</em>?!</li>
+</ul>
+</section>
+<section id="conjecture" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Conjecture</h1>
+<p>The category <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℐ</mi><annotation encoding="application/x-tex">\mathcal{I}</annotation></semantics></math> of intelligence governance is a discrete topological dynamical system that governs emergence for human wellbeing in a structured intelligence system.</p>
+<section id="example-category-of-intelligence-governance" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="example-category-of-intelligence-governance"><span class="header-section-number">1.1</span> Example: Category of intelligence governance</h2>
+<p>We will use code examples to help uncover the structure of these mathematical inventions. We begin by constructing this as a computational object <code>I_vis</code>, a <code>ggraph</code> visualisation of the category.</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">Morphisms</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Objects</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false">Category</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-4" role="tab" aria-controls="tabset-1-4" aria-selected="false">Visualisation</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>I_edges</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 3 × 3
+  from  to    edge_label
+  &lt;chr&gt; &lt;chr&gt; &lt;chr&gt;     
+1 G     I     GI        
+2 I     H     IH        
+3 H     G     HG        </code></pre>
+</div>
+</div>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>I_nodes</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 3 × 3
+  node  node_label     node_type     
+  &lt;chr&gt; &lt;chr&gt;          &lt;chr&gt;         
+1 G     Governance (G) Governance (G)
+2 I     Intention (I)  Intention (I) 
+3 H     Heuristic (H)  Heuristic (H) </code></pre>
+</div>
+</div>
+</div>
+<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>I_graph</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tbl_graph: 3 nodes and 3 edges
+#
+# A directed simple graph with 1 component
+#
+# Node Data: 3 × 3 (active)
+  name  node_label     node_type     
+  &lt;chr&gt; &lt;chr&gt;          &lt;chr&gt;         
+1 G     Governance (G) Governance (G)
+2 I     Intention (I)  Intention (I) 
+3 H     Heuristic (H)  Heuristic (H) 
+#
+# Edge Data: 3 × 3
+   from    to edge_label
+  &lt;int&gt; &lt;int&gt; &lt;chr&gt;     
+1     1     2 GI        
+2     2     3 IH        
+3     3     1 HG        </code></pre>
+</div>
+</div>
+</div>
+<div id="tabset-1-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-4-tab">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>I_vis</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="math_files/figure-html/unnamed-chunk-8-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p>To show this is true, we will need to:</p>
+<ol type="1">
+<li>Define a structured intelligence system.</li>
+<li>Define <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℐ</mi><annotation encoding="application/x-tex">\mathcal I</annotation></semantics></math> as a category.</li>
+<li>Show <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℐ</mi><annotation encoding="application/x-tex">\mathcal I</annotation></semantics></math> is a discrete topological dynamical system.</li>
+<li>Show how <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℐ</mi><annotation encoding="application/x-tex">\mathcal I</annotation></semantics></math> governs emergence in a structured intelligence system.</li>
+</ol>
+</section>
+</section>
+<section id="definition-structured-intelligence-system" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Definition: Structured intelligence system</h1>
+<p>A <strong>structured intelligence system</strong> <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math> is a directed graph <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>H</mi><mo>∪</mo><mi>A</mi><mo>,</mo><mi>M</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">S = (H \cup A, M)</annotation></semantics></math> representing humans and automata interoperating toward some intention with objects and morphisms.</p>
+<ul>
+<li>Nodes <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>H</mi><mo>∪</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">H \cup A</annotation></semantics></math> are understood as collection of humans <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi><mo>∈</mo><mi>H</mi></mrow><annotation encoding="application/x-tex">h \in H</annotation></semantics></math> that interoperate with automate <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>∈</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">a \in A</annotation></semantics></math> toward a human-defined intention.</li>
+<li>Edge-relations <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math> representing the binary interoperations of the elements in the system:
+<ul>
+<li><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi><mi>h</mi></mrow><annotation encoding="application/x-tex">hh</annotation></semantics></math>: Humans talk, reflect, interact.</li>
+<li><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi><mi>a</mi></mrow><annotation encoding="application/x-tex">ha</annotation></semantics></math>: Human instantiates heuristics on automata with intention.</li>
+<li><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mi>a</mi></mrow><annotation encoding="application/x-tex">aa</annotation></semantics></math>: Automata stack without human intervention.</li>
+<li><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mi>h</mi></mrow><annotation encoding="application/x-tex">ah</annotation></semantics></math>: Automaton outputs results of heuristics applied to input.</li>
+</ul></li>
+</ul>
+<section id="example-structured-intelligence-system" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="example-structured-intelligence-system"><span class="header-section-number">2.1</span> Example: Structured intelligence system</h2>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true">Humans and automatons</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false">Edges</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-3" role="tab" aria-controls="tabset-2-3" aria-selected="false">Nodes</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-4" role="tab" aria-controls="tabset-2-4" aria-selected="false">Graph</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-5" role="tab" aria-controls="tabset-2-5" aria-selected="false">Visualisation</a></li></ul>
+<div class="tab-content">
+<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
+<p>Suppose we have a data scientist <code>h_1</code></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>humans</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "h_1" "h_2" "h_3"</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>automatons</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "a_1" "a_2"</code></pre>
+</div>
+</div>
+</div>
+<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>S_edges</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 11 × 3
+   from  to    edge_label          
+   &lt;chr&gt; &lt;chr&gt; &lt;chr&gt;               
+ 1 h_11  a_11  writes report       
+ 2 h_11  a_21  shares data         
+ 3 h_11  h_2   describes data      
+ 4 a_11  h_12  compiles document   
+ 5 a_21  h_2   receives data       
+ 6 h_2   a_22  shares analysis     
+ 7 a_22  h_12  receives analysis   
+ 8 h_2   h_12  reports analysis    
+ 9 h_12  a_12  incorporates analyis
+10 a_12  h_13  compiles report     
+11 h_13  h_3   reports results     </code></pre>
+</div>
+</div>
+</div>
+<div id="tabset-2-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-3-tab">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>S_nodes </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 9 × 3
+  node  node_type     node_label
+  &lt;chr&gt; &lt;chr&gt;         &lt;chr&gt;     
+1 h_11  Human (h)     h_11      
+2 a_11  Automaton (a) a_11      
+3 a_21  Automaton (a) a_21      
+4 h_2   Human (h)     h_2       
+5 a_22  Automaton (a) a_22      
+6 h_12  Human (h)     h_12      
+7 a_12  Automaton (a) a_12      
+8 h_13  Human (h)     h_13      
+9 h_3   Human (h)     h_3       </code></pre>
+</div>
+</div>
+</div>
+<div id="tabset-2-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-4-tab">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>S_graph</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tbl_graph: 9 nodes and 11 edges
+#
+# A directed acyclic simple graph with 1 component
+#
+# Node Data: 9 × 3 (active)
+  name  node_type     node_label
+  &lt;chr&gt; &lt;chr&gt;         &lt;chr&gt;     
+1 h_11  Human (h)     h_11      
+2 a_11  Automaton (a) a_11      
+3 a_21  Automaton (a) a_21      
+4 h_2   Human (h)     h_2       
+5 a_22  Automaton (a) a_22      
+6 h_12  Human (h)     h_12      
+7 a_12  Automaton (a) a_12      
+8 h_13  Human (h)     h_13      
+9 h_3   Human (h)     h_3       
+#
+# Edge Data: 11 × 3
+   from    to edge_label    
+  &lt;int&gt; &lt;int&gt; &lt;chr&gt;         
+1     1     2 writes report 
+2     1     3 shares data   
+3     1     4 describes data
+# ℹ 8 more rows</code></pre>
+</div>
+</div>
+</div>
+<div id="tabset-2-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-5-tab">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>S_vis </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="math_files/figure-html/unnamed-chunk-20-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="terms-in-s" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="terms-in-s"><span class="header-section-number">2.2</span> Terms in <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math></h2>
+<section id="definition-humans" class="level3" data-number="2.2.1">
+<h3 data-number="2.2.1" class="anchored" data-anchor-id="definition-humans"><span class="header-section-number">2.2.1</span> Definition: Humans</h3>
+<p>We invoke <strong>human</strong> in the conventional sense of the term and note that humans self-generate intention.</p>
+</section>
+<section id="definition-intention" class="level3" data-number="2.2.2">
+<h3 data-number="2.2.2" class="anchored" data-anchor-id="definition-intention"><span class="header-section-number">2.2.2</span> Definition: Intention</h3>
+<p>An <strong>intention</strong> requires human thought and is self-generating.</p>
+</section>
+<section id="definition-automata" class="level3" data-number="2.2.3">
+<h3 data-number="2.2.3" class="anchored" data-anchor-id="definition-automata"><span class="header-section-number">2.2.3</span> Definition: Automata</h3>
+<p>An automaton <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>:</mo><mi>I</mi><mo>×</mo><mi>R</mi><mo>↦</mo><mi>O</mi></mrow><annotation encoding="application/x-tex">a : I \times R \mapsto O</annotation></semantics></math> transforms human intention <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>i</mi><mo>∈</mo><mi>I</mi></mrow><annotation encoding="application/x-tex">i \in I</annotation></semantics></math> and heuristics (rules) <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>∈</mo><mi>R</mi></mrow><annotation encoding="application/x-tex">r \in R</annotation></semantics></math> written by humans to some output <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>o</mi><mo>∈</mo><mi>O</mi></mrow><annotation encoding="application/x-tex">o \in O</annotation></semantics></math>. An automata does not have intention innately, only rules.</p>
+</section>
+</section>
+<section id="section" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="section"><span class="header-section-number">2.3</span> </h2>
+</section>
+<section id="definition-the-three-laws-of-robotics" class="level2" data-number="2.4">
+<h2 data-number="2.4" class="anchored" data-anchor-id="definition-the-three-laws-of-robotics"><span class="header-section-number">2.4</span> Definition: The Three Laws of Robotics</h2>
+<p>As defined by Asimov in <em>I, Robot</em> <span class="citation" data-cites="asimov_i_1950">(<a href="#ref-asimov_i_1950" role="doc-biblioref">Asimov 1950</a>)</span>.</p>
+<ol type="1">
+<li>A robot may not injure a human being or, through inaction, allow a human being to come to harm.</li>
+<li>A robot must obey orders given it by human beings except where such orders would conflict with the First Law.</li>
+<li>A robot must protect its own existence as long as such protection does not conflict with the First or Second Law.</li>
+</ol>
+</section>
+<section id="definition-the-three-laws-of-structured-intelligence-governance" class="level2" data-number="2.5">
+<h2 data-number="2.5" class="anchored" data-anchor-id="definition-the-three-laws-of-structured-intelligence-governance"><span class="header-section-number">2.5</span> Definition: The three laws of structured intelligence governance</h2>
+<p>Adapted from <a href="#definition-the-three-laws-of-robotics">the three laws</a>.</p>
+<ol type="1">
+<li>A structured intelligence system may not injure a human being or, through inaction, allow a human being to come to harm.</li>
+<li>A structured intelligence system must obey orders given it by human beings except where such orders would conflict with the First Law.</li>
+<li>A structured intelligence system must protect its own existence as long as such protection does not conflict with the First or Second Law.</li>
+</ol>
+</section>
+</section>
+<section id="category-of-structured-intelligence-governance" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Category of structured intelligence governance</h1>
+</section>
+<section id="category-of-intelligence-governance" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Category of intelligence governance</h1>
+</section>
+<section id="conjecture-big-tech-is-violation-of-the-laws" class="level1" data-number="5">
 
 
 
-</main> <!-- /main -->
+
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">5 Conjecture: Big tech is violation of the laws</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-asimov_i_1950" class="csl-entry" role="listitem">
+Asimov, Isaac. 1950. <em>I, Robot</em>. Dennis Dobson.
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

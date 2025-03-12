@@ -1,0 +1,8 @@
+---
+title: singularities
+---
+
+This document is currently being drafted in:
+
+1. [the math bit](math.qmd)
+2. [the pop bit](pop.qmd)

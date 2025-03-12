@@ -7,7 +7,371 @@ author:
       - name: Good Enough Data & Systems Lab
 date: '`r Sys.Date()`'
 bibliography: singularities.bib
+number-sections: true
+html-math-method: mathml
 ---
 
---> in  development
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  echo=FALSE,
+  message=FALSE,
+  error=TRUE
+)
+
+library(tidyverse)
+library(ggraph)
+library(tidygraph)
+library(ggthemes)
+library(latex2exp)
+
+
+```
+
+```{r theme}
+
+button_theme <- list(
+  theme_tufte(),  
+  theme(
+    axis.text = element_blank(),
+    axis.ticks = element_blank(),
+    legend.position = "none",
+    plot.title = element_text(family = "courier"),
+    plot.caption = element_text(family = "courier")
+  ),
+  labs(
+    x = "",
+    y = ""
+  ),
+  scale_colour_brewer(palette = "Dark2")
+)
+
+button_graph <- list(
+  # expects graph
+  geom_edge_link(
+    aes(label = edge_label),
+    alpha=0.7,
+    arrow = arrow(),
+    colour = "darkgrey",
+    label_colour = "darkgrey",
+    label_alpha = 0.7
+    ),
+  geom_node_point(
+    aes(colour = node_type)
+  ),
+  geom_node_text(
+    aes(label  = node_label),
+    nudge_y = -0.1,
+    repel=TRUE,
+    family = "courier"
+    )
+)
+
+```
+
+## Work in progress
+
+Without ways of bounding and measuring how technology affects us, we have no chance of governing the choas of technology in our lives.
+[
+  Although in the experimental paper I made use of LLMs, at some point a human needs to unplug to do math. This is the typed version of what I wrote in my notebook. The writing and ideas in this document is *entirely* human emergence. 
+]{.aside}
+
+I want to know what we know, so that we know how much we don't know. Because right now I think we  all have structured intelligence governance levels in **violation** of the laws of robotics. 
+
+Why aren't there fines for this? Maybe because no one knows how to measure it.
+
+
+## Help wanted
+
+Look, I'm just a data engineer who studied a bit of math a while back. 
+
+But, this argument only uses first principles. 
+
+- Is it fundamentally flawed? Probably. By all means, poke holes, I'm having fun learning category theory for the first time in any case.
+- Is this reinventing the wheel? I find it hard to think I would come up with something novel.
+- If it is feasible, why aren't we measuring the instability of structured intelligence systems, like, *yesterday*?! 
+
+# Conjecture 
+
+The category $\mathcal{I}$ of intelligence governance is a discrete topological dynamical system that governs emergence for human wellbeing in a structured intelligence system. 
+
+## Example: Category of intelligence governance
+
+We will use code examples to help uncover the structure of these mathematical inventions. We begin by constructing this as a computational object `I_vis`, a `ggraph` visualisation  of the category.
+
+::: {.panel-tabset}
+
+
+## Morphisms
+
+```{r}
+
+I_edges <- tribble(
+  ~from,  ~to,  
+  "G",    "I",
+  "I",    "H",
+  "H",    "G",
+) |>
+  mutate(
+    edge_label = str_c(from, to)
+  )
+
+```
+
+```{r echo=TRUE}
+I_edges
+```
+
+
+## Objects
+
+
+```{r error=TRUE}
+
+I_nodes <- I_edges |>
+  select(node = from)  |>
+  mutate(
+    node_label =   
+    case_when(
+      node == "G" ~ "Governance (G)",
+      node == "I" ~ "Intention (I)",
+      node == "H" ~ "Heuristic (H)" 
+    ),
+    node_type = node_label 
+  )
+
+```
+
+
+```{r echo=TRUE}
+I_nodes
+```
+
+## Category
+
+```{r}
+
+I_graph <- I_edges |>
+  as_tbl_graph() |>
+  activate(nodes) |>
+  left_join(I_nodes, by = c("name" = "node"))
+
+
+```
+
+
+```{r echo=TRUE}
+I_graph
+```
+
+## Visualisation
+
+
+```{r}
+
+I_vis <- I_graph |>
+  ggraph() +
+  button_graph +
+  button_theme +
+  labs(
+    title = "Category of Intelligence Governance"
+  ) 
+
+
+
+```
+
+
+```{r echo=TRUE}
+I_vis
+
+```
+
+:::
+
+
+To show this is true,  we will need to:
+
+
+1. Define a structured intelligence system.
+2. Define $\mathcal I$ as a category.
+3. Show $\mathcal I$ is a discrete topological dynamical system.
+4. Show how $\mathcal I$ governs emergence in a structured intelligence system.
+
+# Definition: Structured intelligence system
+
+A **structured intelligence system** $S$ is a directed graph $S = (H \cup A, M)$ representing humans and automata interoperating toward some intention with objects and morphisms.
+
+- Nodes $H \cup A$ are understood as collection of humans $h \in H$ that interoperate with automate $a \in A$ toward a human-defined intention.
+- Edge-relations $M$ representing the binary interoperations of the elements in the system:
+  - $hh$: Humans talk, reflect, interact.
+  - $ha$: Human instantiates heuristics on automata with intention.
+  - $aa$: Automata stack without human intervention.
+  - $ah$: Automaton outputs results of heuristics applied to input.
+
+## Example: Structured intelligence system
+
+::: {.panel-tabset}
+
+## Humans and automatons
+
+Suppose we have a data scientist `h_1`  
+
+```{r}
+humans <- paste("h", seq(1:3), sep="_")
+
+```
+
+```{r echo=TRUE}
+humans
+```
+
+```{r}
+automatons <- paste("a", seq(1:2), sep="_")
+
+```
+
+```{r echo=TRUE}
+automatons
+```
+
+## Edges
+
+```{r}
+
+
+S_edges <- tribble(
+  ~from,  ~to,   ~edge_label,
+  "h_11",  "a_11", "writes report",  
+  "h_11",  "a_21", "shares data",
+  "h_11",   "h_2",  "describes data",  
+  "a_11",  "h_12", "compiles document",
+  "a_21",  "h_2", "receives data",
+  "h_2",  "a_22", "shares analysis",
+  "a_22",  "h_12", "receives analysis",
+  "h_2",  "h_12", "reports analysis",
+  "h_12", "a_12",  "incorporates analyis",
+  "a_12",   "h_13", "compiles report",
+  "h_13", "h_3",  "reports results"
+)
+
+```
+
+```{r echo=TRUE}
+S_edges
+
+```
+
+## Nodes
+
+```{r}
+
+S_nodes <- S_edges |>
+  select(node = from)  |>
+  # ensure unique now necessary
+  bind_rows(
+    S_edges |> select(node = to)
+  ) |>
+  distinct() |>
+  mutate(
+    # needed to distinguish between type and node
+    node_type =   
+    case_when(
+      str_detect(node, "h_") ~ "Human (h)",
+      str_detect(node, "a_") ~ "Automaton (a)"      
+    ),
+    node_label = node 
+  )
+
+
+
+```
+
+```{r echo=TRUE}
+S_nodes 
+
+```
+
+
+## Graph
+
+```{r}
+S_graph <- S_edges |>
+  as_tbl_graph() |>
+  activate(nodes) |>
+  left_join(S_nodes, by = c("name" = "node")) 
+
+```
+
+```{r echo=TRUE}
+
+S_graph
+
+```
+
+## Visualisation
+
+
+```{r}
+
+S_vis <- S_graph |>
+  ggraph() +
+  button_graph +
+  button_theme +
+  labs(
+    title = "Structured Intelligence System",
+    caption = "A structured intelligence system describes humans and automata and their interoperations." 
+  ) 
+
+
+
+```
+
+
+```{r echo=TRUE}
+#| fig-height: 12
+
+S_vis 
+
+```
+:::
+
+
+## Terms in $S$
+
+### Definition: Humans
+
+We invoke **human** in the conventional sense of the term and note that humans self-generate intention.
+
+### Definition: Intention
+
+An **intention** requires human thought and is self-generating.
+
+### Definition: Automata
+
+An automaton $a : I \times R \mapsto O$ transforms human intention $i \in I$ and heuristics (rules) $r \in R$ written by humans to some output $o \in O$. An automata does not have intention innately, only rules.
+
+## 
+
+## Definition: The Three Laws of Robotics
+
+As defined by Asimov in *I, Robot* [@asimov_i_1950].
+
+1. A robot may not injure a human being or, through inaction, allow a human being to come to harm.
+2. A robot must obey orders given it by human beings except where such orders would conflict with the First Law.
+3. A robot must protect its own existence as long as such protection does not conflict with the First or Second Law.
+
+
+## Definition: The three laws of structured intelligence governance
+
+Adapted from [the three laws](#definition-the-three-laws-of-robotics).
+
+1. A structured intelligence system may not injure a human being or, through inaction, allow a human being to come to harm.
+2. A structured intelligence system must obey orders given it by human beings except where such orders would conflict with the First Law.
+3. A structured intelligence system must protect its own existence as long as such protection does not conflict with the First or Second Law.
+
+# Category of structured intelligence governance
+
+# Category of intelligence governance
+
+# Conjecture: Big tech is violation of the laws
 

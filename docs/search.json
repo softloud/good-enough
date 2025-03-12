@@ -536,7 +536,7 @@
     "href": "math.html",
     "title": "The Math Bit",
     "section": "",
-    "text": "–&gt; in development"
+    "text": "Without ways of bounding and measuring how technology affects us, we have no chance of governing the choas of technology in our lives. Although in the experimental paper I made use of LLMs, at some point a human needs to unplug to do math. This is the typed version of what I wrote in my notebook. The writing and ideas in this document is entirely human emergence.\nI want to know what we know, so that we know how much we don’t know. Because right now I think we all have structured intelligence governance levels in violation of the laws of robotics.\nWhy aren’t there fines for this? Maybe because no one knows how to measure it."
   },
   {
     "objectID": "singularities.html#draft-is-being-restructured-hard-to-read-from-here",
@@ -551,5 +551,89 @@
     "title": "Governing Chaos in Ethical Singularities",
     "section": "Draft is being restructured, see above",
     "text": "Draft is being restructured, see above\n\nIt’s perfectly legit to just scroll this. Seriously. It’s a work in progress, and it’s on brand for me: it’s a lot.\n\n\n\n\nwikipedia\n\n\n\nMooncake1 and I believe the future of research is living, nothing is ever completed; an idea is iterative, knowledge is an ecosystem of singularities that may include, but do not comprise, a manuscript. Ceci n’est pas un manuscrit.\n\n\nThis is a living document; a singularity of a generative mathematical proof. All mathematical definitions and arguments are subject to ethically generative change. Thus the contextual arguments in the manuscript are subject to change. This mansucript is generative, but governed.\n\n\nMath anxiety (Luttenberger, Wimmer, and Paechter 2018) trigger warning! If you do not have any formal training in logic, it will still flow if you skip the formal definition of singularities."
+  },
+  {
+    "objectID": "math.html#automata",
+    "href": "math.html#automata",
+    "title": "The Math Bit",
+    "section": "3.2 Automata",
+    "text": "3.2 Automata\nAn automaton $a : I R O $ transforms human intention i∈Ii \\in I and heuristics (rules) r∈Rr \\in R to some output o∈Oo \\in O received by human"
+  },
+  {
+    "objectID": "math.html#humans",
+    "href": "math.html#humans",
+    "title": "The Math Bit",
+    "section": "3.1 Humans",
+    "text": "3.1 Humans\nWe invoke human in the conventional sense of the term."
+  },
+  {
+    "objectID": "math.html#terms-in-s",
+    "href": "math.html#terms-in-s",
+    "title": "The Math Bit",
+    "section": "2.2 Terms in SS",
+    "text": "2.2 Terms in SS\n\n2.2.1 Definition: Humans\nWe invoke human in the conventional sense of the term and note that humans self-generate intention.\n\n\n2.2.2 Definition: Intention\nAn intention requires human thought and is self-generating.\n\n\n2.2.3 Definition: Automata\nAn automaton a:I×R↦Oa : I \\times R \\mapsto O transforms human intention i∈Ii \\in I and heuristics (rules) r∈Rr \\in R written by humans to some output o∈Oo \\in O. An automata does not have intention innately, only rules."
+  },
+  {
+    "objectID": "math.html#example-structured-intelligence-system",
+    "href": "math.html#example-structured-intelligence-system",
+    "title": "The Math Bit",
+    "section": "2.1 Example: Structured intelligence system",
+    "text": "2.1 Example: Structured intelligence system\n\nHumans and automatonsEdgesNodesGraphVisualisation\n\n\nSuppose we have a data scientist h_1\n\nhumans\n\n[1] \"h_1\" \"h_2\" \"h_3\"\n\n\n\nautomatons\n\n[1] \"a_1\" \"a_2\"\n\n\n\n\n\nS_edges\n\n# A tibble: 11 × 3\n   from  to    edge_label          \n   &lt;chr&gt; &lt;chr&gt; &lt;chr&gt;               \n 1 h_11  a_11  writes report       \n 2 h_11  a_21  shares data         \n 3 h_11  h_2   describes data      \n 4 a_11  h_12  compiles document   \n 5 a_21  h_2   receives data       \n 6 h_2   a_22  shares analysis     \n 7 a_22  h_12  receives analysis   \n 8 h_2   h_12  reports analysis    \n 9 h_12  a_12  incorporates analyis\n10 a_12  h_13  compiles report     \n11 h_13  h_3   reports results     \n\n\n\n\n\nS_nodes \n\n# A tibble: 9 × 3\n  node  node_type     node_label\n  &lt;chr&gt; &lt;chr&gt;         &lt;chr&gt;     \n1 h_11  Human (h)     h_11      \n2 a_11  Automaton (a) a_11      \n3 a_21  Automaton (a) a_21      \n4 h_2   Human (h)     h_2       \n5 a_22  Automaton (a) a_22      \n6 h_12  Human (h)     h_12      \n7 a_12  Automaton (a) a_12      \n8 h_13  Human (h)     h_13      \n9 h_3   Human (h)     h_3       \n\n\n\n\n\nS_graph\n\n# A tbl_graph: 9 nodes and 11 edges\n#\n# A directed acyclic simple graph with 1 component\n#\n# Node Data: 9 × 3 (active)\n  name  node_type     node_label\n  &lt;chr&gt; &lt;chr&gt;         &lt;chr&gt;     \n1 h_11  Human (h)     h_11      \n2 a_11  Automaton (a) a_11      \n3 a_21  Automaton (a) a_21      \n4 h_2   Human (h)     h_2       \n5 a_22  Automaton (a) a_22      \n6 h_12  Human (h)     h_12      \n7 a_12  Automaton (a) a_12      \n8 h_13  Human (h)     h_13      \n9 h_3   Human (h)     h_3       \n#\n# Edge Data: 11 × 3\n   from    to edge_label    \n  &lt;int&gt; &lt;int&gt; &lt;chr&gt;         \n1     1     2 writes report \n2     1     3 shares data   \n3     1     4 describes data\n# ℹ 8 more rows\n\n\n\n\n\nS_vis"
+  },
+  {
+    "objectID": "math.html#code-examples",
+    "href": "math.html#code-examples",
+    "title": "The Math Bit",
+    "section": "1.1 Code examples",
+    "text": "1.1 Code examples\nWe will use code examples to help uncover the structure of these mathematical inventions. We begin by constructing this as a computational object I_vis, a ggraph visualisation of the category.\n\nMorphismsObjectsCategoryVisualisation\n\n\n\nI_edges\n\n# A tibble: 3 × 3\n  from  to    edge_label\n  &lt;chr&gt; &lt;chr&gt; &lt;chr&gt;     \n1 G     I     \"\"        \n2 I     H     \"\"        \n3 H     G     \"\"        \n\n\n\n\n\nI_nodes\n\n# A tibble: 3 × 3\n  node  node_label     node_type     \n  &lt;chr&gt; &lt;chr&gt;          &lt;chr&gt;         \n1 G     Governance (G) Governance (G)\n2 I     Intention (I)  Intention (I) \n3 H     Heuristic (H)  Heuristic (H) \n\n\n\n\n\nI_graph\n\n# A tbl_graph: 3 nodes and 3 edges\n#\n# A directed simple graph with 1 component\n#\n# Node Data: 3 × 3 (active)\n  name  node_label     node_type     \n  &lt;chr&gt; &lt;chr&gt;          &lt;chr&gt;         \n1 G     Governance (G) Governance (G)\n2 I     Intention (I)  Intention (I) \n3 H     Heuristic (H)  Heuristic (H) \n#\n# Edge Data: 3 × 3\n   from    to edge_label\n  &lt;int&gt; &lt;int&gt; &lt;chr&gt;     \n1     1     2 \"\"        \n2     2     3 \"\"        \n3     3     1 \"\"        \n\n\n\n\n\nI_vis\n\n\n\n\n\n\n\n\n\n\n\nTo show this is true, we will need to:\n\nDefine a structured intelligence system.\nDefine ℐ\\mathcal I as a category.\nShow ℐ\\mathcal I is a discrete topological dynamical system.\nShow how ℐ\\mathcal I governs emergence in a structured intelligence system."
+  },
+  {
+    "objectID": "math.html#example-category-of-intelligence-governance",
+    "href": "math.html#example-category-of-intelligence-governance",
+    "title": "The Math Bit",
+    "section": "1.1 Example: Category of intelligence governance",
+    "text": "1.1 Example: Category of intelligence governance\nWe will use code examples to help uncover the structure of these mathematical inventions. We begin by constructing this as a computational object I_vis, a ggraph visualisation of the category.\n\nMorphismsObjectsCategoryVisualisation\n\n\n\nI_edges\n\n# A tibble: 3 × 3\n  from  to    edge_label\n  &lt;chr&gt; &lt;chr&gt; &lt;chr&gt;     \n1 G     I     GI        \n2 I     H     IH        \n3 H     G     HG        \n\n\n\n\n\nI_nodes\n\n# A tibble: 3 × 3\n  node  node_label     node_type     \n  &lt;chr&gt; &lt;chr&gt;          &lt;chr&gt;         \n1 G     Governance (G) Governance (G)\n2 I     Intention (I)  Intention (I) \n3 H     Heuristic (H)  Heuristic (H) \n\n\n\n\n\nI_graph\n\n# A tbl_graph: 3 nodes and 3 edges\n#\n# A directed simple graph with 1 component\n#\n# Node Data: 3 × 3 (active)\n  name  node_label     node_type     \n  &lt;chr&gt; &lt;chr&gt;          &lt;chr&gt;         \n1 G     Governance (G) Governance (G)\n2 I     Intention (I)  Intention (I) \n3 H     Heuristic (H)  Heuristic (H) \n#\n# Edge Data: 3 × 3\n   from    to edge_label\n  &lt;int&gt; &lt;int&gt; &lt;chr&gt;     \n1     1     2 GI        \n2     2     3 IH        \n3     3     1 HG        \n\n\n\n\n\nI_vis\n\n\n\n\n\n\n\n\n\n\n\nTo show this is true, we will need to:\n\nDefine a structured intelligence system.\nDefine ℐ\\mathcal I as a category.\nShow ℐ\\mathcal I is a discrete topological dynamical system.\nShow how ℐ\\mathcal I governs emergence in a structured intelligence system."
+  },
+  {
+    "objectID": "math.html#work-in-progress",
+    "href": "math.html#work-in-progress",
+    "title": "The Math Bit",
+    "section": "",
+    "text": "Without ways of bounding and measuring how technology affects us, we have no chance of governing the choas of technology in our lives. Although in the experimental paper I made use of LLMs, at some point a human needs to unplug to do math. This is the typed version of what I wrote in my notebook. The writing and ideas in this document is entirely human emergence.\nI want to know what we know, so that we know how much we don’t know. Because right now I think we all have structured intelligence governance levels in violation of the laws of robotics.\nWhy aren’t there fines for this? Maybe because no one knows how to measure it."
+  },
+  {
+    "objectID": "math.html#definition-the-three-laws-of-robotics",
+    "href": "math.html#definition-the-three-laws-of-robotics",
+    "title": "The Math Bit",
+    "section": "2.4 Definition: The Three Laws of Robotics",
+    "text": "2.4 Definition: The Three Laws of Robotics\nAs defined by Asimov in I, Robot (Asimov 1950).\n\nA robot may not injure a human being or, through inaction, allow a human being to come to harm.\nA robot must obey orders given it by human beings except where such orders would conflict with the First Law.\nA robot must protect its own existence as long as such protection does not conflict with the First or Second Law."
+  },
+  {
+    "objectID": "math.html#help-wanted",
+    "href": "math.html#help-wanted",
+    "title": "The Math Bit",
+    "section": "0.2 Help wanted",
+    "text": "0.2 Help wanted\nLook, I’m just a data engineer who studied a bit of math a while back.\nBut, this argument only uses first principles.\n\nIs it fundamentally flawed? Probably. By all means, poke holes, I’m having fun learning category theory for the first time in any case.\nIs this reinventing the wheel? I find it hard to think I would come up with something novel.\nIf it is feasible, why aren’t we measuring the instability of structured intelligence systems, like, yesterday?!"
+  },
+  {
+    "objectID": "math.html#section",
+    "href": "math.html#section",
+    "title": "The Math Bit",
+    "section": "2.3 ",
+    "text": "2.3"
+  },
+  {
+    "objectID": "math.html#definition-the-three-laws-of-structured-intelligence-governance",
+    "href": "math.html#definition-the-three-laws-of-structured-intelligence-governance",
+    "title": "The Math Bit",
+    "section": "2.5 Definition: The three laws of structured intelligence governance",
+    "text": "2.5 Definition: The three laws of structured intelligence governance\nAdapted from the three laws.\n\nA structured intelligence system may not injure a human being or, through inaction, allow a human being to come to harm.\nA structured intelligence system must obey orders given it by human beings except where such orders would conflict with the First Law.\nA structured intelligence system must protect its own existence as long as such protection does not conflict with the First or Second Law."
+  },
+  {
+    "objectID": "singularities-placeholder.html",
+    "href": "singularities-placeholder.html",
+    "title": "singularities",
+    "section": "",
+    "text": "This document is currently being drafted in:\n\nthe math bit\nthe pop bit"
   }
 ]

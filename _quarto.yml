@@ -7,7 +7,7 @@ website:
   navbar:
     left: 
       - text: Singularities
-        href: singularities.qmd
+        href: singularities-placeholder.qmd
       - text: Singularities as Math
         href: math.qmd
       - text: Questionable Analytical Observations
