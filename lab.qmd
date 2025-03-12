@@ -15,7 +15,7 @@ Misunderstood in methodological data governance, such as [FAIR data principles](
 
 Good Enough Data & Systems Lab takes a metascientific approach to computational systems, considering what practices within development are questionable. For example, it's questionable to ignore the wellbeing  of people who work with data.
 
-## [Trauma-informed development strategy](career.qmd)
+## [Trauma-informed development strategy](values.qmd)
 
 Good Enough Data & Systems recognises data developers and analysts are traumatised by changes to their job descriptions and disruptions to workflows because of stack development. Change management is privileged as otherwise people who work with data will revert to familiar practices that lead to bad data.
 

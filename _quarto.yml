@@ -8,6 +8,8 @@ website:
     left: 
       - text: Singularities
         href: singularities.qmd
+      - text: Singularities as Math
+        href: math.qmd
       - text: Questionable Analytical Observations
         href: qao.qmd
       - text: Singularities in Pop Culture

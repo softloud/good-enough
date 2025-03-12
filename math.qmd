@@ -1,0 +1,13 @@
+---
+title: The Math Bit
+author: 
+  - name: Dr Charles T. Gray, Datapunk
+    orcid: 0000-0002-9978-011X
+    affiliations:
+      - name: Good Enough Data & Systems Lab
+date: '`r Sys.Date()`'
+bibliography: singularities.bib
+---
+
+--> in  development
+
