@@ -686,10 +686,62 @@ e : \mathtt{ob}(\mathcal G) \cup \mathtt{hom}(\mathcal G) \mapsto \{
 <section id="visualisation-category-of-structured-intelligence-governance" class="level2" data-number="4.2">
 <h2 data-number="4.2" class="anchored" data-anchor-id="visualisation-category-of-structured-intelligence-governance"><span class="header-section-number">4.2</span> Visualisation: Category of structured intelligence governance</h2>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true">Edges</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true">Edges</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false">Nodes</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-3" role="tab" aria-controls="tabset-3-3" aria-selected="false">Graph</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-4" role="tab" aria-controls="tabset-3-4" aria-selected="false">Visualisation</a></li></ul>
 <div class="tab-content">
 <div id="tabset-3-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-3-1-tab">
-
+<div class="cell">
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>G_edges</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 2 × 4
+  from  to    edge_emergence edge_label
+  &lt;chr&gt; &lt;chr&gt; &lt;chr&gt;          &lt;chr&gt;     
+1 H     A     expected       HA        
+2 A     H     miscreant      AH        </code></pre>
+</div>
+</div>
+</div>
+<div id="tabset-3-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-2-tab">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>G_nodes</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 2 × 4
+  node  node_type node_emergence node_label
+  &lt;chr&gt; &lt;chr&gt;     &lt;chr&gt;          &lt;chr&gt;     
+1 H     H         expected       H         
+2 A     A         miscreant      A         </code></pre>
+</div>
+</div>
+</div>
+<div id="tabset-3-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-3-tab">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>G_graph</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tbl_graph: 2 nodes and 2 edges
+#
+# A directed simple graph with 1 component
+#
+# Node Data: 2 × 4 (active)
+  name  node_type node_emergence node_label
+  &lt;chr&gt; &lt;chr&gt;     &lt;chr&gt;          &lt;chr&gt;     
+1 H     H         expected       H         
+2 A     A         miscreant      A         
+#
+# Edge Data: 2 × 4
+   from    to edge_emergence edge_label
+  &lt;int&gt; &lt;int&gt; &lt;chr&gt;          &lt;chr&gt;     
+1     1     2 expected       HA        
+2     2     1 miscreant      AH        </code></pre>
+</div>
+</div>
+</div>
+<div id="tabset-3-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-4-tab">
+<div class="cell">
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning in matrix(c(0, rep(0, dim - 1), 1, rep(0, dim - 2)), 2, dim, byrow =
+TRUE): data length [3] is not a sub-multiple or multiple of the number of rows
+[2]</code></pre>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -715,10 +767,11 @@ e : \mathtt{ob}(\mathcal G) \cup \mathtt{hom}(\mathcal G) \mapsto \{
 <section id="visualisation-of-cycle-of-intelligence-governance" class="level2" data-number="5.2">
 <h2 data-number="5.2" class="anchored" data-anchor-id="visualisation-of-cycle-of-intelligence-governance"><span class="header-section-number">5.2</span> Visualisation of cycle of intelligence governance</h2>
 <div class="cell">
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>I_vis</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="math_files/figure-html/unnamed-chunk-24-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="math_files/figure-html/unnamed-chunk-30-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>

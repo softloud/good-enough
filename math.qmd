@@ -9,6 +9,7 @@ date: '`r Sys.Date()`'
 bibliography: singularities.bib
 number-sections: true
 html-math-method: mathml
+
 ---
 
 ```{r setup, include=FALSE}
@@ -81,6 +82,26 @@ button_graph <- list(
     )
 )
 
+button_graph_k2 <- list(
+  geom_edge_arc(
+    aes(
+      label = edge_label,
+      colour = edge_emergence),
+    alpha=0.7,
+    arrow = arrow(),
+    label_alpha = 0.7
+    ),
+  geom_node_point(
+    aes(shape = node_type, colour = node_emergence)
+  ),
+  geom_node_text(
+    aes(label  = node_label),
+    nudge_y = -0.1,
+    repel=TRUE
+    )
+)
+
+
 ```
 
 ## Work in progress
@@ -146,7 +167,7 @@ We begin by constructing the digraph $I$ as a computational object `I_vis`, a `g
 
 ## Edges
 
-```{r}
+```{r echo=FALSE}
 
 I_edges <- tribble(
   ~from,  ~to,  ~edge_emergence,
@@ -169,7 +190,7 @@ I_edges
 ## Nodes
 
 
-```{r error=TRUE}
+```{r error=FALSE}
 
 I_nodes <- I_edges |>
   select(node = from)  |>
@@ -194,7 +215,7 @@ I_nodes
 
 ## Graph
 
-```{r}
+```{r echo=FALSE}
 
 I_graph <- I_edges |>
   as_tbl_graph() |>
@@ -212,26 +233,11 @@ I_graph
 ## Visualisation
 
 
-```{r}
+```{r echo=FALSE}
 
 I_vis <- I_graph |>
   ggraph(layout="linear") +
- geom_edge_arc(
-    aes(
-      label = edge_label,
-      colour = edge_emergence),
-    alpha=0.7,
-    arrow = arrow(),
-    label_alpha = 0.7
-    ) +
-  geom_node_point(
-    aes(shape = node_type, colour = node_emergence)
-  ) +
-  geom_node_text(
-    aes(label  = node_label),
-    nudge_y = -0.1,
-    repel=TRUE
-    ) +
+  button_graph_k2 +
   button_theme +
   labs(
     title = "Cycle of intelligence governance"
@@ -290,7 +296,7 @@ A **structured intelligence system** $S$ is a directed graph $S = (H \cup A, M)$
 
 ## Humans and automata
 
-```{r}
+```{r echo=FALSE}
 humans <- paste("h", seq(1:3), sep="_")
 
 ```
@@ -299,7 +305,7 @@ humans <- paste("h", seq(1:3), sep="_")
 humans
 ```
 
-```{r}
+```{r echo=FALSE}
 automata <- paste("a", seq(1:2), sep="_")
 
 ```
@@ -310,7 +316,7 @@ automata
 
 ## Edges
 
-```{r}
+```{r echo=FALSE}
 
 
 S_edges <- tribble(
@@ -349,7 +355,7 @@ S_edges
 
 ## Nodes
 
-```{r}
+```{r echo=FALSE}
 
 S_nodes <- S_edges |>
   select(node = from)  |>
@@ -382,7 +388,7 @@ S_nodes
 
 ## Graph
 
-```{r}
+```{r echo=FALSE}
 S_graph <- S_edges |>
   as_tbl_graph() |>
   activate(nodes) |>
@@ -399,7 +405,7 @@ S_graph
 ## Visualisation
 
 
-```{r}
+```{r echo=FALSE}
 
 S_vis <- S_graph |>
   ggraph() +
@@ -538,11 +544,73 @@ The category [@noauthor_category_2025] $\mathcal G$ of structured intelligence g
 
 ## Edges
 
-```{r}
- 
+```{r echo=FALSE}
+G_edges <- tribble(
+  ~from, ~to, ~edge_emergence,
+  "H",      "A",  "expected",
+  "A",      "H",  "miscreant"
+) |>
+  mutate(edge_label = str_c(from, to))
 
 ```
 
+
+```{r echo=TRUE}
+G_edges
+```
+
+## Nodes
+
+```{r echo = FALSE}
+G_nodes <- tibble(
+  node = c(G_edges$from, G_edges$to)
+) |> distinct() |>
+  mutate(
+    node_type = node,
+    node_emergence = if_else(
+      node == "A",
+      "miscreant",
+      "expected"
+    ),
+    node_label = node
+  )
+
+
+```
+
+```{r echo = TRUE} 
+G_nodes
+```
+
+## Graph
+
+```{r echo = FALSE}
+G_graph <- G_edges |>
+  as_tbl_graph() |>
+  activate(nodes) |>
+  left_join(G_nodes, by = c("name" = "node")) 
+
+```
+
+```{r echo = TRUE} 
+G_graph
+
+```
+
+
+## Visualisation
+
+```{r echo=FALSE}
+G_vis <- G_graph |>
+  ggraph() +
+  button_graph_k2 +
+  button_theme +
+  labs(
+    title = "Category of Structured Intelligence Governance",
+    caption = "A structured intelligence system describes humans and automata and their interoperations." 
+  ) 
+
+```
 
 :::
 
@@ -561,7 +629,7 @@ The cycle of intelligence governence $I$ comprises:
 
 ## Visualisation of cycle of intelligence governance
 
-```{r}
+```{r echo=TRUE}
 I_vis
 ```
 

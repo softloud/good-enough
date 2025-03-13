@@ -417,7 +417,7 @@
     "href": "math.html#visualisation-category-of-structured-intelligence-governance",
     "title": "The Math Bit",
     "section": "4.2 Visualisation: Category of structured intelligence governance",
-    "text": "4.2 Visualisation: Category of structured intelligence governance\n\nEdges"
+    "text": "4.2 Visualisation: Category of structured intelligence governance\n\nEdgesNodesGraphVisualisation\n\n\n\nG_edges\n\n# A tibble: 2 × 4\n  from  to    edge_emergence edge_label\n  &lt;chr&gt; &lt;chr&gt; &lt;chr&gt;          &lt;chr&gt;     \n1 H     A     expected       HA        \n2 A     H     miscreant      AH        \n\n\n\n\n\nG_nodes\n\n# A tibble: 2 × 4\n  node  node_type node_emergence node_label\n  &lt;chr&gt; &lt;chr&gt;     &lt;chr&gt;          &lt;chr&gt;     \n1 H     H         expected       H         \n2 A     A         miscreant      A         \n\n\n\n\n\nG_graph\n\n# A tbl_graph: 2 nodes and 2 edges\n#\n# A directed simple graph with 1 component\n#\n# Node Data: 2 × 4 (active)\n  name  node_type node_emergence node_label\n  &lt;chr&gt; &lt;chr&gt;     &lt;chr&gt;          &lt;chr&gt;     \n1 H     H         expected       H         \n2 A     A         miscreant      A         \n#\n# Edge Data: 2 × 4\n   from    to edge_emergence edge_label\n  &lt;int&gt; &lt;int&gt; &lt;chr&gt;          &lt;chr&gt;     \n1     1     2 expected       HA        \n2     2     1 miscreant      AH        \n\n\n\n\n\n\nWarning in matrix(c(0, rep(0, dim - 1), 1, rep(0, dim - 2)), 2, dim, byrow =\nTRUE): data length [3] is not a sub-multiple or multiple of the number of rows\n[2]"
   },
   {
     "objectID": "math.html#definition-cycle-of-intelligence-governance",
@@ -431,7 +431,7 @@
     "href": "math.html#visualisation-of-cycle-of-intelligence-governance",
     "title": "The Math Bit",
     "section": "5.2 Visualisation of cycle of intelligence governance",
-    "text": "5.2 Visualisation of cycle of intelligence governance"
+    "text": "5.2 Visualisation of cycle of intelligence governance\n\nI_vis"
   },
   {
     "objectID": "math.html#definition-technological-singularity",
