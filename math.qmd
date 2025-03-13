@@ -141,7 +141,16 @@ All I wanted to do was construct a structure-preserving, dimension-reducing livi
 
 # Conjecture 
 
-The digraph $I$ of intelligence governance is a minimal representation of a discrete topological dynamical system that governs emergence for human wellbeing in a structured intelligence system. 
+The digraph $I_S$ of intelligence governance is:
+
+- a minimal representation (K2 cycle) of 
+- a discrete topological dynamical system 
+- that governs emergence
+- defined as a prediction interval in terms of time constraints, 
+-  as well as miscreant and virtuous emergence,
+-  for human wellbeing 
+- in a structured intelligence system $S$ 
+- by way of a governance category $\mathcal G_S$ on $S$. 
 
 ## Intuitive reasoning
 
