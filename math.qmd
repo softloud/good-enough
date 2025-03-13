@@ -655,6 +655,13 @@ A technololgical singularity is when the cycle of intelligence governance displa
 
 ## Definition: Singularity threshold
 
+We will think emergence in terms  of:
+
+1. time constraints;
+2. virtuous emergence;
+3. miscreant emergence.
+
+
 Define the  bounds of a metric on $I_S$ that aggregates the emergence of a structured intelligence system $S$,
 
 $$
