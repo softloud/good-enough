@@ -141,7 +141,7 @@ All I wanted to do was construct a structure-preserving, dimension-reducing livi
 
 # Conjecture 
 
-The digraph $I$ of intelligence governance is a discrete topological dynamical system that governs emergence for human wellbeing in a structured intelligence system. 
+The digraph $I$ of intelligence governance is a minimal representation of a discrete topological dynamical system that governs emergence for human wellbeing in a structured intelligence system. 
 
 ## Intuitive reasoning
 
