@@ -661,11 +661,11 @@ $$
 E = \begin{cases} 
 \infty \hspace{1em} \text{if there exists an object in the preimage of $\mathcal G$ in}\\
 \text{violation of the laws,}\\ 
-g(\alpha n + \beta t + \varepsilon_v (H, I) + \varepsilon_m (H, I)), \text{ otherwise}. 
+g(\theta(n, t) + \varepsilon_v (H, I) + \varepsilon_m (H, I)), \text{ otherwise}. 
 \end{cases}
 $$
 
-where $n$ denotes the periodicity of the cycle in $I$, and $t$ denotes the time elapsed and $g$ denotes a generalised linear regression (ARIMA) model where time is an ordered pair $(n, t) \in N \times T$ of total steps $N$ and time duration of system operation $T$. The other coefficients $\varepsilon$ describe the intelligence governance  measures (in terms of specificity and sensitivity) for miscreant $\varepsilon_m$  and virtuous $\varepsilon_m$ emergence on the objects in the intelligence governance digraph.
+where $n$ denotes the periodicity of the cycle in $I$, and $t$ denotes the time elapsed and $g$ denotes a generalised linear regression (ARIMA) model where time is an ordered pair $(n, t) \in N \times T$ of total steps $N$ and time duration of system operation $T$. The other coefficients $\varepsilon$ describe the intelligence governance  measures (in terms of specificity and sensitivity of emergence) for miscreant $\varepsilon_m$  and virtuous $\varepsilon_m$ emergence on the objects in the intelligence governance digraph.
 
 > yes I'm aware I have a problem with using $I$ twice - sorry for the confusion! 
 
@@ -679,11 +679,11 @@ An unbounded singularity has no measure by which to check the laws; an unbounded
 
 ## Definition: Virtuous singularity
 
-A singularity in which virtuous E >> miscreant E, i.e., $\varepsilon_v \gg \varepsilon_m$.
+A singularity in which virtuous E $\gg$ miscreant E, i.e., $\varepsilon_v \gg \varepsilon_m$, where burn rate (measure of steps completed to estimated time) is above a certain $\theta$ threshold.
 
 ## Definition: Miscreant singularity
 
-A singularity in which miscreant E >> virtuous E, i.e., $\varepsilon_m \gg \varepsilon_v$.
+A singularity in which miscreant E $\gg$ virtuous E, i.e., $\varepsilon_m \gg \varepsilon_v$, where burn rate (measure of steps completed to estimated time) is below a certain $\theta$ threshold.
 
 ## Definition: Singularity violation
 

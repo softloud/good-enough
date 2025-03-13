@@ -459,7 +459,7 @@
     "href": "math.html#definition-singularity-threshold",
     "title": "The Math Bit",
     "section": "7.2 Definition: Singularity threshold",
-    "text": "7.2 Definition: Singularity threshold\nDefine the bounds of a metric on ISI_S that aggregates the emergence of a structured intelligence system SS,\nE={∞if there exists an object in the preimage of 𝒢 inviolation of the laws,g(αn+βt+εv(H,I)+εm(H,I)), otherwise.\nE = \\begin{cases} \n\\infty \\hspace{1em} \\text{if there exists an object in the preimage of $\\mathcal G$ in}\\\\\n\\text{violation of the laws,}\\\\ \ng(\\alpha n + \\beta t + \\varepsilon_v (H, I) + \\varepsilon_m (H, I)), \\text{ otherwise}. \n\\end{cases}\n\nwhere nn denotes the periodicity of the cycle in II, and tt denotes the time elapsed and gg denotes a generalised linear regression (ARIMA) model where time is an ordered pair (n,t)∈N×T(n, t) \\in N \\times T of total steps NN and time duration of system operation TT. The other coefficients ε\\varepsilon describe the intelligence governance measures (in terms of specificity and sensitivity) for miscreant εm\\varepsilon_m and virtuous εm\\varepsilon_m emergence on the objects in the intelligence governance digraph.\n\nyes I’m aware I have a problem with using II twice - sorry for the confusion!\n\nSince we have finite, generative digraphs that iteratively change in structure over steps in the paths of the digraph related to time (development, in say, weeks), this suggests topological dynamics has the answers to ways to measure stability in a system such as this.\nBy using an ARIMA model, we can extract emergence thought off in terms of miscreant or virtuous in ways critical theory can apply their categorical frameworks to say, metonyms (Radden and Panther 1999), to assist mathematicians in defining bounds on emergence in ways that can be computationally instantiated."
+    "text": "7.2 Definition: Singularity threshold\nDefine the bounds of a metric on ISI_S that aggregates the emergence of a structured intelligence system SS,\nE={∞if there exists an object in the preimage of 𝒢 inviolation of the laws,g(θ(n,t)+εv(H,I)+εm(H,I)), otherwise.\nE = \\begin{cases} \n\\infty \\hspace{1em} \\text{if there exists an object in the preimage of $\\mathcal G$ in}\\\\\n\\text{violation of the laws,}\\\\ \ng(\\theta(n, t) + \\varepsilon_v (H, I) + \\varepsilon_m (H, I)), \\text{ otherwise}. \n\\end{cases}\n\nwhere nn denotes the periodicity of the cycle in II, and tt denotes the time elapsed and gg denotes a generalised linear regression (ARIMA) model where time is an ordered pair (n,t)∈N×T(n, t) \\in N \\times T of total steps NN and time duration of system operation TT. The other coefficients ε\\varepsilon describe the intelligence governance measures (in terms of specificity and sensitivity of emergence) for miscreant εm\\varepsilon_m and virtuous εm\\varepsilon_m emergence on the objects in the intelligence governance digraph.\n\nyes I’m aware I have a problem with using II twice - sorry for the confusion!\n\nSince we have finite, generative digraphs that iteratively change in structure over steps in the paths of the digraph related to time (development, in say, weeks), this suggests topological dynamics has the answers to ways to measure stability in a system such as this.\nBy using an ARIMA model, we can extract emergence thought off in terms of miscreant or virtuous in ways critical theory can apply their categorical frameworks to say, metonyms (Radden and Panther 1999), to assist mathematicians in defining bounds on emergence in ways that can be computationally instantiated."
   },
   {
     "objectID": "math.html#definition-unbounded-singularity",
@@ -473,14 +473,14 @@
     "href": "math.html#definition-virtuous-singularity",
     "title": "The Math Bit",
     "section": "7.4 Definition: Virtuous singularity",
-    "text": "7.4 Definition: Virtuous singularity\nA singularity in which virtuous E &gt;&gt; miscreant E, i.e., εv≫εm\\varepsilon_v \\gg \\varepsilon_m."
+    "text": "7.4 Definition: Virtuous singularity\nA singularity in which virtuous E ≫\\gg miscreant E, i.e., εv≫εm\\varepsilon_v \\gg \\varepsilon_m, where burn rate (measure of steps completed to estimated time) is above a certain θ\\theta threshold."
   },
   {
     "objectID": "math.html#definition-miscreant-singularity",
     "href": "math.html#definition-miscreant-singularity",
     "title": "The Math Bit",
     "section": "7.5 Definition: Miscreant singularity",
-    "text": "7.5 Definition: Miscreant singularity\nA singularity in which miscreant E &gt;&gt; virtuous E, i.e., εm≫εv\\varepsilon_m \\gg \\varepsilon_v."
+    "text": "7.5 Definition: Miscreant singularity\nA singularity in which miscreant E ≫\\gg virtuous E, i.e., εm≫εv\\varepsilon_m \\gg \\varepsilon_v, where burn rate (measure of steps completed to estimated time) is below a certain θ\\theta threshold."
   },
   {
     "objectID": "math.html#definition-singularity-violation",
