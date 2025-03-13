@@ -357,11 +357,11 @@
     "text": "1.1 Intuitive reasoning\nConsider this system in terms of three things:\n\nPeople.\nMachines.\nRelationships between people and machines.\n\n\n\nFunpic GIFfrom Funpic GIFs\n\n\n\nA category-theoretic way of measuring the stabilty of the system might be to ask:\n\nHow many of the people, machines, and relationships between are operational?\n\nA intelligence-governance question might be to ask:\n\nWhich people, machines, or relationships are exhibiting an emergent behaviour that is harming the humans in the system?"
   },
   {
-    "objectID": "math.html#example-category-of-intelligence-governance-visualisation",
-    "href": "math.html#example-category-of-intelligence-governance-visualisation",
+    "objectID": "math.html#example-cycle-of-intelligence-governance-visualisation",
+    "href": "math.html#example-cycle-of-intelligence-governance-visualisation",
     "title": "The Math Bit",
-    "section": "1.2 Example: Category of intelligence governance visualisation",
-    "text": "1.2 Example: Category of intelligence governance visualisation\nWe will use code examples to explain mathematical structures.\nWe begin by constructing the category ℐ\\mathcal I as a computational object I_vis, a ggraph visualisation of the category.\n\nMorphismsObjectsCategoryVisualisation\n\n\n\nI_edges\n\n# A tibble: 2 × 4\n  from  to    edge_emergence edge_label\n  &lt;chr&gt; &lt;chr&gt; &lt;fct&gt;          &lt;chr&gt;     \n1 H     I     miscreant      HI        \n2 I     H     expected       IH        \n\n\n\n\n\nI_nodes\n\n# A tibble: 2 × 4\n  node  node_label    node_type     node_emergence\n  &lt;chr&gt; &lt;chr&gt;         &lt;chr&gt;         &lt;chr&gt;         \n1 H     Heuristic (H) Heuristic (H) miscreant     \n2 I     Intention (I) Intention (I) expected      \n\n\n\n\n\nI_graph\n\n# A tbl_graph: 2 nodes and 2 edges\n#\n# A directed simple graph with 1 component\n#\n# Node Data: 2 × 4 (active)\n  name  node_label    node_type     node_emergence\n  &lt;chr&gt; &lt;chr&gt;         &lt;chr&gt;         &lt;chr&gt;         \n1 H     Heuristic (H) Heuristic (H) miscreant     \n2 I     Intention (I) Intention (I) expected      \n#\n# Edge Data: 2 × 4\n   from    to edge_emergence edge_label\n  &lt;int&gt; &lt;int&gt; &lt;chr&gt;          &lt;chr&gt;     \n1     1     2 miscreant      HI        \n2     2     1 expected       IH        \n\n\n\n\n\nI_vis \n\n\n\n\n\n\n\n\n\n\n\nTo show this is true, we will need to:\n\nDefine a structured intelligence system.\nDefine ℐ\\mathcal I as a category.\nShow ℐ\\mathcal I is a discrete topological dynamical system.\nShow how ℐ\\mathcal I governs emergence in a structured intelligence system."
+    "section": "1.2 Example: Cycle of intelligence governance visualisation",
+    "text": "1.2 Example: Cycle of intelligence governance visualisation\nWe will use code examples to explain mathematical structures.\nWe begin by constructing the digraph II as a computational object I_vis, a ggraph visualisation of the category.\n\nEdgesNodesGraphVisualisation\n\n\n\nI_edges\n\n# A tibble: 2 × 4\n  from  to    edge_emergence edge_label\n  &lt;chr&gt; &lt;chr&gt; &lt;fct&gt;          &lt;chr&gt;     \n1 R     I     miscreant      RI        \n2 I     R     expected       IR        \n\n\n\n\n\nI_nodes\n\n# A tibble: 2 × 4\n  node  node_label    node_type     node_emergence\n  &lt;chr&gt; &lt;chr&gt;         &lt;chr&gt;         &lt;chr&gt;         \n1 R     Heuristic (R) Heuristic (R) miscreant     \n2 I     Intention (I) Intention (I) expected      \n\n\n\n\n\nI_graph\n\n# A tbl_graph: 2 nodes and 2 edges\n#\n# A directed simple graph with 1 component\n#\n# Node Data: 2 × 4 (active)\n  name  node_label    node_type     node_emergence\n  &lt;chr&gt; &lt;chr&gt;         &lt;chr&gt;         &lt;chr&gt;         \n1 R     Heuristic (R) Heuristic (R) miscreant     \n2 I     Intention (I) Intention (I) expected      \n#\n# Edge Data: 2 × 4\n   from    to edge_emergence edge_label\n  &lt;int&gt; &lt;int&gt; &lt;chr&gt;          &lt;chr&gt;     \n1     1     2 miscreant      RI        \n2     2     1 expected       IR        \n\n\n\n\n\nI_vis \n\n\n\n\n\n\n\n\n\n\n\nTo show this is true, we will need to:\n\nDefine a structured intelligence system.\nDefine II as a digraph.\nShow II is a discrete topological dynamical system.\nShow how II governs emergence in a structured intelligence system."
   },
   {
     "objectID": "math.html#example-structured-intelligence-system",
@@ -403,28 +403,77 @@
     "href": "math.html#definition-emergence-on-a-structured-intelligence-system",
     "title": "The Math Bit",
     "section": "3.4 Definition: Emergence on a structured intelligence system",
-    "text": "3.4 Definition: Emergence on a structured intelligence system\nWe consider the elements preimage of 𝒮\\mathcal S to display emergence in one of four ways:"
+    "text": "3.4 Definition: Emergence on a structured intelligence system\n\n\n\n\n\n\n\n\n\n\nE\n\n\n\nviolation\n\nviolation\n\n\n\nmiscreant\n\nmiscreant\n\n\n\nviolation--miscreant\n\n\n\n\nvirtuous\n\nvirtuous\n\n\n\nviolation--virtuous\n\n\n\n\nexpected\n\nexpected\n\n\n\nmiscreant--expected\n\n\n\n\nvirtuous--expected\n\n\n\n\n\n\n\n\n\n\n\nFigure 1: Emergence ordered by severity.\n\n\n\nWe consider the elements preimage of 𝒢\\mathcal G to display emergence 𝐞\\mathbf e in one of four ways:\n\nExpected.\nViolation: A violation of one the three laws\nMiscreant: increases length of a path in structured intelligence system or increases periodicity in II.\nVirtuous: decreases length of a path in any structured intelligence system, decreases periodicity in II, or produces unexpected but useful results.\n\nSo that\ne:𝚘𝚋(𝒢)∪𝚑𝚘𝚖(𝒢)↦{𝚎𝚡𝚙𝚎𝚌𝚝𝚎𝚍,𝚟𝚒𝚘𝚕𝚊𝚝𝚒𝚘𝚗,𝚖𝚒𝚜𝚌𝚛𝚎𝚊𝚗𝚝,𝚟𝚒𝚛𝚝𝚞𝚘𝚞𝚜}\ne : \\mathtt{ob}(\\mathcal G) \\cup \\mathtt{hom}(\\mathcal G) \\mapsto \\{\n  \\mathtt{expected},\n  \\mathtt{violation},\n  \\mathtt{miscreant},\n  \\mathtt{virtuous}\n\\}\n\nunder the order shown in Figure Figure 1."
   },
   {
     "objectID": "math.html#definition-category-of-structured-intelligence-governance",
     "href": "math.html#definition-category-of-structured-intelligence-governance",
     "title": "The Math Bit",
     "section": "4.1 Definition: Category of structured intelligence governance",
-    "text": "4.1 Definition: Category of structured intelligence governance\nThe category 𝒮\\mathcal S of structured intelligence governance is isomorphic to K3K_3 cycle with loops comprising:\n\nObjects 𝚘𝚋(𝒮)={G,H,A}\\mathtt{ob}(\\mathcal S) = \\{ G, H, A \\}:\n\ngovernance G=MG = M from the edge-relations in SS;\nHH from the humans in the nodes of SS;\nAA from the automata in the nodes of SS.\n\nMorphisms 𝚑𝚘𝚖(𝒮)\\mathtt{hom}(\\mathcal S):\n\nGGGG: (re)set intent;\nGHGH: communicate intent;\nHHHH: humans interact or self-reflect;\nHAHA: humans instantiate intent on automata;\nAAAA: automata stack without human intervention;\nAHAH: automata output."
+    "text": "4.1 Definition: Category of structured intelligence governance\nThe category (“Category Theory” 2025) 𝒢\\mathcal G of structured intelligence governance is isomorphic to K2K_2 cycle with loops comprising:\n\nObjects 𝚘𝚋(𝒢)={H,A}\\mathtt{ob}(\\mathcal G) = \\{H, A \\}:\n\nHH from the humans in the nodes of SS;\nAA from the automata in the nodes of SS.\n\nMorphisms 𝚑𝚘𝚖(𝒢)\\mathtt{hom}(\\mathcal G):\n\nHHHH: humans interact or self-reflect;\nHAHA: humans instantiate intent on automata;\nAAAA: automata stack without human intervention;\nAHAH: automata output with constraints\n\nGovernance constraint measures assign one of the four levels of emergence (expected, violation, miscreant, virtuous) to both the objects and the morphisms."
   },
   {
-    "objectID": "math.html#definition-category-of-intelligence-governance",
-    "href": "math.html#definition-category-of-intelligence-governance",
+    "objectID": "math.html#visualisation-category-of-structured-intelligence-governance",
+    "href": "math.html#visualisation-category-of-structured-intelligence-governance",
     "title": "The Math Bit",
-    "section": "5.1 Definition: Category of intelligence governance",
-    "text": "5.1 Definition: Category of intelligence governance"
+    "section": "4.2 Visualisation: Category of structured intelligence governance",
+    "text": "4.2 Visualisation: Category of structured intelligence governance\n\nEdges"
   },
   {
-    "objectID": "math.html#visualisation-of-category-of-intelligence-governance",
-    "href": "math.html#visualisation-of-category-of-intelligence-governance",
+    "objectID": "math.html#definition-cycle-of-intelligence-governance",
+    "href": "math.html#definition-cycle-of-intelligence-governance",
     "title": "The Math Bit",
-    "section": "5.2 Visualisation of category of intelligence governance",
-    "text": "5.2 Visualisation of category of intelligence governance"
+    "section": "5.1 Definition: Cycle of intelligence governance",
+    "text": "5.1 Definition: Cycle of intelligence governance\nThe cycle of intelligence governence II comprises:\n\nNodes: ?\n\nℜ\\mathfrak R, all objects in the pre-image of 𝒢\\mathcal G that are following heuristic reasoning, such that ℜ(n,t)\\mathfrak R(n, t) represents ℜ\\mathfrak R at the nn th step in the cycle, and tt denotes the time that step takes.\nℑ\\mathfrak I, all objects in the pre-image of 𝒢\\mathcal G that are following intentional reasoning, such that ℑ(n,t)\\mathfrak I(n, t) represents ℑ\\mathfrak I at the nn th step in the cycle, and tt denotes the time that step takes.\n\nEdges:\n\n?"
+  },
+  {
+    "objectID": "math.html#visualisation-of-cycle-of-intelligence-governance",
+    "href": "math.html#visualisation-of-cycle-of-intelligence-governance",
+    "title": "The Math Bit",
+    "section": "5.2 Visualisation of cycle of intelligence governance",
+    "text": "5.2 Visualisation of cycle of intelligence governance"
+  },
+  {
+    "objectID": "math.html#definition-technological-singularity",
+    "href": "math.html#definition-technological-singularity",
+    "title": "The Math Bit",
+    "section": "6.1 Definition: Technological singularity",
+    "text": "6.1 Definition: Technological singularity\nA technololgical singularity is when the cycle of intelligence governance displays emergence beyond a constraint threshold for human governance. A singularity may be above a virtuous threshold, miscreant threshold, or a mix of both."
+  },
+  {
+    "objectID": "math.html#definition-singularity-threshold",
+    "href": "math.html#definition-singularity-threshold",
+    "title": "The Math Bit",
+    "section": "6.2 Definition: Singularity threshold",
+    "text": "6.2 Definition: Singularity threshold\nDefine a metric on II that aggregates the emergence of a structured intelligence system\nE=α⋅n+α⋅t\nE = \\alpha \\cdot n + \\alpha \\cdot t\n\nwhere nn denotes the periodicity of the cycle in II, and tt denotes the time elapsed."
+  },
+  {
+    "objectID": "math.html#definition-virtuous-singularity",
+    "href": "math.html#definition-virtuous-singularity",
+    "title": "The Math Bit",
+    "section": "6.3 Definition: Virtuous singularity",
+    "text": "6.3 Definition: Virtuous singularity\nA singularity in which virtuous E &gt;&gt; miscreant E."
+  },
+  {
+    "objectID": "math.html#definition-miscreant-singularity",
+    "href": "math.html#definition-miscreant-singularity",
+    "title": "The Math Bit",
+    "section": "6.4 Definition: Miscreant singularity",
+    "text": "6.4 Definition: Miscreant singularity\nA singularity in which miscreant E &gt;&gt; virtuous E."
+  },
+  {
+    "objectID": "math.html#definition-singularity-violation",
+    "href": "math.html#definition-singularity-violation",
+    "title": "The Math Bit",
+    "section": "6.5 Definition: Singularity violation",
+    "text": "6.5 Definition: Singularity violation\nA singularity in which there exists a violation of the laws."
+  },
+  {
+    "objectID": "math.html#definition-violation-of-the-laws",
+    "href": "math.html#definition-violation-of-the-laws",
+    "title": "The Math Bit",
+    "section": "6.6 Definition: Violation of the laws",
+    "text": "6.6 Definition: Violation of the laws\n\nWe say a singularity has violated Law 1. of the laws fo structured intelligence governance when there exist a non-empty subset of HH with emergence severity violation.\nWe say a singularity has violated Law 2. when II contains elements of AA.\nWe say a singularity has violated Law 3. when there are aaaa morphisms with unexpected output."
   },
   {
     "objectID": "collab.html",

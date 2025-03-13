@@ -43,6 +43,7 @@ button_theme <- list(
     axis.text = element_blank(),
     axis.ticks = element_blank(),
     legend.position = "top",
+    legend.direction = "vertical",
     plot.title = element_text(family = "courier"),
     plot.caption = element_text(family = "courier")
   ),
@@ -109,7 +110,7 @@ But, this argument only uses first principles.
 
 # Conjecture 
 
-The category $\mathcal{I}$ of intelligence governance is a discrete topological dynamical system that governs emergence for human wellbeing in a structured intelligence system. 
+The digraph $I$ of intelligence governance is a discrete topological dynamical system that governs emergence for human wellbeing in a structured intelligence system. 
 
 ## Intuitive reasoning
 
@@ -134,23 +135,23 @@ A intelligence-governance question might be to ask:
 
 > Which people, machines, or relationships are exhibiting an emergent behaviour that is harming the humans in the system?
 
-## Example: Category of intelligence governance visualisation
+## Example: Cycle of intelligence governance visualisation
 
 We will use code examples to explain mathematical structures. 
 
-We begin by constructing the category $\mathcal I$ as a computational object `I_vis`, a `ggraph` visualisation  of the category.
+We begin by constructing the digraph $I$ as a computational object `I_vis`, a `ggraph` visualisation  of the category.
 
 ::: {.panel-tabset}
 
 
-## Morphisms
+## Edges
 
 ```{r}
 
 I_edges <- tribble(
   ~from,  ~to,  ~edge_emergence,
-  "H",    "I",  "miscreant",
-  "I",    "H",  "expected",
+  "R",    "I",  "miscreant",
+  "I",    "R",  "expected",
 ) |>
   mutate(
     edge_label = str_c(from, to),
@@ -165,7 +166,7 @@ I_edges
 ```
 
 
-## Objects
+## Nodes
 
 
 ```{r error=TRUE}
@@ -176,11 +177,11 @@ I_nodes <- I_edges |>
     node_label =   node,
     node_label = case_when(
       node == "I" ~ "Intention (I)",
-      node == "H" ~ "Heuristic (H)" 
+      node == "R" ~ "Heuristic (R)" 
     ),
     node_type = node_label,
     node_emergence = if_else(
-      node == "H", "miscreant", "expected"
+      node == "R", "miscreant", "expected"
     ) 
   )
 
@@ -191,7 +192,7 @@ I_nodes <- I_edges |>
 I_nodes
 ```
 
-## Category
+## Graph
 
 ```{r}
 
@@ -233,7 +234,7 @@ I_vis <- I_graph |>
     ) +
   button_theme +
   labs(
-    title = "Category of Intelligence Governance"
+    title = "Cycle of intelligence governance"
   ) 
 
 
@@ -268,9 +269,9 @@ To show this is true,  we will need to:
 
 
 1. Define a structured intelligence system.
-2. Define $\mathcal I$ as a category.
-3. Show $\mathcal I$ is a discrete topological dynamical system.
-4. Show how $\mathcal I$ governs emergence in a structured intelligence system.
+2. Define $I$ as a digraph.
+3. Show $I$ is a discrete topological dynamical system.
+4. Show how $I$ governs emergence in a structured intelligence system.
 
 # Definition: Structured intelligence system
 
@@ -475,45 +476,134 @@ The result of ungoverned structured intelligence systems? Developers are blamed 
 
 ## Definition: Emergence on a structured intelligence system
 
-We consider the elements preimage of $\mathcal S$ to display **emergence** in one of four ways:
+::: {#fig-emergence-order}
+
+```{dot}
+graph E {
+  violation -- miscreant
+  violation -- virtuous
+  miscreant -- expected
+  virtuous -- expected
+}
+
+```
+
+Emergence ordered by severity.
+
+:::
+
+
+We consider the elements preimage of $\mathcal G$ to display **emergence** $\mathbf e$ in one of four ways:
   
-  - 
+  - Expected.
+  - Violation: A violation of one the [three laws](#definition-the-three-laws-of-structured-intelligence-governance)
+  - Miscreant: increases length of a path in structured intelligence system or increases periodicity in $I$.
+  - Virtuous: decreases length of a path in any structured intelligence system, decreases periodicity in $I$, or produces unexpected but useful results.
+
+So that
+
+$$
+e : \mathtt{ob}(\mathcal G) \cup \mathtt{hom}(\mathcal G) \mapsto \{
+  \mathtt{expected},
+  \mathtt{violation},
+  \mathtt{miscreant},
+  \mathtt{virtuous}
+\}
+$$
+
+under the order shown in Figure @fig-emergence-order.
+
 
 # Category of structured intelligence governance
 
 ## Definition: Category of structured intelligence governance
 
-The category $\mathcal S$ of structured intelligence governance is isomorphic to $K_3$ cycle with loops comprising:
+The category [@noauthor_category_2025] $\mathcal G$ of structured intelligence governance is isomorphic to $K_2$ cycle with loops comprising:
 
-- Objects $\mathtt{ob}(\mathcal S) = \{ G, H, A \}$:
-  - governance $G = M$ from the edge-relations in $S$;
+- Objects $\mathtt{ob}(\mathcal G) = \{H, A \}$:
   - $H$ from the humans in the nodes of $S$;
   - $A$ from the automata in the nodes of $S$.
 
-- Morphisms $\mathtt{hom}(\mathcal S)$:
-  - $GG$: (re)set intent;
-  - $GH$: communicate intent;
+- Morphisms $\mathtt{hom}(\mathcal G)$:
   - $HH$: humans interact or self-reflect;
   - $HA$: humans instantiate intent on automata;
   - $AA$: automata stack without human intervention;
-  - $AH$: automata output.
+  - $AH$: automata output with constraints
 
-# Category of intelligence governance
+- Governance constraint measures assign one of the four levels of emergence (expected, violation, miscreant, virtuous) to both the objects and the morphisms.
 
-## Definition: Category of intelligence governance
+## Visualisation: Category of structured intelligence governance
+
+::: {.panel-tabset}
+
+## Edges
+
+```{r}
+ 
+
+```
 
 
-## Visualisation of category of intelligence governance
+:::
+
+
+# Cycle of intelligence governance
+
+## Definition: Cycle of intelligence governance
+
+The cycle of intelligence governence $I$ comprises:
+
+- Nodes: ?
+  - $\mathfrak R$, all objects in the pre-image of $\mathcal G$ that are following heuristic reasoning, such that $\mathfrak R(n, t)$ represents $\mathfrak R$ at the $n$ th step in the cycle, and $t$ denotes the time that step takes. 
+  - $\mathfrak I$, all objects in the pre-image of $\mathcal G$ that are following intentional reasoning, such that $\mathfrak I(n, t)$ represents $\mathfrak I$ at the $n$ th step in the cycle, and $t$ denotes the time that step takes. 
+- Edges:
+  - ?
+
+## Visualisation of cycle of intelligence governance
 
 ```{r}
 I_vis
 ```
 
-
 # Singularities
+
+## Definition: Technological singularity
+
+A technololgical singularity is when the cycle of intelligence governance displays emergence beyond a constraint threshold for human governance. A singularity may be above a virtuous threshold, miscreant threshold, or a mix of both.
+
+## Definition: Singularity threshold
+
+Define a metric on $I$ that aggregates the emergence of a structured intelligence system 
+
+$$
+E = \alpha \cdot n + \alpha \cdot t
+$$
+
+where $n$ denotes the periodicity of the cycle in $I$, and $t$ denotes the time elapsed.
+
+## Definition: Virtuous singularity
+
+A singularity in which virtuous E >> miscreant E.
+
+## Definition: Miscreant singularity
+
+A singularity in which miscreant E >> virtuous E.
+
+## Definition: Singularity violation
+
+A singularity in which there exists a violation of the laws.
+
+## Definition: Violation of the laws
+
+1. We say a singularity has violated Law 1. of the laws fo [structured intelligence governance](#definition-the-three-laws-of-structured-intelligence-governance) when there exist a non-empty subset of $H$ with emergence severity *violation*.
+
+2. We say a singularity has violated Law 2. when $I$ contains elements of $A$.
+
+3. We say a singularity has violated Law 3. when there are $aa$ morphisms with unexpected output.   
+
 
 # Experiment: Living morphism in JIRA
 
-# Conjecture: Big tech are singularities in violation of the laws
+# Conjecture: The modern data stack is violation of the three laws
 
 # References
