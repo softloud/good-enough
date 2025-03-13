@@ -128,6 +128,11 @@ But, this argument only uses first principles.
 - Is this reinventing the wheel? I find it hard to think I would come up with something novel.
 - If it is feasible, why aren't we measuring the how  the instability of systems hurt humans, like, *yesterday*?! 
 
+# Experiment: Living morphism in JIRA
+
+Motivation for this project began with finding that despite mastering the digraph-structured planning tool JIRA; I was still utterly unable to manage the generativity nor complexity of the subgraphs, as development progresses.
+
+All I wanted to do was construct a structure-preserving, dimension-reducing living morphism that monitored these things. What follows is a string I cannot stop pulling.
 
 # Conjecture 
 
@@ -670,8 +675,9 @@ A singularity in which there exists a violation of the laws.
 3. We say a singularity has violated Law 3. when there are $aa$ morphisms with unexpected output.   
 
 
-# Experiment: Living morphism in JIRA
 
-# Conjecture: The modern data stack is violation of the three laws
+# Conjecture: The modern data stack is in violation of the three laws
+
+# Conjecture: The social media industry is in violation of the three laws
 
 # References
