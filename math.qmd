@@ -280,15 +280,18 @@ To show this is true,  we will need to:
 
 
 1. Define a structured intelligence system.
-2. Define $I$ as a digraph.
-3. Show $I$ is a discrete topological dynamical system.
-4. Show how $I$ governs emergence in a structured intelligence system.
+2. Define the category of structured intelligence governance.
+3. Define $I$ as a digraph in terms of the category of structured intelligence governance.
+4. Show $I$ is a discrete topological dynamical system.
+5. Show how $I$ governs emergence in a structured intelligence system.
 
-# Definition: Structured intelligence system
+# Structured intelligence systems
 
-A **structured intelligence system** $S$ is a directed graph $S = (H \cup A, M)$ representing humans and automata interoperating toward some intention with objects and morphisms.
+## Definition: Structured intelligence system
 
-- Nodes $H \cup A$ are understood as collection of humans $h \in H$ that interoperate with automate $a \in A$ toward a human-defined intention.
+A **structured intelligence system** $S$ is a directed graph $S = (H \cup A, M)$ representing humans and automata interoperating toward some intention with objects and morphisms (unrigorously  inspired by this paper I do not have access to [@badreddin_structured_2006]).
+
+- Nodes $H \cup A$ are understood as collection of humans $h \in H$ that interoperate with automata $a \in A$ toward a human-defined intention.
 - Edge-relations $M$ representing the binary interoperations of the elements in the system:
   - $hh$: Humans talk, reflect, interact.
   - $ha$: Human instantiates heuristics on automata with intention.
@@ -646,13 +649,17 @@ A technololgical singularity is when the cycle of intelligence governance displa
 
 ## Definition: Singularity threshold
 
-Define a metric on $I$ that aggregates the emergence of a structured intelligence system 
+Define the  bounds of a metric on $I$ that aggregates the emergence of a structured intelligence system 
 
 $$
-E = \alpha \cdot n + \alpha \cdot t
+E = g(\alpha \cdot n + \alpha \cdot t)
 $$
 
-where $n$ denotes the periodicity of the cycle in $I$, and $t$ denotes the time elapsed.
+where $n$ denotes the periodicity of the cycle in $I$, and $t$ denotes the time elapsed and $g$ denotes a generalised linear regression model.
+
+## Definition: Unbounded singularity
+
+An unbounded singularity has no measure by which to check the laws; an unbounded singularity is in **violation** of the laws as 
 
 ## Definition: Virtuous singularity
 
@@ -674,10 +681,13 @@ A singularity in which there exists a violation of the laws.
 
 3. We say a singularity has violated Law 3. when there are $aa$ morphisms with unexpected output.   
 
-
-
 # Conjecture: The modern data stack is in violation of the three laws
 
+> Harmful emergence is unbounded in development.
+
 # Conjecture: The social media industry is in violation of the three laws
+
+> Harmful emergence is unbounded in social media apps.
+
 
 # References
