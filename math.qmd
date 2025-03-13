@@ -120,13 +120,17 @@ Why aren't there fines for this? Maybe because no one knows how to measure it.
 
 > *hi Tomasz, Richard, Kerrie, Sira, & friends! Thanks for taking a look.* 
 
-Look, I'm just a data engineer who studied a skerrick of math a while back, I'm just doing this because it's coming out; a mathematical scream at how notifications are decreasing my capacity to function as a human. 
+Look, I'm just a data engineer who studied a skerrick of math a while back, all I wanted to do was find a way of managing the complexity of my development digraphs as the data science project progresses; also a mathematical scream at how notifications (without loss of generality) are decreasing my capacity to function as a human. 
 
-But, this argument only uses first principles. 
+> The only references actually used while hand writing this argument were two definitions I wrote in my notebook first.
 
-- Is it fundamentally flawed? Probably. By all means, poke holes, I'm having fun learning category theory for the first time in any case.
+1.  The definition of a category on wikipedia [@noauthor_category_2025].
+2. A screenfreeze from a youtube video where a nice PhD student writes on a blackboard the definition of a discrete topological dynamical system. [@chalk_what_2024]
+
+- Is it fundamentally flawed? Probably. By all means, poke holes, I'm having fun learning category theory for the first time in any case, and I miss sparring mathematically.
 - Is this reinventing the wheel? I find it hard to think I would come up with something novel.
-- If it is feasible, why aren't we measuring the how  the instability of systems hurt humans, like, *yesterday*?! 
+
+> But if it *is* feasible, why aren't we measuring the how  the instability of systems hurt humans, like, *yesterday*?! 
 
 # Experiment: Living morphism in JIRA
 
@@ -274,16 +278,17 @@ I_vis +
 
 ```
 
-
+## Proof framework
 
 To show this is true,  we will need to:
 
 
 1. Define a structured intelligence system.
-2. Define the category of structured intelligence governance.
+2. Define the category $\mathcal G$ of structured intelligence governance.
 3. Define $I$ as a digraph in terms of the category of structured intelligence governance.
-4. Show $I$ is a discrete topological dynamical system.
-5. Show how $I$ governs emergence in a structured intelligence system.
+4. Define constraints on the morphisms of $\mathcal G$ in terms of $I$.
+5. Show $I$ is a discrete topological dynamical system.
+6. Show how $I$ governs emergence in a structured intelligence system.
 
 # Structured intelligence systems
 
@@ -502,7 +507,7 @@ graph E {
 
 ```
 
-Emergence ordered by severity.
+Hasse diagram [@davey_homomorphism_2018] of emergence ordered by severity.
 
 :::
 
@@ -657,9 +662,11 @@ $$
 
 where $n$ denotes the periodicity of the cycle in $I$, and $t$ denotes the time elapsed and $g$ denotes a generalised linear regression model.
 
+Since we have finite, generative digraphs that iteratively change in structure over steps in the paths of the digraph related to time (development, in say, weeks),  this suggests topological dynamics has the answers to ways to measure stability in a system such as this. 
+
 ## Definition: Unbounded singularity
 
-An unbounded singularity has no measure by which to check the laws; an unbounded singularity is in **violation** of the laws as 
+An unbounded singularity has no measure by which to check the laws; an unbounded singularity is in **violation** of the laws as we cannot confirm the system is *not* in violation.
 
 ## Definition: Virtuous singularity
 
@@ -683,11 +690,11 @@ A singularity in which there exists a violation of the laws.
 
 # Conjecture: The modern data stack is in violation of the three laws
 
-> Harmful emergence is unbounded in development.
+> Harmful emergence is [unbounded](#definition-unbounded-singularity) in development existence proof.
 
 # Conjecture: The social media industry is in violation of the three laws
 
-> Harmful emergence is unbounded in social media apps.
+> Harmful emergence is [unbounded](#definition-unbounded-singularity) in social media apps existence proof. (e.g., FB in Myanmar)
 
 
 # References

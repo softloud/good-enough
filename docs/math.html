@@ -197,6 +197,7 @@ div.csl-indent {
   <ul class="collapse">
   <li><a href="#intuitive-reasoning" id="toc-intuitive-reasoning" class="nav-link" data-scroll-target="#intuitive-reasoning"><span class="header-section-number">2.1</span> Intuitive reasoning</a></li>
   <li><a href="#example-cycle-of-intelligence-governance-visualisation" id="toc-example-cycle-of-intelligence-governance-visualisation" class="nav-link" data-scroll-target="#example-cycle-of-intelligence-governance-visualisation"><span class="header-section-number">2.2</span> Example: Cycle of intelligence governance visualisation</a></li>
+  <li><a href="#proof-framework" id="toc-proof-framework" class="nav-link" data-scroll-target="#proof-framework"><span class="header-section-number">2.3</span> Proof framework</a></li>
   </ul></li>
   <li><a href="#structured-intelligence-systems" id="toc-structured-intelligence-systems" class="nav-link" data-scroll-target="#structured-intelligence-systems"><span class="header-section-number">3</span> Structured intelligence systems</a>
   <ul class="collapse">
@@ -294,13 +295,21 @@ div.csl-indent {
 <blockquote class="blockquote">
 <p><em>hi Tomasz, Richard, Kerrie, Sira, &amp; friends! Thanks for taking a look.</em></p>
 </blockquote>
-<p>Look, I’m just a data engineer who studied a skerrick of math a while back, I’m just doing this because it’s coming out; a mathematical scream at how notifications are decreasing my capacity to function as a human.</p>
-<p>But, this argument only uses first principles.</p>
+<p>Look, I’m just a data engineer who studied a skerrick of math a while back, all I wanted to do was find a way of managing the complexity of my development digraphs as the data science project progresses; also a mathematical scream at how notifications (without loss of generality) are decreasing my capacity to function as a human.</p>
+<blockquote class="blockquote">
+<p>The only references actually used while hand writing this argument were two definitions I wrote in my notebook first.</p>
+</blockquote>
+<ol type="1">
+<li>The definition of a category on wikipedia <span class="citation" data-cites="noauthor_category_2025">(<a href="#ref-noauthor_category_2025" role="doc-biblioref"><span>“Category Theory”</span> 2025</a>)</span>.</li>
+<li>A screenfreeze from a youtube video where a nice PhD student writes on a blackboard the definition of a discrete topological dynamical system. <span class="citation" data-cites="chalk_what_2024">(<a href="#ref-chalk_what_2024" role="doc-biblioref">CHALK 2024</a>)</span></li>
+</ol>
 <ul>
-<li>Is it fundamentally flawed? Probably. By all means, poke holes, I’m having fun learning category theory for the first time in any case.</li>
+<li>Is it fundamentally flawed? Probably. By all means, poke holes, I’m having fun learning category theory for the first time in any case, and I miss sparring mathematically.</li>
 <li>Is this reinventing the wheel? I find it hard to think I would come up with something novel.</li>
-<li>If it is feasible, why aren’t we measuring the how the instability of systems hurt humans, like, <em>yesterday</em>?!</li>
 </ul>
+<blockquote class="blockquote">
+<p>But if it <em>is</em> feasible, why aren’t we measuring the how the instability of systems hurt humans, like, <em>yesterday</em>?!</p>
+</blockquote>
 </section>
 <section id="experiment-living-morphism-in-jira" class="level1" data-number="1">
 <h1 data-number="1"><span class="header-section-number">1</span> Experiment: Living morphism in JIRA</h1>
@@ -400,11 +409,15 @@ div.csl-indent {
 </div>
 </div>
 </div>
+</section>
+<section id="proof-framework" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="proof-framework"><span class="header-section-number">2.3</span> Proof framework</h2>
 <p>To show this is true, we will need to:</p>
 <ol type="1">
 <li>Define a structured intelligence system.</li>
-<li>Define the category of structured intelligence governance.</li>
+<li>Define the category <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>𝒢</mi><annotation encoding="application/x-tex">\mathcal G</annotation></semantics></math> of structured intelligence governance.</li>
 <li>Define <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>I</mi><annotation encoding="application/x-tex">I</annotation></semantics></math> as a digraph in terms of the category of structured intelligence governance.</li>
+<li>Define constraints on the morphisms of <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>𝒢</mi><annotation encoding="application/x-tex">\mathcal G</annotation></semantics></math> in terms of <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>I</mi><annotation encoding="application/x-tex">I</annotation></semantics></math>.</li>
 <li>Show <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>I</mi><annotation encoding="application/x-tex">I</annotation></semantics></math> is a discrete topological dynamical system.</li>
 <li>Show how <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>I</mi><annotation encoding="application/x-tex">I</annotation></semantics></math> governs emergence in a structured intelligence system.</li>
 </ol>
@@ -651,7 +664,7 @@ div.csl-indent {
 </div>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-emergence-order-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;1: Emergence ordered by severity.
+Figure&nbsp;1: Hasse diagram <span class="citation" data-cites="davey_homomorphism_2018">(<a href="#ref-davey_homomorphism_2018" role="doc-biblioref">Davey, Gray, and Pitkethly 2018</a>)</span> of emergence ordered by severity.
 </figcaption>
 </figure>
 </div>
@@ -803,10 +816,11 @@ TRUE): data length [3] is not a sub-multiple or multiple of the number of rows
 E = g(\alpha \cdot n + \alpha \cdot t)
 </annotation></semantics></math></p>
 <p>where <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math> denotes the periodicity of the cycle in <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>I</mi><annotation encoding="application/x-tex">I</annotation></semantics></math>, and <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>t</mi><annotation encoding="application/x-tex">t</annotation></semantics></math> denotes the time elapsed and <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>g</mi><annotation encoding="application/x-tex">g</annotation></semantics></math> denotes a generalised linear regression model.</p>
+<p>Since we have finite, generative digraphs that iteratively change in structure over steps in the paths of the digraph related to time (development, in say, weeks), this suggests topological dynamics has the answers to ways to measure stability in a system such as this.</p>
 </section>
 <section id="definition-unbounded-singularity" class="level2" data-number="7.3">
 <h2 data-number="7.3" class="anchored" data-anchor-id="definition-unbounded-singularity"><span class="header-section-number">7.3</span> Definition: Unbounded singularity</h2>
-<p>An unbounded singularity has no measure by which to check the laws; an unbounded singularity is in <strong>violation</strong> of the laws as</p>
+<p>An unbounded singularity has no measure by which to check the laws; an unbounded singularity is in <strong>violation</strong> of the laws as we cannot confirm the system is <em>not</em> in violation.</p>
 </section>
 <section id="definition-virtuous-singularity" class="level2" data-number="7.4">
 <h2 data-number="7.4" class="anchored" data-anchor-id="definition-virtuous-singularity"><span class="header-section-number">7.4</span> Definition: Virtuous singularity</h2>
@@ -832,13 +846,13 @@ E = g(\alpha \cdot n + \alpha \cdot t)
 <section id="conjecture-the-modern-data-stack-is-in-violation-of-the-three-laws" class="level1" data-number="8">
 <h1 data-number="8"><span class="header-section-number">8</span> Conjecture: The modern data stack is in violation of the three laws</h1>
 <blockquote class="blockquote">
-<p>Harmful emergence is unbounded in development.</p>
+<p>Harmful emergence is <a href="#definition-unbounded-singularity">unbounded</a> in development existence proof.</p>
 </blockquote>
 </section>
 <section id="conjecture-the-social-media-industry-is-in-violation-of-the-three-laws" class="level1" data-number="9">
 <h1 data-number="9"><span class="header-section-number">9</span> Conjecture: The social media industry is in violation of the three laws</h1>
 <blockquote class="blockquote">
-<p>Harmful emergence is unbounded in social media apps.</p>
+<p>Harmful emergence is <a href="#definition-unbounded-singularity">unbounded</a> in social media apps existence proof. (e.g., FB in Myanmar)</p>
 </blockquote>
 </section>
 <section id="references" class="level1" data-number="10">
@@ -857,6 +871,12 @@ Badreddin, Essameddin, and Meike Jipp. 2006. <span>“Structured Intelligence.�
 </div>
 <div id="ref-noauthor_category_2025" class="csl-entry" role="listitem">
 <span>“Category Theory.”</span> 2025. In <em>Wikipedia</em>. <a href="https://en.wikipedia.org/w/index.php?title=Category_theory&amp;oldid=1271838625">https://en.wikipedia.org/w/index.php?title=Category_theory&amp;oldid=1271838625</a>.
+</div>
+<div id="ref-chalk_what_2024" class="csl-entry" role="listitem">
+CHALK. 2024. <em>What Is a Topological Dynamical System? The Doubling Map and Other Basics.</em> <a href="https://www.youtube.com/watch?v=PqJZ81NXmoU">https://www.youtube.com/watch?v=PqJZ81NXmoU</a>.
+</div>
+<div id="ref-davey_homomorphism_2018" class="csl-entry" role="listitem">
+Davey, Brian A., Charles T. Gray, and Jane G. Pitkethly. 2018. <span>“The Homomorphism Lattice Induced by a Finite Algebra.”</span> <em>Order</em> 35 (2): 193–214. <a href="https://doi.org/10.1007/s11083-017-9426-3">https://doi.org/10.1007/s11083-017-9426-3</a>.
 </div>
 <div id="ref-wachowski_matrix_1999" class="csl-entry" role="listitem">
 Wachowski, Lana, and Lilly Wachowski. 1999. <em>The Matrix</em>. Warner Bros., Village Roadshow Pictures, Groucho Film Partnership.
