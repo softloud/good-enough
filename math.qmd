@@ -1,5 +1,6 @@
 ---
 title: The Math Bit
+subtitle: A categorical framework for structured intelligence governance of emergence in structured intelligence systems
 author: 
   - name: Dr Charles T. Gray, Datapunk
     orcid: 0000-0002-9978-011X
@@ -469,7 +470,7 @@ As defined by Asimov in *I, Robot* [@asimov_i_1950].
 2. A robot must obey orders given it by human beings except where such orders would conflict with the First Law.
 3. A robot must protect its own existence as long as such protection does not conflict with the First or Second Law.
 
-We must govern structured intelligence systems to ensure they do not harm humans. And we must learns from the metaphors, in particular the metanyms deconstructed in critical theory, to construct rigorous categorical frameworks that can be computationally and ethically applied to structural intelligence systems. 
+We must govern structured intelligence systems to ensure they do not harm humans. And we must learns from the metaphors, in particular the metonyms deconstructed in critical theory, to construct rigorous categorical frameworks that can be computationally and ethically applied to structural intelligence systems. 
 
 <div class="tenor-gif-embed" data-postid="25954630" data-share-method="host" data-aspect-ratio="1.78771" ><a href="https://tenor.com/view/i-robot-sonny-hiding-subterfuge-gif-25954630">I Robot Sonny GIF</a>from <a href="https://tenor.com/search/i+robot-gifs">I Robot GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
 
@@ -515,9 +516,9 @@ Hasse diagram [@davey_homomorphism_2018] of emergence ordered by severity.
 We consider the elements preimage of $\mathcal G$ to display **emergence** $\mathbf e$ in one of four ways:
   
   - Expected.
-  - Violation: A violation of one the [three laws](#definition-the-three-laws-of-structured-intelligence-governance)
-  - Miscreant: increases length of a path in structured intelligence system or increases periodicity in $I$.
-  - Virtuous: decreases length of a path in any structured intelligence system, decreases periodicity in $I$, or produces unexpected but useful results.
+  - Violation: A violation of one the [three laws].(#definition-the-three-laws-of-structured-intelligence-governance)
+  - Miscreant: breaks commutativity in $\mathcal G$, increases length of a path in structured intelligence system, or increases periodicity in $I$.
+  - Virtuous: decreases length of a path in *any* structured intelligence system, decreases periodicity in $I$, or produces unexpected but useful results.
 
 So that
 
@@ -654,15 +655,23 @@ A technololgical singularity is when the cycle of intelligence governance displa
 
 ## Definition: Singularity threshold
 
-Define the  bounds of a metric on $I$ that aggregates the emergence of a structured intelligence system 
+Define the  bounds of a metric on $I_S$ that aggregates the emergence of a structured intelligence system $S$,
 
 $$
-E = g(\alpha \cdot n + \alpha \cdot t)
+E = \begin{cases} 
+\infty \hspace{1em} \text{if there exists an object in the preimage of $\mathcal G$ in}\\
+\text{violation of the laws,}\\ 
+g(\alpha n + \beta t + \varepsilon_v (H, I) + \varepsilon_m (H, I)), \text{ otherwise}. 
+\end{cases}
 $$
 
-where $n$ denotes the periodicity of the cycle in $I$, and $t$ denotes the time elapsed and $g$ denotes a generalised linear regression model.
+where $n$ denotes the periodicity of the cycle in $I$, and $t$ denotes the time elapsed and $g$ denotes a generalised linear regression (ARIMA) model where time is an ordered pair $(n, t) \in N \times T$ of total steps $N$ and time duration of system operation $T$. The other coefficients $\varepsilon$ describe the intelligence governance  measures (in terms of specificity and sensitivity) for miscreant $\varepsilon_m$  and virtuous $\varepsilon_m$ emergence on the objects in the intelligence governance digraph.
+
+> yes I'm aware I have a problem with using $I$ twice - sorry for the confusion! 
 
 Since we have finite, generative digraphs that iteratively change in structure over steps in the paths of the digraph related to time (development, in say, weeks),  this suggests topological dynamics has the answers to ways to measure stability in a system such as this. 
+
+By using an ARIMA model, we can extract emergence thought off in terms of `miscreant` or `virtuous` in ways critical theory can apply their categorical frameworks to say, metonyms [@radden_metonymy_1999], to assist mathematicians in defining bounds on emergence in ways that can be computationally instantiated.
 
 ## Definition: Unbounded singularity
 
@@ -670,15 +679,15 @@ An unbounded singularity has no measure by which to check the laws; an unbounded
 
 ## Definition: Virtuous singularity
 
-A singularity in which virtuous E >> miscreant E.
+A singularity in which virtuous E >> miscreant E, i.e., $\varepsilon_v \gg \varepsilon_m$.
 
 ## Definition: Miscreant singularity
 
-A singularity in which miscreant E >> virtuous E.
+A singularity in which miscreant E >> virtuous E, i.e., $\varepsilon_m \gg \varepsilon_v$.
 
 ## Definition: Singularity violation
 
-A singularity in which there exists a violation of the laws.
+A singularity in which there exists a violation of the laws, i.e., $E = \infty$.
 
 ## Definition: Violation of the laws
 
