@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Dr Charles T. Gray, Datapunk">
-<meta name="dcterms.date" content="2025-03-13">
+<meta name="dcterms.date" content="2025-03-14">
 
 <title>Good Enough Lab - The Math Bit</title>
 <style>
@@ -249,7 +249,7 @@ div.csl-indent {
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">The Math Bit</h1>
-<p class="subtitle lead">A categorical framework for structured intelligence governance of emergence in structured intelligence systems</p>
+<p class="subtitle lead">Towards a categorical framework for governing emergence in structured intelligence systems</p>
 </div>
 
 
@@ -273,7 +273,7 @@ div.csl-indent {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">March 13, 2025</p>
+      <p class="date">March 14, 2025</p>
     </div>
   </div>
   
@@ -314,8 +314,11 @@ div.csl-indent {
 </section>
 <section id="experiment-living-morphism-in-jira" class="level1" data-number="1">
 <h1 data-number="1"><span class="header-section-number">1</span> Experiment: Living morphism in JIRA</h1>
-<p>Motivation for this project began with finding that despite mastering the digraph-structured planning tool JIRA; I was still utterly unable to manage the generativity nor complexity of the subgraphs, as development progresses.</p>
-<p>All I wanted to do was construct a structure-preserving, dimension-reducing living morphism that monitored these things. What follows is a string I cannot stop pulling.</p>
+<p>Motivation<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> for this project began with finding that despite mastering the digraph-structured planning tool JIRA, at graph, sub-graph, and sub-sub-graph level; I was still utterly unable to manage the generativity nor complexity of the subgraphs, as development progresses.</p>
+<p>All I wanted to do was construct a structure-preserving, dimension-reducing living morphism that monitored these things.</p>
+<blockquote class="blockquote">
+<p>What follows is a string I cannot stop pulling.</p>
+</blockquote>
 </section>
 <section id="conjecture" class="level1" data-number="2">
 <h1 data-number="2"><span class="header-section-number">2</span> Conjecture</h1>
@@ -429,7 +432,7 @@ div.csl-indent {
 <li>Define the category <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>𝒢</mi><annotation encoding="application/x-tex">\mathcal G</annotation></semantics></math> of structured intelligence governance.</li>
 <li>Define <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>I</mi><annotation encoding="application/x-tex">I</annotation></semantics></math> as a digraph in terms of the category of structured intelligence governance.</li>
 <li>Define constraints on the morphisms of <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>𝒢</mi><annotation encoding="application/x-tex">\mathcal G</annotation></semantics></math> in terms of <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>I</mi><annotation encoding="application/x-tex">I</annotation></semantics></math>.</li>
-<li>Show <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>I</mi><annotation encoding="application/x-tex">I</annotation></semantics></math> is a discrete topological dynamical system.</li>
+<li>Show <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math> is a discrete topological dynamical system, thus displays emergence.</li>
 <li>Show how <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>I</mi><annotation encoding="application/x-tex">I</annotation></semantics></math> governs emergence in a structured intelligence system.</li>
 </ol>
 </section>
@@ -457,7 +460,7 @@ div.csl-indent {
 <div class="tab-content">
 <div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>humans</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>humans </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] "h_1" "h_2" "h_3"</code></pre>
 </div>
@@ -468,87 +471,98 @@ div.csl-indent {
 <pre><code>[1] "a_1" "a_2"</code></pre>
 </div>
 </div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>S_objects</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 5 × 2
+  object role          
+  &lt;chr&gt;  &lt;chr&gt;         
+1 h_1    Scientist     
+2 h_2    Analyst       
+3 h_3    Decision maker
+4 a_1    Word processor
+5 a_2    Cloud data    </code></pre>
+</div>
+</div>
 </div>
 <div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>S_edges</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>S_edges</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 11 × 4
-   from  to    edge_label            edge_emergence
-   &lt;chr&gt; &lt;chr&gt; &lt;chr&gt;                 &lt;chr&gt;         
- 1 h_11  a_11  writes report         expected      
- 2 h_11  a_21  shares data           expected      
- 3 h_11  h_2   describes data        miscreant     
- 4 a_11  h_12  compiles document     expected      
- 5 a_21  h_2   receives data         expected      
- 6 h_2   a_22  shares analysis       expected      
- 7 a_22  h_12  receives analysis     expected      
- 8 h_2   h_12  reports analysis      miscreant     
- 9 h_12  a_12  incorporates analysis miscreant     
-10 a_12  h_13  compiles report       miscreant     
-11 h_13  h_3   reports results       miscreant     </code></pre>
+<pre><code># A tibble: 11 × 7
+   from  to    edge_label     edge_emergence source_object source_object_n role 
+   &lt;chr&gt; &lt;chr&gt; &lt;chr&gt;          &lt;chr&gt;          &lt;chr&gt;         &lt;chr&gt;           &lt;chr&gt;
+ 1 h_11  a_11  writes report  expected       h_1           1               Scie…
+ 2 h_11  a_21  shares data    expected       h_1           1               Scie…
+ 3 h_11  h_21  describes data miscreant      h_1           1               Scie…
+ 4 a_11  h_12  compiles docu… expected       a_1           1               Word…
+ 5 a_21  h_21  receives data  expected       a_2           1               Clou…
+ 6 h_21  a_22  shares analys… expected       h_2           1               Anal…
+ 7 a_22  h_12  receives anal… expected       a_2           2               Clou…
+ 8 h_21  h_12  reports analy… miscreant      h_2           1               Anal…
+ 9 h_12  a_12  incorporates … miscreant      h_1           2               Scie…
+10 a_12  h_13  compiles repo… miscreant      a_1           2               Word…
+11 h_13  h_31  reports resul… miscreant      h_1           3               Scie…</code></pre>
 </div>
 </div>
 </div>
 <div id="tabset-2-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-3-tab">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>S_nodes </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 9 × 4
-  node  node_type     node_label node_emergence
-  &lt;chr&gt; &lt;chr&gt;         &lt;chr&gt;      &lt;chr&gt;         
-1 h_11  Human (h)     h_11       expected      
-2 a_11  Automaton (a) a_11       expected      
-3 a_21  Automaton (a) a_21       expected      
-4 h_2   Human (h)     h_2        miscreant     
-5 a_22  Automaton (a) a_22       expected      
-6 h_12  Human (h)     h_12       expected      
-7 a_12  Automaton (a) a_12       expected      
-8 h_13  Human (h)     h_13       expected      
-9 h_3   Human (h)     h_3        expected      </code></pre>
+<pre><code># A tibble: 19 × 6
+   node  role           source_object_n node_type     node_label  node_emergence
+   &lt;chr&gt; &lt;chr&gt;          &lt;chr&gt;           &lt;chr&gt;         &lt;chr&gt;       &lt;chr&gt;         
+ 1 h_11  Scientist      1               Human (h)     Scientist(… expected      
+ 2 a_11  Word processor 1               Automaton (a) Word proce… expected      
+ 3 a_21  Cloud data     1               Automaton (a) Cloud data… expected      
+ 4 h_21  Analyst        1               Human (h)     Analyst(1)  expected      
+ 5 a_22  Cloud data     2               Automaton (a) Cloud data… expected      
+ 6 h_12  Scientist      2               Human (h)     Scientist(… expected      
+ 7 a_12  Word processor 2               Automaton (a) Word proce… expected      
+ 8 h_13  Scientist      3               Human (h)     Scientist(… expected      
+ 9 a_11  Scientist      1               Automaton (a) Scientist(… expected      
+10 a_21  Scientist      1               Automaton (a) Scientist(… expected      
+11 h_21  Scientist      1               Human (h)     Scientist(… expected      
+12 h_12  Word processor 1               Human (h)     Word proce… expected      
+13 h_21  Cloud data     1               Human (h)     Cloud data… expected      
+14 a_22  Analyst        1               Automaton (a) Analyst(1)  expected      
+15 h_12  Cloud data     2               Human (h)     Cloud data… expected      
+16 h_12  Analyst        1               Human (h)     Analyst(1)  expected      
+17 a_12  Scientist      2               Automaton (a) Scientist(… expected      
+18 h_13  Word processor 2               Human (h)     Word proce… expected      
+19 h_31  Scientist      3               Human (h)     Scientist(… expected      </code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>S_nodes </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-error">
+<pre><code>Error: object 'S_nodes' not found</code></pre>
 </div>
 </div>
 </div>
 <div id="tabset-2-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-4-tab">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>S_graph</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code># A tbl_graph: 9 nodes and 11 edges
-#
-# A directed acyclic simple graph with 1 component
-#
-# Node Data: 9 × 4 (active)
-  name  node_type     node_label node_emergence
-  &lt;chr&gt; &lt;chr&gt;         &lt;chr&gt;      &lt;chr&gt;         
-1 h_11  Human (h)     h_11       expected      
-2 a_11  Automaton (a) a_11       expected      
-3 a_21  Automaton (a) a_21       expected      
-4 h_2   Human (h)     h_2        miscreant     
-5 a_22  Automaton (a) a_22       expected      
-6 h_12  Human (h)     h_12       expected      
-7 a_12  Automaton (a) a_12       expected      
-8 h_13  Human (h)     h_13       expected      
-9 h_3   Human (h)     h_3        expected      
-#
-# Edge Data: 11 × 4
-   from    to edge_label     edge_emergence
-  &lt;int&gt; &lt;int&gt; &lt;chr&gt;          &lt;chr&gt;         
-1     1     2 writes report  expected      
-2     1     3 shares data    expected      
-3     1     4 describes data miscreant     
-# ℹ 8 more rows</code></pre>
+<div class="cell-output cell-output-error">
+<pre><code>Error: object 'S_nodes' not found</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>S_graph</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-error">
+<pre><code>Error: object 'S_graph' not found</code></pre>
 </div>
 </div>
 </div>
 <div id="tabset-2-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-5-tab">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>S_vis </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="math_files/figure-html/unnamed-chunk-21-1.png" class="img-fluid figure-img" width="672"></p>
-</figure>
+<div class="cell-output cell-output-error">
+<pre><code>Error: object 'S_graph' not found</code></pre>
 </div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>S_vis </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-error">
+<pre><code>Error: object 'S_vis' not found</code></pre>
 </div>
 </div>
 </div>
@@ -726,7 +740,7 @@ e : \mathtt{ob}(\mathcal G) \cup \mathtt{hom}(\mathcal G) \mapsto \{
 <div class="tab-content">
 <div id="tabset-3-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-3-1-tab">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>G_edges</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>G_edges</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 2 × 4
   from  to    edge_emergence edge_label
@@ -738,7 +752,7 @@ e : \mathtt{ob}(\mathcal G) \cup \mathtt{hom}(\mathcal G) \mapsto \{
 </div>
 <div id="tabset-3-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-2-tab">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>G_nodes</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>G_nodes</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 2 × 4
   node  node_type node_emergence node_label
@@ -750,7 +764,7 @@ e : \mathtt{ob}(\mathcal G) \cup \mathtt{hom}(\mathcal G) \mapsto \{
 </div>
 <div id="tabset-3-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-3-tab">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>G_graph</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>G_graph</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tbl_graph: 2 nodes and 2 edges
 #
@@ -803,11 +817,11 @@ TRUE): data length [3] is not a sub-multiple or multiple of the number of rows
 <section id="visualisation-of-cycle-of-intelligence-governance" class="level2" data-number="6.2">
 <h2 data-number="6.2" class="anchored" data-anchor-id="visualisation-of-cycle-of-intelligence-governance"><span class="header-section-number">6.2</span> Visualisation of cycle of intelligence governance</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>I_vis</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>I_vis</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="math_files/figure-html/unnamed-chunk-30-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="math_files/figure-html/unnamed-chunk-32-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -849,11 +863,11 @@ g(\theta(n, t) + \varepsilon_v (H, I) + \varepsilon_m (H, I)), \text{ otherwise}
 </section>
 <section id="definition-virtuous-singularity" class="level2" data-number="7.4">
 <h2 data-number="7.4" class="anchored" data-anchor-id="definition-virtuous-singularity"><span class="header-section-number">7.4</span> Definition: Virtuous singularity</h2>
-<p>A singularity in which virtuous E <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>≫</mo><annotation encoding="application/x-tex">\gg</annotation></semantics></math> miscreant E, i.e., <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>ε</mi><mi>v</mi></msub><mo>≫</mo><msub><mi>ε</mi><mi>m</mi></msub></mrow><annotation encoding="application/x-tex">\varepsilon_v \gg \varepsilon_m</annotation></semantics></math>, where burn rate (measure of steps completed to estimated time) is above a certain <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>θ</mi><annotation encoding="application/x-tex">\theta</annotation></semantics></math> threshold.</p>
+<p>A singularity in which virtuous E <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>≫</mo><annotation encoding="application/x-tex">\gg</annotation></semantics></math> miscreant E, i.e., <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>ε</mi><mi>v</mi></msub><mo>≫</mo><msub><mi>ε</mi><mi>m</mi></msub></mrow><annotation encoding="application/x-tex">\varepsilon_v \gg \varepsilon_m</annotation></semantics></math>, where burndown rate (measure of steps completed to estimated time) is above a certain <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>θ</mi><annotation encoding="application/x-tex">\theta</annotation></semantics></math> threshold.</p>
 </section>
 <section id="definition-miscreant-singularity" class="level2" data-number="7.5">
 <h2 data-number="7.5" class="anchored" data-anchor-id="definition-miscreant-singularity"><span class="header-section-number">7.5</span> Definition: Miscreant singularity</h2>
-<p>A singularity in which miscreant E <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>≫</mo><annotation encoding="application/x-tex">\gg</annotation></semantics></math> virtuous E, i.e., <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>ε</mi><mi>m</mi></msub><mo>≫</mo><msub><mi>ε</mi><mi>v</mi></msub></mrow><annotation encoding="application/x-tex">\varepsilon_m \gg \varepsilon_v</annotation></semantics></math>, where burn rate (measure of steps completed to estimated time) is below a certain <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>θ</mi><annotation encoding="application/x-tex">\theta</annotation></semantics></math> threshold.</p>
+<p>A singularity in which miscreant E <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>≫</mo><annotation encoding="application/x-tex">\gg</annotation></semantics></math> virtuous E, i.e., <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>ε</mi><mi>m</mi></msub><mo>≫</mo><msub><mi>ε</mi><mi>v</mi></msub></mrow><annotation encoding="application/x-tex">\varepsilon_m \gg \varepsilon_v</annotation></semantics></math>, where burndown rate (measure of steps completed to estimated time) is below a certain <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>θ</mi><annotation encoding="application/x-tex">\theta</annotation></semantics></math> threshold.</p>
 </section>
 <section id="definition-singularity-violation" class="level2" data-number="7.6">
 <h2 data-number="7.6" class="anchored" data-anchor-id="definition-singularity-violation"><span class="header-section-number">7.6</span> Definition: Singularity violation</h2>
@@ -887,6 +901,7 @@ g(\theta(n, t) + \varepsilon_v (H, I) + \varepsilon_m (H, I)), \text{ otherwise}
 
 </section>
 
+
 <div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">10 References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
 <div id="ref-asimov_i_1950" class="csl-entry" role="listitem">
 Asimov, Isaac. 1950. <em>I, Robot</em>. Dennis Dobson.
@@ -903,13 +918,33 @@ CHALK. 2024. <em>What Is a Topological Dynamical System? The Doubling Map and Ot
 <div id="ref-davey_homomorphism_2018" class="csl-entry" role="listitem">
 Davey, Brian A., Charles T. Gray, and Jane G. Pitkethly. 2018. <span>“The Homomorphism Lattice Induced by a Finite Algebra.”</span> <em>Order</em> 35 (2): 193–214. <a href="https://doi.org/10.1007/s11083-017-9426-3">https://doi.org/10.1007/s11083-017-9426-3</a>.
 </div>
+<div id="ref-dickens_bleak_1868" class="csl-entry" role="listitem">
+Dickens, Charles. 1868. <em>Bleak House</em>. Chapman; Hall.
+</div>
 <div id="ref-radden_metonymy_1999" class="csl-entry" role="listitem">
 Radden, Günter, and Klaus-Uwe Panther. 1999. <span>“Metonymy in Language and Thought,”</span> 1–433. <a href="https://www.torrossa.com/en/resources/an/5000793">https://www.torrossa.com/en/resources/an/5000793</a>.
+</div>
+<div id="ref-rhys_wide_2001" class="csl-entry" role="listitem">
+Rhys, Jean. 2001. <span>“Wide Sargasso Sea.”</span> In <em>Reading Fiction: Opening the Text</em>, 145–51. Springer.
+</div>
+<div id="ref-rivkin_literary_2008" class="csl-entry" role="listitem">
+Rivkin, Julie, ed. 2008. <em>Literary Theory: An Anthology</em>. 6. print. Oxford: Blackwell.
+</div>
+<div id="ref-said_orientalism_2014" class="csl-entry" role="listitem">
+Said, Edward W. 2014. <em>Orientalism</em>. 25. anniversary edition with a new preface by the author. New York: Vintage Books Edition.
 </div>
 <div id="ref-wachowski_matrix_1999" class="csl-entry" role="listitem">
 Wachowski, Lana, and Lilly Wachowski. 1999. <em>The Matrix</em>. Warner Bros., Village Roadshow Pictures, Groucho Film Partnership.
 </div>
-</div></section></div></main> <!-- /main -->
+<div id="ref-whedon_serenity_2005" class="csl-entry" role="listitem">
+Whedon, Joss. 2005. <em>Serenity</em>. Universal Pictures, Barry Mendel Productions.
+</div>
+</div></section><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>Even more horrifying, I am seeing humans default to heuristic thinking in data science development. Critical theory has been deconstructing this since the seventies; humans without governance will default blindly to heuristic social norms in ways that hurt other humans, produce hegemonies of oppression <span class="citation" data-cites="said_orientalism_2014">(<a href="#ref-said_orientalism_2014" role="doc-biblioref">Said 2014</a>)</span> [<span class="citation" data-cites="rivkin_literary_2008">Rivkin (<a href="#ref-rivkin_literary_2008" role="doc-biblioref">2008</a>)</span>]<span class="citation" data-cites="rhys_wide_2001">(<a href="#ref-rhys_wide_2001" role="doc-biblioref">Rhys 2001</a>)</span><span class="citation" data-cites="dickens_bleak_1868">(<a href="#ref-dickens_bleak_1868" role="doc-biblioref">Dickens 1868</a>)</span>. Decades have been devoted to deconstructing the zeitgeist <span class="citation" data-cites="wachowski_matrix_1999">(<a href="#ref-wachowski_matrix_1999" role="doc-biblioref">Wachowski and Wachowski 1999</a>)</span> <span class="citation" data-cites="whedon_serenity_2005">(<a href="#ref-whedon_serenity_2005" role="doc-biblioref">Whedon 2005</a>)</span> <span class="citation" data-cites="asimov_i_1950">(<a href="#ref-asimov_i_1950" role="doc-biblioref">Asimov 1950</a>)</span> of machine intelligence. Yet we learn nothing; the modern data stack is lord of the flies, and this brown woman is so destined to lose working on something like FAIR data in the context of unbridled sexism, racism, and bullying, she has no choice but to try to make solutions. Humans, specifically me, are getting harmed. Not bitter. Motivated.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

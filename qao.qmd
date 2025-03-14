@@ -4,16 +4,4 @@ subtitle: "And what to do about them"
 author: "Dr Charles T. Gray, Data Punk" 
 ---
 
-So. 
-
-I swear I am on the third draft of this, I have all the code snippets, the argument. 
-
-But porting the mansucript to interoperate with the slides - and game - proved such a challenge I decided to take a more [formal approach](singularities.qmd) to how I will instantiate the QAO paper here. 
-
-QAO paper will be presented on [March 26 Copenhagen meetup](https://www.meetup.com/copenhagen-dbt-meetup/events/306219858/?eventOrigin=your_events), so I have a firm deadline for this. It's coming. I just needed to finish the first draft of the formal approach first.
-
-In the meantime, please watch this informative Documentary about working on the modern data stack.
-
-## What it's like working on the modern data stack 
-
-<iframe src="https://www.youtube.com/embed/qLrnkK2YEcE?si=jeX0VvOXqm4fJFe2&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+{{< revealjs "slides/2025-dbt.html" >}}

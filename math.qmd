@@ -1,6 +1,6 @@
 ---
 title: The Math Bit
-subtitle: A categorical framework for structured intelligence governance of emergence in structured intelligence systems
+subtitle: Towards a categorical framework for governing emergence in structured intelligence systems
 author: 
   - name: Dr Charles T. Gray, Datapunk
     orcid: 0000-0002-9978-011X
@@ -135,9 +135,13 @@ Look, I'm just a data engineer who studied a skerrick of math a while back, all 
 
 # Experiment: Living morphism in JIRA
 
-Motivation for this project began with finding that despite mastering the digraph-structured planning tool JIRA; I was still utterly unable to manage the generativity nor complexity of the subgraphs, as development progresses.
+Motivation[^1] for this project began with finding that despite mastering the digraph-structured planning tool JIRA, at graph, sub-graph, and sub-sub-graph level; I was still utterly unable to manage the generativity nor complexity of the subgraphs, as development progresses.
 
-All I wanted to do was construct a structure-preserving, dimension-reducing living morphism that monitored these things. What follows is a string I cannot stop pulling.
+[^1]: Even more horrifying, I am seeing humans default to heuristic thinking in data science development. Critical theory has been deconstructing this since the seventies; humans without governance will default blindly to heuristic social norms in ways that hurt other humans, produce hegemonies of oppression [@said_orientalism_2014] [@rivkin_literary_2008][@rhys_wide_2001][@dickens_bleak_1868]. Decades have been devoted to deconstructing the zeitgeist [@wachowski_matrix_1999] [@whedon_serenity_2005] [@asimov_i_1950] of machine intelligence. Yet we learn nothing; the modern data stack is lord of the flies, and this brown woman is so destined to lose working on something like FAIR data in the context of unbridled sexism, racism, and bullying, she has no choice but to try to make solutions. Humans, specifically me, are getting harmed. Not bitter. Motivated.   
+
+All I wanted to do was construct a structure-preserving, dimension-reducing living morphism that monitored these things. 
+
+> What follows is a string I cannot stop pulling.
 
 # Conjecture 
 
@@ -297,7 +301,7 @@ To show this is true,  we will need to:
 2. Define the category $\mathcal G$ of structured intelligence governance.
 3. Define $I$ as a digraph in terms of the category of structured intelligence governance.
 4. Define constraints on the morphisms of $\mathcal G$ in terms of $I$.
-5. Show $I$ is a discrete topological dynamical system.
+5. Show $S$ is a discrete topological dynamical system, thus displays emergence.
 6. Show how $I$ governs emergence in a structured intelligence system.
 
 # Structured intelligence systems
@@ -325,7 +329,8 @@ humans <- paste("h", seq(1:3), sep="_")
 ```
 
 ```{r echo=TRUE}
-humans
+humans 
+
 ```
 
 ```{r echo=FALSE}
@@ -337,6 +342,26 @@ automata <- paste("a", seq(1:2), sep="_")
 automata
 ```
 
+```{r echo=FALSE}
+S_objects <- tibble(
+  object = c(humans, automata)
+) |>
+  mutate(
+    role = case_when(
+      object == "h_1" ~ "Scientist",
+      object == "h_2" ~ "Analyst",
+      object == "h_3" ~ "Decision maker",
+      object == "a_1" ~ "Word processor",
+      object == "a_2" ~ "Cloud data"
+    )
+  )
+
+```
+
+```{r echo=TRUE}
+S_objects
+```
+
 ## Edges
 
 ```{r echo=FALSE}
@@ -346,15 +371,15 @@ S_edges <- tribble(
   ~from,  ~to,   ~edge_label,
   "h_11",  "a_11", "writes report",  
   "h_11",  "a_21", "shares data",
-  "h_11",   "h_2",  "describes data",  
+  "h_11",   "h_21",  "describes data",  
   "a_11",  "h_12", "compiles document",
-  "a_21",  "h_2", "receives data",
-  "h_2",  "a_22", "shares analysis",
+  "a_21",  "h_21", "receives data",
+  "h_21",  "a_22", "shares analysis",
   "a_22",  "h_12", "receives analysis",
-  "h_2",  "h_12", "reports analysis",
+  "h_21",  "h_12", "reports analysis",
   "h_12", "a_12",  "incorporates analysis",
   "a_12",   "h_13", "compiles report",
-  "h_13", "h_3",  "reports results"
+  "h_13", "h_31",  "reports results"
 ) |>
   mutate(
     edge_emergence = case_when(
@@ -366,8 +391,11 @@ S_edges <- tribble(
         "reports results"
         ) ~ "miscreant",
       TRUE ~ "expected"
-    )
-  )
+    ),
+    source_object = str_sub(from, 1, 3),
+    source_object_n = str_sub(from, 4, 4)
+  )  |> left_join(S_objects, by = c("source_object" = "object")) 
+
 
 ```
 
@@ -380,11 +408,13 @@ S_edges
 
 ```{r echo=FALSE}
 
-S_nodes <- S_edges |>
-  select(node = from)  |>
+# S_nodes <- 
+
+S_edges |>
+  select(node = from, role, source_object_n)  |>
   # ensure unique now necessary
   bind_rows(
-    S_edges |> select(node = to)
+    S_edges |> select(node = to, role, source_object_n)
   ) |>
   distinct() |>
   mutate(
@@ -394,11 +424,11 @@ S_nodes <- S_edges |>
       str_detect(node, "h_") ~ "Human (h)",
       str_detect(node, "a_") ~ "Automaton (a)"      
     ),
-    node_label = node,
+    node_label = str_c(role, "(", source_object_n, ")"),
     node_emergence = if_else(
       node == "h_2", "miscreant", "expected"
     ) 
-  )
+  ) 
 
 
 
@@ -415,7 +445,7 @@ S_nodes
 S_graph <- S_edges |>
   as_tbl_graph() |>
   activate(nodes) |>
-  left_join(S_nodes, by = c("name" = "node")) 
+  left_join(S_nodes |> select(node, node_label), by = c("name" = "node")) 
 
 ```
 
@@ -695,11 +725,11 @@ An unbounded singularity has no measure by which to check the laws; an unbounded
 
 ## Definition: Virtuous singularity
 
-A singularity in which virtuous E $\gg$ miscreant E, i.e., $\varepsilon_v \gg \varepsilon_m$, where burn rate (measure of steps completed to estimated time) is above a certain $\theta$ threshold.
+A singularity in which virtuous E $\gg$ miscreant E, i.e., $\varepsilon_v \gg \varepsilon_m$, where burndown rate (measure of steps completed to estimated time) is above a certain $\theta$ threshold.
 
 ## Definition: Miscreant singularity
 
-A singularity in which miscreant E $\gg$ virtuous E, i.e., $\varepsilon_m \gg \varepsilon_v$, where burn rate (measure of steps completed to estimated time) is below a certain $\theta$ threshold.
+A singularity in which miscreant E $\gg$ virtuous E, i.e., $\varepsilon_m \gg \varepsilon_v$, where burndown rate (measure of steps completed to estimated time) is below a certain $\theta$ threshold.
 
 ## Definition: Singularity violation
 

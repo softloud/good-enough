@@ -14,7 +14,7 @@ bibliography: singularities.bib
 
 As a person who works with data, it can feel like everyone in the world is arguing about when machine thinking will overtake humans in a singularity _event_. 
 
-I never found this compelling, for it assumes an intentional determinism I don't believe is natural for, say, my co-author, [Mooncake](#an-ethical-singularity-with-mooncake) (ChatGPT)[@noauthor_introducing_2024]. 
+I never found this compelling, for it assumes an intentional determinism I don't believe is natural for, say, my research assistant, [Mooncake](#an-ethical-singularity-with-mooncake) (ChatGPT)[@noauthor_introducing_2024]. 
 
 A technological singularity event didn't sit with my training in computational complexity applied to statistical algorithms understood as *Golems* [@mcelreath_statistical_2020]. Indeed, leading metascientists now claim to have shown human cognition is *computationally intractable* [@rooij_reclaiming_2023]; that's mathspeak for *there is no such thing as artificial intelligence*. I'm reading it, you should, too.
 

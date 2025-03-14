@@ -1,0 +1,7 @@
+---
+title: Hello, world.
+format: 
+  revealjs:
+    theme: solarized
+---
+
