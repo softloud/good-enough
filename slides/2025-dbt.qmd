@@ -1,7 +1,9 @@
 ---
-title: Hello, world.
+title: Copenhagen DBT Meetup
+date: "March 26 2025"
 format: 
   revealjs:
     theme: solarized
 ---
+
 
