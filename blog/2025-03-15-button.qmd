@@ -1,0 +1,232 @@
+---
+title: A singularity of button
+code-fold: true
+date: "March 14 2025"
+author: 
+  - name: Dr Charles T. Gray, Datapunk
+    orcid: 0000-0002-9978-011X
+    affiliations:
+      - name: Good Enough Data & Systems Lab
+---
+
+
+
+```{r echo=TRUE, message=FALSE}
+
+# pkg
+library(tidyverse)
+library(ggraph)
+library(tidygraph)
+
+
+```
+
+
+In my last post, I constructed the graph $B$.
+
+::: {.panel-tabset}
+
+## motivation
+
+I want to understand the singularity of
+
+- button visualisatons
+- formatting across slides and manuscript did not work
+- game
+- slides
+- manuscript
+
+First we ask what they have in common.
+
+## edges 
+
+It always starts with edges.
+
+> output key assumption: dataframe has `from`and `to`. 
+
+```{r}
+B_edges <-
+  tribble(
+    ~from,    ~to,
+    "raw",    "edges",
+    "edges",  "nodes",
+    "raw",    "nodes",
+    "edges",  "tidygraph",
+    "nodes",  "tidygraph",
+    "tidygraph", "ggraph",
+    "ggraph",   "display",
+    "display",  "deploy"
+  )
+
+
+```
+
+```{r}
+# check assumption
+colwise_check <- c("from", "to") %in% colnames(B_edges) 
+
+colwise_check
+
+# convert colwise vector to boolean
+all(colwise_check) == TRUE
+
+
+# display edges
+B_edges
+
+
+```
+
+## nodes
+
+Then node metadata often needs to be extracted or inferred. 
+
+A challenge is node joining happens after the graph object is created.
+
+> output key assumption: there is exactly `one row per node` in `B_edges`
+
+```{r}
+
+B_nodes <-
+  # extract nodes from edges
+  tibble(
+    node = c(B_edges$from, B_edges$to)
+  ) |>
+  # filter to unique nodes
+  distinct() |>
+  # add node attributes
+  mutate(
+    # necessary
+    node_label = node,
+
+    # contextual
+    painpoint = if_else(
+      node %in% c("deploy", "tidygraph"),
+      TRUE,
+      FALSE
+    ),
+    node_emergence = if_else(
+      painpoint == TRUE,
+      "miscreant",
+      "expected"
+    )
+  )
+
+
+```
+
+the antijoin nodes and edges by node should have no rows
+
+```{r}
+B_antijoin <-
+  {
+    tibble(
+      node = c(B_edges$from, B_edges$to)
+    ) |>
+    # filter to unique nodes
+    distinct()
+  } |> anti_join(B_nodes |> select(node), by = "node")
+
+```
+
+verify assumption 
+
+```{r}
+nrow(B_antijoin) == 0
+
+```
+
+display nodes
+```{r}
+B_nodes
+```
+
+## graph
+
+```{r}
+B_graph <- 
+  B_edges |>
+  as_tbl_graph() |>
+  activate(nodes) |>
+  # add node attributes
+  left_join(B_nodes, by = c("name" = "node"))
+
+B_graph
+
+```
+
+## vis
+
+```{r }
+#| fig-height: 12 
+B_graph |>
+  ggraph() +
+  geom_edge_link(
+    arrow = arrow(
+      length  = unit(0.02, "npc"),
+      angle = 20
+      ),
+    alpha = 0.3,
+    start_cap = circle(0.03, 'npc'),
+    end_cap = circle(0.03, 'npc')
+  ) +
+  geom_node_point(
+    aes(colour = node_emergence)
+  ) +
+  geom_node_text(
+    aes(label = node_label),
+    repel = TRUE,
+    family = "Courier"
+  ) +
+  theme_minimal() +
+  theme(
+    plot.title = element_text(
+      family = "Courier"
+      ),
+    plot.subtitle = element_text(
+      family = "Courier"
+      ),    
+    plot.caption = element_text(
+      family = "Courier"
+      ),    
+    axis.text = element_blank(),
+    axis.title = element_blank(),
+    panel.grid = element_blank()
+  ) +
+  labs(
+    title = "Development Expectation",
+    subtitle = "Known problems at tidygraph and deployment"
+  ) +
+  ggplot2:::manual_scale(
+    "colour",
+    values = setNames(
+      c("#a6611a", "#018571","#dfc27d", "#80cdc1"),
+      c("violation", "virtuous", "miscreant", "expected")
+    )
+  )
+
+```
+
+
+:::
+
+Experimented with api-ing some data in. Promising.
+
+```{r eval=FALSE}
+
+library(httr)
+library(jsonlite)
+source("jiraapi.R")
+
+
+auth <- authenticate(jira_email, jira_api)
+jql_query <- list(jql = "project = PANDAN")
+
+response <- GET(jira_url, auth, query = jql_query)
+stop_for_status(response)
+
+jira_data <- fromJSON(content(response, "text", encoding = "UTF-8"))
+
+
+```
+
