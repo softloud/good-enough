@@ -8,6 +8,7 @@ author:
     affiliations:
       - name: Good Enough Data & Systems Lab
 bibliography: ../singularities.bib
+embed-pdf: true
 ---
 
 Consider 
@@ -46,7 +47,15 @@ has sensitive dependence.*
 
 Consider a data engineer on a team, if they are doing lots of platform tasks it could mean they are highly skilled and should be supported. Or perhaps they are underresourced and require support. 
 
-I feel like it's intuitive it's a topological dynamical system, but will need to revise and check rigorous. 
+I feel like it's intuitive it's a topological dynamical system, but will need to revise and check rigorous. For a brief moment it all made sense about 10 years ago.
+
+::: {.cell}
+
+<iframe src="../slides/smorange.pdf" width="100%" height="600px"></iframe>
+
+:::
+
+
 
 The question that is really nagging me, however, is this. 
 
