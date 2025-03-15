@@ -6,17 +6,20 @@ website:
   title: "Good Enough Lab"
   navbar:
     left: 
-      - menu: 
-        - text: Singularities
-          href: singularities-placeholder.qmd
-        - text: Button
-          href: button.qmd
-        - text: Singularities as Math
-          href: math.qmd
-        - text: Singularities in Pop Culture
-          href: pop.qmd
-        - text: Questionable Analytical Observations
-          href: qao.qmd
+      - text: Development Blog
+        menu:
+          - text: Button - 2025-03-15
+            href: blog/2025-03-15-button.qmd
+          - text: Button - 2025-03-14
+            href: blog/2025-03-14-button.qmd
+      - text: Drafts
+        menu:
+          - text: Singularities as Math
+            href: math.qmd
+          - text: Singularities in Pop Culture
+            href: pop.qmd
+          - text: Questionable Analytical Observations
+            href: qao.qmd
     right:
       - text: Collaborate
         href: collab.qmd

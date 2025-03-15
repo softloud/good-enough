@@ -8,6 +8,19 @@ date: '`r Sys.Date()`'
 
 ---
 
+Under development - here's what's coming:
+
+- data simulation animations of singularities failing
+- time-series analysis on real-world data
+- two papers
+- slides
+- a narrative adventure game 
+- simulations on the narrative adventure game
+- category-theoretic analysis on development of the narrative adventure game
+- proof-sketches to discuss with applied category theorists
+
+---
+
 The Good Enough Data & Systems Lab collaborates with game studios by computationally applying category theory and abstract mathematics to codebases and digraph-oriented game development (e.g., JIRA) plans. Any graph-oriented or flat data structure has potential to be aggregated.
 
 
