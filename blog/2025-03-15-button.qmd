@@ -7,226 +7,55 @@ author:
     orcid: 0000-0002-9978-011X
     affiliations:
       - name: Good Enough Data & Systems Lab
+bibliography: ../singularities.bib
 ---
 
+Consider 
 
+- development plan
+- expectation plan
+- file-tree metadata
 
-```{r echo=TRUE, message=FALSE}
+The graph investigated [yeseterday's post](blog/2025-03-14.qmd) laid out the expectation, and I intended this post to be starting to bring in the other data. 
 
-# pkg
-library(tidyverse)
-library(ggraph)
-library(tidygraph)
+But first let us consider the universal properties of these entities:
 
+- digraph
+- finite at step $n$
+- infinitely possible divisions and restructures across all steps 
 
-```
+Effectively the system is a blob that grows and grows. 
 
+![](2025-03-15-S.jpg)
 
-In my last post, I constructed the graph $B$.
+So then I spent today revisiting Banks' delightful *Chaos: A Mathetmatical Introduction* [@banks_chaos_2003], then found my coursenotes from Banks' class, and started working exercises. 
 
-::: {.panel-tabset}
+This was the bit that really jumped out at me in today's reading. 
 
-## motivation
+> We say that $f : X \to X$ has sensitive dependence on initial conditions or more briefly sensitive dependence, if there is a global constant (called a sensitivity constant) such that for each $x \in X$, each open set
+U containing x also contains a point y such that $d(f ^n(x), f^n(y) \geq \delta$   for
+some $n \in \mathbb N$. In 1989, Robert Devaney defined chaos as the conjunction
+of transitivity, a dense set of periodic points and sensitive dependence.
+It later turned out that sensitive dependence was redundant in this
+definition in all cases of interest. Many other definitions of chaos have
+been proposed.
+>
+> *Theorem 4.10. Let $f : X \to X$ where X is an infinite metric
+space. If f is transitive and has a dense set of periodic points, then f
+has sensitive dependence.*
 
-I want to understand the singularity of
+Consider a data engineer on a team, if they are doing lots of platform tasks it could mean they are highly skilled and should be supported. Or perhaps they are underresourced and require support. 
 
-- button visualisatons
-- formatting across slides and manuscript did not work
-- game
-- slides
-- manuscript
+I feel like it's intuitive it's a topological dynamical system, but will need to revise and check rigorous. 
 
-First we ask what they have in common.
+The question that is really nagging me, however, is this. 
 
-## edges 
+> What is the minimum number of people and tools such that given there is a small chance of misunderstanding, the scientific claim is chaotically undermined by predictable failures in the categorical conjugacy of human intent and tool output? 
 
-It always starts with edges.
+My spidey sense is it will be embarassingly small; as in, almost all organisations fail. 
 
-> output key assumption: dataframe has `from`and `to`. 
+As discussed in yesterday's post, even on a team of one, I feel overwhelmed by computational complexity. But only when development gets far along. At the start, when the plan is simple, it's just a rush, fun.
 
-```{r}
-B_edges <-
-  tribble(
-    ~from,    ~to,
-    "raw",    "edges",
-    "edges",  "nodes",
-    "raw",    "nodes",
-    "edges",  "tidygraph",
-    "nodes",  "tidygraph",
-    "tidygraph", "ggraph",
-    "ggraph",   "display",
-    "display",  "deploy"
-  )
+I feel like I'm viscerally experiencing *sensitive dependence*, but will need to continue to read to feel confident in these initial thoughts. 
 
-
-```
-
-```{r}
-# check assumption
-colwise_check <- c("from", "to") %in% colnames(B_edges) 
-
-colwise_check
-
-# convert colwise vector to boolean
-all(colwise_check) == TRUE
-
-
-# display edges
-B_edges
-
-
-```
-
-## nodes
-
-Then node metadata often needs to be extracted or inferred. 
-
-A challenge is node joining happens after the graph object is created.
-
-> output key assumption: there is exactly `one row per node` in `B_edges`
-
-```{r}
-
-B_nodes <-
-  # extract nodes from edges
-  tibble(
-    node = c(B_edges$from, B_edges$to)
-  ) |>
-  # filter to unique nodes
-  distinct() |>
-  # add node attributes
-  mutate(
-    # necessary
-    node_label = node,
-
-    # contextual
-    painpoint = if_else(
-      node %in% c("deploy", "tidygraph"),
-      TRUE,
-      FALSE
-    ),
-    node_emergence = if_else(
-      painpoint == TRUE,
-      "miscreant",
-      "expected"
-    )
-  )
-
-
-```
-
-the antijoin nodes and edges by node should have no rows
-
-```{r}
-B_antijoin <-
-  {
-    tibble(
-      node = c(B_edges$from, B_edges$to)
-    ) |>
-    # filter to unique nodes
-    distinct()
-  } |> anti_join(B_nodes |> select(node), by = "node")
-
-```
-
-verify assumption 
-
-```{r}
-nrow(B_antijoin) == 0
-
-```
-
-display nodes
-```{r}
-B_nodes
-```
-
-## graph
-
-```{r}
-B_graph <- 
-  B_edges |>
-  as_tbl_graph() |>
-  activate(nodes) |>
-  # add node attributes
-  left_join(B_nodes, by = c("name" = "node"))
-
-B_graph
-
-```
-
-## vis
-
-```{r }
-#| fig-height: 12 
-B_graph |>
-  ggraph() +
-  geom_edge_link(
-    arrow = arrow(
-      length  = unit(0.02, "npc"),
-      angle = 20
-      ),
-    alpha = 0.3,
-    start_cap = circle(0.03, 'npc'),
-    end_cap = circle(0.03, 'npc')
-  ) +
-  geom_node_point(
-    aes(colour = node_emergence)
-  ) +
-  geom_node_text(
-    aes(label = node_label),
-    repel = TRUE,
-    family = "Courier"
-  ) +
-  theme_minimal() +
-  theme(
-    plot.title = element_text(
-      family = "Courier"
-      ),
-    plot.subtitle = element_text(
-      family = "Courier"
-      ),    
-    plot.caption = element_text(
-      family = "Courier"
-      ),    
-    axis.text = element_blank(),
-    axis.title = element_blank(),
-    panel.grid = element_blank()
-  ) +
-  labs(
-    title = "Development Expectation",
-    subtitle = "Known problems at tidygraph and deployment"
-  ) +
-  ggplot2:::manual_scale(
-    "colour",
-    values = setNames(
-      c("#a6611a", "#018571","#dfc27d", "#80cdc1"),
-      c("violation", "virtuous", "miscreant", "expected")
-    )
-  )
-
-```
-
-
-:::
-
-Experimented with api-ing some data in. Promising.
-
-```{r eval=FALSE}
-
-library(httr)
-library(jsonlite)
-source("jiraapi.R")
-
-
-auth <- authenticate(jira_email, jira_api)
-jql_query <- list(jql = "project = PANDAN")
-
-response <- GET(jira_url, auth, query = jql_query)
-stop_for_status(response)
-
-jira_data <- fromJSON(content(response, "text", encoding = "UTF-8"))
-
-
-```
-
+Increasingly, I believe structured intelligence governance is in the intersection of category theory, critical theory (for defining ethical constraints on morphisms), and chaos.
