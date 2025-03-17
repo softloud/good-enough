@@ -88,13 +88,13 @@ Without loss of generality, consider the *human intention* to implement Asimov's
 - and the category of governance, 
 - a measure space for humans and automata,
 - defined in terms of agents of objects in the system,
-- enabling us to apply topological dynamics measures to the sofic shift to monitor the stability of system.
+- enabling us to measure the stability of the sofic shift with topological dynamics.
 
 To do this is far beyond the scope of this manuscript, which proposes frameworks for the first step. Consider, for example how phone notifications can emergently *increase* human anxiety, in opposition to the design `intention` to *decrease* human anxiety.
 
-# The intuition of governing structured intelligence systems
+# Critical-theoretic intuition of governing structured intelligence systems
 
-## Phone notifications break the first law
+## Computational privacy measures break the first law
 
 Critical theory is now coinciding with category theory in philosophy  [@topos_institute_david_2023], allowing for a rich formal framework to apply constraints defined by scholars who have studied the harms of humans blindly defaulting to heuristic social norms in race [@said_orientalism_2014], gender [@rivkin_literary_2008], and class [@dickens_bleak_1868][^3]. This manuscript endeavours toward minimal representations of conceptual frameworks, so we take the most canonical governance measure on machines, *machines should not harm humans*, as exemplar canonical of critical-theoretic governance frameworks for human-machine interoperation.
 
@@ -108,7 +108,14 @@ It is fitting that, then  to focus on 1. from Asimov's three laws as inspiration
 2. A robot must obey orders given it by human beings except where such orders would conflict with the First Law.
 3. A robot must protect its own existence as long as such protection does not conflict with the First or Second Law.
 
-Now as noted, there are no robots, nor will there ever be [@rooij_reclaiming_2023]. But I am in a singularity with my phone. There is me, a human object, and an object from technology. The notifications from my phone are an emergent singularity I cannot control. To reframe the laws, we will need to introduce a great deal of terminology. Let us loosely introduce one term now so that we might map a strategy, define the laws, discuss the intuition, and dive into the technical detail later.
+Now as noted, there are no robots, nor will there ever be [@rooij_reclaiming_2023]. But I am in a singularity with my device when logging into a 
+system such as a bank[^4]. There is me, a human object, and a technological device.
+
+[^4]: *Contributor acknowledgement*: This argument was improved by a discussion with my brilliant neighbour Álfrún Freyja Eldberg Agnarsdóttir, age 9, who highlighted that out of notifications, logging in, and advertising, all are intrusive, and the worst is logging in. The effect of this intrusive barrage of technology on children seems dangerously unmonitored. 
+
+If that technological device forces the human to deviate from their governance framework (such as protect my own privacy) through repetive changes to how we interface, humans become fatigued, and look for other paths. Those paths may well be less secure than the governing principle of protecting our own privacy. MFA is a step in the right direction, but humans remain overwhelmed by the process of *logging in*.
+
+To reframe the laws, we will need to introduce a great deal of terminology. Let us loosely introduce one term now so that we might map a strategy, define the laws, discuss the intuition, and dive into the technical detail later.
 
 A `structured intelligence system` [@badreddin_structured_2006] is a system of humans, automata, and the interoperations of humans and automata. 
 
@@ -116,11 +123,11 @@ A `structured intelligence system` [@badreddin_structured_2006] is a system of h
 
 1. A structured intelligence system may not injure a human being or, through inaction, allow a human being to come to harm.
 
-Now, developers of phone technology do not *intend* harm, and yet, I find myself so fatigued by changes to the way that I can manage the notifications in my life from, say, a phone, that I end up succumbing to the onslaught rather than navigate a user interface. 
+Now, developers of technology do not *intend* harm, and yet, I find myself so fatigued by changes to how we log securely into systems even I cut corners I know I shouldn't with my own data. 
 
-There is a mismatch between the intended functionality of phone notifications, to decrease human anxiety, and the outcome, an unmanageable deluge with management workflow constantly in flux. Not just a mismatch, but antithetical to *intention*.
+There is a mismatch between the intended functionality of security, to protect humans, and the outcome, an unmanageable deluge of workflow constantly in flux. This is not just a mismatch, but antithetical to *intention*.
 
-We now loosely introduce another key concept, how the harm can be thought of in the **epistemic drift** between intention for phone notifications to decrease rather than increase my anxiety.
+We now loosely introduce another key concept, how the harm can be thought of in the **epistemic drift** between intention for privacy measures to increase security and wellbeing and how the outcome produces neither.
 
 ## Epistemic drift in musical orientalism
 
@@ -155,11 +162,15 @@ Happily, we have a language that unites critical theory, mathematical chaos, and
 
 A singularity from many perspectives,  we are interested in the interoperability between intentional and heuristic agency.
 
+---
+
 Consider this system in terms of three things:
 
 1. People.
 2. Machines.
 3. Relationships between people and machines.
+
+---
 
 ::: {#fig-intuitive}
 
@@ -169,6 +180,8 @@ Consider this system in terms of three things:
 Pure mathematics provides frameworks to measure things that seem to complex to understand.
 
 :::
+
+--- 
 
 A category-theoretic way of measuring the stabilty of the system might be to ask:
 
@@ -181,6 +194,8 @@ This is the minimal model of structured intelligence governance we shall concern
 > Think  on this. In over 10 years of working with data, I've never seen an organisation able to answer this question about their analytics department.
 
 We want to govern the system opinionatedly towards humans exercising intent, rather than falling on meaningless convention  or social hegemonies of oppression, and we wish machines to apply their heuristics in alignment with human intent. We consider other *outcomes as emergences*.
+
+---
 
 An intelligence-governance question might be to ask:
 

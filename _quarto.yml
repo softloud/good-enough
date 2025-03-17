@@ -17,7 +17,7 @@ website:
       - text: Drafts
         menu:
           - text: Singularities
-            href: singularities-placehodler.qmd
+            href: singularities-placeholder.qmd
           - text: Singularities as Math
             href: math-placeholder.qmd
           - text: Singularities in Pop Culture
