@@ -1,0 +1,16 @@
+---
+title: The Math Bit
+subtitle: Towards a categorical framework for governing emergence in structured intelligence systems
+author: 
+  - name: Dr Charles T. Gray, Datapunk
+    orcid: 0000-0002-9978-011X
+    affiliations:
+      - name: Good Enough Data & Systems Lab
+date: '`r Sys.Date()`'
+bibliography: singularities.bib
+number-sections: true
+html-math-method: mathml
+
+---
+
+[Argument has too many angles, am blogging to get to refinement](blog/2025-03-17-button.qmd)

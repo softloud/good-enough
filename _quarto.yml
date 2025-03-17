@@ -8,6 +8,8 @@ website:
     left: 
       - text: Development Blog
         menu:
+          - text: Phone - 2025-03-17
+            href: blog/2025-03-17-button.qmd
           - text: Button - 2025-03-15
             href: blog/2025-03-15-button.qmd
           - text: Button - 2025-03-14
