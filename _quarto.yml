@@ -16,8 +16,10 @@ website:
             href: blog/2025-03-14-button.qmd
       - text: Drafts
         menu:
+          - text: Singularities
+            href: singularities-placehodler.qmd
           - text: Singularities as Math
-            href: math.qmd
+            href: math-placeholder.qmd
           - text: Singularities in Pop Culture
             href: pop.qmd
           - text: Questionable Analytical Observations
