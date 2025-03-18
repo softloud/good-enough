@@ -30,6 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -66,7 +68,65 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-date','listing-title','listing-author',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
+      
+      searchColumns: ["listing-date","listing-title","listing-author"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -88,25 +148,10 @@ ul.task-list li input[type="checkbox"] {
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-development-blog" role="button" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Development Blog</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-development-blog">    
-        <li>
-    <a class="dropdown-item" href="./blog/2025-03-17-button.html">
- <span class="dropdown-text">Phone - 2025-03-17</span></a>
+  <li class="nav-item">
+    <a class="nav-link" href="./blog.html"> 
+<span class="menu-text">Development Blog</span></a>
   </li>  
-        <li>
-    <a class="dropdown-item" href="./blog/2025-03-15-button.html">
- <span class="dropdown-text">Button - 2025-03-15</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./blog/2025-03-14-button.html">
- <span class="dropdown-text">Button - 2025-03-14</span></a>
-  </li>  
-    </ul>
-  </li>
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-drafts" role="button" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">Drafts</span>
@@ -115,10 +160,6 @@ ul.task-list li input[type="checkbox"] {
         <li>
     <a class="dropdown-item" href="./singularities-placeholder.html">
  <span class="dropdown-text">Singularities</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./math-placeholder.html">
- <span class="dropdown-text">Singularities as Math</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="./pop.html">
@@ -156,7 +197,13 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#blog" id="toc-blog" class="nav-link active" data-scroll-target="#blog">Blog</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -189,18 +236,6 @@ ul.task-list li input[type="checkbox"] {
 
 <p><em>Order from the chaos of existing development, without interfering with team workflow.</em></p>
 <hr>
-<p>Under development - here’s what’s coming:</p>
-<ul>
-<li>data simulation animations of singularities failing</li>
-<li>time-series analysis on real-world data</li>
-<li>two papers</li>
-<li>slides</li>
-<li>a narrative adventure game</li>
-<li>simulations on the narrative adventure game</li>
-<li>category-theoretic analysis on development of the narrative adventure game</li>
-<li>proof-sketches to discuss with applied category theorists</li>
-</ul>
-<hr>
 <p>The Good Enough Data &amp; Systems Lab collaborates with game studios by computationally applying category theory and abstract mathematics to codebases and digraph-oriented game development (e.g., JIRA) plans. Any graph-oriented or flat data structure has potential to be aggregated.</p>
 <p>The Lab uses a mix of category theory, visualisation, and data simulation to explore frameworks such as</p>
 <ul>
@@ -214,10 +249,105 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 <p>A key priority is to to have <em>no</em> disruption on developer workflow, the Lab works at a metalevel on existing plans, well-masked human resource database extraction, and codebase metadata to provide strategic analyses.</p>
 <p>The Good Enough Data &amp; Systems Lab develops and publishes on a categorically-defined <em>structured intelligence governance</em> framework with collaborators, creating a virtuous cycle between research and industry.</p>
+<hr>
+<p>Under development - here’s what’s coming:</p>
+<ul>
+<li>data simulation animations of singularities failing</li>
+<li>time-series analysis on real-world data</li>
+<li>two papers</li>
+<li>slides</li>
+<li>a narrative adventure game</li>
+<li>simulations on the narrative adventure game</li>
+<li>category-theoretic analysis on development of the narrative adventure game</li>
+<li>proof-sketches to discuss with applied category theorists</li>
+</ul>
+<section id="blog" class="level1">
+<h1>Blog</h1>
 
 
 
-</main> <!-- /main -->
+</section>
+
+<div class="quarto-listing quarto-listing-container-table" id="listing-listing">
+<div class="listing-actions-group">
+   <div class="input-group input-group-sm quarto-listing-sort">
+     <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
+     <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
+       <option value="" disabled="" selected="" hidden="">Order By</option>
+       <option value="index" data-direction="asc">Default</option>
+         <option value="listing-date-sort" data-direction="asc">
+          Date - Oldest
+        </option>
+         <option value="listing-date-sort" data-direction="desc">
+          Date - Newest
+        </option>
+         <option value="listing-title-sort" data-direction="asc">
+          Title
+        </option>
+         <option value="listing-author" data-direction="asc">
+          Author
+        </option>
+     </select>
+  </div>
+    <div class="input-group input-group-sm quarto-listing-filter">
+      <span class="input-group-text"><i class="bi bi-search"></i></span>
+      <input type="text" class="search form-control" placeholder="Filter">
+    </div>
+</div>
+<table class="quarto-listing-table table">
+<thead>
+<tr>
+<th>
+<a class="sort" data-sort="listing-date-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Date</a>
+</th>
+<th>
+<a class="sort" data-sort="listing-title-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Title</a>
+</th>
+<th>
+<a class="sort" data-sort="listing-author" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Author</a>
+</th>
+</tr>
+</thead>
+<tbody class="list">
+<tr data-index="0" data-listing-date-sort="1742166000000" data-listing-file-modified-sort="1742215239092" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1155" data-listing-title-sort="My phone notifications are breaking the first law - WIP" data-listing-filename-sort="2025-03-17-button.qmd">
+<td>
+<span class="listing-date">Mar 17, 2025</span>
+</td>
+<td>
+<a href="./blog/2025-03-17-button.html" class="title listing-title">My phone notifications are breaking the first law - WIP</a>
+</td>
+<td>
+<span class="listing-author">Dr Charles T. Gray, Datapunk, Mooncake (Measured)</span>
+</td>
+</tr>
+<tr data-index="1" data-listing-date-sort="1741993200000" data-listing-file-modified-sort="1742280579141" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="444" data-listing-title-sort="A singularity of button" data-listing-filename-sort="2025-03-15-button.qmd">
+<td>
+<span class="listing-date">Mar 15, 2025</span>
+</td>
+<td>
+<a href="./blog/2025-03-15-button.html" class="title listing-title">A singularity of button</a>
+</td>
+<td>
+<span class="listing-author">Dr Charles T. Gray, Datapunk</span>
+</td>
+</tr>
+<tr data-index="2" data-listing-date-sort="1741906800000" data-listing-file-modified-sort="1742035803546" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="859" data-listing-title-sort="A singularity of button" data-listing-filename-sort="2025-03-14-button.qmd">
+<td>
+<span class="listing-date">Mar 14, 2025</span>
+</td>
+<td>
+<a href="./blog/2025-03-14-button.html" class="title listing-title">A singularity of button</a>
+</td>
+<td>
+<span class="listing-author">Dr Charles T. Gray, Datapunk</span>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

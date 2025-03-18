@@ -2,22 +2,13 @@
 title: "Good Enough Data & Systems Lab"
 subtitle: "Mathematical Proofs Implemented in Computational Systems"
 date: '`r Sys.Date()`'
+listing: 
+  contents: blog
+  type: table
+  sort: "date desc"
 ---
 
 *Order from the chaos of existing development, without interfering with team workflow.*
-
----
-
-Under development - here's what's coming:
-
-- data simulation animations of singularities failing
-- time-series analysis on real-world data
-- two papers
-- slides
-- a narrative adventure game 
-- simulations on the narrative adventure game
-- category-theoretic analysis on development of the narrative adventure game
-- proof-sketches to discuss with applied category theorists
 
 ---
 
@@ -37,3 +28,19 @@ The Lab uses a mix of category theory, visualisation, and data simulation to exp
 A key priority is to to have *no* disruption on developer workflow, the Lab works at a metalevel on existing plans, well-masked human resource database extraction, and codebase metadata to provide strategic analyses.
 
 The Good Enough Data & Systems Lab develops and publishes on a categorically-defined *structured intelligence governance* framework with collaborators, creating a virtuous cycle between research and industry. 
+
+---
+
+Under development - here's what's coming:
+
+- data simulation animations of singularities failing
+- time-series analysis on real-world data
+- two papers
+- slides
+- a narrative adventure game 
+- simulations on the narrative adventure game
+- category-theoretic analysis on development of the narrative adventure game
+- proof-sketches to discuss with applied category theorists
+
+# Blog
+

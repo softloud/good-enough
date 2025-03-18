@@ -1,7 +1,7 @@
 ---
 title: A singularity of button
 code-fold: true
-date: "March 14 2025"
+date: "March 15 2025"
 author: 
   - name: Dr Charles T. Gray, Datapunk
     orcid: 0000-0002-9978-011X
