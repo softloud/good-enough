@@ -7,6 +7,7 @@ website:
   navbar:
     left: 
       - text: Development Blog
+        href: blog.qmd
         menu:
           - text: Phone - 2025-03-17
             href: blog/2025-03-17-button.qmd
@@ -18,8 +19,6 @@ website:
         menu:
           - text: Singularities
             href: singularities-placeholder.qmd
-          - text: Singularities as Math
-            href: math-placeholder.qmd
           - text: Singularities in Pop Culture
             href: pop.qmd
           - text: Questionable Analytical Observations

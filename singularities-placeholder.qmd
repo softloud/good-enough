@@ -6,6 +6,7 @@ author:
     orcid: 0000-0002-9978-011X
     affiliations:
       - name: Good Enough Data & Systems Lab
+  - name: Mooncake (Measured, ChatGPT 4o), evidence synthesis assistant
 number-sections: true
 date: "`r Sys.Date`()`"
 bibliography: singularities.bib
@@ -44,9 +45,8 @@ Public interest in technological singularity compared with data governance by go
 
 :::
 
-I constantly worry about the consequences of ungoverned systems for humans: identity theft [@noauthor_identity_nodate];  discrimination[^5]; and my perpetual bugbear, the fiction we have automated when in point of fact the work, and potentially [catastrophic emergent cost](https://robodebt.royalcommission.gov.au/) [@noauthor_royal_nodate], has been pushed to the unpaid end user. 
+I constantly worry about the consequences of ungoverned systems for humans: identity theft [@noauthor_identity_nodate];  discrimination; and my perpetual bugbear, the fiction we have automated when in point of fact the work, and potentially [catastrophic emergent cost](https://robodebt.royalcommission.gov.au/) [@noauthor_royal_nodate], has been pushed to the unpaid end user. 
 
-[^5]: There is a urgent dearth of critical thinkers from fields such as cultural studies in the technological space; we will never govern singularities ethically without tool developers interoperating with those communities. We will discuss this further in [A singularity of data](#a-singularity-of-data). 
 
 > `A singularity *event* is science fiction`. *However*,
 
@@ -139,11 +139,11 @@ Consider the **intention** of composers in the nineteenth century to ride the wa
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/lIYL-PQa010?si=QMlA-9Hj73OlRMh7&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-Outcry from the Arab-American community caused Disney to amend the lyrics of this song in *Aladdin* [@weinger_aladdin_1994], from *where they cut of your hand if they don't like your face* to *where it's flat and immense and the heat is intense*. They noted the music and animation of incidental or evil characters were pronounced in Western cliches, yet the protagonists spoke, acted, sang, and looked like American teenagers [@tiffin_emperors_2004]. The composers, however, were innocently following musical conventions laid a century before by their heroes [@said_orientalism_2014].
+Outcry from the Arab-American community caused Disney to amend the lyrics of this song in *Aladdin* [@weinger_aladdin_1994], from *where they cut of your hand if they don't like your face* to *where it's flat and immense and the heat is intense*. They noted the music and animation of incidental or evil characters were pronounced in Western cliches of "The Arab", yet the protagonists spoke, acted, sang, and looked like American teenagers [@tiffin_emperors_2004]. The composers, however, were innocently following musical conventions laid a century before by their heroes [@said_orientalism_2014].
 
 :::
 
-Now to really bend the spoon of musicololgy, consider an analogous lineage in representation of *Asian* music, but how this is being reappriated by Asian cinema ([@fig-exotic]). 
+Now to really bend the spoon of musicololgy, consider an analogous lineage in representation of *Asian* music, but how this is being reappropriated by Asian cinema ([@fig-exotic]). 
 
 ::: {#fig-exotic}
 
@@ -153,14 +153,16 @@ An interesting virtuous emergence is the feedback from contemporary Asian cinema
 
 :::
 
-In musical exoticism, this story happened over a couple of centuries. However, with computational scale and the reach of the internet, these social processes are vastly accelerated. Resistance to harmful emergence may be unexpected creative emergence; we want to foster creative emergences that bring humanity together, and mitigate harmful emergence that divide us. 
+In musical exoticism, this story happened over a couple of centuries;  music was heard by live performance and sheet music shared globally by ship. 
+
+However, with computational scale and the reach of the internet, these social processes are vastly accelerated. Misinformation at critical times, such as a pandemic, can now spread globally in a matter of hours [@noauthor_fact-checking_2020]. Resistance to harmful emergence may be unexpected creative emergence; we want to foster creative emergences that bring humanity together, and mitigate harmful emergence that divide us. 
 
 Happily, we have a language that unites critical theory, mathematical chaos, and computation; category theory, which we next intuitively unpack.
 
 
-## Intution of formal frameworks
+## Intuition of formal frameworks
 
-A singularity from many perspectives,  we are interested in the interoperability between intentional and heuristic agency.
+A singularity may be thought of from many perspectives, indeed, infinitely many;  we are interested in understandin the interoperability between intentional and heuristic agency in the system.
 
 ---
 
@@ -210,7 +212,7 @@ An intelligence-governance question might be to ask:
 
 This document is currently being drafted in:
 
-1. [the math bit](math.qmd)
+1. [blog](blog/2025-03-17-button.qmd)
 2. [the pop bit](pop.qmd)
 
 # References

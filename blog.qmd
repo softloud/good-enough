@@ -1,0 +1,6 @@
+---
+listing:
+  contents: blog
+  type: grid
+  sort: "date desc"
+---
