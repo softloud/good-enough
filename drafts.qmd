@@ -1,0 +1,6 @@
+---
+title: Living Mathematics
+---
+
+Live, interactive proofs have been around for centuries. Mathematics is the universal language, it is for talking to each other, exchanging ideas. No one human solves everything. 
+
