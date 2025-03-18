@@ -1,6 +1,6 @@
 ---
 title: "Structured Intelligence Governance: Formal Definitions & The Repeated Login Problem"
-date: "`r Sys.Date()`"
+date: "2025-03-18"
 author: 
   - name: Dr Charles T. Gray, Datapunk
     orcid: 0000-0002-9978-011X
