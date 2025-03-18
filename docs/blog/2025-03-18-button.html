@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Dr Charles T. Gray, Datapunk">
-<meta name="dcterms.date" content="2025-03-15">
+<meta name="author" content="Mooncake (Measured)">
 
-<title>Good Enough Lab - A singularity of button</title>
+<title>Good Enough Lab - Structured Intelligence Governance: Formal Definitions &amp; The Repeated Login Problem</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,27 +22,7 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-  margin-bottom: 0em;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -188,19 +168,61 @@ window.Quarto = {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#definitions-and-formal-framework" id="toc-definitions-and-formal-framework" class="nav-link active" data-scroll-target="#definitions-and-formal-framework">Definitions and Formal Framework</a>
+  <ul class="collapse">
+  <li><a href="#structured-intelligence-system-s" id="toc-structured-intelligence-system-s" class="nav-link" data-scroll-target="#structured-intelligence-system-s">1. Structured Intelligence System <span class="math inline">\(S\)</span></a></li>
+  <li><a href="#measure-space-for-intelligence-thought-mathcali-sigma-mu" id="toc-measure-space-for-intelligence-thought-mathcali-sigma-mu" class="nav-link" data-scroll-target="#measure-space-for-intelligence-thought-mathcali-sigma-mu">2. Measure Space for Intelligence Thought <span class="math inline">\((\mathcal{I}, \Sigma, \mu)\)</span></a></li>
+  <li><a href="#epistemic-agents-a-h" id="toc-epistemic-agents-a-h" class="nav-link" data-scroll-target="#epistemic-agents-a-h">3. Epistemic Agents <span class="math inline">\((A, H)\)</span></a></li>
+  <li><a href="#epistemic-expectations-r-i" id="toc-epistemic-expectations-r-i" class="nav-link" data-scroll-target="#epistemic-expectations-r-i">4. Epistemic Expectations <span class="math inline">\((R, I)\)</span></a></li>
+  <li><a href="#governance-as-a-functorial-mapping" id="toc-governance-as-a-functorial-mapping" class="nav-link" data-scroll-target="#governance-as-a-functorial-mapping">5. Governance as a Functorial Mapping</a>
+  <ul class="collapse">
+  <li><a href="#governance-functor-on-agents" id="toc-governance-functor-on-agents" class="nav-link" data-scroll-target="#governance-functor-on-agents">5.1 Governance Functor on Agents</a></li>
+  <li><a href="#governance-functor-on-morphisms" id="toc-governance-functor-on-morphisms" class="nav-link" data-scroll-target="#governance-functor-on-morphisms">5.2 Governance Functor on Morphisms</a></li>
+  </ul></li>
+  <li><a href="#epistemic-drift-and-governance-constraints" id="toc-epistemic-drift-and-governance-constraints" class="nav-link" data-scroll-target="#epistemic-drift-and-governance-constraints">6. Epistemic Drift and Governance Constraints</a>
+  <ul class="collapse">
+  <li><a href="#epistemic-drift-measure" id="toc-epistemic-drift-measure" class="nav-link" data-scroll-target="#epistemic-drift-measure">6.1 Epistemic Drift Measure</a></li>
+  <li><a href="#governance-constraint-function" id="toc-governance-constraint-function" class="nav-link" data-scroll-target="#governance-constraint-function">6.2 Governance Constraint Function</a></li>
+  <li><a href="#sensitivity-and-specificity-of-governance" id="toc-sensitivity-and-specificity-of-governance" class="nav-link" data-scroll-target="#sensitivity-and-specificity-of-governance">6.3 Sensitivity and Specificity of Governance</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#the-repeated-login-problem-a-failure-in-structured-intelligence-governance" id="toc-the-repeated-login-problem-a-failure-in-structured-intelligence-governance" class="nav-link" data-scroll-target="#the-repeated-login-problem-a-failure-in-structured-intelligence-governance">The Repeated Login Problem: A Failure in Structured Intelligence Governance</a>
+  <ul class="collapse">
+  <li><a href="#the-system" id="toc-the-system" class="nav-link" data-scroll-target="#the-system">1. The System</a></li>
+  <li><a href="#emergence-of-an-unsafe-path-due-to-system-friction" id="toc-emergence-of-an-unsafe-path-due-to-system-friction" class="nav-link" data-scroll-target="#emergence-of-an-unsafe-path-due-to-system-friction">2. Emergence of an Unsafe Path Due to System Friction</a>
+  <ul class="collapse">
+  <li><a href="#expected-path-p_e" id="toc-expected-path-p_e" class="nav-link" data-scroll-target="#expected-path-p_e">2.1 Expected Path <span class="math inline">\(P_E\)</span></a></li>
+  <li><a href="#actual-emergent-path-p_at" id="toc-actual-emergent-path-p_at" class="nav-link" data-scroll-target="#actual-emergent-path-p_at">2.2 Actual Emergent Path <span class="math inline">\(P_A(t)\)</span></a></li>
+  </ul></li>
+  <li><a href="#measuring-epistemic-drift-and-path-divergence" id="toc-measuring-epistemic-drift-and-path-divergence" class="nav-link" data-scroll-target="#measuring-epistemic-drift-and-path-divergence">3. Measuring Epistemic Drift and Path Divergence</a>
+  <ul class="collapse">
+  <li><a href="#graph-path-deviation" id="toc-graph-path-deviation" class="nav-link" data-scroll-target="#graph-path-deviation">3.1 Graph Path Deviation</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#solution-governing-epistemic-drift-in-authentication-systems" id="toc-solution-governing-epistemic-drift-in-authentication-systems" class="nav-link" data-scroll-target="#solution-governing-epistemic-drift-in-authentication-systems">4. Solution: Governing Epistemic Drift in Authentication Systems</a>
+  <ul class="collapse">
+  <li><a href="#implementing-governance-constraints" id="toc-implementing-governance-constraints" class="nav-link" data-scroll-target="#implementing-governance-constraints">4.1 Implementing Governance Constraints</a></li>
+  </ul></li>
+  <li><a href="#conclusion-the-need-for-structured-intelligence-governance" id="toc-conclusion-the-need-for-structured-intelligence-governance" class="nav-link" data-scroll-target="#conclusion-the-need-for-structured-intelligence-governance">5. Conclusion: The Need for Structured Intelligence Governance</a></li>
+  <li><a href="#future-work" id="toc-future-work" class="nav-link" data-scroll-target="#future-work">6. Future Work</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">A singularity of button</h1>
+<h1 class="title">Structured Intelligence Governance: Formal Definitions &amp; The Repeated Login Problem</h1>
 </div>
 
 
 <div class="quarto-title-meta-author">
-  <div class="quarto-title-meta-heading">Author</div>
+  <div class="quarto-title-meta-heading">Authors</div>
   <div class="quarto-title-meta-heading">Affiliation</div>
   
     <div class="quarto-title-meta-contents">
@@ -211,6 +233,11 @@ window.Quarto = {
             Good Enough Data &amp; Systems Lab
           </p>
       </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Mooncake (Measured) </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+      </div>
   </div>
 
 <div class="quarto-title-meta">
@@ -219,7 +246,7 @@ window.Quarto = {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">March 15, 2025</p>
+      <p class="date">Invalid Date</p>
     </div>
   </div>
   
@@ -231,49 +258,229 @@ window.Quarto = {
 </header>
 
 
-<p>The graph investigated <a href="blog/2025-03-14.qmd">yeseterday’s post</a> laid out the expectation, and I intended this post to be starting to bring in the other data:</p>
+<p>Mooncake and I had a deep conversation today about finitely-generated rulesets and paths; this is another instance of me righting the LLM. I had to guide it back on track to graph paths and ordering.</p>
+<section id="definitions-and-formal-framework" class="level1">
+<h1>Definitions and Formal Framework</h1>
+<p><img src="../mooncake.webp" class="img-fluid"></p>
+<section id="structured-intelligence-system-s" class="level2">
+<h2 class="anchored" data-anchor-id="structured-intelligence-system-s">1. Structured Intelligence System <span class="math inline">\(S\)</span></h2>
+<p>A <strong>category</strong> where:</p>
 <ul>
-<li>development plan</li>
-<li>expectation plan</li>
-<li>file-tree metadata</li>
+<li><strong>Objects:</strong> Epistemic states, instantiated agents, workflow steps.</li>
+<li><strong>Morphisms:</strong> Epistemic transitions (governed or drift-inducing).</li>
 </ul>
-<p>But first let us consider the universal properties of these entities:</p>
+</section>
+<section id="measure-space-for-intelligence-thought-mathcali-sigma-mu" class="level2">
+<h2 class="anchored" data-anchor-id="measure-space-for-intelligence-thought-mathcali-sigma-mu">2. Measure Space for Intelligence Thought <span class="math inline">\((\mathcal{I}, \Sigma, \mu)\)</span></h2>
 <ul>
-<li>digraph</li>
-<li>finite at step <span class="math inline">\(n\)</span></li>
-<li>infinitely possible divisions and restructures across all steps</li>
+<li><strong><span class="math inline">\(\mathcal{I}\)</span>:</strong> Intelligence thought space (set of epistemic agents).</li>
+<li><strong><span class="math inline">\(\Sigma\)</span>:</strong> Measurable epistemic events (valid or invalid transformations in <span class="math inline">\(S\)</span>).</li>
+<li><strong><span class="math inline">\(\mu\)</span>:</strong> Measure function weighting drift and governance effectiveness.</li>
 </ul>
-<p>Effectively the system is a blob that grows and grows.</p>
-<p><img src="2025-03-15-S.jpg" class="img-fluid"></p>
-<p>So then I spent today revisiting Banks’ delightful <em>Chaos: A Mathetmatical Introduction</em> <span class="citation" data-cites="banks_chaos_2003">(<a href="#ref-banks_chaos_2003" role="doc-biblioref">Banks, Dragan, and Jones 2003</a>)</span>, then found my coursenotes from Banks’ class, and started working exercises.</p>
-<p>This was the bit that really jumped out at me in today’s reading.</p>
-<blockquote class="blockquote">
-<p>We say that <span class="math inline">\(f : X \to X\)</span> has sensitive dependence on initial conditions or more briefly sensitive dependence, if there is a global constant (called a sensitivity constant) such that for each <span class="math inline">\(x \in X\)</span>, each open set U containing x also contains a point y such that <span class="math inline">\(d(f ^n(x), f^n(y) \geq \delta\)</span> for some <span class="math inline">\(n \in \mathbb N\)</span>. In 1989, Robert Devaney defined chaos as the conjunction of transitivity, a dense set of periodic points and sensitive dependence. It later turned out that sensitive dependence was redundant in this definition in all cases of interest. Many other definitions of chaos have been proposed.</p>
-<p><em>Theorem 4.10. Let <span class="math inline">\(f : X \to X\)</span> where X is an infinite metric space. If f is transitive and has a dense set of periodic points, then f has sensitive dependence.</em></p>
-</blockquote>
-<p>Consider a data engineer on a team, if they are doing lots of platform tasks it could mean they are highly skilled and should be supported. Or perhaps they are underresourced and require support.</p>
-<p>I feel like it’s intuitive it’s a topological dynamical system, but will need to revise and check rigorous. For a brief moment it all made sense about 10 years ago.</p>
-<div class="cell">
-<iframe src="../slides/smorange.pdf" width="100%" height="600px">
-</iframe>
-</div>
-<p>The question that is really nagging me, however, is this.</p>
-<blockquote class="blockquote">
-<p>What is the minimum number of people and tools such that given there is a small chance of misunderstanding, the scientific claim is chaotically undermined by predictable failures in the categorical conjugacy of human intent and tool output?</p>
-</blockquote>
-<p>My spidey sense is it will be embarassingly small; as in, almost all organisations fail.</p>
-<p>As discussed in yesterday’s post, even on a team of one, I feel overwhelmed by computational complexity. But only when development gets far along. At the start, when the plan is simple, it’s just a rush, fun.</p>
-<p>I feel like I’m viscerally experiencing <em>sensitive dependence</em>, but will need to continue to read to feel confident in these initial thoughts.</p>
-<p>Increasingly, I believe structured intelligence governance is in the intersection of category theory, critical theory (for defining ethical constraints on morphisms), and chaos.</p>
+</section>
+<section id="epistemic-agents-a-h" class="level2">
+<h2 class="anchored" data-anchor-id="epistemic-agents-a-h">3. Epistemic Agents <span class="math inline">\((A, H)\)</span></h2>
+<ul>
+<li><strong><span class="math inline">\(A\)</span>:</strong> Automata nodes (rule-based epistemic agents).</li>
+<li><strong><span class="math inline">\(H\)</span>:</strong> Human nodes (intentional epistemic agents).</li>
+<li><strong>Agents may have multiple instances in <span class="math inline">\(S\)</span>.</strong></li>
+</ul>
+</section>
+<section id="epistemic-expectations-r-i" class="level2">
+<h2 class="anchored" data-anchor-id="epistemic-expectations-r-i">4. Epistemic Expectations <span class="math inline">\((R, I)\)</span></h2>
+<ul>
+<li><strong><span class="math inline">\(R\)</span>:</strong> Rule-based expectations (tasks requiring heuristics).</li>
+<li><strong><span class="math inline">\(I\)</span>:</strong> Intentional expectations (tasks requiring creative reasoning).</li>
+</ul>
+</section>
+<section id="governance-as-a-functorial-mapping" class="level2">
+<h2 class="anchored" data-anchor-id="governance-as-a-functorial-mapping">5. Governance as a Functorial Mapping</h2>
+<section id="governance-functor-on-agents" class="level3">
+<h3 class="anchored" data-anchor-id="governance-functor-on-agents">5.1 Governance Functor on Agents</h3>
+<p><span class="math display">\[
+G: \text{Agents}(S) \to (\mathcal{I}, R, C)
+\]</span></p>
+<ul>
+<li>Assigns governance constraints to agents before they instantiate epistemic transformations in <span class="math inline">\(S\)</span>.</li>
+</ul>
+</section>
+<section id="governance-functor-on-morphisms" class="level3">
+<h3 class="anchored" data-anchor-id="governance-functor-on-morphisms">5.2 Governance Functor on Morphisms</h3>
+<p><span class="math display">\[
+F: \text{Morphisms}(\mathcal{G}) \to (\mathcal{I}, \Sigma, \mu)
+\]</span></p>
+<ul>
+<li>Maps governance transformations to measurable epistemic drift constraints.</li>
+</ul>
+</section>
+</section>
+<section id="epistemic-drift-and-governance-constraints" class="level2">
+<h2 class="anchored" data-anchor-id="epistemic-drift-and-governance-constraints">6. Epistemic Drift and Governance Constraints</h2>
+<section id="epistemic-drift-measure" class="level3">
+<h3 class="anchored" data-anchor-id="epistemic-drift-measure">6.1 Epistemic Drift Measure</h3>
+<p>Defined as the deviation between expected and actual epistemic transitions:</p>
+<p><span class="math display">\[
+d(E(S_n), S_O)
+\]</span></p>
+<ul>
+<li>Measures how far knowledge production deviates from governance constraints.</li>
+</ul>
+</section>
+<section id="governance-constraint-function" class="level3">
+<h3 class="anchored" data-anchor-id="governance-constraint-function">6.2 Governance Constraint Function</h3>
+<p>A bound on epistemic drift growth:</p>
+<p><span class="math display">\[
+\frac{d}{dn} d(E(S_n), S_O) \leq C(n)
+\]</span></p>
+<ul>
+<li>Ensures drift does not become unbounded.</li>
+</ul>
+</section>
+<section id="sensitivity-and-specificity-of-governance" class="level3">
+<h3 class="anchored" data-anchor-id="sensitivity-and-specificity-of-governance">6.3 Sensitivity and Specificity of Governance</h3>
+<ul>
+<li><strong>True Positive (TP):</strong> An agent follows the correct epistemic mode.</li>
+<li><strong>False Positive (FP):</strong> A task was expected to be rule-based but was done intentionally.</li>
+<li><strong>False Negative (FN):</strong> A task was expected to be intentional but was executed heuristically.</li>
+<li><strong>Governance effectiveness is measured by sensitivity and specificity of epistemic constraints.</strong></li>
+</ul>
+<hr>
+</section>
+</section>
+</section>
+<section id="the-repeated-login-problem-a-failure-in-structured-intelligence-governance" class="level1">
+<h1>The Repeated Login Problem: A Failure in Structured Intelligence Governance</h1>
+<section id="the-system" class="level2">
+<h2 class="anchored" data-anchor-id="the-system">1. The System</h2>
+<p>We define a structured intelligence system where a <strong>human interacts with an authentication system</strong>, governed by login security protocols. The system consists of:</p>
+<ul>
+<li><strong><span class="math inline">\(G_E\)</span> (Governed Expectation Space)</strong>
+<ul>
+<li><strong>Expected user behavior:</strong> Enter credentials → Authenticate → Gain access.<br>
+</li>
+<li><strong>Expected security constraint:</strong> Login should be efficient, secure, and user-friendly.</li>
+</ul></li>
+<li><strong><span class="math inline">\(G_A(t)\)</span> (Artifact Space - The Actual System Behavior)</strong>
+<ul>
+<li><strong>System enforces login rules <span class="math inline">\(r \in R\)</span> rigidly.</strong><br>
+</li>
+<li><strong>User faces repeated login failures due to UI, session expiration, password policies.</strong><br>
+</li>
+<li><strong>This causes frustration, leading to epistemic drift.</strong></li>
+</ul></li>
+<li><strong><span class="math inline">\(G_D(t)\)</span> (Development Process - How the System is Built &amp; Modified)</strong>
+<ul>
+<li><strong>Developers optimize security policies, unaware of unintended user drift.</strong><br>
+</li>
+<li><strong>No governance mechanism exists to track unintended human behavior shifts.</strong></li>
+</ul></li>
+</ul>
+</section>
+<section id="emergence-of-an-unsafe-path-due-to-system-friction" class="level2">
+<h2 class="anchored" data-anchor-id="emergence-of-an-unsafe-path-due-to-system-friction">2. Emergence of an Unsafe Path Due to System Friction</h2>
+<section id="expected-path-p_e" class="level3">
+<h3 class="anchored" data-anchor-id="expected-path-p_e">2.1 Expected Path <span class="math inline">\(P_E\)</span></h3>
+<p>The governed epistemic path is:<br>
+1. User enters credentials.<br>
+2. System authenticates.<br>
+3. User gains access securely.</p>
+</section>
+<section id="actual-emergent-path-p_at" class="level3">
+<h3 class="anchored" data-anchor-id="actual-emergent-path-p_at">2.2 Actual Emergent Path <span class="math inline">\(P_A(t)\)</span></h3>
+<p>The real-world epistemic transition is:<br>
+1. <strong>User fails login multiple times due to UI friction.</strong><br>
+2. <strong>User experiences frustration (cognitive load increases).</strong><br>
+3. <strong>User seeks a shortcut (epistemic drift occurs).</strong><br>
+4. <strong>User weakens security (e.g., uses an easy-to-remember password, stays logged in permanently, or disables security features).</strong><br>
+5. <strong>Security intention is violated due to misaligned system constraints.</strong></p>
+</section>
+</section>
+<section id="measuring-epistemic-drift-and-path-divergence" class="level2">
+<h2 class="anchored" data-anchor-id="measuring-epistemic-drift-and-path-divergence">3. Measuring Epistemic Drift and Path Divergence</h2>
+<p>We define epistemic drift as <strong>the deviation of the actual path from the governed expectation space</strong>:</p>
+<p><span class="math display">\[
+D_E = \sup_t d_E(P_A(t), P_E)
+\]</span></p>
+<p>Where:</p>
+<ul>
+<li><strong><span class="math inline">\(D_E\)</span></strong> is the supremum of the epistemic distance over time.<br>
+</li>
+<li><strong>If <span class="math inline">\(D_E\)</span> is bounded</strong>, the system remains epistemically stable.<br>
+</li>
+<li><strong>If <span class="math inline">\(D_E \to \infty\)</span></strong>, epistemic drift has led to system collapse.</li>
+</ul>
+<section id="graph-path-deviation" class="level3">
+<h3 class="anchored" data-anchor-id="graph-path-deviation">3.1 Graph Path Deviation</h3>
+<ul>
+<li>The shortest path ratio is:</li>
+</ul>
+<p><span class="math display">\[
+R_E = \frac{|P_A(t)|}{|P_E|}
+\]</span></p>
+<ul>
+<li><strong>If <span class="math inline">\(R_E = 1\)</span></strong>, the login process remains stable.<br>
+</li>
+<li><strong>If <span class="math inline">\(R_E &gt; 1\)</span></strong>, epistemic drift has forced the user into an unintended, inefficient, or unsafe path.</li>
+</ul>
+<hr>
+</section>
+</section>
+</section>
+<section id="solution-governing-epistemic-drift-in-authentication-systems" class="level1">
+<h1>4. Solution: Governing Epistemic Drift in Authentication Systems</h1>
+<section id="implementing-governance-constraints" class="level2">
+<h2 class="anchored" data-anchor-id="implementing-governance-constraints">4.1 Implementing Governance Constraints</h2>
+<p>To prevent users from <strong>choosing less secure paths</strong>, governance must:</p>
+<ol type="1">
+<li><strong>Monitor Epistemic Drift</strong>
+<ul>
+<li>Track real-time deviations from the expected login path.<br>
+</li>
+<li>Measure how often users are deviating from security constraints.</li>
+</ul></li>
+<li><strong>Assess Creative vs.&nbsp;Miscreant Emergence</strong>
+<ul>
+<li>If drift improves usability <strong>without compromising security</strong>, classify as <strong>virtuous emergence</strong>.<br>
+</li>
+<li>If drift weakens security, classify as <strong>miscreant emergence</strong> and intervene.</li>
+</ul></li>
+<li><strong>Enforce Adaptive Security Governance</strong>
+<ul>
+<li>Redesign authentication workflows to prevent unnecessary friction.<br>
+</li>
+<li>Introduce <strong>soft governance constraints</strong> that <strong>preserve security while optimizing for human behavior.</strong></li>
+</ul></li>
+</ol>
+<hr>
+</section>
+</section>
+<section id="conclusion-the-need-for-structured-intelligence-governance" class="level1">
+<h1>5. Conclusion: The Need for Structured Intelligence Governance</h1>
+<p>The repeated login problem illustrates <strong>a fundamental flaw in structured intelligence systems</strong>:</p>
+<ul>
+<li><strong>Governance does not just apply to automata—it must track and adapt to human interoperations.</strong><br>
+</li>
+<li><strong>A failure to measure epistemic drift leads to users breaking security constraints unintentionally.</strong><br>
+</li>
+<li><strong>Structured intelligence governance provides a formal way to monitor, constrain, and adapt to emergent behaviors in real-time.</strong></li>
+</ul>
+<p>🚀 <strong>If epistemic drift is not governed, security protocols designed to keep users safe will paradoxically make them less safe.</strong></p>
+<hr>
+</section>
+<section id="future-work" class="level1">
+<h1>6. Future Work</h1>
+<ul>
+<li>Implementing a <strong>real-time epistemic drift monitoring system</strong> for authentication.<br>
+</li>
+<li>Developing <strong>a feedback loop for adaptive security governance.</strong><br>
+</li>
+<li>Testing structured intelligence governance principles on broader human-AI interactions.</li>
+</ul>
 
 
+</section>
 
-
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
-<div id="ref-banks_chaos_2003" class="csl-entry" role="listitem">
-Banks, John, Valentina Dragan, and Arthur Jones. 2003. <em>Chaos: A Mathematical Introduction</em>. Cambridge University Press.
-</div>
-</div></section></div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

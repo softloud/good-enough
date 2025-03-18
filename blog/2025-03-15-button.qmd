@@ -11,13 +11,12 @@ bibliography: ../singularities.bib
 embed-pdf: true
 ---
 
-Consider 
+The graph investigated [yeseterday's post](blog/2025-03-14.qmd) laid out the expectation, and I intended this post to be starting to bring in the other data: 
 
 - development plan
 - expectation plan
 - file-tree metadata
 
-The graph investigated [yeseterday's post](blog/2025-03-14.qmd) laid out the expectation, and I intended this post to be starting to bring in the other data. 
 
 But first let us consider the universal properties of these entities:
 
