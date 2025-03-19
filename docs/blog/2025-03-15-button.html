@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Dr Charles T. Gray, Datapunk">
+<meta name="dcterms.date" content="2025-03-15">
 
-<title>Good Enough Lab</title>
+<title>Good Enough Lab - A singularity of button</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,27 +22,45 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="dark">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -68,35 +88,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-author','listing-date','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -128,7 +119,7 @@ window.Quarto = {
 };
 </script>
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -138,7 +129,7 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Good Enough Lab</span>
     </a>
   </div>
@@ -149,7 +140,7 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./blog.html" aria-current="page"> 
+    <a class="nav-link" href="../blog.html"> 
 <span class="menu-text">Development Blog</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -158,15 +149,15 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-drafts">    
         <li>
-    <a class="dropdown-item" href="./singularities.html">
+    <a class="dropdown-item" href="../singularities.html">
  <span class="dropdown-text">Singularities</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./pop.html">
+    <a class="dropdown-item" href="../pop.html">
  <span class="dropdown-text">Singularities in Pop Culture</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./qao.html">
+    <a class="dropdown-item" href="../qao.html">
  <span class="dropdown-text">Questionable Analytical Observations</span></a>
   </li>  
     </ul>
@@ -174,15 +165,15 @@ window.Quarto = {
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./collab.html"> 
+    <a class="nav-link" href="../collab.html"> 
 <span class="menu-text">Collaborate</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./lab.html"> 
+    <a class="nav-link" href="../lab.html"> 
 <span class="menu-text">Lab</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./values.html"> 
+    <a class="nav-link" href="../values.html"> 
 <span class="menu-text">Values</span></a>
   </li>  
 </ul>
@@ -202,112 +193,87 @@ window.Quarto = {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">A singularity of button</h1>
+</div>
+
+
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Author</div>
+  <div class="quarto-title-meta-heading">Affiliation</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Dr Charles T. Gray, Datapunk <a href="https://orcid.org/0000-0002-9978-011X" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Good Enough Data &amp; Systems Lab
+          </p>
+      </div>
+  </div>
+
+<div class="quarto-title-meta">
+
+      
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">March 15, 2025</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>The graph investigated <a href="blog/2025-03-14.qmd">yeseterday’s post</a> laid out the expectation, and I intended this post to be starting to bring in the other data:</p>
+<ul>
+<li>development plan</li>
+<li>expectation plan</li>
+<li>file-tree metadata</li>
+</ul>
+<p>But first let us consider the universal properties of these entities:</p>
+<ul>
+<li>digraph</li>
+<li>finite at step <span class="math inline">\(n\)</span></li>
+<li>infinitely possible divisions and restructures across all steps</li>
+</ul>
+<p>Effectively the system is a blob that grows and grows.</p>
+<p><img src="2025-03-15-S.jpg" class="img-fluid"></p>
+<p>So then I spent today revisiting Banks’ delightful <em>Chaos: A Mathetmatical Introduction</em> <span class="citation" data-cites="banks_chaos_2003">(<a href="#ref-banks_chaos_2003" role="doc-biblioref">Banks, Dragan, and Jones 2003</a>)</span>, then found my coursenotes from Banks’ class, and started working exercises.</p>
+<p>This was the bit that really jumped out at me in today’s reading.</p>
+<blockquote class="blockquote">
+<p>We say that <span class="math inline">\(f : X \to X\)</span> has sensitive dependence on initial conditions or more briefly sensitive dependence, if there is a global constant (called a sensitivity constant) such that for each <span class="math inline">\(x \in X\)</span>, each open set U containing x also contains a point y such that <span class="math inline">\(d(f ^n(x), f^n(y) \geq \delta\)</span> for some <span class="math inline">\(n \in \mathbb N\)</span>. In 1989, Robert Devaney defined chaos as the conjunction of transitivity, a dense set of periodic points and sensitive dependence. It later turned out that sensitive dependence was redundant in this definition in all cases of interest. Many other definitions of chaos have been proposed.</p>
+<p><em>Theorem 4.10. Let <span class="math inline">\(f : X \to X\)</span> where X is an infinite metric space. If f is transitive and has a dense set of periodic points, then f has sensitive dependence.</em></p>
+</blockquote>
+<p>Consider a data engineer on a team, if they are doing lots of platform tasks it could mean they are highly skilled and should be supported. Or perhaps they are underresourced and require support.</p>
+<p>I feel like it’s intuitive it’s a topological dynamical system, but will need to revise and check rigorous. For a brief moment it all made sense about 10 years ago.</p>
+<div class="cell">
+<iframe src="../slides/smorange.pdf" width="100%" height="600px">
+</iframe>
+</div>
+<p>The question that is really nagging me, however, is this.</p>
+<blockquote class="blockquote">
+<p>What is the minimum number of people and tools such that given there is a small chance of misunderstanding, the scientific claim is chaotically undermined by predictable failures in the categorical conjugacy of human intent and tool output?</p>
+</blockquote>
+<p>My spidey sense is it will be embarassingly small; as in, almost all organisations fail.</p>
+<p>As discussed in yesterday’s post, even on a team of one, I feel overwhelmed by computational complexity. But only when development gets far along. At the start, when the plan is simple, it’s just a rush, fun.</p>
+<p>I feel like I’m viscerally experiencing <em>sensitive dependence</em>, but will need to continue to read to feel confident in these initial thoughts.</p>
+<p>Increasingly, I believe structured intelligence governance is in the intersection of category theory, critical theory (for defining ethical constraints on morphisms), and chaos.</p>
 
 
 
 
-
-
-
-<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-listing-date-sort="1742252400000" data-listing-file-modified-sort="1742344254257" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="903">
-<a href="./blog/2025-03-18-button.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="mooncake.webp" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Structured Intelligence Governance: Formal Definitions &amp; The Repeated Login Problem
-</h5>
-<div class="card-text listing-description">
-Mooncake and I had a deep conversation today about finitely-generated rulesets and paths; this is another instance of me righting the LLM. I had to guide it back on track to…
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-banks_chaos_2003" class="csl-entry" role="listitem">
+Banks, John, Valentina Dragan, and Arthur Jones. 2003. <em>Chaos: A Mathematical Introduction</em>. Cambridge University Press.
 </div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Dr Charles T. Gray, Datapunk, Mooncake (Measured)
-</div>
-<div class="listing-date">
-Mar 18, 2025
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="1" data-listing-date-sort="1742166000000" data-listing-file-modified-sort="1742322821899" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1155">
-<a href="./blog/2025-03-17-button.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="mooncake.webp" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-My phone notifications are breaking the first law - generative
-</h5>
-<div class="card-text listing-description">
-Worked in my notebook from definitions, also discussed Mooncake. Here’s working solution. It’s taking shape; applying it will help me refine the definitions.
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Dr Charles T. Gray, Datapunk, Mooncake (Measured)
-</div>
-<div class="listing-date">
-Mar 17, 2025
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="2" data-listing-date-sort="1741993200000" data-listing-file-modified-sort="1742322811781" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="443">
-<a href="./blog/2025-03-15-button.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="blog/2025-03-15-S.jpg" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-A singularity of button
-</h5>
-<div class="card-text listing-description">
-The graph investigated yeseterday’s post laid out the expectation, and I intended this post to be starting to bring in the other data:
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Dr Charles T. Gray, Datapunk
-</div>
-<div class="listing-date">
-Mar 15, 2025
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="3" data-listing-date-sort="1741906800000" data-listing-file-modified-sort="1742344161700" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="866">
-<a href="./blog/2025-03-14-button.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="blog/2025-03-14-button_files/figure-html/unnamed-chunk-10-1.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-A singularity of button
-</h5>
-<div class="card-text listing-description">
-So, where to start with the button problem?
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Dr Charles T. Gray, Datapunk
-</div>
-<div class="listing-date">
-Mar 14, 2025
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
