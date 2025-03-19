@@ -789,5 +789,33 @@
     "title": "press a button now",
     "section": "",
     "text": "This function sets the next edge-relation in the path \\(P \\subset V \\times V\\)."
+  },
+  {
+    "objectID": "qao.html#definition-fair-data-entity-test",
+    "href": "qao.html#definition-fair-data-entity-test",
+    "title": "Questionable Analytical Observations (QAO)",
+    "section": "Definition: FAIR data entity test",
+    "text": "Definition: FAIR data entity test\n\nAnalyst validates a single data point in their chosen tool.\nThere is no requirement the validation passes the test."
+  },
+  {
+    "objectID": "qao.html#framaing-fair",
+    "href": "qao.html#framaing-fair",
+    "title": "Questionable Analytical Observations (QAO)",
+    "section": "Framaing FAIR",
+    "text": "Framaing FAIR\nThe FAIR framing shown in Figure 3 is a way to communicate the black box of data to decision makers. In particular, this framing highlights the distinction between what they conceptualise as data (Can’t you just email me a spreadsheet?) and a data product brick in reusable data architecture that will save untold wages in the long run.\n\n\n\n\n\n\n\n\n\n\n\nValidation of Data Entity meets Minimum FAIR Criteria\n\n\nFAIR principle\nMinimum requirements\n\n\n\n\nFindable\nData documentation wherein columns & tables have descriptions for the data entity lineage. Clearly states access protocols; i.e., data security. Ensures subject matter experts can advise on governance, as well as contribute to validation.\n\n\nAccessible\nUnderstandable in terms of a data entity, a semantic abstraction in stakeholder terms (e.g., a number on an invoice). The helps ensure data governance is applied as subject matter experts advise.\n\n\nInteroperable\nWorkflows to ensure data governance, security, and access function as intended when analysing data entity. Facilitates subject matter experts contributing to data validation.\n\n\nReusable\nRequested data transformations provided in published layer of dedicated database, standard tests applied to data entity (see below for details) to confirm validity of documentated assumptions.\n\n\n\n\n\n\n\n\nFigure 3: Validation of FAIR data entity."
+  },
+  {
+    "objectID": "qao.html#minimal-tests",
+    "href": "qao.html#minimal-tests",
+    "title": "Questionable Analytical Observations (QAO)",
+    "section": "Minimal tests",
+    "text": "Minimal tests\nThe minimal set of tests show in Figure 4 for\n\nuniqueness\nmissingness\nduplicates\n\nallows for data platform development whilst demonstrating a good-faith roadmap to compliance for, say, the EU Comission’s Environmental, Social, and Governance reporting (ESG) (“Sustainable Finance - European Commission” n.d.).\n\n\n\n\n\n\n\n\n\n\n\nTests Applied on Data Product Layers by Observability, Descending\n\n\n\nTest\nTested\n\n\n\n\nAnalytical Observation\n\n\noutput\nunique key\ndata entity\n\n\nSemantic Transformation\n\n\noutput\nunique key\ndata entity joined across raw sources and tested\n\n\nSource\n\n\noutput\nunique key\ndata entity defined and tested\n\n\ninput\nunique key\ncombination of columns that define a unique row\n\n\ninput\nfreshness\nincrementation or snapshot field\n\n\ninput\nnot empty\ntable-level test\n\n\n\nWe say a unique key has been tested when the same combination of columns have not null and unique tests applied.\n\n\nFreshness tests configurations: daily ingestion (warn &gt; 1 day, error &gt; 1 week); weekly ingestion (warn &gt; 1 week, error &gt; 2 weeks)\n\n\n\n\n\n\n\n\n\nFigure 4: FAIR data entity tests\n\n\n\n\nIt can be a challenge to communicate to leadership with little experinces of the trenches of data development the obstacles in scaling legacy data to living analyses. By setting these minimal goals, the problem solving is democratised from engineer to analyst.\nWe now turn to motivating1 the solution we just provided."
+  },
+  {
+    "objectID": "qao.html#framing-fair",
+    "href": "qao.html#framing-fair",
+    "title": "Questionable Analytical Observations (QAO)",
+    "section": "Framing FAIR",
+    "text": "Framing FAIR\nThe FAIR framing shown in Figure 3 is a way to communicate the black box of data to decision makers. In particular, this framing highlights the distinction between what they conceptualise as data (Can’t you just email me a spreadsheet?) and a data product brick in reusable data architecture that will save untold wages in the long run.\n\n\n\n\n\n\n\n\n\n\n\nValidation of Data Entity meets Minimum FAIR Criteria\n\n\nFAIR principle\nMinimum requirements\n\n\n\n\nFindable\nData documentation wherein columns & tables have descriptions for the data entity lineage. Clearly states access protocols; i.e., data security. Ensures subject matter experts can advise on governance, as well as contribute to validation.\n\n\nAccessible\nUnderstandable in terms of a data entity, a semantic abstraction in stakeholder terms (e.g., a number on an invoice). The helps ensure data governance is applied as subject matter experts advise.\n\n\nInteroperable\nWorkflows to ensure data governance, security, and access function as intended when analysing data entity. Facilitates subject matter experts contributing to data validation.\n\n\nReusable\nRequested data transformations provided in published layer of dedicated database, standard tests applied to data entity (see below for details) to confirm validity of documentated assumptions.\n\n\n\n\n\n\n\n\nFigure 3: Validation of FAIR data entity."
   }
 ]

@@ -37,7 +37,7 @@ Those in the trenches of the modern data stack know this is why the community ha
 
 These engineers are also the first to tell you just how far from reality the industry is  in realising even a fraction of those aspirations [@landi__2020]. 
 
-Something that tools such as DBT are beginning to intuit is that the governance of data must be an iterative **workflow**, not a policy checkbox at the end, such an aim is (we argue in a [sister paper](singularities-placeholder.qmd)) chaotically impossible given how development plans morph and change. 
+Something that tools such as DBT are beginning to intuit is that the governance of data must be an iterative **workflow**, not a policy checkbox at the end, such an aim is (we argue in a [sister paper](singularities.qmd)) chaotically impossible given how development plans morph and change. 
 
 We must correct for epistemic drift in the chaos induced by people and machines interoperating to answer scientific questions. Or, despite our best efforts, we end at the *frontier psychiatry* (@fig-frontier) of data science. 
 
@@ -51,7 +51,14 @@ Each scientist or engineer is skilled in their own right, but together create an
 
 We begin declaritively, as engineers are busy and it's good to give them a table of instructions on the second page so they can stop reading and go code something useful. 
 
-# FAIR Data Entity - User Acces Data Test
+# FAIR Data Entity - User Access Data Test
+
+## Definition: FAIR data entity test
+
+1. Analyst validates a single data point in their chosen tool.
+2. There is no requirement the validation passes the test.
+
+## Framing FAIR 
 
 The FAIR framing shown in @fig-fair is a way to communicate the black box of data to decision makers. In particular, this framing highlights the distinction between what they conceptualise as `data` (*Can't you just email me a spreadsheet?*) and a `data product` brick in reusable data architecture that will save untold wages in the long run.
 
@@ -63,6 +70,8 @@ source("figures-and-tables/fair-minimum-criteria/fair-minimum-criteria.R")
 
 fair_gt
 ```
+
+## Minimal tests
 
 The minimal set of tests show in @fig-tests for 
 
