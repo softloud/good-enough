@@ -9,6 +9,8 @@ website:
       - text: Development Blog
         href: blog.qmd
         menu:
+          - text: Login - 2025-03-19
+            href: blog/2025-03-18.qmd
           - text: Phone - 2025-03-17
             href: blog/2025-03-17-button.qmd
           - text: Button - 2025-03-15

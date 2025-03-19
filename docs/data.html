@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Good Enough Lab</title>
+<title>Good Enough Lab - Good Enough Data Strategy</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -68,65 +66,7 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-author','listing-date','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -149,7 +89,7 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./blog.html" aria-current="page"> 
+    <a class="nav-link" href="./blog.html"> 
 <span class="menu-text">Development Blog</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -197,117 +137,80 @@ window.Quarto = {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#opinionated-test-driven-data-development" id="toc-opinionated-test-driven-data-development" class="nav-link" data-scroll-target="#opinionated-test-driven-data-development">🏗️ Opinionated, Test-Driven Data Development</a>
+  <ul class="collapse">
+  <li><a href="#why-test-driven-data-development" id="toc-why-test-driven-data-development" class="nav-link" data-scroll-target="#why-test-driven-data-development">🔹 <strong>Why Test-Driven Data Development?</strong></a></li>
+  <li><a href="#how-this-works-in-practice" id="toc-how-this-works-in-practice" class="nav-link" data-scroll-target="#how-this-works-in-practice">🔹 <strong>How This Works in Practice</strong></a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Good Enough Data Strategy</h1>
+<p class="subtitle lead">Ethical AI &amp; Data Governance</p>
+</div>
 
 
 
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
 
 
+</header>
 
 
-<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-listing-date-sort="1742252400000" data-listing-file-modified-sort="1742344254257" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="903">
-<a href="./blog/2025-03-18-button.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="mooncake.webp" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Structured Intelligence Governance: Formal Definitions &amp; The Repeated Login Problem
-</h5>
-<div class="card-text listing-description">
-Mooncake and I had a deep conversation today about finitely-generated rulesets and paths; this is another instance of me righting the LLM. I had to guide it back on track to…
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Dr Charles T. Gray, Datapunk, Mooncake (Measured)
-</div>
-<div class="listing-date">
-Mar 18, 2025
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="1" data-listing-date-sort="1742166000000" data-listing-file-modified-sort="1742322821899" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1155">
-<a href="./blog/2025-03-17-button.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="mooncake.webp" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-My phone notifications are breaking the first law - generative
-</h5>
-<div class="card-text listing-description">
-Worked in my notebook from definitions, also discussed Mooncake. Here’s working solution. It’s taking shape; applying it will help me refine the definitions.
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Dr Charles T. Gray, Datapunk, Mooncake (Measured)
-</div>
-<div class="listing-date">
-Mar 17, 2025
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="2" data-listing-date-sort="1741993200000" data-listing-file-modified-sort="1742322811781" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="443">
-<a href="./blog/2025-03-15-button.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="blog/2025-03-15-S.jpg" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-A singularity of button
-</h5>
-<div class="card-text listing-description">
-The graph investigated yeseterday’s post laid out the expectation, and I intended this post to be starting to bring in the other data:
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Dr Charles T. Gray, Datapunk
-</div>
-<div class="listing-date">
-Mar 15, 2025
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="3" data-listing-date-sort="1741906800000" data-listing-file-modified-sort="1742344161700" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="866">
-<a href="./blog/2025-03-14-button.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="blog/2025-03-14-button_files/figure-html/unnamed-chunk-10-1.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-A singularity of button
-</h5>
-<div class="card-text listing-description">
-So, where to start with the button problem?
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Dr Charles T. Gray, Datapunk
-</div>
-<div class="listing-date">
-Mar 14, 2025
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+<section id="introduction" class="level1">
+<h1>Introduction</h1>
+<p>Data development begins and ends with people—or data development stalls.<br>
+The complexity of data systems is not just a <strong>technical</strong> challenge; it is a <strong>human</strong> one.</p>
+<p>At <strong>Good Enough Data &amp; Systems Lab</strong>, we advocate for an <strong>opinionated, test-driven approach</strong> that prioritizes:</p>
+<p>✅ <strong>Democratizing knowledge</strong> → Ensuring all stakeholders can meaningfully contribute to data products.<br>
+✅ <strong>Parallelizing development</strong> → Structuring workflows so that bottlenecks are eliminated.<br>
+✅ <strong>Prioritizing developer and analyst wellbeing</strong> → Recognizing that sustainable, high-quality data work requires ethical treatment of both people and data.</p>
+<p>🚀 <strong>This is not just an alternative to conventional data strategies—it is a necessary shift toward scalable, ethical, and transparent AI &amp; data governance.</strong></p>
+<hr>
+</section>
+<section id="opinionated-test-driven-data-development" class="level1">
+<h1>🏗️ Opinionated, Test-Driven Data Development</h1>
+<p>A <strong>test-driven approach</strong> ensures that data development remains <strong>structured, reproducible, and verifiable</strong>.</p>
+<section id="why-test-driven-data-development" class="level3">
+<h3 class="anchored" data-anchor-id="why-test-driven-data-development">🔹 <strong>Why Test-Driven Data Development?</strong></h3>
+<p>🔹 <strong>Prevents Questionable Analytical Observations (QAOs)</strong> → If data lineage isn’t tested, analysis results cannot be trusted.<br>
+🔹 <strong>Encourages Transparency</strong> → Automated tests act as living documentation, reducing siloed knowledge.<br>
+🔹 <strong>Reduces Data Debt</strong> → Catching problems early prevents technical debt from accumulating.</p>
+</section>
+<section id="how-this-works-in-practice" class="level3">
+<h3 class="anchored" data-anchor-id="how-this-works-in-practice">🔹 <strong>How This Works in Practice</strong></h3>
+<p><strong>1️⃣ Define “Version 0” of a Data Product</strong><br>
+- Establish <strong>FAIR</strong> (Findable, Accessible, Interoperable, Reusable) validation criteria.<br>
+- Scope minimal requirements for productionalization.</p>
+<p><strong>2️⃣ Automate Data Quality Tests</strong><br>
+- Implement <strong>test-driven data lineage</strong> to ensure transformations produce expected results.<br>
+- Design <strong>edge-case simulations</strong> to validate statistical robustness.</p>
+<p><strong>3️⃣ Treat Analytics as Software</strong><br>
+- Version-control dashboards and prevent <strong>ad-hoc analysis drift</strong>.<br>
+- Use <strong>simulation-based validation</strong> to test statistical models under different conditions.</p>
+<p>```r # Placeholder for test-driven data transformation example</p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

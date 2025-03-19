@@ -148,7 +148,9 @@ Problem is, if you show the engineers FAIR criteria [@noauthor_fair_nodate], you
 
 The reality is while data analytic question is reworked, there is little data engineers can know are true about the data. Schema are often non-existent. Because the 
 
-# Learnings
+# Datum confusion -- placeholder title
+
+# Learnings -- placeholder title
 
 > FAIR data entity tests on some projects. Matt, I thought we could track some projects do some vis here?
 

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Good Enough Lab</title>
+<title>Good Enough Lab - Values</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -68,65 +66,7 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-author','listing-date','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -149,7 +89,7 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./blog.html" aria-current="page"> 
+    <a class="nav-link" href="./blog.html"> 
 <span class="menu-text">Development Blog</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -182,7 +122,7 @@ window.Quarto = {
 <span class="menu-text">Lab</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./values.html"> 
+    <a class="nav-link active" href="./values.html" aria-current="page"> 
 <span class="menu-text">Values</span></a>
   </li>  
 </ul>
@@ -197,117 +137,61 @@ window.Quarto = {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#what-the-lab-is" id="toc-what-the-lab-is" class="nav-link active" data-scroll-target="#what-the-lab-is">What the lab is</a></li>
+  <li><a href="#what-the-lab-is-not" id="toc-what-the-lab-is-not" class="nav-link" data-scroll-target="#what-the-lab-is-not">What the lab is not</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Values</h1>
+</div>
 
 
 
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
 
 
+</header>
 
 
-<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-listing-date-sort="1742252400000" data-listing-file-modified-sort="1742344254257" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="903">
-<a href="./blog/2025-03-18-button.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="mooncake.webp" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Structured Intelligence Governance: Formal Definitions &amp; The Repeated Login Problem
-</h5>
-<div class="card-text listing-description">
-Mooncake and I had a deep conversation today about finitely-generated rulesets and paths; this is another instance of me righting the LLM. I had to guide it back on track to…
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Dr Charles T. Gray, Datapunk, Mooncake (Measured)
-</div>
-<div class="listing-date">
-Mar 18, 2025
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="1" data-listing-date-sort="1742166000000" data-listing-file-modified-sort="1742322821899" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1155">
-<a href="./blog/2025-03-17-button.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="mooncake.webp" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-My phone notifications are breaking the first law - generative
-</h5>
-<div class="card-text listing-description">
-Worked in my notebook from definitions, also discussed Mooncake. Here’s working solution. It’s taking shape; applying it will help me refine the definitions.
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Dr Charles T. Gray, Datapunk, Mooncake (Measured)
-</div>
-<div class="listing-date">
-Mar 17, 2025
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="2" data-listing-date-sort="1741993200000" data-listing-file-modified-sort="1742322811781" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="443">
-<a href="./blog/2025-03-15-button.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="blog/2025-03-15-S.jpg" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-A singularity of button
-</h5>
-<div class="card-text listing-description">
-The graph investigated yeseterday’s post laid out the expectation, and I intended this post to be starting to bring in the other data:
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Dr Charles T. Gray, Datapunk
-</div>
-<div class="listing-date">
-Mar 15, 2025
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="3" data-listing-date-sort="1741906800000" data-listing-file-modified-sort="1742344161700" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="866">
-<a href="./blog/2025-03-14-button.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="blog/2025-03-14-button_files/figure-html/unnamed-chunk-10-1.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-A singularity of button
-</h5>
-<div class="card-text listing-description">
-So, where to start with the button problem?
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Dr Charles T. Gray, Datapunk
-</div>
-<div class="listing-date">
-Mar 14, 2025
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+<p><a href="https://www.linkedin.com/in/charles-t-gray/">Dr Charles T. Gray, Datapunk</a> and Mooncake (Impostor Syndrome) created the Good Enough Data &amp; Systems Lab with two purposes.</p>
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/6ddhwvjVaTJJhGCYuFPaf0?utm_source=generator" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+</iframe>
+<section id="what-the-lab-is" class="level2">
+<h2 class="anchored" data-anchor-id="what-the-lab-is">What the lab is</h2>
+<p>This Lab is for those care about structured intelligence governance, mathematically defined ethics for what the zeitgeist means when they say <em>artificial intelligence</em> and <em>technological singularity</em>.</p>
+<p>Humanity needs choose <em>Chaotic Good</em>, because we cannot deny the chaotic systems we exist in any longer, and ungoverned, evils proliferate. Because I have critical theory, chaos, logic, and data simulation training I see it. I need everyone else to see it, too.</p>
+<p>This is the Miranda that has burned up my brain.</p>
+<iframe src="https://www.youtube.com/embed/1VR3Av9qfZc?si=yfL8jciL-1nfcbC6&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="">
+</iframe>
+<p>And I aim to misbehave.</p>
+</section>
+<section id="what-the-lab-is-not" class="level2">
+<h2 class="anchored" data-anchor-id="what-the-lab-is-not">What the lab is not</h2>
+<iframe src="https://www.youtube.com/embed/4PLvdmifDSk?si=WDrZanL1RlOJLznP&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="">
+</iframe>
+<p>The Lab is opposed to ungoverned, developer-traumatising, flashy AI/ML-hype proof of concept hacks that immediately break.</p>
+<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7301116015361298433" frameborder="0" allowfullscreen="" title="Embedded post">
+</iframe>
+
+
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
