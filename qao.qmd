@@ -2,8 +2,154 @@
 title: "Questionable Analytical Observations (QAO)"
 subtitle: "And what to do about them"
 author: "Dr Charles T. Gray, Data Punk" 
+bibliography: singularities.bib
+execute:
+  echo: false
+  message: false
 ---
 
-{{< revealjs "slides/2025-dbt.html" >}}
+```{r echo=FALSE, message=FALSE}
+library(gt)
 
 
+```
+
+```{r eval=FALSE}
+
+# {< revealjs "slides/2025-dbt.html" >}}
+
+
+```
+
+# Ceci n'est pas un datum
+
+Any data engineer will tell you there's a relentlessly comedic side to the industry, wherein confusion over what an observation *is* abounds, leading to unexpectedly large deviations from vision (@fig-stonehenge).
+
+::: {#fig-stonehenge}
+
+<iframe src="https://www.youtube.com/embed/Pyh1Va_mYWI?si=ieVcPdnxgQ83lMGJ&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+*Nigel gave me a drawing that said 18 inches. Now, whether or not he knows the difference between feet and inches is not my problem. I do what I'm told.* -- Ian Faith, *This is Spinal Tap* [@reiner_this_1984].
+
+:::
+
+Those in the trenches of the modern data stack know this is why the community have developed principles, such as FAIR [@noauthor_fair_nodate], and open-source tools, such as DBT-core [@noauthor_dbt-labsdbt-core_2025] that opinionate FAIR.  
+
+These engineers are also the first to tell you just how far from reality the industry is  in realising even a fraction of those aspirations [@landi__2020]. 
+
+Something that tools such as DBT are beginning to intuit is that the governance of data must be an iterative **workflow**, not a policy checkbox at the end, such an aim is (we argue in a [sister paper](singularities-placeholder.qmd)) chaotically impossible given how development plans morph and change. 
+
+We must correct for epistemic drift in the chaos induced by people and machines interoperating to answer scientific questions. Or, despite our best efforts, we end at the *frontier psychiatry* (@fig-frontier) of data science. 
+
+::: {#fig-frontier}
+
+<iframe src="https://www.youtube.com/embed/qLrnkK2YEcE?si=NW9MZlQoFAU905J4&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+Each scientist or engineer is skilled in their own right, but together create an absurdist orchestra of bad data and broken dashboards [@the_avalanches_avalanches_2009].
+
+:::
+
+We begin declaritively, as engineers are busy and it's good to give them a table of instructions on the second page so they can stop reading and go code something useful. 
+
+# FAIR Data Entity - User Acces Data Test
+
+The FAIR framing shown in @fig-fair is a way to communicate the black box of data to decision makers. In particular, this framing highlights the distinction between what they conceptualise as `data` (*Can't you just email me a spreadsheet?*) and a `data product` brick in reusable data architecture that will save untold wages in the long run.
+
+```{r echo=FALSE, message=FALSE}
+#| label: fig-fair
+#| fig-cap: "Validation of FAIR data entity."
+
+source("figures-and-tables/fair-minimum-criteria/fair-minimum-criteria.R")
+
+fair_gt
+```
+
+The minimal set of tests show in @fig-tests for 
+
+1. uniqueness
+2. missingness
+3. duplicates 
+
+allows for data platform development whilst demonstrating a good-faith roadmap to compliance for, say, the EU Comission's Environmental, Social, and Governance reporting (ESG) [@noauthor_sustainable_nodate]. 
+
+
+```{r echo=FALSE, message=FALSE}
+#| label: fig-tests
+#| fig-cap: "FAIR data entity tests"
+
+source("figures-and-tables/naive-tests/naive-tests.R")
+
+test_gt
+```
+
+It can be a challenge to communicate to leadership with little experinces of the trenches of data development the obstacles in scaling legacy data to living analyses. By setting these minimal goals, the problem solving is democratised from engineer to analyst. 
+
+We now turn to motivating[^1] the solution we just provided.
+
+[^1]: *Contributor acknowledgement*: Many thanks to the Data & AI team at TDCnet, Denmark, for contributions to test development and advisory discussions.
+
+# Expectation vs reality
+
+Humans, bless 'em, are not great at conceptualising the black  boxes they work with. A critical error we make is expecting a living analysis development lifecycle to reflect the workflow of an individual analyst producing a one-off report. Thus, living analysis development tends to have an expectation backbone (@fig-anal-beads), whether it be to produce a spreadsheet, some business intelligence  dashboard, or deploy a machine learning algorithm by bespoke tooling.
+
+::: {#fig-anal-beads}
+
+```{r message=FALSE, echo=FALSE}
+#| fig-height: 4
+#| fig-width: 12
+source("figures-and-tables/anal-beads-of-data-dev/anal-beads.R")
+anal_beads_vis
+
+```
+
+The anal beads of data development.
+
+:::
+
+Despite our best-laid agile plans, however, there's an inevitable drift that occurs during the predictably unpredictable recursiveness of data development (@fig-hairy-anal-beads).
+
+
+::: {#fig-hairy-anal-beads}
+
+```{r message=FALSE}
+#| fig-height: 8
+#| fig-width: 12
+
+source("figures-and-tables/anal-beads-of-data-dev/hairy-anal-beads.R")
+hairy_anal_beads_vis
+
+```
+
+The hairy anal beads of data development.
+
+:::
+
+# Democratising data development
+
+::: {#fig-fair-entity}
+
+```{r message=FALSE, echo=FALSE}
+#| fig-height: 12
+#| fig-width: 12
+
+source("figures-and-tables/anal-beads-of-data-dev/care-bear-data.R")
+version_0_dev
+
+```
+
+Establishing a datum via FAIR data entity test allows the team to scope for specific challenges to do with different aspects of the stack. 
+
+:::
+
+
+Problem is, if you show the engineers FAIR criteria [@noauthor_fair_nodate], you will hear, *sure, sure, next week*.
+
+> "I've found it best not to do any documetation at all, otherwise people point out what's missing." -- Real things i hear engineers say.  
+
+The reality is while data analytic question is reworked, there is little data engineers can know are true about the data. Schema are often non-existent. Because the 
+
+# Learnings
+
+> FAIR data entity tests on some projects. Matt, I thought we could track some projects do some vis here?
+
+# References

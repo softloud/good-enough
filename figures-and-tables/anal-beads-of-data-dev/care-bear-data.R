@@ -127,16 +127,3 @@ version_0_dev <-
     coord_flip() +
     scale_y_reverse() +  # Add padding to the y-axis
     anal_bead_theme(detailed_edges)
-
-ggsave(
-  "slidedeck/detailed-anti-qso-dag.png", 
-  plot = version_0_dev,
-  width = 30, 
-  height = 20, units = "in")
-
-
-ggsave(
-  "ps-and-qs-manuscript/care-bear-data.png", 
-  plot = version_0_dev,
-  width = 12, 
-  height = 20, units = "in")

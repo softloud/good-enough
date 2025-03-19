@@ -36,11 +36,7 @@ test_gt <- dat |>
   tab_header("Tests Applied on Data Product Layers by Observability, Descending")  %>% 
   tab_source_note("Freshness tests configurations: daily ingestion (warn > 1 day, error > 1 week); weekly ingestion (warn > 1 week, error > 2 weeks)")  %>% 
   tab_options(
-    table.background.color = "transparent",
+    # table.background.color = "transparent",
     container.overflow.x = TRUE,
     container.overflow.y = TRUE
   )
-
-# Save the gt table as an HTML file first
-gtsave(test_gt, "slidedeck/naive-tests.html")
-gtsave(test_gt, "ps-and-qs-manuscript/data-entity-tests.html")

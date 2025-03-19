@@ -63,8 +63,3 @@ hairy_anal_beads_vis <-
       arrow = arrow(length = unit(4, 'mm'))
     ) + 
     anal_bead_theme(hairy_anal_beads)
-
-ggsave("slidedeck/hairy-anal-beads.png",
-  plot = hairy_anal_beads_vis, width = 20, height = 9, units = "in")
-ggsave("ps-and-qs-manuscript/hairy-anal-beads.png",
-  plot = hairy_anal_beads_vis, width = 15, height = 10, units = "in")
