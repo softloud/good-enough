@@ -7,3 +7,35 @@ format:
 ---
 
 
+
+## Ceci nest pas un datum
+
+<iframe src="https://www.youtube.com/embed/Pyh1Va_mYWI?si=ieVcPdnxgQ83lMGJ&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+## Frontier psychiatry of data science
+
+<iframe src="https://www.youtube.com/embed/qLrnkK2YEcE?si=NW9MZlQoFAU905J4&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+## FAIR Data Entity - User Acces Data Test
+
+
+```{r echo=FALSE, message=FALSE}
+#| label: fig-fair
+#| fig-cap: "Validation of FAIR data entity."
+
+source("../figures-and-tables/fair-minimum-criteria/fair-minimum-criteria.R")
+
+fair_gt
+```
+
+## Tests
+
+```{r echo=FALSE, message=FALSE}
+#| label: fig-tests
+#| fig-cap: "FAIR data entity tests"
+
+source("../figures-and-tables/naive-tests/naive-tests.R")
+
+test_gt
+```

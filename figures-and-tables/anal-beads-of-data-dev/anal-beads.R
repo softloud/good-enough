@@ -47,10 +47,3 @@ anal_beads_vis <- anal_beads %>%
     ) +
     anal_bead_theme(anal_beads)
 
-ggsave("slidedeck/anal-beads.png", 
-  plot = anal_beads_vis,
-  width = 20, height = 4, units = "in")
-
-ggsave("ps-and-qs-manuscript/anal-beads.png", 
-  plot = anal_beads_vis,
-  width = 15, height = 5, units = "in")

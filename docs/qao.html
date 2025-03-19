@@ -21,7 +21,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -67,14 +87,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
- 
-  <style>
-  .slide-deck {
-      border: 3px solid #dee2e6;
-      width: 100%;
-  }
-  </style>
-  
 
 
 <link rel="stylesheet" href="styles.css">
@@ -107,7 +119,7 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-drafts">    
         <li>
-    <a class="dropdown-item" href="./singularities-placeholder.html">
+    <a class="dropdown-item" href="./singularities.html">
  <span class="dropdown-text">Singularities</span></a>
   </li>  
         <li>
@@ -150,7 +162,12 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#section" id="toc-section" class="nav-link active" data-scroll-target="#section"></a></li>
+  <li><a href="#ceci-nest-pas-un-datum" id="toc-ceci-nest-pas-un-datum" class="nav-link active" data-scroll-target="#ceci-nest-pas-un-datum">Ceci n’est pas un datum</a></li>
+  <li><a href="#fair-data-entity---user-acces-data-test" id="toc-fair-data-entity---user-acces-data-test" class="nav-link" data-scroll-target="#fair-data-entity---user-acces-data-test">FAIR Data Entity - User Acces Data Test</a></li>
+  <li><a href="#expectation-vs-reality" id="toc-expectation-vs-reality" class="nav-link" data-scroll-target="#expectation-vs-reality">Expectation vs reality</a></li>
+  <li><a href="#democratising-data-development" id="toc-democratising-data-development" class="nav-link" data-scroll-target="#democratising-data-development">Democratising data development</a></li>
+  <li><a href="#learnings" id="toc-learnings" class="nav-link" data-scroll-target="#learnings">Learnings</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
   </ul>
 </nav>
     </div>
@@ -183,18 +200,1176 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-    <p><a href="slides/2025-dbt.html" target="_blank">View slides in full screen</a></p>
-       <div>
-      <iframe class="slide-deck" src="slides/2025-dbt.html" height="475px"></iframe>
-    </div>
-  
-<section id="section" class="level2">
-<h2 class="anchored" data-anchor-id="section"></h2>
+<section id="ceci-nest-pas-un-datum" class="level1">
+<h1>Ceci n’est pas un datum</h1>
+<p>Any data engineer will tell you there’s a relentlessly comedic side to the industry, wherein confusion over what an observation <em>is</em> abounds, leading to unexpectedly large deviations from vision (<a href="#fig-stonehenge" class="quarto-xref">Figure&nbsp;1</a>).</p>
+<div id="fig-stonehenge" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-stonehenge-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<iframe src="https://www.youtube.com/embed/Pyh1Va_mYWI?si=ieVcPdnxgQ83lMGJ&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="">
+</iframe>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-stonehenge-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: <em>Nigel gave me a drawing that said 18 inches. Now, whether or not he knows the difference between feet and inches is not my problem. I do what I’m told.</em> – Ian Faith, <em>This is Spinal Tap</em> <span class="citation" data-cites="reiner_this_1984">(<a href="#ref-reiner_this_1984" role="doc-biblioref">Reiner 1984</a>)</span>.
+</figcaption>
+</figure>
+</div>
+<p>Those in the trenches of the modern data stack know this is why the community have developed principles, such as FAIR <span class="citation" data-cites="noauthor_fair_nodate">(<a href="#ref-noauthor_fair_nodate" role="doc-biblioref"><span>“<span>FAIR</span> Principles. <span>GO</span> <span>FAIR</span>”</span> n.d.</a>)</span>, and open-source tools, such as DBT-core <span class="citation" data-cites="noauthor_dbt-labsdbt-core_2025">(<a href="#ref-noauthor_dbt-labsdbt-core_2025" role="doc-biblioref"><span>“Dbt-Labs/Dbt-Core”</span> 2025</a>)</span> that opinionate FAIR.</p>
+<p>These engineers are also the first to tell you just how far from reality the industry is in realising even a fraction of those aspirations <span class="citation" data-cites="landi__2020">(<a href="#ref-landi__2020" role="doc-biblioref">Landi et al. 2020</a>)</span>.</p>
+<p>Something that tools such as DBT are beginning to intuit is that the governance of data must be an iterative <strong>workflow</strong>, not a policy checkbox at the end, such an aim is (we argue in a <a href="singularities-placeholder.qmd">sister paper</a>) chaotically impossible given how development plans morph and change.</p>
+<p>We must correct for epistemic drift in the chaos induced by people and machines interoperating to answer scientific questions. Or, despite our best efforts, we end at the <em>frontier psychiatry</em> (<a href="#fig-frontier" class="quarto-xref">Figure&nbsp;2</a>) of data science.</p>
+<div id="fig-frontier" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-frontier-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<iframe src="https://www.youtube.com/embed/qLrnkK2YEcE?si=NW9MZlQoFAU905J4&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="">
+</iframe>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-frontier-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: Each scientist or engineer is skilled in their own right, but together create an absurdist orchestra of bad data and broken dashboards <span class="citation" data-cites="the_avalanches_avalanches_2009">(<a href="#ref-the_avalanches_avalanches_2009" role="doc-biblioref">The Avalanches 2009</a>)</span>.
+</figcaption>
+</figure>
+</div>
+<p>We begin declaritively, as engineers are busy and it’s good to give them a table of instructions on the second page so they can stop reading and go code something useful.</p>
+</section>
+<section id="fair-data-entity---user-acces-data-test" class="level1">
+<h1>FAIR Data Entity - User Acces Data Test</h1>
+<p>The FAIR framing shown in <a href="#fig-fair" class="quarto-xref">Figure&nbsp;3</a> is a way to communicate the black box of data to decision makers. In particular, this framing highlights the distinction between what they conceptualise as <code>data</code> (<em>Can’t you just email me a spreadsheet?</em>) and a <code>data product</code> brick in reusable data architecture that will save untold wages in the long run.</p>
+<div class="cell">
+<div id="fig-fair" class="cell-output-display quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-fair-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div>
+<div id="ebuznqwwfu" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#ebuznqwwfu table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#ebuznqwwfu thead, #ebuznqwwfu tbody, #ebuznqwwfu tfoot, #ebuznqwwfu tr, #ebuznqwwfu td, #ebuznqwwfu th {
+  border-style: none;
+}
+
+#ebuznqwwfu p {
+  margin: 0;
+  padding: 0;
+}
+
+#ebuznqwwfu .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#ebuznqwwfu .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#ebuznqwwfu .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#ebuznqwwfu .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#ebuznqwwfu .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#ebuznqwwfu .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#ebuznqwwfu .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#ebuznqwwfu .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#ebuznqwwfu .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#ebuznqwwfu .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#ebuznqwwfu .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#ebuznqwwfu .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#ebuznqwwfu .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#ebuznqwwfu .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#ebuznqwwfu .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#ebuznqwwfu .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#ebuznqwwfu .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#ebuznqwwfu .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#ebuznqwwfu .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#ebuznqwwfu .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#ebuznqwwfu .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#ebuznqwwfu .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#ebuznqwwfu .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#ebuznqwwfu .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#ebuznqwwfu .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#ebuznqwwfu .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#ebuznqwwfu .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#ebuznqwwfu .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#ebuznqwwfu .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#ebuznqwwfu .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#ebuznqwwfu .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#ebuznqwwfu .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#ebuznqwwfu .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#ebuznqwwfu .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#ebuznqwwfu .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#ebuznqwwfu .gt_left {
+  text-align: left;
+}
+
+#ebuznqwwfu .gt_center {
+  text-align: center;
+}
+
+#ebuznqwwfu .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#ebuznqwwfu .gt_font_normal {
+  font-weight: normal;
+}
+
+#ebuznqwwfu .gt_font_bold {
+  font-weight: bold;
+}
+
+#ebuznqwwfu .gt_font_italic {
+  font-style: italic;
+}
+
+#ebuznqwwfu .gt_super {
+  font-size: 65%;
+}
+
+#ebuznqwwfu .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#ebuznqwwfu .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#ebuznqwwfu .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#ebuznqwwfu .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#ebuznqwwfu .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#ebuznqwwfu .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#ebuznqwwfu .gt_indent_5 {
+  text-indent: 25px;
+}
+
+#ebuznqwwfu .katex-display {
+  display: inline-flex !important;
+  margin-bottom: 0.75em !important;
+}
+
+#ebuznqwwfu div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
+</style>
+
+<table class="gt_table table table-sm table-striped small" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<thead>
+<tr class="header gt_heading">
+<th colspan="2" class="gt_heading gt_title gt_font_normal gt_bottom_border">Validation of Data Entity meets Minimum FAIR Criteria</th>
+</tr>
+<tr class="odd gt_col_headings">
+<th id="FAIR-principle" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">FAIR principle</th>
+<th id="Minimum-requirements" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">Minimum requirements</th>
+</tr>
+</thead>
+<tbody class="gt_table_body">
+<tr class="odd">
+<td class="gt_row gt_left" headers="FAIR principle">Findable</td>
+<td class="gt_row gt_left" headers="Minimum requirements">Data documentation wherein columns &amp; tables have descriptions for the data entity lineage. Clearly states access protocols; i.e., data security. Ensures subject matter experts can advise on governance, as well as contribute to validation.</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="FAIR principle">Accessible</td>
+<td class="gt_row gt_left" headers="Minimum requirements">Understandable in terms of a data entity, a semantic abstraction in stakeholder terms (e.g., a number on an invoice). The helps ensure data governance is applied as subject matter experts advise.</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="FAIR principle">Interoperable</td>
+<td class="gt_row gt_left" headers="Minimum requirements">Workflows to ensure data governance, security, and access function as intended when analysing data entity. Facilitates subject matter experts contributing to data validation.</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="FAIR principle">Reusable</td>
+<td class="gt_row gt_left" headers="Minimum requirements">Requested data transformations provided in published layer of dedicated database, standard tests applied to data entity (see below for details) to confirm validity of documentated assumptions.</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-fair-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3: Validation of FAIR data entity.
+</figcaption>
+</figure>
+</div>
+</div>
+<p>The minimal set of tests show in <a href="#fig-tests" class="quarto-xref">Figure&nbsp;4</a> for</p>
+<ol type="1">
+<li>uniqueness</li>
+<li>missingness</li>
+<li>duplicates</li>
+</ol>
+<p>allows for data platform development whilst demonstrating a good-faith roadmap to compliance for, say, the EU Comission’s Environmental, Social, and Governance reporting (ESG) <span class="citation" data-cites="noauthor_sustainable_nodate">(<a href="#ref-noauthor_sustainable_nodate" role="doc-biblioref"><span>“Sustainable Finance - European Commission”</span> n.d.</a>)</span>.</p>
+<div class="cell">
+<div id="fig-tests" class="cell-output-display quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-tests-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div>
+<div id="dmfmmirfwi" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#dmfmmirfwi table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#dmfmmirfwi thead, #dmfmmirfwi tbody, #dmfmmirfwi tfoot, #dmfmmirfwi tr, #dmfmmirfwi td, #dmfmmirfwi th {
+  border-style: none;
+}
+
+#dmfmmirfwi p {
+  margin: 0;
+  padding: 0;
+}
+
+#dmfmmirfwi .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#dmfmmirfwi .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#dmfmmirfwi .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#dmfmmirfwi .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#dmfmmirfwi .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#dmfmmirfwi .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#dmfmmirfwi .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#dmfmmirfwi .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#dmfmmirfwi .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#dmfmmirfwi .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#dmfmmirfwi .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#dmfmmirfwi .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#dmfmmirfwi .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#dmfmmirfwi .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#dmfmmirfwi .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#dmfmmirfwi .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#dmfmmirfwi .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#dmfmmirfwi .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#dmfmmirfwi .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#dmfmmirfwi .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#dmfmmirfwi .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#dmfmmirfwi .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#dmfmmirfwi .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#dmfmmirfwi .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#dmfmmirfwi .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#dmfmmirfwi .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#dmfmmirfwi .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#dmfmmirfwi .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#dmfmmirfwi .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#dmfmmirfwi .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#dmfmmirfwi .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#dmfmmirfwi .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#dmfmmirfwi .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#dmfmmirfwi .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#dmfmmirfwi .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#dmfmmirfwi .gt_left {
+  text-align: left;
+}
+
+#dmfmmirfwi .gt_center {
+  text-align: center;
+}
+
+#dmfmmirfwi .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#dmfmmirfwi .gt_font_normal {
+  font-weight: normal;
+}
+
+#dmfmmirfwi .gt_font_bold {
+  font-weight: bold;
+}
+
+#dmfmmirfwi .gt_font_italic {
+  font-style: italic;
+}
+
+#dmfmmirfwi .gt_super {
+  font-size: 65%;
+}
+
+#dmfmmirfwi .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#dmfmmirfwi .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#dmfmmirfwi .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#dmfmmirfwi .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#dmfmmirfwi .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#dmfmmirfwi .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#dmfmmirfwi .gt_indent_5 {
+  text-indent: 25px;
+}
+
+#dmfmmirfwi .katex-display {
+  display: inline-flex !important;
+  margin-bottom: 0.75em !important;
+}
+
+#dmfmmirfwi div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
+</style>
+
+<table class="gt_table table table-sm table-striped small" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<thead>
+<tr class="header gt_heading">
+<th colspan="3" class="gt_heading gt_title gt_font_normal gt_bottom_border">Tests Applied on Data Product Layers by Observability, Descending</th>
+</tr>
+<tr class="odd gt_col_headings">
+<th id="a::stub" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col"></th>
+<th id="Test" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">Test</th>
+<th id="Tested" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">Tested</th>
+</tr>
+</thead>
+<tbody class="gt_table_body">
+<tr class="odd gt_group_heading_row">
+<td colspan="3" id="Analytical Observation" class="gt_group_heading" data-quarto-table-cell-role="th" scope="colgroup">Analytical Observation</td>
+</tr>
+<tr class="even gt_row_group_first">
+<td id="stub_1_1" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">output</td>
+<td class="gt_row gt_left" headers="Analytical Observation stub_1_1 Test">unique key</td>
+<td class="gt_row gt_left" headers="Analytical Observation stub_1_1 Tested">data entity</td>
+</tr>
+<tr class="odd gt_group_heading_row">
+<td colspan="3" id="Semantic Transformation" class="gt_group_heading" data-quarto-table-cell-role="th" scope="colgroup">Semantic Transformation</td>
+</tr>
+<tr class="even gt_row_group_first">
+<td id="stub_1_2" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">output</td>
+<td class="gt_row gt_left" headers="Semantic Transformation stub_1_2 Test">unique key</td>
+<td class="gt_row gt_left" headers="Semantic Transformation stub_1_2 Tested">data entity joined across raw sources and tested</td>
+</tr>
+<tr class="odd gt_group_heading_row">
+<td colspan="3" id="Source" class="gt_group_heading" data-quarto-table-cell-role="th" scope="colgroup">Source</td>
+</tr>
+<tr class="even gt_row_group_first">
+<td id="stub_1_3" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">output</td>
+<td class="gt_row gt_left" headers="Source stub_1_3 Test">unique key</td>
+<td class="gt_row gt_left" headers="Source stub_1_3 Tested">data entity defined and tested</td>
+</tr>
+<tr class="odd">
+<td id="stub_1_4" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">input</td>
+<td class="gt_row gt_left" headers="Source stub_1_4 Test">unique key</td>
+<td class="gt_row gt_left" headers="Source stub_1_4 Tested">combination of columns that define a unique row</td>
+</tr>
+<tr class="even">
+<td id="stub_1_5" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">input</td>
+<td class="gt_row gt_left" headers="Source stub_1_5 Test">freshness</td>
+<td class="gt_row gt_left" headers="Source stub_1_5 Tested">incrementation or snapshot field</td>
+</tr>
+<tr class="odd">
+<td id="stub_1_6" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">input</td>
+<td class="gt_row gt_left" headers="Source stub_1_6 Test">not empty</td>
+<td class="gt_row gt_left" headers="Source stub_1_6 Tested">table-level test</td>
+</tr>
+</tbody><tfoot class="gt_sourcenotes">
+<tr class="odd">
+<td colspan="3" class="gt_sourcenote">We say a unique key has been tested when the same combination of columns have not null and unique tests applied.</td>
+</tr>
+<tr class="even">
+<td colspan="3" class="gt_sourcenote">Freshness tests configurations: daily ingestion (warn &gt; 1 day, error &gt; 1 week); weekly ingestion (warn &gt; 1 week, error &gt; 2 weeks)</td>
+</tr>
+</tfoot>
+
+</table>
+
+</div>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-tests-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4: FAIR data entity tests
+</figcaption>
+</figure>
+</div>
+</div>
+<p>It can be a challenge to communicate to leadership with little experinces of the trenches of data development the obstacles in scaling legacy data to living analyses. By setting these minimal goals, the problem solving is democratised from engineer to analyst.</p>
+<p>We now turn to motivating<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> the solution we just provided.</p>
+</section>
+<section id="expectation-vs-reality" class="level1">
+<h1>Expectation vs reality</h1>
+<p>Humans, bless ’em, are not great at conceptualising the black boxes they work with. A critical error we make is expecting a living analysis development lifecycle to reflect the workflow of an individual analyst producing a one-off report. Thus, living analysis development tends to have an expectation backbone (<a href="#fig-anal-beads" class="quarto-xref">Figure&nbsp;5</a>), whether it be to produce a spreadsheet, some business intelligence dashboard, or deploy a machine learning algorithm by bespoke tooling.</p>
+<div id="fig-anal-beads" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-anal-beads-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="qao_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid figure-img" width="1152"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-anal-beads-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;5: The anal beads of data development.
+</figcaption>
+</figure>
+</div>
+<p>Despite our best-laid agile plans, however, there’s an inevitable drift that occurs during the predictably unpredictable recursiveness of data development (<a href="#fig-hairy-anal-beads" class="quarto-xref">Figure&nbsp;6</a>).</p>
+<div id="fig-hairy-anal-beads" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-hairy-anal-beads-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="qao_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid figure-img" width="1152"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-hairy-anal-beads-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6: The hairy anal beads of data development.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="democratising-data-development" class="level1">
+<h1>Democratising data development</h1>
+<div id="fig-fair-entity" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-fair-entity-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="qao_files/figure-html/unnamed-chunk-7-1.png" class="img-fluid figure-img" width="1152"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-fair-entity-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;7: Establishing a datum via FAIR data entity test allows the team to scope for specific challenges to do with different aspects of the stack.
+</figcaption>
+</figure>
+</div>
+<p>Problem is, if you show the engineers FAIR criteria <span class="citation" data-cites="noauthor_fair_nodate">(<a href="#ref-noauthor_fair_nodate" role="doc-biblioref"><span>“<span>FAIR</span> Principles. <span>GO</span> <span>FAIR</span>”</span> n.d.</a>)</span>, you will hear, <em>sure, sure, next week</em>.</p>
+<blockquote class="blockquote">
+<p>“I’ve found it best not to do any documetation at all, otherwise people point out what’s missing.” – Real things i hear engineers say.</p>
+</blockquote>
+<p>The reality is while data analytic question is reworked, there is little data engineers can know are true about the data. Schema are often non-existent. Because the</p>
+</section>
+<section id="learnings" class="level1">
+<h1>Learnings</h1>
+<blockquote class="blockquote">
+<p>FAIR data entity tests on some projects. Matt, I thought we could track some projects do some vis here?</p>
+</blockquote>
+</section>
+<section id="references" class="level1">
+
+
 
 
 </section>
 
-</main> <!-- /main -->
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-noauthor_dbt-labsdbt-core_2025" class="csl-entry" role="listitem">
+<span>“Dbt-Labs/Dbt-Core.”</span> 2025. dbt Labs. <a href="https://github.com/dbt-labs/dbt-core">https://github.com/dbt-labs/dbt-core</a>.
+</div>
+<div id="ref-noauthor_fair_nodate" class="csl-entry" role="listitem">
+<span>“<span>FAIR</span> Principles. <span>GO</span> <span>FAIR</span>.”</span> n.d. Accessed March 8, 2025. <a href="https://www.go-fair.org/fair-principles/">https://www.go-fair.org/fair-principles/</a>.
+</div>
+<div id="ref-landi__2020" class="csl-entry" role="listitem">
+Landi, Annalisa, Mark Thompson, Viviana Giannuzzi, Fedele Bonifazi, Ignasi Labastida, Luiz Olavo Bonino da Silva Santos, and Marco Roos. 2020. <span>“The <span>‘a’</span> of <span>FAIR</span> – as Open as Possible, as Closed as Necessary.”</span> <em>Data Intelligence</em> 2 (1): 47–55. <a href="https://doi.org/10.1162/dint_a_00027">https://doi.org/10.1162/dint_a_00027</a>.
+</div>
+<div id="ref-reiner_this_1984" class="csl-entry" role="listitem">
+Reiner, Rob. 1984. <em>This Is Spinal Tap</em>. Spinal Tap Prod., Goldcrest Films International.
+</div>
+<div id="ref-noauthor_sustainable_nodate" class="csl-entry" role="listitem">
+<span>“Sustainable Finance - European Commission.”</span> n.d. Accessed March 18, 2025. <a href="https://finance.ec.europa.eu/sustainable-finance_en">https://finance.ec.europa.eu/sustainable-finance_en</a>.
+</div>
+<div id="ref-the_avalanches_avalanches_2009" class="csl-entry" role="listitem">
+The Avalanches. 2009. <em>The Avalanches - Frontier Psychiatrist (Official <span>HD</span> Video)</em>. <a href="https://www.youtube.com/watch?v=qLrnkK2YEcE">https://www.youtube.com/watch?v=qLrnkK2YEcE</a>.
+</div>
+</div></section><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p><em>Contributor acknowledgement</em>: Many thanks to the Data &amp; AI team at TDCnet, Denmark, for contributions to test development and advisory discussions.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
