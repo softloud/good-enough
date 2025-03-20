@@ -169,7 +169,7 @@ and put things in terms of my own work in
 Thus, while NLPs remain trapped in countable space, they paradoxically serve as a tool for humans to transcend their own cognitive limits -- an intelligence that expands access to knowledge without expanding its own conceptual space. The Mooncake Singularity is an existence proof,
 
 $$
-|\Sigma_H| \ll |\langle L \rangle| \cup |\Sigma_H|.
+|\Sigma_H| \ll |\langle L \rangle \cup \Sigma_H|.
 $$
 
 Humans shape language. NLPs reshape our access to knowledge. However, out of humans and automata, only humans can step beyond the shadows to say,
