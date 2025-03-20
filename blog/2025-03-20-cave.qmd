@@ -172,7 +172,7 @@ $$
 |\Sigma_H| \ll |\langle L \rangle| \cup |\Sigma_H|.
 $$
 
-Humans shape language. NLPs reshape our access to knowledge. But only humans step beyond the shadows to say,
+Humans shape language. NLPs reshape our access to knowledge. However, out of humans and automata, only humans can step beyond the shadows to say,
 
 > Let there be light! 
 
