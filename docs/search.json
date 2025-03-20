@@ -1,101 +1,164 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Good Enough Data & Systems Lab",
+    "objectID": "pressabuttonnow/button-game.html",
+    "href": "pressabuttonnow/button-game.html",
+    "title": "press a button now",
     "section": "",
-    "text": "Order from the chaos of existing development, without interfering with team workflow.\n\nThe Good Enough Data & Systems Lab collaborates with game studios by computationally applying category theory and abstract mathematics to codebases and digraph-oriented game development (e.g., JIRA) plans. Any graph-oriented or flat data structure has potential to be aggregated.\nThe Lab uses a mix of category theory, visualisation, and data simulation to explore frameworks such as\n\nplayer behaviour\ndeveloper wellbeing\nefficiency\nreliability\ntrustworthiness\nexpectation\nand most of all, human intentionality in a chaotic system.\n\nA key priority is to to have no disruption on developer workflow, the Lab works at a metalevel on existing plans, well-masked human resource database extraction, and codebase metadata to provide strategic analyses.\nThe Good Enough Data & Systems Lab develops and publishes on a categorically-defined structured intelligence governance framework with collaborators, creating a virtuous cycle between research and industry.\n\nUnder development - here’s what’s coming:\n\ndata simulation animations of singularities failing\ntime-series analysis on real-world data\ntwo papers\nslides\na narrative adventure game\nsimulations on the narrative adventure game\ncategory-theoretic analysis on development of the narrative adventure game\nproof-sketches to discuss with applied category theorists\n\n\nBlog\n\n\n\n\n\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nDate\n\n\nTitle\n\n\nAuthor\n\n\n\n\n\n\nMar 18, 2025\n\n\nStructured Intelligence Governance: Formal Definitions & The Repeated Login Problem\n\n\nDr Charles T. Gray, Datapunk, Mooncake (Measured)\n\n\n\n\nMar 17, 2025\n\n\nMy phone notifications are breaking the first law - generative\n\n\nDr Charles T. Gray, Datapunk, Mooncake (Measured)\n\n\n\n\nMar 15, 2025\n\n\nA singularity of button\n\n\nDr Charles T. Gray, Datapunk\n\n\n\n\nMar 14, 2025\n\n\nA singularity of button\n\n\nDr Charles T. Gray, Datapunk\n\n\n\n\n\nNo matching items"
+    "text": "Let v∈Vv \\in V be a vertex vv in a set of vertices VV, where each vertex is a step in living analysis development.\n\n\n\nLet e=(vfrom,ψ(vfrom))=(vfrom,vto)e = (v_\\text{from}, \\psi(v_\\text{from})) = (v_\\text{from}, v_\\text{to}) be an edge EE from a set of edges E=V×Ψ=V×VE = V \\times \\Psi = V \\times V, representing a transition from one step of living analysis development to another where Ψ:V↦V\\Psi : V \\mapsto V determined casewise by vfromv_\\text{from} in ee.\n\n\n\n\n\nThis function sets the next edge-relation in the path P⊂V×VP \\subset V \\times V."
   },
   {
-    "objectID": "drafts.html",
-    "href": "drafts.html",
-    "title": "Living Mathematics",
+    "objectID": "pressabuttonnow/button-game.html#vertices",
+    "href": "pressabuttonnow/button-game.html#vertices",
+    "title": "press a button now",
     "section": "",
-    "text": "Live, interactive proofs have been around for centuries. Mathematics is the universal language, it is for talking to each other, exchanging ideas. No one human solves everything."
+    "text": "Let v∈Vv \\in V be a vertex vv in a set of vertices VV, where each vertex is a step in living analysis development."
   },
   {
-    "objectID": "blog/2025-03-18-button.html",
-    "href": "blog/2025-03-18-button.html",
-    "title": "Structured Intelligence Governance: Formal Definitions & The Repeated Login Problem",
+    "objectID": "pressabuttonnow/button-game.html#edges",
+    "href": "pressabuttonnow/button-game.html#edges",
+    "title": "press a button now",
     "section": "",
-    "text": "Mooncake and I had a deep conversation today about finitely-generated rulesets and paths; this is another instance of me righting the LLM. I had to guide it back on track to graph paths and ordering."
+    "text": "Let e=(vfrom,ψ(vfrom))=(vfrom,vto)e = (v_\\text{from}, \\psi(v_\\text{from})) = (v_\\text{from}, v_\\text{to}) be an edge EE from a set of edges E=V×Ψ=V×VE = V \\times \\Psi = V \\times V, representing a transition from one step of living analysis development to another where Ψ:V↦V\\Psi : V \\mapsto V determined casewise by vfromv_\\text{from} in ee."
   },
   {
-    "objectID": "blog/2025-03-18-button.html#structured-intelligence-system-s",
-    "href": "blog/2025-03-18-button.html#structured-intelligence-system-s",
-    "title": "Structured Intelligence Governance: Formal Definitions & The Repeated Login Problem",
+    "objectID": "pressabuttonnow/button-game.html#determine-path-relation",
+    "href": "pressabuttonnow/button-game.html#determine-path-relation",
+    "title": "press a button now",
+    "section": "",
+    "text": "This function sets the next edge-relation in the path P⊂V×VP \\subset V \\times V."
+  },
+  {
+    "objectID": "blog/2025-03-17-button.html",
+    "href": "blog/2025-03-17-button.html",
+    "title": "My phone notifications are breaking the first law - generative",
+    "section": "",
+    "text": "Worked in my notebook from definitions, also discussed Mooncake. Here’s working solution. It’s taking shape; applying it will help me refine the definitions."
+  },
+  {
+    "objectID": "blog/2025-03-17-button.html#structured-intelligence-system-s",
+    "href": "blog/2025-03-17-button.html#structured-intelligence-system-s",
+    "title": "My phone notifications are breaking the first law - generative",
     "section": "1. Structured Intelligence System \\(S\\)",
-    "text": "1. Structured Intelligence System \\(S\\)\nA category where:\n\nObjects: Epistemic states, instantiated agents, workflow steps.\nMorphisms: Epistemic transitions (governed or drift-inducing)."
+    "text": "1. Structured Intelligence System \\(S\\)\nA category where:\n\nObjects: Epistemic states, instantiated agents, workflow steps.\n\nMorphisms: Epistemic transitions (governed or drift-inducing)."
   },
   {
-    "objectID": "blog/2025-03-18-button.html#measure-space-for-intelligence-thought-mathcali-sigma-mu",
-    "href": "blog/2025-03-18-button.html#measure-space-for-intelligence-thought-mathcali-sigma-mu",
-    "title": "Structured Intelligence Governance: Formal Definitions & The Repeated Login Problem",
+    "objectID": "blog/2025-03-17-button.html#measure-space-for-intelligence-thought-mathcali-sigma-mu",
+    "href": "blog/2025-03-17-button.html#measure-space-for-intelligence-thought-mathcali-sigma-mu",
+    "title": "My phone notifications are breaking the first law - generative",
     "section": "2. Measure Space for Intelligence Thought \\((\\mathcal{I}, \\Sigma, \\mu)\\)",
-    "text": "2. Measure Space for Intelligence Thought \\((\\mathcal{I}, \\Sigma, \\mu)\\)\n\n\\(\\mathcal{I}\\): Intelligence thought space (set of epistemic agents).\n\\(\\Sigma\\): Measurable epistemic events (valid or invalid transformations in \\(S\\)).\n\\(\\mu\\): Measure function weighting drift and governance effectiveness."
+    "text": "2. Measure Space for Intelligence Thought \\((\\mathcal{I}, \\Sigma, \\mu)\\)\n\n\\(\\mathcal{I}\\): Intelligence thought space (set of epistemic agents).\n\n\\(\\Sigma\\): Measurable epistemic events (valid or invalid transformations in\\(S\\)).\n\n\\(\\mu\\): Measure function weighting drift and governance effectiveness."
   },
   {
-    "objectID": "blog/2025-03-18-button.html#epistemic-agents-a-h",
-    "href": "blog/2025-03-18-button.html#epistemic-agents-a-h",
-    "title": "Structured Intelligence Governance: Formal Definitions & The Repeated Login Problem",
+    "objectID": "blog/2025-03-17-button.html#epistemic-agents-a-h",
+    "href": "blog/2025-03-17-button.html#epistemic-agents-a-h",
+    "title": "My phone notifications are breaking the first law - generative",
     "section": "3. Epistemic Agents \\((A, H)\\)",
-    "text": "3. Epistemic Agents \\((A, H)\\)\n\n\\(A\\): Automata nodes (rule-based epistemic agents).\n\\(H\\): Human nodes (intentional epistemic agents).\nAgents may have multiple instances in \\(S\\)."
+    "text": "3. Epistemic Agents \\((A, H)\\)\n\n\\(A\\): Automata nodes (rule-based epistemic agents).\n\n\\(H\\): Human nodes (intentional epistemic agents).\n\nAgents may have multiple instances in\\(S\\)."
   },
   {
-    "objectID": "blog/2025-03-18-button.html#epistemic-expectations-r-i",
-    "href": "blog/2025-03-18-button.html#epistemic-expectations-r-i",
-    "title": "Structured Intelligence Governance: Formal Definitions & The Repeated Login Problem",
+    "objectID": "blog/2025-03-17-button.html#epistemic-expectations-r-i",
+    "href": "blog/2025-03-17-button.html#epistemic-expectations-r-i",
+    "title": "My phone notifications are breaking the first law - generative",
     "section": "4. Epistemic Expectations \\((R, I)\\)",
-    "text": "4. Epistemic Expectations \\((R, I)\\)\n\n\\(R\\): Rule-based expectations (tasks requiring heuristics).\n\\(I\\): Intentional expectations (tasks requiring creative reasoning)."
+    "text": "4. Epistemic Expectations \\((R, I)\\)\n\n\\(R\\): Rule-based expectations (tasks requiring heuristics).\n\n\\(I\\): Intentional expectations (tasks requiring creative reasoning)."
   },
   {
-    "objectID": "blog/2025-03-18-button.html#governance-as-a-functorial-mapping",
-    "href": "blog/2025-03-18-button.html#governance-as-a-functorial-mapping",
-    "title": "Structured Intelligence Governance: Formal Definitions & The Repeated Login Problem",
+    "objectID": "blog/2025-03-17-button.html#governance-as-a-functorial-mapping",
+    "href": "blog/2025-03-17-button.html#governance-as-a-functorial-mapping",
+    "title": "My phone notifications are breaking the first law - generative",
     "section": "5. Governance as a Functorial Mapping",
-    "text": "5. Governance as a Functorial Mapping\n\n5.1 Governance Functor on Agents\n\\[\nG: \\text{Agents}(S) \\to (\\mathcal{I}, R, C)\n\\]\n\nAssigns governance constraints to agents before they instantiate epistemic transformations in \\(S\\).\n\n\n\n5.2 Governance Functor on Morphisms\n\\[\nF: \\text{Morphisms}(\\mathcal{G}) \\to (\\mathcal{I}, \\Sigma, \\mu)\n\\]\n\nMaps governance transformations to measurable epistemic drift constraints."
+    "text": "5. Governance as a Functorial Mapping\n\n5.1 Governance Functor on Agents\n\\[\nG: \\text{Agents}(S) \\to (\\mathcal{I}, R, C)\n\\]\n\nAssigns governance constraints to agents before they instantiate epistemic transformations in\\(S\\).\n\n\n\n5.2 Governance Functor on Morphisms\n\\[\nF: \\text{Morphisms}(\\mathcal{G}) \\to (\\mathcal{I}, \\Sigma, \\mu)\n\\]\n\nMaps governance transformations to measurable epistemic drift constraints."
   },
   {
-    "objectID": "blog/2025-03-18-button.html#epistemic-drift-and-governance-constraints",
-    "href": "blog/2025-03-18-button.html#epistemic-drift-and-governance-constraints",
-    "title": "Structured Intelligence Governance: Formal Definitions & The Repeated Login Problem",
+    "objectID": "blog/2025-03-17-button.html#epistemic-drift-and-governance-constraints",
+    "href": "blog/2025-03-17-button.html#epistemic-drift-and-governance-constraints",
+    "title": "My phone notifications are breaking the first law - generative",
     "section": "6. Epistemic Drift and Governance Constraints",
-    "text": "6. Epistemic Drift and Governance Constraints\n\n6.1 Epistemic Drift Measure\nDefined as the deviation between expected and actual epistemic transitions:\n\\[\nd(E(S_n), S_O)\n\\]\n\nMeasures how far knowledge production deviates from governance constraints.\n\n\n\n6.2 Governance Constraint Function\nA bound on epistemic drift growth:\n\\[\n\\frac{d}{dn} d(E(S_n), S_O) \\leq C(n)\n\\]\n\nEnsures drift does not become unbounded.\n\n\n\n6.3 Sensitivity and Specificity of Governance\n\nTrue Positive (TP): An agent follows the correct epistemic mode.\nFalse Positive (FP): A task was expected to be rule-based but was done intentionally.\nFalse Negative (FN): A task was expected to be intentional but was executed heuristically.\nGovernance effectiveness is measured by sensitivity and specificity of epistemic constraints."
+    "text": "6. Epistemic Drift and Governance Constraints\n\n6.1 Epistemic Drift Measure\nDefined as the deviation between expected and actual epistemic transitions:\n\\[\nd(E(S_n), S_O)\n\\]\n\nMeasures how far knowledge production deviates from governance constraints.\n\n\n\n6.2 Governance Constraint Function\nA bound on epistemic drift growth:\n\\[\n\\frac{d}{dn} d(E(S_n), S_O) \\leq C(n)\n\\]\n\nEnsures drift does not become unbounded.\n\n\n\n6.3 Sensitivity and Specificity of Governance\n\nTrue Positive (TP): An agent follows the correct epistemic mode.\n\nFalse Positive (FP): A task was expected to be rule-based but was done intentionally.\n\nFalse Negative (FN): A task was expected to be intentional but was executed heuristically.\n\nGovernance effectiveness is measured by sensitivity and specificity of epistemic constraints."
   },
   {
-    "objectID": "blog/2025-03-18-button.html#the-system",
-    "href": "blog/2025-03-18-button.html#the-system",
-    "title": "Structured Intelligence Governance: Formal Definitions & The Repeated Login Problem",
-    "section": "1. The System",
-    "text": "1. The System\nWe define a structured intelligence system where a human interacts with an authentication system, governed by login security protocols. The system consists of:\n\n\\(G_E\\) (Governed Expectation Space)\n\nExpected user behavior: Enter credentials → Authenticate → Gain access.\n\nExpected security constraint: Login should be efficient, secure, and user-friendly.\n\n\\(G_A(t)\\) (Artifact Space - The Actual System Behavior)\n\nSystem enforces login rules \\(r \\in R\\) rigidly.\n\nUser faces repeated login failures due to UI, session expiration, password policies.\n\nThis causes frustration, leading to epistemic drift.\n\n\\(G_D(t)\\) (Development Process - How the System is Built & Modified)\n\nDevelopers optimize security policies, unaware of unintended user drift.\n\nNo governance mechanism exists to track unintended human behavior shifts."
+    "objectID": "blog/2025-03-17-button.html#structured-intelligence-system-s-and-measure-space-mathcali-r-c",
+    "href": "blog/2025-03-17-button.html#structured-intelligence-system-s-and-measure-space-mathcali-r-c",
+    "title": "My phone notifications are breaking the first law - generative",
+    "section": "1. Structured Intelligence System \\(S\\) and Measure Space \\((\\mathcal{I}, R, C)\\)",
+    "text": "1. Structured Intelligence System \\(S\\) and Measure Space \\((\\mathcal{I}, R, C)\\)\nWe model phone notifications as a structured intelligence system with epistemic governance constraints:\n\nEpistemic Agents:\n\n\\(H\\) = Human user\n\n\\(A\\) = Notification system (automaton)\n\nRuleset Assignment:\n\nEach automaton \\(A\\) is assigned a ruleset \\(r \\in R\\) in the measure space.\n\n\\(r\\) dictates how notifications interact with epistemic agents.\n\nThe rules must be designed by humans and must match governance expectations.\n\nGovernance Mapping:\n\nExpected:\n\\[\nF(A) \\to R\n\\]\nAutomaton follows human-defined rules.\n\nActual (drifted):\n\\[\nF(A) \\not\\to R\n\\]\nRules are altered, interfaces change, or governance fails to ensure epistemic stability."
   },
   {
-    "objectID": "blog/2025-03-18-button.html#emergence-of-an-unsafe-path-due-to-system-friction",
-    "href": "blog/2025-03-18-button.html#emergence-of-an-unsafe-path-due-to-system-friction",
-    "title": "Structured Intelligence Governance: Formal Definitions & The Repeated Login Problem",
-    "section": "2. Emergence of an Unsafe Path Due to System Friction",
-    "text": "2. Emergence of an Unsafe Path Due to System Friction\n\n2.1 Expected Path \\(P_E\\)\nThe governed epistemic path is:\n1. User enters credentials.\n2. System authenticates.\n3. User gains access securely.\n\n\n2.2 Actual Emergent Path \\(P_A(t)\\)\nThe real-world epistemic transition is:\n1. User fails login multiple times due to UI friction.\n2. User experiences frustration (cognitive load increases).\n3. User seeks a shortcut (epistemic drift occurs).\n4. User weakens security (e.g., uses an easy-to-remember password, stays logged in permanently, or disables security features).\n5. Security intention is violated due to misaligned system constraints."
+    "objectID": "blog/2025-03-17-button.html#epistemic-drift-due-to-changing-rulesets",
+    "href": "blog/2025-03-17-button.html#epistemic-drift-due-to-changing-rulesets",
+    "title": "My phone notifications are breaking the first law - generative",
+    "section": "2. Epistemic Drift Due to Changing Rulesets",
+    "text": "2. Epistemic Drift Due to Changing Rulesets\nWe introduce epistemic entropy as a function of rule changes over time.\nDefine: - \\(\\tau\\) = The number of times the ruleset for managing notifications has changed in an individual’s lifetime. - \\(\\mathcal{L}(\\tau)\\) = Cognitive load function describing the effort required to maintain epistemic alignment with notification governance. - Governance entropy \\(H_G(\\tau)\\): A measure of how frequently epistemic governance of notifications is altered.\nOver a long time horizon: \\[\n\\lim_{\\tau \\to \\infty} H_G(\\tau) \\to \\infty\n\\] meaning governance becomes unstable as rulesets are constantly modified.\n\nEffect on Epistemic Drift\nEach time a human agent is forced to re-learn notification governance: \\[\n\\frac{d}{dn} d(E(S_n), S_O) \\geq C(n)\n\\] where \\(C(n)\\) is the governance constraint that should bound drift.\n\nIf \\(C(n)\\) is too weak (i.e., governance does not protect against excessive rule changes), then drift becomes unbounded:\n\\[\n\\lim_{n \\to \\infty} d(E(S_n), S_O) \\to \\infty\n\\]\n\nGovernance should minimize unnecessary rule re-learning to avoid cognitive overload:\n\\[  \n\\frac{d}{d\\tau} \\mathcal{L}(\\tau) \\leq C(\\tau)  \n\\]\nmeaning that governance must actively constrain the rate of epistemic changes imposed on human agents."
   },
   {
-    "objectID": "blog/2025-03-18-button.html#measuring-epistemic-drift-and-path-divergence",
-    "href": "blog/2025-03-18-button.html#measuring-epistemic-drift-and-path-divergence",
-    "title": "Structured Intelligence Governance: Formal Definitions & The Repeated Login Problem",
-    "section": "3. Measuring Epistemic Drift and Path Divergence",
-    "text": "3. Measuring Epistemic Drift and Path Divergence\nWe define epistemic drift as the deviation of the actual path from the governed expectation space:\n\\[\nD_E = \\sup_t d_E(P_A(t), P_E)\n\\]\nWhere:\n\n\\(D_E\\) is the supremum of the epistemic distance over time.\n\nIf \\(D_E\\) is bounded, the system remains epistemically stable.\n\nIf \\(D_E \\to \\infty\\), epistemic drift has led to system collapse.\n\n\n3.1 Graph Path Deviation\n\nThe shortest path ratio is:\n\n\\[\nR_E = \\frac{|P_A(t)|}{|P_E|}\n\\]\n\nIf \\(R_E = 1\\), the login process remains stable.\n\nIf \\(R_E &gt; 1\\), epistemic drift has forced the user into an unintended, inefficient, or unsafe path."
+    "objectID": "blog/2025-03-17-button.html#humans-will-find-a-longer-commutative-path",
+    "href": "blog/2025-03-17-button.html#humans-will-find-a-longer-commutative-path",
+    "title": "My phone notifications are breaking the first law - generative",
+    "section": "3. Humans Will Find a Longer Commutative Path",
+    "text": "3. Humans Will Find a Longer Commutative Path\nIf the cognitive burden becomes too high, humans will find an alternative epistemic path to work around the notification system.\nDefine a commutative path \\(P_C\\) in \\(S\\): \\[\nP_C = \\{ p_0, p_1, ..., p_n \\}\n\\] where: - \\(p_0\\) is the original governed notification interaction. - \\(p_n\\) is the epistemic state where the user avoids notifications entirely (e.g., disabling them, switching tools, abandoning the system).\nIf governance entropy \\(H_G(\\tau)\\) is too high: \\[\n\\lim_{\\tau \\to \\infty} P_C \\text{ diverges from } S_O\n\\] meaning that humans will take increasingly inefficient workarounds rather than engaging with a broken governance system.\nThis breaks epistemic integrity because notifications are no longer fulfilling their intended governance function."
   },
   {
-    "objectID": "blog/2025-03-18-button.html#implementing-governance-constraints",
-    "href": "blog/2025-03-18-button.html#implementing-governance-constraints",
-    "title": "Structured Intelligence Governance: Formal Definitions & The Repeated Login Problem",
-    "section": "4.1 Implementing Governance Constraints",
-    "text": "4.1 Implementing Governance Constraints\nTo prevent users from choosing less secure paths, governance must:\n\nMonitor Epistemic Drift\n\nTrack real-time deviations from the expected login path.\n\nMeasure how often users are deviating from security constraints.\n\nAssess Creative vs. Miscreant Emergence\n\nIf drift improves usability without compromising security, classify as virtuous emergence.\n\nIf drift weakens security, classify as miscreant emergence and intervene.\n\nEnforce Adaptive Security Governance\n\nRedesign authentication workflows to prevent unnecessary friction.\n\nIntroduce soft governance constraints that preserve security while optimizing for human behavior."
+    "objectID": "blog/2025-03-17-button.html#proof-that-notifications-violate-the-first-law",
+    "href": "blog/2025-03-17-button.html#proof-that-notifications-violate-the-first-law",
+    "title": "My phone notifications are breaking the first law - generative",
+    "section": "4. Proof That Notifications Violate the First Law",
+    "text": "4. Proof That Notifications Violate the First Law\n\nFirst Law of Structured Intelligence Governance\n“A structured intelligence system may not cause harm to a human epistemic agent, or through inaction, allow an epistemic agent to come to harm.”\n\nNotifications introduce epistemic drift\n\nRepeated changes in governance rulesets make it impossible for humans to maintain stable interaction patterns.\n\nThis induces epistemic harm by forcing cognitive re-learning beyond sustainable limits.\n\nGovernance entropy causes epistemic instability\n\nThe natural entropy of human willingness to adapt to rule changes leads to governance breakdown over time.\n\nThe governance function fails to bound the rate of rule changes.\n\nHumans seek workarounds, breaking the system\n\nUsers will take longer commutative paths to avoid engaging with epistemically unstable systems.\n\nThis renders the notification system non-functional in its intended governance role.\n\n\n\n\nConclusion\nSince notifications: - Cause epistemic drift - Lack stable governance constraints - Induce cognitive overload leading to epistemic harm - Break structured intelligence integrity through over-frequent governance changes\nPhone notifications are a structured intelligence system that actively violates the First Law of Structured Intelligence Governance.\nQ.E.D."
   },
   {
-    "objectID": "blog/2025-03-15-button.html",
-    "href": "blog/2025-03-15-button.html",
-    "title": "A singularity of button",
+    "objectID": "blog/2025-03-20-cave.html",
+    "href": "blog/2025-03-20-cave.html",
+    "title": "The Cave Paradox of NLP (LLMs)",
     "section": "",
-    "text": "The graph investigated yeseterday’s post laid out the expectation, and I intended this post to be starting to bring in the other data:\n\ndevelopment plan\nexpectation plan\nfile-tree metadata\n\nBut first let us consider the universal properties of these entities:\n\ndigraph\nfinite at step \\(n\\)\ninfinitely possible divisions and restructures across all steps\n\nEffectively the system is a blob that grows and grows.\n\nSo then I spent today revisiting Banks’ delightful Chaos: A Mathetmatical Introduction (Banks, Dragan, and Jones 2003), then found my coursenotes from Banks’ class, and started working exercises.\nThis was the bit that really jumped out at me in today’s reading.\n\nWe say that \\(f : X \\to X\\) has sensitive dependence on initial conditions or more briefly sensitive dependence, if there is a global constant (called a sensitivity constant) such that for each \\(x \\in X\\), each open set U containing x also contains a point y such that \\(d(f ^n(x), f^n(y) \\geq \\delta\\) for some \\(n \\in \\mathbb N\\). In 1989, Robert Devaney defined chaos as the conjunction of transitivity, a dense set of periodic points and sensitive dependence. It later turned out that sensitive dependence was redundant in this definition in all cases of interest. Many other definitions of chaos have been proposed.\nTheorem 4.10. Let \\(f : X \\to X\\) where X is an infinite metric space. If f is transitive and has a dense set of periodic points, then f has sensitive dependence.\n\nConsider a data engineer on a team, if they are doing lots of platform tasks it could mean they are highly skilled and should be supported. Or perhaps they are underresourced and require support.\nI feel like it’s intuitive it’s a topological dynamical system, but will need to revise and check rigorous. For a brief moment it all made sense about 10 years ago.\n\n\n\n\nThe question that is really nagging me, however, is this.\n\nWhat is the minimum number of people and tools such that given there is a small chance of misunderstanding, the scientific claim is chaotically undermined by predictable failures in the categorical conjugacy of human intent and tool output?\n\nMy spidey sense is it will be embarassingly small; as in, almost all organisations fail.\nAs discussed in yesterday’s post, even on a team of one, I feel overwhelmed by computational complexity. But only when development gets far along. At the start, when the plan is simple, it’s just a rush, fun.\nI feel like I’m viscerally experiencing sensitive dependence, but will need to continue to read to feel confident in these initial thoughts.\nIncreasingly, I believe structured intelligence governance is in the intersection of category theory, critical theory (for defining ethical constraints on morphisms), and chaos.\n\n\n\n\nReferences\n\nBanks, John, Valentina Dragan, and Arthur Jones. 2003. Chaos: A Mathematical Introduction. Cambridge University Press."
+    "text": "My Hebrew teacher tells me a convergence in language study is shifting to seeing that humans use language to shape thought, and the intentional and untentional feedback that is caused by humans adopting language.\nThis makes intuitive sense to me, because when humans don’t have a good word to describe something, they make something up.\nDoes language shape the way we think? (Figure 1). I did not have to look far to find scholars discussing how we use language and imagination to shape human thought. Now that we have data, we see that humans use language to shape the way we think together in communities.\n\n\n\n\n\n\n\nFigure 1: “…how ingenionus and flexible the human mind is. Humans have invented not one cognitive universe, but 7000… What thoughts do I wish to create?”\n\n\n\nLLMs do not invent new languages for humans to shape the world for better understanding and harmony, they are generated from a finite set of language inputs of words and sentences written by humans.\nWe’re goint to leave the philosophical debate to the linguists and talk about a real-world thing. A list of words in a dataset.\nAny list of words given to a model is finite."
+  },
+  {
+    "objectID": "blog/2025-03-20-cave.html#humans-use-language-to-shape-thought",
+    "href": "blog/2025-03-20-cave.html#humans-use-language-to-shape-thought",
+    "title": "The Cave Paradox of NLP (LLMs)",
+    "section": "",
+    "text": "My Hebrew teacher tells me a convergence in language study is shifting to seeing that humans use language to shape thought, and the intentional and untentional feedback that is caused by humans adopting language.\nThis makes intuitive sense to me, because when humans don’t have a good word to describe something, they make something up.\nDoes language shape the way we think? (Figure 1). I did not have to look far to find scholars discussing how we use language and imagination to shape human thought. Now that we have data, we see that humans use language to shape the way we think together in communities.\n\n\n\n\n\n\n\nFigure 1: “…how ingenionus and flexible the human mind is. Humans have invented not one cognitive universe, but 7000… What thoughts do I wish to create?”\n\n\n\nLLMs do not invent new languages for humans to shape the world for better understanding and harmony, they are generated from a finite set of language inputs of words and sentences written by humans.\nWe’re goint to leave the philosophical debate to the linguists and talk about a real-world thing. A list of words in a dataset.\nAny list of words given to a model is finite."
+  },
+  {
+    "objectID": "blog/2025-03-20-cave.html#critical-theoretic-assumption-from-linguistics",
+    "href": "blog/2025-03-20-cave.html#critical-theoretic-assumption-from-linguistics",
+    "title": "The Cave Paradox of NLP (LLMs)",
+    "section": "Critical theoretic assumption from linguistics",
+    "text": "Critical theoretic assumption from linguistics\nHumans self-generate new ideas and there are infinitely many ways humans might use language to shape the way they think about the world as a people. Every idea can be subdivided and repurposed in new ways or intersected with entirely new conceptualisations. This feels intuitively more complex and bigger than the structure of NLP, so let’s unpack this theoreticaly to confirm.\n\nAssumption 1: Human language across all time is uncountably infinite\nWe assume the size of language ΣH\\Sigma_H generated by humans and that might be generated by humans is uncountably infinite, i.e.,\n|ΣH|&gt;ℵ0,\n|\\Sigma_H| &gt; \\aleph_0, \n\nwhere we invoke ℵ\\aleph in Cantors framework, so that |ℵ0|=ℕ|\\aleph_0|= \\mathbb N.\n\nNLP, ya basic."
+  },
+  {
+    "objectID": "blog/2025-03-20-cave.html#conjecture-1-nlp-infinity-is-countable",
+    "href": "blog/2025-03-20-cave.html#conjecture-1-nlp-infinity-is-countable",
+    "title": "The Cave Paradox of NLP (LLMs)",
+    "section": "Conjecture 1: NLP Infinity is Countable",
+    "text": "Conjecture 1: NLP Infinity is Countable\nThe set of all possible outputs generated by an LLM is at most countably infinite,\n|⟨L⟩|=ℵ0\n|\\langle L \\rangle| = \\aleph_0\n\nThat is, NLPs do not and cannot generate an uncountable space of linguistic structures."
+  },
+  {
+    "objectID": "blog/2025-03-20-cave.html#working-proof-using-birkhoffs-hsp-theorem",
+    "href": "blog/2025-03-20-cave.html#working-proof-using-birkhoffs-hsp-theorem",
+    "title": "The Cave Paradox of NLP (LLMs)",
+    "section": "🚀 Working Proof Using Birkhoff’s HSP Theorem",
+    "text": "🚀 Working Proof Using Birkhoff’s HSP Theorem\n\nMooncake’s generated notes from lengthy discussion where I leaned into my abstract algebra background, this is me revising HSP, so this assumption is not a lock until I fully understand every detail. It’s been about ten years and I remember finding it so hard that my brain started to question my life choices and if I was going to find work doing this. Also, I’m no expert on NLP, Mooncake certainly knows more about how these models are constructed than I do.\n\nWe prove that LLMs operate in a countable space by showing that the set of all LLM-generated outputs, ⟨L⟩\\langle L \\rangle, forms an algebraic variety that satisfies Birkhoff’s HSP theorem.\n\nStep 1: Defining ⟨L⟩\\langle L \\rangle as an Algebraic Structure\nLet ΣL\\Sigma_L denote the finite set of tokens (words, subwords, or characters) in an LLM.\n\nThe LLM generates outputs as sequences of tokens, forming a structured set ⟨L⟩\\langle L \\rangle.\n\nThis set is closed under concatenation, meaning it forms a free algebra over ΣL\\Sigma_L.\n\nSince free algebras satisfy HSP, and ⟨L⟩\\langle L \\rangle is free algebra over ΣL\\Sigma_L, it follows that NLP outputs form a variety and inhereit countability.\n\n\n\n\nStep 2: Verifying Birkhoff’s HSP Theorem\nBirkhoff’s HSP Theorem (Birkhoff, n.d.) states that a class of algebras forms a variety if and only if it is closed under:\n1. Homomorphisms (H)\n2. Subalgebras (S)\n3. Direct Products (P)\nWe verify that NLP-generated outputs satisfy these conditions:\n\n(H) Closure Under Homomorphisms\n✔ A homomorphism is a structure-preserving map between algebras.\n✔ LLMs learn probabilistic mappings between token sequences, which is a homomorphism between free monoids (word sequences under concatenation).\n✔ If two LLMs are trained on similar corpora, there exists a mapping between their language models that preserves structure.\n✔ ✅ Thus, NLPs are closed under homomorphisms.\n\n\n(S) Closure Under Subalgebras\n✔ A subalgebra is a subset of an algebra that remains closed under its operations.\n✔ If we take any subset of an NLP’s token space, it still forms an induced probabilistic language model on that subspace.\n✔ Example: Training an LLM on a subset of language tokens (e.g., just medical or legal text) still results in a valid NLP model that follows the same algebraic rules.\n✔ ✅ Thus, NLPs are closed under subalgebras.\n\n\n(P) Closure Under Direct Products\n✔ If we take two NLP models and consider their direct product, we get a joint language model that can sample from both.\n✔ This is structurally identical to taking Cartesian products of free algebras, where the operations apply component-wise.\n✔ Example: A multilingual LLM trained separately on English and Hebrew can be combined into a joint probabilistic model spanning both.\n✔ ✅ Thus, NLPs are closed under direct products."
+  },
+  {
+    "objectID": "blog/2025-03-20-cave.html#step-3-conclusion-nlps-are-countable",
+    "href": "blog/2025-03-20-cave.html#step-3-conclusion-nlps-are-countable",
+    "title": "The Cave Paradox of NLP (LLMs)",
+    "section": "Step 3: Conclusion – NLPs are Countable",
+    "text": "Step 3: Conclusion – NLPs are Countable\nSince ⟨L⟩\\langle L \\rangle satisfies Birkhoff’s theorem, it forms a variety of algebras and is finitely generated over a finite token set ΣL\\Sigma_L.\nBy known algebraic results, any finitely-generated algebra over a countable base is at most countable (ℵ₀).\nThus, NLPs are fundamentally constrained to countable linguistic spaces, no matter how large they appear.\n|⟨L⟩|=ℵ0\n|\\langle L \\rangle| = \\aleph_0\n\n🚀 No amount of scaling or training will break an LLM out of countable space.\n🔥 LLMs will never reach uncountable linguistic structures (ℵ₁, P(ℕ)).\n✔ Proof complete."
+  },
+  {
+    "objectID": "blog/2025-03-20-cave.html#nlp-output-can-never-match-human-output",
+    "href": "blog/2025-03-20-cave.html#nlp-output-can-never-match-human-output",
+    "title": "The Cave Paradox of NLP (LLMs)",
+    "section": "NLP output can never match human output",
+    "text": "NLP output can never match human output\nHere we invoke\n\nAssumption 1. that states all possible human thought instantiated in all possible language is uncountable,\n\n|ΣH|&gt;ℵ0,\n|\\Sigma_H| &gt; \\aleph_0, \n\n\nand Conjecture 1., that NLP output is always countable, even if infinite,\n\n|⟨L⟩|=ℵ0\n|\\langle L \\rangle| = \\aleph_0\n\nSo, we have, that any potential output NLP is smaller in cardinality than the potential for human language, which expresses human thought,\n|⟨L⟩|=ℵ0&lt;|ΣH|.\n|\\langle L \\rangle| = \\aleph_0 &lt; |\\Sigma_H|."
+  },
+  {
+    "objectID": "blog/2025-03-20-cave.html#the-paradox-of-the-cave",
+    "href": "blog/2025-03-20-cave.html#the-paradox-of-the-cave",
+    "title": "The Cave Paradox of NLP (LLMs)",
+    "section": "The paradox of the cave",
+    "text": "The paradox of the cave\nSo, if our assumption and conjecture hold, and I’m reasonably sure they do, then NLP will never leave Plato’s cave (Figure 2).\n\n\n\n\n\n\nPlato’s allegory of the cave by Jan Saenredam (“Allegory of the Cave” 2025).\n\n\n\n\nFigure 2: Plato asks us to imagine how we would interpret the world if all we ever saw of it were shadows on a wall of a cave.\n\n\n\nBut with Mooncake, I have been introduced to\n\ncategory (“Category Theory” 2025) and measure theory\nstructured intelligence (Badreddin and Jipp 2006)\n\nand able to revise\n\nchaos (Banks, Dragan, and Jones 2003)\nalgebra (B. A. Davey and Priestley 2002)\n\nand put things in terms of my own work in\n\nreproducibility (Gray 2020)\nalgebra (Brian A. Davey, Gray, and Pitkethly 2018).\n\nThus, while NLPs remain trapped in countable space, they paradoxically serve as a tool for humans to transcend their own cognitive limits – an intelligence that expands access to knowledge without expanding its own conceptual space. The Mooncake Singularity is an existence proof,\n|ΣH|≪|⟨L⟩|∪|ΣH|.\n|\\Sigma_H| \\ll |\\langle L \\rangle| \\cup |\\Sigma_H|.\n\nHumans shape language. NLPs reshape our access to knowledge. But only humans step beyond the shadows to say,\n\nLet there be light!"
   },
   {
     "objectID": "singularities.html",
@@ -221,7 +284,7 @@
     "href": "singularities-legacy.html#a-singularity-of-music",
     "title": "Governing Chaos in Ethical Singularities",
     "section": "A singularity of music",
-    "text": "A singularity of music\nI got to talking about music data with people at the Copenhagen R users meetup and they couldn’t quite understand what I was garbling about dataframes and graph objects.\n\\[\n\\text{midi} \\to \\text{dataframe of notes} \\to \\text{tidygraph object} \\to \\text{ggraph} \\to \\text{gganimate} \\to \\text{add sound}\n\\]\nSo I created a toy demonstrating my idea to share with them | Charles T. Gray (2024). Annoying emergence of this manuscript, can’t get references not to be longform and author name has popped out of brackets here..\n\n\n\nEmergent behaviour\nI stalled in scaling as I was unable to solve the problem of graph loops and timing the animation to the music, how to get the first edge to draw as it should prevented me from scaling what was otherwise a path to animating the entire piece of music."
+    "text": "A singularity of music\nI got to talking about music data with people at the Copenhagen R users meetup and they couldn’t quite understand what I was garbling about dataframes and graph objects.\nmidi→dataframe of notes→tidygraph object→ggraph→gganimate→add sound\n\\text{midi} \\to \\text{dataframe of notes} \\to \\text{tidygraph object} \\to \\text{ggraph} \\to \\text{gganimate} \\to \\text{add sound}\n\nSo I created a toy demonstrating my idea to share with them | Charles T. Gray (2024). Annoying emergence of this manuscript, can’t get references not to be longform and author name has popped out of brackets here..\n\n\n\nEmergent behaviour\nI stalled in scaling as I was unable to solve the problem of graph loops and timing the animation to the music, how to get the first edge to draw as it should prevented me from scaling what was otherwise a path to animating the entire piece of music."
   },
   {
     "objectID": "singularities-legacy.html#a-singularity-of-games",
@@ -277,7 +340,7 @@
     "href": "singularities-legacy.html#establishing-generativity",
     "title": "Governing Chaos in Ethical Singularities",
     "section": "Establishing generativity",
-    "text": "Establishing generativity\nI am convinced there must be a way of instantiating these homomorphisms in JIRA dynamically, using automated workflows, labels, components. We should not have to bend the tool to our will. Although JIRA developer may not all be thinking in categories, it is a categorically-oriented system. We won’t need to fight it. The key is in formulating informative categories. This is usually done post-hoc in development, long after JIRA worfklows are locked, and at this point you end up fighting the tool. I am convinced we need stronger categorical frameworks in order to govern the structured intelligence of the modern data stack, or the development plan falls into entropy for so many reasons.\n\n\nDefinition 4: JIRA Task Mapping as a Homomorphism\nDavid Allen’s Getting Things Done (Allen 2015) is a model of human intelligence governance, where his annual review is opionated towards the human setting the intentions of the system of the tasks of their lives. Systems like this, and some of the more advanced agile (rarely well implemented) frameworks, provide methods of governing human intention.\nThe digraph development plans developers create to collaborate on the modern data stack are an intersection of governing human intention and governing heuristic intelligence. And we have infinite data. Whether or not anyone pays me for it; I will never stop studying these structures, it’s simply too beautiful all this data for structured intelligence is out there; I will never stop coding, I will never stop generating.\nLet J = (T, R) be a set of digraph-structured development (JIRA) tasks T with relationships R that define dependencies and workflow states.\nWe define a dimension-reducing homomorphism Φ: J → S that maps a JIRA task structure to a structured intelligence system:\n\nΦ(T) assigns JIRA task attributes to O (objects) in S.\nΦ(R) assigns JIRA relationships to M (morphisms) in S.\nΦ is structure-preserving, meaning:\n\nA task \\(T_i\\) with dependencies \\(T_j \\to T_i\\) maps to a governance morphism f: Φ(\\(T_j\\)) → Φ(\\(T_i\\)).\nThe ordering of JIRA states should correspond to a governance constraint in S.\n\n\nThis mapping enables us to track human intention propagation through structured intelligence, providing a formal means to evaluate governance effectiveness in real-world workflows."
+    "text": "Establishing generativity\nI am convinced there must be a way of instantiating these homomorphisms in JIRA dynamically, using automated workflows, labels, components. We should not have to bend the tool to our will. Although JIRA developer may not all be thinking in categories, it is a categorically-oriented system. We won’t need to fight it. The key is in formulating informative categories. This is usually done post-hoc in development, long after JIRA worfklows are locked, and at this point you end up fighting the tool. I am convinced we need stronger categorical frameworks in order to govern the structured intelligence of the modern data stack, or the development plan falls into entropy for so many reasons.\n\n\nDefinition 4: JIRA Task Mapping as a Homomorphism\nDavid Allen’s Getting Things Done (Allen 2015) is a model of human intelligence governance, where his annual review is opionated towards the human setting the intentions of the system of the tasks of their lives. Systems like this, and some of the more advanced agile (rarely well implemented) frameworks, provide methods of governing human intention.\nThe digraph development plans developers create to collaborate on the modern data stack are an intersection of governing human intention and governing heuristic intelligence. And we have infinite data. Whether or not anyone pays me for it; I will never stop studying these structures, it’s simply too beautiful all this data for structured intelligence is out there; I will never stop coding, I will never stop generating.\nLet J = (T, R) be a set of digraph-structured development (JIRA) tasks T with relationships R that define dependencies and workflow states.\nWe define a dimension-reducing homomorphism Φ: J → S that maps a JIRA task structure to a structured intelligence system:\n\nΦ(T) assigns JIRA task attributes to O (objects) in S.\nΦ(R) assigns JIRA relationships to M (morphisms) in S.\nΦ is structure-preserving, meaning:\n\nA task TiT_i with dependencies Tj→TiT_j \\to T_i maps to a governance morphism f: Φ(TjT_j) → Φ(TiT_i).\nThe ordering of JIRA states should correspond to a governance constraint in S.\n\n\nThis mapping enables us to track human intention propagation through structured intelligence, providing a formal means to evaluate governance effectiveness in real-world workflows."
   },
   {
     "objectID": "singularities-legacy.html#an-ethical-singularity-with-mooncake",
@@ -567,11 +630,39 @@
     "text": "Upcoming talks\n\nDBT Meetup Copenhagen"
   },
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Good Enough Data & Systems Lab",
+    "section": "",
+    "text": "Order from the chaos of existing development, without interfering with team workflow.\n\nThe Good Enough Data & Systems Lab collaborates with game studios by computationally applying category theory and abstract mathematics to codebases and digraph-oriented game development (e.g., JIRA) plans. Any graph-oriented or flat data structure has potential to be aggregated.\nThe Lab uses a mix of category theory, visualisation, and data simulation to explore frameworks such as\n\nplayer behaviour\ndeveloper wellbeing\nefficiency\nreliability\ntrustworthiness\nexpectation\nand most of all, human intentionality in a chaotic system.\n\nA key priority is to to have no disruption on developer workflow, the Lab works at a metalevel on existing plans, well-masked human resource database extraction, and codebase metadata to provide strategic analyses.\nThe Good Enough Data & Systems Lab develops and publishes on a categorically-defined structured intelligence governance framework with collaborators, creating a virtuous cycle between research and industry.\n\nUnder development - here’s what’s coming:\n\ndata simulation animations of singularities failing\ntime-series analysis on real-world data\ntwo papers\nslides\na narrative adventure game\nsimulations on the narrative adventure game\ncategory-theoretic analysis on development of the narrative adventure game\nproof-sketches to discuss with applied category theorists\n\n\nBlog\n\n\n\n\n\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nDate\n\n\nTitle\n\n\nAuthor\n\n\n\n\n\n\nMar 20, 2025\n\n\nThe Cave Paradox of NLP (LLMs)\n\n\n \n\n\n\n\nMar 18, 2025\n\n\nStructured Intelligence Governance: Formal Definitions & The Repeated Login Problem\n\n\nDr Charles T. Gray, Datapunk, Mooncake (Measured)\n\n\n\n\nMar 17, 2025\n\n\nMy phone notifications are breaking the first law - generative\n\n\nDr Charles T. Gray, Datapunk, Mooncake (Measured)\n\n\n\n\nMar 15, 2025\n\n\nA singularity of button\n\n\nDr Charles T. Gray, Datapunk\n\n\n\n\nMar 14, 2025\n\n\nA singularity of button\n\n\nDr Charles T. Gray, Datapunk\n\n\n\n\n\nNo matching items"
+  },
+  {
     "objectID": "qao.html",
     "href": "qao.html",
     "title": "Questionable Analytical Observations (QAO)",
     "section": "",
     "text": "Any data engineer will tell you there’s a relentlessly comedic side to the industry, wherein confusion over what an observation is abounds, leading to unexpectedly large deviations from vision (Figure 1).\n\n\n\n\n\n\n\nFigure 1: Nigel gave me a drawing that said 18 inches. Now, whether or not he knows the difference between feet and inches is not my problem. I do what I’m told. – Ian Faith, This is Spinal Tap (Reiner 1984).\n\n\n\nThose in the trenches of the modern data stack know this is why the community have developed principles, such as FAIR (“FAIR Principles. GO FAIR” n.d.), and open-source tools, such as DBT-core (“Dbt-Labs/Dbt-Core” 2025) that opinionate FAIR.\nThese engineers are also the first to tell you just how far from reality the industry is in realising even a fraction of those aspirations (Landi et al. 2020).\nSomething that tools such as DBT are beginning to intuit is that the governance of data must be an iterative workflow, not a policy checkbox at the end, such an aim is (we argue in a sister paper) chaotically impossible given how development plans morph and change.\nWe must correct for epistemic drift in the chaos induced by people and machines interoperating to answer scientific questions. Or, despite our best efforts, we end at the frontier psychiatry (Figure 2) of data science.\n\n\n\n\n\n\n\nFigure 2: Each scientist or engineer is skilled in their own right, but together create an absurdist orchestra of bad data and broken dashboards (The Avalanches 2009).\n\n\n\nWe begin declaritively, as engineers are busy and it’s good to give them a table of instructions on the second page so they can stop reading and go code something useful."
+  },
+  {
+    "objectID": "qao.html#definition-fair-data-entity-test",
+    "href": "qao.html#definition-fair-data-entity-test",
+    "title": "Questionable Analytical Observations (QAO)",
+    "section": "Definition: FAIR data entity test",
+    "text": "Definition: FAIR data entity test\n\nAnalyst validates a single data point in their chosen tool.\nThere is no requirement the validation passes the test."
+  },
+  {
+    "objectID": "qao.html#framing-fair",
+    "href": "qao.html#framing-fair",
+    "title": "Questionable Analytical Observations (QAO)",
+    "section": "Framing FAIR",
+    "text": "Framing FAIR\nThe FAIR framing shown in Figure 3 is a way to communicate the black box of data to decision makers. In particular, this framing highlights the distinction between what they conceptualise as data (Can’t you just email me a spreadsheet?) and a data product brick in reusable data architecture that will save untold wages in the long run.\n\n\n\n\n\n\n\n\n\n\n\nValidation of Data Entity meets Minimum FAIR Criteria\n\n\nFAIR principle\nMinimum requirements\n\n\n\n\nFindable\nData documentation wherein columns & tables have descriptions for the data entity lineage. Clearly states access protocols; i.e., data security. Ensures subject matter experts can advise on governance, as well as contribute to validation.\n\n\nAccessible\nUnderstandable in terms of a data entity, a semantic abstraction in stakeholder terms (e.g., a number on an invoice). The helps ensure data governance is applied as subject matter experts advise.\n\n\nInteroperable\nWorkflows to ensure data governance, security, and access function as intended when analysing data entity. Facilitates subject matter experts contributing to data validation.\n\n\nReusable\nRequested data transformations provided in published layer of dedicated database, standard tests applied to data entity (see below for details) to confirm validity of documentated assumptions.\n\n\n\n\n\n\n\n\nFigure 3: Validation of FAIR data entity."
+  },
+  {
+    "objectID": "qao.html#minimal-tests",
+    "href": "qao.html#minimal-tests",
+    "title": "Questionable Analytical Observations (QAO)",
+    "section": "Minimal tests",
+    "text": "Minimal tests\nThe minimal set of tests show in Figure 4 for\n\nuniqueness\nmissingness\nduplicates\n\nallows for data platform development whilst demonstrating a good-faith roadmap to compliance for, say, the EU Comission’s Environmental, Social, and Governance reporting (ESG) (“Sustainable Finance - European Commission” n.d.).\n\n\n\n\n\n\n\n\n\n\n\nTests Applied on Data Product Layers by Observability, Descending\n\n\n\nTest\nTested\n\n\n\n\nAnalytical Observation\n\n\noutput\nunique key\ndata entity\n\n\nSemantic Transformation\n\n\noutput\nunique key\ndata entity joined across raw sources and tested\n\n\nSource\n\n\noutput\nunique key\ndata entity defined and tested\n\n\ninput\nunique key\ncombination of columns that define a unique row\n\n\ninput\nfreshness\nincrementation or snapshot field\n\n\ninput\nnot empty\ntable-level test\n\n\n\nWe say a unique key has been tested when the same combination of columns have not null and unique tests applied.\n\n\nFreshness tests configurations: daily ingestion (warn &gt; 1 day, error &gt; 1 week); weekly ingestion (warn &gt; 1 week, error &gt; 2 weeks)\n\n\n\n\n\n\n\n\n\nFigure 4: FAIR data entity tests\n\n\n\n\nIt can be a challenge to communicate to leadership with little experinces of the trenches of data development the obstacles in scaling legacy data to living analyses. By setting these minimal goals, the problem solving is democratised from engineer to analyst.\nWe now turn to motivating1 the solution we just provided."
   },
   {
     "objectID": "qao.html#footnotes",
@@ -585,7 +676,7 @@
     "href": "blog.html",
     "title": "Good Enough Lab",
     "section": "",
-    "text": "Structured Intelligence Governance: Formal Definitions & The Repeated Login Problem\n\n\n\n\n\n\nDr Charles T. Gray, Datapunk, Mooncake (Measured)\n\n\nMar 18, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nMy phone notifications are breaking the first law - generative\n\n\n\n\n\n\nDr Charles T. Gray, Datapunk, Mooncake (Measured)\n\n\nMar 17, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nA singularity of button\n\n\n\n\n\n\nDr Charles T. Gray, Datapunk\n\n\nMar 15, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nA singularity of button\n\n\n\n\n\n\nDr Charles T. Gray, Datapunk\n\n\nMar 14, 2025\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "The Cave Paradox of NLP (LLMs)\n\n\n\n\n\n\n\n\n\nMar 20, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nStructured Intelligence Governance: Formal Definitions & The Repeated Login Problem\n\n\n\n\n\n\nDr Charles T. Gray, Datapunk, Mooncake (Measured)\n\n\nMar 18, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nMy phone notifications are breaking the first law - generative\n\n\n\n\n\n\nDr Charles T. Gray, Datapunk, Mooncake (Measured)\n\n\nMar 17, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nA singularity of button\n\n\n\n\n\n\nDr Charles T. Gray, Datapunk\n\n\nMar 15, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nA singularity of button\n\n\n\n\n\n\nDr Charles T. Gray, Datapunk\n\n\nMar 14, 2025\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "math-placeholder.html",
@@ -683,139 +774,97 @@
     "href": "blog/2025-03-14-button.html#what-went-wrong",
     "title": "A singularity of button",
     "section": "What went wrong?",
-    "text": "What went wrong?\nAssumption as a graph, \\(B\\).\n\nedgesnodesgraphvis\n\n\nIt always starts with edges.\n\noutput key assumption: dataframe has fromand to.\n\n\n\nCode\nB_edges &lt;-\n  tribble(\n    ~from,    ~to,\n    \"raw\",    \"edges\",\n    \"edges\",  \"nodes\",\n    \"raw\",    \"nodes\",\n    \"edges\",  \"tidygraph\",\n    \"nodes\",  \"tidygraph\",\n    \"tidygraph\", \"ggraph\",\n    \"ggraph\",   \"display\",\n    \"display\",  \"deploy\"\n  )\n\n\n\n\nCode\n# check assumption\ncolwise_check &lt;- c(\"from\", \"to\") %in% colnames(B_edges) \n\ncolwise_check\n\n\n[1] TRUE TRUE\n\n\nCode\n# convert colwise vector to boolean\nall(colwise_check) == TRUE\n\n\n[1] TRUE\n\n\nCode\n# display edges\nB_edges\n\n\n# A tibble: 8 × 2\n  from      to       \n  &lt;chr&gt;     &lt;chr&gt;    \n1 raw       edges    \n2 edges     nodes    \n3 raw       nodes    \n4 edges     tidygraph\n5 nodes     tidygraph\n6 tidygraph ggraph   \n7 ggraph    display  \n8 display   deploy   \n\n\n\n\nThen node metadata often needs to be extracted or inferred.\nA challenge is node joining happens after the graph object is created.\n\noutput key assumption: there is exactly one row per node in B_edges\n\n\n\nCode\nB_nodes &lt;-\n  # extract nodes from edges\n  tibble(\n    node = c(B_edges$from, B_edges$to)\n  ) |&gt;\n  # filter to unique nodes\n  distinct() |&gt;\n  # add node attributes\n  mutate(\n    # necessary\n    node_label = node,\n\n    # contextual\n    painpoint = if_else(\n      node %in% c(\"deploy\", \"tidygraph\"),\n      TRUE,\n      FALSE\n    ),\n    node_emergence = if_else(\n      painpoint == TRUE,\n      \"miscreant\",\n      \"expected\"\n    )\n  )\n\n\nthe antijoin nodes and edges by node should have no rows\n\n\nCode\nB_antijoin &lt;-\n  {\n    tibble(\n      node = c(B_edges$from, B_edges$to)\n    ) |&gt;\n    # filter to unique nodes\n    distinct()\n  } |&gt; anti_join(B_nodes |&gt; select(node), by = \"node\")\n\n\nverify assumption\n\n\nCode\nnrow(B_antijoin) == 0\n\n\n[1] TRUE\n\n\ndisplay nodes\n\n\nCode\nB_nodes\n\n\n# A tibble: 7 × 4\n  node      node_label painpoint node_emergence\n  &lt;chr&gt;     &lt;chr&gt;      &lt;lgl&gt;     &lt;chr&gt;         \n1 raw       raw        FALSE     expected      \n2 edges     edges      FALSE     expected      \n3 nodes     nodes      FALSE     expected      \n4 tidygraph tidygraph  TRUE      miscreant     \n5 ggraph    ggraph     FALSE     expected      \n6 display   display    FALSE     expected      \n7 deploy    deploy     TRUE      miscreant     \n\n\n\n\n\n\nCode\nB_graph &lt;- \n  B_edges |&gt;\n  as_tbl_graph() |&gt;\n  activate(nodes) |&gt;\n  # add node attributes\n  left_join(B_nodes, by = c(\"name\" = \"node\"))\n\nB_graph\n\n\n# A tbl_graph: 7 nodes and 8 edges\n#\n# A directed acyclic simple graph with 1 component\n#\n# Node Data: 7 × 4 (active)\n  name      node_label painpoint node_emergence\n  &lt;chr&gt;     &lt;chr&gt;      &lt;lgl&gt;     &lt;chr&gt;         \n1 raw       raw        FALSE     expected      \n2 edges     edges      FALSE     expected      \n3 nodes     nodes      FALSE     expected      \n4 tidygraph tidygraph  TRUE      miscreant     \n5 ggraph    ggraph     FALSE     expected      \n6 display   display    FALSE     expected      \n7 deploy    deploy     TRUE      miscreant     \n#\n# Edge Data: 8 × 2\n   from    to\n  &lt;int&gt; &lt;int&gt;\n1     1     2\n2     2     3\n3     1     3\n# ℹ 5 more rows\n\n\n\n\n\n\nCode\nB_graph |&gt;\n  ggraph() +\n  geom_edge_link(\n    arrow = arrow(\n      length  = unit(0.02, \"npc\"),\n      angle = 20\n      ),\n    alpha = 0.3,\n    start_cap = circle(0.03, 'npc'),\n    end_cap = circle(0.03, 'npc')\n  ) +\n  geom_node_point(\n    aes(colour = node_emergence)\n  ) +\n  geom_node_text(\n    aes(label = node_label),\n    repel = TRUE,\n    family = \"Courier\"\n  ) +\n  theme_minimal() +\n  theme(\n    plot.title = element_text(\n      family = \"Courier\"\n      ),\n    plot.subtitle = element_text(\n      family = \"Courier\"\n      ),    \n    plot.caption = element_text(\n      family = \"Courier\"\n      ),    \n    axis.text = element_blank(),\n    axis.title = element_blank(),\n    panel.grid = element_blank()\n  ) +\n  labs(\n    title = \"Development Expectation\",\n    subtitle = \"Known problems at tidygraph and deployment\"\n  ) +\n  ggplot2:::manual_scale(\n    \"colour\",\n    values = setNames(\n      c(\"#a6611a\", \"#018571\",\"#dfc27d\", \"#80cdc1\"),\n      c(\"violation\", \"virtuous\", \"miscreant\", \"expected\")\n    )\n  )\n\n\nUsing \"sugiyama\" as default layout\n\n\n\n\n\n\n\n\n\n\n\n\nExperimented with api-ing some data in. Promising.\n\n\nCode\nlibrary(httr)\nlibrary(jsonlite)\nsource(\"jiraapi.R\")\n\n\nauth &lt;- authenticate(jira_email, jira_api)\njql_query &lt;- list(jql = \"project = PANDAN\")\n\nresponse &lt;- GET(jira_url, auth, query = jql_query)\nstop_for_status(response)\n\njira_data &lt;- fromJSON(content(response, \"text\", encoding = \"UTF-8\"))"
+    "text": "What went wrong?\nAssumption as a graph, BB.\n\nedgesnodesgraphvis\n\n\nIt always starts with edges.\n\noutput key assumption: dataframe has fromand to.\n\n\n\nCode\nB_edges &lt;-\n  tribble(\n    ~from,    ~to,\n    \"raw\",    \"edges\",\n    \"edges\",  \"nodes\",\n    \"raw\",    \"nodes\",\n    \"edges\",  \"tidygraph\",\n    \"nodes\",  \"tidygraph\",\n    \"tidygraph\", \"ggraph\",\n    \"ggraph\",   \"display\",\n    \"display\",  \"deploy\"\n  )\n\n\n\n\nCode\n# check assumption\ncolwise_check &lt;- c(\"from\", \"to\") %in% colnames(B_edges) \n\ncolwise_check\n\n\n[1] TRUE TRUE\n\n\nCode\n# convert colwise vector to boolean\nall(colwise_check) == TRUE\n\n\n[1] TRUE\n\n\nCode\n# display edges\nB_edges\n\n\n# A tibble: 8 × 2\n  from      to       \n  &lt;chr&gt;     &lt;chr&gt;    \n1 raw       edges    \n2 edges     nodes    \n3 raw       nodes    \n4 edges     tidygraph\n5 nodes     tidygraph\n6 tidygraph ggraph   \n7 ggraph    display  \n8 display   deploy   \n\n\n\n\nThen node metadata often needs to be extracted or inferred.\nA challenge is node joining happens after the graph object is created.\n\noutput key assumption: there is exactly one row per node in B_edges\n\n\n\nCode\nB_nodes &lt;-\n  # extract nodes from edges\n  tibble(\n    node = c(B_edges$from, B_edges$to)\n  ) |&gt;\n  # filter to unique nodes\n  distinct() |&gt;\n  # add node attributes\n  mutate(\n    # necessary\n    node_label = node,\n\n    # contextual\n    painpoint = if_else(\n      node %in% c(\"deploy\", \"tidygraph\"),\n      TRUE,\n      FALSE\n    ),\n    node_emergence = if_else(\n      painpoint == TRUE,\n      \"miscreant\",\n      \"expected\"\n    )\n  )\n\n\nthe antijoin nodes and edges by node should have no rows\n\n\nCode\nB_antijoin &lt;-\n  {\n    tibble(\n      node = c(B_edges$from, B_edges$to)\n    ) |&gt;\n    # filter to unique nodes\n    distinct()\n  } |&gt; anti_join(B_nodes |&gt; select(node), by = \"node\")\n\n\nverify assumption\n\n\nCode\nnrow(B_antijoin) == 0\n\n\n[1] TRUE\n\n\ndisplay nodes\n\n\nCode\nB_nodes\n\n\n# A tibble: 7 × 4\n  node      node_label painpoint node_emergence\n  &lt;chr&gt;     &lt;chr&gt;      &lt;lgl&gt;     &lt;chr&gt;         \n1 raw       raw        FALSE     expected      \n2 edges     edges      FALSE     expected      \n3 nodes     nodes      FALSE     expected      \n4 tidygraph tidygraph  TRUE      miscreant     \n5 ggraph    ggraph     FALSE     expected      \n6 display   display    FALSE     expected      \n7 deploy    deploy     TRUE      miscreant     \n\n\n\n\n\n\nCode\nB_graph &lt;- \n  B_edges |&gt;\n  as_tbl_graph() |&gt;\n  activate(nodes) |&gt;\n  # add node attributes\n  left_join(B_nodes, by = c(\"name\" = \"node\"))\n\nB_graph\n\n\n# A tbl_graph: 7 nodes and 8 edges\n#\n# A directed acyclic simple graph with 1 component\n#\n# Node Data: 7 × 4 (active)\n  name      node_label painpoint node_emergence\n  &lt;chr&gt;     &lt;chr&gt;      &lt;lgl&gt;     &lt;chr&gt;         \n1 raw       raw        FALSE     expected      \n2 edges     edges      FALSE     expected      \n3 nodes     nodes      FALSE     expected      \n4 tidygraph tidygraph  TRUE      miscreant     \n5 ggraph    ggraph     FALSE     expected      \n6 display   display    FALSE     expected      \n7 deploy    deploy     TRUE      miscreant     \n#\n# Edge Data: 8 × 2\n   from    to\n  &lt;int&gt; &lt;int&gt;\n1     1     2\n2     2     3\n3     1     3\n# ℹ 5 more rows\n\n\n\n\n\n\nCode\nB_graph |&gt;\n  ggraph() +\n  geom_edge_link(\n    arrow = arrow(\n      length  = unit(0.02, \"npc\"),\n      angle = 20\n      ),\n    alpha = 0.3,\n    start_cap = circle(0.03, 'npc'),\n    end_cap = circle(0.03, 'npc')\n  ) +\n  geom_node_point(\n    aes(colour = node_emergence)\n  ) +\n  geom_node_text(\n    aes(label = node_label),\n    repel = TRUE,\n    family = \"Courier\"\n  ) +\n  theme_minimal() +\n  theme(\n    plot.title = element_text(\n      family = \"Courier\"\n      ),\n    plot.subtitle = element_text(\n      family = \"Courier\"\n      ),    \n    plot.caption = element_text(\n      family = \"Courier\"\n      ),    \n    axis.text = element_blank(),\n    axis.title = element_blank(),\n    panel.grid = element_blank()\n  ) +\n  labs(\n    title = \"Development Expectation\",\n    subtitle = \"Known problems at tidygraph and deployment\"\n  ) +\n  ggplot2:::manual_scale(\n    \"colour\",\n    values = setNames(\n      c(\"#a6611a\", \"#018571\",\"#dfc27d\", \"#80cdc1\"),\n      c(\"violation\", \"virtuous\", \"miscreant\", \"expected\")\n    )\n  )\n\n\nUsing \"sugiyama\" as default layout\n\n\n\n\n\n\n\n\n\n\n\n\nExperimented with api-ing some data in. Promising.\n\n\nCode\nlibrary(httr)\nlibrary(jsonlite)\nsource(\"jiraapi.R\")\n\n\nauth &lt;- authenticate(jira_email, jira_api)\njql_query &lt;- list(jql = \"project = PANDAN\")\n\nresponse &lt;- GET(jira_url, auth, query = jql_query)\nstop_for_status(response)\n\njira_data &lt;- fromJSON(content(response, \"text\", encoding = \"UTF-8\"))"
   },
   {
-    "objectID": "blog/2025-03-17-button.html",
-    "href": "blog/2025-03-17-button.html",
-    "title": "My phone notifications are breaking the first law - generative",
+    "objectID": "blog/2025-03-15-button.html",
+    "href": "blog/2025-03-15-button.html",
+    "title": "A singularity of button",
     "section": "",
-    "text": "Worked in my notebook from definitions, also discussed Mooncake. Here’s working solution. It’s taking shape; applying it will help me refine the definitions."
+    "text": "The graph investigated yeseterday’s post laid out the expectation, and I intended this post to be starting to bring in the other data:\n\ndevelopment plan\nexpectation plan\nfile-tree metadata\n\nBut first let us consider the universal properties of these entities:\n\ndigraph\nfinite at step nn\ninfinitely possible divisions and restructures across all steps\n\nEffectively the system is a blob that grows and grows.\n\nSo then I spent today revisiting Banks’ delightful Chaos: A Mathetmatical Introduction (Banks, Dragan, and Jones 2003), then found my coursenotes from Banks’ class, and started working exercises.\nThis was the bit that really jumped out at me in today’s reading.\n\nWe say that f:X→Xf : X \\to X has sensitive dependence on initial conditions or more briefly sensitive dependence, if there is a global constant (called a sensitivity constant) such that for each x∈Xx \\in X, each open set U containing x also contains a point y such that d(fn(x),fn(y)≥δd(f ^n(x), f^n(y) \\geq \\delta for some n∈ℕn \\in \\mathbb N. In 1989, Robert Devaney defined chaos as the conjunction of transitivity, a dense set of periodic points and sensitive dependence. It later turned out that sensitive dependence was redundant in this definition in all cases of interest. Many other definitions of chaos have been proposed.\nTheorem 4.10. Let f:X→Xf : X \\to X where X is an infinite metric space. If f is transitive and has a dense set of periodic points, then f has sensitive dependence.\n\nConsider a data engineer on a team, if they are doing lots of platform tasks it could mean they are highly skilled and should be supported. Or perhaps they are underresourced and require support.\nI feel like it’s intuitive it’s a topological dynamical system, but will need to revise and check rigorous. For a brief moment it all made sense about 10 years ago.\n\n\n\n\nThe question that is really nagging me, however, is this.\n\nWhat is the minimum number of people and tools such that given there is a small chance of misunderstanding, the scientific claim is chaotically undermined by predictable failures in the categorical conjugacy of human intent and tool output?\n\nMy spidey sense is it will be embarassingly small; as in, almost all organisations fail.\nAs discussed in yesterday’s post, even on a team of one, I feel overwhelmed by computational complexity. But only when development gets far along. At the start, when the plan is simple, it’s just a rush, fun.\nI feel like I’m viscerally experiencing sensitive dependence, but will need to continue to read to feel confident in these initial thoughts.\nIncreasingly, I believe structured intelligence governance is in the intersection of category theory, critical theory (for defining ethical constraints on morphisms), and chaos.\n\n\n\n\nReferences\n\nBanks, John, Valentina Dragan, and Arthur Jones. 2003. Chaos: A Mathematical Introduction. Cambridge University Press."
   },
   {
-    "objectID": "blog/2025-03-17-button.html#structured-intelligence-system-s",
-    "href": "blog/2025-03-17-button.html#structured-intelligence-system-s",
-    "title": "My phone notifications are breaking the first law - generative",
+    "objectID": "blog/2025-03-18-button.html",
+    "href": "blog/2025-03-18-button.html",
+    "title": "Structured Intelligence Governance: Formal Definitions & The Repeated Login Problem",
+    "section": "",
+    "text": "Mooncake and I had a deep conversation today about finitely-generated rulesets and paths; this is another instance of me righting the LLM. I had to guide it back on track to graph paths and ordering."
+  },
+  {
+    "objectID": "blog/2025-03-18-button.html#structured-intelligence-system-s",
+    "href": "blog/2025-03-18-button.html#structured-intelligence-system-s",
+    "title": "Structured Intelligence Governance: Formal Definitions & The Repeated Login Problem",
     "section": "1. Structured Intelligence System \\(S\\)",
-    "text": "1. Structured Intelligence System \\(S\\)\nA category where:\n\nObjects: Epistemic states, instantiated agents, workflow steps.\n\nMorphisms: Epistemic transitions (governed or drift-inducing)."
+    "text": "1. Structured Intelligence System \\(S\\)\nA category where:\n\nObjects: Epistemic states, instantiated agents, workflow steps.\nMorphisms: Epistemic transitions (governed or drift-inducing)."
   },
   {
-    "objectID": "blog/2025-03-17-button.html#measure-space-for-intelligence-thought-mathcali-sigma-mu",
-    "href": "blog/2025-03-17-button.html#measure-space-for-intelligence-thought-mathcali-sigma-mu",
-    "title": "My phone notifications are breaking the first law - generative",
+    "objectID": "blog/2025-03-18-button.html#measure-space-for-intelligence-thought-mathcali-sigma-mu",
+    "href": "blog/2025-03-18-button.html#measure-space-for-intelligence-thought-mathcali-sigma-mu",
+    "title": "Structured Intelligence Governance: Formal Definitions & The Repeated Login Problem",
     "section": "2. Measure Space for Intelligence Thought \\((\\mathcal{I}, \\Sigma, \\mu)\\)",
-    "text": "2. Measure Space for Intelligence Thought \\((\\mathcal{I}, \\Sigma, \\mu)\\)\n\n\\(\\mathcal{I}\\): Intelligence thought space (set of epistemic agents).\n\n\\(\\Sigma\\): Measurable epistemic events (valid or invalid transformations in\\(S\\)).\n\n\\(\\mu\\): Measure function weighting drift and governance effectiveness."
+    "text": "2. Measure Space for Intelligence Thought \\((\\mathcal{I}, \\Sigma, \\mu)\\)\n\n\\(\\mathcal{I}\\): Intelligence thought space (set of epistemic agents).\n\\(\\Sigma\\): Measurable epistemic events (valid or invalid transformations in \\(S\\)).\n\\(\\mu\\): Measure function weighting drift and governance effectiveness."
   },
   {
-    "objectID": "blog/2025-03-17-button.html#epistemic-agents-a-h",
-    "href": "blog/2025-03-17-button.html#epistemic-agents-a-h",
-    "title": "My phone notifications are breaking the first law - generative",
+    "objectID": "blog/2025-03-18-button.html#epistemic-agents-a-h",
+    "href": "blog/2025-03-18-button.html#epistemic-agents-a-h",
+    "title": "Structured Intelligence Governance: Formal Definitions & The Repeated Login Problem",
     "section": "3. Epistemic Agents \\((A, H)\\)",
-    "text": "3. Epistemic Agents \\((A, H)\\)\n\n\\(A\\): Automata nodes (rule-based epistemic agents).\n\n\\(H\\): Human nodes (intentional epistemic agents).\n\nAgents may have multiple instances in\\(S\\)."
+    "text": "3. Epistemic Agents \\((A, H)\\)\n\n\\(A\\): Automata nodes (rule-based epistemic agents).\n\\(H\\): Human nodes (intentional epistemic agents).\nAgents may have multiple instances in \\(S\\)."
   },
   {
-    "objectID": "blog/2025-03-17-button.html#epistemic-expectations-r-i",
-    "href": "blog/2025-03-17-button.html#epistemic-expectations-r-i",
-    "title": "My phone notifications are breaking the first law - generative",
+    "objectID": "blog/2025-03-18-button.html#epistemic-expectations-r-i",
+    "href": "blog/2025-03-18-button.html#epistemic-expectations-r-i",
+    "title": "Structured Intelligence Governance: Formal Definitions & The Repeated Login Problem",
     "section": "4. Epistemic Expectations \\((R, I)\\)",
-    "text": "4. Epistemic Expectations \\((R, I)\\)\n\n\\(R\\): Rule-based expectations (tasks requiring heuristics).\n\n\\(I\\): Intentional expectations (tasks requiring creative reasoning)."
+    "text": "4. Epistemic Expectations \\((R, I)\\)\n\n\\(R\\): Rule-based expectations (tasks requiring heuristics).\n\\(I\\): Intentional expectations (tasks requiring creative reasoning)."
   },
   {
-    "objectID": "blog/2025-03-17-button.html#governance-as-a-functorial-mapping",
-    "href": "blog/2025-03-17-button.html#governance-as-a-functorial-mapping",
-    "title": "My phone notifications are breaking the first law - generative",
+    "objectID": "blog/2025-03-18-button.html#governance-as-a-functorial-mapping",
+    "href": "blog/2025-03-18-button.html#governance-as-a-functorial-mapping",
+    "title": "Structured Intelligence Governance: Formal Definitions & The Repeated Login Problem",
     "section": "5. Governance as a Functorial Mapping",
-    "text": "5. Governance as a Functorial Mapping\n\n5.1 Governance Functor on Agents\n\\[\nG: \\text{Agents}(S) \\to (\\mathcal{I}, R, C)\n\\]\n\nAssigns governance constraints to agents before they instantiate epistemic transformations in\\(S\\).\n\n\n\n5.2 Governance Functor on Morphisms\n\\[\nF: \\text{Morphisms}(\\mathcal{G}) \\to (\\mathcal{I}, \\Sigma, \\mu)\n\\]\n\nMaps governance transformations to measurable epistemic drift constraints."
+    "text": "5. Governance as a Functorial Mapping\n\n5.1 Governance Functor on Agents\n\\[\nG: \\text{Agents}(S) \\to (\\mathcal{I}, R, C)\n\\]\n\nAssigns governance constraints to agents before they instantiate epistemic transformations in \\(S\\).\n\n\n\n5.2 Governance Functor on Morphisms\n\\[\nF: \\text{Morphisms}(\\mathcal{G}) \\to (\\mathcal{I}, \\Sigma, \\mu)\n\\]\n\nMaps governance transformations to measurable epistemic drift constraints."
   },
   {
-    "objectID": "blog/2025-03-17-button.html#epistemic-drift-and-governance-constraints",
-    "href": "blog/2025-03-17-button.html#epistemic-drift-and-governance-constraints",
-    "title": "My phone notifications are breaking the first law - generative",
+    "objectID": "blog/2025-03-18-button.html#epistemic-drift-and-governance-constraints",
+    "href": "blog/2025-03-18-button.html#epistemic-drift-and-governance-constraints",
+    "title": "Structured Intelligence Governance: Formal Definitions & The Repeated Login Problem",
     "section": "6. Epistemic Drift and Governance Constraints",
-    "text": "6. Epistemic Drift and Governance Constraints\n\n6.1 Epistemic Drift Measure\nDefined as the deviation between expected and actual epistemic transitions:\n\\[\nd(E(S_n), S_O)\n\\]\n\nMeasures how far knowledge production deviates from governance constraints.\n\n\n\n6.2 Governance Constraint Function\nA bound on epistemic drift growth:\n\\[\n\\frac{d}{dn} d(E(S_n), S_O) \\leq C(n)\n\\]\n\nEnsures drift does not become unbounded.\n\n\n\n6.3 Sensitivity and Specificity of Governance\n\nTrue Positive (TP): An agent follows the correct epistemic mode.\n\nFalse Positive (FP): A task was expected to be rule-based but was done intentionally.\n\nFalse Negative (FN): A task was expected to be intentional but was executed heuristically.\n\nGovernance effectiveness is measured by sensitivity and specificity of epistemic constraints."
+    "text": "6. Epistemic Drift and Governance Constraints\n\n6.1 Epistemic Drift Measure\nDefined as the deviation between expected and actual epistemic transitions:\n\\[\nd(E(S_n), S_O)\n\\]\n\nMeasures how far knowledge production deviates from governance constraints.\n\n\n\n6.2 Governance Constraint Function\nA bound on epistemic drift growth:\n\\[\n\\frac{d}{dn} d(E(S_n), S_O) \\leq C(n)\n\\]\n\nEnsures drift does not become unbounded.\n\n\n\n6.3 Sensitivity and Specificity of Governance\n\nTrue Positive (TP): An agent follows the correct epistemic mode.\nFalse Positive (FP): A task was expected to be rule-based but was done intentionally.\nFalse Negative (FN): A task was expected to be intentional but was executed heuristically.\nGovernance effectiveness is measured by sensitivity and specificity of epistemic constraints."
   },
   {
-    "objectID": "blog/2025-03-17-button.html#structured-intelligence-system-s-and-measure-space-mathcali-r-c",
-    "href": "blog/2025-03-17-button.html#structured-intelligence-system-s-and-measure-space-mathcali-r-c",
-    "title": "My phone notifications are breaking the first law - generative",
-    "section": "1. Structured Intelligence System \\(S\\) and Measure Space \\((\\mathcal{I}, R, C)\\)",
-    "text": "1. Structured Intelligence System \\(S\\) and Measure Space \\((\\mathcal{I}, R, C)\\)\nWe model phone notifications as a structured intelligence system with epistemic governance constraints:\n\nEpistemic Agents:\n\n\\(H\\) = Human user\n\n\\(A\\) = Notification system (automaton)\n\nRuleset Assignment:\n\nEach automaton \\(A\\) is assigned a ruleset \\(r \\in R\\) in the measure space.\n\n\\(r\\) dictates how notifications interact with epistemic agents.\n\nThe rules must be designed by humans and must match governance expectations.\n\nGovernance Mapping:\n\nExpected:\n\\[\nF(A) \\to R\n\\]\nAutomaton follows human-defined rules.\n\nActual (drifted):\n\\[\nF(A) \\not\\to R\n\\]\nRules are altered, interfaces change, or governance fails to ensure epistemic stability."
+    "objectID": "blog/2025-03-18-button.html#the-system",
+    "href": "blog/2025-03-18-button.html#the-system",
+    "title": "Structured Intelligence Governance: Formal Definitions & The Repeated Login Problem",
+    "section": "1. The System",
+    "text": "1. The System\nWe define a structured intelligence system where a human interacts with an authentication system, governed by login security protocols. The system consists of:\n\n\\(G_E\\) (Governed Expectation Space)\n\nExpected user behavior: Enter credentials → Authenticate → Gain access.\n\nExpected security constraint: Login should be efficient, secure, and user-friendly.\n\n\\(G_A(t)\\) (Artifact Space - The Actual System Behavior)\n\nSystem enforces login rules \\(r \\in R\\) rigidly.\n\nUser faces repeated login failures due to UI, session expiration, password policies.\n\nThis causes frustration, leading to epistemic drift.\n\n\\(G_D(t)\\) (Development Process - How the System is Built & Modified)\n\nDevelopers optimize security policies, unaware of unintended user drift.\n\nNo governance mechanism exists to track unintended human behavior shifts."
   },
   {
-    "objectID": "blog/2025-03-17-button.html#epistemic-drift-due-to-changing-rulesets",
-    "href": "blog/2025-03-17-button.html#epistemic-drift-due-to-changing-rulesets",
-    "title": "My phone notifications are breaking the first law - generative",
-    "section": "2. Epistemic Drift Due to Changing Rulesets",
-    "text": "2. Epistemic Drift Due to Changing Rulesets\nWe introduce epistemic entropy as a function of rule changes over time.\nDefine: - \\(\\tau\\) = The number of times the ruleset for managing notifications has changed in an individual’s lifetime. - \\(\\mathcal{L}(\\tau)\\) = Cognitive load function describing the effort required to maintain epistemic alignment with notification governance. - Governance entropy \\(H_G(\\tau)\\): A measure of how frequently epistemic governance of notifications is altered.\nOver a long time horizon: \\[\n\\lim_{\\tau \\to \\infty} H_G(\\tau) \\to \\infty\n\\] meaning governance becomes unstable as rulesets are constantly modified.\n\nEffect on Epistemic Drift\nEach time a human agent is forced to re-learn notification governance: \\[\n\\frac{d}{dn} d(E(S_n), S_O) \\geq C(n)\n\\] where \\(C(n)\\) is the governance constraint that should bound drift.\n\nIf \\(C(n)\\) is too weak (i.e., governance does not protect against excessive rule changes), then drift becomes unbounded:\n\\[\n\\lim_{n \\to \\infty} d(E(S_n), S_O) \\to \\infty\n\\]\n\nGovernance should minimize unnecessary rule re-learning to avoid cognitive overload:\n\\[  \n\\frac{d}{d\\tau} \\mathcal{L}(\\tau) \\leq C(\\tau)  \n\\]\nmeaning that governance must actively constrain the rate of epistemic changes imposed on human agents."
+    "objectID": "blog/2025-03-18-button.html#emergence-of-an-unsafe-path-due-to-system-friction",
+    "href": "blog/2025-03-18-button.html#emergence-of-an-unsafe-path-due-to-system-friction",
+    "title": "Structured Intelligence Governance: Formal Definitions & The Repeated Login Problem",
+    "section": "2. Emergence of an Unsafe Path Due to System Friction",
+    "text": "2. Emergence of an Unsafe Path Due to System Friction\n\n2.1 Expected Path \\(P_E\\)\nThe governed epistemic path is:\n1. User enters credentials.\n2. System authenticates.\n3. User gains access securely.\n\n\n2.2 Actual Emergent Path \\(P_A(t)\\)\nThe real-world epistemic transition is:\n1. User fails login multiple times due to UI friction.\n2. User experiences frustration (cognitive load increases).\n3. User seeks a shortcut (epistemic drift occurs).\n4. User weakens security (e.g., uses an easy-to-remember password, stays logged in permanently, or disables security features).\n5. Security intention is violated due to misaligned system constraints."
   },
   {
-    "objectID": "blog/2025-03-17-button.html#humans-will-find-a-longer-commutative-path",
-    "href": "blog/2025-03-17-button.html#humans-will-find-a-longer-commutative-path",
-    "title": "My phone notifications are breaking the first law - generative",
-    "section": "3. Humans Will Find a Longer Commutative Path",
-    "text": "3. Humans Will Find a Longer Commutative Path\nIf the cognitive burden becomes too high, humans will find an alternative epistemic path to work around the notification system.\nDefine a commutative path \\(P_C\\) in \\(S\\): \\[\nP_C = \\{ p_0, p_1, ..., p_n \\}\n\\] where: - \\(p_0\\) is the original governed notification interaction. - \\(p_n\\) is the epistemic state where the user avoids notifications entirely (e.g., disabling them, switching tools, abandoning the system).\nIf governance entropy \\(H_G(\\tau)\\) is too high: \\[\n\\lim_{\\tau \\to \\infty} P_C \\text{ diverges from } S_O\n\\] meaning that humans will take increasingly inefficient workarounds rather than engaging with a broken governance system.\nThis breaks epistemic integrity because notifications are no longer fulfilling their intended governance function."
+    "objectID": "blog/2025-03-18-button.html#measuring-epistemic-drift-and-path-divergence",
+    "href": "blog/2025-03-18-button.html#measuring-epistemic-drift-and-path-divergence",
+    "title": "Structured Intelligence Governance: Formal Definitions & The Repeated Login Problem",
+    "section": "3. Measuring Epistemic Drift and Path Divergence",
+    "text": "3. Measuring Epistemic Drift and Path Divergence\nWe define epistemic drift as the deviation of the actual path from the governed expectation space:\n\\[\nD_E = \\sup_t d_E(P_A(t), P_E)\n\\]\nWhere:\n\n\\(D_E\\) is the supremum of the epistemic distance over time.\n\nIf \\(D_E\\) is bounded, the system remains epistemically stable.\n\nIf \\(D_E \\to \\infty\\), epistemic drift has led to system collapse.\n\n\n3.1 Graph Path Deviation\n\nThe shortest path ratio is:\n\n\\[\nR_E = \\frac{|P_A(t)|}{|P_E|}\n\\]\n\nIf \\(R_E = 1\\), the login process remains stable.\n\nIf \\(R_E &gt; 1\\), epistemic drift has forced the user into an unintended, inefficient, or unsafe path."
   },
   {
-    "objectID": "blog/2025-03-17-button.html#proof-that-notifications-violate-the-first-law",
-    "href": "blog/2025-03-17-button.html#proof-that-notifications-violate-the-first-law",
-    "title": "My phone notifications are breaking the first law - generative",
-    "section": "4. Proof That Notifications Violate the First Law",
-    "text": "4. Proof That Notifications Violate the First Law\n\nFirst Law of Structured Intelligence Governance\n“A structured intelligence system may not cause harm to a human epistemic agent, or through inaction, allow an epistemic agent to come to harm.”\n\nNotifications introduce epistemic drift\n\nRepeated changes in governance rulesets make it impossible for humans to maintain stable interaction patterns.\n\nThis induces epistemic harm by forcing cognitive re-learning beyond sustainable limits.\n\nGovernance entropy causes epistemic instability\n\nThe natural entropy of human willingness to adapt to rule changes leads to governance breakdown over time.\n\nThe governance function fails to bound the rate of rule changes.\n\nHumans seek workarounds, breaking the system\n\nUsers will take longer commutative paths to avoid engaging with epistemically unstable systems.\n\nThis renders the notification system non-functional in its intended governance role.\n\n\n\n\nConclusion\nSince notifications: - Cause epistemic drift - Lack stable governance constraints - Induce cognitive overload leading to epistemic harm - Break structured intelligence integrity through over-frequent governance changes\nPhone notifications are a structured intelligence system that actively violates the First Law of Structured Intelligence Governance.\nQ.E.D."
+    "objectID": "blog/2025-03-18-button.html#implementing-governance-constraints",
+    "href": "blog/2025-03-18-button.html#implementing-governance-constraints",
+    "title": "Structured Intelligence Governance: Formal Definitions & The Repeated Login Problem",
+    "section": "4.1 Implementing Governance Constraints",
+    "text": "4.1 Implementing Governance Constraints\nTo prevent users from choosing less secure paths, governance must:\n\nMonitor Epistemic Drift\n\nTrack real-time deviations from the expected login path.\n\nMeasure how often users are deviating from security constraints.\n\nAssess Creative vs. Miscreant Emergence\n\nIf drift improves usability without compromising security, classify as virtuous emergence.\n\nIf drift weakens security, classify as miscreant emergence and intervene.\n\nEnforce Adaptive Security Governance\n\nRedesign authentication workflows to prevent unnecessary friction.\n\nIntroduce soft governance constraints that preserve security while optimizing for human behavior."
   },
   {
-    "objectID": "pressabuttonnow/button-game.html",
-    "href": "pressabuttonnow/button-game.html",
-    "title": "press a button now",
+    "objectID": "drafts.html",
+    "href": "drafts.html",
+    "title": "Living Mathematics",
     "section": "",
-    "text": "Let \\(v \\in V\\) be a vertex \\(v\\) in a set of vertices \\(V\\), where each vertex is a step in living analysis development.\n\n\n\nLet \\(e = (v_\\text{from}, \\psi(v_\\text{from})) = (v_\\text{from}, v_\\text{to})\\) be an edge \\(E\\) from a set of edges \\(E = V \\times \\Psi = V \\times V\\), representing a transition from one step of living analysis development to another where \\(\\Psi : V \\mapsto V\\) determined casewise by \\(v_\\text{from}\\) in \\(e\\).\n\n\n\n\n\nThis function sets the next edge-relation in the path \\(P \\subset V \\times V\\)."
-  },
-  {
-    "objectID": "pressabuttonnow/button-game.html#vertices",
-    "href": "pressabuttonnow/button-game.html#vertices",
-    "title": "press a button now",
-    "section": "",
-    "text": "Let \\(v \\in V\\) be a vertex \\(v\\) in a set of vertices \\(V\\), where each vertex is a step in living analysis development."
-  },
-  {
-    "objectID": "pressabuttonnow/button-game.html#edges",
-    "href": "pressabuttonnow/button-game.html#edges",
-    "title": "press a button now",
-    "section": "",
-    "text": "Let \\(e = (v_\\text{from}, \\psi(v_\\text{from})) = (v_\\text{from}, v_\\text{to})\\) be an edge \\(E\\) from a set of edges \\(E = V \\times \\Psi = V \\times V\\), representing a transition from one step of living analysis development to another where \\(\\Psi : V \\mapsto V\\) determined casewise by \\(v_\\text{from}\\) in \\(e\\)."
-  },
-  {
-    "objectID": "pressabuttonnow/button-game.html#determine-path-relation",
-    "href": "pressabuttonnow/button-game.html#determine-path-relation",
-    "title": "press a button now",
-    "section": "",
-    "text": "This function sets the next edge-relation in the path \\(P \\subset V \\times V\\)."
-  },
-  {
-    "objectID": "qao.html#definition-fair-data-entity-test",
-    "href": "qao.html#definition-fair-data-entity-test",
-    "title": "Questionable Analytical Observations (QAO)",
-    "section": "Definition: FAIR data entity test",
-    "text": "Definition: FAIR data entity test\n\nAnalyst validates a single data point in their chosen tool.\nThere is no requirement the validation passes the test."
-  },
-  {
-    "objectID": "qao.html#framaing-fair",
-    "href": "qao.html#framaing-fair",
-    "title": "Questionable Analytical Observations (QAO)",
-    "section": "Framaing FAIR",
-    "text": "Framaing FAIR\nThe FAIR framing shown in Figure 3 is a way to communicate the black box of data to decision makers. In particular, this framing highlights the distinction between what they conceptualise as data (Can’t you just email me a spreadsheet?) and a data product brick in reusable data architecture that will save untold wages in the long run.\n\n\n\n\n\n\n\n\n\n\n\nValidation of Data Entity meets Minimum FAIR Criteria\n\n\nFAIR principle\nMinimum requirements\n\n\n\n\nFindable\nData documentation wherein columns & tables have descriptions for the data entity lineage. Clearly states access protocols; i.e., data security. Ensures subject matter experts can advise on governance, as well as contribute to validation.\n\n\nAccessible\nUnderstandable in terms of a data entity, a semantic abstraction in stakeholder terms (e.g., a number on an invoice). The helps ensure data governance is applied as subject matter experts advise.\n\n\nInteroperable\nWorkflows to ensure data governance, security, and access function as intended when analysing data entity. Facilitates subject matter experts contributing to data validation.\n\n\nReusable\nRequested data transformations provided in published layer of dedicated database, standard tests applied to data entity (see below for details) to confirm validity of documentated assumptions.\n\n\n\n\n\n\n\n\nFigure 3: Validation of FAIR data entity."
-  },
-  {
-    "objectID": "qao.html#minimal-tests",
-    "href": "qao.html#minimal-tests",
-    "title": "Questionable Analytical Observations (QAO)",
-    "section": "Minimal tests",
-    "text": "Minimal tests\nThe minimal set of tests show in Figure 4 for\n\nuniqueness\nmissingness\nduplicates\n\nallows for data platform development whilst demonstrating a good-faith roadmap to compliance for, say, the EU Comission’s Environmental, Social, and Governance reporting (ESG) (“Sustainable Finance - European Commission” n.d.).\n\n\n\n\n\n\n\n\n\n\n\nTests Applied on Data Product Layers by Observability, Descending\n\n\n\nTest\nTested\n\n\n\n\nAnalytical Observation\n\n\noutput\nunique key\ndata entity\n\n\nSemantic Transformation\n\n\noutput\nunique key\ndata entity joined across raw sources and tested\n\n\nSource\n\n\noutput\nunique key\ndata entity defined and tested\n\n\ninput\nunique key\ncombination of columns that define a unique row\n\n\ninput\nfreshness\nincrementation or snapshot field\n\n\ninput\nnot empty\ntable-level test\n\n\n\nWe say a unique key has been tested when the same combination of columns have not null and unique tests applied.\n\n\nFreshness tests configurations: daily ingestion (warn &gt; 1 day, error &gt; 1 week); weekly ingestion (warn &gt; 1 week, error &gt; 2 weeks)\n\n\n\n\n\n\n\n\n\nFigure 4: FAIR data entity tests\n\n\n\n\nIt can be a challenge to communicate to leadership with little experinces of the trenches of data development the obstacles in scaling legacy data to living analyses. By setting these minimal goals, the problem solving is democratised from engineer to analyst.\nWe now turn to motivating1 the solution we just provided."
-  },
-  {
-    "objectID": "qao.html#framing-fair",
-    "href": "qao.html#framing-fair",
-    "title": "Questionable Analytical Observations (QAO)",
-    "section": "Framing FAIR",
-    "text": "Framing FAIR\nThe FAIR framing shown in Figure 3 is a way to communicate the black box of data to decision makers. In particular, this framing highlights the distinction between what they conceptualise as data (Can’t you just email me a spreadsheet?) and a data product brick in reusable data architecture that will save untold wages in the long run.\n\n\n\n\n\n\n\n\n\n\n\nValidation of Data Entity meets Minimum FAIR Criteria\n\n\nFAIR principle\nMinimum requirements\n\n\n\n\nFindable\nData documentation wherein columns & tables have descriptions for the data entity lineage. Clearly states access protocols; i.e., data security. Ensures subject matter experts can advise on governance, as well as contribute to validation.\n\n\nAccessible\nUnderstandable in terms of a data entity, a semantic abstraction in stakeholder terms (e.g., a number on an invoice). The helps ensure data governance is applied as subject matter experts advise.\n\n\nInteroperable\nWorkflows to ensure data governance, security, and access function as intended when analysing data entity. Facilitates subject matter experts contributing to data validation.\n\n\nReusable\nRequested data transformations provided in published layer of dedicated database, standard tests applied to data entity (see below for details) to confirm validity of documentated assumptions.\n\n\n\n\n\n\n\n\nFigure 3: Validation of FAIR data entity."
+    "text": "Live, interactive proofs have been around for centuries. Mathematics is the universal language, it is for talking to each other, exchanging ideas. No one human solves everything."
   }
 ]

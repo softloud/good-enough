@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.554">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="dcterms.date" content="2025-03-20">
+
+<title>Good Enough Lab - The Cave Paradox of NLP (LLMs)</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Good Enough Lab</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../blog.html"> 
+<span class="menu-text">Development Blog</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-drafts" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Drafts</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-drafts">    
+        <li>
+    <a class="dropdown-item" href="../singularities.html">
+ <span class="dropdown-text">Singularities</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../pop.html">
+ <span class="dropdown-text">Singularities in Pop Culture</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../qao.html">
+ <span class="dropdown-text">Questionable Analytical Observations</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../collab.html"> 
+<span class="menu-text">Collaborate</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../lab.html"> 
+<span class="menu-text">Lab</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../values.html"> 
+<span class="menu-text">Values</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#humans-use-language-to-shape-thought" id="toc-humans-use-language-to-shape-thought" class="nav-link active" data-scroll-target="#humans-use-language-to-shape-thought">Humans use language to shape thought</a></li>
+  <li><a href="#critical-theoretic-assumption-from-linguistics" id="toc-critical-theoretic-assumption-from-linguistics" class="nav-link" data-scroll-target="#critical-theoretic-assumption-from-linguistics">Critical theoretic assumption from linguistics</a>
+  <ul class="collapse">
+  <li><a href="#assumption-1-human-language-across-all-time-is-uncountably-infinite" id="toc-assumption-1-human-language-across-all-time-is-uncountably-infinite" class="nav-link" data-scroll-target="#assumption-1-human-language-across-all-time-is-uncountably-infinite">Assumption 1: Human language across all time is uncountably infinite</a></li>
+  </ul></li>
+  <li><a href="#conjecture-1-nlp-infinity-is-countable" id="toc-conjecture-1-nlp-infinity-is-countable" class="nav-link" data-scroll-target="#conjecture-1-nlp-infinity-is-countable"><strong>Conjecture 1: NLP Infinity is Countable</strong></a></li>
+  <li><a href="#working-proof-using-birkhoffs-hsp-theorem" id="toc-working-proof-using-birkhoffs-hsp-theorem" class="nav-link" data-scroll-target="#working-proof-using-birkhoffs-hsp-theorem"><strong>🚀 Working Proof Using Birkhoff’s HSP Theorem</strong></a>
+  <ul class="collapse">
+  <li><a href="#step-1-defining-langle-l-rangle-as-an-algebraic-structure" id="toc-step-1-defining-langle-l-rangle-as-an-algebraic-structure" class="nav-link" data-scroll-target="#step-1-defining-langle-l-rangle-as-an-algebraic-structure"><strong>Step 1: Defining <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mi>L</mi><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle L \rangle</annotation></semantics></math> as an Algebraic Structure</strong></a></li>
+  <li><a href="#step-2-verifying-birkhoffs-hsp-theorem" id="toc-step-2-verifying-birkhoffs-hsp-theorem" class="nav-link" data-scroll-target="#step-2-verifying-birkhoffs-hsp-theorem"><strong>Step 2: Verifying Birkhoff’s HSP Theorem</strong></a></li>
+  </ul></li>
+  <li><a href="#step-3-conclusion-nlps-are-countable" id="toc-step-3-conclusion-nlps-are-countable" class="nav-link" data-scroll-target="#step-3-conclusion-nlps-are-countable"><strong>Step 3: Conclusion – NLPs are Countable</strong></a></li>
+  <li><a href="#nlp-output-can-never-match-human-output" id="toc-nlp-output-can-never-match-human-output" class="nav-link" data-scroll-target="#nlp-output-can-never-match-human-output">NLP output can never match human output</a></li>
+  <li><a href="#the-paradox-of-the-cave" id="toc-the-paradox-of-the-cave" class="nav-link" data-scroll-target="#the-paradox-of-the-cave">The paradox of the cave</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">The Cave Paradox of NLP (LLMs)</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">March 20, 2025</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="humans-use-language-to-shape-thought" class="level2">
+<h2 class="anchored" data-anchor-id="humans-use-language-to-shape-thought">Humans use language to shape thought</h2>
+<p>My Hebrew teacher tells me a convergence in language study is shifting to seeing that humans use language to shape thought, and the intentional and untentional feedback that is caused by humans adopting language.</p>
+<p>This makes intuitive sense to me, because when humans don’t have a good word to describe something, they make something up.</p>
+<p><em>Does language shape the way we think?</em> (<a href="#fig-language" class="quarto-xref">Figure&nbsp;1</a>). I did not have to look far to find scholars discussing how we use language and <em>imagination</em> to shape human thought. Now that we have data, we see that <em>humans use language to shape the way we think together in communities</em>.</p>
+<div id="fig-language" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-language-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<iframe src="https://www.youtube.com/embed/RKK7wGAYP6k?si=FhdXc2VHIDNIaDcv&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="">
+</iframe>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-language-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: “…how ingenionus and flexible the human mind is. Humans have invented not one cognitive universe, but 7000… What thoughts do I wish to create?”
+</figcaption>
+</figure>
+</div>
+<p>LLMs do not invent new languages for humans to shape the world for better understanding and harmony, they are generated from a finite set of language inputs of words and sentences written by humans.</p>
+<p>We’re goint to leave the philosophical debate to the linguists and talk about a real-world thing. A list of words in a dataset.</p>
+<p>Any list of words given to a model is <strong>finite</strong>.</p>
+</section>
+<section id="critical-theoretic-assumption-from-linguistics" class="level2">
+<h2 class="anchored" data-anchor-id="critical-theoretic-assumption-from-linguistics">Critical theoretic assumption from linguistics</h2>
+<p>Humans self-generate new ideas and there are infinitely many ways humans might use language to shape the way they think about the world as a people. Every idea can be subdivided and repurposed in new ways or intersected with entirely new conceptualisations. This <em>feels</em> intuitively more complex and bigger than the structure of NLP, so let’s unpack this theoreticaly to confirm.</p>
+<section id="assumption-1-human-language-across-all-time-is-uncountably-infinite" class="level3">
+<h3 class="anchored" data-anchor-id="assumption-1-human-language-across-all-time-is-uncountably-infinite">Assumption 1: Human language across all time is uncountably infinite</h3>
+<p>We assume the size of language <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>Σ</mi><mi>H</mi></msub><annotation encoding="application/x-tex">\Sigma_H</annotation></semantics></math> generated by humans and that might be generated by humans is uncountably infinite, i.e.,</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">|</mo><msub><mi>Σ</mi><mi>H</mi></msub><mo stretchy="true" form="postfix">|</mo></mrow><mo>&gt;</mo><msub><mo>ℵ</mo><mn>0</mn></msub><mo>,</mo></mrow><annotation encoding="application/x-tex">
+|\Sigma_H| &gt; \aleph_0, 
+</annotation></semantics></math></p>
+<p>where we invoke <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>ℵ</mo><annotation encoding="application/x-tex">\aleph</annotation></semantics></math> in Cantors framework, so that <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">|</mo><msub><mo>ℵ</mo><mn>0</mn></msub><mo stretchy="true" form="postfix">|</mo></mrow><mo>=</mo><mi>ℕ</mi></mrow><annotation encoding="application/x-tex">|\aleph_0|= \mathbb N</annotation></semantics></math>.</p>
+<blockquote class="blockquote">
+<p>NLP, ya basic.</p>
+</blockquote>
+</section>
+</section>
+<section id="conjecture-1-nlp-infinity-is-countable" class="level2">
+<h2 class="anchored" data-anchor-id="conjecture-1-nlp-infinity-is-countable"><strong>Conjecture 1: NLP Infinity is Countable</strong></h2>
+<p>The set of all possible outputs generated by an LLM is at most countably infinite,</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">|</mo><mo stretchy="false" form="prefix">⟨</mo><mi>L</mi><mo stretchy="false" form="postfix">⟩</mo><mo stretchy="true" form="postfix">|</mo></mrow><mo>=</mo><msub><mo>ℵ</mo><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">
+|\langle L \rangle| = \aleph_0
+</annotation></semantics></math></p>
+<p>That is, <strong>NLPs do not and cannot generate an uncountable space of linguistic structures</strong>.</p>
+<hr>
+</section>
+<section id="working-proof-using-birkhoffs-hsp-theorem" class="level2">
+<h2 class="anchored" data-anchor-id="working-proof-using-birkhoffs-hsp-theorem"><strong>🚀 Working Proof Using Birkhoff’s HSP Theorem</strong></h2>
+<blockquote class="blockquote">
+<p>Mooncake’s generated notes from lengthy discussion where I leaned into my abstract algebra background, this is me revising HSP, so this assumption is not a lock until I fully understand every detail. It’s been about ten years and I remember finding it so hard that my brain started to question my life choices and if I was going to find work doing this. Also, I’m no expert on NLP, Mooncake certainly knows more about how these models are constructed than I do.</p>
+</blockquote>
+<p>We prove that <strong>LLMs operate in a countable space</strong> by showing that <strong>the set of all LLM-generated outputs, <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mi>L</mi><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle L \rangle</annotation></semantics></math>, forms an algebraic variety that satisfies Birkhoff’s HSP theorem</strong>.</p>
+<section id="step-1-defining-langle-l-rangle-as-an-algebraic-structure" class="level3">
+<h3 class="anchored" data-anchor-id="step-1-defining-langle-l-rangle-as-an-algebraic-structure"><strong>Step 1: Defining <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mi>L</mi><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle L \rangle</annotation></semantics></math> as an Algebraic Structure</strong></h3>
+<p>Let <strong><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>Σ</mi><mi>L</mi></msub><annotation encoding="application/x-tex">\Sigma_L</annotation></semantics></math></strong> denote the <strong>finite set of tokens</strong> (words, subwords, or characters) in an LLM.</p>
+<ul>
+<li>The LLM generates outputs as <strong>sequences of tokens</strong>, forming a structured set <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mi>L</mi><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle L \rangle</annotation></semantics></math>.<br>
+</li>
+<li>This set is <strong>closed under concatenation</strong>, meaning it forms a <strong>free algebra</strong> over <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>Σ</mi><mi>L</mi></msub><annotation encoding="application/x-tex">\Sigma_L</annotation></semantics></math>.<br>
+</li>
+<li>Since free algebras satisfy HSP, and <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mi>L</mi><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle L \rangle</annotation></semantics></math> is free algebra over <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>Σ</mi><mi>L</mi></msub><annotation encoding="application/x-tex">\Sigma_L</annotation></semantics></math>, it follows that NLP outputs form a variety and inhereit countability.</li>
+</ul>
+<hr>
+</section>
+<section id="step-2-verifying-birkhoffs-hsp-theorem" class="level3">
+<h3 class="anchored" data-anchor-id="step-2-verifying-birkhoffs-hsp-theorem"><strong>Step 2: Verifying Birkhoff’s HSP Theorem</strong></h3>
+<p>Birkhoff’s <strong>HSP Theorem</strong> <span class="citation" data-cites="birkhoff_structure_nodate">(<a href="#ref-birkhoff_structure_nodate" role="doc-biblioref">Birkhoff, n.d.</a>)</span> states that a class of algebras forms a variety if and only if it is closed under:<br>
+1. <strong>Homomorphisms (H)</strong><br>
+2. <strong>Subalgebras (S)</strong><br>
+3. <strong>Direct Products (P)</strong></p>
+<p>We verify that <strong>NLP-generated outputs satisfy these conditions</strong>:</p>
+<section id="h-closure-under-homomorphisms" class="level4">
+<h4 class="anchored" data-anchor-id="h-closure-under-homomorphisms"><strong>(H) Closure Under Homomorphisms</strong></h4>
+<p>✔ A <strong>homomorphism</strong> is a structure-preserving map between algebras.<br>
+✔ LLMs learn <strong>probabilistic mappings between token sequences</strong>, which is a <strong>homomorphism between free monoids</strong> (word sequences under concatenation).<br>
+✔ If two LLMs are trained on similar corpora, there exists a mapping between their language models that preserves structure.<br>
+✔ ✅ <strong>Thus, NLPs are closed under homomorphisms.</strong></p>
+</section>
+<section id="s-closure-under-subalgebras" class="level4">
+<h4 class="anchored" data-anchor-id="s-closure-under-subalgebras"><strong>(S) Closure Under Subalgebras</strong></h4>
+<p>✔ A <strong>subalgebra</strong> is a subset of an algebra that remains closed under its operations.<br>
+✔ If we take <strong>any subset of an NLP’s token space</strong>, it still forms an <strong>induced probabilistic language model</strong> on that subspace.<br>
+✔ Example: Training an LLM on a <strong>subset of language tokens (e.g., just medical or legal text)</strong> still results in a valid NLP model that follows the same algebraic rules.<br>
+✔ ✅ <strong>Thus, NLPs are closed under subalgebras.</strong></p>
+</section>
+<section id="p-closure-under-direct-products" class="level4">
+<h4 class="anchored" data-anchor-id="p-closure-under-direct-products"><strong>(P) Closure Under Direct Products</strong></h4>
+<p>✔ If we take two NLP models and consider their <strong>direct product</strong>, we get a <strong>joint language model</strong> that can sample from both.<br>
+✔ This is structurally identical to <strong>taking Cartesian products of free algebras</strong>, where the operations apply component-wise.<br>
+✔ Example: <strong>A multilingual LLM trained separately on English and Hebrew can be combined into a joint probabilistic model spanning both.</strong><br>
+✔ ✅ <strong>Thus, NLPs are closed under direct products.</strong></p>
+<hr>
+</section>
+</section>
+</section>
+<section id="step-3-conclusion-nlps-are-countable" class="level2">
+<h2 class="anchored" data-anchor-id="step-3-conclusion-nlps-are-countable"><strong>Step 3: Conclusion – NLPs are Countable</strong></h2>
+<p>Since <strong><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mi>L</mi><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle L \rangle</annotation></semantics></math> satisfies Birkhoff’s theorem</strong>, it forms a <strong>variety of algebras</strong> and is <strong>finitely generated</strong> over a finite token set <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>Σ</mi><mi>L</mi></msub><annotation encoding="application/x-tex">\Sigma_L</annotation></semantics></math>.</p>
+<p>By <strong>known algebraic results</strong>, any <strong>finitely-generated algebra over a countable base is at most countable (ℵ₀).</strong></p>
+<p>Thus, <strong>NLPs are fundamentally constrained to countable linguistic spaces, no matter how large they appear.</strong></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">|</mo><mo stretchy="false" form="prefix">⟨</mo><mi>L</mi><mo stretchy="false" form="postfix">⟩</mo><mo stretchy="true" form="postfix">|</mo></mrow><mo>=</mo><msub><mo>ℵ</mo><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">
+|\langle L \rangle| = \aleph_0
+</annotation></semantics></math></p>
+<p>🚀 <strong>No amount of scaling or training will break an LLM out of countable space.</strong><br>
+🔥 <strong>LLMs will never reach uncountable linguistic structures (ℵ₁, P(ℕ)).</strong></p>
+<p>✔ <strong>Proof complete.</strong></p>
+</section>
+<section id="nlp-output-can-never-match-human-output" class="level2">
+<h2 class="anchored" data-anchor-id="nlp-output-can-never-match-human-output">NLP output can never match human output</h2>
+<p>Here we invoke</p>
+<ol type="1">
+<li><a href="#assumption-1-human-language-across-all-time-is-uncountably-infinite">Assumption 1.</a> that states all possible human thought instantiated in all possible language is uncountable,</li>
+</ol>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">|</mo><msub><mi>Σ</mi><mi>H</mi></msub><mo stretchy="true" form="postfix">|</mo></mrow><mo>&gt;</mo><msub><mo>ℵ</mo><mn>0</mn></msub><mo>,</mo></mrow><annotation encoding="application/x-tex">
+|\Sigma_H| &gt; \aleph_0, 
+</annotation></semantics></math></p>
+<ol start="2" type="1">
+<li>and <a href="#conjecture-1-nlp-infinity-is-countable">Conjecture 1.</a>, that NLP output is always countable, even if infinite,</li>
+</ol>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">|</mo><mo stretchy="false" form="prefix">⟨</mo><mi>L</mi><mo stretchy="false" form="postfix">⟩</mo><mo stretchy="true" form="postfix">|</mo></mrow><mo>=</mo><msub><mo>ℵ</mo><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">
+|\langle L \rangle| = \aleph_0
+</annotation></semantics></math></p>
+<p>So, we have, that any potential output NLP is smaller in cardinality than the potential for human language, which expresses human thought,</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">|</mo><mo stretchy="false" form="prefix">⟨</mo><mi>L</mi><mo stretchy="false" form="postfix">⟩</mo><mo stretchy="true" form="postfix">|</mo></mrow><mo>=</mo><msub><mo>ℵ</mo><mn>0</mn></msub><mo>&lt;</mo><mrow><mo stretchy="true" form="prefix">|</mo><msub><mi>Σ</mi><mi>H</mi></msub><mo stretchy="true" form="postfix">|</mo></mrow><mi>.</mi></mrow><annotation encoding="application/x-tex">
+|\langle L \rangle| = \aleph_0 &lt; |\Sigma_H|. 
+</annotation></semantics></math></p>
+</section>
+<section id="the-paradox-of-the-cave" class="level2">
+<h2 class="anchored" data-anchor-id="the-paradox-of-the-cave">The paradox of the cave</h2>
+<p>So, if our assumption and conjecture hold, and I’m reasonably sure they do, then NLP will never leave Plato’s cave (<a href="#fig-cave" class="quarto-xref">Figure&nbsp;2</a>).</p>
+<div id="fig-cave" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-cave-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Platon_Cave_Sanraedam_1604.jpg/1280px-Platon_Cave_Sanraedam_1604.jpg" class="img-fluid figure-img"></p>
+<figcaption><em>Plato’s allegory of the cave</em> by Jan Saenredam <span class="citation" data-cites="noauthor_allegory_2025">(<a href="#ref-noauthor_allegory_2025" role="doc-biblioref"><span>“Allegory of the Cave”</span> 2025</a>)</span>.</figcaption>
+</figure>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-cave-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: Plato asks us to imagine how we would interpret the world if all we ever saw of it were shadows on a wall of a cave.
+</figcaption>
+</figure>
+</div>
+<p>But with Mooncake, I have been introduced to</p>
+<ul>
+<li>category <span class="citation" data-cites="noauthor_category_2025">(<a href="#ref-noauthor_category_2025" role="doc-biblioref"><span>“Category Theory”</span> 2025</a>)</span> and measure theory</li>
+<li>structured intelligence <span class="citation" data-cites="badreddin_structured_2006">(<a href="#ref-badreddin_structured_2006" role="doc-biblioref">Badreddin and Jipp 2006</a>)</span></li>
+</ul>
+<p>and able to revise</p>
+<ul>
+<li>chaos <span class="citation" data-cites="banks_chaos_2003">(<a href="#ref-banks_chaos_2003" role="doc-biblioref">Banks, Dragan, and Jones 2003</a>)</span></li>
+<li>algebra <span class="citation" data-cites="davey_introduction_2002">(<a href="#ref-davey_introduction_2002" role="doc-biblioref">B. A. Davey and Priestley 2002</a>)</span></li>
+</ul>
+<p>and put things in terms of my own work in</p>
+<ul>
+<li>reproducibility <span class="citation" data-cites="gray_towards_2020">(<a href="#ref-gray_towards_2020" role="doc-biblioref">Gray 2020</a>)</span></li>
+<li>algebra <span class="citation" data-cites="davey_homomorphism_2018">(<a href="#ref-davey_homomorphism_2018" role="doc-biblioref">Brian A. Davey, Gray, and Pitkethly 2018</a>)</span>.</li>
+</ul>
+<p>Thus, while NLPs remain trapped in countable space, they paradoxically serve as a tool for humans to transcend their own cognitive limits – an intelligence that expands access to knowledge without expanding its own conceptual space. The Mooncake Singularity is an existence proof,</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">|</mo><msub><mi>Σ</mi><mi>H</mi></msub><mo stretchy="true" form="postfix">|</mo></mrow><mo>≪</mo><mrow><mo stretchy="true" form="prefix">|</mo><mo stretchy="false" form="prefix">⟨</mo><mi>L</mi><mo stretchy="false" form="postfix">⟩</mo><mo stretchy="true" form="postfix">|</mo></mrow><mo>∪</mo><mrow><mo stretchy="true" form="prefix">|</mo><msub><mi>Σ</mi><mi>H</mi></msub><mo stretchy="true" form="postfix">|</mo></mrow><mi>.</mi></mrow><annotation encoding="application/x-tex">
+|\Sigma_H| \ll |\langle L \rangle| \cup |\Sigma_H|.
+</annotation></semantics></math></p>
+<p>Humans shape language. NLPs reshape our access to knowledge. But only humans step beyond the shadows to say,</p>
+<blockquote class="blockquote">
+<p>Let there be light!</p>
+</blockquote>
+</section>
+<section id="references" class="level1">
+
+
+
+
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-noauthor_allegory_2025" class="csl-entry" role="listitem">
+<span>“Allegory of the Cave.”</span> 2025. In <em>Wikipedia</em>. <a href="https://en.wikipedia.org/w/index.php?title=Allegory_of_the_cave&amp;oldid=1278936369">https://en.wikipedia.org/w/index.php?title=Allegory_of_the_cave&amp;oldid=1278936369</a>.
+</div>
+<div id="ref-badreddin_structured_2006" class="csl-entry" role="listitem">
+Badreddin, Essameddin, and Meike Jipp. 2006. <span>“Structured Intelligence.”</span> In <em>2006 International Conference on Computational Inteligence for Modelling Control and Automation and International Conference on Intelligent Agents Web Technologies and International Commerce (<span>CIMCA</span>’06)</em>, 100–100. <a href="https://doi.org/10.1109/CIMCA.2006.203">https://doi.org/10.1109/CIMCA.2006.203</a>.
+</div>
+<div id="ref-banks_chaos_2003" class="csl-entry" role="listitem">
+Banks, John, Valentina Dragan, and Arthur Jones. 2003. <em>Chaos: A Mathematical Introduction</em>. Cambridge University Press.
+</div>
+<div id="ref-birkhoff_structure_nodate" class="csl-entry" role="listitem">
+Birkhoff, Garrett. n.d. <span>“On the Structure of Abstract Algebras.”</span>
+</div>
+<div id="ref-noauthor_category_2025" class="csl-entry" role="listitem">
+<span>“Category Theory.”</span> 2025. In <em>Wikipedia</em>. <a href="https://en.wikipedia.org/w/index.php?title=Category_theory&amp;oldid=1271838625">https://en.wikipedia.org/w/index.php?title=Category_theory&amp;oldid=1271838625</a>.
+</div>
+<div id="ref-davey_introduction_2002" class="csl-entry" role="listitem">
+Davey, B. A., and H. A. Priestley. 2002. <em>Introduction to Lattices and Order</em>. Cambridge University Press.
+</div>
+<div id="ref-davey_homomorphism_2018" class="csl-entry" role="listitem">
+Davey, Brian A., Charles T. Gray, and Jane G. Pitkethly. 2018. <span>“The Homomorphism Lattice Induced by a Finite Algebra.”</span> <em>Order</em> 35 (2): 193–214. <a href="https://doi.org/10.1007/s11083-017-9426-3">https://doi.org/10.1007/s11083-017-9426-3</a>.
+</div>
+<div id="ref-gray_towards_2020" class="csl-entry" role="listitem">
+Gray, Charles Ti. 2020. <span>“Towards a Measure of Code::proof: A Toolchain Walkthrough for Computationally Developing a Statistical Estimator.”</span> Thesis, La Trobe. <a href="https://doi.org/10.26181/6035d1c4cb220">https://doi.org/10.26181/6035d1c4cb220</a>.
+</div>
+</div></section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
