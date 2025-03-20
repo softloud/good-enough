@@ -39,7 +39,7 @@ $$
 |\langle H \rangle| > \aleph_0, 
 $$
 
-where we invoke $\aleph$ in Cantors framework, so that $|\aleph_0|= \mathbb N$.
+where we invoke $\aleph$ in Cantor's framework [@noauthor_aleph_2025], so that $|\aleph_0|= \mathbb N$.
 
 > NLP, ya basic.
 
