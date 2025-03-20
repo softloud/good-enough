@@ -6,6 +6,8 @@ listing:
   contents: blog
   type: table
   sort: "date desc"
+html-math-method: mathml
+
 ---
 
 *Order from the chaos of existing development, without interfering with team workflow.*

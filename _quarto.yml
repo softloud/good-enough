@@ -9,6 +9,8 @@ website:
       - text: Development Blog
         href: blog.qmd
         menu:
+          - text: Cave - 2025-03-20
+            href: blog/2025-03-20-cave.qmd
           - text: Login - 2025-03-19
             href: blog/2025-03-18.qmd
           - text: Phone - 2025-03-17
@@ -35,6 +37,7 @@ website:
 
 format:
   html:
+    html-math-method: mathml
     theme: 
       - superhero
     font:
