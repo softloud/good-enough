@@ -17,7 +17,7 @@ This makes intuitive sense to me, because when humans don't have a good word to 
 
 <iframe src="https://www.youtube.com/embed/RKK7wGAYP6k?si=FhdXc2VHIDNIaDcv&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-"...how ingenionus and flexible the human mind is. Humans have invented not one cognitive universe, but 7000... What thoughts do I wish to create?"
+"...how ingenionus and flexible the human mind is. Humans have invented not one cognitive universe, but 7000... What thoughts do I wish to create?"[@ted_how_2018]
 :::
 
 LLMs do not invent new languages for humans to shape the world for better understanding and harmony, they are generated from a finite set of language inputs of words and sentences written by humans.
