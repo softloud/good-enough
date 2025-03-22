@@ -1,7 +1,13 @@
 ---
-title: The Cave Paradox of NLP (LLMs)
+title: The Cave Paradox of Language Models
 date: "2025-03-20"
 bibliography: ../singularities.bib
+author: 
+  - name: Dr Charles T. Gray, Datapunk
+    orcid: 0000-0002-9978-011X
+    affiliations:
+      - name: Good Enough Data & Systems Lab
+  - name: Mooncake (Measured)
 ---
 
 ## Humans use language to shape thought
@@ -23,13 +29,15 @@ This makes intuitive sense to me, because when humans don't have a good word to 
 LLMs do not invent new languages for humans to shape the world for better understanding and harmony, they are generated from a finite set of language inputs of words and sentences written by humans.
 
 
-We're goint to leave the philosophical debate to the linguists and talk about a real-world thing. A list of words in a dataset. 
+We're going to leave the philosophical debate to the linguists and talk about a real-world thing. A list of words in a dataset. 
 
 Any list of words given to a model is **finite**.
 
 ## Critical theoretic assumption from linguistics
 
-Humans self-generate new ideas and there are infinitely many ways humans might use language to shape the way they think about the world as a people. Every idea can be subdivided and repurposed in new ways or intersected with entirely new conceptualisations. This *feels* intuitively more complex and bigger than the structure of NLP, so let's unpack this theoreticaly to confirm.
+Humans self-generate new ideas and there are infinitely many ways humans might use language to shape the way they think about the world as a people. Every idea can be subdivided and repurposed in new ways or intersected with entirely new conceptualisations. This *feels* intuitively more complex and bigger than the structure of NLP, so let's unpack this theoreticaly to confirm. We're going to run with an interpretation from the linguists' findings that humanity's capacity to generate language is infinite, self-generating, and infinitely complex. 
+
+And, as Cantor noted, there are many infinities, so we are saying the space of human thought is larger than the simplest; human thought is larger than a countably infinite set.
 
 ### Assumption 1: Human language across all time is uncountably infinite
 
@@ -172,7 +180,7 @@ $$
 |\langle H \rangle| \ll |\langle L \rangle \cup \langle H \rangle|.
 $$
 
-Humans shape language. NLPs reshape our access to knowledge. However, out of humans and automata, only humans can step beyond the shadows to say,
+Humans shape language. NLPs reshape our access to knowledge. However, out of humans and automata, only humans can step beyond the shadows of the cave to say,
 
 > Let there be light! 
 
