@@ -6,9 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Dr Charles T. Gray, Datapunk">
+<meta name="author" content="Mooncake (Measured)">
 <meta name="dcterms.date" content="2025-03-20">
 
-<title>Good Enough Lab - The Cave Paradox of NLP (LLMs)</title>
+<title>Good Enough Lab - The Cave Paradox of Language Models</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -185,14 +187,32 @@ div.csl-indent {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">The Cave Paradox of NLP (LLMs)</h1>
+<h1 class="title">The Cave Paradox of Language Models</h1>
 </div>
 
 
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Authors</div>
+  <div class="quarto-title-meta-heading">Affiliation</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Dr Charles T. Gray, Datapunk <a href="https://orcid.org/0000-0002-9978-011X" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Good Enough Data &amp; Systems Lab
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Mooncake (Measured) </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+      </div>
+  </div>
 
 <div class="quarto-title-meta">
 
-    
+      
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
@@ -225,12 +245,13 @@ Figure&nbsp;1: “…how ingenionus and flexible the human mind is. Humans have 
 </figure>
 </div>
 <p>LLMs do not invent new languages for humans to shape the world for better understanding and harmony, they are generated from a finite set of language inputs of words and sentences written by humans.</p>
-<p>We’re goint to leave the philosophical debate to the linguists and talk about a real-world thing. A list of words in a dataset.</p>
+<p>We’re going to leave the philosophical debate to the linguists and talk about a real-world thing. A list of words in a dataset.</p>
 <p>Any list of words given to a model is <strong>finite</strong>.</p>
 </section>
 <section id="critical-theoretic-assumption-from-linguistics" class="level2">
 <h2 class="anchored" data-anchor-id="critical-theoretic-assumption-from-linguistics">Critical theoretic assumption from linguistics</h2>
-<p>Humans self-generate new ideas and there are infinitely many ways humans might use language to shape the way they think about the world as a people. Every idea can be subdivided and repurposed in new ways or intersected with entirely new conceptualisations. This <em>feels</em> intuitively more complex and bigger than the structure of NLP, so let’s unpack this theoreticaly to confirm.</p>
+<p>Humans self-generate new ideas and there are infinitely many ways humans might use language to shape the way they think about the world as a people. Every idea can be subdivided and repurposed in new ways or intersected with entirely new conceptualisations. This <em>feels</em> intuitively more complex and bigger than the structure of NLP, so let’s unpack this theoreticaly to confirm. We’re going to run with an interpretation from the linguists’ findings that humanity’s capacity to generate language is infinite, self-generating, and infinitely complex.</p>
+<p>And, as Cantor noted, there are many infinities, so we are saying the space of human thought is larger than the simplest; human thought is larger than a countably infinite set.</p>
 <section id="assumption-1-human-language-across-all-time-is-uncountably-infinite" class="level3">
 <h3 class="anchored" data-anchor-id="assumption-1-human-language-across-all-time-is-uncountably-infinite">Assumption 1: Human language across all time is uncountably infinite</h3>
 <p>We assume the size of language <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mi>H</mi><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle H \rangle</annotation></semantics></math> generated by humans and that might be generated by humans is uncountably infinite, i.e.,</p>
@@ -370,7 +391,7 @@ Figure&nbsp;2: Plato asks us to imagine how we would interpret the world if all 
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">|</mo><mo stretchy="false" form="prefix">⟨</mo><mi>H</mi><mo stretchy="false" form="postfix">⟩</mo><mo stretchy="true" form="postfix">|</mo></mrow><mo>≪</mo><mrow><mo stretchy="true" form="prefix">|</mo><mo stretchy="false" form="prefix">⟨</mo><mi>L</mi><mo stretchy="false" form="postfix">⟩</mo><mo>∪</mo><mo stretchy="false" form="prefix">⟨</mo><mi>H</mi><mo stretchy="false" form="postfix">⟩</mo><mo stretchy="true" form="postfix">|</mo></mrow><mi>.</mi></mrow><annotation encoding="application/x-tex">
 |\langle H \rangle| \ll |\langle L \rangle \cup \langle H \rangle|.
 </annotation></semantics></math></p>
-<p>Humans shape language. NLPs reshape our access to knowledge. However, out of humans and automata, only humans can step beyond the shadows to say,</p>
+<p>Humans shape language. NLPs reshape our access to knowledge. However, out of humans and automata, only humans can step beyond the shadows of the cave to say,</p>
 <blockquote class="blockquote">
 <p>Let there be light!</p>
 </blockquote>

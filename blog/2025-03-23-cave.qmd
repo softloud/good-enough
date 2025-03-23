@@ -1,0 +1,66 @@
+---
+title: The Countable Cave of Language
+date: "2025-03-25"
+author: 
+  - name: Dr Charles T. Gray
+    orcid: 0000-0002-9978-011X
+    affiliations:
+      - name: Good Enough Data & Systems Lab
+  - name: Mooncake (Smorange Category Theory)
+
+---
+
+> “Not everything that counts can be counted.”  
+> But some things *can*. That’s the point here.
+
+## LLMs live in a countable cave
+
+Let Σ be the set of tokens used in a language model.  
+It’s finite. The set of all finite-length sequences over Σ is denoted Σ\*.
+
+By basic set theory:
+
+> A countable union of finite sets is countable.
+
+Since:
+
+- Σ⁰ is finite (the empty string)
+- Σ¹ is finite (all 1-token strings)
+- Σ² is finite  
+- ...  
+- Σ\* = ⋃ₙ₌₀^∞ Σⁿ
+
+Then Σ\* is countably infinite.
+
+No matter how large your model, how clever your architecture, how long your prompts—  
+if it operates over a finite vocabulary and generates finite-length strings,  
+its entire output space is **countably infinite**.
+
+That’s not a limitation of scale.  
+It’s a **foundational constraint**.
+
+## Human language might not live in that cave
+
+Do I think human language is uncountably infinite?
+
+Maybe. Maybe not. It’s an open question. But I *do* think human expression—over time, across context, culture, ambiguity, and non-tokenised thought—may not be fully captured by a countable formal system.
+
+That’s what this post is about.  
+The shape of truth claims.  
+The ontological structure of what LLMs *cannot* touch.
+
+## So what?
+
+You can train on the entire internet and never leave Σ\*.  
+You can hallucinate whole citations and still be inside a countable cave.
+
+I don’t write this to diminish the systems we build.  
+I write it to remember that **truth, expression, and human meaning**  
+might cast shadows too rich for countable spaces.
+
+And we should name that.
+
+---
+
+LLMs don’t reveal the world.  
+They render what’s visible from **inside the cave**.
