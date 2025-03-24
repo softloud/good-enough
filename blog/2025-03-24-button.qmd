@@ -1,0 +1,618 @@
+---
+title: Button - slides and blog vis standardisation
+code-fold: true
+date: "March 24 2025"
+author: 
+  - name: Dr Charles T. Gray, Datapunk
+    orcid: 0000-0002-9978-011X
+    affiliations:
+      - name: Good Enough Data & Systems Lab
+---
+
+
+```{r echo=TRUE, message=FALSE}
+
+# pkg
+library(tidyverse)
+library(ggraph)
+library(tidygraph)
+
+```
+
+# Motivation
+
+My code is a mess, I have several scripts, I have different visualisations themed differently. Deployment is failing in multiple ways.
+
+When I refactor, I want to refactor smarter. The intention is to develop a way of seeing the current state in a meaningful (and dimensionally-reducable) way and comparing it to the intended state. 
+
+And surely we can use some cool math to figure out how to get there. However, I am finding the process of categoric analysis of the codebase to be so useful that I already have a far clearer understanding of how to refactor now. I'm pretty sure that expectations are the key to defining classes usefully.
+
+# Current state as a hypergraph
+
+Loosely thought of categorically so that we can differentiate between the mappings. 
+
+Morphisms within categories: solid
+Functors between categories: dashed
+
+## Category of expectations
+
+- objects: expected workflow
+- morphism: expectation
+- shape: square
+
+## Category of computational objects
+
+- objects: functions, lists, data frames
+- morphsim: is called by
+
+## Category of code scripts
+
+- objects: files and folders up to project root
+- morphism: is a parent of 
+
+## Functors between categories
+
+- scripts contain computational objects
+- computational objects instantiate expectations 
+
+## Sketch
+
+I'm on an odyssey with graph plotting (see below), so here's a sketch.
+
+![](2025-03-24-current-state.jpeg)
+
+## Hypergraph of the singularity
+
+Digraphs are everywhere, how might we throw them all together to make sense of them?
+
+My instincts are in dimension reduction and in categories. For now, I will start with constructing a hypergraph on three things:
+
+- Epistomological intent
+- Functions in scripts
+- Scripts that hold functions
+
+See things as they are is useful, modelling how we would like them to be is useful, and finding ways of comparing is useful. But first we need the construction. 
+
+
+
+# Structured intelligence system of visualisations for DBT Meetup Copenhagen
+
+I have a blog post, slides, and another blog post where the theme is better.
+
+In only one place is the visualisation displaying as I'd like. 
+
+Let's see how to visualise this. We already have an epistomological intent digraph from a previous post. Now to join the other digraphs to that. 
+
+## Epistemological intent
+
+::: {.panel-tabset}
+
+### edges 
+
+Let $B$ be the graph describing epistomological intent.
+
+```{r}
+B_edges <-
+  tribble(
+    ~from,    ~to,  ~edge_label,
+    "raw",    "edges", "raw to df",
+    "edges",  "nodes", "df to df",
+    "raw",    "nodes", "raw to df",
+    "edges",  "tidygraph", "df to graph",
+    "nodes",  "tidygraph", "df to graph",
+    "tidygraph", "ggraph", "graph to vis",
+    "ggraph",   "display", "vis to display",
+    "display",  "deploy", "display to deploy"
+  ) |>
+    mutate(
+      edge_type = "morphism",
+      category = "epistemological intention"
+    )
+
+
+```
+
+```{r}
+# check assumption
+colwise_check <- c("from", "to") %in% colnames(B_edges) 
+
+colwise_check
+
+# convert colwise vector to boolean
+all(colwise_check) == TRUE
+
+
+# display edges
+B_edges
+
+
+```
+
+### nodes
+
+Then node metadata often needs to be extracted or inferred. 
+
+A challenge is node joining happens after the graph object is created.
+
+> output key assumption: there is exactly `one row per node` in `B_edges`
+
+```{r}
+
+B_nodes <-
+  # extract nodes from edges
+  tibble(
+    node = c(B_edges$from, B_edges$to)
+  ) |>
+  # filter to unique nodes
+  distinct() |>
+  # add node attributes
+  mutate(
+    # necessary
+    node_label = node,
+
+    # contextual
+    painpoint = if_else(
+      node %in% c("deploy", "tidygraph"),
+      TRUE,
+      FALSE
+    ),
+    node_emergence = if_else(
+      painpoint == TRUE,
+      "miscreant",
+      "expected"
+    ),
+    name = node,
+    category = "epistemological intention",
+    node_type = "epistemology"
+  )
+
+
+```
+
+the antijoin nodes and edges by node should have no rows
+
+```{r}
+B_antijoin <-
+  {
+    tibble(
+      node = c(B_edges$from, B_edges$to)
+    ) |>
+    # filter to unique nodes
+    distinct()
+  } |> anti_join(B_nodes |> select(node), by = "node")
+
+```
+
+verify assumption 
+
+```{r}
+nrow(B_antijoin) == 0
+
+```
+
+display nodes
+```{r}
+B_nodes
+```
+
+### graph
+
+```{r}
+B_graph <- 
+  B_edges |>
+  as_tbl_graph() |>
+  activate(nodes) |>
+  # add node attributes
+  left_join(B_nodes, by = "name")
+
+B_graph
+
+```
+
+### vis
+
+```{r }
+#| fig-height: 12 
+B_graph |>
+  ggraph() +
+  geom_edge_link(
+    arrow = arrow(
+      length  = unit(0.02, "npc"),
+      angle = 20
+      ),
+    alpha = 0.3,
+    start_cap = circle(0.03, 'npc'),
+    end_cap = circle(0.03, 'npc')
+  ) +
+  geom_node_point(
+    aes(colour = node_emergence)
+  ) +
+  geom_node_text(
+    aes(label = name),
+    repel = TRUE,
+    family = "Courier"
+  ) +
+  theme_minimal() +
+  theme(
+    plot.title = element_text(
+      family = "Courier"
+      ),
+    plot.subtitle = element_text(
+      family = "Courier"
+      ),    
+    plot.caption = element_text(
+      family = "Courier"
+      ),    
+    axis.text = element_blank(),
+    axis.title = element_blank(),
+    panel.grid = element_blank()
+  ) +
+  labs(
+    title = "Development Expectation",
+    subtitle = "Known problems at tidygraph and deployment"
+  ) +
+  ggplot2:::manual_scale(
+    "colour",
+    values = setNames(
+      c("#a6611a", "#018571","#dfc27d", "#80cdc1"),
+      c("violation", "virtuous", "miscreant", "expected")
+    )
+  )
+
+```
+
+:::
+
+## Extending to computational objects
+
+Let $F$ denote the directed graph of computational objects where the edges denote one computational object taking another as input.
+
+::: {.panel-tabset}
+
+### edges
+
+```{r}
+F_edges <- tribble(
+  ~from, ~to, ~edge_label,
+  "anal_beads_df", "anal_beads", "df to graph",
+  "anal_beads", "anal_beads_vis", "graph to vis",
+  "anal_beads_df", "hairy_anal_beads", "df to graph",
+  "hairy_anal_beads", "hairy_anal_beads_vis", "graph to vis"
+) |>
+  mutate(
+    edge_type = "morphism",
+    category = "computational objects"
+  )
+
+```
+
+```{r}
+#| code-fold: false
+F_edges
+```
+
+### nodes
+
+```{r}
+F_nodes <- 
+  tibble(
+    name = c(F_edges$from, F_edges$to)
+  ) |>
+  distinct() |>
+  mutate(
+    node_label = name,
+    node_emergence = "expected",
+    node_type = "function",
+    category = "computational objects"
+    )
+
+```
+
+```{r}
+#| code-fold: false
+F_nodes
+
+```
+
+### graph
+
+```{r}
+F_graph <- as_tbl_graph(F_edges) |>
+  activate(nodes) |>
+  left_join(F_nodes, by = "name")
+
+```
+
+```{r error=TRUE}
+#| code-fold: false
+F_graph
+```
+
+### vis
+
+```{r}
+# time to convert this to a list so we can reuse it
+button_vis <- list(
+  geom_edge_link(
+    aes(
+      linetype = edge_type,
+      colour = category,
+      label = edge_label,
+      tooltip = edge_label
+      ),
+    arrow = arrow(
+      length  = unit(0.02, "npc"),
+      angle = 20
+      ),
+    label_alpha = 0.3,
+    alpha = 0.3,
+    start_cap = circle(0.03, 'npc'),
+    end_cap = circle(0.03, 'npc')
+  ),
+  geom_node_point(
+    aes(colour = category,
+      shape = node_type)
+  ),
+  geom_node_text(
+    aes(label = node_label),
+    repel = TRUE,
+    label_dodge = unit(2, "mm"),
+    family = "Courier"
+  ),
+  theme_minimal(),
+  theme(
+    plot.title = element_text(
+      family = "Courier"
+      ),
+    plot.subtitle = element_text(
+      family = "Courier"
+      ),    
+    plot.caption = element_text(
+      family = "Courier"
+      ),    
+    axis.text = element_blank(),
+    axis.title = element_blank(),
+    panel.grid = element_blank(),
+    legend.position  = "top",
+    legend.direction = "vertical"
+  )
+
+)
+
+
+```
+
+```{r}
+#| code-fold: false
+F_graph |>
+  ggraph() +
+  button_vis
+
+
+```
+
+:::
+
+## Tree of files
+
+Let $Y$ denote the graph of relevant files in the project where
+
+- Nodes are files
+- Edges $\to$ denote "is an element of"
+
+::: {.panel-tabset}
+
+### edges 
+
+Now, we want script files, but we don't need all of it. Just what is relevant. 
+
+```{r}
+project_path <- "good-enough"
+anal_beads_path <- "figures-and-tables/anal-beads-of-data-dev"
+
+Y_edges <- tibble(
+  file_name = list.files(anal_beads_path)
+) |>
+  mutate(file_parent = "anal-beads-of-data-dev") |>
+  add_row(
+    file_name = "anal-beads-of-data-dev",
+    file_parent = "figures-and-tables"
+  ) |>
+  add_row(
+    file_name = "figures-and-tables",
+    file_parent = project_path
+  ) |>
+  add_row(
+    file_name = "index.qmd",
+    file_parent = project_path
+  ) |>
+  add_row(
+    file_name = "qao.qmd",
+    file_parent = project_path
+  ) |>
+  add_row(
+    file_name = "slides",
+    file_parent = project_path
+  ) |>
+  rename(
+    from = file_name,
+    to = file_parent
+  ) |>
+  mutate(
+    edge_label = "is a child of",
+    category = "file structure",
+    edge_type = "morphism",
+    # .R seems to disappear from qmd
+    to = str_replace(to, ".R", "Code"),
+    from = str_replace(from, ".R", "Code")
+    )
+
+```
+
+```{r}
+#| code-fold: false
+
+Y_edges
+```
+
+### nodes
+
+```{r}
+Y_nodes <- tibble(
+  name = c(Y_edges$from, Y_edges$to)
+) |>
+  distinct() |> 
+  mutate(
+    node_label = name,
+    node_emergence = "expected",
+    node_type = "file",
+    category = "file structure"
+  )
+
+```
+
+```{r}
+#| code-fold: false
+Y_nodes 
+
+```
+
+### graph
+
+```{r}
+Y_graph <- Y_edges |>
+  as_tbl_graph() |>
+  activate(nodes) |>
+  left_join(Y_nodes, by = "name")
+
+```
+
+```{r}
+#| code-fold: false
+
+Y_graph
+
+```
+
+### vis
+
+```{r}
+#| code-fold: false
+#| fig-height: 5
+
+Y_graph |>
+  ggraph() +
+  button_vis
+
+```
+
+```{r}
+igraph::degree(Y_graph)
+
+```
+
+:::
+
+# Singularity 
+
+Now that we have our different digraphs, we will join them in a hyperdigraph.
+
+::: {.panel-tabset}
+
+## edges
+
+```{r s functors}
+S_functors <- tribble(
+  ~from, ~to, ~edge_label,
+  "anal_beads_df", "edges", "is an instantition of",
+  "hairy_anal_beads", "tidygraph", "is an instantition of",
+  "anal_beads", "tidygraph", "is an instantition of",
+  "anal_beads_vis", "ggraph",  "is an instantiation of",
+  "hairy_anal_beads", "ggraph",  "is an instantiation of",
+  "anal_beads_df", "anal-beads.R", "is contained in"
+) |>
+  mutate(
+    edge_type = "functor",
+    category = "structured intelligence system"
+  )
+
+
+```
+
+```{r s edges}
+S_edges <-
+  B_edges |>
+    mutate(morphism = "epistemic intention") |>
+    bind_rows(F_edges) |>
+    bind_rows(Y_edges |> mutate(
+      morphism = "is an element of",
+      edge_label = morphism,
+      edge_type = "morphism"
+    )) |>
+    bind_rows(S_functors) |>
+    # edge labels too messy for now
+    mutate(edge_label = "") 
+
+```
+
+
+```{r}
+#| code-fold: false
+
+S_edges |> gt::gt()
+```
+
+
+
+## nodes
+
+> Okay the weirdest thing, the nodes are getting dropped from qmd but not from the console. 
+
+```{r s nodes}
+S_nodes <- 
+  B_nodes |>
+    mutate(category = "epistemology") |>
+    bind_rows(Y_nodes |> mutate(
+      category = "file structure"
+    )) |>
+    bind_rows(F_nodes |> mutate(
+      category = "computational objects"
+    )) |>
+    select(name, node_label, category, node_type) 
+
+```
+
+```{r}
+#| code-fold: false
+S_nodes |> View()
+
+```
+
+## graph
+
+```{r s graph}
+S_graph <- S_edges |>
+  as_tbl_graph() |>
+  activate(nodes) |>
+  left_join(S_nodes)
+
+```
+
+```{r}
+#| code-fold: false
+S_graph
+```
+
+## vis
+
+```{r s vis}
+#| error: true
+#| fig-height: 15
+S_graph |>
+  ggraph() +
+  button_vis
+
+```
+
+
+:::
