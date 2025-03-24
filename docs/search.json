@@ -599,7 +599,7 @@
     "href": "qao.html",
     "title": "Questionable Analytical Observations (QAO)",
     "section": "",
-    "text": "Any data engineer will tell you there’s a relentlessly comedic side to the industry, wherein confusion over what an observation is abounds, leading to unexpectedly large deviations from vision (Figure 1).\n\n\n\n\n\n\n\nFigure 1: Nigel gave me a drawing that said 18 inches. Now, whether or not he knows the difference between feet and inches is not my problem. I do what I’m told. – Ian Faith, This is Spinal Tap (Reiner 1984).\n\n\n\nThose in the trenches of the modern data stack know this is why the community have developed principles, such as FAIR (“FAIR Principles. GO FAIR” n.d.), and open-source tools, such as DBT-core (“Dbt-Labs/Dbt-Core” 2025) that opinionate FAIR.\nThese engineers are also the first to tell you just how far from reality the industry is in realising even a fraction of those aspirations (Landi et al. 2020).\nSomething that tools such as DBT are beginning to intuit is that the governance of data must be an iterative workflow, not a policy checkbox at the end, such an aim is (we argue in a sister paper) chaotically impossible given how development plans morph and change.\nWe must correct for epistemic drift in the chaos induced by people and machines interoperating to answer scientific questions. Or, despite our best efforts, we end at the frontier psychiatry (Figure 2) of data science.\n\n\n\n\n\n\n\nFigure 2: Each scientist or engineer is skilled in their own right, but together create an absurdist orchestra of bad data and broken dashboards (The Avalanches 2009).\n\n\n\nWe begin declaritively, as engineers are busy and it’s good to give them a table of instructions on the second page so they can stop reading and go code something useful."
+    "text": "# test where I am\ngetwd()\n\n[1] \"/home/cantabile/Documents/repos/good-enough\"\n\n# need to source\nsource(\"R/button.R\")\n\n# test calling from R\nmooncake_test\n\n[1] \"hi Mooncake\"\nView slides in full screen"
   },
   {
     "objectID": "qao.html#definition-fair-data-entity-test",
@@ -964,5 +964,33 @@
     "title": "Living Mathematics",
     "section": "",
     "text": "Live, interactive proofs have been around for centuries. Mathematics is the universal language, it is for talking to each other, exchanging ideas. No one human solves everything."
+  },
+  {
+    "objectID": "slides/dbt-2025.html#test",
+    "href": "slides/dbt-2025.html#test",
+    "title": "Good Enough Lab",
+    "section": "test",
+    "text": "test\n\n\n[1] \"hi Mooncake\""
+  },
+  {
+    "objectID": "qao.html#fair-data-entity-tests-for-this-singularity",
+    "href": "qao.html#fair-data-entity-tests-for-this-singularity",
+    "title": "Questionable Analytical Observations (QAO)",
+    "section": "FAIR data entity tests for this singularity",
+    "text": "FAIR data entity tests for this singularity\nIn all tests, we ask, what is the minimum thing we can do? Then structure exists and we can expand.\n\nGenerator fn -&gt; display\nTesting the morphism between graph visualisation generator and display.\n\nHow do I call code reusably across both this manuscript, a .qmd file, and a slide deck I’m embedding the same .qmd file?\n\n\n# test where I am\ngetwd()\n\n[1] \"/home/cantabile/Documents/repos/good-enough\"\n\n# need to source\nsource(\"R/button.R\")\n\n# test calling from R\nmooncake_test\n\n[1] \"hi Mooncake\"\n\n\n    View slides in full screen"
+  },
+  {
+    "objectID": "slides/dbt-2025.html#test-generator---display",
+    "href": "slides/dbt-2025.html#test-generator---display",
+    "title": "DBT Copenhagen Meetup",
+    "section": "Test: generator -> display",
+    "text": "Test: generator -&gt; display\nTest the morphism between visualisation generator and display.\n\n# Where am I? \ngetwd()\n\n[1] \"/home/cantabile/Documents/repos/good-enough\"\n\n\n\n# What am I testing? \ncat R/button.R\n\n# test this file loads\n\nmooncake_test = \"hi Mooncake\"\n\n\n\n# Source it\nsource(\"R/button.R\")\n\n# Print it \nmooncake_test\n\n[1] \"hi Mooncake\""
+  },
+  {
+    "objectID": "slides/dbt-2025.html#test-generator-to-display",
+    "href": "slides/dbt-2025.html#test-generator-to-display",
+    "title": "DBT Copenhagen Meetup",
+    "section": "Test: generator →\\to display",
+    "text": "Test: generator →\\to display\nTest the functor between visualisation generator and slide display.\n\n# Where am I? \ngetwd()\n\n[1] \"/home/cantabile/Documents/repos/good-enough\"\n\n\n\n# What am I testing? \ncat R/button.R\n\n# test this file loads\n\nmooncake_test = \"hi Mooncake\"\n\n\n\n# Source it\nsource(\"R/button.R\")\n\n# Print it \nmooncake_test\n\n[1] \"hi Mooncake\""
   }
 ]

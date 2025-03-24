@@ -6,6 +6,7 @@ bibliography: singularities.bib
 execute:
   echo: false
   message: false
+  error: true
 ---
 
 ```{r echo=FALSE, message=FALSE}
@@ -14,12 +15,24 @@ library(gt)
 
 ```
 
-```{r eval=FALSE}
 
-# {< revealjs "slides/2025-dbt.html" >}}
+```{r}
+#| echo: true
+#| code-fold: false
 
+
+# test where I am
+getwd()
+
+# need to source
+source("R/button.R")
+
+# test calling from R
+mooncake_test
 
 ```
+
+{{< revealjs "slides/dbt-2025.html" >}}
 
 # Ceci n'est pas un datum
 
@@ -162,5 +175,39 @@ The reality is while data analytic question is reworked, there is little data en
 # Learnings -- placeholder title
 
 > FAIR data entity tests on some projects. Matt, I thought we could track some projects do some vis here?
+
+# Appendices
+
+## FAIR data entity tests for this singularity
+
+In all tests, we ask, what is the minimum thing we can do? Then structure exists and we can expand.
+
+### Generator fn -> display
+
+*Testing the morphism between graph visualisation generator and display.*
+
+> How do I call code reusably across both this manuscript, a .qmd file, and a slide deck I'm embedding the same .qmd file?
+
+
+```{r}
+#| echo: true
+#| code-fold: false
+
+# test where I am
+getwd()
+
+# need to source
+source("R/button.R")
+
+# test calling from R
+mooncake_test
+
+```
+
+{{< revealjs "slides/dbt-2025.qmd" >}}
+
+
+
+
 
 # References

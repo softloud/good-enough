@@ -1,0 +1,43 @@
+---
+format: 
+  revealjs:
+    theme: solarized
+
+title: DBT Copenhagen Meetup
+date: Wednesday 26 March 2025
+bibliography: ../singularities.bib
+html-math-method: mathml
+
+---
+
+## Test: generator $\to$ display
+
+*Test the functor between visualisation generator and slide display.*
+
+```{r}
+#| echo: true
+
+# Where am I? 
+getwd()
+
+```
+
+
+```{bash}
+#| echo: true
+
+# What am I testing? 
+cat R/button.R
+
+```
+
+
+```{r}
+#| echo: true
+
+# Source it
+source("R/button.R")
+
+# Print it 
+mooncake_test
+```
