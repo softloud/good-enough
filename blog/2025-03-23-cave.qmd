@@ -1,6 +1,6 @@
 ---
 title: The Countable Cave of Language
-date: "2025-03-25"
+date: "2025-03-23"
 author: 
   - name: Dr Charles T. Gray
     orcid: 0000-0002-9978-011X
