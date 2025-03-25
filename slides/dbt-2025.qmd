@@ -11,19 +11,24 @@ date: Wednesday 26 March 2025
 bibliography: ../singularities.bib
 html-math-method: mathml
 author: Charles T. Gray, PhD -- Datapunk
----
+execute:
+  freeze: auto
+--- 
 
 
-# Ceci n'est pas un datum
+## Ceci n'est pas un datum
 
-
-::: {#fig-stonehenge}
-
-<iframe src="https://www.youtube.com/embed/Pyh1Va_mYWI?si=ieVcPdnxgQ83lMGJ&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-*Nigel gave me a drawing that said 18 inches. Now, whether or not he knows the difference between feet and inches is not my problem. I do what I'm told.* -- Ian Faith, *This is Spinal Tap* [@reiner_this_1984].
-
-:::
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; margin-bottom: 2em;">
+  <iframe 
+    src="https://www.youtube.com/embed/Pyh1Va_mYWI?si=ieVcPdnxgQ83lMGJ&amp;controls=0"
+    title="YouTube video player"
+    style="position: absolute; top: 0; left: 0; width: 70%; height: 70%; margin: auto; right: 0; bottom: 0;"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen>
+  </iframe>  
+</div>
 
 # Tests (*on the presheaf of visualisations*)
 
@@ -38,11 +43,14 @@ getwd()
 
 ```
 
+--- 
+
 What am I testing?
 ```{bash}
 cat R/test-mooncake.R
 
 ```
+
 
 Source & Print it
 ```{r}
@@ -53,7 +61,147 @@ source("R/test-mooncake.R")
 mooncake_test
 ```
 
-## Test: FAIR data entity test
+
+## *Identity tests*
+
+Can we validate a single datum? 
+
+> I expect there to be a node `ingest` that goes to a node `transform` representing `data engineering` tasks in the `expected` instance of living analysis lifecycle.
+
+```{r}
+# source generator
+source("R/ButtonCategory.R")
+
+```
+
+## Test edges
+
+```{r}
+#| code-fold: false
+#| message: true
+AnalBeadsEdges <- ButtonEdgeDesignCategory$new()
+AnalBeadsEdges$testEdges()
+dplyr::sample_n(AnalBeadsEdges$edges, 3)
+```
+
+---
+
+```{r}
+#| code-fold: false
+#| message: true
+HairyAnalBeadsEdges <- ButtonEdgeDesignCategory$new(
+  preset = "hairy_anal_beads")
+HairyAnalBeadsEdges$testEdges()
+dplyr::sample_n(HairyAnalBeadsEdges$edges, 3)
+```
+
+
+## Nodes: *Identity test on nodes*
+
+```{r}
+#| code-fold: false
+#| message: true
+AnalBeadsNodes <- ButtonNodeDesignCategory$new()
+AnalBeadsNodes$testNodes()
+dplyr::sample_n(AnalBeadsNodes$nodes, 3)
+```
+
+---
+
+```{r}
+#| code-fold: false
+#| message: true
+HairyAnalBeadsNodes <- ButtonNodeDesignCategory$new(
+  preset = "hairy_anal_beads")
+HairyAnalBeadsNodes$testNodes()
+dplyr::sample_n(HairyAnalBeadsNodes$nodes, 3)
+
+```
+
+---
+
+```{r}
+#| code-fold: false
+#| message: true
+AnalBeads <- ButtonCategory$new(preset = "anal_beads")
+AnalBeads$testNodes()
+dplyr::sample_n(AnalBeads$nodes, 3)
+
+```
+
+---
+
+
+```{r}
+#| code-fold: false
+#| message: true
+HairyAnalBeads <- ButtonCategory$new(preset = "hairy_anal_beads")
+HairyAnalBeads$testNodes()
+dplyr::sample_n(HairyAnalBeads$nodes, 3)
+
+```
+
+## graph
+
+```{r}
+to_dot <- function(nodes, edges) {
+  # Convert node rows to DOT node declarations
+  node_lines <- apply(nodes, 1, function(row) {
+    paste0(
+      '"', row[["node"]], 
+      '" [style=filled, fillcolor="', row[["node_colour"]], 
+      '", shape=box];'
+    )
+  })
+
+  # Convert edge rows to DOT edge declarations
+  edge_lines <- apply(edges, 1, function(row) {
+    paste0(
+      '"', row[["from"]], 
+      '" -> "', row[["to"]], 
+      '" [style=', row[["line_type"]], '];'
+    )
+  })
+
+  # Wrap into DOT format
+  dot_code <- paste0(
+    "digraph {\n  rankdir=LR;\n  node [fontname=Helvetica];\n  ",
+    paste(node_lines, collapse = "\n  "), "\n  ",
+    paste(edge_lines, collapse = "\n  "), "\n}"
+  )
+
+  return(dot_code)
+}
+
+```
+
+
+```{r dot-anal-beads, results="asis"}
+
+# Add example styling columns
+AnalBeads$nodes$node_colour <- "lightblue"
+AnalBeads$edges$line_type <- "solid"
+
+# Generate DOT code
+dot_code <- to_dot(
+  nodes = AnalBeads$nodes,
+  edges = AnalBeads$edges
+)
+
+
+
+```
+
+---
+
+```{r}
+#| echo: false 
+# Render
+DiagrammeR::grViz(dot_code)
+
+```
+
+# Earlier tests
 
 *Identity test on edge object.*
 
@@ -82,7 +230,7 @@ Can we validate a single datum?
 
 ## Test: failed FAIR data entity test
 
-### Check the edges are non-empty
+### Check the Nodes are non-empty
 
 ```{r error=TRUE}
 
@@ -94,11 +242,11 @@ source("R/ButtonCategory.R")
 AnalBeads <- 
   ButtonCategory$new()
 
-# Get this test to pass on edges
+# Get this test to pass on Nodes
 
 # non-empty intersection
 nrow(
-  AnalBeads$edges |>
+  AnalBeads$nodes |>
   dplyr::inner_join(expected_datum)
 ) > 0
 
@@ -119,18 +267,18 @@ expected_datum
 
 # exact columns
 all(
-  colnames(expected_datum) %in% colnames(AnalBeads$edges)
+  colnames(expected_datum) %in% colnames(AnalBeads$nodes)
 )
 
-# show edges
-head(AnalBeads$edges, 3)
+# show Nodes
+head(AnalBeads$nodes, 3)
 ```
 
 ## Test: FAIR data entity test
 
 ### Expectations
 
-Expected edges.
+Expected Nodes.
 
 ```{r}
 
@@ -163,7 +311,7 @@ Expected nodes.
 
 ## Test: FAIR data entity test
 
-### Check the edges are non-empty
+### Check the Nodes are non-empty
 
 ```{r error=TRUE}
 
@@ -175,11 +323,11 @@ source("R/ButtonCategory.R")
 AnalBeads <- 
   ButtonCategory$new()
 
-# Get this test to pass on edges
+# Get this test to pass on Nodes
 
 # non-empty intersection
 nrow(
-  AnalBeads$edges |>
+  AnalBeads$nodes |>
   dplyr::inner_join(expected_datum)
 ) > 0
 
@@ -197,11 +345,11 @@ expected_edge
 
 # exact columns
 all(
-  colnames(expected_edge) %in% colnames(AnalBeads$edges)
+  colnames(expected_edge) %in% colnames(AnalBeads$nodes)
 )
 
-# show edges
-head(AnalBeads$edges, 3)
+# show Nodes
+head(AnalBeads$nodes, 3)
 ```
 
 ## Test: FAIR data entity test
@@ -219,34 +367,10 @@ all(
   colnames(expected_nodes) %in% colnames(AnalBeads$nodes)
 )
 
-# show edges
+# show Nodes
 head(AnalBeads$nodes, 3)
 ```
 
-# Test: FDE Test - methods
-
-## Edges
-
-```{r}
-#| code-fold: false
-#| message: true
-AnalBeads <- ButtonCategory$new(preset = "anal_beads")
-AnalBeads$testEdges()
-dplyr::sample_n(AnalBeads$edges, 3)
-
-```
-
----
-
-
-```{r}
-#| code-fold: false
-#| message: true
-HairyAnalBeads <- ButtonCategory$new(preset = "hairy_anal_beads")
-HairyAnalBeads$testEdges()
-dplyr::sample_n(HairyAnalBeads$edges, 3)
-
-```
 
 
 # References

@@ -31,9 +31,10 @@ ButtonEdgeDesignCategory <- setRefClass(
       setEdges(preset)
     },
     setEdges = function(preset = "anal_beads") {
+      expected_edge_cols <<- c("from", "to")
+
       if (preset == "anal_beads") {
         edges <<- anal_beads_df
-        expected_edge_cols <<- c("from", "to")
       } else if (preset == "hairy_anal_beads") {
         edges <<- tibble::tribble(
           ~from, ~to, ~reason,
@@ -59,15 +60,51 @@ ButtonEdgeDesignCategory <- setRefClass(
               }
     },
     testEdges = function() {
-      message("Test if edge names contain required fields")
+      message("Test if edge names contain required fields:")
       contains_expected_cols <- all(expected_edge_cols %in% colnames(edges))
       message(contains_expected_cols)
-      message("Test if edges are non-empty")
+      message("Test if edges are non-empty:")
       test_non_empty <- (nrow(edges) > 0)
       message(test_non_empty)
       message("Edge test passing status:")
       edge_test_results <- all(contains_expected_cols, test_non_empty)
       return(edge_test_results)
+    }
+  )
+)
+
+# must initialiase nodes after edges
+ButtonNodeDesignCategory <- setRefClass(
+  "ButtonNodeDesignCategory",
+  contains = "ButtonEdgeDesignCategory",
+  fields = list(
+    nodes = "data.frame",
+    expected_node_cols = "character"
+  ),
+  methods = list(
+    initialize = function(preset = "anal_beads") {
+      callSuper()
+      setNodes(preset)
+    },
+    setNodes = function(preset = "anal_beads"){
+      expected_node_cols <<- c("node")
+
+      nodes <<- tibble::tibble(
+        node = c(edges$to, edges$from)
+      ) |>
+      dplyr::distinct()
+    
+    },
+    testNodes = function() {
+      message("Test if node names contain required fields:")
+      contains_expected_cols <- all(expected_node_cols %in% colnames(nodes))
+      message(contains_expected_cols)
+      message("Test if nodes are non-empty:")
+      test_non_empty <- (nrow(nodes) > 0)
+      message(test_non_empty)
+      message("Edge test passing status:")
+      node_test_results <- all(contains_expected_cols, test_non_empty)
+      return(node_test_results)
     }
   )
 )
@@ -79,11 +116,9 @@ ButtonEdgeDesignCategory <- setRefClass(
 # Set the design category
 ButtonDesignCategory <- setRefClass(
   "ButtonDesignCategory",
-  contains = "ButtonEdgeDesignCategory",
+  contains = c("ButtonNodeDesignCategory"),
   fields = list(
-    preset = "character",
-    node_design = "data.frame",
-    nodes = "data.frame"
+    preset = "character"
   ),
   methods = list(
     initialize = function(preset = "anal_beads") {
