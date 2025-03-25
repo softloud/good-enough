@@ -1,0 +1,252 @@
+---
+format: 
+  revealjs:
+    theme: solarized
+    code-fold: true
+    echo: true
+
+title: "ESG Data Governance & Living Analysis Lifescycle"
+subtitle: DBT Copenhagen Meetup
+date: Wednesday 26 March 2025
+bibliography: ../singularities.bib
+html-math-method: mathml
+author: Charles T. Gray, PhD -- Datapunk
+---
+
+
+# Ceci n'est pas un datum
+
+
+::: {#fig-stonehenge}
+
+<iframe src="https://www.youtube.com/embed/Pyh1Va_mYWI?si=ieVcPdnxgQ83lMGJ&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+*Nigel gave me a drawing that said 18 inches. Now, whether or not he knows the difference between feet and inches is not my problem. I do what I'm told.* -- Ian Faith, *This is Spinal Tap* [@reiner_this_1984].
+
+:::
+
+# Tests (*on the presheaf of visualisations*)
+
+## Test: generator $\to$ display
+
+*Test the functor between visualisation generator and slide display.*
+
+Where am I? 
+
+```{r}
+getwd()
+
+```
+
+What am I testing?
+```{bash}
+cat R/test-mooncake.R
+
+```
+
+Source & Print it
+```{r}
+
+source("R/test-mooncake.R")
+
+# Print it 
+mooncake_test
+```
+
+## Test: FAIR data entity test
+
+*Identity test on edge object.*
+
+Can we validate a single datum? 
+
+> I expect there to be a node `ingest` that goes to a node `transform` representing `data engineering` tasks in the `expected` instance of living analysis lifecycle.
+
+## Test: failed FAIR data entity test
+
+### Expectations
+
+```{r}
+
+
+# Create the expected datum for testing
+# Expecting an edge from "ingest" to "transform" as part of the "data engineering" process
+
+(
+  expected_datum <- data.frame(
+    from = "ingest",
+    to = "transform",
+    node_type = "data engineering"
+  )
+)
+```
+
+## Test: failed FAIR data entity test
+
+### Check the edges are non-empty
+
+```{r error=TRUE}
+
+
+# source generator
+source("R/ButtonCategory.R")
+
+# generate button graph
+AnalBeads <- 
+  ButtonCategory$new()
+
+# Get this test to pass on edges
+
+# non-empty intersection
+nrow(
+  AnalBeads$edges |>
+  dplyr::inner_join(expected_datum)
+) > 0
+
+```
+
+## Test: failed FAIR data entity test
+
+### Check the column names are as expected 
+
+> Role is a node attribute! 
+
+
+```{r}
+
+
+# show expected
+expected_datum
+
+# exact columns
+all(
+  colnames(expected_datum) %in% colnames(AnalBeads$edges)
+)
+
+# show edges
+head(AnalBeads$edges, 3)
+```
+
+## Test: FAIR data entity test
+
+### Expectations
+
+Expected edges.
+
+```{r}
+
+
+# Create the expected datum for testing
+# Expecting an edge from "ingest" to "transform" as part of the "data engineering" process
+
+(
+  expected_edge <- data.frame(
+    from = "ingest",
+    to = "transform"
+  )
+)
+
+```
+
+Expected nodes.
+
+```{r}
+# create expected nodes
+
+(
+  expected_nodes <- data.frame(
+    name = c("ingest", "transform")
+  ) |>
+    dplyr::mutate(role = "data engineering")
+)
+
+```
+
+## Test: FAIR data entity test
+
+### Check the edges are non-empty
+
+```{r error=TRUE}
+
+
+# source generator
+source("R/ButtonCategory.R")
+
+# generate button graph
+AnalBeads <- 
+  ButtonCategory$new()
+
+# Get this test to pass on edges
+
+# non-empty intersection
+nrow(
+  AnalBeads$edges |>
+  dplyr::inner_join(expected_datum)
+) > 0
+
+```
+
+## Test: FAIR data entity test
+
+Check edge column names are as expected 
+
+```{r}
+
+
+# show expected
+expected_edge
+
+# exact columns
+all(
+  colnames(expected_edge) %in% colnames(AnalBeads$edges)
+)
+
+# show edges
+head(AnalBeads$edges, 3)
+```
+
+## Test: FAIR data entity test
+
+Check node attributes are as expected
+
+```{r}
+
+
+# show expected
+expected_nodes
+
+# exact columns
+all(
+  colnames(expected_nodes) %in% colnames(AnalBeads$nodes)
+)
+
+# show edges
+head(AnalBeads$nodes, 3)
+```
+
+# Test: FDE Test - methods
+
+## Edges
+
+```{r}
+#| code-fold: false
+#| message: true
+AnalBeads <- ButtonCategory$new(preset = "anal_beads")
+AnalBeads$testEdges()
+dplyr::sample_n(AnalBeads$edges, 3)
+
+```
+
+---
+
+
+```{r}
+#| code-fold: false
+#| message: true
+HairyAnalBeads <- ButtonCategory$new(preset = "hairy_anal_beads")
+HairyAnalBeads$testEdges()
+dplyr::sample_n(HairyAnalBeads$edges, 3)
+
+```
+
+
+# References
