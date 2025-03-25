@@ -522,22 +522,24 @@ mooncake_test = "hi Mooncake"</code></pre>
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a></a><span class="co"># source generator</span></span>
-<span id="cb9-2"><a></a><span class="fu">source</span>(<span class="st">"R/ButtonGenerator.R"</span>)</span>
+<span id="cb9-2"><a></a><span class="fu">source</span>(<span class="st">"R/ButtonCategory.R"</span>)</span>
 <span id="cb9-3"><a></a></span>
 <span id="cb9-4"><a></a><span class="co"># generate button graph</span></span>
-<span id="cb9-5"><a></a>anal_beads <span class="ot">&lt;-</span> </span>
-<span id="cb9-6"><a></a>  ButtonGenerator<span class="sc">$</span><span class="fu">new</span>()</span>
+<span id="cb9-5"><a></a>AnalBeads <span class="ot">&lt;-</span> </span>
+<span id="cb9-6"><a></a>  ButtonCategory<span class="sc">$</span><span class="fu">new</span>()</span>
 <span id="cb9-7"><a></a></span>
 <span id="cb9-8"><a></a><span class="co"># Get this test to pass on edges</span></span>
 <span id="cb9-9"><a></a></span>
 <span id="cb9-10"><a></a><span class="co"># non-empty intersection</span></span>
 <span id="cb9-11"><a></a><span class="fu">nrow</span>(</span>
-<span id="cb9-12"><a></a>  anal_beads<span class="sc">$</span>edges <span class="sc">|&gt;</span></span>
+<span id="cb9-12"><a></a>  AnalBeads<span class="sc">$</span>edges <span class="sc">|&gt;</span></span>
 <span id="cb9-13"><a></a>  dplyr<span class="sc">::</span><span class="fu">inner_join</span>(expected_datum)</span>
 <span id="cb9-14"><a></a>) <span class="sc">&gt;</span> <span class="dv">0</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] TRUE</code></pre>
+<div class="cell-output cell-output-error">
+<pre><code>Error in `dplyr::inner_join()`:
+! `by` must be supplied when `x` and `y` have no common variables.
+ℹ Use `cross_join()` to perform a cross-join.</code></pre>
 </div>
 </div>
 </section>
@@ -561,7 +563,7 @@ mooncake_test = "hi Mooncake"</code></pre>
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a></a><span class="co"># exact columns</span></span>
 <span id="cb13-2"><a></a><span class="fu">all</span>(</span>
-<span id="cb13-3"><a></a>  <span class="fu">colnames</span>(expected_datum) <span class="sc">%in%</span> <span class="fu">colnames</span>(anal_beads<span class="sc">$</span>edges)</span>
+<span id="cb13-3"><a></a>  <span class="fu">colnames</span>(expected_datum) <span class="sc">%in%</span> <span class="fu">colnames</span>(AnalBeads<span class="sc">$</span>edges)</span>
 <span id="cb13-4"><a></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
@@ -570,15 +572,10 @@ mooncake_test = "hi Mooncake"</code></pre>
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb15"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a></a><span class="co"># show edges</span></span>
-<span id="cb15-2"><a></a><span class="fu">head</span>(anal_beads<span class="sc">$</span>edges, <span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb15-2"><a></a><span class="fu">head</span>(AnalBeads<span class="sc">$</span>edges, <span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 3 × 2
-  from     to       
-  &lt;chr&gt;    &lt;chr&gt;    
-1 question source   
-2 source   ingest   
-3 ingest   transform</code></pre>
+<pre><code>data frame with 0 columns and 0 rows</code></pre>
 </div>
 </div>
 </section>
@@ -631,22 +628,24 @@ mooncake_test = "hi Mooncake"</code></pre>
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb21"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a></a><span class="co"># source generator</span></span>
-<span id="cb21-2"><a></a><span class="fu">source</span>(<span class="st">"R/ButtonGenerator.R"</span>)</span>
+<span id="cb21-2"><a></a><span class="fu">source</span>(<span class="st">"R/ButtonCategory.R"</span>)</span>
 <span id="cb21-3"><a></a></span>
 <span id="cb21-4"><a></a><span class="co"># generate button graph</span></span>
-<span id="cb21-5"><a></a>anal_beads <span class="ot">&lt;-</span> </span>
-<span id="cb21-6"><a></a>  ButtonGenerator<span class="sc">$</span><span class="fu">new</span>()</span>
+<span id="cb21-5"><a></a>AnalBeads <span class="ot">&lt;-</span> </span>
+<span id="cb21-6"><a></a>  ButtonCategory<span class="sc">$</span><span class="fu">new</span>()</span>
 <span id="cb21-7"><a></a></span>
 <span id="cb21-8"><a></a><span class="co"># Get this test to pass on edges</span></span>
 <span id="cb21-9"><a></a></span>
 <span id="cb21-10"><a></a><span class="co"># non-empty intersection</span></span>
 <span id="cb21-11"><a></a><span class="fu">nrow</span>(</span>
-<span id="cb21-12"><a></a>  anal_beads<span class="sc">$</span>edges <span class="sc">|&gt;</span></span>
+<span id="cb21-12"><a></a>  AnalBeads<span class="sc">$</span>edges <span class="sc">|&gt;</span></span>
 <span id="cb21-13"><a></a>  dplyr<span class="sc">::</span><span class="fu">inner_join</span>(expected_datum)</span>
 <span id="cb21-14"><a></a>) <span class="sc">&gt;</span> <span class="dv">0</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] TRUE</code></pre>
+<div class="cell-output cell-output-error">
+<pre><code>Error in `dplyr::inner_join()`:
+! `by` must be supplied when `x` and `y` have no common variables.
+ℹ Use `cross_join()` to perform a cross-join.</code></pre>
 </div>
 </div>
 </section>
@@ -667,24 +666,19 @@ mooncake_test = "hi Mooncake"</code></pre>
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb25"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a></a><span class="co"># exact columns</span></span>
 <span id="cb25-2"><a></a><span class="fu">all</span>(</span>
-<span id="cb25-3"><a></a>  <span class="fu">colnames</span>(expected_edge) <span class="sc">%in%</span> <span class="fu">colnames</span>(anal_beads<span class="sc">$</span>edges)</span>
+<span id="cb25-3"><a></a>  <span class="fu">colnames</span>(expected_edge) <span class="sc">%in%</span> <span class="fu">colnames</span>(AnalBeads<span class="sc">$</span>edges)</span>
 <span id="cb25-4"><a></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] TRUE</code></pre>
+<pre><code>[1] FALSE</code></pre>
 </div>
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb27"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a></a><span class="co"># show edges</span></span>
-<span id="cb27-2"><a></a><span class="fu">head</span>(anal_beads<span class="sc">$</span>edges, <span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb27-2"><a></a><span class="fu">head</span>(AnalBeads<span class="sc">$</span>edges, <span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 3 × 2
-  from     to       
-  &lt;chr&gt;    &lt;chr&gt;    
-1 question source   
-2 source   ingest   
-3 ingest   transform</code></pre>
+<pre><code>data frame with 0 columns and 0 rows</code></pre>
 </div>
 </div>
 </section>
@@ -706,7 +700,7 @@ mooncake_test = "hi Mooncake"</code></pre>
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb31"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a></a><span class="co"># exact columns</span></span>
 <span id="cb31-2"><a></a><span class="fu">all</span>(</span>
-<span id="cb31-3"><a></a>  <span class="fu">colnames</span>(expected_nodes) <span class="sc">%in%</span> <span class="fu">colnames</span>(anal_beads<span class="sc">$</span>nodes)</span>
+<span id="cb31-3"><a></a>  <span class="fu">colnames</span>(expected_nodes) <span class="sc">%in%</span> <span class="fu">colnames</span>(AnalBeads<span class="sc">$</span>nodes)</span>
 <span id="cb31-4"><a></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
@@ -715,10 +709,40 @@ mooncake_test = "hi Mooncake"</code></pre>
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb33"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a></a><span class="co"># show edges</span></span>
-<span id="cb33-2"><a></a><span class="fu">head</span>(anal_beads<span class="sc">$</span>nodes, <span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb33-2"><a></a><span class="fu">head</span>(AnalBeads<span class="sc">$</span>nodes, <span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
 <pre><code>data frame with 0 columns and 0 rows</code></pre>
+</div>
+</div>
+</section></section>
+<section>
+<section id="test-fde-test---methods" class="title-slide slide level1 center">
+<h1>Test: FDE Test - methods</h1>
+
+</section>
+<section id="edges" class="slide level2">
+<h2>Edges</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a></a>AnalBeads <span class="ot">&lt;-</span> ButtonCategory<span class="sc">$</span><span class="fu">new</span>()</span>
+<span id="cb35-2"><a></a>AnalBeads<span class="sc">$</span><span class="fu">testEdges</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Test if edge names contain required fields</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>TRUE</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Test if edges are non-empty</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>FALSE</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Edge test passing status:</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] FALSE</code></pre>
 </div>
 </div>
 </section></section>

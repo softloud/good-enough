@@ -1012,14 +1012,14 @@
     "href": "slides/dbt-2025.html#test-fair-data-entity-test-2",
     "title": "ESG Data Governance & Living Analysis Lifescycle",
     "section": "Test: FAIR data entity test",
-    "text": "Test: FAIR data entity test\nCheck the edges are non-empty\n\n\nCode\n# source generator\nsource(\"R/ButtonGenerator.R\")\n\n# generate button graph\nanal_beads &lt;- \n  ButtonGenerator$new()\n\n# Get this test to pass on edges\n\n# non-empty intersection\nnrow(\n  anal_beads$edges |&gt;\n  dplyr::inner_join(expected_datum)\n) &gt; 0\n\n\n[1] TRUE"
+    "text": "Test: FAIR data entity test\nCheck the edges are non-empty\n\n\nCode\n# source generator\nsource(\"R/ButtonCategory.R\")\n\n# generate button graph\nAnalBeads &lt;- \n  ButtonCategory$new()\n\n# Get this test to pass on edges\n\n# non-empty intersection\nnrow(\n  AnalBeads$edges |&gt;\n  dplyr::inner_join(expected_datum)\n) &gt; 0\n\n\nError in `dplyr::inner_join()`:\n! `by` must be supplied when `x` and `y` have no common variables.\nℹ Use `cross_join()` to perform a cross-join."
   },
   {
     "objectID": "slides/dbt-2025.html#test-fair-data-entity-test-3",
     "href": "slides/dbt-2025.html#test-fair-data-entity-test-3",
     "title": "ESG Data Governance & Living Analysis Lifescycle",
     "section": "Test: FAIR data entity test",
-    "text": "Test: FAIR data entity test\nCheck edge column names are as expected\n\n\nCode\n# show expected\nexpected_edge\n\n\n    from        to\n1 ingest transform\n\n\nCode\n# exact columns\nall(\n  colnames(expected_edge) %in% colnames(anal_beads$edges)\n)\n\n\n[1] TRUE\n\n\nCode\n# show edges\nhead(anal_beads$edges, 3)\n\n\n# A tibble: 3 × 2\n  from     to       \n  &lt;chr&gt;    &lt;chr&gt;    \n1 question source   \n2 source   ingest   \n3 ingest   transform"
+    "text": "Test: FAIR data entity test\nCheck edge column names are as expected\n\n\nCode\n# show expected\nexpected_edge\n\n\n    from        to\n1 ingest transform\n\n\nCode\n# exact columns\nall(\n  colnames(expected_edge) %in% colnames(AnalBeads$edges)\n)\n\n\n[1] FALSE\n\n\nCode\n# show edges\nhead(AnalBeads$edges, 3)\n\n\ndata frame with 0 columns and 0 rows"
   },
   {
     "objectID": "slides/dbt-2025.html#test-failed-fair-data-entity-test",
@@ -1033,14 +1033,14 @@
     "href": "slides/dbt-2025.html#test-failed-fair-data-entity-test-1",
     "title": "ESG Data Governance & Living Analysis Lifescycle",
     "section": "Test: failed FAIR data entity test",
-    "text": "Test: failed FAIR data entity test\nCheck the edges are non-empty\n\n\nCode\n# source generator\nsource(\"R/ButtonGenerator.R\")\n\n# generate button graph\nanal_beads &lt;- \n  ButtonGenerator$new()\n\n# Get this test to pass on edges\n\n# non-empty intersection\nnrow(\n  anal_beads$edges |&gt;\n  dplyr::inner_join(expected_datum)\n) &gt; 0\n\n\n[1] TRUE"
+    "text": "Test: failed FAIR data entity test\nCheck the edges are non-empty\n\n\nCode\n# source generator\nsource(\"R/ButtonCategory.R\")\n\n# generate button graph\nAnalBeads &lt;- \n  ButtonCategory$new()\n\n# Get this test to pass on edges\n\n# non-empty intersection\nnrow(\n  AnalBeads$edges |&gt;\n  dplyr::inner_join(expected_datum)\n) &gt; 0\n\n\nError in `dplyr::inner_join()`:\n! `by` must be supplied when `x` and `y` have no common variables.\nℹ Use `cross_join()` to perform a cross-join."
   },
   {
     "objectID": "slides/dbt-2025.html#test-failed-fair-data-entity-test-2",
     "href": "slides/dbt-2025.html#test-failed-fair-data-entity-test-2",
     "title": "ESG Data Governance & Living Analysis Lifescycle",
     "section": "Test: failed FAIR data entity test",
-    "text": "Test: failed FAIR data entity test\nCheck the column names are as expected\n\nRole is a node attribute!\n\n\n\nCode\n# show expected\nexpected_datum\n\n\n    from        to        node_type\n1 ingest transform data engineering\n\n\nCode\n# exact columns\nall(\n  colnames(expected_datum) %in% colnames(anal_beads$edges)\n)\n\n\n[1] FALSE\n\n\nCode\n# show edges\nhead(anal_beads$edges, 3)\n\n\n# A tibble: 3 × 2\n  from     to       \n  &lt;chr&gt;    &lt;chr&gt;    \n1 question source   \n2 source   ingest   \n3 ingest   transform"
+    "text": "Test: failed FAIR data entity test\nCheck the column names are as expected\n\nRole is a node attribute!\n\n\n\nCode\n# show expected\nexpected_datum\n\n\n    from        to        node_type\n1 ingest transform data engineering\n\n\nCode\n# exact columns\nall(\n  colnames(expected_datum) %in% colnames(AnalBeads$edges)\n)\n\n\n[1] FALSE\n\n\nCode\n# show edges\nhead(AnalBeads$edges, 3)\n\n\ndata frame with 0 columns and 0 rows"
   },
   {
     "objectID": "slides/dbt-2025.html#check-edge-column-names-are-as-expected",
@@ -1061,6 +1061,13 @@
     "href": "slides/dbt-2025.html#test-fair-data-entity-test-4",
     "title": "ESG Data Governance & Living Analysis Lifescycle",
     "section": "Test: FAIR data entity test",
-    "text": "Test: FAIR data entity test\nCheck node attributes are as expected\n\n\nCode\n# show expected\nexpected_nodes\n\n\n       name             role\n1    ingest data engineering\n2 transform data engineering\n\n\nCode\n# exact columns\nall(\n  colnames(expected_nodes) %in% colnames(anal_beads$nodes)\n)\n\n\n[1] FALSE\n\n\nCode\n# show edges\nhead(anal_beads$nodes, 3)\n\n\ndata frame with 0 columns and 0 rows"
+    "text": "Test: FAIR data entity test\nCheck node attributes are as expected\n\n\nCode\n# show expected\nexpected_nodes\n\n\n       name             role\n1    ingest data engineering\n2 transform data engineering\n\n\nCode\n# exact columns\nall(\n  colnames(expected_nodes) %in% colnames(AnalBeads$nodes)\n)\n\n\n[1] FALSE\n\n\nCode\n# show edges\nhead(AnalBeads$nodes, 3)\n\n\ndata frame with 0 columns and 0 rows"
+  },
+  {
+    "objectID": "slides/dbt-2025.html#edges",
+    "href": "slides/dbt-2025.html#edges",
+    "title": "ESG Data Governance & Living Analysis Lifescycle",
+    "section": "Edges",
+    "text": "Edges\n\nAnalBeads &lt;- ButtonCategory$new()\nAnalBeads$testEdges()\n\nTest if edge names contain required fields\n\n\nTRUE\n\n\nTest if edges are non-empty\n\n\nFALSE\n\n\nEdge test passing status:\n\n\n[1] FALSE"
   }
 ]

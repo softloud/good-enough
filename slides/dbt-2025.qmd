@@ -88,17 +88,17 @@ Can we validate a single datum?
 
 
 # source generator
-source("R/ButtonGenerator.R")
+source("R/ButtonCategory.R")
 
 # generate button graph
-anal_beads <- 
-  ButtonGenerator$new()
+AnalBeads <- 
+  ButtonCategory$new()
 
 # Get this test to pass on edges
 
 # non-empty intersection
 nrow(
-  anal_beads$edges |>
+  AnalBeads$edges |>
   dplyr::inner_join(expected_datum)
 ) > 0
 
@@ -119,11 +119,11 @@ expected_datum
 
 # exact columns
 all(
-  colnames(expected_datum) %in% colnames(anal_beads$edges)
+  colnames(expected_datum) %in% colnames(AnalBeads$edges)
 )
 
 # show edges
-head(anal_beads$edges, 3)
+head(AnalBeads$edges, 3)
 ```
 
 ## Test: FAIR data entity test
@@ -169,17 +169,17 @@ Expected nodes.
 
 
 # source generator
-source("R/ButtonGenerator.R")
+source("R/ButtonCategory.R")
 
 # generate button graph
-anal_beads <- 
-  ButtonGenerator$new()
+AnalBeads <- 
+  ButtonCategory$new()
 
 # Get this test to pass on edges
 
 # non-empty intersection
 nrow(
-  anal_beads$edges |>
+  AnalBeads$edges |>
   dplyr::inner_join(expected_datum)
 ) > 0
 
@@ -197,11 +197,11 @@ expected_edge
 
 # exact columns
 all(
-  colnames(expected_edge) %in% colnames(anal_beads$edges)
+  colnames(expected_edge) %in% colnames(AnalBeads$edges)
 )
 
 # show edges
-head(anal_beads$edges, 3)
+head(AnalBeads$edges, 3)
 ```
 
 ## Test: FAIR data entity test
@@ -216,12 +216,26 @@ expected_nodes
 
 # exact columns
 all(
-  colnames(expected_nodes) %in% colnames(anal_beads$nodes)
+  colnames(expected_nodes) %in% colnames(AnalBeads$nodes)
 )
 
 # show edges
-head(anal_beads$nodes, 3)
+head(AnalBeads$nodes, 3)
 ```
 
+# Test: FDE Test - methods
+
+## Edges
+
+```{r}
+#| code-fold: false
+#| message: true
+AnalBeads <- ButtonCategory$new()
+AnalBeads$testEdges()
+
+```
+
+```{r}
+```
 
 # References

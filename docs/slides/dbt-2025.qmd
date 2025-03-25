@@ -76,11 +76,11 @@ Can we validate a single datum?
 
 
 # source generator
-source("R/ButtonGenerator.R")
+source("R/ButtonCategory.R")
 
 # generate button graph
 anal_beads <- 
-  ButtonGenerator$new()
+  ButtonCategory$new()
 
 # Get this test to pass on edges
 
@@ -157,11 +157,11 @@ Expected nodes.
 
 
 # source generator
-source("R/ButtonGenerator.R")
+source("R/ButtonCategory.R")
 
 # generate button graph
 anal_beads <- 
-  ButtonGenerator$new()
+  ButtonCategory$new()
 
 # Get this test to pass on edges
 
