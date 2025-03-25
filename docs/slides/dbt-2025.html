@@ -95,27 +95,7 @@
     code span.va { color: #111111; } /* Variable */
     code span.vs { color: #20794d; } /* VerbatimString */
     code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
-    /* CSS for citations */
-    div.csl-bib-body { }
-    div.csl-entry {
-      clear: both;
-      margin-bottom: 0em;
-    }
-    .hanging-indent div.csl-entry {
-      margin-left:2em;
-      text-indent:-2em;
-    }
-    div.csl-left-margin {
-      min-width:2em;
-      float:left;
-    }
-    div.csl-right-inline {
-      margin-left:2em;
-      padding-left:1em;
-    }
-    div.csl-indent {
-      margin-left: 2em;
-    }  </style>
+  </style>
   <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
@@ -406,6 +386,11 @@
       margin-right: 0; 
     }
   </style>
+  <link href="../site_libs/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet">
+  <script src="../site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+  <script src="../site_libs/viz-1.8.2/viz.js"></script>
+  <link href="../site_libs/DiagrammeR-styles-0.2/styles.css" rel="stylesheet">
+  <script src="../site_libs/grViz-binding-1.0.11/grViz.js"></script>
 </head>
 <body class="quarto-light">
   <div class="reveal">
@@ -425,21 +410,12 @@ Charles T. Gray, PhD – Datapunk
 
   <p class="date">2025-03-26</p>
 </section>
-<section id="ceci-nest-pas-un-datum" class="title-slide slide level1 center">
-<h1>Ceci n’est pas un datum</h1>
-<div id="fig-stonehenge" class="quarto-figure quarto-figure-center quarto-float">
-<figure class="quarto-float quarto-float-fig">
-<div aria-describedby="fig-stonehenge-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<iframe src="https://www.youtube.com/embed/Pyh1Va_mYWI?si=ieVcPdnxgQ83lMGJ&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="">
-</iframe>
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-stonehenge-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;1: <em>Nigel gave me a drawing that said 18 inches. Now, whether or not he knows the difference between feet and inches is not my problem. I do what I’m told.</em> – Ian Faith, <em>This is Spinal Tap</em> <span class="citation" data-cites="reiner_this_1984">(<a href="#/references" role="doc-biblioref" onclick="">Reiner 1984</a>)</span>.
-</figcaption>
-</figure>
+<section id="ceci-nest-pas-un-datum" class="slide level2">
+<h2>Ceci n’est pas un datum</h2>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; margin-bottom: 2em;">
+<p><iframe src="https://www.youtube.com/embed/Pyh1Va_mYWI?si=ieVcPdnxgQ83lMGJ&amp;controls=0" title="YouTube video player" style="position: absolute; top: 0; left: 0; width: 70%; height: 70%; margin: auto; right: 0; bottom: 0;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""> </iframe></p>
 </div>
 </section>
-
 <section>
 <section id="tests-on-the-presheaf-of-visualisations" class="title-slide slide level1 center">
 <h1>Tests (<em>on the presheaf of visualisations</em>)</h1>
@@ -458,6 +434,9 @@ Figure&nbsp;1: <em>Nigel gave me a drawing that said 18 inches. Now, whether or 
 <pre><code>[1] "/home/cantabile/Documents/repos/good-enough"</code></pre>
 </div>
 </div>
+</section>
+<section class="slide level2">
+
 <p>What am I testing?</p>
 <div class="cell">
 <details class="code-fold">
@@ -484,8 +463,286 @@ mooncake_test = "hi Mooncake"</code></pre>
 </div>
 </div>
 </section>
-<section id="test-fair-data-entity-test" class="slide level2">
-<h2>Test: FAIR data entity test</h2>
+<section id="identity-tests" class="slide level2">
+<h2><em>Identity tests</em></h2>
+<p>Can we validate a single datum?</p>
+<blockquote>
+<p>I expect there to be a node <code>ingest</code> that goes to a node <code>transform</code> representing <code>data engineering</code> tasks in the <code>expected</code> instance of living analysis lifecycle.</p>
+</blockquote>
+<div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a></a><span class="co"># source generator</span></span>
+<span id="cb7-2"><a></a><span class="fu">source</span>(<span class="st">"R/ButtonCategory.R"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+</section>
+<section id="test-edges" class="slide level2">
+<h2>Test edges</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a></a>AnalBeadsEdges <span class="ot">&lt;-</span> ButtonEdgeDesignCategory<span class="sc">$</span><span class="fu">new</span>()</span>
+<span id="cb8-2"><a></a>AnalBeadsEdges<span class="sc">$</span><span class="fu">testEdges</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Test if edge names contain required fields:</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>TRUE</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Test if edges are non-empty:</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>TRUE</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Edge test passing status:</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] TRUE</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a></a>dplyr<span class="sc">::</span><span class="fu">sample_n</span>(AnalBeadsEdges<span class="sc">$</span>edges, <span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 3 × 2
+  from      to      
+  &lt;chr&gt;     &lt;chr&gt;   
+1 document  analyse 
+2 transform validate
+3 source    ingest  </code></pre>
+</div>
+</div>
+</section>
+<section class="slide level2">
+
+<div class="cell">
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a></a>HairyAnalBeadsEdges <span class="ot">&lt;-</span> ButtonEdgeDesignCategory<span class="sc">$</span><span class="fu">new</span>(</span>
+<span id="cb17-2"><a></a>  <span class="at">preset =</span> <span class="st">"hairy_anal_beads"</span>)</span>
+<span id="cb17-3"><a></a>HairyAnalBeadsEdges<span class="sc">$</span><span class="fu">testEdges</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Test if edge names contain required fields:</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>TRUE</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Test if edges are non-empty:</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>TRUE</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Edge test passing status:</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] TRUE</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a></a>dplyr<span class="sc">::</span><span class="fu">sample_n</span>(HairyAnalBeadsEdges<span class="sc">$</span>edges, <span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 3 × 5
+  from      to        reason                        reason_na project_integrity
+  &lt;chr&gt;     &lt;chr&gt;     &lt;chr&gt;                         &lt;lgl&gt;     &lt;chr&gt;            
+1 interpret transform "measure\nmisunderstood"      FALSE     actioned         
+2 analyse   transform "needs different\ndata shape" FALSE     actioned         
+3 transform validate  ""                            TRUE      backlog          </code></pre>
+</div>
+</div>
+</section>
+<section id="nodes-identity-test-on-nodes" class="slide level2">
+<h2>Nodes: <em>Identity test on nodes</em></h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a></a>AnalBeadsNodes <span class="ot">&lt;-</span> ButtonNodeDesignCategory<span class="sc">$</span><span class="fu">new</span>()</span>
+<span id="cb26-2"><a></a>AnalBeadsNodes<span class="sc">$</span><span class="fu">testNodes</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Test if node names contain required fields:</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>TRUE</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Test if nodes are non-empty:</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>TRUE</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Edge test passing status:</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] TRUE</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a></a>dplyr<span class="sc">::</span><span class="fu">sample_n</span>(AnalBeadsNodes<span class="sc">$</span>nodes, <span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 3 × 1
+  node     
+  &lt;chr&gt;    
+1 question 
+2 document 
+3 transform</code></pre>
+</div>
+</div>
+</section>
+<section class="slide level2">
+
+<div class="cell">
+<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a></a>HairyAnalBeadsNodes <span class="ot">&lt;-</span> ButtonNodeDesignCategory<span class="sc">$</span><span class="fu">new</span>(</span>
+<span id="cb35-2"><a></a>  <span class="at">preset =</span> <span class="st">"hairy_anal_beads"</span>)</span>
+<span id="cb35-3"><a></a>HairyAnalBeadsNodes<span class="sc">$</span><span class="fu">testNodes</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Test if node names contain required fields:</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>TRUE</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Test if nodes are non-empty:</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>TRUE</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Edge test passing status:</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] TRUE</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb42"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb42-1"><a></a>dplyr<span class="sc">::</span><span class="fu">sample_n</span>(HairyAnalBeadsNodes<span class="sc">$</span>nodes, <span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 3 × 1
+  node    
+  &lt;chr&gt;   
+1 ingest  
+2 source  
+3 document</code></pre>
+</div>
+</div>
+</section>
+<section class="slide level2">
+
+<div class="cell">
+<div class="sourceCode cell-code" id="cb44"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb44-1"><a></a>AnalBeads <span class="ot">&lt;-</span> ButtonCategory<span class="sc">$</span><span class="fu">new</span>(<span class="at">preset =</span> <span class="st">"anal_beads"</span>)</span>
+<span id="cb44-2"><a></a>AnalBeads<span class="sc">$</span><span class="fu">testNodes</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Test if node names contain required fields:</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>TRUE</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Test if nodes are non-empty:</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>TRUE</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Edge test passing status:</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] TRUE</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb51"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb51-1"><a></a>dplyr<span class="sc">::</span><span class="fu">sample_n</span>(AnalBeads<span class="sc">$</span>nodes, <span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 3 × 1
+  node    
+  &lt;chr&gt;   
+1 source  
+2 question
+3 decision</code></pre>
+</div>
+</div>
+</section>
+<section class="slide level2">
+
+<div class="cell">
+<div class="sourceCode cell-code" id="cb53"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb53-1"><a></a>HairyAnalBeads <span class="ot">&lt;-</span> ButtonCategory<span class="sc">$</span><span class="fu">new</span>(<span class="at">preset =</span> <span class="st">"hairy_anal_beads"</span>)</span>
+<span id="cb53-2"><a></a>HairyAnalBeads<span class="sc">$</span><span class="fu">testNodes</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Test if node names contain required fields:</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>TRUE</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Test if nodes are non-empty:</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>TRUE</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Edge test passing status:</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] TRUE</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb60"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb60-1"><a></a>dplyr<span class="sc">::</span><span class="fu">sample_n</span>(HairyAnalBeads<span class="sc">$</span>nodes, <span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 3 × 1
+  node     
+  &lt;chr&gt;    
+1 interpret
+2 decision 
+3 ingest   </code></pre>
+</div>
+</div>
+</section>
+<section id="graph" class="slide level2">
+<h2>graph</h2>
+<div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb62"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb62-1"><a></a>to_dot <span class="ot">&lt;-</span> <span class="cf">function</span>(nodes, edges) {</span>
+<span id="cb62-2"><a></a>  <span class="co"># Convert node rows to DOT node declarations</span></span>
+<span id="cb62-3"><a></a>  node_lines <span class="ot">&lt;-</span> <span class="fu">apply</span>(nodes, <span class="dv">1</span>, <span class="cf">function</span>(row) {</span>
+<span id="cb62-4"><a></a>    <span class="fu">paste0</span>(</span>
+<span id="cb62-5"><a></a>      <span class="st">'"'</span>, row[[<span class="st">"node"</span>]], </span>
+<span id="cb62-6"><a></a>      <span class="st">'" [style=filled, fillcolor="'</span>, row[[<span class="st">"node_colour"</span>]], </span>
+<span id="cb62-7"><a></a>      <span class="st">'", shape=box];'</span></span>
+<span id="cb62-8"><a></a>    )</span>
+<span id="cb62-9"><a></a>  })</span>
+<span id="cb62-10"><a></a></span>
+<span id="cb62-11"><a></a>  <span class="co"># Convert edge rows to DOT edge declarations</span></span>
+<span id="cb62-12"><a></a>  edge_lines <span class="ot">&lt;-</span> <span class="fu">apply</span>(edges, <span class="dv">1</span>, <span class="cf">function</span>(row) {</span>
+<span id="cb62-13"><a></a>    <span class="fu">paste0</span>(</span>
+<span id="cb62-14"><a></a>      <span class="st">'"'</span>, row[[<span class="st">"from"</span>]], </span>
+<span id="cb62-15"><a></a>      <span class="st">'" -&gt; "'</span>, row[[<span class="st">"to"</span>]], </span>
+<span id="cb62-16"><a></a>      <span class="st">'" [style='</span>, row[[<span class="st">"line_type"</span>]], <span class="st">'];'</span></span>
+<span id="cb62-17"><a></a>    )</span>
+<span id="cb62-18"><a></a>  })</span>
+<span id="cb62-19"><a></a></span>
+<span id="cb62-20"><a></a>  <span class="co"># Wrap into DOT format</span></span>
+<span id="cb62-21"><a></a>  dot_code <span class="ot">&lt;-</span> <span class="fu">paste0</span>(</span>
+<span id="cb62-22"><a></a>    <span class="st">"digraph {</span><span class="sc">\n</span><span class="st">  rankdir=LR;</span><span class="sc">\n</span><span class="st">  node [fontname=Helvetica];</span><span class="sc">\n</span><span class="st">  "</span>,</span>
+<span id="cb62-23"><a></a>    <span class="fu">paste</span>(node_lines, <span class="at">collapse =</span> <span class="st">"</span><span class="sc">\n</span><span class="st">  "</span>), <span class="st">"</span><span class="sc">\n</span><span class="st">  "</span>,</span>
+<span id="cb62-24"><a></a>    <span class="fu">paste</span>(edge_lines, <span class="at">collapse =</span> <span class="st">"</span><span class="sc">\n</span><span class="st">  "</span>), <span class="st">"</span><span class="sc">\n</span><span class="st">}"</span></span>
+<span id="cb62-25"><a></a>  )</span>
+<span id="cb62-26"><a></a></span>
+<span id="cb62-27"><a></a>  <span class="fu">return</span>(dot_code)</span>
+<span id="cb62-28"><a></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb63"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb63-1"><a></a><span class="co"># Add example styling columns</span></span>
+<span id="cb63-2"><a></a>AnalBeads<span class="sc">$</span>nodes<span class="sc">$</span>node_colour <span class="ot">&lt;-</span> <span class="st">"lightblue"</span></span>
+<span id="cb63-3"><a></a>AnalBeads<span class="sc">$</span>edges<span class="sc">$</span>line_type <span class="ot">&lt;-</span> <span class="st">"solid"</span></span>
+<span id="cb63-4"><a></a></span>
+<span id="cb63-5"><a></a><span class="co"># Generate DOT code</span></span>
+<span id="cb63-6"><a></a>dot_code <span class="ot">&lt;-</span> <span class="fu">to_dot</span>(</span>
+<span id="cb63-7"><a></a>  <span class="at">nodes =</span> AnalBeads<span class="sc">$</span>nodes,</span>
+<span id="cb63-8"><a></a>  <span class="at">edges =</span> AnalBeads<span class="sc">$</span>edges</span>
+<span id="cb63-9"><a></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</section>
+<section class="slide level2">
+
+<div class="cell">
+<div class="cell-output-display">
+<div class="grViz html-widget html-fill-item" id="htmlwidget-b1cc6571ccdbda089810" style="width:960px;height:768px;"></div>
+<script type="application/json" data-for="htmlwidget-b1cc6571ccdbda089810">{"x":{"diagram":"digraph {\n  rankdir=LR;\n  node [fontname=Helvetica];\n  \"source\" [style=filled, fillcolor=\"lightblue\", shape=box];\n  \"ingest\" [style=filled, fillcolor=\"lightblue\", shape=box];\n  \"transform\" [style=filled, fillcolor=\"lightblue\", shape=box];\n  \"validate\" [style=filled, fillcolor=\"lightblue\", shape=box];\n  \"document\" [style=filled, fillcolor=\"lightblue\", shape=box];\n  \"analyse\" [style=filled, fillcolor=\"lightblue\", shape=box];\n  \"interpret\" [style=filled, fillcolor=\"lightblue\", shape=box];\n  \"decision\" [style=filled, fillcolor=\"lightblue\", shape=box];\n  \"question\" [style=filled, fillcolor=\"lightblue\", shape=box];\n  \"question\" -> \"source\" [style=solid];\n  \"source\" -> \"ingest\" [style=solid];\n  \"ingest\" -> \"transform\" [style=solid];\n  \"transform\" -> \"validate\" [style=solid];\n  \"validate\" -> \"document\" [style=solid];\n  \"document\" -> \"analyse\" [style=solid];\n  \"analyse\" -> \"interpret\" [style=solid];\n  \"interpret\" -> \"decision\" [style=solid];\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</section></section>
+<section>
+<section id="earlier-tests" class="title-slide slide level1 center">
+<h1>Earlier tests</h1>
 <p><em>Identity test on edge object.</em></p>
 <p>Can we validate a single datum?</p>
 <blockquote>
@@ -498,16 +755,16 @@ mooncake_test = "hi Mooncake"</code></pre>
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a></a><span class="co"># Create the expected datum for testing</span></span>
-<span id="cb7-2"><a></a><span class="co"># Expecting an edge from "ingest" to "transform" as part of the "data engineering" process</span></span>
-<span id="cb7-3"><a></a></span>
-<span id="cb7-4"><a></a>(</span>
-<span id="cb7-5"><a></a>  expected_datum <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
-<span id="cb7-6"><a></a>    <span class="at">from =</span> <span class="st">"ingest"</span>,</span>
-<span id="cb7-7"><a></a>    <span class="at">to =</span> <span class="st">"transform"</span>,</span>
-<span id="cb7-8"><a></a>    <span class="at">node_type =</span> <span class="st">"data engineering"</span></span>
-<span id="cb7-9"><a></a>  )</span>
-<span id="cb7-10"><a></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb64"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb64-1"><a></a><span class="co"># Create the expected datum for testing</span></span>
+<span id="cb64-2"><a></a><span class="co"># Expecting an edge from "ingest" to "transform" as part of the "data engineering" process</span></span>
+<span id="cb64-3"><a></a></span>
+<span id="cb64-4"><a></a>(</span>
+<span id="cb64-5"><a></a>  expected_datum <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
+<span id="cb64-6"><a></a>    <span class="at">from =</span> <span class="st">"ingest"</span>,</span>
+<span id="cb64-7"><a></a>    <span class="at">to =</span> <span class="st">"transform"</span>,</span>
+<span id="cb64-8"><a></a>    <span class="at">node_type =</span> <span class="st">"data engineering"</span></span>
+<span id="cb64-9"><a></a>  )</span>
+<span id="cb64-10"><a></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
 <pre><code>    from        to        node_type
@@ -517,27 +774,29 @@ mooncake_test = "hi Mooncake"</code></pre>
 </section>
 <section id="test-failed-fair-data-entity-test-1" class="slide level2">
 <h2>Test: failed FAIR data entity test</h2>
-<h3 id="check-the-edges-are-non-empty">Check the edges are non-empty</h3>
+<h3 id="check-the-nodes-are-non-empty">Check the Nodes are non-empty</h3>
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a></a><span class="co"># source generator</span></span>
-<span id="cb9-2"><a></a><span class="fu">source</span>(<span class="st">"R/ButtonCategory.R"</span>)</span>
-<span id="cb9-3"><a></a></span>
-<span id="cb9-4"><a></a><span class="co"># generate button graph</span></span>
-<span id="cb9-5"><a></a>AnalBeads <span class="ot">&lt;-</span> </span>
-<span id="cb9-6"><a></a>  ButtonCategory<span class="sc">$</span><span class="fu">new</span>()</span>
-<span id="cb9-7"><a></a></span>
-<span id="cb9-8"><a></a><span class="co"># Get this test to pass on edges</span></span>
-<span id="cb9-9"><a></a></span>
-<span id="cb9-10"><a></a><span class="co"># non-empty intersection</span></span>
-<span id="cb9-11"><a></a><span class="fu">nrow</span>(</span>
-<span id="cb9-12"><a></a>  AnalBeads<span class="sc">$</span>edges <span class="sc">|&gt;</span></span>
-<span id="cb9-13"><a></a>  dplyr<span class="sc">::</span><span class="fu">inner_join</span>(expected_datum)</span>
-<span id="cb9-14"><a></a>) <span class="sc">&gt;</span> <span class="dv">0</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb66"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb66-1"><a></a><span class="co"># source generator</span></span>
+<span id="cb66-2"><a></a><span class="fu">source</span>(<span class="st">"R/ButtonCategory.R"</span>)</span>
+<span id="cb66-3"><a></a></span>
+<span id="cb66-4"><a></a><span class="co"># generate button graph</span></span>
+<span id="cb66-5"><a></a>AnalBeads <span class="ot">&lt;-</span> </span>
+<span id="cb66-6"><a></a>  ButtonCategory<span class="sc">$</span><span class="fu">new</span>()</span>
+<span id="cb66-7"><a></a></span>
+<span id="cb66-8"><a></a><span class="co"># Get this test to pass on Nodes</span></span>
+<span id="cb66-9"><a></a></span>
+<span id="cb66-10"><a></a><span class="co"># non-empty intersection</span></span>
+<span id="cb66-11"><a></a><span class="fu">nrow</span>(</span>
+<span id="cb66-12"><a></a>  AnalBeads<span class="sc">$</span>nodes <span class="sc">|&gt;</span></span>
+<span id="cb66-13"><a></a>  dplyr<span class="sc">::</span><span class="fu">inner_join</span>(expected_datum)</span>
+<span id="cb66-14"><a></a>) <span class="sc">&gt;</span> <span class="dv">0</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] TRUE</code></pre>
+<div class="cell-output cell-output-error">
+<pre><code>Error in `dplyr::inner_join()`:
+! `by` must be supplied when `x` and `y` have no common variables.
+ℹ Use `cross_join()` to perform a cross-join.</code></pre>
 </div>
 </div>
 </section>
@@ -550,8 +809,8 @@ mooncake_test = "hi Mooncake"</code></pre>
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a></a><span class="co"># show expected</span></span>
-<span id="cb11-2"><a></a>expected_datum</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb68"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb68-1"><a></a><span class="co"># show expected</span></span>
+<span id="cb68-2"><a></a>expected_datum</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
 <pre><code>    from        to        node_type
@@ -559,45 +818,45 @@ mooncake_test = "hi Mooncake"</code></pre>
 </div>
 <details class="code-fold">
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a></a><span class="co"># exact columns</span></span>
-<span id="cb13-2"><a></a><span class="fu">all</span>(</span>
-<span id="cb13-3"><a></a>  <span class="fu">colnames</span>(expected_datum) <span class="sc">%in%</span> <span class="fu">colnames</span>(AnalBeads<span class="sc">$</span>edges)</span>
-<span id="cb13-4"><a></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb70"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb70-1"><a></a><span class="co"># exact columns</span></span>
+<span id="cb70-2"><a></a><span class="fu">all</span>(</span>
+<span id="cb70-3"><a></a>  <span class="fu">colnames</span>(expected_datum) <span class="sc">%in%</span> <span class="fu">colnames</span>(AnalBeads<span class="sc">$</span>nodes)</span>
+<span id="cb70-4"><a></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] FALSE</code></pre>
 </div>
 <details class="code-fold">
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a></a><span class="co"># show edges</span></span>
-<span id="cb15-2"><a></a><span class="fu">head</span>(AnalBeads<span class="sc">$</span>edges, <span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb72"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb72-1"><a></a><span class="co"># show Nodes</span></span>
+<span id="cb72-2"><a></a><span class="fu">head</span>(AnalBeads<span class="sc">$</span>nodes, <span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 3 × 2
-  from     to       
-  &lt;chr&gt;    &lt;chr&gt;    
-1 question source   
-2 source   ingest   
-3 ingest   transform</code></pre>
+<pre><code># A tibble: 3 × 1
+  node     
+  &lt;chr&gt;    
+1 source   
+2 ingest   
+3 transform</code></pre>
 </div>
 </div>
 </section>
-<section id="test-fair-data-entity-test-1" class="slide level2">
+<section id="test-fair-data-entity-test" class="slide level2">
 <h2>Test: FAIR data entity test</h2>
 <h3 id="expectations-1">Expectations</h3>
-<p>Expected edges.</p>
+<p>Expected Nodes.</p>
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a></a><span class="co"># Create the expected datum for testing</span></span>
-<span id="cb17-2"><a></a><span class="co"># Expecting an edge from "ingest" to "transform" as part of the "data engineering" process</span></span>
-<span id="cb17-3"><a></a></span>
-<span id="cb17-4"><a></a>(</span>
-<span id="cb17-5"><a></a>  expected_edge <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
-<span id="cb17-6"><a></a>    <span class="at">from =</span> <span class="st">"ingest"</span>,</span>
-<span id="cb17-7"><a></a>    <span class="at">to =</span> <span class="st">"transform"</span></span>
-<span id="cb17-8"><a></a>  )</span>
-<span id="cb17-9"><a></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb74"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb74-1"><a></a><span class="co"># Create the expected datum for testing</span></span>
+<span id="cb74-2"><a></a><span class="co"># Expecting an edge from "ingest" to "transform" as part of the "data engineering" process</span></span>
+<span id="cb74-3"><a></a></span>
+<span id="cb74-4"><a></a>(</span>
+<span id="cb74-5"><a></a>  expected_edge <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
+<span id="cb74-6"><a></a>    <span class="at">from =</span> <span class="st">"ingest"</span>,</span>
+<span id="cb74-7"><a></a>    <span class="at">to =</span> <span class="st">"transform"</span></span>
+<span id="cb74-8"><a></a>  )</span>
+<span id="cb74-9"><a></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
 <pre><code>    from        to
@@ -608,14 +867,14 @@ mooncake_test = "hi Mooncake"</code></pre>
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a></a><span class="co"># create expected nodes</span></span>
-<span id="cb19-2"><a></a></span>
-<span id="cb19-3"><a></a>(</span>
-<span id="cb19-4"><a></a>  expected_nodes <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
-<span id="cb19-5"><a></a>    <span class="at">name =</span> <span class="fu">c</span>(<span class="st">"ingest"</span>, <span class="st">"transform"</span>)</span>
-<span id="cb19-6"><a></a>  ) <span class="sc">|&gt;</span></span>
-<span id="cb19-7"><a></a>    dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">role =</span> <span class="st">"data engineering"</span>)</span>
-<span id="cb19-8"><a></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb76"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb76-1"><a></a><span class="co"># create expected nodes</span></span>
+<span id="cb76-2"><a></a></span>
+<span id="cb76-3"><a></a>(</span>
+<span id="cb76-4"><a></a>  expected_nodes <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
+<span id="cb76-5"><a></a>    <span class="at">name =</span> <span class="fu">c</span>(<span class="st">"ingest"</span>, <span class="st">"transform"</span>)</span>
+<span id="cb76-6"><a></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb76-7"><a></a>    dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">role =</span> <span class="st">"data engineering"</span>)</span>
+<span id="cb76-8"><a></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
 <pre><code>       name             role
@@ -624,40 +883,42 @@ mooncake_test = "hi Mooncake"</code></pre>
 </div>
 </div>
 </section>
-<section id="test-fair-data-entity-test-2" class="slide level2">
+<section id="test-fair-data-entity-test-1" class="slide level2">
 <h2>Test: FAIR data entity test</h2>
-<h3 id="check-the-edges-are-non-empty-1">Check the edges are non-empty</h3>
+<h3 id="check-the-nodes-are-non-empty-1">Check the Nodes are non-empty</h3>
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a></a><span class="co"># source generator</span></span>
-<span id="cb21-2"><a></a><span class="fu">source</span>(<span class="st">"R/ButtonCategory.R"</span>)</span>
-<span id="cb21-3"><a></a></span>
-<span id="cb21-4"><a></a><span class="co"># generate button graph</span></span>
-<span id="cb21-5"><a></a>AnalBeads <span class="ot">&lt;-</span> </span>
-<span id="cb21-6"><a></a>  ButtonCategory<span class="sc">$</span><span class="fu">new</span>()</span>
-<span id="cb21-7"><a></a></span>
-<span id="cb21-8"><a></a><span class="co"># Get this test to pass on edges</span></span>
-<span id="cb21-9"><a></a></span>
-<span id="cb21-10"><a></a><span class="co"># non-empty intersection</span></span>
-<span id="cb21-11"><a></a><span class="fu">nrow</span>(</span>
-<span id="cb21-12"><a></a>  AnalBeads<span class="sc">$</span>edges <span class="sc">|&gt;</span></span>
-<span id="cb21-13"><a></a>  dplyr<span class="sc">::</span><span class="fu">inner_join</span>(expected_datum)</span>
-<span id="cb21-14"><a></a>) <span class="sc">&gt;</span> <span class="dv">0</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb78"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb78-1"><a></a><span class="co"># source generator</span></span>
+<span id="cb78-2"><a></a><span class="fu">source</span>(<span class="st">"R/ButtonCategory.R"</span>)</span>
+<span id="cb78-3"><a></a></span>
+<span id="cb78-4"><a></a><span class="co"># generate button graph</span></span>
+<span id="cb78-5"><a></a>AnalBeads <span class="ot">&lt;-</span> </span>
+<span id="cb78-6"><a></a>  ButtonCategory<span class="sc">$</span><span class="fu">new</span>()</span>
+<span id="cb78-7"><a></a></span>
+<span id="cb78-8"><a></a><span class="co"># Get this test to pass on Nodes</span></span>
+<span id="cb78-9"><a></a></span>
+<span id="cb78-10"><a></a><span class="co"># non-empty intersection</span></span>
+<span id="cb78-11"><a></a><span class="fu">nrow</span>(</span>
+<span id="cb78-12"><a></a>  AnalBeads<span class="sc">$</span>nodes <span class="sc">|&gt;</span></span>
+<span id="cb78-13"><a></a>  dplyr<span class="sc">::</span><span class="fu">inner_join</span>(expected_datum)</span>
+<span id="cb78-14"><a></a>) <span class="sc">&gt;</span> <span class="dv">0</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] TRUE</code></pre>
+<div class="cell-output cell-output-error">
+<pre><code>Error in `dplyr::inner_join()`:
+! `by` must be supplied when `x` and `y` have no common variables.
+ℹ Use `cross_join()` to perform a cross-join.</code></pre>
 </div>
 </div>
 </section>
-<section id="test-fair-data-entity-test-3" class="slide level2">
+<section id="test-fair-data-entity-test-2" class="slide level2">
 <h2>Test: FAIR data entity test</h2>
 <p>Check edge column names are as expected</p>
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a></a><span class="co"># show expected</span></span>
-<span id="cb23-2"><a></a>expected_edge</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb80"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb80-1"><a></a><span class="co"># show expected</span></span>
+<span id="cb80-2"><a></a>expected_edge</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
 <pre><code>    from        to
@@ -665,37 +926,37 @@ mooncake_test = "hi Mooncake"</code></pre>
 </div>
 <details class="code-fold">
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a></a><span class="co"># exact columns</span></span>
-<span id="cb25-2"><a></a><span class="fu">all</span>(</span>
-<span id="cb25-3"><a></a>  <span class="fu">colnames</span>(expected_edge) <span class="sc">%in%</span> <span class="fu">colnames</span>(AnalBeads<span class="sc">$</span>edges)</span>
-<span id="cb25-4"><a></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb82"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb82-1"><a></a><span class="co"># exact columns</span></span>
+<span id="cb82-2"><a></a><span class="fu">all</span>(</span>
+<span id="cb82-3"><a></a>  <span class="fu">colnames</span>(expected_edge) <span class="sc">%in%</span> <span class="fu">colnames</span>(AnalBeads<span class="sc">$</span>nodes)</span>
+<span id="cb82-4"><a></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] TRUE</code></pre>
+<pre><code>[1] FALSE</code></pre>
 </div>
 <details class="code-fold">
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a></a><span class="co"># show edges</span></span>
-<span id="cb27-2"><a></a><span class="fu">head</span>(AnalBeads<span class="sc">$</span>edges, <span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb84"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb84-1"><a></a><span class="co"># show Nodes</span></span>
+<span id="cb84-2"><a></a><span class="fu">head</span>(AnalBeads<span class="sc">$</span>nodes, <span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 3 × 2
-  from     to       
-  &lt;chr&gt;    &lt;chr&gt;    
-1 question source   
-2 source   ingest   
-3 ingest   transform</code></pre>
+<pre><code># A tibble: 3 × 1
+  node     
+  &lt;chr&gt;    
+1 source   
+2 ingest   
+3 transform</code></pre>
 </div>
 </div>
 </section>
-<section id="test-fair-data-entity-test-4" class="slide level2">
+<section id="test-fair-data-entity-test-3" class="slide level2">
 <h2>Test: FAIR data entity test</h2>
 <p>Check node attributes are as expected</p>
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a></a><span class="co"># show expected</span></span>
-<span id="cb29-2"><a></a>expected_nodes</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb86"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb86-1"><a></a><span class="co"># show expected</span></span>
+<span id="cb86-2"><a></a>expected_nodes</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
 <pre><code>       name             role
@@ -704,108 +965,35 @@ mooncake_test = "hi Mooncake"</code></pre>
 </div>
 <details class="code-fold">
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a></a><span class="co"># exact columns</span></span>
-<span id="cb31-2"><a></a><span class="fu">all</span>(</span>
-<span id="cb31-3"><a></a>  <span class="fu">colnames</span>(expected_nodes) <span class="sc">%in%</span> <span class="fu">colnames</span>(AnalBeads<span class="sc">$</span>nodes)</span>
-<span id="cb31-4"><a></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb88"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb88-1"><a></a><span class="co"># exact columns</span></span>
+<span id="cb88-2"><a></a><span class="fu">all</span>(</span>
+<span id="cb88-3"><a></a>  <span class="fu">colnames</span>(expected_nodes) <span class="sc">%in%</span> <span class="fu">colnames</span>(AnalBeads<span class="sc">$</span>nodes)</span>
+<span id="cb88-4"><a></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] FALSE</code></pre>
 </div>
 <details class="code-fold">
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a></a><span class="co"># show edges</span></span>
-<span id="cb33-2"><a></a><span class="fu">head</span>(AnalBeads<span class="sc">$</span>nodes, <span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb90"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb90-1"><a></a><span class="co"># show Nodes</span></span>
+<span id="cb90-2"><a></a><span class="fu">head</span>(AnalBeads<span class="sc">$</span>nodes, <span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
-<pre><code>data frame with 0 columns and 0 rows</code></pre>
+<pre><code># A tibble: 3 × 1
+  node     
+  &lt;chr&gt;    
+1 source   
+2 ingest   
+3 transform</code></pre>
 </div>
 </div>
 </section></section>
-<section>
-<section id="test-fde-test---methods" class="title-slide slide level1 center">
-<h1>Test: FDE Test - methods</h1>
-
-</section>
-<section id="edges" class="slide level2">
-<h2>Edges</h2>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a></a>AnalBeads <span class="ot">&lt;-</span> ButtonCategory<span class="sc">$</span><span class="fu">new</span>(<span class="at">preset =</span> <span class="st">"anal_beads"</span>)</span>
-<span id="cb35-2"><a></a>AnalBeads<span class="sc">$</span><span class="fu">testEdges</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Test if edge names contain required fields</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>TRUE</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Test if edges are non-empty</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>TRUE</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Edge test passing status:</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] TRUE</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb42"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb42-1"><a></a>dplyr<span class="sc">::</span><span class="fu">sample_n</span>(AnalBeads<span class="sc">$</span>edges, <span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 3 × 2
-  from      to      
-  &lt;chr&gt;     &lt;chr&gt;   
-1 interpret decision
-2 document  analyse 
-3 source    ingest  </code></pre>
-</div>
-</div>
-</section>
-<section class="slide level2">
-
-<div class="cell">
-<div class="sourceCode cell-code" id="cb44"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb44-1"><a></a>HairyAnalBeads <span class="ot">&lt;-</span> ButtonCategory<span class="sc">$</span><span class="fu">new</span>(<span class="at">preset =</span> <span class="st">"hairy_anal_beads"</span>)</span>
-<span id="cb44-2"><a></a>HairyAnalBeads<span class="sc">$</span><span class="fu">testEdges</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Test if edge names contain required fields</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>TRUE</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Test if edges are non-empty</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>TRUE</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Edge test passing status:</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] TRUE</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb51"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb51-1"><a></a>dplyr<span class="sc">::</span><span class="fu">sample_n</span>(HairyAnalBeads<span class="sc">$</span>edges, <span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 3 × 5
-  from      to        reason                       reason_na project_integrity
-  &lt;chr&gt;     &lt;chr&gt;     &lt;chr&gt;                        &lt;lgl&gt;     &lt;chr&gt;            
-1 interpret transform "measure\nmisunderstood"     FALSE     actioned         
-2 analyse   interpret "no time for\ndocumentation" FALSE     actioned         
-3 document  analyse   ""                           TRUE      backlog          </code></pre>
-</div>
-</div>
-</section></section>
-<section id="references" class="title-slide slide level1 smaller scrollable">
+<section id="references" class="title-slide slide level1 center">
 <h1>References</h1>
 
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
 
-</div>
-</div>
-<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
-<div id="ref-reiner_this_1984" class="csl-entry" role="listitem">
-Reiner, Rob. 1984. <em>This Is Spinal Tap</em>. Spinal Tap Prod., Goldcrest Films International.
 </div>
 </div>
 </section>

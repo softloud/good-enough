@@ -655,14 +655,14 @@
     "href": "slides/dbt-2025.html#test-generator-to-display",
     "title": "ESG Data Governance & Living Analysis Lifescycle",
     "section": "Test: generator →\\to display",
-    "text": "Test: generator →\\to display\nTest the functor between visualisation generator and slide display.\nWhere am I?\n\n\nCode\ngetwd()\n\n\n[1] \"/home/cantabile/Documents/repos/good-enough\"\n\n\nWhat am I testing?\n\n\nCode\ncat R/test-mooncake.R\n\n\n# test this file loads\n\nmooncake_test = \"hi Mooncake\"\n\n\nSource & Print it\n\n\nCode\nsource(\"R/test-mooncake.R\")\n\n# Print it \nmooncake_test\n\n\n[1] \"hi Mooncake\""
+    "text": "Test: generator →\\to display\nTest the functor between visualisation generator and slide display.\nWhere am I?\n\n\nCode\ngetwd()\n\n\n[1] \"/home/cantabile/Documents/repos/good-enough\""
   },
   {
     "objectID": "slides/dbt-2025.html#test-fair-data-entity-test",
     "href": "slides/dbt-2025.html#test-fair-data-entity-test",
     "title": "ESG Data Governance & Living Analysis Lifescycle",
     "section": "Test: FAIR data entity test",
-    "text": "Test: FAIR data entity test\nIdentity test on edge object.\nCan we validate a single datum?\n\nI expect there to be a node ingest that goes to a node transform representing data engineering tasks in the expected instance of living analysis lifecycle."
+    "text": "Test: FAIR data entity test\nExpectations\nExpected Nodes.\n\n\nCode\n# Create the expected datum for testing\n# Expecting an edge from \"ingest\" to \"transform\" as part of the \"data engineering\" process\n\n(\n  expected_edge &lt;- data.frame(\n    from = \"ingest\",\n    to = \"transform\"\n  )\n)\n\n\n    from        to\n1 ingest transform\n\n\nExpected nodes.\n\n\nCode\n# create expected nodes\n\n(\n  expected_nodes &lt;- data.frame(\n    name = c(\"ingest\", \"transform\")\n  ) |&gt;\n    dplyr::mutate(role = \"data engineering\")\n)\n\n\n       name             role\n1    ingest data engineering\n2 transform data engineering"
   },
   {
     "objectID": "slides/dbt-2025.html#test-failed-fair-data-entity-test",
@@ -676,35 +676,35 @@
     "href": "slides/dbt-2025.html#test-failed-fair-data-entity-test-1",
     "title": "ESG Data Governance & Living Analysis Lifescycle",
     "section": "Test: failed FAIR data entity test",
-    "text": "Test: failed FAIR data entity test\nCheck the edges are non-empty\n\n\nCode\n# source generator\nsource(\"R/ButtonCategory.R\")\n\n# generate button graph\nAnalBeads &lt;- \n  ButtonCategory$new()\n\n# Get this test to pass on edges\n\n# non-empty intersection\nnrow(\n  AnalBeads$edges |&gt;\n  dplyr::inner_join(expected_datum)\n) &gt; 0\n\n\n[1] TRUE"
+    "text": "Test: failed FAIR data entity test\nCheck the Nodes are non-empty\n\n\nCode\n# source generator\nsource(\"R/ButtonCategory.R\")\n\n# generate button graph\nAnalBeads &lt;- \n  ButtonCategory$new()\n\n# Get this test to pass on Nodes\n\n# non-empty intersection\nnrow(\n  AnalBeads$nodes |&gt;\n  dplyr::inner_join(expected_datum)\n) &gt; 0\n\n\nError in `dplyr::inner_join()`:\n! `by` must be supplied when `x` and `y` have no common variables.\nℹ Use `cross_join()` to perform a cross-join."
   },
   {
     "objectID": "slides/dbt-2025.html#test-failed-fair-data-entity-test-2",
     "href": "slides/dbt-2025.html#test-failed-fair-data-entity-test-2",
     "title": "ESG Data Governance & Living Analysis Lifescycle",
     "section": "Test: failed FAIR data entity test",
-    "text": "Test: failed FAIR data entity test\nCheck the column names are as expected\n\nRole is a node attribute!\n\n\n\nCode\n# show expected\nexpected_datum\n\n\n    from        to        node_type\n1 ingest transform data engineering\n\n\nCode\n# exact columns\nall(\n  colnames(expected_datum) %in% colnames(AnalBeads$edges)\n)\n\n\n[1] FALSE\n\n\nCode\n# show edges\nhead(AnalBeads$edges, 3)\n\n\n# A tibble: 3 × 2\n  from     to       \n  &lt;chr&gt;    &lt;chr&gt;    \n1 question source   \n2 source   ingest   \n3 ingest   transform"
+    "text": "Test: failed FAIR data entity test\nCheck the column names are as expected\n\nRole is a node attribute!\n\n\n\nCode\n# show expected\nexpected_datum\n\n\n    from        to        node_type\n1 ingest transform data engineering\n\n\nCode\n# exact columns\nall(\n  colnames(expected_datum) %in% colnames(AnalBeads$nodes)\n)\n\n\n[1] FALSE\n\n\nCode\n# show Nodes\nhead(AnalBeads$nodes, 3)\n\n\n# A tibble: 3 × 1\n  node     \n  &lt;chr&gt;    \n1 source   \n2 ingest   \n3 transform"
   },
   {
     "objectID": "slides/dbt-2025.html#test-fair-data-entity-test-1",
     "href": "slides/dbt-2025.html#test-fair-data-entity-test-1",
     "title": "ESG Data Governance & Living Analysis Lifescycle",
     "section": "Test: FAIR data entity test",
-    "text": "Test: FAIR data entity test\nExpectations\nExpected edges.\n\n\nCode\n# Create the expected datum for testing\n# Expecting an edge from \"ingest\" to \"transform\" as part of the \"data engineering\" process\n\n(\n  expected_edge &lt;- data.frame(\n    from = \"ingest\",\n    to = \"transform\"\n  )\n)\n\n\n    from        to\n1 ingest transform\n\n\nExpected nodes.\n\n\nCode\n# create expected nodes\n\n(\n  expected_nodes &lt;- data.frame(\n    name = c(\"ingest\", \"transform\")\n  ) |&gt;\n    dplyr::mutate(role = \"data engineering\")\n)\n\n\n       name             role\n1    ingest data engineering\n2 transform data engineering"
+    "text": "Test: FAIR data entity test\nCheck the Nodes are non-empty\n\n\nCode\n# source generator\nsource(\"R/ButtonCategory.R\")\n\n# generate button graph\nAnalBeads &lt;- \n  ButtonCategory$new()\n\n# Get this test to pass on Nodes\n\n# non-empty intersection\nnrow(\n  AnalBeads$nodes |&gt;\n  dplyr::inner_join(expected_datum)\n) &gt; 0\n\n\nError in `dplyr::inner_join()`:\n! `by` must be supplied when `x` and `y` have no common variables.\nℹ Use `cross_join()` to perform a cross-join."
   },
   {
     "objectID": "slides/dbt-2025.html#test-fair-data-entity-test-2",
     "href": "slides/dbt-2025.html#test-fair-data-entity-test-2",
     "title": "ESG Data Governance & Living Analysis Lifescycle",
     "section": "Test: FAIR data entity test",
-    "text": "Test: FAIR data entity test\nCheck the edges are non-empty\n\n\nCode\n# source generator\nsource(\"R/ButtonCategory.R\")\n\n# generate button graph\nAnalBeads &lt;- \n  ButtonCategory$new()\n\n# Get this test to pass on edges\n\n# non-empty intersection\nnrow(\n  AnalBeads$edges |&gt;\n  dplyr::inner_join(expected_datum)\n) &gt; 0\n\n\n[1] TRUE"
+    "text": "Test: FAIR data entity test\nCheck edge column names are as expected\n\n\nCode\n# show expected\nexpected_edge\n\n\n    from        to\n1 ingest transform\n\n\nCode\n# exact columns\nall(\n  colnames(expected_edge) %in% colnames(AnalBeads$nodes)\n)\n\n\n[1] FALSE\n\n\nCode\n# show Nodes\nhead(AnalBeads$nodes, 3)\n\n\n# A tibble: 3 × 1\n  node     \n  &lt;chr&gt;    \n1 source   \n2 ingest   \n3 transform"
   },
   {
     "objectID": "slides/dbt-2025.html#test-fair-data-entity-test-3",
     "href": "slides/dbt-2025.html#test-fair-data-entity-test-3",
     "title": "ESG Data Governance & Living Analysis Lifescycle",
     "section": "Test: FAIR data entity test",
-    "text": "Test: FAIR data entity test\nCheck edge column names are as expected\n\n\nCode\n# show expected\nexpected_edge\n\n\n    from        to\n1 ingest transform\n\n\nCode\n# exact columns\nall(\n  colnames(expected_edge) %in% colnames(AnalBeads$edges)\n)\n\n\n[1] TRUE\n\n\nCode\n# show edges\nhead(AnalBeads$edges, 3)\n\n\n# A tibble: 3 × 2\n  from     to       \n  &lt;chr&gt;    &lt;chr&gt;    \n1 question source   \n2 source   ingest   \n3 ingest   transform"
+    "text": "Test: FAIR data entity test\nCheck node attributes are as expected\n\n\nCode\n# show expected\nexpected_nodes\n\n\n       name             role\n1    ingest data engineering\n2 transform data engineering\n\n\nCode\n# exact columns\nall(\n  colnames(expected_nodes) %in% colnames(AnalBeads$nodes)\n)\n\n\n[1] FALSE\n\n\nCode\n# show Nodes\nhead(AnalBeads$nodes, 3)\n\n\n# A tibble: 3 × 1\n  node     \n  &lt;chr&gt;    \n1 source   \n2 ingest   \n3 transform"
   },
   {
     "objectID": "slides/dbt-2025.html#test-fair-data-entity-test-4",
@@ -718,7 +718,7 @@
     "href": "slides/dbt-2025.html#edges",
     "title": "ESG Data Governance & Living Analysis Lifescycle",
     "section": "Edges",
-    "text": "Edges\n\nAnalBeads &lt;- ButtonCategory$new(preset = \"anal_beads\")\nAnalBeads$testEdges()\n\nTest if edge names contain required fields\n\n\nTRUE\n\n\nTest if edges are non-empty\n\n\nTRUE\n\n\nEdge test passing status:\n\n\n[1] TRUE\n\ndplyr::sample_n(AnalBeads$edges, 3)\n\n# A tibble: 3 × 2\n  from      to      \n  &lt;chr&gt;     &lt;chr&gt;   \n1 interpret decision\n2 document  analyse \n3 source    ingest"
+    "text": "Edges\nIdentity test on edge object.\nCan we validate a single datum?\n\nI expect there to be a node ingest that goes to a node transform representing data engineering tasks in the expected instance of living analysis lifecycle.\n\n\n\nCode\n# source generator\nsource(\"R/ButtonCategory.R\")"
   },
   {
     "objectID": "values.html",
@@ -1041,5 +1041,47 @@
     "title": "Living Mathematics",
     "section": "",
     "text": "Live, interactive proofs have been around for centuries. Mathematics is the universal language, it is for talking to each other, exchanging ideas. No one human solves everything."
+  },
+  {
+    "objectID": "slides/dbt-2025.html#ceci-nest-pas-un-datum",
+    "href": "slides/dbt-2025.html#ceci-nest-pas-un-datum",
+    "title": "ESG Data Governance & Living Analysis Lifescycle",
+    "section": "Ceci n’est pas un datum",
+    "text": "Ceci n’est pas un datum"
+  },
+  {
+    "objectID": "slides/dbt-2025.html#edges-identity-test-on-edge-object.",
+    "href": "slides/dbt-2025.html#edges-identity-test-on-edge-object.",
+    "title": "ESG Data Governance & Living Analysis Lifescycle",
+    "section": "Edges: Identity test on edge object.",
+    "text": "Edges: Identity test on edge object.\nCan we validate a single datum?\n\nI expect there to be a node ingest that goes to a node transform representing data engineering tasks in the expected instance of living analysis lifecycle.\n\n\n\nCode\n# source generator\nsource(\"R/ButtonCategory.R\")\n\n\n\n\nCode\nAnalBeadsEdges &lt;- ButtonEdgeDesignCategory$new()\nAnalBeadsEdges$testEdges()\n\n\n[1] TRUE\n\n\nCode\ndplyr::sample_n(AnalBeadsEdges$edges, 3)\n\n\n# A tibble: 3 × 2\n  from      to      \n  &lt;chr&gt;     &lt;chr&gt;   \n1 validate  document\n2 interpret decision\n3 transform validate"
+  },
+  {
+    "objectID": "slides/dbt-2025.html#nodes-identity-test-on-nodes",
+    "href": "slides/dbt-2025.html#nodes-identity-test-on-nodes",
+    "title": "ESG Data Governance & Living Analysis Lifescycle",
+    "section": "Nodes: Identity test on nodes",
+    "text": "Nodes: Identity test on nodes\n\nAnalBeadsNodes &lt;- ButtonNodeDesignCategory$new()\nAnalBeadsNodes$testNodes()\n\nTest if node names contain required fields:\n\n\nTRUE\n\n\nTest if nodes are non-empty:\n\n\nTRUE\n\n\nEdge test passing status:\n\n\n[1] TRUE\n\ndplyr::sample_n(AnalBeadsNodes$nodes, 3)\n\n# A tibble: 3 × 1\n  node     \n  &lt;chr&gt;    \n1 question \n2 document \n3 transform"
+  },
+  {
+    "objectID": "slides/dbt-2025.html#identity-tests",
+    "href": "slides/dbt-2025.html#identity-tests",
+    "title": "ESG Data Governance & Living Analysis Lifescycle",
+    "section": "Identity tests",
+    "text": "Identity tests\nCan we validate a single datum?\n\nI expect there to be a node ingest that goes to a node transform representing data engineering tasks in the expected instance of living analysis lifecycle.\n\n\n\nCode\n# source generator\nsource(\"R/ButtonCategory.R\")"
+  },
+  {
+    "objectID": "slides/dbt-2025.html#test-edges",
+    "href": "slides/dbt-2025.html#test-edges",
+    "title": "ESG Data Governance & Living Analysis Lifescycle",
+    "section": "Test edges",
+    "text": "Test edges\n\nAnalBeadsEdges &lt;- ButtonEdgeDesignCategory$new()\nAnalBeadsEdges$testEdges()\n\nTest if edge names contain required fields:\n\n\nTRUE\n\n\nTest if edges are non-empty:\n\n\nTRUE\n\n\nEdge test passing status:\n\n\n[1] TRUE\n\ndplyr::sample_n(AnalBeadsEdges$edges, 3)\n\n# A tibble: 3 × 2\n  from      to      \n  &lt;chr&gt;     &lt;chr&gt;   \n1 document  analyse \n2 transform validate\n3 source    ingest"
+  },
+  {
+    "objectID": "slides/dbt-2025.html#graph",
+    "href": "slides/dbt-2025.html#graph",
+    "title": "ESG Data Governance & Living Analysis Lifescycle",
+    "section": "graph",
+    "text": "graph\n\n\nCode\nto_dot &lt;- function(nodes, edges) {\n  # Convert node rows to DOT node declarations\n  node_lines &lt;- apply(nodes, 1, function(row) {\n    paste0(\n      '\"', row[[\"node\"]], \n      '\" [style=filled, fillcolor=\"', row[[\"node_colour\"]], \n      '\", shape=box];'\n    )\n  })\n\n  # Convert edge rows to DOT edge declarations\n  edge_lines &lt;- apply(edges, 1, function(row) {\n    paste0(\n      '\"', row[[\"from\"]], \n      '\" -&gt; \"', row[[\"to\"]], \n      '\" [style=', row[[\"line_type\"]], '];'\n    )\n  })\n\n  # Wrap into DOT format\n  dot_code &lt;- paste0(\n    \"digraph {\\n  rankdir=LR;\\n  node [fontname=Helvetica];\\n  \",\n    paste(node_lines, collapse = \"\\n  \"), \"\\n  \",\n    paste(edge_lines, collapse = \"\\n  \"), \"\\n}\"\n  )\n\n  return(dot_code)\n}\n\n\n\nCode\n# Add example styling columns\nAnalBeads$nodes$node_colour &lt;- \"lightblue\"\nAnalBeads$edges$line_type &lt;- \"solid\"\n\n# Generate DOT code\ndot_code &lt;- to_dot(\n  nodes = AnalBeads$nodes,\n  edges = AnalBeads$edges\n)"
   }
 ]
