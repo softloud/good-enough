@@ -10,8 +10,9 @@
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.4.554">
 
+  <meta name="author" content="Charles T. Gray, PhD – Datapunk">
   <meta name="dcterms.date" content="2025-03-26">
-  <title>Good Enough Lab - DBT Copenhagen Meetup</title>
+  <title>Good Enough Lab - ESG Data Governance &amp; Living Analysis Lifescycle</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -94,7 +95,27 @@
     code span.va { color: #111111; } /* Variable */
     code span.vs { color: #20794d; } /* VerbatimString */
     code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
-  </style>
+    /* CSS for citations */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+      margin-bottom: 0em;
+    }
+    .hanging-indent div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }  </style>
   <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
@@ -391,46 +412,327 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">DBT Copenhagen Meetup</h1>
+  <h1 class="title">ESG Data Governance &amp; Living Analysis Lifescycle</h1>
+  <p class="subtitle">DBT Copenhagen Meetup</p>
 
 <div class="quarto-title-authors">
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+Charles T. Gray, PhD – Datapunk 
+</div>
+</div>
 </div>
 
   <p class="date">2025-03-26</p>
 </section>
+<section id="ceci-nest-pas-un-datum" class="title-slide slide level1 center">
+<h1>Ceci n’est pas un datum</h1>
+<div id="fig-stonehenge" class="quarto-figure quarto-figure-center quarto-float">
+<figure class="quarto-float quarto-float-fig">
+<div aria-describedby="fig-stonehenge-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<iframe src="https://www.youtube.com/embed/Pyh1Va_mYWI?si=ieVcPdnxgQ83lMGJ&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="">
+</iframe>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-stonehenge-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: <em>Nigel gave me a drawing that said 18 inches. Now, whether or not he knows the difference between feet and inches is not my problem. I do what I’m told.</em> – Ian Faith, <em>This is Spinal Tap</em> <span class="citation" data-cites="reiner_this_1984">(<a href="#/references" role="doc-biblioref" onclick="">Reiner 1984</a>)</span>.
+</figcaption>
+</figure>
+</div>
+</section>
+
+<section>
+<section id="tests-on-the-presheaf-of-visualisations" class="title-slide slide level1 center">
+<h1>Tests (<em>on the presheaf of visualisations</em>)</h1>
+
+</section>
 <section id="test-generator-to-display" class="slide level2">
 <h2>Test: generator <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>→</mo><annotation encoding="application/x-tex">\to</annotation></semantics></math> display</h2>
 <p><em>Test the functor between visualisation generator and slide display.</em></p>
+<p>Where am I?</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a><span class="co"># Where am I? </span></span>
-<span id="cb1-2"><a></a><span class="fu">getwd</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a><span class="fu">getwd</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] "/home/cantabile/Documents/repos/good-enough"</code></pre>
 </div>
 </div>
+<p>What am I testing?</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a></a><span class="co"># What am I testing? </span></span>
-<span id="cb3-2"><a></a><span class="fu">cat</span> R/button.R</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a></a><span class="fu">cat</span> R/test-mooncake.R</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 <div class="cell-output cell-output-stdout">
 <pre><code># test this file loads
 
 mooncake_test = "hi Mooncake"</code></pre>
 </div>
 </div>
+<p>Source &amp; Print it</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a></a><span class="co"># Source it</span></span>
-<span id="cb5-2"><a></a><span class="fu">source</span>(<span class="st">"R/button.R"</span>)</span>
-<span id="cb5-3"><a></a></span>
-<span id="cb5-4"><a></a><span class="co"># Print it </span></span>
-<span id="cb5-5"><a></a>mooncake_test</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a></a><span class="fu">source</span>(<span class="st">"R/test-mooncake.R"</span>)</span>
+<span id="cb5-2"><a></a></span>
+<span id="cb5-3"><a></a><span class="co"># Print it </span></span>
+<span id="cb5-4"><a></a>mooncake_test</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] "hi Mooncake"</code></pre>
 </div>
 </div>
+</section>
+<section id="test-fair-data-entity-test" class="slide level2">
+<h2>Test: FAIR data entity test</h2>
+<p><em>Identity test on edge object.</em></p>
+<p>Can we validate a single datum?</p>
+<blockquote>
+<p>I expect there to be a node <code>ingest</code> that goes to a node <code>transform</code> representing <code>data engineering</code> tasks in the <code>expected</code> instance of living analysis lifecycle.</p>
+</blockquote>
+</section>
+<section id="test-failed-fair-data-entity-test" class="slide level2">
+<h2>Test: failed FAIR data entity test</h2>
+<h3 id="expectations">Expectations</h3>
+<div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a></a><span class="co"># Create the expected datum for testing</span></span>
+<span id="cb7-2"><a></a><span class="co"># Expecting an edge from "ingest" to "transform" as part of the "data engineering" process</span></span>
+<span id="cb7-3"><a></a></span>
+<span id="cb7-4"><a></a>(</span>
+<span id="cb7-5"><a></a>  expected_datum <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
+<span id="cb7-6"><a></a>    <span class="at">from =</span> <span class="st">"ingest"</span>,</span>
+<span id="cb7-7"><a></a>    <span class="at">to =</span> <span class="st">"transform"</span>,</span>
+<span id="cb7-8"><a></a>    <span class="at">node_type =</span> <span class="st">"data engineering"</span></span>
+<span id="cb7-9"><a></a>  )</span>
+<span id="cb7-10"><a></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>    from        to        node_type
+1 ingest transform data engineering</code></pre>
+</div>
+</div>
+</section>
+<section id="test-failed-fair-data-entity-test-1" class="slide level2">
+<h2>Test: failed FAIR data entity test</h2>
+<h3 id="check-the-edges-are-non-empty">Check the edges are non-empty</h3>
+<div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a></a><span class="co"># source generator</span></span>
+<span id="cb9-2"><a></a><span class="fu">source</span>(<span class="st">"R/ButtonGenerator.R"</span>)</span>
+<span id="cb9-3"><a></a></span>
+<span id="cb9-4"><a></a><span class="co"># generate button graph</span></span>
+<span id="cb9-5"><a></a>anal_beads <span class="ot">&lt;-</span> </span>
+<span id="cb9-6"><a></a>  ButtonGenerator<span class="sc">$</span><span class="fu">new</span>()</span>
+<span id="cb9-7"><a></a></span>
+<span id="cb9-8"><a></a><span class="co"># Get this test to pass on edges</span></span>
+<span id="cb9-9"><a></a></span>
+<span id="cb9-10"><a></a><span class="co"># non-empty intersection</span></span>
+<span id="cb9-11"><a></a><span class="fu">nrow</span>(</span>
+<span id="cb9-12"><a></a>  anal_beads<span class="sc">$</span>edges <span class="sc">|&gt;</span></span>
+<span id="cb9-13"><a></a>  dplyr<span class="sc">::</span><span class="fu">inner_join</span>(expected_datum)</span>
+<span id="cb9-14"><a></a>) <span class="sc">&gt;</span> <span class="dv">0</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] TRUE</code></pre>
+</div>
+</div>
+</section>
+<section id="test-failed-fair-data-entity-test-2" class="slide level2">
+<h2>Test: failed FAIR data entity test</h2>
+<h3 id="check-the-column-names-are-as-expected">Check the column names are as expected</h3>
+<blockquote>
+<p>Role is a node attribute!</p>
+</blockquote>
+<div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a></a><span class="co"># show expected</span></span>
+<span id="cb11-2"><a></a>expected_datum</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>    from        to        node_type
+1 ingest transform data engineering</code></pre>
+</div>
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a></a><span class="co"># exact columns</span></span>
+<span id="cb13-2"><a></a><span class="fu">all</span>(</span>
+<span id="cb13-3"><a></a>  <span class="fu">colnames</span>(expected_datum) <span class="sc">%in%</span> <span class="fu">colnames</span>(anal_beads<span class="sc">$</span>edges)</span>
+<span id="cb13-4"><a></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] FALSE</code></pre>
+</div>
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a></a><span class="co"># show edges</span></span>
+<span id="cb15-2"><a></a><span class="fu">head</span>(anal_beads<span class="sc">$</span>edges, <span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 3 × 2
+  from     to       
+  &lt;chr&gt;    &lt;chr&gt;    
+1 question source   
+2 source   ingest   
+3 ingest   transform</code></pre>
+</div>
+</div>
+</section>
+<section id="test-fair-data-entity-test-1" class="slide level2">
+<h2>Test: FAIR data entity test</h2>
+<h3 id="expectations-1">Expectations</h3>
+<p>Expected edges.</p>
+<div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a></a><span class="co"># Create the expected datum for testing</span></span>
+<span id="cb17-2"><a></a><span class="co"># Expecting an edge from "ingest" to "transform" as part of the "data engineering" process</span></span>
+<span id="cb17-3"><a></a></span>
+<span id="cb17-4"><a></a>(</span>
+<span id="cb17-5"><a></a>  expected_edge <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
+<span id="cb17-6"><a></a>    <span class="at">from =</span> <span class="st">"ingest"</span>,</span>
+<span id="cb17-7"><a></a>    <span class="at">to =</span> <span class="st">"transform"</span></span>
+<span id="cb17-8"><a></a>  )</span>
+<span id="cb17-9"><a></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>    from        to
+1 ingest transform</code></pre>
+</div>
+</div>
+<p>Expected nodes.</p>
+<div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a></a><span class="co"># create expected nodes</span></span>
+<span id="cb19-2"><a></a></span>
+<span id="cb19-3"><a></a>(</span>
+<span id="cb19-4"><a></a>  expected_nodes <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
+<span id="cb19-5"><a></a>    <span class="at">name =</span> <span class="fu">c</span>(<span class="st">"ingest"</span>, <span class="st">"transform"</span>)</span>
+<span id="cb19-6"><a></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb19-7"><a></a>    dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">role =</span> <span class="st">"data engineering"</span>)</span>
+<span id="cb19-8"><a></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>       name             role
+1    ingest data engineering
+2 transform data engineering</code></pre>
+</div>
+</div>
+</section>
+<section id="test-fair-data-entity-test-2" class="slide level2">
+<h2>Test: FAIR data entity test</h2>
+<h3 id="check-the-edges-are-non-empty-1">Check the edges are non-empty</h3>
+<div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a></a><span class="co"># source generator</span></span>
+<span id="cb21-2"><a></a><span class="fu">source</span>(<span class="st">"R/ButtonGenerator.R"</span>)</span>
+<span id="cb21-3"><a></a></span>
+<span id="cb21-4"><a></a><span class="co"># generate button graph</span></span>
+<span id="cb21-5"><a></a>anal_beads <span class="ot">&lt;-</span> </span>
+<span id="cb21-6"><a></a>  ButtonGenerator<span class="sc">$</span><span class="fu">new</span>()</span>
+<span id="cb21-7"><a></a></span>
+<span id="cb21-8"><a></a><span class="co"># Get this test to pass on edges</span></span>
+<span id="cb21-9"><a></a></span>
+<span id="cb21-10"><a></a><span class="co"># non-empty intersection</span></span>
+<span id="cb21-11"><a></a><span class="fu">nrow</span>(</span>
+<span id="cb21-12"><a></a>  anal_beads<span class="sc">$</span>edges <span class="sc">|&gt;</span></span>
+<span id="cb21-13"><a></a>  dplyr<span class="sc">::</span><span class="fu">inner_join</span>(expected_datum)</span>
+<span id="cb21-14"><a></a>) <span class="sc">&gt;</span> <span class="dv">0</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] TRUE</code></pre>
+</div>
+</div>
+</section>
+<section id="test-fair-data-entity-test-3" class="slide level2">
+<h2>Test: FAIR data entity test</h2>
+<p>Check edge column names are as expected</p>
+<div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a></a><span class="co"># show expected</span></span>
+<span id="cb23-2"><a></a>expected_edge</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>    from        to
+1 ingest transform</code></pre>
+</div>
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a></a><span class="co"># exact columns</span></span>
+<span id="cb25-2"><a></a><span class="fu">all</span>(</span>
+<span id="cb25-3"><a></a>  <span class="fu">colnames</span>(expected_edge) <span class="sc">%in%</span> <span class="fu">colnames</span>(anal_beads<span class="sc">$</span>edges)</span>
+<span id="cb25-4"><a></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] TRUE</code></pre>
+</div>
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a></a><span class="co"># show edges</span></span>
+<span id="cb27-2"><a></a><span class="fu">head</span>(anal_beads<span class="sc">$</span>edges, <span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 3 × 2
+  from     to       
+  &lt;chr&gt;    &lt;chr&gt;    
+1 question source   
+2 source   ingest   
+3 ingest   transform</code></pre>
+</div>
+</div>
+</section>
+<section id="test-fair-data-entity-test-4" class="slide level2">
+<h2>Test: FAIR data entity test</h2>
+<p>Check node attributes are as expected</p>
+<div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a></a><span class="co"># show expected</span></span>
+<span id="cb29-2"><a></a>expected_nodes</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>       name             role
+1    ingest data engineering
+2 transform data engineering</code></pre>
+</div>
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a></a><span class="co"># exact columns</span></span>
+<span id="cb31-2"><a></a><span class="fu">all</span>(</span>
+<span id="cb31-3"><a></a>  <span class="fu">colnames</span>(expected_nodes) <span class="sc">%in%</span> <span class="fu">colnames</span>(anal_beads<span class="sc">$</span>nodes)</span>
+<span id="cb31-4"><a></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] FALSE</code></pre>
+</div>
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a></a><span class="co"># show edges</span></span>
+<span id="cb33-2"><a></a><span class="fu">head</span>(anal_beads<span class="sc">$</span>nodes, <span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>data frame with 0 columns and 0 rows</code></pre>
+</div>
+</div>
+</section></section>
+<section id="references" class="title-slide slide level1 smaller scrollable">
+<h1>References</h1>
 
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
 
+</div>
+</div>
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-reiner_this_1984" class="csl-entry" role="listitem">
+Reiner, Rob. 1984. <em>This Is Spinal Tap</em>. Spinal Tap Prod., Goldcrest Films International.
 </div>
 </div>
 </section>

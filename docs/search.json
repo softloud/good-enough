@@ -599,7 +599,7 @@
     "href": "qao.html",
     "title": "Questionable Analytical Observations (QAO)",
     "section": "",
-    "text": "# test where I am\ngetwd()\n\n[1] \"/home/cantabile/Documents/repos/good-enough\"\n\n# need to source\nsource(\"R/button.R\")\n\n# test calling from R\nmooncake_test\n\n[1] \"hi Mooncake\"\nView slides in full screen"
+    "text": "View slides in full screen"
   },
   {
     "objectID": "qao.html#definition-fair-data-entity-test",
@@ -977,7 +977,7 @@
     "href": "qao.html#fair-data-entity-tests-for-this-singularity",
     "title": "Questionable Analytical Observations (QAO)",
     "section": "FAIR data entity tests for this singularity",
-    "text": "FAIR data entity tests for this singularity\nIn all tests, we ask, what is the minimum thing we can do? Then structure exists and we can expand.\n\nGenerator fn -&gt; display\nTesting the morphism between graph visualisation generator and display.\n\nHow do I call code reusably across both this manuscript, a .qmd file, and a slide deck I’m embedding the same .qmd file?\n\n\n# test where I am\ngetwd()\n\n[1] \"/home/cantabile/Documents/repos/good-enough\"\n\n# need to source\nsource(\"R/button.R\")\n\n# test calling from R\nmooncake_test\n\n[1] \"hi Mooncake\"\n\n\n    View slides in full screen"
+    "text": "FAIR data entity tests for this singularity\nIn all tests, we ask, what is the minimum thing we can do? Then structure exists and we can expand.\n\nGenerator fn →\\to display\nTesting the morphism between graph visualisation generator and display.\n\nHow do I call code reusably across both this manuscript, a .qmd file, and a slide deck I’m embedding the same .qmd file?\n\n\n# test where I am\ngetwd()\n\n[1] \"/home/cantabile/Documents/repos/good-enough\"\n\n# need to source\nsource(\"R/test-mooncake.R\")\n\n# test calling from R\nmooncake_test\n\n[1] \"hi Mooncake\""
   },
   {
     "objectID": "slides/dbt-2025.html#test-generator---display",
@@ -989,8 +989,78 @@
   {
     "objectID": "slides/dbt-2025.html#test-generator-to-display",
     "href": "slides/dbt-2025.html#test-generator-to-display",
-    "title": "DBT Copenhagen Meetup",
+    "title": "ESG Data Governance & Living Analysis Lifescycle",
     "section": "Test: generator →\\to display",
-    "text": "Test: generator →\\to display\nTest the functor between visualisation generator and slide display.\n\n# Where am I? \ngetwd()\n\n[1] \"/home/cantabile/Documents/repos/good-enough\"\n\n\n\n# What am I testing? \ncat R/button.R\n\n# test this file loads\n\nmooncake_test = \"hi Mooncake\"\n\n\n\n# Source it\nsource(\"R/button.R\")\n\n# Print it \nmooncake_test\n\n[1] \"hi Mooncake\""
+    "text": "Test: generator →\\to display\nTest the functor between visualisation generator and slide display.\nWhere am I?\n\n\nCode\ngetwd()\n\n\n[1] \"/home/cantabile/Documents/repos/good-enough\"\n\n\nWhat am I testing?\n\n\nCode\ncat R/test-mooncake.R\n\n\n# test this file loads\n\nmooncake_test = \"hi Mooncake\"\n\n\nSource & Print it\n\n\nCode\nsource(\"R/test-mooncake.R\")\n\n# Print it \nmooncake_test\n\n\n[1] \"hi Mooncake\""
+  },
+  {
+    "objectID": "slides/dbt-2025.html#test-fair-data-entity-test",
+    "href": "slides/dbt-2025.html#test-fair-data-entity-test",
+    "title": "ESG Data Governance & Living Analysis Lifescycle",
+    "section": "Test: FAIR data entity test",
+    "text": "Test: FAIR data entity test\nIdentity test on edge object.\nCan we validate a single datum?\n\nI expect there to be a node ingest that goes to a node transform representing data engineering tasks in the expected instance of living analysis lifecycle."
+  },
+  {
+    "objectID": "slides/dbt-2025.html#test-fair-data-entity-test-1",
+    "href": "slides/dbt-2025.html#test-fair-data-entity-test-1",
+    "title": "ESG Data Governance & Living Analysis Lifescycle",
+    "section": "Test: FAIR data entity test",
+    "text": "Test: FAIR data entity test\nExpectations\nExpected edges.\n\n\nCode\n# Create the expected datum for testing\n# Expecting an edge from \"ingest\" to \"transform\" as part of the \"data engineering\" process\n\n(\n  expected_edge &lt;- data.frame(\n    from = \"ingest\",\n    to = \"transform\"\n  )\n)\n\n\n    from        to\n1 ingest transform\n\n\nExpected nodes.\n\n\nCode\n# create expected nodes\n\n(\n  expected_nodes &lt;- data.frame(\n    name = c(\"ingest\", \"transform\")\n  ) |&gt;\n    dplyr::mutate(role = \"data engineering\")\n)\n\n\n       name             role\n1    ingest data engineering\n2 transform data engineering"
+  },
+  {
+    "objectID": "slides/dbt-2025.html#test-fair-data-entity-test-2",
+    "href": "slides/dbt-2025.html#test-fair-data-entity-test-2",
+    "title": "ESG Data Governance & Living Analysis Lifescycle",
+    "section": "Test: FAIR data entity test",
+    "text": "Test: FAIR data entity test\nCheck the edges are non-empty\n\n\nCode\n# source generator\nsource(\"R/ButtonGenerator.R\")\n\n# generate button graph\nanal_beads &lt;- \n  ButtonGenerator$new()\n\n# Get this test to pass on edges\n\n# non-empty intersection\nnrow(\n  anal_beads$edges |&gt;\n  dplyr::inner_join(expected_datum)\n) &gt; 0\n\n\n[1] TRUE"
+  },
+  {
+    "objectID": "slides/dbt-2025.html#test-fair-data-entity-test-3",
+    "href": "slides/dbt-2025.html#test-fair-data-entity-test-3",
+    "title": "ESG Data Governance & Living Analysis Lifescycle",
+    "section": "Test: FAIR data entity test",
+    "text": "Test: FAIR data entity test\nCheck edge column names are as expected\n\n\nCode\n# show expected\nexpected_edge\n\n\n    from        to\n1 ingest transform\n\n\nCode\n# exact columns\nall(\n  colnames(expected_edge) %in% colnames(anal_beads$edges)\n)\n\n\n[1] TRUE\n\n\nCode\n# show edges\nhead(anal_beads$edges, 3)\n\n\n# A tibble: 3 × 2\n  from     to       \n  &lt;chr&gt;    &lt;chr&gt;    \n1 question source   \n2 source   ingest   \n3 ingest   transform"
+  },
+  {
+    "objectID": "slides/dbt-2025.html#test-failed-fair-data-entity-test",
+    "href": "slides/dbt-2025.html#test-failed-fair-data-entity-test",
+    "title": "ESG Data Governance & Living Analysis Lifescycle",
+    "section": "Test: failed FAIR data entity test",
+    "text": "Test: failed FAIR data entity test\nExpectations\n\n\nCode\n# Create the expected datum for testing\n# Expecting an edge from \"ingest\" to \"transform\" as part of the \"data engineering\" process\n\n(\n  expected_datum &lt;- data.frame(\n    from = \"ingest\",\n    to = \"transform\",\n    node_type = \"data engineering\"\n  )\n)\n\n\n    from        to        node_type\n1 ingest transform data engineering"
+  },
+  {
+    "objectID": "slides/dbt-2025.html#test-failed-fair-data-entity-test-1",
+    "href": "slides/dbt-2025.html#test-failed-fair-data-entity-test-1",
+    "title": "ESG Data Governance & Living Analysis Lifescycle",
+    "section": "Test: failed FAIR data entity test",
+    "text": "Test: failed FAIR data entity test\nCheck the edges are non-empty\n\n\nCode\n# source generator\nsource(\"R/ButtonGenerator.R\")\n\n# generate button graph\nanal_beads &lt;- \n  ButtonGenerator$new()\n\n# Get this test to pass on edges\n\n# non-empty intersection\nnrow(\n  anal_beads$edges |&gt;\n  dplyr::inner_join(expected_datum)\n) &gt; 0\n\n\n[1] TRUE"
+  },
+  {
+    "objectID": "slides/dbt-2025.html#test-failed-fair-data-entity-test-2",
+    "href": "slides/dbt-2025.html#test-failed-fair-data-entity-test-2",
+    "title": "ESG Data Governance & Living Analysis Lifescycle",
+    "section": "Test: failed FAIR data entity test",
+    "text": "Test: failed FAIR data entity test\nCheck the column names are as expected\n\nRole is a node attribute!\n\n\n\nCode\n# show expected\nexpected_datum\n\n\n    from        to        node_type\n1 ingest transform data engineering\n\n\nCode\n# exact columns\nall(\n  colnames(expected_datum) %in% colnames(anal_beads$edges)\n)\n\n\n[1] FALSE\n\n\nCode\n# show edges\nhead(anal_beads$edges, 3)\n\n\n# A tibble: 3 × 2\n  from     to       \n  &lt;chr&gt;    &lt;chr&gt;    \n1 question source   \n2 source   ingest   \n3 ingest   transform"
+  },
+  {
+    "objectID": "slides/dbt-2025.html#check-edge-column-names-are-as-expected",
+    "href": "slides/dbt-2025.html#check-edge-column-names-are-as-expected",
+    "title": "ESG Data Governance & Living Analysis Lifescycle",
+    "section": "Check edge column names are as expected",
+    "text": "Check edge column names are as expected\n\n\nCode\n# show expected\nexpected_edge\n\n\n    from        to\n1 ingest transform\n\n\nCode\n# exact columns\nall(\n  colnames(expected_edge) %in% colnames(anal_beads$edges)\n)\n\n\n[1] TRUE\n\n\nCode\n# show edges\nhead(anal_beads$edges, 3)\n\n\n# A tibble: 3 × 2\n  from     to       \n  &lt;chr&gt;    &lt;chr&gt;    \n1 question source   \n2 source   ingest   \n3 ingest   transform"
+  },
+  {
+    "objectID": "slides/dbt-2025.html#check-node-attributes-are-as-expected",
+    "href": "slides/dbt-2025.html#check-node-attributes-are-as-expected",
+    "title": "ESG Data Governance & Living Analysis Lifescycle",
+    "section": "Check node attributes are as expected",
+    "text": "Check node attributes are as expected\n\n\nCode\n# show expected\nexpected_nodes\n\n\n       name             role\n1    ingest data engineering\n2 transform data engineering\n\n\nCode\n# exact columns\nall(\n  colnames(expected_nodes) %in% colnames(anal_beads$nodes)\n)\n\n\n[1] FALSE\n\n\nCode\n# show edges\nhead(anal_beads$nodes, 3)\n\n\ndata frame with 0 columns and 0 rows"
+  },
+  {
+    "objectID": "slides/dbt-2025.html#test-fair-data-entity-test-4",
+    "href": "slides/dbt-2025.html#test-fair-data-entity-test-4",
+    "title": "ESG Data Governance & Living Analysis Lifescycle",
+    "section": "Test: FAIR data entity test",
+    "text": "Test: FAIR data entity test\nCheck node attributes are as expected\n\n\nCode\n# show expected\nexpected_nodes\n\n\n       name             role\n1    ingest data engineering\n2 transform data engineering\n\n\nCode\n# exact columns\nall(\n  colnames(expected_nodes) %in% colnames(anal_beads$nodes)\n)\n\n\n[1] FALSE\n\n\nCode\n# show edges\nhead(anal_beads$nodes, 3)\n\n\ndata frame with 0 columns and 0 rows"
   }
 ]

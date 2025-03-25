@@ -16,22 +16,6 @@ library(gt)
 ```
 
 
-```{r}
-#| echo: true
-#| code-fold: false
-
-
-# test where I am
-getwd()
-
-# need to source
-source("R/button.R")
-
-# test calling from R
-mooncake_test
-
-```
-
 {{< revealjs "slides/dbt-2025.html" >}}
 
 # Ceci n'est pas un datum
@@ -182,7 +166,7 @@ The reality is while data analytic question is reworked, there is little data en
 
 In all tests, we ask, what is the minimum thing we can do? Then structure exists and we can expand.
 
-### Generator fn -> display
+### Generator fn $\to$ display
 
 *Testing the morphism between graph visualisation generator and display.*
 
@@ -197,14 +181,12 @@ In all tests, we ask, what is the minimum thing we can do? Then structure exists
 getwd()
 
 # need to source
-source("R/button.R")
+source("R/test-mooncake.R")
 
 # test calling from R
 mooncake_test
 
 ```
-
-{{< revealjs "slides/dbt-2025.qmd" >}}
 
 
 

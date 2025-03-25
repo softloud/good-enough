@@ -219,7 +219,7 @@ div.csl-indent {
   <ul class="collapse">
   <li><a href="#fair-data-entity-tests-for-this-singularity" id="toc-fair-data-entity-tests-for-this-singularity" class="nav-link" data-scroll-target="#fair-data-entity-tests-for-this-singularity">FAIR data entity tests for this singularity</a>
   <ul class="collapse">
-  <li><a href="#generator-fn---display" id="toc-generator-fn---display" class="nav-link" data-scroll-target="#generator-fn---display">Generator fn -&gt; display</a></li>
+  <li><a href="#generator-fn-to-display" id="toc-generator-fn-to-display" class="nav-link" data-scroll-target="#generator-fn-to-display">Generator fn <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>→</mo><annotation encoding="application/x-tex">\to</annotation></semantics></math> display</a></li>
   </ul></li>
   </ul></li>
   <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
@@ -255,21 +255,6 @@ div.csl-indent {
 </header>
 
 
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># test where I am</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">getwd</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] "/home/cantabile/Documents/repos/good-enough"</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># need to source</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">source</span>(<span class="st">"R/button.R"</span>)</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="co"># test calling from R</span></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>mooncake_test</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] "hi Mooncake"</code></pre>
-</div>
-</div>
     <p><a href="slides/dbt-2025.html" target="_blank">View slides in full screen</a></p>
        <div>
       <iframe class="slide-deck" src="slides/dbt-2025.html" height="475px"></iframe>
@@ -323,23 +308,23 @@ Figure&nbsp;2: Each scientist or engineer is skilled in their own right, but tog
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-fair-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div>
-<div id="lmnhjaiqyw" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#lmnhjaiqyw table {
+<div id="nkqolezoom" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#nkqolezoom table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#lmnhjaiqyw thead, #lmnhjaiqyw tbody, #lmnhjaiqyw tfoot, #lmnhjaiqyw tr, #lmnhjaiqyw td, #lmnhjaiqyw th {
+#nkqolezoom thead, #nkqolezoom tbody, #nkqolezoom tfoot, #nkqolezoom tr, #nkqolezoom td, #nkqolezoom th {
   border-style: none;
 }
 
-#lmnhjaiqyw p {
+#nkqolezoom p {
   margin: 0;
   padding: 0;
 }
 
-#lmnhjaiqyw .gt_table {
+#nkqolezoom .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -365,12 +350,12 @@ Figure&nbsp;2: Each scientist or engineer is skilled in their own right, but tog
   border-left-color: #D3D3D3;
 }
 
-#lmnhjaiqyw .gt_caption {
+#nkqolezoom .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#lmnhjaiqyw .gt_title {
+#nkqolezoom .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -382,7 +367,7 @@ Figure&nbsp;2: Each scientist or engineer is skilled in their own right, but tog
   border-bottom-width: 0;
 }
 
-#lmnhjaiqyw .gt_subtitle {
+#nkqolezoom .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -394,7 +379,7 @@ Figure&nbsp;2: Each scientist or engineer is skilled in their own right, but tog
   border-top-width: 0;
 }
 
-#lmnhjaiqyw .gt_heading {
+#nkqolezoom .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -406,13 +391,13 @@ Figure&nbsp;2: Each scientist or engineer is skilled in their own right, but tog
   border-right-color: #D3D3D3;
 }
 
-#lmnhjaiqyw .gt_bottom_border {
+#nkqolezoom .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#lmnhjaiqyw .gt_col_headings {
+#nkqolezoom .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -427,7 +412,7 @@ Figure&nbsp;2: Each scientist or engineer is skilled in their own right, but tog
   border-right-color: #D3D3D3;
 }
 
-#lmnhjaiqyw .gt_col_heading {
+#nkqolezoom .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -447,7 +432,7 @@ Figure&nbsp;2: Each scientist or engineer is skilled in their own right, but tog
   overflow-x: hidden;
 }
 
-#lmnhjaiqyw .gt_column_spanner_outer {
+#nkqolezoom .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -459,15 +444,15 @@ Figure&nbsp;2: Each scientist or engineer is skilled in their own right, but tog
   padding-right: 4px;
 }
 
-#lmnhjaiqyw .gt_column_spanner_outer:first-child {
+#nkqolezoom .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#lmnhjaiqyw .gt_column_spanner_outer:last-child {
+#nkqolezoom .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#lmnhjaiqyw .gt_column_spanner {
+#nkqolezoom .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -479,11 +464,11 @@ Figure&nbsp;2: Each scientist or engineer is skilled in their own right, but tog
   width: 100%;
 }
 
-#lmnhjaiqyw .gt_spanner_row {
+#nkqolezoom .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#lmnhjaiqyw .gt_group_heading {
+#nkqolezoom .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -509,7 +494,7 @@ Figure&nbsp;2: Each scientist or engineer is skilled in their own right, but tog
   text-align: left;
 }
 
-#lmnhjaiqyw .gt_empty_group_heading {
+#nkqolezoom .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -524,15 +509,15 @@ Figure&nbsp;2: Each scientist or engineer is skilled in their own right, but tog
   vertical-align: middle;
 }
 
-#lmnhjaiqyw .gt_from_md > :first-child {
+#nkqolezoom .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#lmnhjaiqyw .gt_from_md > :last-child {
+#nkqolezoom .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#lmnhjaiqyw .gt_row {
+#nkqolezoom .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -551,7 +536,7 @@ Figure&nbsp;2: Each scientist or engineer is skilled in their own right, but tog
   overflow-x: hidden;
 }
 
-#lmnhjaiqyw .gt_stub {
+#nkqolezoom .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -564,7 +549,7 @@ Figure&nbsp;2: Each scientist or engineer is skilled in their own right, but tog
   padding-right: 5px;
 }
 
-#lmnhjaiqyw .gt_stub_row_group {
+#nkqolezoom .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -578,15 +563,15 @@ Figure&nbsp;2: Each scientist or engineer is skilled in their own right, but tog
   vertical-align: top;
 }
 
-#lmnhjaiqyw .gt_row_group_first td {
+#nkqolezoom .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#lmnhjaiqyw .gt_row_group_first th {
+#nkqolezoom .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#lmnhjaiqyw .gt_summary_row {
+#nkqolezoom .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -596,16 +581,16 @@ Figure&nbsp;2: Each scientist or engineer is skilled in their own right, but tog
   padding-right: 5px;
 }
 
-#lmnhjaiqyw .gt_first_summary_row {
+#nkqolezoom .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#lmnhjaiqyw .gt_first_summary_row.thick {
+#nkqolezoom .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#lmnhjaiqyw .gt_last_summary_row {
+#nkqolezoom .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -615,7 +600,7 @@ Figure&nbsp;2: Each scientist or engineer is skilled in their own right, but tog
   border-bottom-color: #D3D3D3;
 }
 
-#lmnhjaiqyw .gt_grand_summary_row {
+#nkqolezoom .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -625,7 +610,7 @@ Figure&nbsp;2: Each scientist or engineer is skilled in their own right, but tog
   padding-right: 5px;
 }
 
-#lmnhjaiqyw .gt_first_grand_summary_row {
+#nkqolezoom .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -635,7 +620,7 @@ Figure&nbsp;2: Each scientist or engineer is skilled in their own right, but tog
   border-top-color: #D3D3D3;
 }
 
-#lmnhjaiqyw .gt_last_grand_summary_row_top {
+#nkqolezoom .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -645,11 +630,11 @@ Figure&nbsp;2: Each scientist or engineer is skilled in their own right, but tog
   border-bottom-color: #D3D3D3;
 }
 
-#lmnhjaiqyw .gt_striped {
+#nkqolezoom .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#lmnhjaiqyw .gt_table_body {
+#nkqolezoom .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -658,7 +643,7 @@ Figure&nbsp;2: Each scientist or engineer is skilled in their own right, but tog
   border-bottom-color: #D3D3D3;
 }
 
-#lmnhjaiqyw .gt_footnotes {
+#nkqolezoom .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -672,7 +657,7 @@ Figure&nbsp;2: Each scientist or engineer is skilled in their own right, but tog
   border-right-color: #D3D3D3;
 }
 
-#lmnhjaiqyw .gt_footnote {
+#nkqolezoom .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -681,7 +666,7 @@ Figure&nbsp;2: Each scientist or engineer is skilled in their own right, but tog
   padding-right: 5px;
 }
 
-#lmnhjaiqyw .gt_sourcenotes {
+#nkqolezoom .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -695,7 +680,7 @@ Figure&nbsp;2: Each scientist or engineer is skilled in their own right, but tog
   border-right-color: #D3D3D3;
 }
 
-#lmnhjaiqyw .gt_sourcenote {
+#nkqolezoom .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -703,72 +688,72 @@ Figure&nbsp;2: Each scientist or engineer is skilled in their own right, but tog
   padding-right: 5px;
 }
 
-#lmnhjaiqyw .gt_left {
+#nkqolezoom .gt_left {
   text-align: left;
 }
 
-#lmnhjaiqyw .gt_center {
+#nkqolezoom .gt_center {
   text-align: center;
 }
 
-#lmnhjaiqyw .gt_right {
+#nkqolezoom .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#lmnhjaiqyw .gt_font_normal {
+#nkqolezoom .gt_font_normal {
   font-weight: normal;
 }
 
-#lmnhjaiqyw .gt_font_bold {
+#nkqolezoom .gt_font_bold {
   font-weight: bold;
 }
 
-#lmnhjaiqyw .gt_font_italic {
+#nkqolezoom .gt_font_italic {
   font-style: italic;
 }
 
-#lmnhjaiqyw .gt_super {
+#nkqolezoom .gt_super {
   font-size: 65%;
 }
 
-#lmnhjaiqyw .gt_footnote_marks {
+#nkqolezoom .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#lmnhjaiqyw .gt_asterisk {
+#nkqolezoom .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#lmnhjaiqyw .gt_indent_1 {
+#nkqolezoom .gt_indent_1 {
   text-indent: 5px;
 }
 
-#lmnhjaiqyw .gt_indent_2 {
+#nkqolezoom .gt_indent_2 {
   text-indent: 10px;
 }
 
-#lmnhjaiqyw .gt_indent_3 {
+#nkqolezoom .gt_indent_3 {
   text-indent: 15px;
 }
 
-#lmnhjaiqyw .gt_indent_4 {
+#nkqolezoom .gt_indent_4 {
   text-indent: 20px;
 }
 
-#lmnhjaiqyw .gt_indent_5 {
+#nkqolezoom .gt_indent_5 {
   text-indent: 25px;
 }
 
-#lmnhjaiqyw .katex-display {
+#nkqolezoom .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#lmnhjaiqyw div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#nkqolezoom div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -827,23 +812,23 @@ Figure&nbsp;3: Validation of FAIR data entity.
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-tests-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div>
-<div id="eqrszedrlc" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#eqrszedrlc table {
+<div id="tfrnesvsio" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#tfrnesvsio table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#eqrszedrlc thead, #eqrszedrlc tbody, #eqrszedrlc tfoot, #eqrszedrlc tr, #eqrszedrlc td, #eqrszedrlc th {
+#tfrnesvsio thead, #tfrnesvsio tbody, #tfrnesvsio tfoot, #tfrnesvsio tr, #tfrnesvsio td, #tfrnesvsio th {
   border-style: none;
 }
 
-#eqrszedrlc p {
+#tfrnesvsio p {
   margin: 0;
   padding: 0;
 }
 
-#eqrszedrlc .gt_table {
+#tfrnesvsio .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -869,12 +854,12 @@ Figure&nbsp;3: Validation of FAIR data entity.
   border-left-color: #D3D3D3;
 }
 
-#eqrszedrlc .gt_caption {
+#tfrnesvsio .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#eqrszedrlc .gt_title {
+#tfrnesvsio .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -886,7 +871,7 @@ Figure&nbsp;3: Validation of FAIR data entity.
   border-bottom-width: 0;
 }
 
-#eqrszedrlc .gt_subtitle {
+#tfrnesvsio .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -898,7 +883,7 @@ Figure&nbsp;3: Validation of FAIR data entity.
   border-top-width: 0;
 }
 
-#eqrszedrlc .gt_heading {
+#tfrnesvsio .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -910,13 +895,13 @@ Figure&nbsp;3: Validation of FAIR data entity.
   border-right-color: #D3D3D3;
 }
 
-#eqrszedrlc .gt_bottom_border {
+#tfrnesvsio .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#eqrszedrlc .gt_col_headings {
+#tfrnesvsio .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -931,7 +916,7 @@ Figure&nbsp;3: Validation of FAIR data entity.
   border-right-color: #D3D3D3;
 }
 
-#eqrszedrlc .gt_col_heading {
+#tfrnesvsio .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -951,7 +936,7 @@ Figure&nbsp;3: Validation of FAIR data entity.
   overflow-x: hidden;
 }
 
-#eqrszedrlc .gt_column_spanner_outer {
+#tfrnesvsio .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -963,15 +948,15 @@ Figure&nbsp;3: Validation of FAIR data entity.
   padding-right: 4px;
 }
 
-#eqrszedrlc .gt_column_spanner_outer:first-child {
+#tfrnesvsio .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#eqrszedrlc .gt_column_spanner_outer:last-child {
+#tfrnesvsio .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#eqrszedrlc .gt_column_spanner {
+#tfrnesvsio .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -983,11 +968,11 @@ Figure&nbsp;3: Validation of FAIR data entity.
   width: 100%;
 }
 
-#eqrszedrlc .gt_spanner_row {
+#tfrnesvsio .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#eqrszedrlc .gt_group_heading {
+#tfrnesvsio .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1013,7 +998,7 @@ Figure&nbsp;3: Validation of FAIR data entity.
   text-align: left;
 }
 
-#eqrszedrlc .gt_empty_group_heading {
+#tfrnesvsio .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1028,15 +1013,15 @@ Figure&nbsp;3: Validation of FAIR data entity.
   vertical-align: middle;
 }
 
-#eqrszedrlc .gt_from_md > :first-child {
+#tfrnesvsio .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#eqrszedrlc .gt_from_md > :last-child {
+#tfrnesvsio .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#eqrszedrlc .gt_row {
+#tfrnesvsio .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1055,7 +1040,7 @@ Figure&nbsp;3: Validation of FAIR data entity.
   overflow-x: hidden;
 }
 
-#eqrszedrlc .gt_stub {
+#tfrnesvsio .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1068,7 +1053,7 @@ Figure&nbsp;3: Validation of FAIR data entity.
   padding-right: 5px;
 }
 
-#eqrszedrlc .gt_stub_row_group {
+#tfrnesvsio .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1082,15 +1067,15 @@ Figure&nbsp;3: Validation of FAIR data entity.
   vertical-align: top;
 }
 
-#eqrszedrlc .gt_row_group_first td {
+#tfrnesvsio .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#eqrszedrlc .gt_row_group_first th {
+#tfrnesvsio .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#eqrszedrlc .gt_summary_row {
+#tfrnesvsio .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1100,16 +1085,16 @@ Figure&nbsp;3: Validation of FAIR data entity.
   padding-right: 5px;
 }
 
-#eqrszedrlc .gt_first_summary_row {
+#tfrnesvsio .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#eqrszedrlc .gt_first_summary_row.thick {
+#tfrnesvsio .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#eqrszedrlc .gt_last_summary_row {
+#tfrnesvsio .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1119,7 +1104,7 @@ Figure&nbsp;3: Validation of FAIR data entity.
   border-bottom-color: #D3D3D3;
 }
 
-#eqrszedrlc .gt_grand_summary_row {
+#tfrnesvsio .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1129,7 +1114,7 @@ Figure&nbsp;3: Validation of FAIR data entity.
   padding-right: 5px;
 }
 
-#eqrszedrlc .gt_first_grand_summary_row {
+#tfrnesvsio .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1139,7 +1124,7 @@ Figure&nbsp;3: Validation of FAIR data entity.
   border-top-color: #D3D3D3;
 }
 
-#eqrszedrlc .gt_last_grand_summary_row_top {
+#tfrnesvsio .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1149,11 +1134,11 @@ Figure&nbsp;3: Validation of FAIR data entity.
   border-bottom-color: #D3D3D3;
 }
 
-#eqrszedrlc .gt_striped {
+#tfrnesvsio .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#eqrszedrlc .gt_table_body {
+#tfrnesvsio .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1162,7 +1147,7 @@ Figure&nbsp;3: Validation of FAIR data entity.
   border-bottom-color: #D3D3D3;
 }
 
-#eqrszedrlc .gt_footnotes {
+#tfrnesvsio .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1176,7 +1161,7 @@ Figure&nbsp;3: Validation of FAIR data entity.
   border-right-color: #D3D3D3;
 }
 
-#eqrszedrlc .gt_footnote {
+#tfrnesvsio .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1185,7 +1170,7 @@ Figure&nbsp;3: Validation of FAIR data entity.
   padding-right: 5px;
 }
 
-#eqrszedrlc .gt_sourcenotes {
+#tfrnesvsio .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1199,7 +1184,7 @@ Figure&nbsp;3: Validation of FAIR data entity.
   border-right-color: #D3D3D3;
 }
 
-#eqrszedrlc .gt_sourcenote {
+#tfrnesvsio .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1207,72 +1192,72 @@ Figure&nbsp;3: Validation of FAIR data entity.
   padding-right: 5px;
 }
 
-#eqrszedrlc .gt_left {
+#tfrnesvsio .gt_left {
   text-align: left;
 }
 
-#eqrszedrlc .gt_center {
+#tfrnesvsio .gt_center {
   text-align: center;
 }
 
-#eqrszedrlc .gt_right {
+#tfrnesvsio .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#eqrszedrlc .gt_font_normal {
+#tfrnesvsio .gt_font_normal {
   font-weight: normal;
 }
 
-#eqrszedrlc .gt_font_bold {
+#tfrnesvsio .gt_font_bold {
   font-weight: bold;
 }
 
-#eqrszedrlc .gt_font_italic {
+#tfrnesvsio .gt_font_italic {
   font-style: italic;
 }
 
-#eqrszedrlc .gt_super {
+#tfrnesvsio .gt_super {
   font-size: 65%;
 }
 
-#eqrszedrlc .gt_footnote_marks {
+#tfrnesvsio .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#eqrszedrlc .gt_asterisk {
+#tfrnesvsio .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#eqrszedrlc .gt_indent_1 {
+#tfrnesvsio .gt_indent_1 {
   text-indent: 5px;
 }
 
-#eqrszedrlc .gt_indent_2 {
+#tfrnesvsio .gt_indent_2 {
   text-indent: 10px;
 }
 
-#eqrszedrlc .gt_indent_3 {
+#tfrnesvsio .gt_indent_3 {
   text-indent: 15px;
 }
 
-#eqrszedrlc .gt_indent_4 {
+#tfrnesvsio .gt_indent_4 {
   text-indent: 20px;
 }
 
-#eqrszedrlc .gt_indent_5 {
+#tfrnesvsio .gt_indent_5 {
   text-indent: 25px;
 }
 
-#eqrszedrlc .katex-display {
+#tfrnesvsio .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#eqrszedrlc div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#tfrnesvsio div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -1362,7 +1347,7 @@ Figure&nbsp;4: FAIR data entity tests
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="qao_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid figure-img" width="1152"></p>
+<p><img src="qao_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid figure-img" width="1152"></p>
 </figure>
 </div>
 </div>
@@ -1381,7 +1366,7 @@ Figure&nbsp;5: The anal beads of data development.
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="qao_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid figure-img" width="1152"></p>
+<p><img src="qao_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid figure-img" width="1152"></p>
 </figure>
 </div>
 </div>
@@ -1402,7 +1387,7 @@ Figure&nbsp;6: The hairy anal beads of data development.
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="qao_files/figure-html/unnamed-chunk-7-1.png" class="img-fluid figure-img" width="1152"></p>
+<p><img src="qao_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid figure-img" width="1152"></p>
 </figure>
 </div>
 </div>
@@ -1433,32 +1418,27 @@ Figure&nbsp;7: Establishing a datum via FAIR data entity test allows the team to
 <section id="fair-data-entity-tests-for-this-singularity" class="level2">
 <h2 class="anchored" data-anchor-id="fair-data-entity-tests-for-this-singularity">FAIR data entity tests for this singularity</h2>
 <p>In all tests, we ask, what is the minimum thing we can do? Then structure exists and we can expand.</p>
-<section id="generator-fn---display" class="level3">
-<h3 class="anchored" data-anchor-id="generator-fn---display">Generator fn -&gt; display</h3>
+<section id="generator-fn-to-display" class="level3">
+<h3 class="anchored" data-anchor-id="generator-fn-to-display">Generator fn <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>→</mo><annotation encoding="application/x-tex">\to</annotation></semantics></math> display</h3>
 <p><em>Testing the morphism between graph visualisation generator and display.</em></p>
 <blockquote class="blockquote">
 <p>How do I call code reusably across both this manuscript, a .qmd file, and a slide deck I’m embedding the same .qmd file?</p>
 </blockquote>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># test where I am</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">getwd</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># test where I am</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">getwd</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] "/home/cantabile/Documents/repos/good-enough"</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># need to source</span></span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fu">source</span>(<span class="st">"R/button.R"</span>)</span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="co"># test calling from R</span></span>
-<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>mooncake_test</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># need to source</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">source</span>(<span class="st">"R/test-mooncake.R"</span>)</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="co"># test calling from R</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>mooncake_test</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] "hi Mooncake"</code></pre>
 </div>
 </div>
-    <p><a href="./slides/dbt-2025.html" target="_blank">View slides in full screen</a></p>
-       <div>
-      <iframe class="slide-deck" src="slides/dbt-2025.qmd" height="475px"></iframe>
-    </div>
-  
 </section>
 </section>
 </section>
