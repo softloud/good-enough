@@ -506,8 +506,8 @@ mooncake_test = "hi Mooncake"</code></pre>
   from      to      
   &lt;chr&gt;     &lt;chr&gt;   
 1 document  analyse 
-2 transform validate
-3 source    ingest  </code></pre>
+2 interpret decision
+3 transform validate</code></pre>
 </div>
 </div>
 </section>
@@ -538,11 +538,11 @@ mooncake_test = "hi Mooncake"</code></pre>
 <div class="sourceCode cell-code" id="cb24"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a></a>dplyr<span class="sc">::</span><span class="fu">sample_n</span>(HairyAnalBeadsEdges<span class="sc">$</span>edges, <span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 3 × 5
-  from      to        reason                        reason_na project_integrity
-  &lt;chr&gt;     &lt;chr&gt;     &lt;chr&gt;                         &lt;lgl&gt;     &lt;chr&gt;            
-1 interpret transform "measure\nmisunderstood"      FALSE     actioned         
-2 analyse   transform "needs different\ndata shape" FALSE     actioned         
-3 transform validate  ""                            TRUE      backlog          </code></pre>
+  from     to        reason                          reason_na project_integrity
+  &lt;chr&gt;    &lt;chr&gt;     &lt;chr&gt;                           &lt;lgl&gt;     &lt;chr&gt;            
+1 source   ingest    ""                              TRUE      backlog          
+2 analyse  transform "needs different\ndata shape"   FALSE     actioned         
+3 decision interpret "analysis does\nnot inform\nde… FALSE     actioned         </code></pre>
 </div>
 </div>
 </section>
@@ -574,9 +574,9 @@ mooncake_test = "hi Mooncake"</code></pre>
 <pre><code># A tibble: 3 × 1
   node     
   &lt;chr&gt;    
-1 question 
-2 document 
-3 transform</code></pre>
+1 interpret
+2 decision 
+3 validate </code></pre>
 </div>
 </div>
 </section>
@@ -609,9 +609,9 @@ mooncake_test = "hi Mooncake"</code></pre>
 <pre><code># A tibble: 3 × 1
   node    
   &lt;chr&gt;   
-1 ingest  
-2 source  
-3 document</code></pre>
+1 decision
+2 analyse 
+3 question</code></pre>
 </div>
 </div>
 </section>
@@ -641,11 +641,11 @@ mooncake_test = "hi Mooncake"</code></pre>
 <div class="sourceCode cell-code" id="cb51"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb51-1"><a></a>dplyr<span class="sc">::</span><span class="fu">sample_n</span>(AnalBeads<span class="sc">$</span>nodes, <span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 3 × 1
-  node    
-  &lt;chr&gt;   
-1 source  
-2 question
-3 decision</code></pre>
+  node     
+  &lt;chr&gt;    
+1 interpret
+2 analyse  
+3 question </code></pre>
 </div>
 </div>
 </section>
@@ -678,8 +678,8 @@ mooncake_test = "hi Mooncake"</code></pre>
   node     
   &lt;chr&gt;    
 1 interpret
-2 decision 
-3 ingest   </code></pre>
+2 source   
+3 question </code></pre>
 </div>
 </div>
 </section>
@@ -735,8 +735,8 @@ mooncake_test = "hi Mooncake"</code></pre>
 
 <div class="cell">
 <div class="cell-output-display">
-<div class="grViz html-widget html-fill-item" id="htmlwidget-b1cc6571ccdbda089810" style="width:960px;height:768px;"></div>
-<script type="application/json" data-for="htmlwidget-b1cc6571ccdbda089810">{"x":{"diagram":"digraph {\n  rankdir=LR;\n  node [fontname=Helvetica];\n  \"source\" [style=filled, fillcolor=\"lightblue\", shape=box];\n  \"ingest\" [style=filled, fillcolor=\"lightblue\", shape=box];\n  \"transform\" [style=filled, fillcolor=\"lightblue\", shape=box];\n  \"validate\" [style=filled, fillcolor=\"lightblue\", shape=box];\n  \"document\" [style=filled, fillcolor=\"lightblue\", shape=box];\n  \"analyse\" [style=filled, fillcolor=\"lightblue\", shape=box];\n  \"interpret\" [style=filled, fillcolor=\"lightblue\", shape=box];\n  \"decision\" [style=filled, fillcolor=\"lightblue\", shape=box];\n  \"question\" [style=filled, fillcolor=\"lightblue\", shape=box];\n  \"question\" -> \"source\" [style=solid];\n  \"source\" -> \"ingest\" [style=solid];\n  \"ingest\" -> \"transform\" [style=solid];\n  \"transform\" -> \"validate\" [style=solid];\n  \"validate\" -> \"document\" [style=solid];\n  \"document\" -> \"analyse\" [style=solid];\n  \"analyse\" -> \"interpret\" [style=solid];\n  \"interpret\" -> \"decision\" [style=solid];\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+<div class="grViz html-widget html-fill-item" id="htmlwidget-6e57d0743c23bfa5f6ad" style="width:960px;height:480px;"></div>
+<script type="application/json" data-for="htmlwidget-6e57d0743c23bfa5f6ad">{"x":{"diagram":"digraph {\n  rankdir=LR;\n  node [fontname=Helvetica];\n  \"source\" [style=filled, fillcolor=\"lightblue\", shape=box];\n  \"ingest\" [style=filled, fillcolor=\"lightblue\", shape=box];\n  \"transform\" [style=filled, fillcolor=\"lightblue\", shape=box];\n  \"validate\" [style=filled, fillcolor=\"lightblue\", shape=box];\n  \"document\" [style=filled, fillcolor=\"lightblue\", shape=box];\n  \"analyse\" [style=filled, fillcolor=\"lightblue\", shape=box];\n  \"interpret\" [style=filled, fillcolor=\"lightblue\", shape=box];\n  \"decision\" [style=filled, fillcolor=\"lightblue\", shape=box];\n  \"question\" [style=filled, fillcolor=\"lightblue\", shape=box];\n  \"question\" -> \"source\" [style=solid];\n  \"source\" -> \"ingest\" [style=solid];\n  \"ingest\" -> \"transform\" [style=solid];\n  \"transform\" -> \"validate\" [style=solid];\n  \"validate\" -> \"document\" [style=solid];\n  \"document\" -> \"analyse\" [style=solid];\n  \"analyse\" -> \"interpret\" [style=solid];\n  \"interpret\" -> \"decision\" [style=solid];\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 </section></section>
