@@ -1,6 +1,6 @@
 [
   {
-    "listing": "/index.html",
+    "listing": "/blog.html",
     "items": [
       "/blog/2025-03-24-button.html",
       "/blog/2025-03-23-cave.html",
@@ -12,7 +12,7 @@
     ]
   },
   {
-    "listing": "/blog.html",
+    "listing": "/index.html",
     "items": [
       "/blog/2025-03-24-button.html",
       "/blog/2025-03-23-cave.html",

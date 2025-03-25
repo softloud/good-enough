@@ -230,12 +230,23 @@ head(AnalBeads$nodes, 3)
 ```{r}
 #| code-fold: false
 #| message: true
-AnalBeads <- ButtonCategory$new()
+AnalBeads <- ButtonCategory$new(preset = "anal_beads")
 AnalBeads$testEdges()
+dplyr::sample_n(AnalBeads$edges, 3)
 
 ```
+
+---
+
 
 ```{r}
+#| code-fold: false
+#| message: true
+HairyAnalBeads <- ButtonCategory$new(preset = "hairy_anal_beads")
+HairyAnalBeads$testEdges()
+dplyr::sample_n(HairyAnalBeads$edges, 3)
+
 ```
+
 
 # References

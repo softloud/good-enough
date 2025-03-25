@@ -802,14 +802,18 @@ unit(2, : Ignoring unknown parameters: `label_dodge`</code></pre>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb34"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a>Y_edges</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 5 × 5
-  from                   to                 edge_label    category     edge_type
-  &lt;chr&gt;                  &lt;chr&gt;              &lt;chr&gt;         &lt;chr&gt;        &lt;chr&gt;    
-1 anal-beads-of-data-dev figures-and-tables is a child of file struct… morphism 
-2 figures-and-tables     good-enough        is a child of file struct… morphism 
-3 index.qmd              good-enough        is a child of file struct… morphism 
-4 qao.qmd                good-enough        is a child of file struct… morphism 
-5 slides                 good-enough        is a child of file struct… morphism </code></pre>
+<pre><code># A tibble: 9 × 5
+  from                   to                     edge_label    category edge_type
+  &lt;chr&gt;                  &lt;chr&gt;                  &lt;chr&gt;         &lt;chr&gt;    &lt;chr&gt;    
+1 anal-bead-themeCode    anal-beads-of-data-dev is a child of file st… morphism 
+2 anal-beadsCode         anal-beads-of-data-dev is a child of file st… morphism 
+3 care-bear-dataCode     anal-beads-of-data-dev is a child of file st… morphism 
+4 hairy-anal-beadsCode   anal-beads-of-data-dev is a child of file st… morphism 
+5 anal-beads-of-data-dev figures-and-tables     is a child of file st… morphism 
+6 figures-and-tables     good-enough            is a child of file st… morphism 
+7 index.qmd              good-enough            is a child of file st… morphism 
+8 qao.qmd                good-enough            is a child of file st… morphism 
+9 slides                 good-enough            is a child of file st… morphism </code></pre>
 </div>
 </div>
 </div>
@@ -832,15 +836,19 @@ unit(2, : Ignoring unknown parameters: `label_dodge`</code></pre>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb37"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a>Y_nodes </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 6 × 5
-  name                   node_label            node_emergence node_type category
-  &lt;chr&gt;                  &lt;chr&gt;                 &lt;chr&gt;          &lt;chr&gt;     &lt;chr&gt;   
-1 anal-beads-of-data-dev anal-beads-of-data-d… expected       file      file st…
-2 figures-and-tables     figures-and-tables    expected       file      file st…
-3 index.qmd              index.qmd             expected       file      file st…
-4 qao.qmd                qao.qmd               expected       file      file st…
-5 slides                 slides                expected       file      file st…
-6 good-enough            good-enough           expected       file      file st…</code></pre>
+<pre><code># A tibble: 10 × 5
+   name                   node_label           node_emergence node_type category
+   &lt;chr&gt;                  &lt;chr&gt;                &lt;chr&gt;          &lt;chr&gt;     &lt;chr&gt;   
+ 1 anal-bead-themeCode    anal-bead-themeCode  expected       file      file st…
+ 2 anal-beadsCode         anal-beadsCode       expected       file      file st…
+ 3 care-bear-dataCode     care-bear-dataCode   expected       file      file st…
+ 4 hairy-anal-beadsCode   hairy-anal-beadsCode expected       file      file st…
+ 5 anal-beads-of-data-dev anal-beads-of-data-… expected       file      file st…
+ 6 figures-and-tables     figures-and-tables   expected       file      file st…
+ 7 index.qmd              index.qmd            expected       file      file st…
+ 8 qao.qmd                qao.qmd              expected       file      file st…
+ 9 slides                 slides               expected       file      file st…
+10 good-enough            good-enough          expected       file      file st…</code></pre>
 </div>
 </div>
 </div>
@@ -857,27 +865,31 @@ unit(2, : Ignoring unknown parameters: `label_dodge`</code></pre>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb40"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a>Y_graph</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code># A tbl_graph: 6 nodes and 5 edges
+<pre><code># A tbl_graph: 10 nodes and 9 edges
 #
 # A rooted tree
 #
-# Node Data: 6 × 5 (active)
-  name                   node_label            node_emergence node_type category
-  &lt;chr&gt;                  &lt;chr&gt;                 &lt;chr&gt;          &lt;chr&gt;     &lt;chr&gt;   
-1 anal-beads-of-data-dev anal-beads-of-data-d… expected       file      file st…
-2 figures-and-tables     figures-and-tables    expected       file      file st…
-3 index.qmd              index.qmd             expected       file      file st…
-4 qao.qmd                qao.qmd               expected       file      file st…
-5 slides                 slides                expected       file      file st…
-6 good-enough            good-enough           expected       file      file st…
+# Node Data: 10 × 5 (active)
+   name                   node_label           node_emergence node_type category
+   &lt;chr&gt;                  &lt;chr&gt;                &lt;chr&gt;          &lt;chr&gt;     &lt;chr&gt;   
+ 1 anal-bead-themeCode    anal-bead-themeCode  expected       file      file st…
+ 2 anal-beadsCode         anal-beadsCode       expected       file      file st…
+ 3 care-bear-dataCode     care-bear-dataCode   expected       file      file st…
+ 4 hairy-anal-beadsCode   hairy-anal-beadsCode expected       file      file st…
+ 5 anal-beads-of-data-dev anal-beads-of-data-… expected       file      file st…
+ 6 figures-and-tables     figures-and-tables   expected       file      file st…
+ 7 index.qmd              index.qmd            expected       file      file st…
+ 8 qao.qmd                qao.qmd              expected       file      file st…
+ 9 slides                 slides               expected       file      file st…
+10 good-enough            good-enough          expected       file      file st…
 #
-# Edge Data: 5 × 5
+# Edge Data: 9 × 5
    from    to edge_label    category       edge_type
   &lt;int&gt; &lt;int&gt; &lt;chr&gt;         &lt;chr&gt;          &lt;chr&gt;    
-1     1     2 is a child of file structure morphism 
-2     2     6 is a child of file structure morphism 
-3     3     6 is a child of file structure morphism 
-# ℹ 2 more rows</code></pre>
+1     1     5 is a child of file structure morphism 
+2     2     5 is a child of file structure morphism 
+3     3     5 is a child of file structure morphism 
+# ℹ 6 more rows</code></pre>
 </div>
 </div>
 </div>
@@ -903,10 +915,14 @@ unit(2, : Ignoring unknown parameters: `label_dodge`</code></pre>
 <div class="sourceCode cell-code" id="cb44"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a>igraph<span class="sc">::</span><span class="fu">degree</span>(Y_graph)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
-<pre><code>anal-beads-of-data-dev     figures-and-tables              index.qmd 
-                     1                      2                      1 
-               qao.qmd                 slides            good-enough 
-                     1                      1                      4 </code></pre>
+<pre><code>   anal-bead-themeCode         anal-beadsCode     care-bear-dataCode 
+                     1                      1                      1 
+  hairy-anal-beadsCode anal-beads-of-data-dev     figures-and-tables 
+                     1                      5                      2 
+             index.qmd                qao.qmd                 slides 
+                     1                      1                      1 
+           good-enough 
+                     4 </code></pre>
 </div>
 </div>
 </div>
@@ -960,23 +976,23 @@ unit(2, : Ignoring unknown parameters: `label_dodge`</code></pre>
 <div class="sourceCode cell-code" id="cb48"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a>S_edges <span class="sc">|&gt;</span> gt<span class="sc">::</span><span class="fu">gt</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div>
-<div id="xrnztesnud" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#xrnztesnud table {
+<div id="ydbsgquewb" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#ydbsgquewb table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#xrnztesnud thead, #xrnztesnud tbody, #xrnztesnud tfoot, #xrnztesnud tr, #xrnztesnud td, #xrnztesnud th {
+#ydbsgquewb thead, #ydbsgquewb tbody, #ydbsgquewb tfoot, #ydbsgquewb tr, #ydbsgquewb td, #ydbsgquewb th {
   border-style: none;
 }
 
-#xrnztesnud p {
+#ydbsgquewb p {
   margin: 0;
   padding: 0;
 }
 
-#xrnztesnud .gt_table {
+#ydbsgquewb .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -1002,12 +1018,12 @@ unit(2, : Ignoring unknown parameters: `label_dodge`</code></pre>
   border-left-color: #D3D3D3;
 }
 
-#xrnztesnud .gt_caption {
+#ydbsgquewb .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#xrnztesnud .gt_title {
+#ydbsgquewb .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -1019,7 +1035,7 @@ unit(2, : Ignoring unknown parameters: `label_dodge`</code></pre>
   border-bottom-width: 0;
 }
 
-#xrnztesnud .gt_subtitle {
+#ydbsgquewb .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -1031,7 +1047,7 @@ unit(2, : Ignoring unknown parameters: `label_dodge`</code></pre>
   border-top-width: 0;
 }
 
-#xrnztesnud .gt_heading {
+#ydbsgquewb .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -1043,13 +1059,13 @@ unit(2, : Ignoring unknown parameters: `label_dodge`</code></pre>
   border-right-color: #D3D3D3;
 }
 
-#xrnztesnud .gt_bottom_border {
+#ydbsgquewb .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#xrnztesnud .gt_col_headings {
+#ydbsgquewb .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1064,7 +1080,7 @@ unit(2, : Ignoring unknown parameters: `label_dodge`</code></pre>
   border-right-color: #D3D3D3;
 }
 
-#xrnztesnud .gt_col_heading {
+#ydbsgquewb .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1084,7 +1100,7 @@ unit(2, : Ignoring unknown parameters: `label_dodge`</code></pre>
   overflow-x: hidden;
 }
 
-#xrnztesnud .gt_column_spanner_outer {
+#ydbsgquewb .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1096,15 +1112,15 @@ unit(2, : Ignoring unknown parameters: `label_dodge`</code></pre>
   padding-right: 4px;
 }
 
-#xrnztesnud .gt_column_spanner_outer:first-child {
+#ydbsgquewb .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#xrnztesnud .gt_column_spanner_outer:last-child {
+#ydbsgquewb .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#xrnztesnud .gt_column_spanner {
+#ydbsgquewb .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1116,11 +1132,11 @@ unit(2, : Ignoring unknown parameters: `label_dodge`</code></pre>
   width: 100%;
 }
 
-#xrnztesnud .gt_spanner_row {
+#ydbsgquewb .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#xrnztesnud .gt_group_heading {
+#ydbsgquewb .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1146,7 +1162,7 @@ unit(2, : Ignoring unknown parameters: `label_dodge`</code></pre>
   text-align: left;
 }
 
-#xrnztesnud .gt_empty_group_heading {
+#ydbsgquewb .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1161,15 +1177,15 @@ unit(2, : Ignoring unknown parameters: `label_dodge`</code></pre>
   vertical-align: middle;
 }
 
-#xrnztesnud .gt_from_md > :first-child {
+#ydbsgquewb .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#xrnztesnud .gt_from_md > :last-child {
+#ydbsgquewb .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#xrnztesnud .gt_row {
+#ydbsgquewb .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1188,7 +1204,7 @@ unit(2, : Ignoring unknown parameters: `label_dodge`</code></pre>
   overflow-x: hidden;
 }
 
-#xrnztesnud .gt_stub {
+#ydbsgquewb .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1201,7 +1217,7 @@ unit(2, : Ignoring unknown parameters: `label_dodge`</code></pre>
   padding-right: 5px;
 }
 
-#xrnztesnud .gt_stub_row_group {
+#ydbsgquewb .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1215,15 +1231,15 @@ unit(2, : Ignoring unknown parameters: `label_dodge`</code></pre>
   vertical-align: top;
 }
 
-#xrnztesnud .gt_row_group_first td {
+#ydbsgquewb .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#xrnztesnud .gt_row_group_first th {
+#ydbsgquewb .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#xrnztesnud .gt_summary_row {
+#ydbsgquewb .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1233,16 +1249,16 @@ unit(2, : Ignoring unknown parameters: `label_dodge`</code></pre>
   padding-right: 5px;
 }
 
-#xrnztesnud .gt_first_summary_row {
+#ydbsgquewb .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#xrnztesnud .gt_first_summary_row.thick {
+#ydbsgquewb .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#xrnztesnud .gt_last_summary_row {
+#ydbsgquewb .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1252,7 +1268,7 @@ unit(2, : Ignoring unknown parameters: `label_dodge`</code></pre>
   border-bottom-color: #D3D3D3;
 }
 
-#xrnztesnud .gt_grand_summary_row {
+#ydbsgquewb .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1262,7 +1278,7 @@ unit(2, : Ignoring unknown parameters: `label_dodge`</code></pre>
   padding-right: 5px;
 }
 
-#xrnztesnud .gt_first_grand_summary_row {
+#ydbsgquewb .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1272,7 +1288,7 @@ unit(2, : Ignoring unknown parameters: `label_dodge`</code></pre>
   border-top-color: #D3D3D3;
 }
 
-#xrnztesnud .gt_last_grand_summary_row_top {
+#ydbsgquewb .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1282,11 +1298,11 @@ unit(2, : Ignoring unknown parameters: `label_dodge`</code></pre>
   border-bottom-color: #D3D3D3;
 }
 
-#xrnztesnud .gt_striped {
+#ydbsgquewb .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#xrnztesnud .gt_table_body {
+#ydbsgquewb .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1295,7 +1311,7 @@ unit(2, : Ignoring unknown parameters: `label_dodge`</code></pre>
   border-bottom-color: #D3D3D3;
 }
 
-#xrnztesnud .gt_footnotes {
+#ydbsgquewb .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1309,7 +1325,7 @@ unit(2, : Ignoring unknown parameters: `label_dodge`</code></pre>
   border-right-color: #D3D3D3;
 }
 
-#xrnztesnud .gt_footnote {
+#ydbsgquewb .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1318,7 +1334,7 @@ unit(2, : Ignoring unknown parameters: `label_dodge`</code></pre>
   padding-right: 5px;
 }
 
-#xrnztesnud .gt_sourcenotes {
+#ydbsgquewb .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1332,7 +1348,7 @@ unit(2, : Ignoring unknown parameters: `label_dodge`</code></pre>
   border-right-color: #D3D3D3;
 }
 
-#xrnztesnud .gt_sourcenote {
+#ydbsgquewb .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1340,72 +1356,72 @@ unit(2, : Ignoring unknown parameters: `label_dodge`</code></pre>
   padding-right: 5px;
 }
 
-#xrnztesnud .gt_left {
+#ydbsgquewb .gt_left {
   text-align: left;
 }
 
-#xrnztesnud .gt_center {
+#ydbsgquewb .gt_center {
   text-align: center;
 }
 
-#xrnztesnud .gt_right {
+#ydbsgquewb .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#xrnztesnud .gt_font_normal {
+#ydbsgquewb .gt_font_normal {
   font-weight: normal;
 }
 
-#xrnztesnud .gt_font_bold {
+#ydbsgquewb .gt_font_bold {
   font-weight: bold;
 }
 
-#xrnztesnud .gt_font_italic {
+#ydbsgquewb .gt_font_italic {
   font-style: italic;
 }
 
-#xrnztesnud .gt_super {
+#ydbsgquewb .gt_super {
   font-size: 65%;
 }
 
-#xrnztesnud .gt_footnote_marks {
+#ydbsgquewb .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#xrnztesnud .gt_asterisk {
+#ydbsgquewb .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#xrnztesnud .gt_indent_1 {
+#ydbsgquewb .gt_indent_1 {
   text-indent: 5px;
 }
 
-#xrnztesnud .gt_indent_2 {
+#ydbsgquewb .gt_indent_2 {
   text-indent: 10px;
 }
 
-#xrnztesnud .gt_indent_3 {
+#ydbsgquewb .gt_indent_3 {
   text-indent: 15px;
 }
 
-#xrnztesnud .gt_indent_4 {
+#ydbsgquewb .gt_indent_4 {
   text-indent: 20px;
 }
 
-#xrnztesnud .gt_indent_5 {
+#ydbsgquewb .gt_indent_5 {
   text-indent: 25px;
 }
 
-#xrnztesnud .katex-display {
+#ydbsgquewb .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#xrnztesnud div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#ydbsgquewb div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -1517,6 +1533,38 @@ unit(2, : Ignoring unknown parameters: `label_dodge`</code></pre>
 <td class="gt_row gt_left" headers="edge_type">morphism</td>
 <td class="gt_row gt_left" headers="category">computational objects</td>
 <td class="gt_row gt_left" headers="morphism">NA</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="from">anal-bead-themeCode</td>
+<td class="gt_row gt_left" headers="to">anal-beads-of-data-dev</td>
+<td class="gt_row gt_right" headers="edge_label"></td>
+<td class="gt_row gt_left" headers="edge_type">morphism</td>
+<td class="gt_row gt_left" headers="category">file structure</td>
+<td class="gt_row gt_left" headers="morphism">is an element of</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="from">anal-beadsCode</td>
+<td class="gt_row gt_left" headers="to">anal-beads-of-data-dev</td>
+<td class="gt_row gt_right" headers="edge_label"></td>
+<td class="gt_row gt_left" headers="edge_type">morphism</td>
+<td class="gt_row gt_left" headers="category">file structure</td>
+<td class="gt_row gt_left" headers="morphism">is an element of</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="from">care-bear-dataCode</td>
+<td class="gt_row gt_left" headers="to">anal-beads-of-data-dev</td>
+<td class="gt_row gt_right" headers="edge_label"></td>
+<td class="gt_row gt_left" headers="edge_type">morphism</td>
+<td class="gt_row gt_left" headers="category">file structure</td>
+<td class="gt_row gt_left" headers="morphism">is an element of</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="from">hairy-anal-beadsCode</td>
+<td class="gt_row gt_left" headers="to">anal-beads-of-data-dev</td>
+<td class="gt_row gt_right" headers="edge_label"></td>
+<td class="gt_row gt_left" headers="edge_type">morphism</td>
+<td class="gt_row gt_left" headers="category">file structure</td>
+<td class="gt_row gt_left" headers="morphism">is an element of</td>
 </tr>
 <tr class="odd">
 <td class="gt_row gt_left" headers="from">anal-beads-of-data-dev</td>
@@ -1653,40 +1701,32 @@ unit(2, : Ignoring unknown parameters: `label_dodge`</code></pre>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb53"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb53-1"><a href="#cb53-1" aria-hidden="true" tabindex="-1"></a>S_graph</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code># A tbl_graph: 19 nodes and 23 edges
+<pre><code># A tbl_graph: 23 nodes and 27 edges
 #
 # A directed acyclic simple graph with 2 components
 #
-# Node Data: 19 × 4 (active)
-   name                   node_label             category              node_type
-   &lt;chr&gt;                  &lt;chr&gt;                  &lt;chr&gt;                 &lt;chr&gt;    
- 1 raw                    raw                    epistemology          epistemo…
- 2 edges                  edges                  epistemology          epistemo…
- 3 nodes                  nodes                  epistemology          epistemo…
- 4 tidygraph              tidygraph              epistemology          epistemo…
- 5 ggraph                 ggraph                 epistemology          epistemo…
- 6 display                display                epistemology          epistemo…
- 7 anal_beads_df          anal_beads_df          computational objects function 
- 8 anal_beads             anal_beads             computational objects function 
- 9 hairy_anal_beads       hairy_anal_beads       computational objects function 
-10 anal-beads-of-data-dev anal-beads-of-data-dev file structure        file     
-11 figures-and-tables     figures-and-tables     file structure        file     
-12 index.qmd              index.qmd              file structure        file     
-13 qao.qmd                qao.qmd                file structure        file     
-14 slides                 slides                 file structure        file     
-15 anal_beads_vis         anal_beads_vis         computational objects function 
-16 deploy                 deploy                 epistemology          epistemo…
-17 hairy_anal_beads_vis   hairy_anal_beads_vis   computational objects function 
-18 good-enough            good-enough            file structure        file     
-19 anal-beads.R           &lt;NA&gt;                   &lt;NA&gt;                  &lt;NA&gt;     
+# Node Data: 23 × 4 (active)
+   name                node_label          category              node_type   
+   &lt;chr&gt;               &lt;chr&gt;               &lt;chr&gt;                 &lt;chr&gt;       
+ 1 raw                 raw                 epistemology          epistemology
+ 2 edges               edges               epistemology          epistemology
+ 3 nodes               nodes               epistemology          epistemology
+ 4 tidygraph           tidygraph           epistemology          epistemology
+ 5 ggraph              ggraph              epistemology          epistemology
+ 6 display             display             epistemology          epistemology
+ 7 anal_beads_df       anal_beads_df       computational objects function    
+ 8 anal_beads          anal_beads          computational objects function    
+ 9 hairy_anal_beads    hairy_anal_beads    computational objects function    
+10 anal-bead-themeCode anal-bead-themeCode file structure        file        
+# ℹ 13 more rows
 #
-# Edge Data: 23 × 6
+# Edge Data: 27 × 6
    from    to edge_label edge_type category                  morphism           
   &lt;int&gt; &lt;int&gt; &lt;chr&gt;      &lt;chr&gt;     &lt;chr&gt;                     &lt;chr&gt;              
 1     1     2 ""         morphism  epistemological intention epistemic intention
 2     2     3 ""         morphism  epistemological intention epistemic intention
 3     1     3 ""         morphism  epistemological intention epistemic intention
-# ℹ 20 more rows</code></pre>
+# ℹ 24 more rows</code></pre>
 </div>
 </div>
 </div>

@@ -536,10 +536,8 @@ mooncake_test = "hi Mooncake"</code></pre>
 <span id="cb9-13"><a></a>  dplyr<span class="sc">::</span><span class="fu">inner_join</span>(expected_datum)</span>
 <span id="cb9-14"><a></a>) <span class="sc">&gt;</span> <span class="dv">0</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
-<div class="cell-output cell-output-error">
-<pre><code>Error in `dplyr::inner_join()`:
-! `by` must be supplied when `x` and `y` have no common variables.
-ℹ Use `cross_join()` to perform a cross-join.</code></pre>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] TRUE</code></pre>
 </div>
 </div>
 </section>
@@ -575,7 +573,12 @@ mooncake_test = "hi Mooncake"</code></pre>
 <span id="cb15-2"><a></a><span class="fu">head</span>(AnalBeads<span class="sc">$</span>edges, <span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
-<pre><code>data frame with 0 columns and 0 rows</code></pre>
+<pre><code># A tibble: 3 × 2
+  from     to       
+  &lt;chr&gt;    &lt;chr&gt;    
+1 question source   
+2 source   ingest   
+3 ingest   transform</code></pre>
 </div>
 </div>
 </section>
@@ -642,10 +645,8 @@ mooncake_test = "hi Mooncake"</code></pre>
 <span id="cb21-13"><a></a>  dplyr<span class="sc">::</span><span class="fu">inner_join</span>(expected_datum)</span>
 <span id="cb21-14"><a></a>) <span class="sc">&gt;</span> <span class="dv">0</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
-<div class="cell-output cell-output-error">
-<pre><code>Error in `dplyr::inner_join()`:
-! `by` must be supplied when `x` and `y` have no common variables.
-ℹ Use `cross_join()` to perform a cross-join.</code></pre>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] TRUE</code></pre>
 </div>
 </div>
 </section>
@@ -670,7 +671,7 @@ mooncake_test = "hi Mooncake"</code></pre>
 <span id="cb25-4"><a></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] FALSE</code></pre>
+<pre><code>[1] TRUE</code></pre>
 </div>
 <details class="code-fold">
 <summary>Code</summary>
@@ -678,7 +679,12 @@ mooncake_test = "hi Mooncake"</code></pre>
 <span id="cb27-2"><a></a><span class="fu">head</span>(AnalBeads<span class="sc">$</span>edges, <span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
-<pre><code>data frame with 0 columns and 0 rows</code></pre>
+<pre><code># A tibble: 3 × 2
+  from     to       
+  &lt;chr&gt;    &lt;chr&gt;    
+1 question source   
+2 source   ingest   
+3 ingest   transform</code></pre>
 </div>
 </div>
 </section>
@@ -724,7 +730,7 @@ mooncake_test = "hi Mooncake"</code></pre>
 <section id="edges" class="slide level2">
 <h2>Edges</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a></a>AnalBeads <span class="ot">&lt;-</span> ButtonCategory<span class="sc">$</span><span class="fu">new</span>()</span>
+<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a></a>AnalBeads <span class="ot">&lt;-</span> ButtonCategory<span class="sc">$</span><span class="fu">new</span>(<span class="at">preset =</span> <span class="st">"anal_beads"</span>)</span>
 <span id="cb35-2"><a></a>AnalBeads<span class="sc">$</span><span class="fu">testEdges</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>Test if edge names contain required fields</code></pre>
@@ -736,13 +742,56 @@ mooncake_test = "hi Mooncake"</code></pre>
 <pre><code>Test if edges are non-empty</code></pre>
 </div>
 <div class="cell-output cell-output-stderr">
-<pre><code>FALSE</code></pre>
+<pre><code>TRUE</code></pre>
 </div>
 <div class="cell-output cell-output-stderr">
 <pre><code>Edge test passing status:</code></pre>
 </div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] FALSE</code></pre>
+<pre><code>[1] TRUE</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb42"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb42-1"><a></a>dplyr<span class="sc">::</span><span class="fu">sample_n</span>(AnalBeads<span class="sc">$</span>edges, <span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 3 × 2
+  from      to      
+  &lt;chr&gt;     &lt;chr&gt;   
+1 interpret decision
+2 document  analyse 
+3 source    ingest  </code></pre>
+</div>
+</div>
+</section>
+<section class="slide level2">
+
+<div class="cell">
+<div class="sourceCode cell-code" id="cb44"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb44-1"><a></a>HairyAnalBeads <span class="ot">&lt;-</span> ButtonCategory<span class="sc">$</span><span class="fu">new</span>(<span class="at">preset =</span> <span class="st">"hairy_anal_beads"</span>)</span>
+<span id="cb44-2"><a></a>HairyAnalBeads<span class="sc">$</span><span class="fu">testEdges</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Test if edge names contain required fields</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>TRUE</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Test if edges are non-empty</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>TRUE</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Edge test passing status:</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] TRUE</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb51"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb51-1"><a></a>dplyr<span class="sc">::</span><span class="fu">sample_n</span>(HairyAnalBeads<span class="sc">$</span>edges, <span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 3 × 5
+  from      to        reason                       reason_na project_integrity
+  &lt;chr&gt;     &lt;chr&gt;     &lt;chr&gt;                        &lt;lgl&gt;     &lt;chr&gt;            
+1 interpret transform "measure\nmisunderstood"     FALSE     actioned         
+2 analyse   interpret "no time for\ndocumentation" FALSE     actioned         
+3 document  analyse   ""                           TRUE      backlog          </code></pre>
 </div>
 </div>
 </section></section>

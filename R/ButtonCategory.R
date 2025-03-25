@@ -3,7 +3,8 @@ source("R/ButtonDesignCategory.R")
 # presets
 
 # Initilisation method
-initButton <- function() {
+initButton <- function(preset = "anal_beads") {
+  callSuper(preset = preset)
 }
 
 
