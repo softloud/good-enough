@@ -5,8 +5,9 @@ format:
     code-fold: true
     echo: true
 
-title: "ESG Data Governance & Living Analysis Lifescycle"
-subtitle: DBT Copenhagen Meetup
+title: "Governing Data for the People, by the People"
+subtitle: "ESG Data Governance & Living Analysis Lifescycle"
+institute: DBT Copenhagen Meetup
 date: Wednesday 26 March 2025
 bibliography: ../singularities.bib
 html-math-method: mathml
@@ -14,6 +15,18 @@ author: Charles T. Gray, PhD -- Datapunk
 execute:
   freeze: auto
 --- 
+
+## Expected Living Analysis Lifecycle
+
+```{r}
+#| echo: false
+
+# source generator
+source("R/ButtonCategory.R")
+AnalBeads <- ButtonDesignCategory$new(preset = "anal_beads")
+DiagrammeR::grViz(AnalBeads$generateDotGraph())
+
+```
 
 
 ## Ceci n'est pas un datum
@@ -29,6 +42,180 @@ execute:
     allowfullscreen>
   </iframe>  
 </div>
+
+*This is Spinal Tap*  [@reiner_this_1984]
+
+## Reality of Living Analysis Lifecycle
+
+```{r}
+#| echo: false
+
+HairyAnalBeads <- ButtonDesignCategory$new(preset = "hairy_anal_beads")
+DiagrammeR::grViz(HairyAnalBeads$generateDotGraph())
+
+
+```
+
+## {.smaller}
+
+::: {.panel-tabset}
+
+#### A realistic first epic
+
+Validation of a FAIR data entity.
+
+Analyst records the outcome of a validation of an analytical observation.
+
+
+#### docs
+
+`{% docs validation_2025_01 %}`
+
+#### Data Validation
+See ticket for more context [DAA-665]. First, naive validation on ESG kpis. 
+Compare 1 data point with [previously reported number] from 2023.
+
+#### Date of Validation
+
+January 10, 2025.
+
+#### Results
+
+E1-6_07 for Gross scope 1 greenhouse gas emissions for `Diesel` in 2023 is 
+approximately 7 times the reported measure.
+
+| KPI_PREVIOUS | KPI_MEASURE | PROPORTION_OF_REPORTED_MEASURE | UNIT_OF_MEASUREMENT | EMISSION_FACTOR_USED |
+| ------------ | --------------- | -------------------- | ------------------- | -------------------- |
+| 3,111,543.42 | 21,814,714.592… | 7.011… | liter | 239.080… |
+
+#### How to use this validation
+
+This [dbt analysis](https://docs.getdbt.com/docs/build/analyses) will not be 
+written to snowflake. This is a script that can be run to compare previously 
+reported figures.
+
+Test-driven development can help narrow the scope of quality objectives, so 
+checking to see if the propotion of the reported measure is getting closer to 1 
+is potentially a useful optimisation technique to speed debugging.
+
+#### Limitations of this validation
+
+This validation was written while calculated kpis are still dynamic, it 
+required further calculation & joins, and will likely require refactoring into 
+a new validation if it is to be reused.
+
+#### enddocs
+
+`{% enddocs %}`
+
+:::
+
+## Roadmap to [FAIR](https://www.go-fair.org/fair-principles/f1-meta-data-assigned-globally-unique-persistent-identifiers/) Compliance
+
+```{r}
+#| echo: false
+
+source("figures-and-tables/fair-minimum-criteria/fair-minimum-criteria.R")
+
+fair_gt
+
+```
+
+Go FAIR (@noauthor_fair_nodate).
+
+## Minimum tests on the data entity
+
+```{r}
+#| echo: false
+source("figures-and-tables/naive-tests/naive-tests.R")
+
+test_gt
+
+```
+
+## Minimum test examples
+
+::: {.panel-tabset}
+
+
+
+### Source
+
+```yml
+- name: wf_ap
+        description: '{{ doc("invoice_item_id") }}'
+        data_tests:
+          - tdc__table_contains_data
+          - unique:
+              column_name: "type_no || '-' || doc_id"
+          - not_null:
+              column_name: "type_no || '-' || doc_id"
+       freshness: 
+          warn_after: {count: 1, period: day}
+          error_after: {count: 7, period: day}
+        loaded_at_field: opdateret_dato
+
+```
+
+### Non empty
+
+```md
+{% test tdc__table_contains_data(model) %}
+  SELECT 
+    CASE 
+      WHEN (SELECT COUNT(*) FROM {{model}} limit 1) > 0 THEN 'Table is not empty'
+      ELSE 'Table is empty'
+    END AS result
+    having result='Table is empty'
+{% endtest %}
+```
+
+### Entity macro
+
+```md
+{% docs invoice_item_id %}
+
+  ### Data entity
+
+  Each row in these data is used to identify an item on an invoice; some 
+  expenditure. Each row is uniquely identified by `type_no` and `doc_id`, 
+  this is concatenated in published by `invoice_item_id`. 
+
+  ### Tests
+
+  [Data product standard tests applied].
+  
+
+{% enddocs %}
+
+```
+
+:::
+
+
+## Development Chaos & Social Entropy
+
+![](raptors-what.gif)
+
+## Carebears
+
+```{r}
+#| echo: false
+
+CareBears <- ButtonDesignCategory$new(preset = "care_bears")
+DiagrammeR::grViz(CareBears$generateDotGraph())
+
+
+```
+
+
+
+## Governing Data
+
+Is for the people.
+
+And you're the people to make that happen.
+
 
 # Tests (*on the presheaf of visualisations*)
 
@@ -79,7 +266,7 @@ source("R/ButtonCategory.R")
 ```{r}
 #| code-fold: false
 #| message: true
-AnalBeadsEdges <- ButtonEdgeDesignCategory$new()
+AnalBeadsEdges <- ButtonEdgeDesignCategory$new(preset = "anal_beads")
 AnalBeadsEdges$testEdges()
 dplyr::sample_n(AnalBeadsEdges$edges, 3)
 ```
@@ -101,7 +288,7 @@ dplyr::sample_n(HairyAnalBeadsEdges$edges, 3)
 ```{r}
 #| code-fold: false
 #| message: true
-AnalBeadsNodes <- ButtonNodeDesignCategory$new()
+AnalBeadsNodes <- ButtonNodeDesignCategory$new(preset = "anal_beads")
 AnalBeadsNodes$testNodes()
 dplyr::sample_n(AnalBeadsNodes$nodes, 3)
 ```
@@ -141,65 +328,6 @@ dplyr::sample_n(HairyAnalBeads$nodes, 3)
 
 ```
 
-## graph
-
-```{r}
-to_dot <- function(nodes, edges) {
-  # Convert node rows to DOT node declarations
-  node_lines <- apply(nodes, 1, function(row) {
-    paste0(
-      '"', row[["node"]], 
-      '" [style=filled, fillcolor="', row[["node_colour"]], 
-      '", shape=box];'
-    )
-  })
-
-  # Convert edge rows to DOT edge declarations
-  edge_lines <- apply(edges, 1, function(row) {
-    paste0(
-      '"', row[["from"]], 
-      '" -> "', row[["to"]], 
-      '" [style=', row[["line_type"]], '];'
-    )
-  })
-
-  # Wrap into DOT format
-  dot_code <- paste0(
-    "digraph {\n  rankdir=LR;\n  node [fontname=Helvetica];\n  ",
-    paste(node_lines, collapse = "\n  "), "\n  ",
-    paste(edge_lines, collapse = "\n  "), "\n}"
-  )
-
-  return(dot_code)
-}
-
-```
-
-
-```{r dot-anal-beads, results="asis"}
-
-# Add example styling columns
-AnalBeads$nodes$node_colour <- "lightblue"
-AnalBeads$edges$line_type <- "solid"
-
-# Generate DOT code
-dot_code <- to_dot(
-  nodes = AnalBeads$nodes,
-  edges = AnalBeads$edges
-)
-
-
-
-```
-
----
-
-```{r}
-#| echo: false 
-# Render
-DiagrammeR::grViz(dot_code)
-
-```
 
 # Earlier tests
 

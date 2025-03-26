@@ -103,8 +103,13 @@ Humans, bless 'em, are not great at conceptualising the black  boxes they work w
 ```{r message=FALSE, echo=FALSE}
 #| fig-height: 4
 #| fig-width: 12
-source("figures-and-tables/anal-beads-of-data-dev/anal-beads.R")
-anal_beads_vis
+# source("figures-and-tables/anal-beads-of-data-dev/anal-beads.R")
+# anal_beads_vis
+
+source("R/ButtonCategory.R")
+AnalBeads <- ButtonDesignCategory$new(preset = "anal_beads")
+DiagrammeR::grViz(AnalBeads$generateDotGraph())
+
 
 ```
 
@@ -121,12 +126,13 @@ Despite our best-laid agile plans, however, there's an inevitable drift that occ
 #| fig-height: 8
 #| fig-width: 12
 
-source("figures-and-tables/anal-beads-of-data-dev/hairy-anal-beads.R")
-hairy_anal_beads_vis
+HairyAnalBeads <- ButtonDesignCategory$new(preset = "hairy_anal_beads")
+DiagrammeR::grViz(HairyAnalBeads$generateDotGraph())
+
 
 ```
 
-The hairy anal beads of data development.
+The tangled anal beads of data development.
 
 :::
 
@@ -138,8 +144,8 @@ The hairy anal beads of data development.
 #| fig-height: 12
 #| fig-width: 12
 
-source("figures-and-tables/anal-beads-of-data-dev/care-bear-data.R")
-version_0_dev
+CareBears <- ButtonDesignCategory$new(preset = "care_bears")
+DiagrammeR::grViz(CareBears$generateDotGraph())
 
 ```
 
