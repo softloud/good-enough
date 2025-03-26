@@ -217,7 +217,7 @@ Is for the people.
 And you're the people to make that happen.
 
 
-# Tests (*on the presheaf of visualisations*)
+# Test Appendix (*on the presheaf of visualisations*)
 
 ## Test: generator $\to$ display
 

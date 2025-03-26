@@ -129,7 +129,8 @@ ButtonEdgeDesignCategory <- setRefClass(
           "analyse", "ingest", "not updating",
           "decision", "interpret", "analysis does not inform decision",
           "analyse", "transform", "needs different data shape",
-          "analyse", "interpret", "no time for documentation"
+          "analyse", "interpret", "no time for documentation",
+          "analyse", "deploy", "unanticipated deployment issues"
         ) |> 
           dplyr::mutate(
             reason = stringr::str_wrap(reason, 15),
@@ -189,6 +190,7 @@ ButtonNodeDesignCategory <- setRefClass(
               node %in% c("source") ~ "project planning",
               node %in% c("analyse", "interpret") ~ "data analysis",
               node %in% c("decision", "question") ~ "decision making",
+              node %in% c("deploy") ~ "platform engineering",
               TRUE  ~ "data engineering"
         ))} else if (preset == "care_bears") {
           nodes <<- detailed_nodes
