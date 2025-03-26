@@ -23,10 +23,10 @@ anal_beads <- anal_beads_df %>%
     # role refers to role required from from column
     role =
       case_when(
-        name %in% c("source") ~ "project plan documentation",
-        name %in% c("analyse", "interpret") ~ "analyst",
-        name %in% c("decision", "question") ~ "decisionmaker",
-        TRUE  ~ "data engineer"
+        name %in% c("source") ~ "project planning",
+        name %in% c("analyse", "interpret") ~ "data analysis",
+        name %in% c("decision", "question") ~ "decision making",
+        TRUE  ~ "data engineering"
       )  %>% 
       factor(levels = c("decisionmaker", "project plan documentation", "data engineer", "analyst"))
   )
