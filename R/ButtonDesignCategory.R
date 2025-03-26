@@ -129,7 +129,8 @@ ButtonEdgeDesignCategory <- setRefClass(
           "analyse", "ingest", "not updating",
           "decision", "interpret", "analysis does not inform decision",
           "analyse", "transform", "needs different data shape",
-          "analyse", "interpret", "no time for documentation"
+          "analyse", "interpret", "no time for documentation",
+          "analyse", "deploy", "unanticipated deployment issues"
         ) |> 
           dplyr::mutate(
             reason = stringr::str_wrap(reason, 15),
@@ -146,6 +147,10 @@ ButtonEdgeDesignCategory <- setRefClass(
               ) 
       } else if (preset == "care_bears") {
         edges <<- detailed_edges
+      } else if (preset == "fde") {
+        edges <<- detailed_edges[c(1:10), ]
+      } else if (preset == "postfde") {
+        edges <<- detailed_edges[-c(1:10), ]
       }
     },
     testEdges = function() {
@@ -189,10 +194,11 @@ ButtonNodeDesignCategory <- setRefClass(
               node %in% c("source") ~ "project planning",
               node %in% c("analyse", "interpret") ~ "data analysis",
               node %in% c("decision", "question") ~ "decision making",
+              node %in% c("deploy") ~ "platform engineering",
               TRUE  ~ "data engineering"
-        ))} else if (preset == "care_bears") {
+        ))} else if (preset %in% c("care_bears", "fde", "postfde")) {
           nodes <<- detailed_nodes
-        }
+        } 
         },
     testNodes = function() {
       message("Test if node names contain required fields:")

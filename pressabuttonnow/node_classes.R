@@ -75,7 +75,7 @@ buttonNode <- setRefClass("button_node",
       reset_to_question <- sample(
         c(TRUE, FALSE),
         size = 1,
-        prob = c(0.2, 0.8)
+        prob = c(0.4, 0.6)
         )
 
       reset_to_question_conditional <- isTRUE(reset_to_question) && 

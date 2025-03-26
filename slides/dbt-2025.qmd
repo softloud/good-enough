@@ -6,7 +6,7 @@ format:
     echo: true
 
 title: "Governing Data for the People, by the People"
-subtitle: "ESG Data Governance & Living Analysis Lifescycle"
+subtitle: "ESG Data Governance & Living Analysis Development Lifescycle"
 institute: DBT Copenhagen Meetup
 date: Wednesday 26 March 2025
 bibliography: ../singularities.bib
@@ -16,7 +16,9 @@ execute:
   freeze: auto
 --- 
 
-## Expected Living Analysis Lifecycle
+# Expectation 
+
+## Expected Living Analysis Development Lifecycle 
 
 ```{r}
 #| echo: false
@@ -28,6 +30,7 @@ DiagrammeR::grViz(AnalBeads$generateDotGraph())
 
 ```
 
+# Reality
 
 ## Ceci n'est pas un datum
 
@@ -45,7 +48,7 @@ DiagrammeR::grViz(AnalBeads$generateDotGraph())
 
 *This is Spinal Tap*  [@reiner_this_1984]
 
-## Reality of Living Analysis Lifecycle
+## Reality of Living Analysis Development Lifecycle
 
 ```{r}
 #| echo: false
@@ -56,9 +59,15 @@ DiagrammeR::grViz(HairyAnalBeads$generateDotGraph())
 
 ```
 
-## {.smaller}
 
-::: {.panel-tabset}
+
+# Reality $\to$ expectation 
+
+---
+
+### Realistic deliverables for data developers {.smallest}
+
+::: {.panel-tabset} 
 
 #### A realistic first epic
 
@@ -112,6 +121,8 @@ a new validation if it is to be reused.
 
 ## Roadmap to [FAIR](https://www.go-fair.org/fair-principles/f1-meta-data-assigned-globally-unique-persistent-identifiers/) Compliance
 
+Is the roadmap to developer wellbeing.
+
 ```{r}
 #| echo: false
 
@@ -139,7 +150,7 @@ test_gt
 
 
 
-### Source
+#### Source
 
 ```yml
 - name: wf_ap
@@ -157,7 +168,7 @@ test_gt
 
 ```
 
-### Non empty
+#### Non empty
 
 ```md
 {% test tdc__table_contains_data(model) %}
@@ -170,7 +181,7 @@ test_gt
 {% endtest %}
 ```
 
-### Entity macro
+#### Entity macro
 
 ```md
 {% docs invoice_item_id %}
@@ -197,7 +208,28 @@ test_gt
 
 ![](raptors-what.gif)
 
-## Carebears
+# Datapunks... assemble!
+
+
+```{r}
+#| echo: false
+
+#  FDE <- ButtonDesignCategory$new(preset = "fde")
+#DiagrammeR::grViz(FDE$generateDotGraph())
+
+
+```
+
+
+```{r}
+#| echo: false
+
+# PostFDE <- ButtonDesignCategory$new(preset = "fde")
+# DiagrammeR::grViz(PostFDE$generateDotGraph())
+
+```
+
+---
 
 ```{r}
 #| echo: false
@@ -217,7 +249,7 @@ Is for the people.
 And you're the people to make that happen.
 
 
-# Tests (*on the presheaf of visualisations*)
+# Test Appendix (*on the presheaf of visualisations*)
 
 ## Test: generator $\to$ display
 
@@ -253,7 +285,7 @@ mooncake_test
 
 Can we validate a single datum? 
 
-> I expect there to be a node `ingest` that goes to a node `transform` representing `data engineering` tasks in the `expected` instance of living analysis lifecycle.
+> I expect there to be a node `ingest` that goes to a node `transform` representing `data engineering` tasks in the `expected` instance of living analysis development lifecycle.
 
 ```{r}
 # source generator
