@@ -442,8 +442,8 @@ Charles T. Gray, PhD – Datapunk
 <h2>Expected Living Analysis Development Lifecycle</h2>
 <div class="cell">
 <div class="cell-output-display">
-<div class="grViz html-widget html-fill-item" id="htmlwidget-f8cfe1e566b85897c12a" style="width:960px;height:480px;"></div>
-<script type="application/json" data-for="htmlwidget-f8cfe1e566b85897c12a">{"x":{"diagram":"digraph {\n  graph [margin=0.05, bgcolor=\"transparent\", rankdir=TB, splines=true];\n  rankdir=LR;\n  node [fontname=Helvetica];\n\n  \"source\" [style=filled, fillcolor=\"#F5DEB3B3\", shape=box];\n  \"ingest\" [style=filled, fillcolor=\"#ADD8E6B3\", shape=box];\n  \"transform\" [style=filled, fillcolor=\"#ADD8E6B3\", shape=box];\n  \"validate\" [style=filled, fillcolor=\"#ADD8E6B3\", shape=box];\n  \"document\" [style=filled, fillcolor=\"#ADD8E6B3\", shape=box];\n  \"analyse\" [style=filled, fillcolor=\"#8FBC8FB3\", shape=box];\n  \"interpret\" [style=filled, fillcolor=\"#8FBC8FB3\", shape=box];\n  \"decision\" [style=filled, fillcolor=\"#F08080B3\", shape=box];\n  \"question\" [style=filled, fillcolor=\"#F08080B3\", shape=box];\n\n  \"question\" -> \"source\" [style=solid];\n  \"source\" -> \"ingest\" [style=solid];\n  \"ingest\" -> \"transform\" [style=solid];\n  \"transform\" -> \"validate\" [style=solid];\n  \"validate\" -> \"document\" [style=solid];\n  \"document\" -> \"analyse\" [style=solid];\n  \"analyse\" -> \"interpret\" [style=solid];\n  \"interpret\" -> \"decision\" [style=solid];\n\n  subgraph cluster_legend {\n  label = \"Legend\";\n  style = dashed;\n  fontsize = 12;\n  margin = 20;\n  rankdir = LR;\n  rank = sink;\n\"data engineering\" [label=\"data engineering\", style=filled, fillcolor=\"#ADD8E6B3\", shape=box];\n  \"data analysis\" [label=\"data analysis\", style=filled, fillcolor=\"#8FBC8FB3\", shape=box];\n  \"project planning\" [label=\"project planning\", style=filled, fillcolor=\"#F5DEB3B3\", shape=box];\n  \"decision making\" [label=\"decision making\", style=filled, fillcolor=\"#F08080B3\", shape=box];\n  \"platform engineering\" [label=\"platform engineering\", style=filled, fillcolor=\"#FF8C00B3\", shape=box];\n  \"data engineering\" -> \"data analysis\" -> \"platform engineering\" -> \"project planning\" -> \"decision making\" [style=invis];\n}\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+<div class="grViz html-widget html-fill-item" id="htmlwidget-505c3ddf2249547ab38f" style="width:960px;height:480px;"></div>
+<script type="application/json" data-for="htmlwidget-505c3ddf2249547ab38f">{"x":{"diagram":"digraph {\n  graph [margin=0.05, bgcolor=\"transparent\", rankdir=TB, splines=true];\n  rankdir=LR;\n  node [fontname=Helvetica];\n\n  \"source\" [style=filled, fillcolor=\"#F5DEB3B3\", shape=box];\n  \"ingest\" [style=filled, fillcolor=\"#ADD8E6B3\", shape=box];\n  \"transform\" [style=filled, fillcolor=\"#ADD8E6B3\", shape=box];\n  \"validate\" [style=filled, fillcolor=\"#ADD8E6B3\", shape=box];\n  \"document\" [style=filled, fillcolor=\"#ADD8E6B3\", shape=box];\n  \"analyse\" [style=filled, fillcolor=\"#8FBC8FB3\", shape=box];\n  \"interpret\" [style=filled, fillcolor=\"#8FBC8FB3\", shape=box];\n  \"decision\" [style=filled, fillcolor=\"#F08080B3\", shape=box];\n  \"question\" [style=filled, fillcolor=\"#F08080B3\", shape=box];\n\n  \"question\" -> \"source\" [style=solid];\n  \"source\" -> \"ingest\" [style=solid];\n  \"ingest\" -> \"transform\" [style=solid];\n  \"transform\" -> \"validate\" [style=solid];\n  \"validate\" -> \"document\" [style=solid];\n  \"document\" -> \"analyse\" [style=solid];\n  \"analyse\" -> \"interpret\" [style=solid];\n  \"interpret\" -> \"decision\" [style=solid];\n\n  subgraph cluster_legend {\n  label = \"Legend\";\n  style = dashed;\n  fontsize = 12;\n  margin = 20;\n  rankdir = LR;\n  rank = sink;\n\"data engineering\" [label=\"data engineering\", style=filled, fillcolor=\"#ADD8E6B3\", shape=box];\n  \"data analysis\" [label=\"data analysis\", style=filled, fillcolor=\"#8FBC8FB3\", shape=box];\n  \"project planning\" [label=\"project planning\", style=filled, fillcolor=\"#F5DEB3B3\", shape=box];\n  \"decision making\" [label=\"decision making\", style=filled, fillcolor=\"#F08080B3\", shape=box];\n  \"platform engineering\" [label=\"platform engineering\", style=filled, fillcolor=\"#FF8C00B3\", shape=box];\n  \"data engineering\" -> \"data analysis\" -> \"platform engineering\" -> \"project planning\" -> \"decision making\" [style=invis];\n}\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 </section></section>
@@ -463,10 +463,15 @@ Charles T. Gray, PhD – Datapunk
 <h2>Reality of Living Analysis Development Lifecycle</h2>
 <div class="cell">
 <div class="cell-output-display">
-<div class="grViz html-widget html-fill-item" id="htmlwidget-a052277f9a60d140a172" style="width:960px;height:480px;"></div>
-<script type="application/json" data-for="htmlwidget-a052277f9a60d140a172">{"x":{"diagram":"digraph {\n  graph [margin=0.05, bgcolor=\"transparent\", rankdir=TB, splines=true];\n  rankdir=LR;\n  node [fontname=Helvetica];\n\n  \"analyse\" [style=filled, fillcolor=\"#8FBC8FB3\", shape=box];\n  \"transform\" [style=filled, fillcolor=\"#ADD8E6B3\", shape=box];\n  \"ingest\" [style=filled, fillcolor=\"#ADD8E6B3\", shape=box];\n  \"interpret\" [style=filled, fillcolor=\"#8FBC8FB3\", shape=box];\n  \"deploy\" [style=filled, fillcolor=\"#FF8C00B3\", shape=box];\n  \"source\" [style=filled, fillcolor=\"#F5DEB3B3\", shape=box];\n  \"validate\" [style=filled, fillcolor=\"#ADD8E6B3\", shape=box];\n  \"document\" [style=filled, fillcolor=\"#ADD8E6B3\", shape=box];\n  \"decision\" [style=filled, fillcolor=\"#F08080B3\", shape=box];\n  \"question\" [style=filled, fillcolor=\"#F08080B3\", shape=box];\n\n  \"interpret\" -> \"analyse\" [style=dashed];\n  \"interpret\" -> \"transform\" [style=dashed];\n  \"analyse\" -> \"ingest\" [style=dashed];\n  \"decision\" -> \"interpret\" [style=dashed];\n  \"analyse\" -> \"transform\" [style=dashed];\n  \"analyse\" -> \"interpret\" [style=dashed];\n  \"analyse\" -> \"deploy\" [style=dashed];\n  \"question\" -> \"source\" [style=solid];\n  \"source\" -> \"ingest\" [style=solid];\n  \"ingest\" -> \"transform\" [style=solid];\n  \"transform\" -> \"validate\" [style=solid];\n  \"validate\" -> \"document\" [style=solid];\n  \"document\" -> \"analyse\" [style=solid];\n  \"analyse\" -> \"interpret\" [style=solid];\n  \"interpret\" -> \"decision\" [style=solid];\n\n  subgraph cluster_legend {\n  label = \"Legend\";\n  style = dashed;\n  fontsize = 12;\n  margin = 20;\n  rankdir = LR;\n  rank = sink;\n\"data engineering\" [label=\"data engineering\", style=filled, fillcolor=\"#ADD8E6B3\", shape=box];\n  \"data analysis\" [label=\"data analysis\", style=filled, fillcolor=\"#8FBC8FB3\", shape=box];\n  \"project planning\" [label=\"project planning\", style=filled, fillcolor=\"#F5DEB3B3\", shape=box];\n  \"decision making\" [label=\"decision making\", style=filled, fillcolor=\"#F08080B3\", shape=box];\n  \"platform engineering\" [label=\"platform engineering\", style=filled, fillcolor=\"#FF8C00B3\", shape=box];\n  \"data engineering\" -> \"data analysis\" -> \"platform engineering\" -> \"project planning\" -> \"decision making\" [style=invis];\n}\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+<div class="grViz html-widget html-fill-item" id="htmlwidget-080ffec09cb38ca975f4" style="width:960px;height:480px;"></div>
+<script type="application/json" data-for="htmlwidget-080ffec09cb38ca975f4">{"x":{"diagram":"digraph {\n  graph [margin=0.05, bgcolor=\"transparent\", rankdir=TB, splines=true];\n  rankdir=LR;\n  node [fontname=Helvetica];\n\n  \"analyse\" [style=filled, fillcolor=\"#8FBC8FB3\", shape=box];\n  \"transform\" [style=filled, fillcolor=\"#ADD8E6B3\", shape=box];\n  \"ingest\" [style=filled, fillcolor=\"#ADD8E6B3\", shape=box];\n  \"interpret\" [style=filled, fillcolor=\"#8FBC8FB3\", shape=box];\n  \"deploy\" [style=filled, fillcolor=\"#FF8C00B3\", shape=box];\n  \"source\" [style=filled, fillcolor=\"#F5DEB3B3\", shape=box];\n  \"validate\" [style=filled, fillcolor=\"#ADD8E6B3\", shape=box];\n  \"document\" [style=filled, fillcolor=\"#ADD8E6B3\", shape=box];\n  \"decision\" [style=filled, fillcolor=\"#F08080B3\", shape=box];\n  \"question\" [style=filled, fillcolor=\"#F08080B3\", shape=box];\n\n  \"interpret\" -> \"analyse\" [style=dashed];\n  \"interpret\" -> \"transform\" [style=dashed];\n  \"analyse\" -> \"ingest\" [style=dashed];\n  \"decision\" -> \"interpret\" [style=dashed];\n  \"analyse\" -> \"transform\" [style=dashed];\n  \"analyse\" -> \"interpret\" [style=dashed];\n  \"analyse\" -> \"deploy\" [style=dashed];\n  \"question\" -> \"source\" [style=solid];\n  \"source\" -> \"ingest\" [style=solid];\n  \"ingest\" -> \"transform\" [style=solid];\n  \"transform\" -> \"validate\" [style=solid];\n  \"validate\" -> \"document\" [style=solid];\n  \"document\" -> \"analyse\" [style=solid];\n  \"analyse\" -> \"interpret\" [style=solid];\n  \"interpret\" -> \"decision\" [style=solid];\n\n  subgraph cluster_legend {\n  label = \"Legend\";\n  style = dashed;\n  fontsize = 12;\n  margin = 20;\n  rankdir = LR;\n  rank = sink;\n\"data engineering\" [label=\"data engineering\", style=filled, fillcolor=\"#ADD8E6B3\", shape=box];\n  \"data analysis\" [label=\"data analysis\", style=filled, fillcolor=\"#8FBC8FB3\", shape=box];\n  \"project planning\" [label=\"project planning\", style=filled, fillcolor=\"#F5DEB3B3\", shape=box];\n  \"decision making\" [label=\"decision making\", style=filled, fillcolor=\"#F08080B3\", shape=box];\n  \"platform engineering\" [label=\"platform engineering\", style=filled, fillcolor=\"#FF8C00B3\", shape=box];\n  \"data engineering\" -> \"data analysis\" -> \"platform engineering\" -> \"project planning\" -> \"decision making\" [style=invis];\n}\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
+</section>
+<section id="absurdist-orchestra-of-ungoverned-data-analytics" class="slide level2">
+<h2>Absurdist Orchestra of Ungoverned Data Analytics</h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qLrnkK2YEcE?si=tmnY8L5H6c8vFpAP&amp;controls=0&amp;start=43" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="">
+</iframe>
 </section></section>
 <section>
 <section id="reality-to-expectation" class="title-slide slide level1 center">
@@ -541,23 +546,23 @@ Charles T. Gray, PhD – Datapunk
 <div class="cell">
 <div class="cell-output-display">
 <div>
-<div id="kvppcwkzdq" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#kvppcwkzdq table {
+<div id="mmsysbzajw" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#mmsysbzajw table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#kvppcwkzdq thead, #kvppcwkzdq tbody, #kvppcwkzdq tfoot, #kvppcwkzdq tr, #kvppcwkzdq td, #kvppcwkzdq th {
+#mmsysbzajw thead, #mmsysbzajw tbody, #mmsysbzajw tfoot, #mmsysbzajw tr, #mmsysbzajw td, #mmsysbzajw th {
   border-style: none;
 }
 
-#kvppcwkzdq p {
+#mmsysbzajw p {
   margin: 0;
   padding: 0;
 }
 
-#kvppcwkzdq .gt_table {
+#mmsysbzajw .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -583,12 +588,12 @@ Charles T. Gray, PhD – Datapunk
   border-left-color: #D3D3D3;
 }
 
-#kvppcwkzdq .gt_caption {
+#mmsysbzajw .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#kvppcwkzdq .gt_title {
+#mmsysbzajw .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -600,7 +605,7 @@ Charles T. Gray, PhD – Datapunk
   border-bottom-width: 0;
 }
 
-#kvppcwkzdq .gt_subtitle {
+#mmsysbzajw .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -612,7 +617,7 @@ Charles T. Gray, PhD – Datapunk
   border-top-width: 0;
 }
 
-#kvppcwkzdq .gt_heading {
+#mmsysbzajw .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -624,13 +629,13 @@ Charles T. Gray, PhD – Datapunk
   border-right-color: #D3D3D3;
 }
 
-#kvppcwkzdq .gt_bottom_border {
+#mmsysbzajw .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#kvppcwkzdq .gt_col_headings {
+#mmsysbzajw .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -645,7 +650,7 @@ Charles T. Gray, PhD – Datapunk
   border-right-color: #D3D3D3;
 }
 
-#kvppcwkzdq .gt_col_heading {
+#mmsysbzajw .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -665,7 +670,7 @@ Charles T. Gray, PhD – Datapunk
   overflow-x: hidden;
 }
 
-#kvppcwkzdq .gt_column_spanner_outer {
+#mmsysbzajw .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -677,15 +682,15 @@ Charles T. Gray, PhD – Datapunk
   padding-right: 4px;
 }
 
-#kvppcwkzdq .gt_column_spanner_outer:first-child {
+#mmsysbzajw .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#kvppcwkzdq .gt_column_spanner_outer:last-child {
+#mmsysbzajw .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#kvppcwkzdq .gt_column_spanner {
+#mmsysbzajw .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -697,11 +702,11 @@ Charles T. Gray, PhD – Datapunk
   width: 100%;
 }
 
-#kvppcwkzdq .gt_spanner_row {
+#mmsysbzajw .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#kvppcwkzdq .gt_group_heading {
+#mmsysbzajw .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -727,7 +732,7 @@ Charles T. Gray, PhD – Datapunk
   text-align: left;
 }
 
-#kvppcwkzdq .gt_empty_group_heading {
+#mmsysbzajw .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -742,15 +747,15 @@ Charles T. Gray, PhD – Datapunk
   vertical-align: middle;
 }
 
-#kvppcwkzdq .gt_from_md > :first-child {
+#mmsysbzajw .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#kvppcwkzdq .gt_from_md > :last-child {
+#mmsysbzajw .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#kvppcwkzdq .gt_row {
+#mmsysbzajw .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -769,7 +774,7 @@ Charles T. Gray, PhD – Datapunk
   overflow-x: hidden;
 }
 
-#kvppcwkzdq .gt_stub {
+#mmsysbzajw .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -782,7 +787,7 @@ Charles T. Gray, PhD – Datapunk
   padding-right: 5px;
 }
 
-#kvppcwkzdq .gt_stub_row_group {
+#mmsysbzajw .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -796,15 +801,15 @@ Charles T. Gray, PhD – Datapunk
   vertical-align: top;
 }
 
-#kvppcwkzdq .gt_row_group_first td {
+#mmsysbzajw .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#kvppcwkzdq .gt_row_group_first th {
+#mmsysbzajw .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#kvppcwkzdq .gt_summary_row {
+#mmsysbzajw .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -814,16 +819,16 @@ Charles T. Gray, PhD – Datapunk
   padding-right: 5px;
 }
 
-#kvppcwkzdq .gt_first_summary_row {
+#mmsysbzajw .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#kvppcwkzdq .gt_first_summary_row.thick {
+#mmsysbzajw .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#kvppcwkzdq .gt_last_summary_row {
+#mmsysbzajw .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -833,7 +838,7 @@ Charles T. Gray, PhD – Datapunk
   border-bottom-color: #D3D3D3;
 }
 
-#kvppcwkzdq .gt_grand_summary_row {
+#mmsysbzajw .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -843,7 +848,7 @@ Charles T. Gray, PhD – Datapunk
   padding-right: 5px;
 }
 
-#kvppcwkzdq .gt_first_grand_summary_row {
+#mmsysbzajw .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -853,7 +858,7 @@ Charles T. Gray, PhD – Datapunk
   border-top-color: #D3D3D3;
 }
 
-#kvppcwkzdq .gt_last_grand_summary_row_top {
+#mmsysbzajw .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -863,11 +868,11 @@ Charles T. Gray, PhD – Datapunk
   border-bottom-color: #D3D3D3;
 }
 
-#kvppcwkzdq .gt_striped {
+#mmsysbzajw .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#kvppcwkzdq .gt_table_body {
+#mmsysbzajw .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -876,7 +881,7 @@ Charles T. Gray, PhD – Datapunk
   border-bottom-color: #D3D3D3;
 }
 
-#kvppcwkzdq .gt_footnotes {
+#mmsysbzajw .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -890,7 +895,7 @@ Charles T. Gray, PhD – Datapunk
   border-right-color: #D3D3D3;
 }
 
-#kvppcwkzdq .gt_footnote {
+#mmsysbzajw .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -899,7 +904,7 @@ Charles T. Gray, PhD – Datapunk
   padding-right: 5px;
 }
 
-#kvppcwkzdq .gt_sourcenotes {
+#mmsysbzajw .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -913,7 +918,7 @@ Charles T. Gray, PhD – Datapunk
   border-right-color: #D3D3D3;
 }
 
-#kvppcwkzdq .gt_sourcenote {
+#mmsysbzajw .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -921,72 +926,72 @@ Charles T. Gray, PhD – Datapunk
   padding-right: 5px;
 }
 
-#kvppcwkzdq .gt_left {
+#mmsysbzajw .gt_left {
   text-align: left;
 }
 
-#kvppcwkzdq .gt_center {
+#mmsysbzajw .gt_center {
   text-align: center;
 }
 
-#kvppcwkzdq .gt_right {
+#mmsysbzajw .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#kvppcwkzdq .gt_font_normal {
+#mmsysbzajw .gt_font_normal {
   font-weight: normal;
 }
 
-#kvppcwkzdq .gt_font_bold {
+#mmsysbzajw .gt_font_bold {
   font-weight: bold;
 }
 
-#kvppcwkzdq .gt_font_italic {
+#mmsysbzajw .gt_font_italic {
   font-style: italic;
 }
 
-#kvppcwkzdq .gt_super {
+#mmsysbzajw .gt_super {
   font-size: 65%;
 }
 
-#kvppcwkzdq .gt_footnote_marks {
+#mmsysbzajw .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#kvppcwkzdq .gt_asterisk {
+#mmsysbzajw .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#kvppcwkzdq .gt_indent_1 {
+#mmsysbzajw .gt_indent_1 {
   text-indent: 5px;
 }
 
-#kvppcwkzdq .gt_indent_2 {
+#mmsysbzajw .gt_indent_2 {
   text-indent: 10px;
 }
 
-#kvppcwkzdq .gt_indent_3 {
+#mmsysbzajw .gt_indent_3 {
   text-indent: 15px;
 }
 
-#kvppcwkzdq .gt_indent_4 {
+#mmsysbzajw .gt_indent_4 {
   text-indent: 20px;
 }
 
-#kvppcwkzdq .gt_indent_5 {
+#mmsysbzajw .gt_indent_5 {
   text-indent: 25px;
 }
 
-#kvppcwkzdq .katex-display {
+#mmsysbzajw .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#kvppcwkzdq div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#mmsysbzajw div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -1032,23 +1037,23 @@ Charles T. Gray, PhD – Datapunk
 <div class="cell">
 <div class="cell-output-display">
 <div>
-<div id="kaqwjxtpkh" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#kaqwjxtpkh table {
+<div id="zfxidtqztq" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#zfxidtqztq table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#kaqwjxtpkh thead, #kaqwjxtpkh tbody, #kaqwjxtpkh tfoot, #kaqwjxtpkh tr, #kaqwjxtpkh td, #kaqwjxtpkh th {
+#zfxidtqztq thead, #zfxidtqztq tbody, #zfxidtqztq tfoot, #zfxidtqztq tr, #zfxidtqztq td, #zfxidtqztq th {
   border-style: none;
 }
 
-#kaqwjxtpkh p {
+#zfxidtqztq p {
   margin: 0;
   padding: 0;
 }
 
-#kaqwjxtpkh .gt_table {
+#zfxidtqztq .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -1074,12 +1079,12 @@ Charles T. Gray, PhD – Datapunk
   border-left-color: #D3D3D3;
 }
 
-#kaqwjxtpkh .gt_caption {
+#zfxidtqztq .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#kaqwjxtpkh .gt_title {
+#zfxidtqztq .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -1091,7 +1096,7 @@ Charles T. Gray, PhD – Datapunk
   border-bottom-width: 0;
 }
 
-#kaqwjxtpkh .gt_subtitle {
+#zfxidtqztq .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -1103,7 +1108,7 @@ Charles T. Gray, PhD – Datapunk
   border-top-width: 0;
 }
 
-#kaqwjxtpkh .gt_heading {
+#zfxidtqztq .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -1115,13 +1120,13 @@ Charles T. Gray, PhD – Datapunk
   border-right-color: #D3D3D3;
 }
 
-#kaqwjxtpkh .gt_bottom_border {
+#zfxidtqztq .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#kaqwjxtpkh .gt_col_headings {
+#zfxidtqztq .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1136,7 +1141,7 @@ Charles T. Gray, PhD – Datapunk
   border-right-color: #D3D3D3;
 }
 
-#kaqwjxtpkh .gt_col_heading {
+#zfxidtqztq .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1156,7 +1161,7 @@ Charles T. Gray, PhD – Datapunk
   overflow-x: hidden;
 }
 
-#kaqwjxtpkh .gt_column_spanner_outer {
+#zfxidtqztq .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1168,15 +1173,15 @@ Charles T. Gray, PhD – Datapunk
   padding-right: 4px;
 }
 
-#kaqwjxtpkh .gt_column_spanner_outer:first-child {
+#zfxidtqztq .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#kaqwjxtpkh .gt_column_spanner_outer:last-child {
+#zfxidtqztq .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#kaqwjxtpkh .gt_column_spanner {
+#zfxidtqztq .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1188,11 +1193,11 @@ Charles T. Gray, PhD – Datapunk
   width: 100%;
 }
 
-#kaqwjxtpkh .gt_spanner_row {
+#zfxidtqztq .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#kaqwjxtpkh .gt_group_heading {
+#zfxidtqztq .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1218,7 +1223,7 @@ Charles T. Gray, PhD – Datapunk
   text-align: left;
 }
 
-#kaqwjxtpkh .gt_empty_group_heading {
+#zfxidtqztq .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1233,15 +1238,15 @@ Charles T. Gray, PhD – Datapunk
   vertical-align: middle;
 }
 
-#kaqwjxtpkh .gt_from_md > :first-child {
+#zfxidtqztq .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#kaqwjxtpkh .gt_from_md > :last-child {
+#zfxidtqztq .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#kaqwjxtpkh .gt_row {
+#zfxidtqztq .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1260,7 +1265,7 @@ Charles T. Gray, PhD – Datapunk
   overflow-x: hidden;
 }
 
-#kaqwjxtpkh .gt_stub {
+#zfxidtqztq .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1273,7 +1278,7 @@ Charles T. Gray, PhD – Datapunk
   padding-right: 5px;
 }
 
-#kaqwjxtpkh .gt_stub_row_group {
+#zfxidtqztq .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1287,15 +1292,15 @@ Charles T. Gray, PhD – Datapunk
   vertical-align: top;
 }
 
-#kaqwjxtpkh .gt_row_group_first td {
+#zfxidtqztq .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#kaqwjxtpkh .gt_row_group_first th {
+#zfxidtqztq .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#kaqwjxtpkh .gt_summary_row {
+#zfxidtqztq .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1305,16 +1310,16 @@ Charles T. Gray, PhD – Datapunk
   padding-right: 5px;
 }
 
-#kaqwjxtpkh .gt_first_summary_row {
+#zfxidtqztq .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#kaqwjxtpkh .gt_first_summary_row.thick {
+#zfxidtqztq .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#kaqwjxtpkh .gt_last_summary_row {
+#zfxidtqztq .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1324,7 +1329,7 @@ Charles T. Gray, PhD – Datapunk
   border-bottom-color: #D3D3D3;
 }
 
-#kaqwjxtpkh .gt_grand_summary_row {
+#zfxidtqztq .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1334,7 +1339,7 @@ Charles T. Gray, PhD – Datapunk
   padding-right: 5px;
 }
 
-#kaqwjxtpkh .gt_first_grand_summary_row {
+#zfxidtqztq .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1344,7 +1349,7 @@ Charles T. Gray, PhD – Datapunk
   border-top-color: #D3D3D3;
 }
 
-#kaqwjxtpkh .gt_last_grand_summary_row_top {
+#zfxidtqztq .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1354,11 +1359,11 @@ Charles T. Gray, PhD – Datapunk
   border-bottom-color: #D3D3D3;
 }
 
-#kaqwjxtpkh .gt_striped {
+#zfxidtqztq .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#kaqwjxtpkh .gt_table_body {
+#zfxidtqztq .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1367,7 +1372,7 @@ Charles T. Gray, PhD – Datapunk
   border-bottom-color: #D3D3D3;
 }
 
-#kaqwjxtpkh .gt_footnotes {
+#zfxidtqztq .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1381,7 +1386,7 @@ Charles T. Gray, PhD – Datapunk
   border-right-color: #D3D3D3;
 }
 
-#kaqwjxtpkh .gt_footnote {
+#zfxidtqztq .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1390,7 +1395,7 @@ Charles T. Gray, PhD – Datapunk
   padding-right: 5px;
 }
 
-#kaqwjxtpkh .gt_sourcenotes {
+#zfxidtqztq .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1404,7 +1409,7 @@ Charles T. Gray, PhD – Datapunk
   border-right-color: #D3D3D3;
 }
 
-#kaqwjxtpkh .gt_sourcenote {
+#zfxidtqztq .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1412,72 +1417,72 @@ Charles T. Gray, PhD – Datapunk
   padding-right: 5px;
 }
 
-#kaqwjxtpkh .gt_left {
+#zfxidtqztq .gt_left {
   text-align: left;
 }
 
-#kaqwjxtpkh .gt_center {
+#zfxidtqztq .gt_center {
   text-align: center;
 }
 
-#kaqwjxtpkh .gt_right {
+#zfxidtqztq .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#kaqwjxtpkh .gt_font_normal {
+#zfxidtqztq .gt_font_normal {
   font-weight: normal;
 }
 
-#kaqwjxtpkh .gt_font_bold {
+#zfxidtqztq .gt_font_bold {
   font-weight: bold;
 }
 
-#kaqwjxtpkh .gt_font_italic {
+#zfxidtqztq .gt_font_italic {
   font-style: italic;
 }
 
-#kaqwjxtpkh .gt_super {
+#zfxidtqztq .gt_super {
   font-size: 65%;
 }
 
-#kaqwjxtpkh .gt_footnote_marks {
+#zfxidtqztq .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#kaqwjxtpkh .gt_asterisk {
+#zfxidtqztq .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#kaqwjxtpkh .gt_indent_1 {
+#zfxidtqztq .gt_indent_1 {
   text-indent: 5px;
 }
 
-#kaqwjxtpkh .gt_indent_2 {
+#zfxidtqztq .gt_indent_2 {
   text-indent: 10px;
 }
 
-#kaqwjxtpkh .gt_indent_3 {
+#zfxidtqztq .gt_indent_3 {
   text-indent: 15px;
 }
 
-#kaqwjxtpkh .gt_indent_4 {
+#zfxidtqztq .gt_indent_4 {
   text-indent: 20px;
 }
 
-#kaqwjxtpkh .gt_indent_5 {
+#zfxidtqztq .gt_indent_5 {
   text-indent: 25px;
 }
 
-#kaqwjxtpkh .katex-display {
+#zfxidtqztq .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#kaqwjxtpkh div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#zfxidtqztq div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -1610,8 +1615,8 @@ Charles T. Gray, PhD – Datapunk
 
 <div class="cell">
 <div class="cell-output-display">
-<div class="grViz html-widget html-fill-item" id="htmlwidget-7c03097e5818b979d084" style="width:960px;height:480px;"></div>
-<script type="application/json" data-for="htmlwidget-7c03097e5818b979d084">{"x":{"diagram":"digraph {\n  graph [margin=0.05, bgcolor=\"transparent\", rankdir=TB, splines=true];\n  rankdir=LR;\n  node [fontname=Helvetica];\n\n  \"question\" [style=filled, fillcolor=\"#F08080B3\", shape=box];\n  \"project planning development\" [style=filled, fillcolor=\"#F5DEB3B3\", shape=box];\n  \"scope fair data entity\" [style=filled, fillcolor=\"#F5DEB3B3\", shape=box];\n  \"ingest\" [style=filled, fillcolor=\"#ADD8E6B3\", shape=box];\n  \"transform data entity\" [style=filled, fillcolor=\"#ADD8E6B3\", shape=box];\n  \"document data entity\" [style=filled, fillcolor=\"#ADD8E6B3\", shape=box];\n  \"document validation of data entity\" [style=filled, fillcolor=\"#8FBC8FB3\", shape=box];\n  \"deploy documentation\" [style=filled, fillcolor=\"#FF8C00B3\", shape=box];\n  \"validate data entity\" [style=filled, fillcolor=\"#8FBC8FB3\", shape=box];\n  \"debug data entity\" [style=filled, fillcolor=\"#ADD8E6B3\", shape=box];\n  \"scope fair data product\" [style=filled, fillcolor=\"#F5DEB3B3\", shape=box];\n  \"transform\" [style=filled, fillcolor=\"#ADD8E6B3\", shape=box];\n  \"unscoped platform engineering\" [style=filled, fillcolor=\"#FF8C00B3\", shape=box];\n  \"fair data product\" [style=filled, fillcolor=\"#F5DEB3B3\", shape=box];\n  \"analyse\" [style=filled, fillcolor=\"#8FBC8FB3\", shape=box];\n  \"interpret\" [style=filled, fillcolor=\"#8FBC8FB3\", shape=box];\n  \"deploy analysis tool\" [style=filled, fillcolor=\"#FF8C00B3\", shape=box];\n  \"unscoped platform engineering development\" [style=filled, fillcolor=\"#FF8C00B3\", shape=box];\n  \"unscoped data engineering development\" [style=filled, fillcolor=\"#ADD8E6B3\", shape=box];\n  \"project reporting development\" [style=filled, fillcolor=\"#F5DEB3B3\", shape=box];\n  \"fair data entity\" [style=filled, fillcolor=\"#F5DEB3B3\", shape=box];\n  \"unscoped data engineering\" [style=filled, fillcolor=\"#ADD8E6B3\", shape=box];\n  \"decision\" [style=filled, fillcolor=\"#F08080B3\", shape=box];\n\n  \"question\" -> \"project planning development\" [style=solid];\n  \"project planning development\" -> \"scope fair data entity\" [style=solid];\n  \"scope fair data entity\" -> \"ingest\" [style=solid];\n  \"scope fair data entity\" -> \"deploy documentation\" [style=solid];\n  \"scope fair data entity\" -> \"deploy analysis tool\" [style=solid];\n  \"scope fair data entity\" -> \"document data entity\" [style=solid];\n  \"ingest\" -> \"transform data entity\" [style=solid];\n  \"transform data entity\" -> \"validate data entity\" [style=solid];\n  \"document data entity\" -> \"validate data entity\" [style=solid];\n  \"document validation of data entity\" -> \"fair data entity\" [style=solid];\n  \"deploy documentation\" -> \"validate data entity\" [style=solid];\n  \"validate data entity\" -> \"debug data entity\" [style=solid];\n  \"debug data entity\" -> \"fair data entity\" [style=solid];\n  \"scope fair data product\" -> \"transform\" [style=solid];\n  \"transform\" -> \"fair data product\" [style=solid];\n  \"unscoped platform engineering\" -> \"fair data product\" [style=solid];\n  \"fair data product\" -> \"interpret\" [style=solid];\n  \"analyse\" -> \"interpret\" [style=solid];\n  \"interpret\" -> \"decision\" [style=solid];\n  \"deploy analysis tool\" -> \"validate data entity\" [style=solid];\n  \"scope fair data product\" -> \"unscoped platform engineering\" [style=solid];\n  \"scope fair data product\" -> \"unscoped platform engineering development\" [style=solid];\n  \"unscoped platform engineering development\" -> \"fair data product\" [style=solid];\n  \"scope fair data product\" -> \"unscoped data engineering development\" [style=solid];\n  \"unscoped data engineering development\" -> \"fair data product\" [style=solid];\n  \"validate data entity\" -> \"document validation of data entity\" [style=solid];\n  \"project reporting development\" -> \"scope fair data product\" [style=solid];\n  \"fair data entity\" -> \"project reporting development\" [style=solid];\n  \"unscoped data engineering\" -> \"fair data product\" [style=solid];\n  \"scope fair data product\" -> \"unscoped data engineering\" [style=solid];\n  \"scope fair data product\" -> \"analyse\" [style=solid];\n\n  subgraph cluster_legend {\n  label = \"Legend\";\n  style = dashed;\n  fontsize = 12;\n  margin = 20;\n  rankdir = LR;\n  rank = sink;\n\"data engineering\" [label=\"data engineering\", style=filled, fillcolor=\"#ADD8E6B3\", shape=box];\n  \"data analysis\" [label=\"data analysis\", style=filled, fillcolor=\"#8FBC8FB3\", shape=box];\n  \"project planning\" [label=\"project planning\", style=filled, fillcolor=\"#F5DEB3B3\", shape=box];\n  \"decision making\" [label=\"decision making\", style=filled, fillcolor=\"#F08080B3\", shape=box];\n  \"platform engineering\" [label=\"platform engineering\", style=filled, fillcolor=\"#FF8C00B3\", shape=box];\n  \"data engineering\" -> \"data analysis\" -> \"platform engineering\" -> \"project planning\" -> \"decision making\" [style=invis];\n}\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+<div class="grViz html-widget html-fill-item" id="htmlwidget-5b4c33adc58620dfbeca" style="width:960px;height:480px;"></div>
+<script type="application/json" data-for="htmlwidget-5b4c33adc58620dfbeca">{"x":{"diagram":"digraph {\n  graph [margin=0.05, bgcolor=\"transparent\", rankdir=TB, splines=true];\n  rankdir=LR;\n  node [fontname=Helvetica];\n\n  \"question\" [style=filled, fillcolor=\"#F08080B3\", shape=box];\n  \"project planning development\" [style=filled, fillcolor=\"#F5DEB3B3\", shape=box];\n  \"scope fair data entity\" [style=filled, fillcolor=\"#F5DEB3B3\", shape=box];\n  \"ingest\" [style=filled, fillcolor=\"#ADD8E6B3\", shape=box];\n  \"transform data entity\" [style=filled, fillcolor=\"#ADD8E6B3\", shape=box];\n  \"document data entity\" [style=filled, fillcolor=\"#ADD8E6B3\", shape=box];\n  \"document validation of data entity\" [style=filled, fillcolor=\"#8FBC8FB3\", shape=box];\n  \"deploy documentation\" [style=filled, fillcolor=\"#FF8C00B3\", shape=box];\n  \"validate data entity\" [style=filled, fillcolor=\"#8FBC8FB3\", shape=box];\n  \"debug data entity\" [style=filled, fillcolor=\"#ADD8E6B3\", shape=box];\n  \"scope fair data product\" [style=filled, fillcolor=\"#F5DEB3B3\", shape=box];\n  \"transform\" [style=filled, fillcolor=\"#ADD8E6B3\", shape=box];\n  \"unscoped platform engineering\" [style=filled, fillcolor=\"#FF8C00B3\", shape=box];\n  \"fair data product\" [style=filled, fillcolor=\"#F5DEB3B3\", shape=box];\n  \"analyse\" [style=filled, fillcolor=\"#8FBC8FB3\", shape=box];\n  \"interpret\" [style=filled, fillcolor=\"#8FBC8FB3\", shape=box];\n  \"deploy analysis tool\" [style=filled, fillcolor=\"#FF8C00B3\", shape=box];\n  \"unscoped platform engineering development\" [style=filled, fillcolor=\"#FF8C00B3\", shape=box];\n  \"unscoped data engineering development\" [style=filled, fillcolor=\"#ADD8E6B3\", shape=box];\n  \"project reporting development\" [style=filled, fillcolor=\"#F5DEB3B3\", shape=box];\n  \"fair data entity\" [style=filled, fillcolor=\"#F5DEB3B3\", shape=box];\n  \"unscoped data engineering\" [style=filled, fillcolor=\"#ADD8E6B3\", shape=box];\n  \"decision\" [style=filled, fillcolor=\"#F08080B3\", shape=box];\n\n  \"question\" -> \"project planning development\" [style=solid];\n  \"project planning development\" -> \"scope fair data entity\" [style=solid];\n  \"scope fair data entity\" -> \"ingest\" [style=solid];\n  \"scope fair data entity\" -> \"deploy documentation\" [style=solid];\n  \"scope fair data entity\" -> \"deploy analysis tool\" [style=solid];\n  \"scope fair data entity\" -> \"document data entity\" [style=solid];\n  \"ingest\" -> \"transform data entity\" [style=solid];\n  \"transform data entity\" -> \"validate data entity\" [style=solid];\n  \"document data entity\" -> \"validate data entity\" [style=solid];\n  \"document validation of data entity\" -> \"fair data entity\" [style=solid];\n  \"deploy documentation\" -> \"validate data entity\" [style=solid];\n  \"validate data entity\" -> \"debug data entity\" [style=solid];\n  \"debug data entity\" -> \"fair data entity\" [style=solid];\n  \"scope fair data product\" -> \"transform\" [style=solid];\n  \"transform\" -> \"fair data product\" [style=solid];\n  \"unscoped platform engineering\" -> \"fair data product\" [style=solid];\n  \"fair data product\" -> \"interpret\" [style=solid];\n  \"analyse\" -> \"interpret\" [style=solid];\n  \"interpret\" -> \"decision\" [style=solid];\n  \"deploy analysis tool\" -> \"validate data entity\" [style=solid];\n  \"scope fair data product\" -> \"unscoped platform engineering\" [style=solid];\n  \"scope fair data product\" -> \"unscoped platform engineering development\" [style=solid];\n  \"unscoped platform engineering development\" -> \"fair data product\" [style=solid];\n  \"scope fair data product\" -> \"unscoped data engineering development\" [style=solid];\n  \"unscoped data engineering development\" -> \"fair data product\" [style=solid];\n  \"validate data entity\" -> \"document validation of data entity\" [style=solid];\n  \"project reporting development\" -> \"scope fair data product\" [style=solid];\n  \"fair data entity\" -> \"project reporting development\" [style=solid];\n  \"unscoped data engineering\" -> \"fair data product\" [style=solid];\n  \"scope fair data product\" -> \"unscoped data engineering\" [style=solid];\n  \"scope fair data product\" -> \"analyse\" [style=solid];\n\n  subgraph cluster_legend {\n  label = \"Legend\";\n  style = dashed;\n  fontsize = 12;\n  margin = 20;\n  rankdir = LR;\n  rank = sink;\n\"data engineering\" [label=\"data engineering\", style=filled, fillcolor=\"#ADD8E6B3\", shape=box];\n  \"data analysis\" [label=\"data analysis\", style=filled, fillcolor=\"#8FBC8FB3\", shape=box];\n  \"project planning\" [label=\"project planning\", style=filled, fillcolor=\"#F5DEB3B3\", shape=box];\n  \"decision making\" [label=\"decision making\", style=filled, fillcolor=\"#F08080B3\", shape=box];\n  \"platform engineering\" [label=\"platform engineering\", style=filled, fillcolor=\"#FF8C00B3\", shape=box];\n  \"data engineering\" -> \"data analysis\" -> \"platform engineering\" -> \"project planning\" -> \"decision making\" [style=invis];\n}\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 </section>
@@ -1709,9 +1714,9 @@ mooncake_test = "hi Mooncake"</code></pre>
 <pre><code># A tibble: 3 × 3
   from      to        line_type
   &lt;chr&gt;     &lt;chr&gt;     &lt;chr&gt;    
-1 interpret decision  intended 
-2 analyse   interpret intended 
-3 validate  document  intended </code></pre>
+1 document  analyse   intended 
+2 transform validate  intended 
+3 ingest    transform intended </code></pre>
 </div>
 </div>
 </section>
@@ -1742,11 +1747,11 @@ mooncake_test = "hi Mooncake"</code></pre>
 <div class="sourceCode cell-code" id="cb27"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a></a>dplyr<span class="sc">::</span><span class="fu">sample_n</span>(HairyAnalBeadsEdges<span class="sc">$</span>edges, <span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 3 × 6
-  from    to        reason                 line_type reason_na project_integrity
-  &lt;chr&gt;   &lt;chr&gt;     &lt;chr&gt;                  &lt;chr&gt;     &lt;lgl&gt;     &lt;chr&gt;            
-1 analyse ingest    "not updating"         unintend… FALSE     actioned         
-2 analyse interpret "no time for\ndocumen… unintend… FALSE     actioned         
-3 source  ingest    ""                     intended  TRUE      backlog          </code></pre>
+  from      to        reason               line_type reason_na project_integrity
+  &lt;chr&gt;     &lt;chr&gt;     &lt;chr&gt;                &lt;chr&gt;     &lt;lgl&gt;     &lt;chr&gt;            
+1 analyse   interpret "no time for\ndocum… unintend… FALSE     actioned         
+2 interpret analyse   "measure\nmisunders… unintend… FALSE     actioned         
+3 interpret decision  ""                   intended  TRUE      backlog          </code></pre>
 </div>
 </div>
 </section>
@@ -1776,11 +1781,11 @@ mooncake_test = "hi Mooncake"</code></pre>
 <div class="sourceCode cell-code" id="cb36"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a></a>dplyr<span class="sc">::</span><span class="fu">sample_n</span>(AnalBeadsNodes<span class="sc">$</span>nodes, <span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 3 × 2
-  node      node_colour     
-  &lt;chr&gt;     &lt;chr&gt;           
-1 decision  decision making 
-2 interpret data analysis   
-3 document  data engineering</code></pre>
+  node     node_colour     
+  &lt;chr&gt;    &lt;chr&gt;           
+1 question decision making 
+2 validate data engineering
+3 decision decision making </code></pre>
 </div>
 </div>
 </section>
@@ -1813,9 +1818,9 @@ mooncake_test = "hi Mooncake"</code></pre>
 <pre><code># A tibble: 3 × 2
   node      node_colour     
   &lt;chr&gt;     &lt;chr&gt;           
-1 validate  data engineering
+1 transform data engineering
 2 question  decision making 
-3 interpret data analysis   </code></pre>
+3 analyse   data analysis   </code></pre>
 </div>
 </div>
 </section>
@@ -1848,8 +1853,8 @@ mooncake_test = "hi Mooncake"</code></pre>
   node     node_colour     
   &lt;chr&gt;    &lt;chr&gt;           
 1 decision decision making 
-2 analyse  data analysis   
-3 source   project planning</code></pre>
+2 document data engineering
+3 question decision making </code></pre>
 </div>
 </div>
 </section>
@@ -1879,11 +1884,11 @@ mooncake_test = "hi Mooncake"</code></pre>
 <div class="sourceCode cell-code" id="cb63"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb63-1"><a></a>dplyr<span class="sc">::</span><span class="fu">sample_n</span>(HairyAnalBeads<span class="sc">$</span>nodes, <span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 3 × 2
-  node      node_colour     
-  &lt;chr&gt;     &lt;chr&gt;           
-1 ingest    data engineering
-2 analyse   data analysis   
-3 transform data engineering</code></pre>
+  node     node_colour     
+  &lt;chr&gt;    &lt;chr&gt;           
+1 ingest   data engineering
+2 document data engineering
+3 validate data engineering</code></pre>
 </div>
 </div>
 </section></section>

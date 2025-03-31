@@ -1,0 +1,610 @@
+---
+title: Governance of Workflows 
+subtitle: Why agile fails, and how category theory can help
+code-fold: true
+date: "March 31 2025"
+author: 
+  - name: Dr Charles T. Gray, Datapunk
+    orcid: 0000-0002-9978-011X
+    affiliations:
+      - name: Good Enough Data & Systems Lab
+bibliography: ../singularities.bib
+---
+
+## Pitfalls of getting tool locked
+
+No matter how advanced the tooling is, mathematicians solve conceptual problems at the blackboard. Why?
+
+- It forces minimal representation of the problem.
+- Tools don't constrain the solution.
+
+Once the concept is clear, then we instantiate it in tools that serve that structure.
+
+## The problem with agile
+
+Agile workflows and tools like JIRA often miss the mark and drift into tech theatre. Developers have pretty great ways to break tasks down to computationally isolated tasks, but the way of piecing them back together is doomed to fail because too often there is an assumption the project plan will remain stable.
+
+However, development is highly chaotic; unexpected blockers as well as new solutions appear. 
+
+```
+Think of agile like this. 
+
+Leadership: Mirror, mirror on  the  wall, 
+  who has the FAIRest vision of them all?
+
+Product managers smash the mirror into pieces.
+
+Developers smash those pieces into shards.
+
+Different developers paint the shards in 
+  tiny ways to make the vision FAIR.
+
+Developers reassemble shards into pieces.
+
+Product managers reassemble those pieces 
+  into the mirror painted to leadership's vision.
+
+Leadership: Mirror, mirror on the wall, forget FAIR, 
+  I can't see my fucking face at all.
+
+```
+
+Without governance of the workflows, epistemic drift becomes inevitable ([draft](../singularities.qmd)).
+
+## Kanbans are for working, not reporting
+
+Sadly, I've seen far too many managers attempt to govern from the workflow level, without any consideration of the core priorities. This locks the team in a myopic dystopia: always working toward short-term goals, yet never achieving anything of substance. 
+
+This is where systems of human intelligence governance, such as Getting Things Done [@allen_getting_2015] provide models of structured intelligence governance. Just as GTD promotes an annual review, technology workflows benefit from first assessing core priorities conceptually -- before turning to tools. 
+
+::: {#fig-core}
+
+```{dot}
+digraph core {
+  bgcolor="wheat"
+  ratio=0.8
+  rankdir=TB
+  
+  subgraph cluster_domain {
+        bgcolor="pink3"
+        style="dashed"
+
+        node [style=filled, fillcolor=wheat]
+        edge [label="defines tasks"]
+        
+        subgraph cluster_domain_core {
+            label="Core domains"
+            style=dotted
+            fontsize=25
+            
+            adulting [label=Adulting]
+            wellness [label=Wellness]
+            create [label=Create]
+        }
+
+        pandan [label="Project planning"]
+        study [label=Study]
+        
+        domain_node [
+            label="Domain", 
+            shape=box, 
+            style=dashed,
+            fontsize=35,
+            width=0.1, 
+            height=0.1]
+        
+        pandan -> adulting [style=dashed]
+        pandan -> create [style=dashed]
+        pandan -> wellness [style=dashed]
+        pandan -> study [style=dashed]
+        study -> create [label="supports", style=dashed]
+        study -> adulting [label="supports career", style=dashed]
+        
+    } 
+
+}
+
+
+```
+
+In my current system, I divide life into three core domains: wellness (health, relaxation), adulting (work, household), and create (math, code). Study is a supporting  domain to work and create. 
+
+:::
+
+## Governance of core domains
+
+A critical failing in tech management is sufficient reporting to both leadership and developers. In my experience, managers set a vague goal and do little else but ask when it will get done, e.g., an epic with only the title filled in, "KPIs - due december". 
+
+Too often this middle layer 
+
+- fail to correct the epistemic drift of development chaos by intervening in key blockers 
+- and also misrespresent to leadership the status of the project. 
+
+
+In their defense, I don't believe there *are* good enough tools for them to do this yet, and I aim to contribute to mitigating that. We need better methodologies to ask how well our governing mechanisms (@fig-gov) serve our core domains (@fig-core).
+
+::: {#fig-gov}
+
+```{dot}
+digraph governance {
+    bgcolor="wheat"
+    ratio=0.8
+    rankdir=TB
+
+  subgraph cluster_governance {
+        bgcolor="khaki4"
+        style="dashed"
+
+        node [style=filled, fillcolor=wheat]
+        edge [label="supports"]
+        
+        subgraph cluster_governance_jira {
+            label="JIRA dashboards"
+            fontsize=25
+
+            daily [label="Day achievements"]
+            weekly [label="Week achievements"]
+            monthly [label="Month achievements"]
+            proj [label="Project progress"]
+            inf [label="Repeating tasks"]
+        }
+        
+        subgraph cluster_governance_review {
+            label="Review"
+            style=dotted
+            fontsize=25
+
+            drev [label="Daily review"]
+            wrev [label="Weekly review"]
+            
+        }
+        
+        subgraph cluster_governance_forest {
+            label="Forest pomodoro app"
+            style=dotted
+            fontsize=25
+            
+            forest [label="Forest summaries"]
+            
+        }
+        
+        
+
+        governance_node [
+            label="Governance", 
+            shape=box, 
+            style=dashed, 
+            fontsize=35,
+            width=0.1, 
+            height=0.1]
+
+        
+        forest -> daily [style=dashed]
+        forest -> weekly [style=dashed]
+        forest -> monthly [style=dashed]
+        forest -> inf [style=dashed]
+        forest -> proj [style=dashed]
+
+
+        drev -> daily [style=dashed]
+        wrev -> weekly [style=dashed]
+        wrev -> monthly [style=dashed]
+        wrev -> inf [style=dashed]
+        wrev -> proj [style=dashed]
+
+    }
+
+}
+
+
+```
+
+Governance need not be tool locked under a category-theoretic framework. With math, we can ask if the combination of governance tools faithfully report the core domains.
+:::
+
+Far less defensible, however, is the norm I've seen from middle management: blame and dispose of developers when their vague fantasies about AI and machine learning fail to eventuate. Unfortunately, discrimination and exploitation of developers is the solution that is usually chosen by middle management. 
+
+Developers are not to blame for management lacking tools of governance, yet developers are the ones who bear responsibility. 
+
+## Workflows should not be tool locked
+
+Ways of working are critical to governance, otherwise developers will revert to what feels safe and comfortable but without the context managers have from leadership. Developers need workflows that facilitate deep work [@newport_deep_2016] where they focus on a single task. 
+
+Task management tools are great, but often try too hard to be all the things. Better to go to the blackboard and inspect the combination of workflows, from stand up, to kanbans, or whatever. 
+
+::: {#fig-workflows}
+
+```{dot}
+digraph workflows {
+    bgcolor="wheat"
+    ratio=0.8
+    rankdir=TB
+
+    subgraph cluster_ritual {
+        bgcolor="lightblue"
+        style="dashed"
+
+        node [style=filled, fillcolor=wheat]
+        edge [label="temporal"]
+        
+        subgraph cluster_ritual_cards {
+            label="Index cards\nassociated with\npomodoros and kanbans"
+            style=dotted
+            fontsize=25
+            
+            subgraph cluster_cards_inst {
+                style=dotted
+                label="Ordered stack"
+
+                music [label="Put music on"]
+                shower
+                coffee
+                water [label="Lemon water"]
+                dress
+                pan_crit [label="Critical project planning"]
+                
+
+                inst_node [
+                    label="Instantiate day", 
+                    shape=box, 
+                    style=dashed,
+                    fontsize=25,
+                    width=0.1, 
+                    height=0.1]                
+                
+                
+                inst_node -> music [label="Card stack", style=dashed] 
+                music -> shower -> dress -> coffee -> 
+                    water -> pan_crit [style=dotted]
+                
+            }
+            
+            subgraph cluster_ritual_cycle {
+                label="Shuffle stack"
+                style=dotted
+                
+                cycle_adulting [label="Adulting"]
+                cycle_create [label="Create"]
+                cycle_due [label="Due"]
+                cycle_joy [label="Joy"]
+                cycle_plan [label="Plan"]
+                cycle_housework  [label="Housework"]
+                cycle_wellness  [label="Wellness"]
+                cycle_critical [label="Criticalæ"]
+                cycle_dis [label="Minddump"]
+
+                cycle_node [
+                    label="Deep focus", 
+                    shape=box, 
+                    style=dashed,
+                    fontsize=25,
+                    width=0.1, 
+                    height=0.1]                
+
+            }
+            
+            subgraph cluster_ritual_decom {
+                label="Shuffle stack"
+                style=dotted
+                
+                decom_critical [label="Critical"]
+                deom_associate [label="Associate minddump"]
+                decom_due [label="Due"]
+                decom_wellness [label="Meditation"]
+                
+                decom_node [
+                    label="Decommission day", 
+                    shape=box, 
+                    style=dashed,
+                    fontsize=25,
+                    width=0.1, 
+                    height=0.1]           
+            }
+        
+
+        }
+        
+    subgraph  cluster_ritual_forest {
+        label="Forest pomodoro app"
+        style=dotted
+        fontsize=25
+        
+        fortimes [label="Forest timer"]
+    }
+        
+    subgraph cluster_ritual_jira {
+        label="JIRA"
+        style=dotted
+        fontsize=25
+        
+        kanban [label="Kanban"]
+    }
+
+
+    ritual_node [
+        label="Workflow", 
+        shape=box, 
+        style=dashed, 
+        fontsize=35,
+        width=0.1, 
+        height=0.1]
+
+    inst_node -> cycle_node [style=dashed]
+    cycle_node -> decom_node [style=dashed]
+    cycle_node -> cycle_node [label="repeat", style=dashed]
+    fortimes -> inst_node [label="Timer exists", style=dashed]
+    fortimes -> cycle_node [label="Timer exists", style=dashed]
+    fortimes -> decom_node [label="Timer exists", style=dashed]
+    kanban -> inst_node [label="Represents tasks", style=dashed]
+    kanban -> cycle_node [label="Represents tasks", style=dashed]
+    kanban -> decom_node [label="Represents tasks", style=dashed]
+    
+    }
+
+
+
+}
+```
+
+
+Workflows aren't just a kanban or stand-up, but a combination of interlocking practices, what we might call a *way of working*. For myself, I use index cards that are tied to pomodoros and kanbans for each node in the workflow digraph.
+
+:::
+
+
+## Category theory lets us ask:
+
+> Do our workflows serve our priorities, or merely reinforce our tools?
+
+With a diagrammatic model, we can answer that question *formally*.
+
+Category theory is the mathematics of structure and transformation. Here, it becomes a language for reasoning about tasks, tools, and goals.
+
+::: {#fig-gov}
+
+```{dot}
+digraph lifeswork {
+    bgcolor="wheat"
+    ratio=0.8
+    rankdir=TB
+
+    subgraph cluster_ritual {
+        bgcolor="lightblue"
+        style="dashed"
+
+        node [style=filled, fillcolor=wheat]
+        edge [label="temporal"]
+        
+        subgraph cluster_ritual_cards {
+            label="Index cards\nassociated with\npomodoros and kanbans"
+            style=dotted
+            fontsize=25
+            
+            subgraph cluster_cards_inst {
+                style=dotted
+                label="Ordered stack"
+
+                music [label="Put music on"]
+                shower
+                coffee
+                water [label="Lemon water"]
+                dress
+                pan_crit [label="Critical project planning"]
+                
+
+                inst_node [
+                    label="Instantiate day", 
+                    shape=box, 
+                    style=dashed,
+                    fontsize=25,
+                    width=0.1, 
+                    height=0.1]                
+                
+                
+                inst_node -> music [label="Card stack", style=dashed] 
+                music -> shower -> dress -> coffee -> 
+                    water -> pan_crit [style=dotted]
+                
+            }
+            
+            subgraph cluster_ritual_cycle {
+                label="Shuffle stack"
+                style=dotted
+                
+                cycle_adulting [label="Adulting"]
+                cycle_create [label="Create"]
+                cycle_due [label="Due"]
+                cycle_joy [label="Joy"]
+                cycle_plan [label="Plan"]
+                cycle_housework  [label="Housework"]
+                cycle_wellness  [label="Wellness"]
+                cycle_critical [label="Criticalæ"]
+                cycle_dis [label="Minddump"]
+
+                cycle_node [
+                    label="Deep focus", 
+                    shape=box, 
+                    style=dashed,
+                    fontsize=25,
+                    width=0.1, 
+                    height=0.1]                
+
+            }
+            
+            subgraph cluster_ritual_decom {
+                label="Shuffle stack"
+                style=dotted
+                
+                decom_critical [label="Critical"]
+                deom_associate [label="Associate minddump"]
+                decom_due [label="Due"]
+                decom_wellness [label="Meditation"]
+                
+                decom_node [
+                    label="Decommission day", 
+                    shape=box, 
+                    style=dashed,
+                    fontsize=25,
+                    width=0.1, 
+                    height=0.1]           
+            }
+        
+
+        }
+        
+    subgraph  cluster_ritual_forest {
+        label="Forest pomodoro app"
+        style=dotted
+        fontsize=25
+        
+        fortimes [label="Forest timer"]
+    }
+        
+    subgraph cluster_ritual_jira {
+        label="JIRA"
+        style=dotted
+        fontsize=25
+        
+        kanban [label="Kanban"]
+    }
+
+
+    ritual_node [
+        label="Workflow", 
+        shape=box, 
+        style=dashed, 
+        fontsize=35,
+        width=0.1, 
+        height=0.1]
+
+    inst_node -> cycle_node [style=dashed]
+    cycle_node -> decom_node [style=dashed]
+    cycle_node -> cycle_node [label="repeat", style=dashed]
+    fortimes -> inst_node [label="Timer exists", style=dashed]
+    fortimes -> cycle_node [label="Timer exists", style=dashed]
+    fortimes -> decom_node [label="Timer exists", style=dashed]
+    kanban -> inst_node [label="Represents tasks", style=dashed]
+    kanban -> cycle_node [label="Represents tasks", style=dashed]
+    kanban -> decom_node [label="Represents tasks", style=dashed]
+    
+    }
+    
+    subgraph cluster_domain {
+        bgcolor="pink3"
+        style="dashed"
+
+        node [style=filled, fillcolor=wheat]
+        edge [label="defines tasks"]
+        
+        subgraph cluster_domain_core {
+            label="Core domains"
+            style=dotted
+            fontsize=25
+            
+            adulting [label=Adulting]
+            wellness [label=Wellness]
+            create [label=Create]
+        }
+
+        pandan [label="Project planning"]
+        study [label=Study]
+        
+        domain_node [
+            label="Domain", 
+            shape=box, 
+            style=dashed,
+            fontsize=35,
+            width=0.1, 
+            height=0.1]
+        
+        pandan -> adulting [style=dashed]
+        pandan -> create [style=dashed]
+        pandan -> wellness [style=dashed]
+        pandan -> study [style=dashed]
+        study -> create [label="supports", style=dashed]
+        study -> adulting [label="supports career", style=dashed]
+        
+    } 
+    
+    subgraph cluster_governance {
+        bgcolor="khaki4"
+        style="dashed"
+
+        node [style=filled, fillcolor=wheat]
+        edge [label="supports"]
+        
+        subgraph cluster_governance_jira {
+            label="JIRA dashboards"
+            fontsize=25
+
+            daily [label="Day achievements"]
+            weekly [label="Week achievements"]
+            monthly [label="Month achievements"]
+            proj [label="Project progress"]
+            inf [label="Repeating tasks"]
+        }
+        
+        subgraph cluster_governance_review {
+            label="Review"
+            style=dotted
+            fontsize=25
+
+            drev [label="Daily review"]
+            wrev [label="Weekly review"]
+            
+        }
+        
+        subgraph cluster_governance_forest {
+            label="Forest pomodoro app"
+            style=dotted
+            fontsize=25
+            
+            forest [label="Forest summaries"]
+            
+        }
+        
+        
+
+        governance_node [
+            label="Governance", 
+            shape=box, 
+            style=dashed, 
+            fontsize=35,
+            width=0.1, 
+            height=0.1]
+
+        
+        forest -> daily [style=dashed]
+        forest -> weekly [style=dashed]
+        forest -> monthly [style=dashed]
+        forest -> inf [style=dashed]
+        forest -> proj [style=dashed]
+
+
+        drev -> daily [style=dashed]
+        wrev -> weekly [style=dashed]
+        wrev -> monthly [style=dashed]
+        wrev -> inf [style=dashed]
+        wrev -> proj [style=dashed]
+
+    }
+
+    
+    // functor arrows
+    ritual_node -> governance_node [
+        label="partial timers captured", style=bold, minlen=2, fontsize=15]
+    ritual_node -> domain_node [
+        label="serve task focus", style=bold, minlen=2, fontsize=15]
+    domain_node -> governance_node [
+        label="tasks summarised informatively", style=bold, minlen=2, fontsize=15]
+
+
+}
+
+
+
+```
+
+Category-theoretic frameworks allow us to govern how well workflows serve our core domains. 
+
+:::
