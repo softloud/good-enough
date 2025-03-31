@@ -10,6 +10,8 @@ website:
       - text: Development Blog
         href: blog.qmd
         menu:
+          - text: governance - 2025-03-31.qmd
+            href: blog/2025-03-31-governance.qmd
           - text: button - 2025-03-24
             href: blog/2025-03-24-button.qmd
           - text: Cave - 2025-03-23
