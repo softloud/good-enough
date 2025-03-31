@@ -132,7 +132,7 @@ digraph governance {
     rankdir=TB
 
   subgraph cluster_governance {
-        bgcolor="khaki4"
+        bgcolor="darkseagreen2"
         style="dashed"
 
         node [style=filled, fillcolor=wheat]
@@ -527,7 +527,7 @@ digraph lifeswork {
     } 
     
     subgraph cluster_governance {
-        bgcolor="khaki4"
+        bgcolor="darkseagreen2"
         style="dashed"
 
         node [style=filled, fillcolor=wheat]
