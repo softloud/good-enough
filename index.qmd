@@ -14,12 +14,12 @@ html-math-method: mathml
 
 ---
 
-The Good Enough Data & Systems Lab collaborates with game studios by computationally applying category theory and abstract mathematics to codebases and digraph-oriented game development (e.g., JIRA) plans. Any graph-oriented or flat data structure has potential to be aggregated.
+The Good Enough Data & Systems Lab collaborates by computationally applying category theory and abstract mathematics to codebases and digraph-oriented development (e.g., JIRA) plans. Any graph-oriented or flat data structure has potential to be aggregated.
 
 
 The Lab uses a mix of category theory, visualisation, and data simulation to explore frameworks such as  
 
-- player behaviour
+- user behaviour
 - developer wellbeing
 - efficiency
 - reliability

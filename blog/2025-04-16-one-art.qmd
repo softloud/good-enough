@@ -1,0 +1,481 @@
+---
+title: The Categorical Descent of Loss in Elizabeth Bishop's *One Art* 
+subtitle: Diagramming the Ontology of Grief in Verse
+code-fold: true
+date: "April 16 2025"
+author: 
+  - name: Dr Charles T. Gray, Datapunk
+    orcid: 0000-0002-9978-011X
+    affiliations:
+      - name: Good Enough Data & Systems Lab
+bibliography: ../singularities.bib
+---
+
+Elizabeth Bishop's [*One Art*](https://www.poetryfoundation.org/poems/47536/one-art) is a [katabasis](https://en.wikipedia.org/wiki/Katabasis) (a hero's descent into the underworld) tracing loss. 
+
+---
+
+::: {.poetry}
+**One Art**  
+*By Elizabeth Bishop*  
+
+The art of losing isn’t hard to master;  
+so many things seem filled with the intent  
+to be lost that their loss is no disaster.  
+
+Lose something every day. Accept the fluster  
+of lost door keys, the hour badly spent.  
+The art of losing isn’t hard to master.  
+
+Then practice losing farther, losing faster:  
+places, and names, and where it was you meant  
+to travel. None of these will bring disaster.  
+
+I lost my mother’s watch. And look! my last, or  
+next-to-last, of three loved houses went.  
+The art of losing isn’t hard to master.  
+
+I lost two cities, lovely ones. And, vaster,  
+some realms I owned, two rivers, a continent.  
+I miss them, but it wasn’t a disaster.  
+
+—Even losing you (the joking voice, a gesture  
+I love) I shan’t have lied. It’s evident  
+the art of losing’s not too hard to master  
+though it may look like (*Write* it!) like disaster.
+:::
+
+---
+
+In the final stanza, she takes an [Orphean](https://en.wikipedia.org/wiki/Orpheus_and_Eurydice) turn to *write* that some loss is **categorically** different, no matter how much we may wish it were not.  
+
+---
+
+```{dot}
+digraph OneArtNested {
+    graph [compound=true];
+    rankdir=TB;
+    fontname="Courier";
+    node [shape=ellipse, fontname="Courier", style=dashed, fillcolor=white];
+    edge [fontname="Courier"];
+
+    // ========== Stanza 1 ==========
+    subgraph cluster_1 {
+        style=dashed;
+        color=black;
+
+        Protagonist1 [label="Protagonist"];
+
+        subgraph cluster_1_loss {
+            style=dotted;
+            cluster_1_losses [label="Everyday", shape="box", style=dotted];
+        }
+
+        Protagonist1 -> cluster_1_losses [style=dashed];
+    }
+
+    // ========== Stanza 2 ==========
+    subgraph cluster_2 {
+        style=dashed;
+        color=black;
+
+        Protagonist2 [label="Protagonist"];
+
+        subgraph cluster_2_loss {
+            style=dotted;
+            cluster_2_losses [label="Experiences", shape="box", style=dotted];
+        }
+
+        Protagonist2 -> cluster_2_losses [style=dashed];
+    }
+
+    // ========== Stanza 3 ==========
+    subgraph cluster_3 {
+        style=dashed;
+
+        Protagonist3 [label="Protagonist"];
+
+        subgraph cluster_3_loss {
+            style=dotted;
+            cluster_3_losses [label="Metonyms", shape=box, style=dotted];
+        }
+
+        Protagonist3 -> cluster_3_losses [style=dashed];
+    }
+
+    // ========== Stanza 4 ==========
+    subgraph cluster_4 {
+        style=dashed;
+
+        Protagonist4 [label="Protagonist"];
+
+        subgraph cluster_4_loss {
+            style=dotted;
+            cluster_4_losses [label="Geography", shape=box, style=dotted];
+        }
+
+        Protagonist4 -> cluster_4_losses [style=dashed];
+    }
+
+    // ========== Stanza 5 ==========
+    subgraph cluster_5 {
+        style=dashed;
+
+        Protagonist5 [label="Protagonist", color=red4];
+        Beloved [label="Beloved"];
+
+        Protagonist5 -> Beloved [style=dashed];
+    }
+
+    // ========== Functors ==========
+    Protagonist1 -> Protagonist2 [style=solid];
+    cluster_1_losses -> cluster_2_losses [style=solid];
+
+    Protagonist2 -> Protagonist3 [style=solid];
+    cluster_2_losses -> cluster_3_losses [style=solid];
+
+    Protagonist3 -> Protagonist4 [style=solid];
+    cluster_3_losses -> cluster_4_losses [style=solid];
+
+    Protagonist4 -> Protagonist5 [style=solid, color=red4];
+    cluster_4_losses -> Beloved [style=solid, color=red4];
+
+    // Caption
+    label="Categorical Descent of Loss in Bishop's *One Art*";
+}
+
+```
+
+---
+
+Bishop descends through grief by way of categories of loss. The transitions between stanzas trace **functors**--structure-preserving maps that model how we experience loss similarly, until we don't: an Orphean turn that *writes* grief. 
+
+## Categories of loss 
+
+Formalising [categories of loss](https://en.wikipedia.org/wiki/Category_theory) reveals the exquisite ontology of grief Bishop unfolds, in which:
+
+- **Objects** comprise the protagonist and things they have lost;
+- **Morphisms** relate how the protagonist has lost comparable things;
+- **Functors** relate entire categories of loss, preserving structure--until they don't.
+
+## From everyday loss to experiential loss
+
+--- 
+
+::: {.poetry}
+Lose something every day. Accept the fluster  
+of lost door keys, the hour badly spent.  
+The art of losing isn’t hard to master.  
+
+Then practice losing farther, losing faster:  
+places, and names, and where it was you meant  
+to travel. None of these will bring disaster.  
+:::
+
+---
+
+Bishop first traces how the things we say we 'lose', such as *keys* and *hours*, is similar to the way we forget *places* we've been and *names* of people we've met. 
+
+These losses *are no disaster*.
+
+---
+
+```{dot}
+digraph OneArtNested {
+    graph [compound=true];
+    rankdir=TB;
+    fontname="Courier";
+    node [shape=ellipse, fontname="Courier", style=dashed, fillcolor=white];
+    edge [fontname="Courier"];
+
+    // ========== Stanza 1: Everyday Things ==========
+    subgraph cluster_1 {
+        style=dashed;
+        color=black;
+
+        Protagonist1 [label="Protagonist\nIdentity: not a disaster to lose everyday things"];
+
+        subgraph cluster_1_loss {
+            style=dotted;
+            
+            cluster_1_losses [label="Stanza: Everyday Things", style="dotted", shape="box"];
+            
+            Keys [label="Keys\nIdentity: a physical thing we lose"];
+            Hours [label="Hours\nIdentity: non-physical things we lose"];
+            Keys -> Hours [label="Morphism: Comparable loss", style=dotted, dir=both];
+        }
+
+        Protagonist1 -> cluster_1_losses [style=dashed, label="Morphism: What we say we 'lose'"];
+    }
+
+    // ========== Stanza 2: Life Experiences ==========
+    subgraph cluster_2 {
+        style=dashed;
+        color=black;
+
+        Protagonist2 [label="Protagonist\nIdentity: not a disaster to forget the details of life"];
+
+        subgraph cluster_2_loss {
+            style=dotted;
+            
+            cluster_2_losses [label="Stanza: Life Experiences", style="dotted", shape="box"];
+            
+            Names [label="Names\nIdentity: people the protagonist has known"];
+            Places [label="Places\nIdentity: locations the protagonist has been"];
+            Travel [label="Travel\nIdentity: where the protagonist intended to go"]; 
+            Travel -> Names [label="Morphism: Comparable loss", style=dotted, dir=both];
+            Places -> Names [label="Morphism: Comparable loss", style=dotted, dir=both];
+            Places -> Travel [label="Morphism: Comparable loss", style=dotted, dir=both];
+        }
+
+        Protagonist2 -> cluster_2_losses [style=dashed, label="Morphism: What we forget"];
+    }
+
+  // ========== Functors (solid line) ==========
+    Protagonist1 -> Protagonist2 [label="Functor: Experiences loss - not as disaster", style=solid];
+    cluster_1_losses -> cluster_2_losses [label="Functor: Loss is like forgetting", style=solid];
+
+}
+
+```
+
+## From experiential loss to metonymic loss
+
+---
+
+::: {.poetry}
+Then practice losing farther, losing faster:  
+places, and names, and where it was you meant  
+to travel. None of these will bring disaster.  
+
+I lost my mother’s watch. And look! my last, or  
+next-to-last, of three loved houses went.  
+The art of losing isn’t hard to master.  
+
+:::
+
+---
+
+Losing her mother's watch is a shame--but in the grand scheme of things, it is not **categorically** worse than losing memories once treasured: places and names forgotten. 
+
+To lose that which *represents*--a metonym--is still *no disaster*.
+
+---
+
+```{dot}
+
+digraph OneArtNested {
+    graph [compound=true];
+    rankdir=TB;
+    fontname="Courier";
+    node [shape=ellipse, fontname="Courier", style=dashed, fillcolor=white];
+    edge [fontname="Courier"];
+
+    // ========== Stanza 2: Life Experiences ==========
+    subgraph cluster_2 {
+        style=dashed;
+        color=black;
+
+        Protagonist2 [label="Protagonist\nIdentity: not a disaster to forget the details of life"];
+
+        subgraph cluster_2_loss {
+            style=dotted;
+            
+            cluster_2_losses [label="Stanza: Life Experiences", style="dotted", shape="box"];
+            
+            Names [label="Names\nIdentity: people the protagonist has known"];
+            Places [label="Places\nIdentity: locations the protagonist has been"];
+            Travel [label="Travel\nIdentity: where the protagonist intended to go"]; 
+            Travel -> Names [label="Morphism: Comparable loss", style=dotted, dir=both];
+            Places -> Names [label="Morphism: Comparable loss", style=dotted, dir=both];
+            Places -> Travel [label="Morphism: Comparable loss", style=dotted, dir=both];
+        }
+
+        Protagonist2 -> cluster_2_losses [style=dashed, label="Morphism: What we forget"];
+    }
+
+    // ========== Stanza 3: Metonyms ==========
+    subgraph cluster_3 {
+        style=dashed;
+        
+        Protagonist3 [label="Protagonist\nIdentity: not a disaster to lose what reminds us, it's not losing a person"];
+        
+        subgraph cluster_3_loss {
+            style=dotted;
+            
+            cluster_3_losses [label="Stanza: Metonyms for loved ones", style=dotted, shape=box];
+            
+            Watch [label="Watch\nIdentity: Things that remind us of loved ones"];
+            Houses [label="Houses\nIdentity: Places that remind us of family"];
+            Watch -> Houses [label="Morphism: Comparable loss", style=dotted, dir=both];
+        }
+        
+        Protagonist3 -> cluster_3_losses [style=dashed, label="Morphism: What reminds us of loved ones"];
+    }
+    
+    // ========== Functors (solid line) ==========
+    Protagonist2 -> Protagonist3 [label="Functor: Experiences loss - not as disaster", style=solid];
+    cluster_2_losses -> cluster_3_losses [label="Functor: Forgetting detail is like losing metonyms", style=solid];
+    
+}
+
+```
+
+---
+
+## From metonymic loss to geographic loss
+
+---
+
+::: {.poetry}
+I lost my mother’s watch. And look! my last, or  
+next-to-last, of three loved houses went.  
+The art of losing isn’t hard to master.  
+
+I lost two cities, lovely ones. And, vaster,  
+some realms I owned, two rivers, a continent.  
+I miss them, but it wasn’t a disaster.  
+:::
+
+---
+
+No matter the size of *metonym*--a watch, a river, a continent--the loss *is no disaster*. 
+
+---
+
+
+```{dot}
+
+digraph OneArtNested {
+    graph [compound=true];
+    rankdir=TB;
+    fontname="Courier";
+    node [shape=ellipse, fontname="Courier", style=dashed, fillcolor=white];
+    edge [fontname="Courier"];
+
+    // ========== Stanza 3: Metonyms ==========
+    subgraph cluster_3 {
+        style=dashed;
+        
+        Protagonist3 [label="Protagonist\nIdentity: not a disaster to lose what reminds us, it's not losing a person"];
+        
+        subgraph cluster_3_loss {
+            style=dotted;
+            
+            cluster_3_losses [label="Stanza: Metonyms for loved ones", style=dotted, shape=box];
+            
+            Watch [label="Watch\nIdentity: Things that remind us of loved ones"];
+            Houses [label="Houses\nIdentity: Places that remind us of family"];
+            Watch -> Houses [label="Morphism: Comparable loss", style=dotted, dir=both];
+        }
+        
+        Protagonist3 -> cluster_3_losses [style=dashed, label="Morphism: What reminds us of loved ones"];
+    }
+    
+    // ========== Stanza 4: Geography ==========
+    
+    subgraph cluster_4 {
+        style=dashed;
+        
+        Protagonist4 [label="Protagonist\nIdentity: Size of geography does not change felt metonymic loss"];
+        
+        subgraph cluster_4_loss {
+            style=dotted;
+            cluster_4_losses [label="Stanza: Geography we've known", style=dotted, shape=box];
+            
+            Cities [label="Cities\nIdentity: Cities we've visited"];
+            Rivers [label="Rivers\nIdentity: Geographic connectors between cities"];
+            Continent [label="Continent\nIdentity: Places that contain cities and rivers"];
+            
+            Cities -> Rivers [label="Morphism: Comparable loss", style=dotted,dir=both];
+            Rivers -> Continent [label="Morphism: Comparable loss", style=dotted,dir=both];
+            Continent -> Cities [label="Morphism: Comparable loss", style=dotted,dir=both];
+        }
+        
+        Protagonist4 -> cluster_4_losses [style=dashed, label="Morphism: Geography we remember"];
+    }
+
+
+    // ========== Functors (solid line) ==========
+    
+    Protagonist3 -> Protagonist4 [label="Functor: Experiences loss - not as disaster"];
+    cluster_3_losses -> cluster_4_losses [label="Functor: Size of metonym is irrelevant", style=solid];
+    
+}
+
+```
+
+---
+
+## To the loss almost too hard to write
+
+---
+
+::: {.poetry}
+—Even losing you (the joking voice, a gesture  
+I love) I shan’t have lied. It’s evident  
+the art of losing’s not too hard to master  
+though it may look like (*Write* it!) like disaster.
+:::
+
+--- 
+
+Bishop has almost convinced us that loss is *not too hard to master*--as one can tolerate losing a continent. 
+
+But she turns, like Orpheus, in her katabasis of grief to *write* that here **the diagram fails to commute**; for losing a beloved feels *like disaster*.
+
+---
+
+
+```{dot}
+digraph OneArtNested {
+    graph [compound=true];
+    rankdir=TB;
+    fontname="Courier";
+    node [shape=ellipse, fontname="Courier", style=dashed, fillcolor=white];
+    edge [fontname="Courier"];
+
+    // ========== Stanza 4: Geography ==========
+    
+    subgraph cluster_4 {
+        style=dashed;
+        
+        Protagonist4 [label="Protagonist\nIdentity: Size of geography does not change felt metonymic loss"];
+        
+        subgraph cluster_4_loss {
+            style=dotted;
+            cluster_4_losses [label="Stanza: Geography we've known", style=dotted, shape=box];
+            
+            Cities [label="Cities\nIdentity: Cities we've visited"];
+            Rivers [label="Rivers\nIdentity: Geographic connectors between cities"];
+            Continent [label="Continent\nIdentity: Places that contain cities and rivers"];
+            
+            Cities -> Rivers [label="Morphism: Comparable loss", style=dotted,dir=both];
+            Rivers -> Continent [label="Morphism: Comparable loss", style=dotted,dir=both];
+            Continent -> Cities [label="Morphism: Comparable loss", style=dotted,dir=both];
+        }
+        
+        Protagonist4 -> cluster_4_losses [style=dashed, label="Morphism: Geography we remember"];
+    }
+
+
+    // ========== Stanza 5: Beloved ==========
+    
+    subgraph cluster_5 {
+        style=dashed;
+        
+        Protagonist5 [label="Protagonist\nIdentity: Losing beloved feels like disaster", color=red4];
+        
+        Beloved [label="Beloved\nIdentity: Aristotelian love of virtue"];
+        
+        Protagonist5 -> Beloved [label="Morphism: Leaves Protagonist's life", style=dashed];
+    }
+
+
+    // ========== Functors (solid line) ==========
+    
+    Protagonist4 -> Protagonist5 [label="Functor: Experiences loss - as disaster", color=red4];
+    cluster_4_losses -> Beloved [label="Functor: Metonymic loss is noncomparable to loss of true love", color=red4];
+    
+}
+```

@@ -1,0 +1,1485 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.24">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Dr Charles T. Gray, Datapunk">
+<meta name="dcterms.date" content="2025-04-16">
+
+<title>The Categorical Descent of Loss in Elizabeth Bishop’s One Art – Good Enough Lab</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-1e438c382a17f6d88d3993662a872df6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-9e8de048a655e476d63a8bc4b1d9f37e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Good Enough Lab</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../blog.html"> 
+<span class="menu-text">Development Blog</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-drafts" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Drafts</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-drafts">    
+        <li>
+    <a class="dropdown-item" href="../singularities.html">
+ <span class="dropdown-text">Singularities</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../pop.html">
+ <span class="dropdown-text">Singularities in Pop Culture</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../qao.html">
+ <span class="dropdown-text">Questionable Analytical Observations</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../collab.html"> 
+<span class="menu-text">Collaborate</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../lab.html"> 
+<span class="menu-text">Lab</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../values.html"> 
+<span class="menu-text">Values</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#categories-of-loss" id="toc-categories-of-loss" class="nav-link active" data-scroll-target="#categories-of-loss">Categories of loss</a></li>
+  <li><a href="#from-everyday-loss-to-experiential-loss" id="toc-from-everyday-loss-to-experiential-loss" class="nav-link" data-scroll-target="#from-everyday-loss-to-experiential-loss">From everyday loss to experiential loss</a></li>
+  <li><a href="#from-experiential-loss-to-metonymic-loss" id="toc-from-experiential-loss-to-metonymic-loss" class="nav-link" data-scroll-target="#from-experiential-loss-to-metonymic-loss">From experiential loss to metonymic loss</a></li>
+  <li><a href="#from-metonymic-loss-to-geographic-loss" id="toc-from-metonymic-loss-to-geographic-loss" class="nav-link" data-scroll-target="#from-metonymic-loss-to-geographic-loss">From metonymic loss to geographic loss</a></li>
+  <li><a href="#to-the-loss-almost-too-hard-to-write" id="toc-to-the-loss-almost-too-hard-to-write" class="nav-link" data-scroll-target="#to-the-loss-almost-too-hard-to-write">To the loss almost too hard to write</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">The Categorical Descent of Loss in Elizabeth Bishop’s <em>One Art</em></h1>
+<p class="subtitle lead">Diagramming the Ontology of Grief in Verse</p>
+</div>
+
+
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Author</div>
+  <div class="quarto-title-meta-heading">Affiliation</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Dr Charles T. Gray, Datapunk <a href="https://orcid.org/0000-0002-9978-011X" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Good Enough Data &amp; Systems Lab
+          </p>
+      </div>
+  </div>
+
+<div class="quarto-title-meta">
+
+      
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">April 16, 2025</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>Elizabeth Bishop’s <a href="https://www.poetryfoundation.org/poems/47536/one-art"><em>One Art</em></a> is a <a href="https://en.wikipedia.org/wiki/Katabasis">katabasis</a> (a hero’s descent into the underworld) tracing loss.</p>
+<hr>
+<div class="poetry">
+<p><strong>One Art</strong><br>
+<em>By Elizabeth Bishop</em></p>
+<p>The art of losing isn’t hard to master;<br>
+so many things seem filled with the intent<br>
+to be lost that their loss is no disaster.</p>
+<p>Lose something every day. Accept the fluster<br>
+of lost door keys, the hour badly spent.<br>
+The art of losing isn’t hard to master.</p>
+<p>Then practice losing farther, losing faster:<br>
+places, and names, and where it was you meant<br>
+to travel. None of these will bring disaster.</p>
+<p>I lost my mother’s watch. And look! my last, or<br>
+next-to-last, of three loved houses went.<br>
+The art of losing isn’t hard to master.</p>
+<p>I lost two cities, lovely ones. And, vaster,<br>
+some realms I owned, two rivers, a continent.<br>
+I miss them, but it wasn’t a disaster.</p>
+<p>—Even losing you (the joking voice, a gesture<br>
+I love) I shan’t have lied. It’s evident<br>
+the art of losing’s not too hard to master<br>
+though it may look like (<em>Write</em> it!) like disaster.</p>
+</div>
+<hr>
+<p>In the final stanza, she takes an <a href="https://en.wikipedia.org/wiki/Orpheus_and_Eurydice">Orphean</a> turn to <em>write</em> that some loss is <strong>categorically</strong> different, no matter how much we may wish it were not.</p>
+<hr>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<svg width="672" height="480" viewbox="0.00 0.00 886.00 460.80" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" style="; max-width: none; max-height: none">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 456.8)">
+<title>OneArtNested</title>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-456.8 882,-456.8 882,4 -4,4"></polygon>
+<text text-anchor="middle" x="439" y="-8.2" font-family="Courier,monospace" font-size="14.00">Categorical Descent of Loss in Bishop's *One Art*</text>
+<g id="clust1" class="cluster">
+<title>cluster_1</title>
+<polygon fill="none" stroke="black" stroke-dasharray="5,2" points="8,-312.8 8,-444.8 174,-444.8 174,-312.8 8,-312.8"></polygon>
+</g>
+<g id="clust2" class="cluster">
+<title>cluster_1_loss</title>
+<polygon fill="none" stroke="black" stroke-dasharray="1,5" points="53,-320.8 53,-372.8 153,-372.8 153,-320.8 53,-320.8"></polygon>
+</g>
+<g id="clust3" class="cluster">
+<title>cluster_2</title>
+<polygon fill="none" stroke="black" stroke-dasharray="5,2" points="182,-240.8 182,-372.8 348,-372.8 348,-240.8 182,-240.8"></polygon>
+</g>
+<g id="clust4" class="cluster">
+<title>cluster_2_loss</title>
+<polygon fill="none" stroke="black" stroke-dasharray="1,5" points="203,-248.8 203,-300.8 327,-300.8 327,-248.8 203,-248.8"></polygon>
+</g>
+<g id="clust5" class="cluster">
+<title>cluster_3</title>
+<polygon fill="none" stroke="black" stroke-dasharray="5,2" points="356,-168.8 356,-300.8 522,-300.8 522,-168.8 356,-168.8"></polygon>
+</g>
+<g id="clust6" class="cluster">
+<title>cluster_3_loss</title>
+<polygon fill="none" stroke="black" stroke-dasharray="1,5" points="389,-176.8 389,-228.8 489,-228.8 489,-176.8 389,-176.8"></polygon>
+</g>
+<g id="clust9" class="cluster">
+<title>cluster_5</title>
+<polygon fill="none" stroke="black" stroke-dasharray="5,2" points="704,-32.8 704,-156.8 870,-156.8 870,-32.8 704,-32.8"></polygon>
+</g>
+<g id="clust7" class="cluster">
+<title>cluster_4</title>
+<polygon fill="none" stroke="black" stroke-dasharray="5,2" points="530,-96.8 530,-228.8 696,-228.8 696,-96.8 530,-96.8"></polygon>
+</g>
+<g id="clust8" class="cluster">
+<title>cluster_4_loss</title>
+<polygon fill="none" stroke="black" stroke-dasharray="1,5" points="559,-104.8 559,-156.8 667,-156.8 667,-104.8 559,-104.8"></polygon>
+</g>
+<!-- Protagonist1 -->
+<g id="node1" class="node">
+<title>Protagonist1</title>
+<ellipse fill="none" stroke="black" stroke-dasharray="5,2" cx="91" cy="-418.8" rx="74.57" ry="18"></ellipse>
+<text text-anchor="middle" x="91" y="-414.6" font-family="Courier,monospace" font-size="14.00">Protagonist</text>
+</g>
+<!-- cluster_1_losses -->
+<g id="node2" class="node">
+<title>cluster_1_losses</title>
+<polygon fill="none" stroke="black" stroke-dasharray="1,5" points="144.71,-364.8 61.29,-364.8 61.29,-328.8 144.71,-328.8 144.71,-364.8"></polygon>
+<text text-anchor="middle" x="103" y="-342.6" font-family="Courier,monospace" font-size="14.00">Everyday</text>
+</g>
+<!-- Protagonist1&#45;&gt;cluster_1_losses -->
+<g id="edge1" class="edge">
+<title>Protagonist1-&gt;cluster_1_losses</title>
+<path fill="none" stroke="black" stroke-dasharray="5,2" d="M93.97,-400.5C95.29,-392.78 96.88,-383.51 98.35,-374.91"></path>
+<polygon fill="black" stroke="black" points="101.83,-375.35 100.07,-364.9 94.93,-374.17 101.83,-375.35"></polygon>
+</g>
+<!-- Protagonist2 -->
+<g id="node3" class="node">
+<title>Protagonist2</title>
+<ellipse fill="none" stroke="black" stroke-dasharray="5,2" cx="265" cy="-346.8" rx="74.57" ry="18"></ellipse>
+<text text-anchor="middle" x="265" y="-342.6" font-family="Courier,monospace" font-size="14.00">Protagonist</text>
+</g>
+<!-- Protagonist1&#45;&gt;Protagonist2 -->
+<g id="edge6" class="edge">
+<title>Protagonist1-&gt;Protagonist2</title>
+<path fill="none" stroke="black" d="M127.9,-402.95C154.43,-392.28 190.39,-377.82 218.82,-366.38"></path>
+<polygon fill="black" stroke="black" points="220.18,-369.6 228.15,-362.62 217.57,-363.11 220.18,-369.6"></polygon>
+</g>
+<!-- cluster_2_losses -->
+<g id="node4" class="node">
+<title>cluster_2_losses</title>
+<polygon fill="none" stroke="black" stroke-dasharray="1,5" points="319.42,-292.8 210.58,-292.8 210.58,-256.8 319.42,-256.8 319.42,-292.8"></polygon>
+<text text-anchor="middle" x="265" y="-270.6" font-family="Courier,monospace" font-size="14.00">Experiences</text>
+</g>
+<!-- cluster_1_losses&#45;&gt;cluster_2_losses -->
+<g id="edge7" class="edge">
+<title>cluster_1_losses-&gt;cluster_2_losses</title>
+<path fill="none" stroke="black" d="M141.5,-328.75C153.21,-323.6 166.12,-317.94 178,-312.8 190.01,-307.61 202.97,-302.06 215.13,-296.88"></path>
+<polygon fill="black" stroke="black" points="216.84,-299.96 224.67,-292.83 214.1,-293.52 216.84,-299.96"></polygon>
+</g>
+<!-- Protagonist2&#45;&gt;cluster_2_losses -->
+<g id="edge2" class="edge">
+<title>Protagonist2-&gt;cluster_2_losses</title>
+<path fill="none" stroke="black" stroke-dasharray="5,2" d="M265,-328.5C265,-320.78 265,-311.51 265,-302.91"></path>
+<polygon fill="black" stroke="black" points="268.5,-302.9 265,-292.9 261.5,-302.9 268.5,-302.9"></polygon>
+</g>
+<!-- Protagonist3 -->
+<g id="node5" class="node">
+<title>Protagonist3</title>
+<ellipse fill="none" stroke="black" stroke-dasharray="5,2" cx="439" cy="-274.8" rx="74.57" ry="18"></ellipse>
+<text text-anchor="middle" x="439" y="-270.6" font-family="Courier,monospace" font-size="14.00">Protagonist</text>
+</g>
+<!-- Protagonist2&#45;&gt;Protagonist3 -->
+<g id="edge8" class="edge">
+<title>Protagonist2-&gt;Protagonist3</title>
+<path fill="none" stroke="black" d="M301.9,-330.95C328.43,-320.28 364.39,-305.82 392.82,-294.38"></path>
+<polygon fill="black" stroke="black" points="394.18,-297.6 402.15,-290.62 391.57,-291.11 394.18,-297.6"></polygon>
+</g>
+<!-- cluster_3_losses -->
+<g id="node6" class="node">
+<title>cluster_3_losses</title>
+<polygon fill="none" stroke="black" stroke-dasharray="1,5" points="480.71,-220.8 397.29,-220.8 397.29,-184.8 480.71,-184.8 480.71,-220.8"></polygon>
+<text text-anchor="middle" x="439" y="-198.6" font-family="Courier,monospace" font-size="14.00">Metonyms</text>
+</g>
+<!-- cluster_2_losses&#45;&gt;cluster_3_losses -->
+<g id="edge9" class="edge">
+<title>cluster_2_losses-&gt;cluster_3_losses</title>
+<path fill="none" stroke="black" d="M307.57,-256.68C331.74,-246.95 362.18,-234.71 387.67,-224.45"></path>
+<polygon fill="black" stroke="black" points="389.2,-227.61 397.17,-220.63 386.59,-221.11 389.2,-227.61"></polygon>
+</g>
+<!-- Protagonist3&#45;&gt;cluster_3_losses -->
+<g id="edge3" class="edge">
+<title>Protagonist3-&gt;cluster_3_losses</title>
+<path fill="none" stroke="black" stroke-dasharray="5,2" d="M439,-256.5C439,-248.78 439,-239.51 439,-230.91"></path>
+<polygon fill="black" stroke="black" points="442.5,-230.9 439,-220.9 435.5,-230.9 442.5,-230.9"></polygon>
+</g>
+<!-- Protagonist4 -->
+<g id="node7" class="node">
+<title>Protagonist4</title>
+<ellipse fill="none" stroke="black" stroke-dasharray="5,2" cx="613" cy="-202.8" rx="74.57" ry="18"></ellipse>
+<text text-anchor="middle" x="613" y="-198.6" font-family="Courier,monospace" font-size="14.00">Protagonist</text>
+</g>
+<!-- Protagonist3&#45;&gt;Protagonist4 -->
+<g id="edge10" class="edge">
+<title>Protagonist3-&gt;Protagonist4</title>
+<path fill="none" stroke="black" d="M475.9,-258.95C502.43,-248.28 538.39,-233.82 566.82,-222.38"></path>
+<polygon fill="black" stroke="black" points="568.18,-225.6 576.15,-218.62 565.57,-219.11 568.18,-225.6"></polygon>
+</g>
+<!-- cluster_4_losses -->
+<g id="node8" class="node">
+<title>cluster_4_losses</title>
+<polygon fill="none" stroke="black" stroke-dasharray="1,5" points="658.61,-148.8 567.39,-148.8 567.39,-112.8 658.61,-112.8 658.61,-148.8"></polygon>
+<text text-anchor="middle" x="613" y="-126.6" font-family="Courier,monospace" font-size="14.00">Geography</text>
+</g>
+<!-- cluster_3_losses&#45;&gt;cluster_4_losses -->
+<g id="edge11" class="edge">
+<title>cluster_3_losses-&gt;cluster_4_losses</title>
+<path fill="none" stroke="black" d="M480.68,-185.03C504.75,-175.35 535.24,-163.08 560.89,-152.77"></path>
+<polygon fill="black" stroke="black" points="562.48,-155.9 570.45,-148.92 559.87,-149.4 562.48,-155.9"></polygon>
+</g>
+<!-- Protagonist4&#45;&gt;cluster_4_losses -->
+<g id="edge4" class="edge">
+<title>Protagonist4-&gt;cluster_4_losses</title>
+<path fill="none" stroke="black" stroke-dasharray="5,2" d="M613,-184.5C613,-176.78 613,-167.51 613,-158.91"></path>
+<polygon fill="black" stroke="black" points="616.5,-158.9 613,-148.9 609.5,-158.9 616.5,-158.9"></polygon>
+</g>
+<!-- Protagonist5 -->
+<g id="node9" class="node">
+<title>Protagonist5</title>
+<ellipse fill="none" stroke="#8b0000" stroke-dasharray="5,2" cx="787" cy="-130.8" rx="74.57" ry="18"></ellipse>
+<text text-anchor="middle" x="787" y="-126.6" font-family="Courier,monospace" font-size="14.00">Protagonist</text>
+</g>
+<!-- Protagonist4&#45;&gt;Protagonist5 -->
+<g id="edge12" class="edge">
+<title>Protagonist4-&gt;Protagonist5</title>
+<path fill="none" stroke="#8b0000" d="M649.9,-186.95C676.43,-176.28 712.39,-161.82 740.82,-150.38"></path>
+<polygon fill="#8b0000" stroke="#8b0000" points="742.18,-153.6 750.15,-146.62 739.57,-147.11 742.18,-153.6"></polygon>
+</g>
+<!-- Beloved -->
+<g id="node10" class="node">
+<title>Beloved</title>
+<ellipse fill="none" stroke="black" stroke-dasharray="5,2" cx="775" cy="-58.8" rx="51.7" ry="18"></ellipse>
+<text text-anchor="middle" x="775" y="-54.6" font-family="Courier,monospace" font-size="14.00">Beloved</text>
+</g>
+<!-- cluster_4_losses&#45;&gt;Beloved -->
+<g id="edge13" class="edge">
+<title>cluster_4_losses-&gt;Beloved</title>
+<path fill="none" stroke="#8b0000" d="M652.63,-112.68C677.55,-101.91 709.61,-88.06 734.66,-77.23"></path>
+<polygon fill="#8b0000" stroke="#8b0000" points="736.1,-80.42 743.89,-73.24 733.32,-74 736.1,-80.42"></polygon>
+</g>
+<!-- Protagonist5&#45;&gt;Beloved -->
+<g id="edge5" class="edge">
+<title>Protagonist5-&gt;Beloved</title>
+<path fill="none" stroke="black" stroke-dasharray="5,2" d="M784.03,-112.5C782.71,-104.78 781.12,-95.51 779.65,-86.91"></path>
+<polygon fill="black" stroke="black" points="783.07,-86.17 777.93,-76.9 776.17,-87.35 783.07,-86.17"></polygon>
+</g>
+</g>
+</svg>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<hr>
+<p>Bishop descends through grief by way of categories of loss. The transitions between stanzas trace <strong>functors</strong>–structure-preserving maps that model how we experience loss similarly, until we don’t: an Orphean turn that <em>writes</em> grief.</p>
+<section id="categories-of-loss" class="level2">
+<h2 class="anchored" data-anchor-id="categories-of-loss">Categories of loss</h2>
+<p>Formalising <a href="https://en.wikipedia.org/wiki/Category_theory">categories of loss</a> reveals the exquisite ontology of grief Bishop unfolds, in which:</p>
+<ul>
+<li><strong>Objects</strong> comprise the protagonist and things they have lost;</li>
+<li><strong>Morphisms</strong> relate how the protagonist has lost comparable things;</li>
+<li><strong>Functors</strong> relate entire categories of loss, preserving structure–until they don’t.</li>
+</ul>
+</section>
+<section id="from-everyday-loss-to-experiential-loss" class="level2">
+<h2 class="anchored" data-anchor-id="from-everyday-loss-to-experiential-loss">From everyday loss to experiential loss</h2>
+<hr>
+<div class="poetry">
+<p>Lose something every day. Accept the fluster<br>
+of lost door keys, the hour badly spent.<br>
+The art of losing isn’t hard to master.</p>
+<p>Then practice losing farther, losing faster:<br>
+places, and names, and where it was you meant<br>
+to travel. None of these will bring disaster.</p>
+</div>
+<hr>
+<p>Bishop first traces how the things we say we ‘lose’, such as <em>keys</em> and <em>hours</em>, is similar to the way we forget <em>places</em> we’ve been and <em>names</em> of people we’ve met.</p>
+<p>These losses <em>are no disaster</em>.</p>
+<hr>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<svg width="672" height="480" viewbox="0.00 0.00 1566.00 559.36" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" style="; max-width: none; max-height: none">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 555.36)">
+<title>OneArtNested</title>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-555.36 1562,-555.36 1562,4 -4,4"></polygon>
+<g id="clust1" class="cluster">
+<title>cluster_1</title>
+<polygon fill="none" stroke="black" stroke-dasharray="5,2" points="8,-237.26 8,-543.36 694,-543.36 694,-237.26 8,-237.26"></polygon>
+</g>
+<g id="clust2" class="cluster">
+<title>cluster_1_loss</title>
+<polygon fill="none" stroke="black" stroke-dasharray="1,5" points="16,-245.26 16,-431.73 686,-431.73 686,-245.26 16,-245.26"></polygon>
+</g>
+<g id="clust3" class="cluster">
+<title>cluster_2</title>
+<polygon fill="none" stroke="black" stroke-dasharray="5,2" points="702,-8 702,-431.73 1550,-431.73 1550,-8 702,-8"></polygon>
+</g>
+<g id="clust4" class="cluster">
+<title>cluster_2_loss</title>
+<polygon fill="none" stroke="black" stroke-dasharray="1,5" points="710,-16 710,-320.09 1542,-320.09 1542,-16 710,-16"></polygon>
+</g>
+<!-- Protagonist1 -->
+<g id="node1" class="node">
+<title>Protagonist1</title>
+<ellipse fill="none" stroke="black" stroke-dasharray="5,2" cx="390" cy="-505.94" rx="296.43" ry="29.33"></ellipse>
+<text text-anchor="middle" x="390" y="-510.14" font-family="Courier,monospace" font-size="14.00">Protagonist</text>
+<text text-anchor="middle" x="390" y="-493.34" font-family="Courier,monospace" font-size="14.00">Identity: not a disaster to lose everyday things</text>
+</g>
+<!-- cluster_1_losses -->
+<g id="node2" class="node">
+<title>cluster_1_losses</title>
+<polygon fill="none" stroke="black" stroke-dasharray="1,5" points="677.73,-412.31 468.27,-412.31 468.27,-376.31 677.73,-376.31 677.73,-412.31"></polygon>
+<text text-anchor="middle" x="573" y="-390.11" font-family="Courier,monospace" font-size="14.00">Stanza: Everyday Things</text>
+</g>
+<!-- Protagonist1&#45;&gt;cluster_1_losses -->
+<g id="edge2" class="edge">
+<title>Protagonist1-&gt;cluster_1_losses</title>
+<path fill="none" stroke="black" stroke-dasharray="5,2" d="M437.13,-476.71C467.8,-458.33 507.26,-434.7 535.74,-417.63"></path>
+<polygon fill="black" stroke="black" points="537.79,-420.48 544.57,-412.34 534.2,-414.48 537.79,-420.48"></polygon>
+<text text-anchor="middle" x="622.22" y="-445.93" font-family="Courier,monospace" font-size="14.00">Morphism: What we say we 'lose'</text>
+</g>
+<!-- Protagonist2 -->
+<g id="node5" class="node">
+<title>Protagonist2</title>
+<ellipse fill="none" stroke="black" stroke-dasharray="5,2" cx="1126" cy="-394.31" rx="332.22" ry="29.33"></ellipse>
+<text text-anchor="middle" x="1126" y="-398.51" font-family="Courier,monospace" font-size="14.00">Protagonist</text>
+<text text-anchor="middle" x="1126" y="-381.71" font-family="Courier,monospace" font-size="14.00">Identity: not a disaster to forget the details of life</text>
+</g>
+<!-- Protagonist1&#45;&gt;Protagonist2 -->
+<g id="edge7" class="edge">
+<title>Protagonist1-&gt;Protagonist2</title>
+<path fill="none" stroke="black" d="M575.94,-482.93C633.71,-475.68 697.56,-467.22 756,-458.53 827.89,-447.83 907.36,-434.46 974.17,-422.77"></path>
+<polygon fill="black" stroke="black" points="975.11,-426.16 984.35,-420.98 973.9,-419.26 975.11,-426.16"></polygon>
+<text text-anchor="middle" x="1037.63" y="-445.93" font-family="Courier,monospace" font-size="14.00">Functor: Experiences loss - not as disaster</text>
+</g>
+<!-- cluster_2_losses -->
+<g id="node6" class="node">
+<title>cluster_2_losses</title>
+<polygon fill="none" stroke="black" stroke-dasharray="1,5" points="1499.63,-300.68 1282.37,-300.68 1282.37,-264.68 1499.63,-264.68 1499.63,-300.68"></polygon>
+<text text-anchor="middle" x="1391" y="-278.48" font-family="Courier,monospace" font-size="14.00">Stanza: Life Experiences</text>
+</g>
+<!-- cluster_1_losses&#45;&gt;cluster_2_losses -->
+<g id="edge8" class="edge">
+<title>cluster_1_losses-&gt;cluster_2_losses</title>
+<path fill="none" stroke="black" d="M529.98,-376.31C505.04,-364.11 481.55,-346.92 498.16,-330.09 513.28,-314.78 1251.74,-323.44 1273,-320.09 1294.39,-316.73 1317.26,-310.35 1337.12,-303.86"></path>
+<polygon fill="black" stroke="black" points="1338.24,-307.18 1346.61,-300.68 1336.01,-300.54 1338.24,-307.18"></polygon>
+<text text-anchor="middle" x="632.42" y="-334.29" font-family="Courier,monospace" font-size="14.00">Functor: Loss is like forgetting</text>
+</g>
+<!-- Keys -->
+<g id="node3" class="node">
+<title>Keys</title>
+<ellipse fill="none" stroke="black" stroke-dasharray="5,2" cx="237" cy="-394.31" rx="213.09" ry="29.33"></ellipse>
+<text text-anchor="middle" x="237" y="-398.51" font-family="Courier,monospace" font-size="14.00">Keys</text>
+<text text-anchor="middle" x="237" y="-381.71" font-family="Courier,monospace" font-size="14.00">Identity: a physical thing we lose</text>
+</g>
+<!-- Hours -->
+<g id="node4" class="node">
+<title>Hours</title>
+<ellipse fill="none" stroke="black" stroke-dasharray="5,2" cx="255" cy="-282.68" rx="231.24" ry="29.33"></ellipse>
+<text text-anchor="middle" x="255" y="-286.88" font-family="Courier,monospace" font-size="14.00">Hours</text>
+<text text-anchor="middle" x="255" y="-270.08" font-family="Courier,monospace" font-size="14.00">Identity: non-physical things we lose</text>
+</g>
+<!-- Keys&#45;&gt;Hours -->
+<g id="edge1" class="edge">
+<title>Keys-&gt;Hours</title>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M243.36,-354.55C245.07,-344.14 246.92,-332.9 248.63,-322.49"></path>
+<polygon fill="black" stroke="black" points="239.85,-354.36 241.68,-364.79 246.76,-355.49 239.85,-354.36"></polygon>
+<polygon fill="black" stroke="black" points="252.11,-322.87 250.28,-312.43 245.2,-321.74 252.11,-322.87"></polygon>
+<text text-anchor="middle" x="353.02" y="-334.29" font-family="Courier,monospace" font-size="14.00">Morphism: Comparable loss</text>
+</g>
+<!-- Protagonist2&#45;&gt;cluster_2_losses -->
+<g id="edge6" class="edge">
+<title>Protagonist2-&gt;cluster_2_losses</title>
+<path fill="none" stroke="black" stroke-dasharray="5,2" d="M1193.56,-365.36C1239.22,-346.47 1298.56,-321.92 1340.22,-304.69"></path>
+<polygon fill="black" stroke="black" points="1341.72,-307.85 1349.62,-300.8 1339.04,-301.39 1341.72,-307.85"></polygon>
+<text text-anchor="middle" x="1374.82" y="-334.29" font-family="Courier,monospace" font-size="14.00">Morphism: What we forget</text>
+</g>
+<!-- Names -->
+<g id="node7" class="node">
+<title>Names</title>
+<ellipse fill="none" stroke="black" stroke-dasharray="5,2" cx="1114" cy="-53.42" rx="260.64" ry="29.33"></ellipse>
+<text text-anchor="middle" x="1114" y="-57.62" font-family="Courier,monospace" font-size="14.00">Names</text>
+<text text-anchor="middle" x="1114" y="-40.82" font-family="Courier,monospace" font-size="14.00">Identity: people the protagonist has known</text>
+</g>
+<!-- Places -->
+<g id="node8" class="node">
+<title>Places</title>
+<ellipse fill="none" stroke="black" stroke-dasharray="5,2" cx="991" cy="-282.68" rx="272.91" ry="29.33"></ellipse>
+<text text-anchor="middle" x="991" y="-286.88" font-family="Courier,monospace" font-size="14.00">Places</text>
+<text text-anchor="middle" x="991" y="-270.08" font-family="Courier,monospace" font-size="14.00">Identity: locations the protagonist has been</text>
+</g>
+<!-- Places&#45;&gt;Names -->
+<g id="edge4" class="edge">
+<title>Places-&gt;Names</title>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M861.76,-253.28C781.28,-229.52 700.78,-190.6 744.97,-135.63 767.93,-107.07 841.15,-87.97 916.38,-75.51"></path>
+<polygon fill="black" stroke="black" points="860.99,-256.7 871.56,-256.11 862.92,-249.98 860.99,-256.7"></polygon>
+<polygon fill="black" stroke="black" points="917.2,-78.92 926.52,-73.87 916.09,-72.01 917.2,-78.92"></polygon>
+<text text-anchor="middle" x="849.02" y="-160.85" font-family="Courier,monospace" font-size="14.00">Morphism: Comparable loss</text>
+</g>
+<!-- Travel -->
+<g id="node9" class="node">
+<title>Travel</title>
+<ellipse fill="none" stroke="black" stroke-dasharray="5,2" cx="1249" cy="-165.05" rx="284.67" ry="29.33"></ellipse>
+<text text-anchor="middle" x="1249" y="-169.25" font-family="Courier,monospace" font-size="14.00">Travel</text>
+<text text-anchor="middle" x="1249" y="-152.45" font-family="Courier,monospace" font-size="14.00">Identity: where the protagonist intended to go</text>
+</g>
+<!-- Places&#45;&gt;Travel -->
+<g id="edge5" class="edge">
+<title>Places-&gt;Travel</title>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M1062.02,-249.85C1097.91,-233.76 1141.37,-214.28 1177.36,-198.16"></path>
+<polygon fill="black" stroke="black" points="1060.49,-246.7 1052.8,-253.98 1063.35,-253.09 1060.49,-246.7"></polygon>
+<polygon fill="black" stroke="black" points="1179.12,-201.2 1186.81,-193.92 1176.26,-194.81 1179.12,-201.2"></polygon>
+<text text-anchor="middle" x="1248.02" y="-216.66" font-family="Courier,monospace" font-size="14.00">Morphism: Comparable loss</text>
+</g>
+<!-- Travel&#45;&gt;Names -->
+<g id="edge3" class="edge">
+<title>Travel-&gt;Names</title>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M1206.02,-129.14C1190.39,-116.45 1172.73,-102.11 1157.09,-89.41"></path>
+<polygon fill="black" stroke="black" points="1204.26,-132.23 1214.23,-135.81 1208.68,-126.79 1204.26,-132.23"></polygon>
+<polygon fill="black" stroke="black" points="1159.09,-86.52 1149.12,-82.93 1154.67,-91.95 1159.09,-86.52"></polygon>
+<text text-anchor="middle" x="1294.02" y="-105.03" font-family="Courier,monospace" font-size="14.00">Morphism: Comparable loss</text>
+</g>
+</g>
+</svg>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</section>
+<section id="from-experiential-loss-to-metonymic-loss" class="level2">
+<h2 class="anchored" data-anchor-id="from-experiential-loss-to-metonymic-loss">From experiential loss to metonymic loss</h2>
+<hr>
+<div class="poetry">
+<p>Then practice losing farther, losing faster:<br>
+places, and names, and where it was you meant<br>
+to travel. None of these will bring disaster.</p>
+<p>I lost my mother’s watch. And look! my last, or<br>
+next-to-last, of three loved houses went.<br>
+The art of losing isn’t hard to master.</p>
+</div>
+<hr>
+<p>Losing her mother’s watch is a shame–but in the grand scheme of things, it is not <strong>categorically</strong> worse than losing memories once treasured: places and names forgotten.</p>
+<p>To lose that which <em>represents</em>–a metonym–is still <em>no disaster</em>.</p>
+<hr>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<svg width="672" height="480" viewbox="0.00 0.00 1809.65 441.73" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" style="; max-width: none; max-height: none">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 437.73)">
+<title>OneArtNested</title>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-437.73 1805.65,-437.73 1805.65,4 -4,4"></polygon>
+<g id="clust1" class="cluster">
+<title>cluster_2</title>
+<polygon fill="none" stroke="black" stroke-dasharray="5,2" points="8,-8 8,-425.73 856,-425.73 856,-8 8,-8"></polygon>
+</g>
+<g id="clust2" class="cluster">
+<title>cluster_2_loss</title>
+<polygon fill="none" stroke="black" stroke-dasharray="1,5" points="16,-16 16,-314.09 848,-314.09 848,-16 16,-16"></polygon>
+</g>
+<g id="clust3" class="cluster">
+<title>cluster_3</title>
+<polygon fill="none" stroke="black" stroke-dasharray="5,2" points="864,-8 864,-314.09 1782,-314.09 1782,-8 864,-8"></polygon>
+</g>
+<g id="clust4" class="cluster">
+<title>cluster_3_loss</title>
+<polygon fill="none" stroke="black" stroke-dasharray="1,5" points="872,-16 872,-202.46 1740,-202.46 1740,-16 872,-16"></polygon>
+</g>
+<!-- Protagonist2 -->
+<g id="node1" class="node">
+<title>Protagonist2</title>
+<ellipse fill="none" stroke="black" stroke-dasharray="5,2" cx="516" cy="-388.31" rx="332.22" ry="29.33"></ellipse>
+<text text-anchor="middle" x="516" y="-392.51" font-family="Courier,monospace" font-size="14.00">Protagonist</text>
+<text text-anchor="middle" x="516" y="-375.71" font-family="Courier,monospace" font-size="14.00">Identity: not a disaster to forget the details of life</text>
+</g>
+<!-- cluster_2_losses -->
+<g id="node2" class="node">
+<title>cluster_2_losses</title>
+<polygon fill="none" stroke="black" stroke-dasharray="1,5" points="822.63,-294.68 605.37,-294.68 605.37,-258.68 822.63,-258.68 822.63,-294.68"></polygon>
+<text text-anchor="middle" x="714" y="-272.48" font-family="Courier,monospace" font-size="14.00">Stanza: Life Experiences</text>
+</g>
+<!-- Protagonist2&#45;&gt;cluster_2_losses -->
+<g id="edge4" class="edge">
+<title>Protagonist2-&gt;cluster_2_losses</title>
+<path fill="none" stroke="black" stroke-dasharray="5,2" d="M566.73,-359.22C600.21,-340.68 643.43,-316.75 674.38,-299.62"></path>
+<polygon fill="black" stroke="black" points="676.11,-302.66 683.16,-294.75 672.72,-296.53 676.11,-302.66"></polygon>
+<text text-anchor="middle" x="726.82" y="-328.29" font-family="Courier,monospace" font-size="14.00">Morphism: What we forget</text>
+</g>
+<!-- Protagonist3 -->
+<g id="node6" class="node">
+<title>Protagonist3</title>
+<ellipse fill="none" stroke="black" stroke-dasharray="5,2" cx="1323" cy="-276.68" rx="450.85" ry="29.33"></ellipse>
+<text text-anchor="middle" x="1323" y="-280.88" font-family="Courier,monospace" font-size="14.00">Protagonist</text>
+<text text-anchor="middle" x="1323" y="-264.08" font-family="Courier,monospace" font-size="14.00">Identity: not a disaster to lose what reminds us, it's not losing a person</text>
+</g>
+<!-- Protagonist2&#45;&gt;Protagonist3 -->
+<g id="edge7" class="edge">
+<title>Protagonist2-&gt;Protagonist3</title>
+<path fill="none" stroke="black" d="M692.6,-363.32C819.75,-346.04 991.44,-322.72 1123.54,-304.78"></path>
+<polygon fill="black" stroke="black" points="1124.34,-308.2 1133.78,-303.38 1123.4,-301.26 1124.34,-308.2"></polygon>
+<text text-anchor="middle" x="1147.63" y="-328.29" font-family="Courier,monospace" font-size="14.00">Functor: Experiences loss - not as disaster</text>
+</g>
+<!-- cluster_3_losses -->
+<g id="node7" class="node">
+<title>cluster_3_losses</title>
+<polygon fill="none" stroke="black" stroke-dasharray="1,5" points="1732.44,-183.05 1455.56,-183.05 1455.56,-147.05 1732.44,-147.05 1732.44,-183.05"></polygon>
+<text text-anchor="middle" x="1594" y="-160.85" font-family="Courier,monospace" font-size="14.00">Stanza: Metonyms for loved ones</text>
+</g>
+<!-- cluster_2_losses&#45;&gt;cluster_3_losses -->
+<g id="edge8" class="edge">
+<title>cluster_2_losses-&gt;cluster_3_losses</title>
+<path fill="none" stroke="black" d="M736.76,-258.45C758.58,-243.06 793.14,-221.58 827,-212.46 893.53,-194.54 1378.68,-211.36 1447,-202.46 1473.93,-198.96 1503.06,-192.35 1528.23,-185.72"></path>
+<polygon fill="black" stroke="black" points="1529.28,-189.06 1538.03,-183.08 1527.46,-182.3 1529.28,-189.06"></polygon>
+<text text-anchor="middle" x="1037.03" y="-216.66" font-family="Courier,monospace" font-size="14.00">Functor: Forgetting detail is like losing metonyms</text>
+</g>
+<!-- Names -->
+<g id="node3" class="node">
+<title>Names</title>
+<ellipse fill="none" stroke="black" stroke-dasharray="5,2" cx="420" cy="-53.42" rx="260.64" ry="29.33"></ellipse>
+<text text-anchor="middle" x="420" y="-57.62" font-family="Courier,monospace" font-size="14.00">Names</text>
+<text text-anchor="middle" x="420" y="-40.82" font-family="Courier,monospace" font-size="14.00">Identity: people the protagonist has known</text>
+</g>
+<!-- Places -->
+<g id="node4" class="node">
+<title>Places</title>
+<ellipse fill="none" stroke="black" stroke-dasharray="5,2" cx="306" cy="-276.68" rx="272.91" ry="29.33"></ellipse>
+<text text-anchor="middle" x="306" y="-280.88" font-family="Courier,monospace" font-size="14.00">Places</text>
+<text text-anchor="middle" x="306" y="-264.08" font-family="Courier,monospace" font-size="14.00">Identity: locations the protagonist has been</text>
+</g>
+<!-- Places&#45;&gt;Names -->
+<g id="edge2" class="edge">
+<title>Places-&gt;Names</title>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M157.42,-248.92C109.64,-237.08 65.29,-221.48 50.97,-202.46 33.09,-178.74 32.36,-158.78 50.97,-135.63 73.93,-107.07 147.15,-87.97 222.38,-75.51"></path>
+<polygon fill="black" stroke="black" points="156.79,-252.37 167.34,-251.31 158.44,-245.56 156.79,-252.37"></polygon>
+<polygon fill="black" stroke="black" points="223.2,-78.92 232.52,-73.87 222.09,-72.01 223.2,-78.92"></polygon>
+<text text-anchor="middle" x="156.02" y="-160.85" font-family="Courier,monospace" font-size="14.00">Morphism: Comparable loss</text>
+</g>
+<!-- Travel -->
+<g id="node5" class="node">
+<title>Travel</title>
+<ellipse fill="none" stroke="black" stroke-dasharray="5,2" cx="555" cy="-165.05" rx="284.67" ry="29.33"></ellipse>
+<text text-anchor="middle" x="555" y="-169.25" font-family="Courier,monospace" font-size="14.00">Travel</text>
+<text text-anchor="middle" x="555" y="-152.45" font-family="Courier,monospace" font-size="14.00">Identity: where the protagonist intended to go</text>
+</g>
+<!-- Places&#45;&gt;Travel -->
+<g id="edge3" class="edge">
+<title>Places-&gt;Travel</title>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M378.28,-243.85C410.96,-229.47 449.5,-212.5 482.24,-198.08"></path>
+<polygon fill="black" stroke="black" points="376.58,-240.78 368.83,-248.01 379.4,-247.19 376.58,-240.78"></polygon>
+<polygon fill="black" stroke="black" points="484.01,-201.13 491.75,-193.89 481.19,-194.72 484.01,-201.13"></polygon>
+<text text-anchor="middle" x="550.02" y="-216.66" font-family="Courier,monospace" font-size="14.00">Morphism: Comparable loss</text>
+</g>
+<!-- Travel&#45;&gt;Names -->
+<g id="edge1" class="edge">
+<title>Travel-&gt;Names</title>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M512.02,-129.14C496.39,-116.45 478.73,-102.11 463.09,-89.41"></path>
+<polygon fill="black" stroke="black" points="510.26,-132.23 520.23,-135.81 514.68,-126.79 510.26,-132.23"></polygon>
+<polygon fill="black" stroke="black" points="465.09,-86.52 455.12,-82.93 460.67,-91.95 465.09,-86.52"></polygon>
+<text text-anchor="middle" x="600.02" y="-105.03" font-family="Courier,monospace" font-size="14.00">Morphism: Comparable loss</text>
+</g>
+<!-- Protagonist3&#45;&gt;cluster_3_losses -->
+<g id="edge6" class="edge">
+<title>Protagonist3-&gt;cluster_3_losses</title>
+<path fill="none" stroke="black" stroke-dasharray="5,2" d="M1392.44,-247.59C1439.24,-228.65 1499.96,-204.09 1542.47,-186.89"></path>
+<polygon fill="black" stroke="black" points="1543.84,-190.12 1551.79,-183.12 1541.21,-183.63 1543.84,-190.12"></polygon>
+<text text-anchor="middle" x="1637.83" y="-216.66" font-family="Courier,monospace" font-size="14.00">Morphism: What reminds us of loved ones</text>
+</g>
+<!-- Watch -->
+<g id="node8" class="node">
+<title>Watch</title>
+<ellipse fill="none" stroke="black" stroke-dasharray="5,2" cx="1159" cy="-165.05" rx="278.79" ry="29.33"></ellipse>
+<text text-anchor="middle" x="1159" y="-169.25" font-family="Courier,monospace" font-size="14.00">Watch</text>
+<text text-anchor="middle" x="1159" y="-152.45" font-family="Courier,monospace" font-size="14.00">Identity: Things that remind us of loved ones</text>
+</g>
+<!-- Houses -->
+<g id="node9" class="node">
+<title>Houses</title>
+<ellipse fill="none" stroke="black" stroke-dasharray="5,2" cx="1159" cy="-53.42" rx="254.76" ry="29.33"></ellipse>
+<text text-anchor="middle" x="1159" y="-57.62" font-family="Courier,monospace" font-size="14.00">Houses</text>
+<text text-anchor="middle" x="1159" y="-40.82" font-family="Courier,monospace" font-size="14.00">Identity: Places that remind us of family</text>
+</g>
+<!-- Watch&#45;&gt;Houses -->
+<g id="edge5" class="edge">
+<title>Watch-&gt;Houses</title>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M1159,-125.28C1159,-114.88 1159,-103.64 1159,-93.23"></path>
+<polygon fill="black" stroke="black" points="1155.5,-125.53 1159,-135.53 1162.5,-125.53 1155.5,-125.53"></polygon>
+<polygon fill="black" stroke="black" points="1162.5,-93.17 1159,-83.17 1155.5,-93.17 1162.5,-93.17"></polygon>
+<text text-anchor="middle" x="1264.02" y="-105.03" font-family="Courier,monospace" font-size="14.00">Morphism: Comparable loss</text>
+</g>
+</g>
+</svg>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<hr>
+</section>
+<section id="from-metonymic-loss-to-geographic-loss" class="level2">
+<h2 class="anchored" data-anchor-id="from-metonymic-loss-to-geographic-loss">From metonymic loss to geographic loss</h2>
+<hr>
+<div class="poetry">
+<p>I lost my mother’s watch. And look! my last, or<br>
+next-to-last, of three loved houses went.<br>
+The art of losing isn’t hard to master.</p>
+<p>I lost two cities, lovely ones. And, vaster,<br>
+some realms I owned, two rivers, a continent.<br>
+I miss them, but it wasn’t a disaster.</p>
+</div>
+<hr>
+<p>No matter the size of <em>metonym</em>–a watch, a river, a continent–the loss <em>is no disaster</em>.</p>
+<hr>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<svg width="672" height="480" viewbox="0.00 0.00 1798.00 559.36" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" style="; max-width: none; max-height: none">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 555.36)">
+<title>OneArtNested</title>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-555.36 1794,-555.36 1794,4 -4,4"></polygon>
+<g id="clust1" class="cluster">
+<title>cluster_3</title>
+<polygon fill="none" stroke="black" stroke-dasharray="5,2" points="8,-237.26 8,-543.36 926,-543.36 926,-237.26 8,-237.26"></polygon>
+</g>
+<g id="clust2" class="cluster">
+<title>cluster_3_loss</title>
+<polygon fill="none" stroke="black" stroke-dasharray="1,5" points="33,-245.26 33,-431.73 901,-431.73 901,-245.26 33,-245.26"></polygon>
+</g>
+<g id="clust3" class="cluster">
+<title>cluster_4</title>
+<polygon fill="none" stroke="black" stroke-dasharray="5,2" points="934,-8 934,-431.73 1782,-431.73 1782,-8 934,-8"></polygon>
+</g>
+<g id="clust4" class="cluster">
+<title>cluster_4_loss</title>
+<polygon fill="none" stroke="black" stroke-dasharray="1,5" points="942,-16 942,-320.09 1774,-320.09 1774,-16 942,-16"></polygon>
+</g>
+<!-- Protagonist3 -->
+<g id="node1" class="node">
+<title>Protagonist3</title>
+<ellipse fill="none" stroke="black" stroke-dasharray="5,2" cx="467" cy="-505.94" rx="450.85" ry="29.33"></ellipse>
+<text text-anchor="middle" x="467" y="-510.14" font-family="Courier,monospace" font-size="14.00">Protagonist</text>
+<text text-anchor="middle" x="467" y="-493.34" font-family="Courier,monospace" font-size="14.00">Identity: not a disaster to lose what reminds us, it's not losing a person</text>
+</g>
+<!-- cluster_3_losses -->
+<g id="node2" class="node">
+<title>cluster_3_losses</title>
+<polygon fill="none" stroke="black" stroke-dasharray="1,5" points="893.44,-412.31 616.56,-412.31 616.56,-376.31 893.44,-376.31 893.44,-412.31"></polygon>
+<text text-anchor="middle" x="755" y="-390.11" font-family="Courier,monospace" font-size="14.00">Stanza: Metonyms for loved ones</text>
+</g>
+<!-- Protagonist3&#45;&gt;cluster_3_losses -->
+<g id="edge2" class="edge">
+<title>Protagonist3-&gt;cluster_3_losses</title>
+<path fill="none" stroke="black" stroke-dasharray="5,2" d="M540.79,-476.85C590.63,-457.88 655.33,-433.25 700.53,-416.05"></path>
+<polygon fill="black" stroke="black" points="702.05,-419.21 710.15,-412.38 699.56,-412.67 702.05,-419.21"></polygon>
+<text text-anchor="middle" x="791.83" y="-445.93" font-family="Courier,monospace" font-size="14.00">Morphism: What reminds us of loved ones</text>
+</g>
+<!-- Protagonist4 -->
+<g id="node5" class="node">
+<title>Protagonist4</title>
+<ellipse fill="none" stroke="black" stroke-dasharray="5,2" cx="1358" cy="-394.31" rx="385.65" ry="29.33"></ellipse>
+<text text-anchor="middle" x="1358" y="-398.51" font-family="Courier,monospace" font-size="14.00">Protagonist</text>
+<text text-anchor="middle" x="1358" y="-381.71" font-family="Courier,monospace" font-size="14.00">Identity: Size of geography does not change felt metonymic loss</text>
+</g>
+<!-- Protagonist3&#45;&gt;Protagonist4 -->
+<g id="edge7" class="edge">
+<title>Protagonist3-&gt;Protagonist4</title>
+<path fill="none" stroke="black" d="M738.89,-482.47C810.88,-475.66 888.46,-467.56 960,-458.53 1038.56,-448.6 1125.44,-435.09 1197.94,-423.11"></path>
+<polygon fill="black" stroke="black" points="1198.78,-426.52 1208.07,-421.43 1197.63,-419.62 1198.78,-426.52"></polygon>
+<text text-anchor="middle" x="1249.63" y="-445.93" font-family="Courier,monospace" font-size="14.00">Functor: Experiences loss - not as disaster</text>
+</g>
+<!-- cluster_4_losses -->
+<g id="node6" class="node">
+<title>cluster_4_losses</title>
+<polygon fill="none" stroke="black" stroke-dasharray="1,5" points="1630.64,-300.68 1371.36,-300.68 1371.36,-264.68 1630.64,-264.68 1630.64,-300.68"></polygon>
+<text text-anchor="middle" x="1501" y="-278.48" font-family="Courier,monospace" font-size="14.00">Stanza: Geography we've known</text>
+</g>
+<!-- cluster_3_losses&#45;&gt;cluster_4_losses -->
+<g id="edge8" class="edge">
+<title>cluster_3_losses-&gt;cluster_4_losses</title>
+<path fill="none" stroke="black" d="M649.25,-376.25C614.89,-366.44 590.46,-351.67 611.75,-330.09 626.41,-315.24 1342.32,-322.92 1363,-320.09 1388.13,-316.66 1415.23,-310.15 1438.71,-303.57"></path>
+<polygon fill="black" stroke="black" points="1439.88,-306.88 1448.53,-300.76 1437.96,-300.15 1439.88,-306.88"></polygon>
+<text text-anchor="middle" x="770.63" y="-334.29" font-family="Courier,monospace" font-size="14.00">Functor: Size of metonym is irrelevant</text>
+</g>
+<!-- Watch -->
+<g id="node3" class="node">
+<title>Watch</title>
+<ellipse fill="none" stroke="black" stroke-dasharray="5,2" cx="320" cy="-394.31" rx="278.79" ry="29.33"></ellipse>
+<text text-anchor="middle" x="320" y="-398.51" font-family="Courier,monospace" font-size="14.00">Watch</text>
+<text text-anchor="middle" x="320" y="-381.71" font-family="Courier,monospace" font-size="14.00">Identity: Things that remind us of loved ones</text>
+</g>
+<!-- Houses -->
+<g id="node4" class="node">
+<title>Houses</title>
+<ellipse fill="none" stroke="black" stroke-dasharray="5,2" cx="320" cy="-282.68" rx="254.76" ry="29.33"></ellipse>
+<text text-anchor="middle" x="320" y="-286.88" font-family="Courier,monospace" font-size="14.00">Houses</text>
+<text text-anchor="middle" x="320" y="-270.08" font-family="Courier,monospace" font-size="14.00">Identity: Places that remind us of family</text>
+</g>
+<!-- Watch&#45;&gt;Houses -->
+<g id="edge1" class="edge">
+<title>Watch-&gt;Houses</title>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M320,-354.55C320,-344.14 320,-332.9 320,-322.49"></path>
+<polygon fill="black" stroke="black" points="316.5,-354.79 320,-364.79 323.5,-354.79 316.5,-354.79"></polygon>
+<polygon fill="black" stroke="black" points="323.5,-322.43 320,-312.43 316.5,-322.43 323.5,-322.43"></polygon>
+<text text-anchor="middle" x="425.02" y="-334.29" font-family="Courier,monospace" font-size="14.00">Morphism: Comparable loss</text>
+</g>
+<!-- Protagonist4&#45;&gt;cluster_4_losses -->
+<g id="edge6" class="edge">
+<title>Protagonist4-&gt;cluster_4_losses</title>
+<path fill="none" stroke="black" stroke-dasharray="5,2" d="M1395.2,-364.79C1418.68,-346.79 1448.63,-323.83 1470.67,-306.93"></path>
+<polygon fill="black" stroke="black" points="1472.89,-309.64 1478.7,-300.78 1468.63,-304.08 1472.89,-309.64"></polygon>
+<text text-anchor="middle" x="1568.22" y="-334.29" font-family="Courier,monospace" font-size="14.00">Morphism: Geography we remember</text>
+</g>
+<!-- Cities -->
+<g id="node7" class="node">
+<title>Cities</title>
+<ellipse fill="none" stroke="black" stroke-dasharray="5,2" cx="1164" cy="-282.68" rx="189.57" ry="29.33"></ellipse>
+<text text-anchor="middle" x="1164" y="-286.88" font-family="Courier,monospace" font-size="14.00">Cities</text>
+<text text-anchor="middle" x="1164" y="-270.08" font-family="Courier,monospace" font-size="14.00">Identity: Cities we've visited</text>
+</g>
+<!-- Rivers -->
+<g id="node8" class="node">
+<title>Rivers</title>
+<ellipse fill="none" stroke="black" stroke-dasharray="5,2" cx="1235" cy="-165.05" rx="284.67" ry="29.33"></ellipse>
+<text text-anchor="middle" x="1235" y="-169.25" font-family="Courier,monospace" font-size="14.00">Rivers</text>
+<text text-anchor="middle" x="1235" y="-152.45" font-family="Courier,monospace" font-size="14.00">Identity: Geographic connectors between cities</text>
+</g>
+<!-- Cities&#45;&gt;Rivers -->
+<g id="edge3" class="edge">
+<title>Cities-&gt;Rivers</title>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M1186.87,-244.43C1194.92,-231.33 1203.96,-216.6 1212.01,-203.49"></path>
+<polygon fill="black" stroke="black" points="1183.8,-242.74 1181.55,-253.1 1189.77,-246.4 1183.8,-242.74"></polygon>
+<polygon fill="black" stroke="black" points="1215.16,-205.06 1217.41,-194.7 1209.19,-201.39 1215.16,-205.06"></polygon>
+<text text-anchor="middle" x="1310.02" y="-216.66" font-family="Courier,monospace" font-size="14.00">Morphism: Comparable loss</text>
+</g>
+<!-- Continent -->
+<g id="node9" class="node">
+<title>Continent</title>
+<ellipse fill="none" stroke="black" stroke-dasharray="5,2" cx="1358" cy="-53.42" rx="290.55" ry="29.33"></ellipse>
+<text text-anchor="middle" x="1358" y="-57.62" font-family="Courier,monospace" font-size="14.00">Continent</text>
+<text text-anchor="middle" x="1358" y="-40.82" font-family="Courier,monospace" font-size="14.00">Identity: Places that contain cities and rivers</text>
+</g>
+<!-- Rivers&#45;&gt;Continent -->
+<g id="edge4" class="edge">
+<title>Rivers-&gt;Continent</title>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M1274.47,-128.86C1288.57,-116.3 1304.45,-102.15 1318.54,-89.59"></path>
+<polygon fill="black" stroke="black" points="1272.13,-126.26 1267,-135.53 1276.79,-131.49 1272.13,-126.26"></polygon>
+<polygon fill="black" stroke="black" points="1321.03,-92.06 1326.16,-82.79 1316.37,-86.83 1321.03,-92.06"></polygon>
+<text text-anchor="middle" x="1408.02" y="-105.03" font-family="Courier,monospace" font-size="14.00">Morphism: Comparable loss</text>
+</g>
+<!-- Continent&#45;&gt;Cities -->
+<g id="edge5" class="edge">
+<title>Continent-&gt;Cities</title>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M1495.95,-84.91C1503.54,-89.5 1510.64,-94.77 1517,-100.83 1547.37,-129.78 1553.79,-160.62 1529,-194.46 1498.7,-235.83 1469.01,-217.93 1419,-229.26 1394.05,-234.92 1387.17,-232.68 1362,-237.26 1333.32,-242.48 1302.5,-248.97 1273.91,-255.36"></path>
+<polygon fill="black" stroke="black" points="1497.29,-81.64 1486.85,-79.82 1493.88,-87.75 1497.29,-81.64"></polygon>
+<polygon fill="black" stroke="black" points="1272.88,-252 1263.9,-257.61 1274.42,-258.83 1272.88,-252"></polygon>
+<text text-anchor="middle" x="1649.02" y="-160.85" font-family="Courier,monospace" font-size="14.00">Morphism: Comparable loss</text>
+</g>
+</g>
+</svg>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<hr>
+</section>
+<section id="to-the-loss-almost-too-hard-to-write" class="level2">
+<h2 class="anchored" data-anchor-id="to-the-loss-almost-too-hard-to-write">To the loss almost too hard to write</h2>
+<hr>
+<div class="poetry">
+<p>—Even losing you (the joking voice, a gesture<br>
+I love) I shan’t have lied. It’s evident<br>
+the art of losing’s not too hard to master<br>
+though it may look like (<em>Write</em> it!) like disaster.</p>
+</div>
+<hr>
+<p>Bishop has almost convinced us that loss is <em>not too hard to master</em>–as one can tolerate losing a continent.</p>
+<p>But she turns, like Orpheus, in her katabasis of grief to <em>write</em> that here <strong>the diagram fails to commute</strong>; for losing a beloved feels <em>like disaster</em>.</p>
+<hr>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<svg width="672" height="480" viewbox="0.00 0.00 1507.00 441.73" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" style="; max-width: none; max-height: none">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 437.73)">
+<title>OneArtNested</title>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-437.73 1503,-437.73 1503,4 -4,4"></polygon>
+<g id="clust1" class="cluster">
+<title>cluster_4</title>
+<polygon fill="none" stroke="black" stroke-dasharray="5,2" points="8,-8 8,-425.73 856,-425.73 856,-8 8,-8"></polygon>
+</g>
+<g id="clust2" class="cluster">
+<title>cluster_4_loss</title>
+<polygon fill="none" stroke="black" stroke-dasharray="1,5" points="16,-16 16,-314.09 848,-314.09 848,-16 16,-16"></polygon>
+</g>
+<g id="clust3" class="cluster">
+<title>cluster_5</title>
+<polygon fill="none" stroke="black" stroke-dasharray="5,2" points="929,-127.63 929,-314.09 1491,-314.09 1491,-127.63 929,-127.63"></polygon>
+</g>
+<!-- Protagonist4 -->
+<g id="node1" class="node">
+<title>Protagonist4</title>
+<ellipse fill="none" stroke="black" stroke-dasharray="5,2" cx="462" cy="-388.31" rx="385.65" ry="29.33"></ellipse>
+<text text-anchor="middle" x="462" y="-392.51" font-family="Courier,monospace" font-size="14.00">Protagonist</text>
+<text text-anchor="middle" x="462" y="-375.71" font-family="Courier,monospace" font-size="14.00">Identity: Size of geography does not change felt metonymic loss</text>
+</g>
+<!-- cluster_4_losses -->
+<g id="node2" class="node">
+<title>cluster_4_losses</title>
+<polygon fill="none" stroke="black" stroke-dasharray="1,5" points="782.64,-294.68 523.36,-294.68 523.36,-258.68 782.64,-258.68 782.64,-294.68"></polygon>
+<text text-anchor="middle" x="653" y="-272.48" font-family="Courier,monospace" font-size="14.00">Stanza: Geography we've known</text>
+</g>
+<!-- Protagonist4&#45;&gt;cluster_4_losses -->
+<g id="edge4" class="edge">
+<title>Protagonist4-&gt;cluster_4_losses</title>
+<path fill="none" stroke="black" stroke-dasharray="5,2" d="M511.19,-359.08C543.34,-340.62 584.74,-316.86 614.49,-299.78"></path>
+<polygon fill="black" stroke="black" points="616.4,-302.72 623.33,-294.71 612.92,-296.65 616.4,-302.72"></polygon>
+<text text-anchor="middle" x="698.22" y="-328.29" font-family="Courier,monospace" font-size="14.00">Morphism: Geography we remember</text>
+</g>
+<!-- Protagonist5 -->
+<g id="node6" class="node">
+<title>Protagonist5</title>
+<ellipse fill="none" stroke="#8b0000" stroke-dasharray="5,2" cx="1210" cy="-276.68" rx="272.91" ry="29.33"></ellipse>
+<text text-anchor="middle" x="1210" y="-280.88" font-family="Courier,monospace" font-size="14.00">Protagonist</text>
+<text text-anchor="middle" x="1210" y="-264.08" font-family="Courier,monospace" font-size="14.00">Identity: Losing beloved feels like disaster</text>
+</g>
+<!-- Protagonist4&#45;&gt;Protagonist5 -->
+<g id="edge6" class="edge">
+<title>Protagonist4-&gt;Protagonist5</title>
+<path fill="none" stroke="#8b0000" d="M665.76,-363.27C719.86,-356.47 778.19,-348.76 832,-340.89 908.08,-329.76 992.51,-315.8 1062.24,-303.83"></path>
+<polygon fill="#8b0000" stroke="#8b0000" points="1063.15,-307.22 1072.41,-302.08 1061.97,-300.32 1063.15,-307.22"></polygon>
+<text text-anchor="middle" x="1099.83" y="-328.29" font-family="Courier,monospace" font-size="14.00">Functor: Experiences loss - as disaster</text>
+</g>
+<!-- Beloved -->
+<g id="node7" class="node">
+<title>Beloved</title>
+<ellipse fill="none" stroke="black" stroke-dasharray="5,2" cx="1179" cy="-165.05" rx="231.24" ry="29.33"></ellipse>
+<text text-anchor="middle" x="1179" y="-169.25" font-family="Courier,monospace" font-size="14.00">Beloved</text>
+<text text-anchor="middle" x="1179" y="-152.45" font-family="Courier,monospace" font-size="14.00">Identity: Aristotelian love of virtue</text>
+</g>
+<!-- cluster_4_losses&#45;&gt;Beloved -->
+<g id="edge7" class="edge">
+<title>cluster_4_losses-&gt;Beloved</title>
+<path fill="none" stroke="#8b0000" d="M654.16,-258.52C656.14,-243.84 661.44,-223.4 675.52,-212.46 678.67,-210.01 841.44,-195.3 981.05,-183.09"></path>
+<polygon fill="#8b0000" stroke="#8b0000" points="981.4,-186.58 991.06,-182.22 980.79,-179.6 981.4,-186.58"></polygon>
+<text text-anchor="middle" x="931.24" y="-216.66" font-family="Courier,monospace" font-size="14.00">Functor: Metonymic loss is noncomparable to loss of true love</text>
+</g>
+<!-- Cities -->
+<g id="node3" class="node">
+<title>Cities</title>
+<ellipse fill="none" stroke="black" stroke-dasharray="5,2" cx="315" cy="-276.68" rx="189.57" ry="29.33"></ellipse>
+<text text-anchor="middle" x="315" y="-280.88" font-family="Courier,monospace" font-size="14.00">Cities</text>
+<text text-anchor="middle" x="315" y="-264.08" font-family="Courier,monospace" font-size="14.00">Identity: Cities we've visited</text>
+</g>
+<!-- Rivers -->
+<g id="node4" class="node">
+<title>Rivers</title>
+<ellipse fill="none" stroke="black" stroke-dasharray="5,2" cx="309" cy="-165.05" rx="284.67" ry="29.33"></ellipse>
+<text text-anchor="middle" x="309" y="-169.25" font-family="Courier,monospace" font-size="14.00">Rivers</text>
+<text text-anchor="middle" x="309" y="-152.45" font-family="Courier,monospace" font-size="14.00">Identity: Geographic connectors between cities</text>
+</g>
+<!-- Cities&#45;&gt;Rivers -->
+<g id="edge1" class="edge">
+<title>Cities-&gt;Rivers</title>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M312.88,-236.91C312.31,-226.51 311.69,-215.27 311.12,-204.86"></path>
+<polygon fill="black" stroke="black" points="309.4,-237.37 313.44,-247.16 316.39,-236.98 309.4,-237.37"></polygon>
+<polygon fill="black" stroke="black" points="314.62,-204.6 310.57,-194.8 307.63,-204.98 314.62,-204.6"></polygon>
+<text text-anchor="middle" x="418.02" y="-216.66" font-family="Courier,monospace" font-size="14.00">Morphism: Comparable loss</text>
+</g>
+<!-- Continent -->
+<g id="node5" class="node">
+<title>Continent</title>
+<ellipse fill="none" stroke="black" stroke-dasharray="5,2" cx="432" cy="-53.42" rx="290.55" ry="29.33"></ellipse>
+<text text-anchor="middle" x="432" y="-57.62" font-family="Courier,monospace" font-size="14.00">Continent</text>
+<text text-anchor="middle" x="432" y="-40.82" font-family="Courier,monospace" font-size="14.00">Identity: Places that contain cities and rivers</text>
+</g>
+<!-- Rivers&#45;&gt;Continent -->
+<g id="edge2" class="edge">
+<title>Rivers-&gt;Continent</title>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M348.47,-128.86C362.57,-116.3 378.45,-102.15 392.54,-89.59"></path>
+<polygon fill="black" stroke="black" points="346.13,-126.26 341,-135.53 350.79,-131.49 346.13,-126.26"></polygon>
+<polygon fill="black" stroke="black" points="395.03,-92.06 400.16,-82.79 390.37,-86.83 395.03,-92.06"></polygon>
+<text text-anchor="middle" x="483.02" y="-105.03" font-family="Courier,monospace" font-size="14.00">Morphism: Comparable loss</text>
+</g>
+<!-- Continent&#45;&gt;Cities -->
+<g id="edge3" class="edge">
+<title>Continent-&gt;Cities</title>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M569.35,-84.66C577.48,-89.3 585.13,-94.66 592,-100.83 623.17,-128.83 625.64,-159.2 603,-194.46 586.12,-220.76 521.48,-240.28 457.71,-253.58"></path>
+<polygon fill="black" stroke="black" points="570.84,-81.48 560.36,-79.89 567.56,-87.67 570.84,-81.48"></polygon>
+<polygon fill="black" stroke="black" points="457,-250.16 447.9,-255.58 458.4,-257.02 457,-250.16"></polygon>
+<text text-anchor="middle" x="722.02" y="-160.85" font-family="Courier,monospace" font-size="14.00">Morphism: Comparable loss</text>
+</g>
+<!-- Protagonist5&#45;&gt;Beloved -->
+<g id="edge5" class="edge">
+<title>Protagonist5-&gt;Beloved</title>
+<path fill="none" stroke="black" stroke-dasharray="5,2" d="M1201.94,-247.16C1198.27,-234.19 1193.88,-218.65 1189.92,-204.66"></path>
+<polygon fill="black" stroke="black" points="1193.22,-203.47 1187.13,-194.8 1186.48,-205.38 1193.22,-203.47"></polygon>
+<text text-anchor="middle" x="1343.02" y="-216.66" font-family="Courier,monospace" font-size="14.00">Morphism: Leaves Protagonist's life</text>
+</g>
+</g>
+</svg>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
