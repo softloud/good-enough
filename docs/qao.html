@@ -123,6 +123,11 @@ div.csl-indent {
     "search-label": "Search"
   }
 }</script>
+<link href="site_libs/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet">
+<script src="site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+<script src="site_libs/viz-1.8.2/viz.js"></script>
+<link href="site_libs/DiagrammeR-styles-0.2/styles.css" rel="stylesheet">
+<script src="site_libs/grViz-binding-1.0.11/grViz.js"></script>
  
   <style>
   .slide-deck {
@@ -257,11 +262,6 @@ div.csl-indent {
 </header>
 
 
-<div class="cell">
-<div class="cell-output cell-output-error">
-<pre><code>Error in library(gt): there is no package called 'gt'</code></pre>
-</div>
-</div>
     <p><a href="slides/dbt-2025.html" target="_blank">View slides in full screen</a></p>
        <div>
       <iframe class="slide-deck" src="slides/dbt-2025.html" height="475px"></iframe>
@@ -309,19 +309,503 @@ Figure&nbsp;2: Each scientist or engineer is skilled in their own right, but tog
 </section>
 <section id="framing-fair" class="level2">
 <h2 class="anchored" data-anchor-id="framing-fair">Framing FAIR</h2>
-<p>The FAIR framing shown in <strong>?@fig-fair</strong> is a way to communicate the black box of data to decision makers. In particular, this framing highlights the distinction between what they conceptualise as <code>data</code> (<em>Can’t you just email me a spreadsheet?</em>) and a <code>data product</code> brick in reusable data architecture that will save untold wages in the long run.</p>
+<p>The FAIR framing shown in <a href="#fig-fair" class="quarto-xref">Figure&nbsp;3</a> is a way to communicate the black box of data to decision makers. In particular, this framing highlights the distinction between what they conceptualise as <code>data</code> (<em>Can’t you just email me a spreadsheet?</em>) and a <code>data product</code> brick in reusable data architecture that will save untold wages in the long run.</p>
 <div class="cell">
-<div class="cell-output cell-output-error">
-<pre><code>Error in library(tidyverse): there is no package called 'tidyverse'</code></pre>
+<div id="fig-fair" class="cell-output-display quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-fair-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div id="oaisoecbtn" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#oaisoecbtn table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#oaisoecbtn thead, #oaisoecbtn tbody, #oaisoecbtn tfoot, #oaisoecbtn tr, #oaisoecbtn td, #oaisoecbtn th {
+  border-style: none;
+}
+
+#oaisoecbtn p {
+  margin: 0;
+  padding: 0;
+}
+
+#oaisoecbtn .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#oaisoecbtn .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#oaisoecbtn .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#oaisoecbtn .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#oaisoecbtn .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#oaisoecbtn .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#oaisoecbtn .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#oaisoecbtn .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#oaisoecbtn .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#oaisoecbtn .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#oaisoecbtn .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#oaisoecbtn .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#oaisoecbtn .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#oaisoecbtn .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#oaisoecbtn .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#oaisoecbtn .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#oaisoecbtn .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#oaisoecbtn .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#oaisoecbtn .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#oaisoecbtn .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#oaisoecbtn .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#oaisoecbtn .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#oaisoecbtn .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#oaisoecbtn .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#oaisoecbtn .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#oaisoecbtn .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#oaisoecbtn .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#oaisoecbtn .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#oaisoecbtn .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#oaisoecbtn .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#oaisoecbtn .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#oaisoecbtn .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#oaisoecbtn .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#oaisoecbtn .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#oaisoecbtn .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#oaisoecbtn .gt_left {
+  text-align: left;
+}
+
+#oaisoecbtn .gt_center {
+  text-align: center;
+}
+
+#oaisoecbtn .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#oaisoecbtn .gt_font_normal {
+  font-weight: normal;
+}
+
+#oaisoecbtn .gt_font_bold {
+  font-weight: bold;
+}
+
+#oaisoecbtn .gt_font_italic {
+  font-style: italic;
+}
+
+#oaisoecbtn .gt_super {
+  font-size: 65%;
+}
+
+#oaisoecbtn .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#oaisoecbtn .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#oaisoecbtn .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#oaisoecbtn .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#oaisoecbtn .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#oaisoecbtn .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#oaisoecbtn .gt_indent_5 {
+  text-indent: 25px;
+}
+
+#oaisoecbtn .katex-display {
+  display: inline-flex !important;
+  margin-bottom: 0.75em !important;
+}
+
+#oaisoecbtn div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
+</style>
+
+<table class="gt_table caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<thead>
+<tr class="gt_heading header">
+<th colspan="2" class="gt_heading gt_title gt_font_normal gt_bottom_border">Validation of Data Entity meets Minimum FAIR Criteria</th>
+</tr>
+<tr class="gt_col_headings even">
+<th id="FAIR-principle" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">FAIR principle</th>
+<th id="Minimum-requirements" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">Minimum requirements</th>
+</tr>
+</thead>
+<tbody class="gt_table_body">
+<tr class="odd">
+<td class="gt_row gt_left" headers="FAIR principle">Findable</td>
+<td class="gt_row gt_left" headers="Minimum requirements">Data documentation wherein columns &amp; tables have descriptions for the data entity lineage. Clearly states access protocols; i.e., data security. Ensures subject matter experts can advise on governance, as well as contribute to validation.</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="FAIR principle">Accessible</td>
+<td class="gt_row gt_left" headers="Minimum requirements">Understandable in terms of a data entity, a semantic abstraction in stakeholder terms (e.g., a number on an invoice). The helps ensure data governance is applied as subject matter experts advise.</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="FAIR principle">Interoperable</td>
+<td class="gt_row gt_left" headers="Minimum requirements">Workflows to ensure data governance, security, and access function as intended when analysing data entity. Facilitates subject matter experts contributing to data validation.</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="FAIR principle">Reusable</td>
+<td class="gt_row gt_left" headers="Minimum requirements">Requested data transformations provided in published layer of dedicated database, standard tests applied to data entity (see below for details) to confirm validity of documentated assumptions.</td>
+</tr>
+</tbody>
+</table>
+
 </div>
-<div class="cell-output cell-output-error">
-<pre><code>Error: object 'fair_gt' not found</code></pre>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-fair-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3: Validation of FAIR data entity.
+</figcaption>
+</figure>
 </div>
 </div>
 </section>
 <section id="minimal-tests" class="level2">
 <h2 class="anchored" data-anchor-id="minimal-tests">Minimal tests</h2>
-<p>The minimal set of tests show in <strong>?@fig-tests</strong> for</p>
+<p>The minimal set of tests show in <a href="#fig-tests" class="quarto-xref">Figure&nbsp;4</a> for</p>
 <ol type="1">
 <li>uniqueness</li>
 <li>missingness</li>
@@ -329,11 +813,527 @@ Figure&nbsp;2: Each scientist or engineer is skilled in their own right, but tog
 </ol>
 <p>allows for data platform development whilst demonstrating a good-faith roadmap to compliance for, say, the EU Comission’s Environmental, Social, and Governance reporting (ESG) <span class="citation" data-cites="noauthor_sustainable_nodate">(<a href="#ref-noauthor_sustainable_nodate" role="doc-biblioref"><span>“Sustainable Finance - European Commission”</span> n.d.</a>)</span>.</p>
 <div class="cell">
-<div class="cell-output cell-output-error">
-<pre><code>Error in library(tidyverse): there is no package called 'tidyverse'</code></pre>
+<div id="fig-tests" class="cell-output-display quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-tests-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div id="htbhximtzn" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#htbhximtzn table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#htbhximtzn thead, #htbhximtzn tbody, #htbhximtzn tfoot, #htbhximtzn tr, #htbhximtzn td, #htbhximtzn th {
+  border-style: none;
+}
+
+#htbhximtzn p {
+  margin: 0;
+  padding: 0;
+}
+
+#htbhximtzn .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#htbhximtzn .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#htbhximtzn .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#htbhximtzn .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#htbhximtzn .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#htbhximtzn .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#htbhximtzn .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#htbhximtzn .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#htbhximtzn .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#htbhximtzn .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#htbhximtzn .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#htbhximtzn .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#htbhximtzn .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#htbhximtzn .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#htbhximtzn .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#htbhximtzn .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#htbhximtzn .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#htbhximtzn .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#htbhximtzn .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#htbhximtzn .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#htbhximtzn .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#htbhximtzn .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#htbhximtzn .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#htbhximtzn .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#htbhximtzn .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#htbhximtzn .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#htbhximtzn .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#htbhximtzn .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#htbhximtzn .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#htbhximtzn .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#htbhximtzn .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#htbhximtzn .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#htbhximtzn .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#htbhximtzn .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#htbhximtzn .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#htbhximtzn .gt_left {
+  text-align: left;
+}
+
+#htbhximtzn .gt_center {
+  text-align: center;
+}
+
+#htbhximtzn .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#htbhximtzn .gt_font_normal {
+  font-weight: normal;
+}
+
+#htbhximtzn .gt_font_bold {
+  font-weight: bold;
+}
+
+#htbhximtzn .gt_font_italic {
+  font-style: italic;
+}
+
+#htbhximtzn .gt_super {
+  font-size: 65%;
+}
+
+#htbhximtzn .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#htbhximtzn .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#htbhximtzn .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#htbhximtzn .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#htbhximtzn .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#htbhximtzn .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#htbhximtzn .gt_indent_5 {
+  text-indent: 25px;
+}
+
+#htbhximtzn .katex-display {
+  display: inline-flex !important;
+  margin-bottom: 0.75em !important;
+}
+
+#htbhximtzn div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
+</style>
+
+<table class="gt_table caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<thead>
+<tr class="gt_heading header">
+<th colspan="3" class="gt_heading gt_title gt_font_normal gt_bottom_border">Tests Applied on Data Product Layers by Observability, Descending</th>
+</tr>
+<tr class="gt_col_headings even">
+<th id="a::stub" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col"></th>
+<th id="Test" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">Test</th>
+<th id="Tested" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">Tested</th>
+</tr>
+</thead>
+<tbody class="gt_table_body">
+<tr class="gt_group_heading_row odd">
+<td colspan="3" id="Analytical Observation" class="gt_group_heading" data-quarto-table-cell-role="th" scope="colgroup">Analytical Observation</td>
+</tr>
+<tr class="gt_row_group_first even">
+<td id="stub_1_1" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">output</td>
+<td class="gt_row gt_left" headers="Analytical Observation stub_1_1 Test">unique key</td>
+<td class="gt_row gt_left" headers="Analytical Observation stub_1_1 Tested">data entity</td>
+</tr>
+<tr class="gt_group_heading_row odd">
+<td colspan="3" id="Semantic Transformation" class="gt_group_heading" data-quarto-table-cell-role="th" scope="colgroup">Semantic Transformation</td>
+</tr>
+<tr class="gt_row_group_first even">
+<td id="stub_1_2" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">output</td>
+<td class="gt_row gt_left" headers="Semantic Transformation stub_1_2 Test">unique key</td>
+<td class="gt_row gt_left" headers="Semantic Transformation stub_1_2 Tested">data entity joined across raw sources and tested</td>
+</tr>
+<tr class="gt_group_heading_row odd">
+<td colspan="3" id="Source" class="gt_group_heading" data-quarto-table-cell-role="th" scope="colgroup">Source</td>
+</tr>
+<tr class="gt_row_group_first even">
+<td id="stub_1_3" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">output</td>
+<td class="gt_row gt_left" headers="Source stub_1_3 Test">unique key</td>
+<td class="gt_row gt_left" headers="Source stub_1_3 Tested">data entity defined and tested</td>
+</tr>
+<tr class="odd">
+<td id="stub_1_4" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">input</td>
+<td class="gt_row gt_left" headers="Source stub_1_4 Test">unique key</td>
+<td class="gt_row gt_left" headers="Source stub_1_4 Tested">combination of columns that define a unique row</td>
+</tr>
+<tr class="even">
+<td id="stub_1_5" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">input</td>
+<td class="gt_row gt_left" headers="Source stub_1_5 Test">freshness</td>
+<td class="gt_row gt_left" headers="Source stub_1_5 Tested">incrementation or snapshot field</td>
+</tr>
+<tr class="odd">
+<td id="stub_1_6" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">input</td>
+<td class="gt_row gt_left" headers="Source stub_1_6 Test">not empty</td>
+<td class="gt_row gt_left" headers="Source stub_1_6 Tested">table-level test</td>
+</tr>
+</tbody><tfoot class="gt_sourcenotes">
+<tr class="odd">
+<td colspan="3" class="gt_sourcenote">We say a unique key has been tested when the same combination of columns have not null and unique tests applied.</td>
+</tr>
+<tr class="even">
+<td colspan="3" class="gt_sourcenote">Freshness tests configurations: daily ingestion (warn &gt; 1 day, error &gt; 1 week); weekly ingestion (warn &gt; 1 week, error &gt; 2 weeks)</td>
+</tr>
+</tfoot>
+
+</table>
+
 </div>
-<div class="cell-output cell-output-error">
-<pre><code>Error: object 'test_gt' not found</code></pre>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-tests-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4: FAIR data entity tests
+</figcaption>
+</figure>
 </div>
 </div>
 <p>It can be a challenge to communicate to leadership with little experinces of the trenches of data development the obstacles in scaling legacy data to living analyses. By setting these minimal goals, the problem solving is democratised from engineer to analyst.</p>
@@ -342,42 +1342,35 @@ Figure&nbsp;2: Each scientist or engineer is skilled in their own right, but tog
 </section>
 <section id="expectation-vs-reality" class="level1">
 <h1>Expectation vs reality</h1>
-<p>Humans, bless ’em, are not great at conceptualising the black boxes they work with. A critical error we make is expecting a living analysis development lifecycle to reflect the workflow of an individual analyst producing a one-off report. Thus, living analysis development tends to have an expectation backbone (<a href="#fig-anal-beads" class="quarto-xref">Figure&nbsp;3</a>), whether it be to produce a spreadsheet, some business intelligence dashboard, or deploy a machine learning algorithm by bespoke tooling.</p>
+<p>Humans, bless ’em, are not great at conceptualising the black boxes they work with. A critical error we make is expecting a living analysis development lifecycle to reflect the workflow of an individual analyst producing a one-off report. Thus, living analysis development tends to have an expectation backbone (<a href="#fig-anal-beads" class="quarto-xref">Figure&nbsp;5</a>), whether it be to produce a spreadsheet, some business intelligence dashboard, or deploy a machine learning algorithm by bespoke tooling.</p>
 <div id="fig-anal-beads" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-anal-beads-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell">
-<div class="cell-output cell-output-error">
-<pre><code>Error in loadNamespace(x): there is no package called 'dplyr'</code></pre>
-</div>
-<div class="cell-output cell-output-error">
-<pre><code>Error: object 'ButtonDesignCategory' not found</code></pre>
-</div>
-<div class="cell-output cell-output-error">
-<pre><code>Error in loadNamespace(x): there is no package called 'DiagrammeR'</code></pre>
+<div class="cell-output-display">
+<div class="grViz html-widget html-fill-item" id="htmlwidget-3457adec0f671829c310" style="width:100%;height:216px;"></div>
+<script type="application/json" data-for="htmlwidget-3457adec0f671829c310">{"x":{"diagram":"digraph {\n  graph [margin=0.05, bgcolor=\"transparent\", rankdir=TB, splines=true];\n  rankdir=LR;\n  node [fontname=Helvetica];\n\n  \"source\" [style=filled, fillcolor=\"#F5DEB3B3\", shape=box];\n  \"ingest\" [style=filled, fillcolor=\"#ADD8E6B3\", shape=box];\n  \"transform\" [style=filled, fillcolor=\"#ADD8E6B3\", shape=box];\n  \"validate\" [style=filled, fillcolor=\"#ADD8E6B3\", shape=box];\n  \"document\" [style=filled, fillcolor=\"#ADD8E6B3\", shape=box];\n  \"analyse\" [style=filled, fillcolor=\"#8FBC8FB3\", shape=box];\n  \"interpret\" [style=filled, fillcolor=\"#8FBC8FB3\", shape=box];\n  \"decision\" [style=filled, fillcolor=\"#F08080B3\", shape=box];\n  \"question\" [style=filled, fillcolor=\"#F08080B3\", shape=box];\n\n  \"question\" -> \"source\" [style=solid];\n  \"source\" -> \"ingest\" [style=solid];\n  \"ingest\" -> \"transform\" [style=solid];\n  \"transform\" -> \"validate\" [style=solid];\n  \"validate\" -> \"document\" [style=solid];\n  \"document\" -> \"analyse\" [style=solid];\n  \"analyse\" -> \"interpret\" [style=solid];\n  \"interpret\" -> \"decision\" [style=solid];\n\n  subgraph cluster_legend {\n  label = \"Legend\";\n  style = dashed;\n  fontsize = 12;\n  margin = 20;\n  rankdir = LR;\n  rank = sink;\n\"data engineering\" [label=\"data engineering\", style=filled, fillcolor=\"#ADD8E6B3\", shape=box];\n  \"data analysis\" [label=\"data analysis\", style=filled, fillcolor=\"#8FBC8FB3\", shape=box];\n  \"project planning\" [label=\"project planning\", style=filled, fillcolor=\"#F5DEB3B3\", shape=box];\n  \"decision making\" [label=\"decision making\", style=filled, fillcolor=\"#F08080B3\", shape=box];\n  \"platform engineering\" [label=\"platform engineering\", style=filled, fillcolor=\"#FF8C00B3\", shape=box];\n  \"data engineering\" -> \"data analysis\" -> \"platform engineering\" -> \"project planning\" -> \"decision making\" [style=invis];\n}\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-anal-beads-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;3: The anal beads of data development.
+Figure&nbsp;5: The anal beads of data development.
 </figcaption>
 </figure>
 </div>
-<p>Despite our best-laid agile plans, however, there’s an inevitable drift that occurs during the predictably unpredictable recursiveness of data development (<a href="#fig-hairy-anal-beads" class="quarto-xref">Figure&nbsp;4</a>).</p>
+<p>Despite our best-laid agile plans, however, there’s an inevitable drift that occurs during the predictably unpredictable recursiveness of data development (<a href="#fig-hairy-anal-beads" class="quarto-xref">Figure&nbsp;6</a>).</p>
 <div id="fig-hairy-anal-beads" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-hairy-anal-beads-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell">
-<div class="cell-output cell-output-error">
-<pre><code>Error: object 'ButtonDesignCategory' not found</code></pre>
-</div>
-<div class="cell-output cell-output-error">
-<pre><code>Error in loadNamespace(x): there is no package called 'DiagrammeR'</code></pre>
+<div class="cell-output-display">
+<div class="grViz html-widget html-fill-item" id="htmlwidget-b7e612827a436e869a39" style="width:100%;height:433px;"></div>
+<script type="application/json" data-for="htmlwidget-b7e612827a436e869a39">{"x":{"diagram":"digraph {\n  graph [margin=0.05, bgcolor=\"transparent\", rankdir=TB, splines=true];\n  rankdir=LR;\n  node [fontname=Helvetica];\n\n  \"analyse\" [style=filled, fillcolor=\"#8FBC8FB3\", shape=box];\n  \"transform\" [style=filled, fillcolor=\"#ADD8E6B3\", shape=box];\n  \"ingest\" [style=filled, fillcolor=\"#ADD8E6B3\", shape=box];\n  \"interpret\" [style=filled, fillcolor=\"#8FBC8FB3\", shape=box];\n  \"deploy\" [style=filled, fillcolor=\"#FF8C00B3\", shape=box];\n  \"source\" [style=filled, fillcolor=\"#F5DEB3B3\", shape=box];\n  \"validate\" [style=filled, fillcolor=\"#ADD8E6B3\", shape=box];\n  \"document\" [style=filled, fillcolor=\"#ADD8E6B3\", shape=box];\n  \"decision\" [style=filled, fillcolor=\"#F08080B3\", shape=box];\n  \"question\" [style=filled, fillcolor=\"#F08080B3\", shape=box];\n\n  \"interpret\" -> \"analyse\" [style=dashed];\n  \"interpret\" -> \"transform\" [style=dashed];\n  \"analyse\" -> \"ingest\" [style=dashed];\n  \"decision\" -> \"interpret\" [style=dashed];\n  \"analyse\" -> \"transform\" [style=dashed];\n  \"analyse\" -> \"interpret\" [style=dashed];\n  \"analyse\" -> \"deploy\" [style=dashed];\n  \"question\" -> \"source\" [style=solid];\n  \"source\" -> \"ingest\" [style=solid];\n  \"ingest\" -> \"transform\" [style=solid];\n  \"transform\" -> \"validate\" [style=solid];\n  \"validate\" -> \"document\" [style=solid];\n  \"document\" -> \"analyse\" [style=solid];\n  \"analyse\" -> \"interpret\" [style=solid];\n  \"interpret\" -> \"decision\" [style=solid];\n\n  subgraph cluster_legend {\n  label = \"Legend\";\n  style = dashed;\n  fontsize = 12;\n  margin = 20;\n  rankdir = LR;\n  rank = sink;\n\"data engineering\" [label=\"data engineering\", style=filled, fillcolor=\"#ADD8E6B3\", shape=box];\n  \"data analysis\" [label=\"data analysis\", style=filled, fillcolor=\"#8FBC8FB3\", shape=box];\n  \"project planning\" [label=\"project planning\", style=filled, fillcolor=\"#F5DEB3B3\", shape=box];\n  \"decision making\" [label=\"decision making\", style=filled, fillcolor=\"#F08080B3\", shape=box];\n  \"platform engineering\" [label=\"platform engineering\", style=filled, fillcolor=\"#FF8C00B3\", shape=box];\n  \"data engineering\" -> \"data analysis\" -> \"platform engineering\" -> \"project planning\" -> \"decision making\" [style=invis];\n}\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-hairy-anal-beads-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;4: The tangled anal beads of data development.
+Figure&nbsp;6: The tangled anal beads of data development.
 </figcaption>
 </figure>
 </div>
@@ -388,16 +1381,14 @@ Figure&nbsp;4: The tangled anal beads of data development.
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-fair-entity-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell">
-<div class="cell-output cell-output-error">
-<pre><code>Error: object 'ButtonDesignCategory' not found</code></pre>
-</div>
-<div class="cell-output cell-output-error">
-<pre><code>Error in loadNamespace(x): there is no package called 'DiagrammeR'</code></pre>
+<div class="cell-output-display">
+<div class="grViz html-widget html-fill-item" id="htmlwidget-7659f340ce43aaa7be7b" style="width:100%;height:650px;"></div>
+<script type="application/json" data-for="htmlwidget-7659f340ce43aaa7be7b">{"x":{"diagram":"digraph {\n  graph [margin=0.05, bgcolor=\"transparent\", rankdir=TB, splines=true];\n  rankdir=LR;\n  node [fontname=Helvetica];\n\n  \"question\" [style=filled, fillcolor=\"#F08080B3\", shape=box];\n  \"project planning development\" [style=filled, fillcolor=\"#F5DEB3B3\", shape=box];\n  \"scope fair data entity\" [style=filled, fillcolor=\"#F5DEB3B3\", shape=box];\n  \"ingest\" [style=filled, fillcolor=\"#ADD8E6B3\", shape=box];\n  \"transform data entity\" [style=filled, fillcolor=\"#ADD8E6B3\", shape=box];\n  \"document data entity\" [style=filled, fillcolor=\"#ADD8E6B3\", shape=box];\n  \"document validation of data entity\" [style=filled, fillcolor=\"#8FBC8FB3\", shape=box];\n  \"deploy documentation\" [style=filled, fillcolor=\"#FF8C00B3\", shape=box];\n  \"validate data entity\" [style=filled, fillcolor=\"#8FBC8FB3\", shape=box];\n  \"debug data entity\" [style=filled, fillcolor=\"#ADD8E6B3\", shape=box];\n  \"scope fair data product\" [style=filled, fillcolor=\"#F5DEB3B3\", shape=box];\n  \"transform\" [style=filled, fillcolor=\"#ADD8E6B3\", shape=box];\n  \"unscoped platform engineering\" [style=filled, fillcolor=\"#FF8C00B3\", shape=box];\n  \"fair data product\" [style=filled, fillcolor=\"#F5DEB3B3\", shape=box];\n  \"analyse\" [style=filled, fillcolor=\"#8FBC8FB3\", shape=box];\n  \"interpret\" [style=filled, fillcolor=\"#8FBC8FB3\", shape=box];\n  \"deploy analysis tool\" [style=filled, fillcolor=\"#FF8C00B3\", shape=box];\n  \"unscoped platform engineering development\" [style=filled, fillcolor=\"#FF8C00B3\", shape=box];\n  \"unscoped data engineering development\" [style=filled, fillcolor=\"#ADD8E6B3\", shape=box];\n  \"project reporting development\" [style=filled, fillcolor=\"#F5DEB3B3\", shape=box];\n  \"fair data entity\" [style=filled, fillcolor=\"#F5DEB3B3\", shape=box];\n  \"unscoped data engineering\" [style=filled, fillcolor=\"#ADD8E6B3\", shape=box];\n  \"decision\" [style=filled, fillcolor=\"#F08080B3\", shape=box];\n\n  \"question\" -> \"project planning development\" [style=solid];\n  \"project planning development\" -> \"scope fair data entity\" [style=solid];\n  \"scope fair data entity\" -> \"ingest\" [style=solid];\n  \"scope fair data entity\" -> \"deploy documentation\" [style=solid];\n  \"scope fair data entity\" -> \"deploy analysis tool\" [style=solid];\n  \"scope fair data entity\" -> \"document data entity\" [style=solid];\n  \"ingest\" -> \"transform data entity\" [style=solid];\n  \"transform data entity\" -> \"validate data entity\" [style=solid];\n  \"document data entity\" -> \"validate data entity\" [style=solid];\n  \"document validation of data entity\" -> \"fair data entity\" [style=solid];\n  \"deploy documentation\" -> \"validate data entity\" [style=solid];\n  \"validate data entity\" -> \"debug data entity\" [style=solid];\n  \"debug data entity\" -> \"fair data entity\" [style=solid];\n  \"scope fair data product\" -> \"transform\" [style=solid];\n  \"transform\" -> \"fair data product\" [style=solid];\n  \"unscoped platform engineering\" -> \"fair data product\" [style=solid];\n  \"fair data product\" -> \"interpret\" [style=solid];\n  \"analyse\" -> \"interpret\" [style=solid];\n  \"interpret\" -> \"decision\" [style=solid];\n  \"deploy analysis tool\" -> \"validate data entity\" [style=solid];\n  \"scope fair data product\" -> \"unscoped platform engineering\" [style=solid];\n  \"scope fair data product\" -> \"unscoped platform engineering development\" [style=solid];\n  \"unscoped platform engineering development\" -> \"fair data product\" [style=solid];\n  \"scope fair data product\" -> \"unscoped data engineering development\" [style=solid];\n  \"unscoped data engineering development\" -> \"fair data product\" [style=solid];\n  \"validate data entity\" -> \"document validation of data entity\" [style=solid];\n  \"project reporting development\" -> \"scope fair data product\" [style=solid];\n  \"fair data entity\" -> \"project reporting development\" [style=solid];\n  \"unscoped data engineering\" -> \"fair data product\" [style=solid];\n  \"scope fair data product\" -> \"unscoped data engineering\" [style=solid];\n  \"scope fair data product\" -> \"analyse\" [style=solid];\n\n  subgraph cluster_legend {\n  label = \"Legend\";\n  style = dashed;\n  fontsize = 12;\n  margin = 20;\n  rankdir = LR;\n  rank = sink;\n\"data engineering\" [label=\"data engineering\", style=filled, fillcolor=\"#ADD8E6B3\", shape=box];\n  \"data analysis\" [label=\"data analysis\", style=filled, fillcolor=\"#8FBC8FB3\", shape=box];\n  \"project planning\" [label=\"project planning\", style=filled, fillcolor=\"#F5DEB3B3\", shape=box];\n  \"decision making\" [label=\"decision making\", style=filled, fillcolor=\"#F08080B3\", shape=box];\n  \"platform engineering\" [label=\"platform engineering\", style=filled, fillcolor=\"#FF8C00B3\", shape=box];\n  \"data engineering\" -> \"data analysis\" -> \"platform engineering\" -> \"project planning\" -> \"decision making\" [style=invis];\n}\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-fair-entity-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;5: Establishing a datum via FAIR data entity test allows the team to scope for specific challenges to do with different aspects of the stack.
+Figure&nbsp;7: Establishing a datum via FAIR data entity test allows the team to scope for specific challenges to do with different aspects of the stack.
 </figcaption>
 </figure>
 </div>
@@ -428,16 +1419,16 @@ Figure&nbsp;5: Establishing a datum via FAIR data entity test allows the team to
 <p>How do I call code reusably across both this manuscript, a .qmd file, and a slide deck I’m embedding the same .qmd file?</p>
 </blockquote>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># test where I am</span></span>
-<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="fu">getwd</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># test where I am</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">getwd</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] "/home/cantabile/Documents/repos/good-enough"</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># need to source</span></span>
-<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="fu">source</span>(<span class="st">"R/test-mooncake.R"</span>)</span>
-<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a><span class="co"># test calling from R</span></span>
-<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>mooncake_test</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># need to source</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">source</span>(<span class="st">"R/test-mooncake.R"</span>)</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="co"># test calling from R</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>mooncake_test</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] "hi Mooncake"</code></pre>
 </div>
