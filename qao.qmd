@@ -1,8 +1,13 @@
 ---
-title: "Questionable Analytical Observations (QAO)"
+title: "Questionable Analytical Observations"
 subtitle: "And what to do about them"
-author: "Dr Charles T. Gray, Data Punk" 
-bibliography: singularities.bib
+author: 
+  - name: Dr Charles T. Gray, Datapunk
+    orcid: 0000-0002-9978-011X
+    affiliations:
+      - name: Good Enough Data & Systems Lab
+bibliography: qao.bib
+number-sections: true
 execute:
   echo: false
   message: false
@@ -26,38 +31,42 @@ Any data engineer will tell you there's a relentlessly comedic side to the indus
 
 <iframe src="https://www.youtube.com/embed/Pyh1Va_mYWI?si=ieVcPdnxgQ83lMGJ&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-*Nigel gave me a drawing that said 18 inches. Now, whether or not he knows the difference between feet and inches is not my problem. I do what I'm told.* -- Ian Faith, *This is Spinal Tap* [@reiner_this_1984].
+*Nigel gave me a drawing that said 18 inches. Now, whether or not he knows the difference between feet and inches is not my problem. I do what I'm told.* -- *This is Spinal Tap* (1984) [@reiner_this_1984].
 
 :::
 
-Those in the trenches of the modern data stack know this is why the community have developed principles, such as FAIR [@noauthor_fair_nodate], and open-source tools, such as DBT-core [@noauthor_dbt-labsdbt-core_2025] that opinionate FAIR.  
+Those in the trenches of the **modern data stack** (toolchains for working with data at scale [@prakash_what_2023]) know this is why the community have developed principles, such as FAIR [@wilkinson_fair_2016], and open-source tools, such as DBT-core [@dbt_labs_dbt-labsdbt-core_2025] that **opinionate** FAIR.  
 
-These engineers are also the first to tell you just how far from reality the industry is  in realising even a fraction of those aspirations [@landi__2020]. 
+These engineers are also the first to tell you just how far from reality industry and research are from realising even a fraction of those aspirations [@landi__2020] [@feuerriegel_fair_2020] [@boeckhout_fair_2018]. 
 
-Something that tools such as DBT are beginning to intuit is that the governance of data must be an iterative **workflow**, not a policy checkbox at the end, such an aim is (we argue in a [sister paper](singularities.qmd)) chaotically impossible given how development plans morph and change. 
+Something that tools, such as DBT, are beginning to intuit is that the governance of data must be an iterative **workflow** that interoperates with the recursive nature of inquiry, not a policy checkbox at the end--such an aim is (argued in a [sister paper](singularities.qmd)) **chaotically** impossible given how development plans morph and change as questions are refined. 
 
-We must correct for epistemic drift in the chaos induced by people and machines interoperating to answer scientific questions. Or, despite our best efforts, we end at the *frontier psychiatry* (@fig-frontier) of data science. 
+We must correct for **epistemic drift** in the chaos induced by people and machines interoperating to answer questions with observations at scale. Or, despite our best efforts, we end at the *frontier psychiatry* (@fig-frontier) of data science. 
 
 ::: {#fig-frontier}
 
 <iframe src="https://www.youtube.com/embed/qLrnkK2YEcE?si=NW9MZlQoFAU905J4&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-Each scientist or engineer is skilled in their own right, but together create an absurdist orchestra of bad data and broken dashboards [@the_avalanches_avalanches_2009].
+Each scientist or engineer is skilled in their own right, but epistemic drift creates an absurdist orchestra of bad data and broken dashboards [@the_avalanches_avalanches_2009].
 
 :::
 
-We begin declaritively, as engineers are busy and it's good to give them a table of instructions on the second page so they can stop reading and go code something useful. 
+We begin declaritively, as engineers are busy and it's good to give them a table of instructions on the second page so they can stop reading and go code something useful. This manuscript is intended as a tool for engineers to obtain rarely-granted scope from leadership to build reusable data architecture. We then explain what motivates this framework, and provide examples in R, SQL, and Python in appendices.
 
 # FAIR Data Entity - User Access Data Test
 
-## Definition: FAIR data entity test
+This test defines the first living analysis development team goal, usually instantiated in an **agile** (for democratising development [@kent_beck_manifesto_2001]) tool, such as an **epic** in JIRA [@atlassian_jira_2025]. This test draws from the V-model of systems development lifecycle that privileges end-user access [@forsberg_717_1998]. 
 
-1. Analyst validates a single data point in their chosen tool.
-2. There is no requirement the validation passes the test.
+## First Team Goal: Instantiate the FAIR data entity test
+
+We consider the FAIR data entity test instantiated when:
+
+1. the data **analyst** validates minimum assumptions about a single data point in the analyst's chosen tool,
+2. notably, where there is no requirement the validation passes the test.
 
 ## Framing FAIR 
 
-The FAIR framing shown in @fig-fair is a way to communicate the black box of data to decision makers. In particular, this framing highlights the distinction between what they conceptualise as `data` (*Can't you just email me a spreadsheet?*) and a `data product` brick in reusable data architecture that will save untold wages in the long run.
+The FAIR framing shown in @fig-fair is a way to communicate the black box of data to decision makers. In particular, this framing highlights the distinction between what they conceptualise as `data` (*Can't you just email me a spreadsheet?*) and a `data product` of reusable data architecture at scale that will save untold wages, time, and consternation.
 
 ```{r echo=FALSE, message=FALSE}
 #| label: fig-fair
@@ -68,7 +77,7 @@ source("figures-and-tables/fair-minimum-criteria/fair-minimum-criteria.R")
 fair_gt
 ```
 
-## Minimal tests
+## Minimal assumptions to test
 
 The minimal set of tests show in @fig-tests for 
 
@@ -76,8 +85,7 @@ The minimal set of tests show in @fig-tests for
 2. missingness
 3. duplicates 
 
-allows for data platform development whilst demonstrating a good-faith roadmap to compliance for, say, the EU Comission's Environmental, Social, and Governance reporting (ESG) [@noauthor_sustainable_nodate]. 
-
+allows for data platform development whilst demonstrating a good-faith roadmap to compliance for, say, the EU Comission's Environmental, Social, and Governance reporting (ESG) [@european_commission_sustainable_2025]. Ideally, the analyst provides further assumptions, and a previously calculated datum, however this is notoriously difficult for engineers to obtain in practice, thus we provide a set of defaults so that engineers can begin work. 
 
 ```{r echo=FALSE, message=FALSE}
 #| label: fig-tests
@@ -88,7 +96,7 @@ source("figures-and-tables/naive-tests/naive-tests.R")
 test_gt
 ```
 
-It can be a challenge to communicate to leadership with little experinces of the trenches of data development the obstacles in scaling legacy data to living analyses. By setting these minimal goals, the problem solving is democratised from engineer to analyst. 
+It can be a challenge to communicate to leadership with little experiences of the trenches of data development the obstacles in scaling legacy data to living analyses. By setting these minimal goals, the problem solving is democratised from engineer to analyst. 
 
 We now turn to motivating[^1] the solution we just provided.
 
@@ -117,7 +125,7 @@ The anal beads of data development.
 
 :::
 
-Despite our best-laid agile plans, however, there's an inevitable drift that occurs during the predictably unpredictable recursiveness of data development (@fig-hairy-anal-beads).
+Despite our best-laid agile plans, however, there's an inevitable drift that occurs during the predictably unpredictable recursiveness of data development (@fig-hairy-anal-beads). 
 
 
 ::: {#fig-hairy-anal-beads}
@@ -154,7 +162,7 @@ Establishing a datum via FAIR data entity test allows the team to scope for spec
 :::
 
 
-Problem is, if you show the engineers FAIR criteria [@noauthor_fair_nodate], you will hear, *sure, sure, next week*.
+Problem is, if you show the engineers FAIR criteria [@wilkinson_fair_2016], you will hear, *sure, sure, next week*.
 
 > "I've found it best not to do any documetation at all, otherwise people point out what's missing." -- Real things i hear engineers say.  
 
