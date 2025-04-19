@@ -6,12 +6,17 @@ author:
     orcid: 0000-0002-9978-011X
     affiliations:
       - name: Good Enough Data & Systems Lab
+
 bibliography: qao.bib
+csl: elsevier-vancouver.csl
+
 number-sections: true
+code-fold: true
 execute:
   echo: false
   message: false
   error: true
+
 ---
 
 ```{r echo=FALSE, message=FALSE}
@@ -89,16 +94,17 @@ allows for data platform development whilst demonstrating a good-faith roadmap t
 
 ```{r echo=FALSE, message=FALSE}
 #| label: fig-tests
-#| fig-cap: "FAIR data entity tests"
+#| fig-cap: "FAIR data entity tests[^1]."
 
 source("figures-and-tables/naive-tests/naive-tests.R")
 
 test_gt
 ```
 
+
 It can be a challenge to communicate to leadership with little experiences of the trenches of data development the obstacles in scaling legacy data to living analyses. By setting these minimal goals, the problem solving is democratised from engineer to analyst. 
 
-We now turn to motivating[^1] the solution we just provided.
+We now turn to motivating the solution we just provided.
 
 [^1]: *Contributor acknowledgement*: Many thanks to the Data & AI team at TDCnet, Denmark, for contributions to test development and advisory discussions.
 
