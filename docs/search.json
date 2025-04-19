@@ -842,7 +842,7 @@
   {
     "objectID": "qao.html",
     "href": "qao.html",
-    "title": "Questionable Analytical Observations (QAO)",
+    "title": "Questionable Analytical Observations",
     "section": "",
     "text": "View slides in full screen"
   },
@@ -851,33 +851,33 @@
     "href": "qao.html#definition-fair-data-entity-test",
     "title": "Questionable Analytical Observations (QAO)",
     "section": "Definition: FAIR data entity test",
-    "text": "Definition: FAIR data entity test\n\nAnalyst validates a single data point in their chosen tool.\nThere is no requirement the validation passes the test."
+    "text": "Definition: FAIR data entity test\nThis test defines the first living analysis development team goal, usually instantiated in an agile (for democratising development (Kent Beck et al. 2001)) tool, such as an epic in JIRA (Atlassian 2025).\n\nAnalyst validates minimum assumptions about a single data point in the analyst’s chosen tool.\nThere is no requirement the validation passes the test."
   },
   {
     "objectID": "qao.html#framing-fair",
     "href": "qao.html#framing-fair",
-    "title": "Questionable Analytical Observations (QAO)",
-    "section": "Framing FAIR",
-    "text": "Framing FAIR\nThe FAIR framing shown in Figure 3 is a way to communicate the black box of data to decision makers. In particular, this framing highlights the distinction between what they conceptualise as data (Can’t you just email me a spreadsheet?) and a data product brick in reusable data architecture that will save untold wages in the long run.\n\n\n\n\n\n\n\n\n\n\nValidation of Data Entity meets Minimum FAIR Criteria\n\n\nFAIR principle\nMinimum requirements\n\n\n\n\nFindable\nData documentation wherein columns & tables have descriptions for the data entity lineage. Clearly states access protocols; i.e., data security. Ensures subject matter experts can advise on governance, as well as contribute to validation.\n\n\nAccessible\nUnderstandable in terms of a data entity, a semantic abstraction in stakeholder terms (e.g., a number on an invoice). The helps ensure data governance is applied as subject matter experts advise.\n\n\nInteroperable\nWorkflows to ensure data governance, security, and access function as intended when analysing data entity. Facilitates subject matter experts contributing to data validation.\n\n\nReusable\nRequested data transformations provided in published layer of dedicated database, standard tests applied to data entity (see below for details) to confirm validity of documentated assumptions.\n\n\n\n\n\n\n\nFigure 3: Validation of FAIR data entity."
+    "title": "Questionable Analytical Observations",
+    "section": "2.2 Framing FAIR",
+    "text": "2.2 Framing FAIR\nThe FAIR framing shown in Figure 3 is a way to communicate the black box of data to decision makers. In particular, this framing highlights the distinction between what they conceptualise as data (Can’t you just email me a spreadsheet?) and a data product of reusable data architecture at scale that will save untold wages, time, and consternation.\n\n\n\n\n\n\n\n\n\n\nValidation of Data Entity meets Minimum FAIR Criteria\n\n\nFAIR principle\nMinimum requirements\n\n\n\n\nFindable\nData documentation wherein columns & tables have descriptions for the data entity lineage. Clearly states access protocols; i.e., data security. Ensures subject matter experts can advise on governance, as well as contribute to validation.\n\n\nAccessible\nUnderstandable in terms of a data entity, a semantic abstraction in stakeholder terms (e.g., a number on an invoice). The helps ensure data governance is applied as subject matter experts advise.\n\n\nInteroperable\nWorkflows to ensure data governance, security, and access function as intended when analysing data entity. Facilitates subject matter experts contributing to data validation.\n\n\nReusable\nRequested data transformations provided in published layer of dedicated database, standard tests applied to data entity (see below for details) to confirm validity of documentated assumptions.\n\n\n\n\n\n\n\nFigure 3: Validation of FAIR data entity."
   },
   {
     "objectID": "qao.html#minimal-tests",
     "href": "qao.html#minimal-tests",
-    "title": "Questionable Analytical Observations (QAO)",
-    "section": "Minimal tests",
-    "text": "Minimal tests\nThe minimal set of tests show in Figure 4 for\n\nuniqueness\nmissingness\nduplicates\n\nallows for data platform development whilst demonstrating a good-faith roadmap to compliance for, say, the EU Comission’s Environmental, Social, and Governance reporting (ESG) (“Sustainable Finance - European Commission” n.d.).\n\n\n\n\n\n\n\n\n\n\nTests Applied on Data Product Layers by Observability, Descending\n\n\n\nTest\nTested\n\n\n\n\nAnalytical Observation\n\n\noutput\nunique key\ndata entity\n\n\nSemantic Transformation\n\n\noutput\nunique key\ndata entity joined across raw sources and tested\n\n\nSource\n\n\noutput\nunique key\ndata entity defined and tested\n\n\ninput\nunique key\ncombination of columns that define a unique row\n\n\ninput\nfreshness\nincrementation or snapshot field\n\n\ninput\nnot empty\ntable-level test\n\n\n\nWe say a unique key has been tested when the same combination of columns have not null and unique tests applied.\n\n\nFreshness tests configurations: daily ingestion (warn &gt; 1 day, error &gt; 1 week); weekly ingestion (warn &gt; 1 week, error &gt; 2 weeks)\n\n\n\n\n\n\n\n\nFigure 4: FAIR data entity tests\n\n\n\n\nIt can be a challenge to communicate to leadership with little experinces of the trenches of data development the obstacles in scaling legacy data to living analyses. By setting these minimal goals, the problem solving is democratised from engineer to analyst.\nWe now turn to motivating1 the solution we just provided."
+    "title": "Questionable Analytical Observations",
+    "section": "2.3 Minimal tests",
+    "text": "2.3 Minimal tests\nThe minimal set of tests show in Figure 4 for\n\nuniqueness\nmissingness\nduplicates\n\nallows for data platform development whilst demonstrating a good-faith roadmap to compliance for, say, the EU Comission’s Environmental, Social, and Governance reporting (ESG) (Commission 2025).\n\n\n\n\n\n\n\n\n\n\nTests Applied on Data Product Layers by Observability, Descending\n\n\n\nTest\nTested\n\n\n\n\nAnalytical Observation\n\n\noutput\nunique key\ndata entity\n\n\nSemantic Transformation\n\n\noutput\nunique key\ndata entity joined across raw sources and tested\n\n\nSource\n\n\noutput\nunique key\ndata entity defined and tested\n\n\ninput\nunique key\ncombination of columns that define a unique row\n\n\ninput\nfreshness\nincrementation or snapshot field\n\n\ninput\nnot empty\ntable-level test\n\n\n\nWe say a unique key has been tested when the same combination of columns have not null and unique tests applied.\n\n\nFreshness tests configurations: daily ingestion (warn &gt; 1 day, error &gt; 1 week); weekly ingestion (warn &gt; 1 week, error &gt; 2 weeks)\n\n\n\n\n\n\n\n\nFigure 4: FAIR data entity tests\n\n\n\n\nIt can be a challenge to communicate to leadership with little experiences of the trenches of data development the obstacles in scaling legacy data to living analyses. By setting these minimal goals, the problem solving is democratised from engineer to analyst.\nWe now turn to motivating1 the solution we just provided."
   },
   {
     "objectID": "qao.html#fair-data-entity-tests-for-this-singularity",
     "href": "qao.html#fair-data-entity-tests-for-this-singularity",
-    "title": "Questionable Analytical Observations (QAO)",
-    "section": "FAIR data entity tests for this singularity",
-    "text": "FAIR data entity tests for this singularity\nIn all tests, we ask, what is the minimum thing we can do? Then structure exists and we can expand.\n\nGenerator fn →\\to display\nTesting the morphism between graph visualisation generator and display.\n\nHow do I call code reusably across both this manuscript, a .qmd file, and a slide deck I’m embedding the same .qmd file?\n\n\n# test where I am\ngetwd()\n\n[1] \"/home/cantabile/Documents/repos/good-enough\"\n\n# need to source\nsource(\"R/test-mooncake.R\")\n\n# test calling from R\nmooncake_test\n\n[1] \"hi Mooncake\""
+    "title": "Questionable Analytical Observations",
+    "section": "7.1 FAIR data entity tests for this singularity",
+    "text": "7.1 FAIR data entity tests for this singularity\nIn all tests, we ask, what is the minimum thing we can do? Then structure exists and we can expand.\n\n7.1.1 Generator fn →\\to display\nTesting the morphism between graph visualisation generator and display.\n\nHow do I call code reusably across both this manuscript, a .qmd file, and a slide deck I’m embedding the same .qmd file?\n\n\n# test where I am\ngetwd()\n\n[1] \"/home/cantabile/Documents/repos/good-enough\"\n\n# need to source\nsource(\"R/test-mooncake.R\")\n\n# test calling from R\nmooncake_test\n\n[1] \"hi Mooncake\""
   },
   {
     "objectID": "qao.html#footnotes",
     "href": "qao.html#footnotes",
-    "title": "Questionable Analytical Observations (QAO)",
+    "title": "Questionable Analytical Observations",
     "section": "Footnotes",
     "text": "Footnotes\n\n\nContributor acknowledgement: Many thanks to the Data & AI team at TDCnet, Denmark, for contributions to test development and advisory discussions.↩︎"
   },
@@ -1209,5 +1209,26 @@
     "title": "The Categorical Descent of Loss in Elizabeth Bishop’s One Art",
     "section": "To the loss almost too hard to write",
     "text": "To the loss almost too hard to write\n\n\n—Even losing you (the joking voice, a gesture\nI love) I shan’t have lied. It’s evident\nthe art of losing’s not too hard to master\nthough it may look like (Write it!) like disaster.\n\n\nBishop has almost convinced us that loss is not too hard to master–as one can tolerate losing a continent.\nBut she turns, like Orpheus, in her katabasis of grief to write that here the diagram fails to commute; for losing a beloved feels like disaster.\n\n\n\n\n\n\n\n\nOneArtNested\n\n\ncluster_4\n\n\n\ncluster_4_loss\n\n\n\ncluster_5\n\n\n\n\nProtagonist4\n\nProtagonist\nIdentity: Size of geography does not change felt metonymic loss\n\n\n\ncluster_4_losses\n\nStanza: Geography we've known\n\n\n\nProtagonist4-&gt;cluster_4_losses\n\n\nMorphism: Geography we remember\n\n\n\nProtagonist5\n\nProtagonist\nIdentity: Losing beloved feels like disaster\n\n\n\nProtagonist4-&gt;Protagonist5\n\n\nFunctor: Experiences loss - as disaster\n\n\n\nBeloved\n\nBeloved\nIdentity: Aristotelian love of virtue\n\n\n\ncluster_4_losses-&gt;Beloved\n\n\nFunctor: Metonymic loss is noncomparable to loss of true love\n\n\n\nCities\n\nCities\nIdentity: Cities we've visited\n\n\n\nRivers\n\nRivers\nIdentity: Geographic connectors between cities\n\n\n\nCities-&gt;Rivers\n\n\n\nMorphism: Comparable loss\n\n\n\nContinent\n\nContinent\nIdentity: Places that contain cities and rivers\n\n\n\nRivers-&gt;Continent\n\n\n\nMorphism: Comparable loss\n\n\n\nContinent-&gt;Cities\n\n\n\nMorphism: Comparable loss\n\n\n\nProtagonist5-&gt;Beloved\n\n\nMorphism: Leaves Protagonist's life"
+  },
+  {
+    "objectID": "qao.html#definition-of-first-team-goal-instantiate-the-fair-data-entity-test",
+    "href": "qao.html#definition-of-first-team-goal-instantiate-the-fair-data-entity-test",
+    "title": "Questionable Analytical Observations",
+    "section": "Definition of First Team Goal: Instantiate the FAIR data entity test",
+    "text": "Definition of First Team Goal: Instantiate the FAIR data entity test\nWe consider the FAIR data entity test instantiated when:\n\nthe data analyst validates their minimum assumptions about a single data point in the analyst’s chosen tool;\nnotably, where there is no requirement the validation passes the test."
+  },
+  {
+    "objectID": "qao.html#first-team-goal-instantiate-the-fair-data-entity-test",
+    "href": "qao.html#first-team-goal-instantiate-the-fair-data-entity-test",
+    "title": "Questionable Analytical Observations",
+    "section": "2.1 First Team Goal: Instantiate the FAIR data entity test",
+    "text": "2.1 First Team Goal: Instantiate the FAIR data entity test\nWe consider the FAIR data entity test instantiated when:\n\nthe data analyst validates minimum assumptions about a single data point in the analyst’s chosen tool,\nnotably, where there is no requirement the validation passes the test."
+  },
+  {
+    "objectID": "qao.html#minimal-assumptions-to-test",
+    "href": "qao.html#minimal-assumptions-to-test",
+    "title": "Questionable Analytical Observations",
+    "section": "2.3 Minimal assumptions to test",
+    "text": "2.3 Minimal assumptions to test\nThe minimal set of tests show in Figure 4 for\n\nuniqueness\nmissingness\nduplicates\n\nallows for data platform development whilst demonstrating a good-faith roadmap to compliance for, say, the EU Comission’s Environmental, Social, and Governance reporting (ESG) (Commission 2025). Ideally, the analyst provides further assumptions, and a previously calculated datum, however this is notoriously difficult for engineers to obtain in practice, thus we provide a set of defaults so that engineers can begin work.\n\n\n\n\n\n\n\n\n\n\nTests Applied on Data Product Layers by Observability, Descending\n\n\n\nTest\nTested\n\n\n\n\nAnalytical Observation\n\n\noutput\nunique key\ndata entity\n\n\nSemantic Transformation\n\n\noutput\nunique key\ndata entity joined across raw sources and tested\n\n\nSource\n\n\noutput\nunique key\ndata entity defined and tested\n\n\ninput\nunique key\ncombination of columns that define a unique row\n\n\ninput\nfreshness\nincrementation or snapshot field\n\n\ninput\nnot empty\ntable-level test\n\n\n\nWe say a unique key has been tested when the same combination of columns have not null and unique tests applied.\n\n\nFreshness tests configurations: daily ingestion (warn &gt; 1 day, error &gt; 1 week); weekly ingestion (warn &gt; 1 week, error &gt; 2 weeks)\n\n\n\n\n\n\n\n\nFigure 4: FAIR data entity tests\n\n\n\n\nIt can be a challenge to communicate to leadership with little experiences of the trenches of data development the obstacles in scaling legacy data to living analyses. By setting these minimal goals, the problem solving is democratised from engineer to analyst.\nWe now turn to motivating1 the solution we just provided."
   }
 ]
