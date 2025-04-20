@@ -17,6 +17,7 @@ execute:
   message: false
   error: true
 
+tags: [Data governance, ESG, DBT, R, SQL, Python, Chaos, Category Theory, Ologs]
 ---
 
 ```{r echo=FALSE, message=FALSE}
@@ -36,17 +37,19 @@ Any data engineer will tell you there's a relentlessly comedic side to the indus
 
 <iframe src="https://www.youtube.com/embed/Pyh1Va_mYWI?si=ieVcPdnxgQ83lMGJ&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-*Nigel gave me a drawing that said 18 inches. Now, whether or not he knows the difference between feet and inches is not my problem. I do what I'm told.* -- *This is Spinal Tap* (1984) [@reiner_this_1984].
+*Nigel gave me a drawing that said 18 inches. Now, whether or not he knows the difference between feet and inches is not my problem. I do what I'm told.*--*This is Spinal Tap* (1984) [@reiner_this_1984].
 
 :::
 
 Those in the trenches of the **modern data stack** (toolchains for working with data at scale [@prakash_what_2023]) know this is why the community have developed principles, such as FAIR [@wilkinson_fair_2016], and open-source tools, such as DBT-core [@dbt_labs_dbt-labsdbt-core_2025] that **opinionate** FAIR.  
 
-These engineers are also the first to tell you just how far from reality industry and research are from realising even a fraction of those aspirations [@landi__2020] [@feuerriegel_fair_2020] [@boeckhout_fair_2018]. 
+These engineers are also the first to tell you just how far from reality industry and research are from realising even a fraction of those aspirations [@landi__2020] [@feuerriegel_fair_2020] [@boeckhout_fair_2018]. This manuscript is a roadmap for the first step in developing a data product--it's a lot more challenging than you might think. 
 
 Something that tools, such as DBT, are beginning to intuit is that the governance of data must be an iterative **workflow** that interoperates with the recursive nature of inquiry, not a policy checkbox at the end--such an aim is (argued in a [sister paper](singularities.qmd)) **chaotically** impossible given how development plans morph and change as questions are refined. 
 
-We must correct for **epistemic drift** in the chaos induced by people and machines interoperating to answer questions with observations at scale. Or, despite our best efforts, we end at the *frontier psychiatry* (@fig-frontier) of data science. 
+We must correct for **epistemic drift**[^2] (deviation from intention) in the chaos induced by people and machines interoperating to answer questions with observations at scale. Or, despite our best efforts, we end at the *frontier psychiatry* (@fig-frontier) of data science. 
+
+[^2]: Look to the sister paper for a deeper discussion of [epistemic drift](singularities.qmd#epistemic-drift).
 
 ::: {#fig-frontier}
 
@@ -56,9 +59,9 @@ Each scientist or engineer is skilled in their own right, but epistemic drift cr
 
 :::
 
-We begin declaritively, as engineers are busy and it's good to give them a table of instructions on the second page so they can stop reading and go code something useful. This manuscript is intended as a tool for engineers to obtain rarely-granted scope from leadership to build reusable data architecture. We then explain what motivates this framework, and provide examples in R, SQL, and Python in appendices.
+We begin declaratively, as engineers are busy and it's good to give them a table of instructions on the second page so they can stop reading and go code something useful. This manuscript is intended as a tool for engineers to obtain rarely-granted scope from leadership to build reusable data architecture. We then explain what motivates this framework, and provide examples in R, SQL, and Python in appendices.
 
-# FAIR Data Entity - User Access Data Test
+# Clopen FAIR Data Entity - User Access Data Test
 
 This test defines the first living analysis development team goal, usually instantiated in an **agile** (for democratising development [@kent_beck_manifesto_2001]) tool, such as an **epic** in JIRA [@atlassian_jira_2025]. This test draws from the V-model of systems development lifecycle that privileges end-user access [@forsberg_717_1998]. 
 
@@ -67,7 +70,12 @@ This test defines the first living analysis development team goal, usually insta
 We consider the FAIR data entity test instantiated when:
 
 1. the data **analyst** validates minimum assumptions about a single data point in the analyst's chosen tool,
-2. notably, where there is no requirement the validation passes the test.
+2. notably, where there is no requirement the validation passes the test,
+3. and the test is **clopen**[^3]--closed according to security requirements, open to analysts and stakeholders.
+
+[^3]: In a nod to the topologically dynamic space data development lives in, we appropriate the mathematical term **clopen** which defines a set that is both open and closed. If you think something being both mathematically closed and open is weird and confusing, you're not alone. 
+  <iframe src="https://www.youtube.com/embed/SyD4p8_y8Kw?si=ZXXQqKZlZo0o21IS&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 
 ## Framing FAIR 
 
@@ -75,7 +83,7 @@ The FAIR framing shown in @fig-fair is a way to communicate the black box of dat
 
 ```{r echo=FALSE, message=FALSE}
 #| label: fig-fair
-#| fig-cap: "Validation of FAIR data entity."
+#| fig-cap: "Validation Requirements for a Clopen FAIR data entity."
 
 source("figures-and-tables/fair-minimum-criteria/fair-minimum-criteria.R")
 
@@ -150,7 +158,18 @@ The tangled anal beads of data development.
 
 :::
 
+# Mind your Ps and Qs
+
+
 # Democratising data development
+
+::: {#fig-captain-data}
+
+<iframe src="https://www.youtube.com/embed/OiYjTb3opAA?si=exJKicW0rAxUyPSV&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+*Platform! Engineer! Analyst! Stakeholder!--By your powers combined... the modern data stack is  yours!*--*Captain Planet and the Planeteers* (1990-1996) [@boxer_captain_1990]
+
+:::
 
 ::: {#fig-fair-entity}
 
@@ -174,7 +193,6 @@ Problem is, if you show the engineers FAIR criteria [@wilkinson_fair_2016], you 
 
 The reality is while data analytic question is reworked, there is little data engineers can know are true about the data. Schema are often non-existent. Because the 
 
-# Datum confusion -- placeholder title
 
 # Learnings -- placeholder title
 
@@ -182,7 +200,11 @@ The reality is while data analytic question is reworked, there is little data en
 
 # Appendices
 
-## FAIR data entity tests for this singularity
+## Fair data test example DBT
+
+## Fair data test example in Python
+
+## FAIR data entity tests in R for this singularity
 
 In all tests, we ask, what is the minimum thing we can do? Then structure exists and we can expand.
 
