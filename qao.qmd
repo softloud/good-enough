@@ -17,6 +17,7 @@ execute:
   message: false
   error: true
 
+tags: [Data governance, ESG, DBT, R, SQL, Python, Chaos, Category Theory, Ologs]
 ---
 
 ```{r echo=FALSE, message=FALSE}
@@ -36,17 +37,19 @@ Any data engineer will tell you there's a relentlessly comedic side to the indus
 
 <iframe src="https://www.youtube.com/embed/Pyh1Va_mYWI?si=ieVcPdnxgQ83lMGJ&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-*Nigel gave me a drawing that said 18 inches. Now, whether or not he knows the difference between feet and inches is not my problem. I do what I'm told.* -- *This is Spinal Tap* (1984) [@reiner_this_1984].
+*Nigel gave me a drawing that said 18 inches. Now, whether or not he knows the difference between feet and inches is not my problem. I do what I'm told.*--*This is Spinal Tap* (1984) [@reiner_this_1984].
 
 :::
 
 Those in the trenches of the **modern data stack** (toolchains for working with data at scale [@prakash_what_2023]) know this is why the community have developed principles, such as FAIR [@wilkinson_fair_2016], and open-source tools, such as DBT-core [@dbt_labs_dbt-labsdbt-core_2025] that **opinionate** FAIR.  
 
-These engineers are also the first to tell you just how far from reality industry and research are from realising even a fraction of those aspirations [@landi__2020] [@feuerriegel_fair_2020] [@boeckhout_fair_2018]. 
+These engineers are also the first to tell you just how far from reality industry and research are from realising even a fraction of those aspirations [@landi__2020] [@feuerriegel_fair_2020] [@boeckhout_fair_2018]. This manuscript is a roadmap for the first step in developing a data product--it's a lot more challenging than you might think. 
 
 Something that tools, such as DBT, are beginning to intuit is that the governance of data must be an iterative **workflow** that interoperates with the recursive nature of inquiry, not a policy checkbox at the end--such an aim is (argued in a [sister paper](singularities.qmd)) **chaotically** impossible given how development plans morph and change as questions are refined. 
 
-We must correct for **epistemic drift** in the chaos induced by people and machines interoperating to answer questions with observations at scale. Or, despite our best efforts, we end at the *frontier psychiatry* (@fig-frontier) of data science. 
+We must correct for **epistemic drift**[^2] (deviation from intention) in the chaos induced by people and machines interoperating to answer questions with observations at scale. Or, despite our best efforts, we end at the *frontier psychiatry* (@fig-frontier) of data science. 
+
+[^2]: Look to the sister paper for a deeper discussion of [epistemic drift](singularities.qmd#epistemic-drift).
 
 ::: {#fig-frontier}
 
@@ -56,9 +59,9 @@ Each scientist or engineer is skilled in their own right, but epistemic drift cr
 
 :::
 
-We begin declaritively, as engineers are busy and it's good to give them a table of instructions on the second page so they can stop reading and go code something useful. This manuscript is intended as a tool for engineers to obtain rarely-granted scope from leadership to build reusable data architecture. We then explain what motivates this framework, and provide examples in R, SQL, and Python in appendices.
+We begin declaratively, as engineers are busy and it's good to give them a table of instructions on the second page so they can stop reading and go code something useful. This manuscript is intended as a tool for engineers to obtain rarely-granted scope from leadership to build reusable data architecture. We then explain what motivates this framework, and provide examples in R, SQL, and Python in appendices.
 
-# FAIR Data Entity - User Access Data Test
+# Clopen FAIR Data Entity - User Access Data Test
 
 This test defines the first living analysis development team goal, usually instantiated in an **agile** (for democratising development [@kent_beck_manifesto_2001]) tool, such as an **epic** in JIRA [@atlassian_jira_2025]. This test draws from the V-model of systems development lifecycle that privileges end-user access [@forsberg_717_1998]. 
 
@@ -67,7 +70,12 @@ This test defines the first living analysis development team goal, usually insta
 We consider the FAIR data entity test instantiated when:
 
 1. the data **analyst** validates minimum assumptions about a single data point in the analyst's chosen tool,
-2. notably, where there is no requirement the validation passes the test.
+2. notably, where there is no requirement the validation passes the test,
+3. and the test is **clopen**[^3]--closed according to security requirements, open to analysts and stakeholders.
+
+[^3]: In a nod to the topologically dynamic space data development lives in, we appropriate the mathematical term **clopen** which defines a set that is both open and closed. If you think something being both mathematically closed and open is weird and confusing, you're not alone. 
+  <iframe src="https://www.youtube.com/embed/SyD4p8_y8Kw?si=ZXXQqKZlZo0o21IS&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 
 ## Framing FAIR 
 
@@ -75,7 +83,7 @@ The FAIR framing shown in @fig-fair is a way to communicate the black box of dat
 
 ```{r echo=FALSE, message=FALSE}
 #| label: fig-fair
-#| fig-cap: "Validation of FAIR data entity."
+#| fig-cap: "Validation Requirements for a Clopen FAIR data entity."
 
 source("figures-and-tables/fair-minimum-criteria/fair-minimum-criteria.R")
 
@@ -131,8 +139,7 @@ The anal beads of data development.
 
 :::
 
-Despite our best-laid agile plans, however, there's an inevitable drift that occurs during the predictably unpredictable recursiveness of data development (@fig-hairy-anal-beads). 
-
+Now, Spivak rightly notes the nature of human inquiry is cyclical [@spivak_category_2014], where result  $\to$ question is looped through, however  reality is a good deal messier. Despite our best-laid agile plans, there's an inevitable drift that occurs during the predictably unpredictable recursiveness of data development (@fig-hairy-anal-beads). 
 
 ::: {#fig-hairy-anal-beads}
 
@@ -150,7 +157,175 @@ The tangled anal beads of data development.
 
 :::
 
+# Mind your Ps and Qs
+
+The problem of getting tangled in the anal beads of data development (@fig-hairy-anal-beads) lies in the *relationship* between the assumptions of the question--posed, by, say, a machine learning model or business KPI--and the answer reported in a dashboard or report. This is where logic and practice begin to diverge.
+
+Let's gesture at the structure of logic, and show where it begins to break down in living analysis development. 
+
+In formal terms, any scientific statement from data takes the form:
+
+> Given we have these observations, we assume this result. 
+
+Consider a KPI:
+
+> Given we have averaged the positive invoice items over years, we assume this is the company's annual revenue.
+
+Or a statistical model: 
+
+> Given we have these observations, we assume this model provides evidence for the result.
+
+Formally, logic phrases this as:
+
+$$
+p \implies q.
+$$
+
+We say this as *if p, then q*. In data science, we take $p$ observations, and assume $q$ result. However, crack open any logic text [say, @smith_introduction_2003], and we find that the truth of this implication may be vacuous (@fig-truth). 
+
+::: {#fig-truth}
+
+```{=html}
+<table>
+  <thead>
+    <tr><th><em>p</em></th><th><em>q</em></th><th><em>p → q</em></th></tr>
+  </thead>
+  <tbody>
+    <tr><td>T</td><td>T</td><td>T</td></tr>
+    <tr><td>T</td><td>F</td><td><strong>F</strong></td></tr>
+    <tr><td>F</td><td>T</td><td>T</td></tr>
+    <tr><td>F</td><td>F</td><td>T</td></tr>
+  </tbody>
+</table>
+```
+Standard propositional logic tells us that any result that follows a false assumption is vacuously true. 
+
+:::
+
+The practice of data science is a living instantiation of this truth table. Consider the KPI example of annual revenue taken by summing all different revenue streams $p_1$ to $p_n$ for each year to get to $q$, the desired KPI. 
+
+::: {#fig-expected-kpi-logic}
+
+
+```{=html}
+<table>
+  <thead>
+    <tr>
+      <th>Year</th>
+      <th><em>p₁</em></th>
+      <th><em>p₂</em></th>
+      <th>⋯</th>
+      <th><em>pₙ</em></th>
+      <th style="border-left:2px solid #000;"><em>q</em> (KPI)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2022</td>
+      <td>✓</td>
+      <td>✓</td>
+      <td>⋯</td>
+      <td>✓</td>
+      <td style="border-left:2px solid #000;">$1.2M</td>
+    </tr>
+    <tr>
+      <td>2023</td>
+      <td>✓</td>
+      <td>✓</td>
+      <td>⋯</td>
+      <td>✓</td>
+      <td style="border-left:2px solid #000;">$1.4M</td>
+    </tr>
+  </tbody>
+</table>
+```
+
+**Expected structure**: If all assumptions $p_1$ to $p_n$ hold, then result $q$ is valid.
+
+
+:::
+
+However, what happens when some of the observatations are spurious? Perhaps there are missing datapoints or duplicates.
+
+::: {#fig-actual-kpi-chaos}
+
+
+```{=html}
+<table>
+  <thead>
+    <tr>
+      <th>Year</th>
+      <th><em>p₁</em></th>
+      <th><em>p₂</em></th>
+      <th>⋯</th>
+      <th><em>pₙ</em></th>
+      <th style="border-left:2px solid #000;"><em>q</em> (KPI)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2022</td>
+      <td>✓</td>
+      <td>🗑️</td>
+      <td>⋯</td>
+      <td>✓</td>
+      <td style="border-left:2px solid #000;">🗑️</td>
+    </tr>
+    <tr>
+      <td>2023</td>
+      <td>🗑️</td>
+      <td>✓</td>
+      <td>⋯</td>
+      <td>🗑️</td>
+      <td style="border-left:2px solid #000;">🗑️</td>
+    </tr>
+  </tbody>
+</table>
+```
+
+**Observed structure**: Some assumptions are clean, some drifted—but all results are trash.
+
+:::
+
+This is commonly described as the **garbage in, garbage out** problem of data science.
+
+## Epistemic drift over time
+
+Worse still, living analysis development is recursive. Suppose a stakeholder asks for revenue excluding a soon-to-be-discontinued product. The request is mentioned briefly to the analyst, but never reaches the data engineer. The system remains unchanged.
+
+Consider game analytics. Player events are commonly  instantiated by developers in a nested, tree-like structure, but analysts need flat data. At project start, the analyst verifies a key assumption: the minigame of interest appears only once per level. A dashboard is deployed using a modern stack—for example, Unity Analytics → Redshift → DBT → Redshift → Tableau.
+
+Later, developers add a second minigame to one of the levels and encode it differently in the tree, unaware that game designers are relying on the dashboard to track average minigame completion time. The analyst, unaware of the schema change, had averaged a nested field assuming uniqueness. That assumption no longer holds. One level now duplicates data, skewing the result. The data engineer doesn’t know it matters. The dashboard updates. It looks fine.
+
+But the numbers are now meaningless--Unity Analytics $\not \to$ Tableau. The data is still valid, the dashboard  still functions, the relationship is no longer valid.
+
+No one notices. No one can. The assumption has silently broken.
+
+## Epistemic drift at scale
+
+Now consider a research software engineer assisting a professor with a simulation study. The professor provides synthetic data and a model script for the engineer to fit thousands of models for parameter tuning. At first, the pipeline runs smoothly.
+
+As the experiment scales, the professor supplies more and more data—terabytes of it. The dataset now spans billions of rows, far beyond what the engineer can feasibly inspect. The model being fit is a log-based model requiring strictly positive numeric input—an assumption that would be clear in real-world biological data, but is easy to violate in simulation.
+
+Suppose a single mistake is introduced into the simulated data—negative values that breach the model’s assumptions. That error propagates silently, replicated thousands of times across model fits. Eventually, the pipeline breaks. The engineer, working downstream and unaware of the log constraint embedded in the professor’s script, is left to debug a system that no longer holds, without the contextual understanding of the model the professor has.
+
+It can take weeks, even months, to trace such a failure to its source. 
+
 # Democratising data development
+
+But if we take a category theoretic approach--espoused in texts such as *Category Theory for the Sciences* [@spivak_category_2014]--to data development and privilege verifying not data points, but the *relationships* between data development roles and processes, we have a roadmap to mitigating garbage data. By ensuring integrity is retained between those who generate the data, those who wrangle the data, and those who analyse and report, we find a way of preventing the vacuousness truth of $F \to F$.
+
+If the game developers and the professor described above had living validations that revealed their assumptions from the start, those who understand the data are able to diagnose garbage data far more efficiently.
+
+::: {#fig-captain-data}
+
+<iframe src="https://www.youtube.com/embed/OiYjTb3opAA?si=exJKicW0rAxUyPSV&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+*Platform! Engineer! Analyst! Stakeholder!--By your powers combined... the modern data stack is  yours!*--*Captain Planet and the Planeteers* (1990-1996) [@boxer_captain_1990]
+
+:::
+
+The modern data stack is a powerful beast. 
 
 ::: {#fig-fair-entity}
 
@@ -174,15 +349,13 @@ Problem is, if you show the engineers FAIR criteria [@wilkinson_fair_2016], you 
 
 The reality is while data analytic question is reworked, there is little data engineers can know are true about the data. Schema are often non-existent. Because the 
 
-# Datum confusion -- placeholder title
-
-# Learnings -- placeholder title
-
-> FAIR data entity tests on some projects. Matt, I thought we could track some projects do some vis here?
-
 # Appendices
 
-## FAIR data entity tests for this singularity
+## DBT FDE test on invoice items
+
+## Python FDE test example on image classification
+
+## R FDE tests for this singularity
 
 In all tests, we ask, what is the minimum thing we can do? Then structure exists and we can expand.
 

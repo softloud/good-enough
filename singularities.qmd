@@ -7,9 +7,13 @@ author:
     affiliations:
       - name: Good Enough Data & Systems Lab
   - name: Mooncake (Measured, ChatGPT 4o), evidence synthesis assistant
+
 number-sections: true
 date: "`r Sys.Date`()`"
+
 bibliography: singularities.bib
+csl: elsevier-vancouver.csl
+
 ---
 
 # The singularity is here, its chaos must be governed
@@ -129,7 +133,7 @@ There is a mismatch between the intended functionality of security, to protect h
 
 We now loosely introduce another key concept, how the harm can be thought of in the **epistemic drift** between intention for privacy measures to increase security and wellbeing and how the outcome produces neither.
 
-## Epistemic drift in musical orientalism
+## Epistemic drift in musical orientalism {#epistemic-drift}
 
 Postmodern frameworks provide theorists with a way of differentiating between a thing and its **representation**, notably which must be constructed by humans describing the thing. Any representation necessarily loses information, mathematically we would say a representation is a projection. Critical theory thus provides powerful ways of understanding epistemic drift.
 
