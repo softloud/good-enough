@@ -139,8 +139,7 @@ The anal beads of data development.
 
 :::
 
-Despite our best-laid agile plans, however, there's an inevitable drift that occurs during the predictably unpredictable recursiveness of data development (@fig-hairy-anal-beads). 
-
+Now, Spivak rightly notes the nature of human inquiry is cyclical [@spivak_category_2014], where result  $\to$ question is looped through, however  reality is a good deal messier. Despite our best-laid agile plans, there's an inevitable drift that occurs during the predictably unpredictable recursiveness of data development (@fig-hairy-anal-beads). 
 
 ::: {#fig-hairy-anal-beads}
 
@@ -160,8 +159,149 @@ The tangled anal beads of data development.
 
 # Mind your Ps and Qs
 
+The problem of getting tangled in the anal beads of data development (@fig-hairy-anal-beads) lies in the *relationship* between the assumptions of the question--posed, by, say, a machine learning model or business KPI--and the answer reported in a dashboard or report. This is where logic and practice begin to diverge.
+
+Let's gesture at the structure of logic, and show where it begins to break down in living analysis development. 
+
+In formal terms, any scientific statement from data takes the form:
+
+> Given we have these observations, we assume this result. 
+
+Consider a KPI:
+
+> Given we have averaged the positive invoice items over years, we assume this is the company's annual revenue.
+
+Or a statistical model: 
+
+> Given we have these observations, we assume this model provides evidence for the result.
+
+Formally, logic phrases this as:
+
+$$
+p \implies q.
+$$
+
+We say this as *if p, then q*. In data science, we take $p$ observations, and assume $q$ result. However, crack open any logic text [say, @smith_introduction_2003], and we find that the truth of this implication may be vacuous (@fig-truth). 
+
+::: {#fig-truth}
+
+```{=html}
+<table>
+  <thead>
+    <tr><th><em>p</em></th><th><em>q</em></th><th><em>p → q</em></th></tr>
+  </thead>
+  <tbody>
+    <tr><td>T</td><td>T</td><td>T</td></tr>
+    <tr><td>T</td><td>F</td><td><strong>F</strong></td></tr>
+    <tr><td>F</td><td>T</td><td>T</td></tr>
+    <tr><td>F</td><td>F</td><td>T</td></tr>
+  </tbody>
+</table>
+```
+Standard propositional logic tells us that any result that follows a false assumption is vacuously true. 
+
+:::
+
+The practice of data science is a living instantiation of this truth table. Consider the KPI example of annual revenue taken by summing all different revenue streams $p_1$ to $p_n$ for each year to get to $q$, the desired KPI. 
+
+::: {#fig-expected-kpi-logic}
+
+
+```{=html}
+<table>
+  <thead>
+    <tr>
+      <th>Year</th>
+      <th><em>p₁</em></th>
+      <th><em>p₂</em></th>
+      <th>⋯</th>
+      <th><em>pₙ</em></th>
+      <th style="border-left:2px solid #000;"><em>q</em> (KPI)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2022</td>
+      <td>✓</td>
+      <td>✓</td>
+      <td>⋯</td>
+      <td>✓</td>
+      <td style="border-left:2px solid #000;">$1.2M</td>
+    </tr>
+    <tr>
+      <td>2023</td>
+      <td>✓</td>
+      <td>✓</td>
+      <td>⋯</td>
+      <td>✓</td>
+      <td style="border-left:2px solid #000;">$1.4M</td>
+    </tr>
+  </tbody>
+</table>
+```
+
+**Expected structure**: If all assumptions $p_1$ to $p_n$ hold, then result $q$ is valid.
+
+
+:::
+
+However, what happens when some of the observatations are spurious? Perhaps there are missing datapoints or duplicates.
+
+::: {#fig-actual-kpi-chaos}
+
+
+```{=html}
+<table>
+  <thead>
+    <tr>
+      <th>Year</th>
+      <th><em>p₁</em></th>
+      <th><em>p₂</em></th>
+      <th>⋯</th>
+      <th><em>pₙ</em></th>
+      <th style="border-left:2px solid #000;"><em>q</em> (KPI)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2022</td>
+      <td>✓</td>
+      <td>🗑️</td>
+      <td>⋯</td>
+      <td>✓</td>
+      <td style="border-left:2px solid #000;">🗑️</td>
+    </tr>
+    <tr>
+      <td>2023</td>
+      <td>🗑️</td>
+      <td>✓</td>
+      <td>⋯</td>
+      <td>🗑️</td>
+      <td style="border-left:2px solid #000;">🗑️</td>
+    </tr>
+  </tbody>
+</table>
+```
+
+**Observed structure**: Some assumptions are clean, some drifted—but all results are trash.
+
+:::
+
+This is commonly described as the **garbage in, garbage out** problem of data science.
+
+Worse still, living analysis development is recursive. Suppose a stakeholder asks for revenue excluding a soon-to-be-discontinued product. The request is mentioned briefly to the analyst, but never reaches the data engineer. The system remains unchanged.
+
+Consider game analytics. Player events are commonly  instantiated by developers in a nested, tree-like structure, but analysts need flat data. At project start, the analyst verifies a key assumption: the minigame of interest appears only once per level. A dashboard is deployed using a modern stack—for example, Unity Analytics → Redshift → DBT → Redshift → Tableau.
+
+Later, developers add a second minigame to one of the levels and encode it differently in the tree, unaware that game designers are relying on the dashboard to track average minigame completion time. The analyst, unaware of the schema change, had averaged a nested field assuming uniqueness. That assumption no longer holds. One level now duplicates data, skewing the result. The data engineer doesn’t know it matters. The dashboard updates. It looks fine.
+
+But the numbers are now meaningless--Unity Analytics $\not \to$ Tableau. The data is still valid, the dashboard  still functions, the relationship is no longer valid.
+
+No one notices. No one can. The assumption has silently broken.
 
 # Democratising data development
+
+But if we take a category theoretic approach--espoused in texts such as *Category Theory for the Sciences* [@spivak_category_2014]--to data development and privilege verifying not data points, but the *relationships* between data development roles and processes, we have a roadmap to mitigating garbage data. By ensuring integrity is retained between those who generate the data, those who wrangle the data, and those who analyse and report, we find a way of preventing the vacuousness truth of $F \to F$.
 
 ::: {#fig-captain-data}
 
@@ -170,6 +310,7 @@ The tangled anal beads of data development.
 *Platform! Engineer! Analyst! Stakeholder!--By your powers combined... the modern data stack is  yours!*--*Captain Planet and the Planeteers* (1990-1996) [@boxer_captain_1990]
 
 :::
+
 
 ::: {#fig-fair-entity}
 
@@ -192,11 +333,6 @@ Problem is, if you show the engineers FAIR criteria [@wilkinson_fair_2016], you 
 > "I've found it best not to do any documetation at all, otherwise people point out what's missing." -- Real things i hear engineers say.  
 
 The reality is while data analytic question is reworked, there is little data engineers can know are true about the data. Schema are often non-existent. Because the 
-
-
-# Learnings -- placeholder title
-
-> FAIR data entity tests on some projects. Matt, I thought we could track some projects do some vis here?
 
 # Appendices
 

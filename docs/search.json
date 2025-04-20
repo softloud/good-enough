@@ -1242,21 +1242,21 @@
     "objectID": "qao.html#fair-data-test-example-dbt",
     "href": "qao.html#fair-data-test-example-dbt",
     "title": "Questionable Analytical Observations",
-    "section": "7.1 Fair data test example DBT",
-    "text": "7.1 Fair data test example DBT"
+    "section": "6.1 Fair data test example DBT",
+    "text": "6.1 Fair data test example DBT"
   },
   {
     "objectID": "qao.html#fair-data-test-example-in-python",
     "href": "qao.html#fair-data-test-example-in-python",
     "title": "Questionable Analytical Observations",
-    "section": "7.2 Fair data test example in Python",
-    "text": "7.2 Fair data test example in Python"
+    "section": "6.2 Fair data test example in Python",
+    "text": "6.2 Fair data test example in Python"
   },
   {
     "objectID": "qao.html#fair-data-entity-tests-in-r-for-this-singularity",
     "href": "qao.html#fair-data-entity-tests-in-r-for-this-singularity",
     "title": "Questionable Analytical Observations",
-    "section": "7.3 FAIR data entity tests in R for this singularity",
-    "text": "7.3 FAIR data entity tests in R for this singularity\nIn all tests, we ask, what is the minimum thing we can do? Then structure exists and we can expand.\n\n7.3.1 Generator fn →\\to display\nTesting the morphism between graph visualisation generator and display.\n\nHow do I call code reusably across both this manuscript, a .qmd file, and a slide deck I’m embedding the same .qmd file?\n\n\n# test where I am\ngetwd()\n\n[1] \"/home/cantabile/Documents/repos/good-enough\"\n\n# need to source\nsource(\"R/test-mooncake.R\")\n\n# test calling from R\nmooncake_test\n\n[1] \"hi Mooncake\""
+    "section": "6.3 FAIR data entity tests in R for this singularity",
+    "text": "6.3 FAIR data entity tests in R for this singularity\nIn all tests, we ask, what is the minimum thing we can do? Then structure exists and we can expand.\n\n6.3.1 Generator fn →\\to display\nTesting the morphism between graph visualisation generator and display.\n\nHow do I call code reusably across both this manuscript, a .qmd file, and a slide deck I’m embedding the same .qmd file?\n\n\n# test where I am\ngetwd()\n\n[1] \"/home/cantabile/Documents/repos/good-enough\"\n\n# need to source\nsource(\"R/test-mooncake.R\")\n\n# test calling from R\nmooncake_test\n\n[1] \"hi Mooncake\""
   }
 ]
