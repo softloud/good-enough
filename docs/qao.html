@@ -219,13 +219,17 @@ div.csl-indent {
   <li><a href="#minimal-assumptions-to-test" id="toc-minimal-assumptions-to-test" class="nav-link" data-scroll-target="#minimal-assumptions-to-test"><span class="header-section-number">2.3</span> Minimal assumptions to test</a></li>
   </ul></li>
   <li><a href="#expectation-vs-reality" id="toc-expectation-vs-reality" class="nav-link" data-scroll-target="#expectation-vs-reality"><span class="header-section-number">3</span> Expectation vs reality</a></li>
-  <li><a href="#mind-your-ps-and-qs" id="toc-mind-your-ps-and-qs" class="nav-link" data-scroll-target="#mind-your-ps-and-qs"><span class="header-section-number">4</span> Mind your Ps and Qs</a></li>
+  <li><a href="#mind-your-ps-and-qs" id="toc-mind-your-ps-and-qs" class="nav-link" data-scroll-target="#mind-your-ps-and-qs"><span class="header-section-number">4</span> Mind your Ps and Qs</a>
+  <ul class="collapse">
+  <li><a href="#epistemic-drift-over-time" id="toc-epistemic-drift-over-time" class="nav-link" data-scroll-target="#epistemic-drift-over-time"><span class="header-section-number">4.1</span> Epistemic drift over time</a></li>
+  <li><a href="#epistemic-drift-at-scale" id="toc-epistemic-drift-at-scale" class="nav-link" data-scroll-target="#epistemic-drift-at-scale"><span class="header-section-number">4.2</span> Epistemic drift at scale</a></li>
+  </ul></li>
   <li><a href="#democratising-data-development" id="toc-democratising-data-development" class="nav-link" data-scroll-target="#democratising-data-development"><span class="header-section-number">5</span> Democratising data development</a></li>
   <li><a href="#appendices" id="toc-appendices" class="nav-link" data-scroll-target="#appendices"><span class="header-section-number">6</span> Appendices</a>
   <ul class="collapse">
-  <li><a href="#fair-data-test-example-dbt" id="toc-fair-data-test-example-dbt" class="nav-link" data-scroll-target="#fair-data-test-example-dbt"><span class="header-section-number">6.1</span> Fair data test example DBT</a></li>
-  <li><a href="#fair-data-test-example-in-python" id="toc-fair-data-test-example-in-python" class="nav-link" data-scroll-target="#fair-data-test-example-in-python"><span class="header-section-number">6.2</span> Fair data test example in Python</a></li>
-  <li><a href="#fair-data-entity-tests-in-r-for-this-singularity" id="toc-fair-data-entity-tests-in-r-for-this-singularity" class="nav-link" data-scroll-target="#fair-data-entity-tests-in-r-for-this-singularity"><span class="header-section-number">6.3</span> FAIR data entity tests in R for this singularity</a>
+  <li><a href="#dbt-fde-test-on-invoice-items" id="toc-dbt-fde-test-on-invoice-items" class="nav-link" data-scroll-target="#dbt-fde-test-on-invoice-items"><span class="header-section-number">6.1</span> DBT FDE test on invoice items</a></li>
+  <li><a href="#python-fde-test-example-on-image-classification" id="toc-python-fde-test-example-on-image-classification" class="nav-link" data-scroll-target="#python-fde-test-example-on-image-classification"><span class="header-section-number">6.2</span> Python FDE test example on image classification</a></li>
+  <li><a href="#r-fde-tests-for-this-singularity" id="toc-r-fde-tests-for-this-singularity" class="nav-link" data-scroll-target="#r-fde-tests-for-this-singularity"><span class="header-section-number">6.3</span> R FDE tests for this singularity</a>
   <ul class="collapse">
   <li><a href="#generator-fn-to-display" id="toc-generator-fn-to-display" class="nav-link" data-scroll-target="#generator-fn-to-display"><span class="header-section-number">6.3.1</span> Generator fn <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>→</mo><annotation encoding="application/x-tex">\to</annotation></semantics></math> display</a></li>
   </ul></li>
@@ -325,23 +329,23 @@ Figure&nbsp;2: Each scientist or engineer is skilled in their own right, but epi
 <div id="fig-fair" class="cell-output-display quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-fair-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div id="dauhmqiclb" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#dauhmqiclb table {
+<div id="eagizmjnka" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#eagizmjnka table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#dauhmqiclb thead, #dauhmqiclb tbody, #dauhmqiclb tfoot, #dauhmqiclb tr, #dauhmqiclb td, #dauhmqiclb th {
+#eagizmjnka thead, #eagizmjnka tbody, #eagizmjnka tfoot, #eagizmjnka tr, #eagizmjnka td, #eagizmjnka th {
   border-style: none;
 }
 
-#dauhmqiclb p {
+#eagizmjnka p {
   margin: 0;
   padding: 0;
 }
 
-#dauhmqiclb .gt_table {
+#eagizmjnka .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -367,12 +371,12 @@ Figure&nbsp;2: Each scientist or engineer is skilled in their own right, but epi
   border-left-color: #D3D3D3;
 }
 
-#dauhmqiclb .gt_caption {
+#eagizmjnka .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#dauhmqiclb .gt_title {
+#eagizmjnka .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -384,7 +388,7 @@ Figure&nbsp;2: Each scientist or engineer is skilled in their own right, but epi
   border-bottom-width: 0;
 }
 
-#dauhmqiclb .gt_subtitle {
+#eagizmjnka .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -396,7 +400,7 @@ Figure&nbsp;2: Each scientist or engineer is skilled in their own right, but epi
   border-top-width: 0;
 }
 
-#dauhmqiclb .gt_heading {
+#eagizmjnka .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -408,13 +412,13 @@ Figure&nbsp;2: Each scientist or engineer is skilled in their own right, but epi
   border-right-color: #D3D3D3;
 }
 
-#dauhmqiclb .gt_bottom_border {
+#eagizmjnka .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#dauhmqiclb .gt_col_headings {
+#eagizmjnka .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -429,7 +433,7 @@ Figure&nbsp;2: Each scientist or engineer is skilled in their own right, but epi
   border-right-color: #D3D3D3;
 }
 
-#dauhmqiclb .gt_col_heading {
+#eagizmjnka .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -449,7 +453,7 @@ Figure&nbsp;2: Each scientist or engineer is skilled in their own right, but epi
   overflow-x: hidden;
 }
 
-#dauhmqiclb .gt_column_spanner_outer {
+#eagizmjnka .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -461,15 +465,15 @@ Figure&nbsp;2: Each scientist or engineer is skilled in their own right, but epi
   padding-right: 4px;
 }
 
-#dauhmqiclb .gt_column_spanner_outer:first-child {
+#eagizmjnka .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#dauhmqiclb .gt_column_spanner_outer:last-child {
+#eagizmjnka .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#dauhmqiclb .gt_column_spanner {
+#eagizmjnka .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -481,11 +485,11 @@ Figure&nbsp;2: Each scientist or engineer is skilled in their own right, but epi
   width: 100%;
 }
 
-#dauhmqiclb .gt_spanner_row {
+#eagizmjnka .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#dauhmqiclb .gt_group_heading {
+#eagizmjnka .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -511,7 +515,7 @@ Figure&nbsp;2: Each scientist or engineer is skilled in their own right, but epi
   text-align: left;
 }
 
-#dauhmqiclb .gt_empty_group_heading {
+#eagizmjnka .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -526,15 +530,15 @@ Figure&nbsp;2: Each scientist or engineer is skilled in their own right, but epi
   vertical-align: middle;
 }
 
-#dauhmqiclb .gt_from_md > :first-child {
+#eagizmjnka .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#dauhmqiclb .gt_from_md > :last-child {
+#eagizmjnka .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#dauhmqiclb .gt_row {
+#eagizmjnka .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -553,7 +557,7 @@ Figure&nbsp;2: Each scientist or engineer is skilled in their own right, but epi
   overflow-x: hidden;
 }
 
-#dauhmqiclb .gt_stub {
+#eagizmjnka .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -566,7 +570,7 @@ Figure&nbsp;2: Each scientist or engineer is skilled in their own right, but epi
   padding-right: 5px;
 }
 
-#dauhmqiclb .gt_stub_row_group {
+#eagizmjnka .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -580,15 +584,15 @@ Figure&nbsp;2: Each scientist or engineer is skilled in their own right, but epi
   vertical-align: top;
 }
 
-#dauhmqiclb .gt_row_group_first td {
+#eagizmjnka .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#dauhmqiclb .gt_row_group_first th {
+#eagizmjnka .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#dauhmqiclb .gt_summary_row {
+#eagizmjnka .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -598,16 +602,16 @@ Figure&nbsp;2: Each scientist or engineer is skilled in their own right, but epi
   padding-right: 5px;
 }
 
-#dauhmqiclb .gt_first_summary_row {
+#eagizmjnka .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#dauhmqiclb .gt_first_summary_row.thick {
+#eagizmjnka .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#dauhmqiclb .gt_last_summary_row {
+#eagizmjnka .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -617,7 +621,7 @@ Figure&nbsp;2: Each scientist or engineer is skilled in their own right, but epi
   border-bottom-color: #D3D3D3;
 }
 
-#dauhmqiclb .gt_grand_summary_row {
+#eagizmjnka .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -627,7 +631,7 @@ Figure&nbsp;2: Each scientist or engineer is skilled in their own right, but epi
   padding-right: 5px;
 }
 
-#dauhmqiclb .gt_first_grand_summary_row {
+#eagizmjnka .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -637,7 +641,7 @@ Figure&nbsp;2: Each scientist or engineer is skilled in their own right, but epi
   border-top-color: #D3D3D3;
 }
 
-#dauhmqiclb .gt_last_grand_summary_row_top {
+#eagizmjnka .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -647,11 +651,11 @@ Figure&nbsp;2: Each scientist or engineer is skilled in their own right, but epi
   border-bottom-color: #D3D3D3;
 }
 
-#dauhmqiclb .gt_striped {
+#eagizmjnka .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#dauhmqiclb .gt_table_body {
+#eagizmjnka .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -660,7 +664,7 @@ Figure&nbsp;2: Each scientist or engineer is skilled in their own right, but epi
   border-bottom-color: #D3D3D3;
 }
 
-#dauhmqiclb .gt_footnotes {
+#eagizmjnka .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -674,7 +678,7 @@ Figure&nbsp;2: Each scientist or engineer is skilled in their own right, but epi
   border-right-color: #D3D3D3;
 }
 
-#dauhmqiclb .gt_footnote {
+#eagizmjnka .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -683,7 +687,7 @@ Figure&nbsp;2: Each scientist or engineer is skilled in their own right, but epi
   padding-right: 5px;
 }
 
-#dauhmqiclb .gt_sourcenotes {
+#eagizmjnka .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -697,7 +701,7 @@ Figure&nbsp;2: Each scientist or engineer is skilled in their own right, but epi
   border-right-color: #D3D3D3;
 }
 
-#dauhmqiclb .gt_sourcenote {
+#eagizmjnka .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -705,72 +709,72 @@ Figure&nbsp;2: Each scientist or engineer is skilled in their own right, but epi
   padding-right: 5px;
 }
 
-#dauhmqiclb .gt_left {
+#eagizmjnka .gt_left {
   text-align: left;
 }
 
-#dauhmqiclb .gt_center {
+#eagizmjnka .gt_center {
   text-align: center;
 }
 
-#dauhmqiclb .gt_right {
+#eagizmjnka .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#dauhmqiclb .gt_font_normal {
+#eagizmjnka .gt_font_normal {
   font-weight: normal;
 }
 
-#dauhmqiclb .gt_font_bold {
+#eagizmjnka .gt_font_bold {
   font-weight: bold;
 }
 
-#dauhmqiclb .gt_font_italic {
+#eagizmjnka .gt_font_italic {
   font-style: italic;
 }
 
-#dauhmqiclb .gt_super {
+#eagizmjnka .gt_super {
   font-size: 65%;
 }
 
-#dauhmqiclb .gt_footnote_marks {
+#eagizmjnka .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#dauhmqiclb .gt_asterisk {
+#eagizmjnka .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#dauhmqiclb .gt_indent_1 {
+#eagizmjnka .gt_indent_1 {
   text-indent: 5px;
 }
 
-#dauhmqiclb .gt_indent_2 {
+#eagizmjnka .gt_indent_2 {
   text-indent: 10px;
 }
 
-#dauhmqiclb .gt_indent_3 {
+#eagizmjnka .gt_indent_3 {
   text-indent: 15px;
 }
 
-#dauhmqiclb .gt_indent_4 {
+#eagizmjnka .gt_indent_4 {
   text-indent: 20px;
 }
 
-#dauhmqiclb .gt_indent_5 {
+#eagizmjnka .gt_indent_5 {
   text-indent: 25px;
 }
 
-#dauhmqiclb .katex-display {
+#eagizmjnka .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#dauhmqiclb div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#eagizmjnka div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -827,23 +831,23 @@ Figure&nbsp;3: Validation Requirements for a Clopen FAIR data entity.
 <div id="fig-tests" class="cell-output-display quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-tests-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div id="wtofxtoggh" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#wtofxtoggh table {
+<div id="vmmpzizqcs" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#vmmpzizqcs table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#wtofxtoggh thead, #wtofxtoggh tbody, #wtofxtoggh tfoot, #wtofxtoggh tr, #wtofxtoggh td, #wtofxtoggh th {
+#vmmpzizqcs thead, #vmmpzizqcs tbody, #vmmpzizqcs tfoot, #vmmpzizqcs tr, #vmmpzizqcs td, #vmmpzizqcs th {
   border-style: none;
 }
 
-#wtofxtoggh p {
+#vmmpzizqcs p {
   margin: 0;
   padding: 0;
 }
 
-#wtofxtoggh .gt_table {
+#vmmpzizqcs .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -869,12 +873,12 @@ Figure&nbsp;3: Validation Requirements for a Clopen FAIR data entity.
   border-left-color: #D3D3D3;
 }
 
-#wtofxtoggh .gt_caption {
+#vmmpzizqcs .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#wtofxtoggh .gt_title {
+#vmmpzizqcs .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -886,7 +890,7 @@ Figure&nbsp;3: Validation Requirements for a Clopen FAIR data entity.
   border-bottom-width: 0;
 }
 
-#wtofxtoggh .gt_subtitle {
+#vmmpzizqcs .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -898,7 +902,7 @@ Figure&nbsp;3: Validation Requirements for a Clopen FAIR data entity.
   border-top-width: 0;
 }
 
-#wtofxtoggh .gt_heading {
+#vmmpzizqcs .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -910,13 +914,13 @@ Figure&nbsp;3: Validation Requirements for a Clopen FAIR data entity.
   border-right-color: #D3D3D3;
 }
 
-#wtofxtoggh .gt_bottom_border {
+#vmmpzizqcs .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#wtofxtoggh .gt_col_headings {
+#vmmpzizqcs .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -931,7 +935,7 @@ Figure&nbsp;3: Validation Requirements for a Clopen FAIR data entity.
   border-right-color: #D3D3D3;
 }
 
-#wtofxtoggh .gt_col_heading {
+#vmmpzizqcs .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -951,7 +955,7 @@ Figure&nbsp;3: Validation Requirements for a Clopen FAIR data entity.
   overflow-x: hidden;
 }
 
-#wtofxtoggh .gt_column_spanner_outer {
+#vmmpzizqcs .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -963,15 +967,15 @@ Figure&nbsp;3: Validation Requirements for a Clopen FAIR data entity.
   padding-right: 4px;
 }
 
-#wtofxtoggh .gt_column_spanner_outer:first-child {
+#vmmpzizqcs .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#wtofxtoggh .gt_column_spanner_outer:last-child {
+#vmmpzizqcs .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#wtofxtoggh .gt_column_spanner {
+#vmmpzizqcs .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -983,11 +987,11 @@ Figure&nbsp;3: Validation Requirements for a Clopen FAIR data entity.
   width: 100%;
 }
 
-#wtofxtoggh .gt_spanner_row {
+#vmmpzizqcs .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#wtofxtoggh .gt_group_heading {
+#vmmpzizqcs .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1013,7 +1017,7 @@ Figure&nbsp;3: Validation Requirements for a Clopen FAIR data entity.
   text-align: left;
 }
 
-#wtofxtoggh .gt_empty_group_heading {
+#vmmpzizqcs .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1028,15 +1032,15 @@ Figure&nbsp;3: Validation Requirements for a Clopen FAIR data entity.
   vertical-align: middle;
 }
 
-#wtofxtoggh .gt_from_md > :first-child {
+#vmmpzizqcs .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#wtofxtoggh .gt_from_md > :last-child {
+#vmmpzizqcs .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#wtofxtoggh .gt_row {
+#vmmpzizqcs .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1055,7 +1059,7 @@ Figure&nbsp;3: Validation Requirements for a Clopen FAIR data entity.
   overflow-x: hidden;
 }
 
-#wtofxtoggh .gt_stub {
+#vmmpzizqcs .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1068,7 +1072,7 @@ Figure&nbsp;3: Validation Requirements for a Clopen FAIR data entity.
   padding-right: 5px;
 }
 
-#wtofxtoggh .gt_stub_row_group {
+#vmmpzizqcs .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1082,15 +1086,15 @@ Figure&nbsp;3: Validation Requirements for a Clopen FAIR data entity.
   vertical-align: top;
 }
 
-#wtofxtoggh .gt_row_group_first td {
+#vmmpzizqcs .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#wtofxtoggh .gt_row_group_first th {
+#vmmpzizqcs .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#wtofxtoggh .gt_summary_row {
+#vmmpzizqcs .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1100,16 +1104,16 @@ Figure&nbsp;3: Validation Requirements for a Clopen FAIR data entity.
   padding-right: 5px;
 }
 
-#wtofxtoggh .gt_first_summary_row {
+#vmmpzizqcs .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#wtofxtoggh .gt_first_summary_row.thick {
+#vmmpzizqcs .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#wtofxtoggh .gt_last_summary_row {
+#vmmpzizqcs .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1119,7 +1123,7 @@ Figure&nbsp;3: Validation Requirements for a Clopen FAIR data entity.
   border-bottom-color: #D3D3D3;
 }
 
-#wtofxtoggh .gt_grand_summary_row {
+#vmmpzizqcs .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1129,7 +1133,7 @@ Figure&nbsp;3: Validation Requirements for a Clopen FAIR data entity.
   padding-right: 5px;
 }
 
-#wtofxtoggh .gt_first_grand_summary_row {
+#vmmpzizqcs .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1139,7 +1143,7 @@ Figure&nbsp;3: Validation Requirements for a Clopen FAIR data entity.
   border-top-color: #D3D3D3;
 }
 
-#wtofxtoggh .gt_last_grand_summary_row_top {
+#vmmpzizqcs .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1149,11 +1153,11 @@ Figure&nbsp;3: Validation Requirements for a Clopen FAIR data entity.
   border-bottom-color: #D3D3D3;
 }
 
-#wtofxtoggh .gt_striped {
+#vmmpzizqcs .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#wtofxtoggh .gt_table_body {
+#vmmpzizqcs .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1162,7 +1166,7 @@ Figure&nbsp;3: Validation Requirements for a Clopen FAIR data entity.
   border-bottom-color: #D3D3D3;
 }
 
-#wtofxtoggh .gt_footnotes {
+#vmmpzizqcs .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1176,7 +1180,7 @@ Figure&nbsp;3: Validation Requirements for a Clopen FAIR data entity.
   border-right-color: #D3D3D3;
 }
 
-#wtofxtoggh .gt_footnote {
+#vmmpzizqcs .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1185,7 +1189,7 @@ Figure&nbsp;3: Validation Requirements for a Clopen FAIR data entity.
   padding-right: 5px;
 }
 
-#wtofxtoggh .gt_sourcenotes {
+#vmmpzizqcs .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1199,7 +1203,7 @@ Figure&nbsp;3: Validation Requirements for a Clopen FAIR data entity.
   border-right-color: #D3D3D3;
 }
 
-#wtofxtoggh .gt_sourcenote {
+#vmmpzizqcs .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1207,72 +1211,72 @@ Figure&nbsp;3: Validation Requirements for a Clopen FAIR data entity.
   padding-right: 5px;
 }
 
-#wtofxtoggh .gt_left {
+#vmmpzizqcs .gt_left {
   text-align: left;
 }
 
-#wtofxtoggh .gt_center {
+#vmmpzizqcs .gt_center {
   text-align: center;
 }
 
-#wtofxtoggh .gt_right {
+#vmmpzizqcs .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#wtofxtoggh .gt_font_normal {
+#vmmpzizqcs .gt_font_normal {
   font-weight: normal;
 }
 
-#wtofxtoggh .gt_font_bold {
+#vmmpzizqcs .gt_font_bold {
   font-weight: bold;
 }
 
-#wtofxtoggh .gt_font_italic {
+#vmmpzizqcs .gt_font_italic {
   font-style: italic;
 }
 
-#wtofxtoggh .gt_super {
+#vmmpzizqcs .gt_super {
   font-size: 65%;
 }
 
-#wtofxtoggh .gt_footnote_marks {
+#vmmpzizqcs .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#wtofxtoggh .gt_asterisk {
+#vmmpzizqcs .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#wtofxtoggh .gt_indent_1 {
+#vmmpzizqcs .gt_indent_1 {
   text-indent: 5px;
 }
 
-#wtofxtoggh .gt_indent_2 {
+#vmmpzizqcs .gt_indent_2 {
   text-indent: 10px;
 }
 
-#wtofxtoggh .gt_indent_3 {
+#vmmpzizqcs .gt_indent_3 {
   text-indent: 15px;
 }
 
-#wtofxtoggh .gt_indent_4 {
+#vmmpzizqcs .gt_indent_4 {
   text-indent: 20px;
 }
 
-#wtofxtoggh .gt_indent_5 {
+#vmmpzizqcs .gt_indent_5 {
   text-indent: 25px;
 }
 
-#wtofxtoggh .katex-display {
+#vmmpzizqcs .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#wtofxtoggh div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#vmmpzizqcs div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -1359,8 +1363,8 @@ Figure&nbsp;4: FAIR data entity tests<a href="#fn3" class="footnote-ref" id="fnr
 <div aria-describedby="fig-anal-beads-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell">
 <div class="cell-output-display">
-<div class="grViz html-widget html-fill-item" id="htmlwidget-74254c078205a4ec1e99" style="width:100%;height:216px;"></div>
-<script type="application/json" data-for="htmlwidget-74254c078205a4ec1e99">{"x":{"diagram":"digraph {\n  graph [margin=0.05, bgcolor=\"transparent\", rankdir=TB, splines=true];\n  rankdir=LR;\n  node [fontname=Helvetica];\n\n  \"source\" [style=filled, fillcolor=\"#F5DEB3B3\", shape=box];\n  \"ingest\" [style=filled, fillcolor=\"#ADD8E6B3\", shape=box];\n  \"transform\" [style=filled, fillcolor=\"#ADD8E6B3\", shape=box];\n  \"validate\" [style=filled, fillcolor=\"#ADD8E6B3\", shape=box];\n  \"document\" [style=filled, fillcolor=\"#ADD8E6B3\", shape=box];\n  \"analyse\" [style=filled, fillcolor=\"#8FBC8FB3\", shape=box];\n  \"interpret\" [style=filled, fillcolor=\"#8FBC8FB3\", shape=box];\n  \"decision\" [style=filled, fillcolor=\"#F08080B3\", shape=box];\n  \"question\" [style=filled, fillcolor=\"#F08080B3\", shape=box];\n\n  \"question\" -> \"source\" [style=solid];\n  \"source\" -> \"ingest\" [style=solid];\n  \"ingest\" -> \"transform\" [style=solid];\n  \"transform\" -> \"validate\" [style=solid];\n  \"validate\" -> \"document\" [style=solid];\n  \"document\" -> \"analyse\" [style=solid];\n  \"analyse\" -> \"interpret\" [style=solid];\n  \"interpret\" -> \"decision\" [style=solid];\n\n  subgraph cluster_legend {\n  label = \"Legend\";\n  style = dashed;\n  fontsize = 12;\n  margin = 20;\n  rankdir = LR;\n  rank = sink;\n\"data engineering\" [label=\"data engineering\", style=filled, fillcolor=\"#ADD8E6B3\", shape=box];\n  \"data analysis\" [label=\"data analysis\", style=filled, fillcolor=\"#8FBC8FB3\", shape=box];\n  \"project planning\" [label=\"project planning\", style=filled, fillcolor=\"#F5DEB3B3\", shape=box];\n  \"decision making\" [label=\"decision making\", style=filled, fillcolor=\"#F08080B3\", shape=box];\n  \"platform engineering\" [label=\"platform engineering\", style=filled, fillcolor=\"#FF8C00B3\", shape=box];\n  \"data engineering\" -> \"data analysis\" -> \"platform engineering\" -> \"project planning\" -> \"decision making\" [style=invis];\n}\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+<div class="grViz html-widget html-fill-item" id="htmlwidget-23c0dba43613dbbc7059" style="width:100%;height:216px;"></div>
+<script type="application/json" data-for="htmlwidget-23c0dba43613dbbc7059">{"x":{"diagram":"digraph {\n  graph [margin=0.05, bgcolor=\"transparent\", rankdir=TB, splines=true];\n  rankdir=LR;\n  node [fontname=Helvetica];\n\n  \"source\" [style=filled, fillcolor=\"#F5DEB3B3\", shape=box];\n  \"ingest\" [style=filled, fillcolor=\"#ADD8E6B3\", shape=box];\n  \"transform\" [style=filled, fillcolor=\"#ADD8E6B3\", shape=box];\n  \"validate\" [style=filled, fillcolor=\"#ADD8E6B3\", shape=box];\n  \"document\" [style=filled, fillcolor=\"#ADD8E6B3\", shape=box];\n  \"analyse\" [style=filled, fillcolor=\"#8FBC8FB3\", shape=box];\n  \"interpret\" [style=filled, fillcolor=\"#8FBC8FB3\", shape=box];\n  \"decision\" [style=filled, fillcolor=\"#F08080B3\", shape=box];\n  \"question\" [style=filled, fillcolor=\"#F08080B3\", shape=box];\n\n  \"question\" -> \"source\" [style=solid];\n  \"source\" -> \"ingest\" [style=solid];\n  \"ingest\" -> \"transform\" [style=solid];\n  \"transform\" -> \"validate\" [style=solid];\n  \"validate\" -> \"document\" [style=solid];\n  \"document\" -> \"analyse\" [style=solid];\n  \"analyse\" -> \"interpret\" [style=solid];\n  \"interpret\" -> \"decision\" [style=solid];\n\n  subgraph cluster_legend {\n  label = \"Legend\";\n  style = dashed;\n  fontsize = 12;\n  margin = 20;\n  rankdir = LR;\n  rank = sink;\n\"data engineering\" [label=\"data engineering\", style=filled, fillcolor=\"#ADD8E6B3\", shape=box];\n  \"data analysis\" [label=\"data analysis\", style=filled, fillcolor=\"#8FBC8FB3\", shape=box];\n  \"project planning\" [label=\"project planning\", style=filled, fillcolor=\"#F5DEB3B3\", shape=box];\n  \"decision making\" [label=\"decision making\", style=filled, fillcolor=\"#F08080B3\", shape=box];\n  \"platform engineering\" [label=\"platform engineering\", style=filled, fillcolor=\"#FF8C00B3\", shape=box];\n  \"data engineering\" -> \"data analysis\" -> \"platform engineering\" -> \"project planning\" -> \"decision making\" [style=invis];\n}\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 </div>
@@ -1375,8 +1379,8 @@ Figure&nbsp;5: The anal beads of data development.
 <div aria-describedby="fig-hairy-anal-beads-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell">
 <div class="cell-output-display">
-<div class="grViz html-widget html-fill-item" id="htmlwidget-f4b889b119e8872e8628" style="width:100%;height:433px;"></div>
-<script type="application/json" data-for="htmlwidget-f4b889b119e8872e8628">{"x":{"diagram":"digraph {\n  graph [margin=0.05, bgcolor=\"transparent\", rankdir=TB, splines=true];\n  rankdir=LR;\n  node [fontname=Helvetica];\n\n  \"analyse\" [style=filled, fillcolor=\"#8FBC8FB3\", shape=box];\n  \"transform\" [style=filled, fillcolor=\"#ADD8E6B3\", shape=box];\n  \"ingest\" [style=filled, fillcolor=\"#ADD8E6B3\", shape=box];\n  \"interpret\" [style=filled, fillcolor=\"#8FBC8FB3\", shape=box];\n  \"deploy\" [style=filled, fillcolor=\"#FF8C00B3\", shape=box];\n  \"source\" [style=filled, fillcolor=\"#F5DEB3B3\", shape=box];\n  \"validate\" [style=filled, fillcolor=\"#ADD8E6B3\", shape=box];\n  \"document\" [style=filled, fillcolor=\"#ADD8E6B3\", shape=box];\n  \"decision\" [style=filled, fillcolor=\"#F08080B3\", shape=box];\n  \"question\" [style=filled, fillcolor=\"#F08080B3\", shape=box];\n\n  \"interpret\" -> \"analyse\" [style=dashed];\n  \"interpret\" -> \"transform\" [style=dashed];\n  \"analyse\" -> \"ingest\" [style=dashed];\n  \"decision\" -> \"interpret\" [style=dashed];\n  \"analyse\" -> \"transform\" [style=dashed];\n  \"analyse\" -> \"interpret\" [style=dashed];\n  \"analyse\" -> \"deploy\" [style=dashed];\n  \"question\" -> \"source\" [style=solid];\n  \"source\" -> \"ingest\" [style=solid];\n  \"ingest\" -> \"transform\" [style=solid];\n  \"transform\" -> \"validate\" [style=solid];\n  \"validate\" -> \"document\" [style=solid];\n  \"document\" -> \"analyse\" [style=solid];\n  \"analyse\" -> \"interpret\" [style=solid];\n  \"interpret\" -> \"decision\" [style=solid];\n\n  subgraph cluster_legend {\n  label = \"Legend\";\n  style = dashed;\n  fontsize = 12;\n  margin = 20;\n  rankdir = LR;\n  rank = sink;\n\"data engineering\" [label=\"data engineering\", style=filled, fillcolor=\"#ADD8E6B3\", shape=box];\n  \"data analysis\" [label=\"data analysis\", style=filled, fillcolor=\"#8FBC8FB3\", shape=box];\n  \"project planning\" [label=\"project planning\", style=filled, fillcolor=\"#F5DEB3B3\", shape=box];\n  \"decision making\" [label=\"decision making\", style=filled, fillcolor=\"#F08080B3\", shape=box];\n  \"platform engineering\" [label=\"platform engineering\", style=filled, fillcolor=\"#FF8C00B3\", shape=box];\n  \"data engineering\" -> \"data analysis\" -> \"platform engineering\" -> \"project planning\" -> \"decision making\" [style=invis];\n}\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+<div class="grViz html-widget html-fill-item" id="htmlwidget-dda594f25b41a46d92c8" style="width:100%;height:433px;"></div>
+<script type="application/json" data-for="htmlwidget-dda594f25b41a46d92c8">{"x":{"diagram":"digraph {\n  graph [margin=0.05, bgcolor=\"transparent\", rankdir=TB, splines=true];\n  rankdir=LR;\n  node [fontname=Helvetica];\n\n  \"analyse\" [style=filled, fillcolor=\"#8FBC8FB3\", shape=box];\n  \"transform\" [style=filled, fillcolor=\"#ADD8E6B3\", shape=box];\n  \"ingest\" [style=filled, fillcolor=\"#ADD8E6B3\", shape=box];\n  \"interpret\" [style=filled, fillcolor=\"#8FBC8FB3\", shape=box];\n  \"deploy\" [style=filled, fillcolor=\"#FF8C00B3\", shape=box];\n  \"source\" [style=filled, fillcolor=\"#F5DEB3B3\", shape=box];\n  \"validate\" [style=filled, fillcolor=\"#ADD8E6B3\", shape=box];\n  \"document\" [style=filled, fillcolor=\"#ADD8E6B3\", shape=box];\n  \"decision\" [style=filled, fillcolor=\"#F08080B3\", shape=box];\n  \"question\" [style=filled, fillcolor=\"#F08080B3\", shape=box];\n\n  \"interpret\" -> \"analyse\" [style=dashed];\n  \"interpret\" -> \"transform\" [style=dashed];\n  \"analyse\" -> \"ingest\" [style=dashed];\n  \"decision\" -> \"interpret\" [style=dashed];\n  \"analyse\" -> \"transform\" [style=dashed];\n  \"analyse\" -> \"interpret\" [style=dashed];\n  \"analyse\" -> \"deploy\" [style=dashed];\n  \"question\" -> \"source\" [style=solid];\n  \"source\" -> \"ingest\" [style=solid];\n  \"ingest\" -> \"transform\" [style=solid];\n  \"transform\" -> \"validate\" [style=solid];\n  \"validate\" -> \"document\" [style=solid];\n  \"document\" -> \"analyse\" [style=solid];\n  \"analyse\" -> \"interpret\" [style=solid];\n  \"interpret\" -> \"decision\" [style=solid];\n\n  subgraph cluster_legend {\n  label = \"Legend\";\n  style = dashed;\n  fontsize = 12;\n  margin = 20;\n  rankdir = LR;\n  rank = sink;\n\"data engineering\" [label=\"data engineering\", style=filled, fillcolor=\"#ADD8E6B3\", shape=box];\n  \"data analysis\" [label=\"data analysis\", style=filled, fillcolor=\"#8FBC8FB3\", shape=box];\n  \"project planning\" [label=\"project planning\", style=filled, fillcolor=\"#F5DEB3B3\", shape=box];\n  \"decision making\" [label=\"decision making\", style=filled, fillcolor=\"#F08080B3\", shape=box];\n  \"platform engineering\" [label=\"platform engineering\", style=filled, fillcolor=\"#FF8C00B3\", shape=box];\n  \"data engineering\" -> \"data analysis\" -> \"platform engineering\" -> \"project planning\" -> \"decision making\" [style=invis];\n}\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 </div>
@@ -1528,15 +1532,26 @@ Figure&nbsp;9: <strong>Observed structure</strong>: Some assumptions are clean, 
 </figure>
 </div>
 <p>This is commonly described as the <strong>garbage in, garbage out</strong> problem of data science.</p>
+<section id="epistemic-drift-over-time" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="epistemic-drift-over-time"><span class="header-section-number">4.1</span> Epistemic drift over time</h2>
 <p>Worse still, living analysis development is recursive. Suppose a stakeholder asks for revenue excluding a soon-to-be-discontinued product. The request is mentioned briefly to the analyst, but never reaches the data engineer. The system remains unchanged.</p>
 <p>Consider game analytics. Player events are commonly instantiated by developers in a nested, tree-like structure, but analysts need flat data. At project start, the analyst verifies a key assumption: the minigame of interest appears only once per level. A dashboard is deployed using a modern stack—for example, Unity Analytics → Redshift → DBT → Redshift → Tableau.</p>
 <p>Later, developers add a second minigame to one of the levels and encode it differently in the tree, unaware that game designers are relying on the dashboard to track average minigame completion time. The analyst, unaware of the schema change, had averaged a nested field assuming uniqueness. That assumption no longer holds. One level now duplicates data, skewing the result. The data engineer doesn’t know it matters. The dashboard updates. It looks fine.</p>
 <p>But the numbers are now meaningless–Unity Analytics <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>↛</mo><annotation encoding="application/x-tex">\not \to</annotation></semantics></math> Tableau. The data is still valid, the dashboard still functions, the relationship is no longer valid.</p>
 <p>No one notices. No one can. The assumption has silently broken.</p>
 </section>
+<section id="epistemic-drift-at-scale" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="epistemic-drift-at-scale"><span class="header-section-number">4.2</span> Epistemic drift at scale</h2>
+<p>Now consider a research software engineer assisting a professor with a simulation study. The professor provides synthetic data and a model script for the engineer to fit thousands of models for parameter tuning. At first, the pipeline runs smoothly.</p>
+<p>As the experiment scales, the professor supplies more and more data—terabytes of it. The dataset now spans billions of rows, far beyond what the engineer can feasibly inspect. The model being fit is a log-based model requiring strictly positive numeric input—an assumption that would be clear in real-world biological data, but is easy to violate in simulation.</p>
+<p>Suppose a single mistake is introduced into the simulated data—negative values that breach the model’s assumptions. That error propagates silently, replicated thousands of times across model fits. Eventually, the pipeline breaks. The engineer, working downstream and unaware of the log constraint embedded in the professor’s script, is left to debug a system that no longer holds, without the contextual understanding of the model the professor has.</p>
+<p>It can take weeks, even months, to trace such a failure to its source.</p>
+</section>
+</section>
 <section id="democratising-data-development" class="level1" data-number="5">
 <h1 data-number="5"><span class="header-section-number">5</span> Democratising data development</h1>
 <p>But if we take a category theoretic approach–espoused in texts such as <em>Category Theory for the Sciences</em> <span class="citation" data-cites="spivak_category_2014">[<a href="#ref-spivak_category_2014" role="doc-biblioref">13</a>]</span>–to data development and privilege verifying not data points, but the <em>relationships</em> between data development roles and processes, we have a roadmap to mitigating garbage data. By ensuring integrity is retained between those who generate the data, those who wrangle the data, and those who analyse and report, we find a way of preventing the vacuousness truth of <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>→</mo><mi>F</mi></mrow><annotation encoding="application/x-tex">F \to F</annotation></semantics></math>.</p>
+<p>If the game developers and the professor described above had living validations that revealed their assumptions from the start, those who understand the data are able to diagnose garbage data far more efficiently.</p>
 <div id="fig-captain-data" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-captain-data-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -1548,13 +1563,14 @@ Figure&nbsp;10: <em>Platform! Engineer! Analyst! Stakeholder!–By your powers c
 </figcaption>
 </figure>
 </div>
+<p>The modern data stack is a powerful beast.</p>
 <div id="fig-fair-entity" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-fair-entity-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell">
 <div class="cell-output-display">
-<div class="grViz html-widget html-fill-item" id="htmlwidget-3f1730af0d777c78a25d" style="width:100%;height:650px;"></div>
-<script type="application/json" data-for="htmlwidget-3f1730af0d777c78a25d">{"x":{"diagram":"digraph {\n  graph [margin=0.05, bgcolor=\"transparent\", rankdir=TB, splines=true];\n  rankdir=LR;\n  node [fontname=Helvetica];\n\n  \"question\" [style=filled, fillcolor=\"#F08080B3\", shape=box];\n  \"project planning development\" [style=filled, fillcolor=\"#F5DEB3B3\", shape=box];\n  \"scope fair data entity\" [style=filled, fillcolor=\"#F5DEB3B3\", shape=box];\n  \"ingest\" [style=filled, fillcolor=\"#ADD8E6B3\", shape=box];\n  \"transform data entity\" [style=filled, fillcolor=\"#ADD8E6B3\", shape=box];\n  \"document data entity\" [style=filled, fillcolor=\"#ADD8E6B3\", shape=box];\n  \"document validation of data entity\" [style=filled, fillcolor=\"#8FBC8FB3\", shape=box];\n  \"deploy documentation\" [style=filled, fillcolor=\"#FF8C00B3\", shape=box];\n  \"validate data entity\" [style=filled, fillcolor=\"#8FBC8FB3\", shape=box];\n  \"debug data entity\" [style=filled, fillcolor=\"#ADD8E6B3\", shape=box];\n  \"scope fair data product\" [style=filled, fillcolor=\"#F5DEB3B3\", shape=box];\n  \"transform\" [style=filled, fillcolor=\"#ADD8E6B3\", shape=box];\n  \"unscoped platform engineering\" [style=filled, fillcolor=\"#FF8C00B3\", shape=box];\n  \"fair data product\" [style=filled, fillcolor=\"#F5DEB3B3\", shape=box];\n  \"analyse\" [style=filled, fillcolor=\"#8FBC8FB3\", shape=box];\n  \"interpret\" [style=filled, fillcolor=\"#8FBC8FB3\", shape=box];\n  \"deploy analysis tool\" [style=filled, fillcolor=\"#FF8C00B3\", shape=box];\n  \"unscoped platform engineering development\" [style=filled, fillcolor=\"#FF8C00B3\", shape=box];\n  \"unscoped data engineering development\" [style=filled, fillcolor=\"#ADD8E6B3\", shape=box];\n  \"project reporting development\" [style=filled, fillcolor=\"#F5DEB3B3\", shape=box];\n  \"fair data entity\" [style=filled, fillcolor=\"#F5DEB3B3\", shape=box];\n  \"unscoped data engineering\" [style=filled, fillcolor=\"#ADD8E6B3\", shape=box];\n  \"decision\" [style=filled, fillcolor=\"#F08080B3\", shape=box];\n\n  \"question\" -> \"project planning development\" [style=solid];\n  \"project planning development\" -> \"scope fair data entity\" [style=solid];\n  \"scope fair data entity\" -> \"ingest\" [style=solid];\n  \"scope fair data entity\" -> \"deploy documentation\" [style=solid];\n  \"scope fair data entity\" -> \"deploy analysis tool\" [style=solid];\n  \"scope fair data entity\" -> \"document data entity\" [style=solid];\n  \"ingest\" -> \"transform data entity\" [style=solid];\n  \"transform data entity\" -> \"validate data entity\" [style=solid];\n  \"document data entity\" -> \"validate data entity\" [style=solid];\n  \"document validation of data entity\" -> \"fair data entity\" [style=solid];\n  \"deploy documentation\" -> \"validate data entity\" [style=solid];\n  \"validate data entity\" -> \"debug data entity\" [style=solid];\n  \"debug data entity\" -> \"fair data entity\" [style=solid];\n  \"scope fair data product\" -> \"transform\" [style=solid];\n  \"transform\" -> \"fair data product\" [style=solid];\n  \"unscoped platform engineering\" -> \"fair data product\" [style=solid];\n  \"fair data product\" -> \"interpret\" [style=solid];\n  \"analyse\" -> \"interpret\" [style=solid];\n  \"interpret\" -> \"decision\" [style=solid];\n  \"deploy analysis tool\" -> \"validate data entity\" [style=solid];\n  \"scope fair data product\" -> \"unscoped platform engineering\" [style=solid];\n  \"scope fair data product\" -> \"unscoped platform engineering development\" [style=solid];\n  \"unscoped platform engineering development\" -> \"fair data product\" [style=solid];\n  \"scope fair data product\" -> \"unscoped data engineering development\" [style=solid];\n  \"unscoped data engineering development\" -> \"fair data product\" [style=solid];\n  \"validate data entity\" -> \"document validation of data entity\" [style=solid];\n  \"project reporting development\" -> \"scope fair data product\" [style=solid];\n  \"fair data entity\" -> \"project reporting development\" [style=solid];\n  \"unscoped data engineering\" -> \"fair data product\" [style=solid];\n  \"scope fair data product\" -> \"unscoped data engineering\" [style=solid];\n  \"scope fair data product\" -> \"analyse\" [style=solid];\n\n  subgraph cluster_legend {\n  label = \"Legend\";\n  style = dashed;\n  fontsize = 12;\n  margin = 20;\n  rankdir = LR;\n  rank = sink;\n\"data engineering\" [label=\"data engineering\", style=filled, fillcolor=\"#ADD8E6B3\", shape=box];\n  \"data analysis\" [label=\"data analysis\", style=filled, fillcolor=\"#8FBC8FB3\", shape=box];\n  \"project planning\" [label=\"project planning\", style=filled, fillcolor=\"#F5DEB3B3\", shape=box];\n  \"decision making\" [label=\"decision making\", style=filled, fillcolor=\"#F08080B3\", shape=box];\n  \"platform engineering\" [label=\"platform engineering\", style=filled, fillcolor=\"#FF8C00B3\", shape=box];\n  \"data engineering\" -> \"data analysis\" -> \"platform engineering\" -> \"project planning\" -> \"decision making\" [style=invis];\n}\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+<div class="grViz html-widget html-fill-item" id="htmlwidget-a125e9bfcd33163ceca3" style="width:100%;height:650px;"></div>
+<script type="application/json" data-for="htmlwidget-a125e9bfcd33163ceca3">{"x":{"diagram":"digraph {\n  graph [margin=0.05, bgcolor=\"transparent\", rankdir=TB, splines=true];\n  rankdir=LR;\n  node [fontname=Helvetica];\n\n  \"question\" [style=filled, fillcolor=\"#F08080B3\", shape=box];\n  \"project planning development\" [style=filled, fillcolor=\"#F5DEB3B3\", shape=box];\n  \"scope fair data entity\" [style=filled, fillcolor=\"#F5DEB3B3\", shape=box];\n  \"ingest\" [style=filled, fillcolor=\"#ADD8E6B3\", shape=box];\n  \"transform data entity\" [style=filled, fillcolor=\"#ADD8E6B3\", shape=box];\n  \"document data entity\" [style=filled, fillcolor=\"#ADD8E6B3\", shape=box];\n  \"document validation of data entity\" [style=filled, fillcolor=\"#8FBC8FB3\", shape=box];\n  \"deploy documentation\" [style=filled, fillcolor=\"#FF8C00B3\", shape=box];\n  \"validate data entity\" [style=filled, fillcolor=\"#8FBC8FB3\", shape=box];\n  \"debug data entity\" [style=filled, fillcolor=\"#ADD8E6B3\", shape=box];\n  \"scope fair data product\" [style=filled, fillcolor=\"#F5DEB3B3\", shape=box];\n  \"transform\" [style=filled, fillcolor=\"#ADD8E6B3\", shape=box];\n  \"unscoped platform engineering\" [style=filled, fillcolor=\"#FF8C00B3\", shape=box];\n  \"fair data product\" [style=filled, fillcolor=\"#F5DEB3B3\", shape=box];\n  \"analyse\" [style=filled, fillcolor=\"#8FBC8FB3\", shape=box];\n  \"interpret\" [style=filled, fillcolor=\"#8FBC8FB3\", shape=box];\n  \"deploy analysis tool\" [style=filled, fillcolor=\"#FF8C00B3\", shape=box];\n  \"unscoped platform engineering development\" [style=filled, fillcolor=\"#FF8C00B3\", shape=box];\n  \"unscoped data engineering development\" [style=filled, fillcolor=\"#ADD8E6B3\", shape=box];\n  \"project reporting development\" [style=filled, fillcolor=\"#F5DEB3B3\", shape=box];\n  \"fair data entity\" [style=filled, fillcolor=\"#F5DEB3B3\", shape=box];\n  \"unscoped data engineering\" [style=filled, fillcolor=\"#ADD8E6B3\", shape=box];\n  \"decision\" [style=filled, fillcolor=\"#F08080B3\", shape=box];\n\n  \"question\" -> \"project planning development\" [style=solid];\n  \"project planning development\" -> \"scope fair data entity\" [style=solid];\n  \"scope fair data entity\" -> \"ingest\" [style=solid];\n  \"scope fair data entity\" -> \"deploy documentation\" [style=solid];\n  \"scope fair data entity\" -> \"deploy analysis tool\" [style=solid];\n  \"scope fair data entity\" -> \"document data entity\" [style=solid];\n  \"ingest\" -> \"transform data entity\" [style=solid];\n  \"transform data entity\" -> \"validate data entity\" [style=solid];\n  \"document data entity\" -> \"validate data entity\" [style=solid];\n  \"document validation of data entity\" -> \"fair data entity\" [style=solid];\n  \"deploy documentation\" -> \"validate data entity\" [style=solid];\n  \"validate data entity\" -> \"debug data entity\" [style=solid];\n  \"debug data entity\" -> \"fair data entity\" [style=solid];\n  \"scope fair data product\" -> \"transform\" [style=solid];\n  \"transform\" -> \"fair data product\" [style=solid];\n  \"unscoped platform engineering\" -> \"fair data product\" [style=solid];\n  \"fair data product\" -> \"interpret\" [style=solid];\n  \"analyse\" -> \"interpret\" [style=solid];\n  \"interpret\" -> \"decision\" [style=solid];\n  \"deploy analysis tool\" -> \"validate data entity\" [style=solid];\n  \"scope fair data product\" -> \"unscoped platform engineering\" [style=solid];\n  \"scope fair data product\" -> \"unscoped platform engineering development\" [style=solid];\n  \"unscoped platform engineering development\" -> \"fair data product\" [style=solid];\n  \"scope fair data product\" -> \"unscoped data engineering development\" [style=solid];\n  \"unscoped data engineering development\" -> \"fair data product\" [style=solid];\n  \"validate data entity\" -> \"document validation of data entity\" [style=solid];\n  \"project reporting development\" -> \"scope fair data product\" [style=solid];\n  \"fair data entity\" -> \"project reporting development\" [style=solid];\n  \"unscoped data engineering\" -> \"fair data product\" [style=solid];\n  \"scope fair data product\" -> \"unscoped data engineering\" [style=solid];\n  \"scope fair data product\" -> \"analyse\" [style=solid];\n\n  subgraph cluster_legend {\n  label = \"Legend\";\n  style = dashed;\n  fontsize = 12;\n  margin = 20;\n  rankdir = LR;\n  rank = sink;\n\"data engineering\" [label=\"data engineering\", style=filled, fillcolor=\"#ADD8E6B3\", shape=box];\n  \"data analysis\" [label=\"data analysis\", style=filled, fillcolor=\"#8FBC8FB3\", shape=box];\n  \"project planning\" [label=\"project planning\", style=filled, fillcolor=\"#F5DEB3B3\", shape=box];\n  \"decision making\" [label=\"decision making\", style=filled, fillcolor=\"#F08080B3\", shape=box];\n  \"platform engineering\" [label=\"platform engineering\", style=filled, fillcolor=\"#FF8C00B3\", shape=box];\n  \"data engineering\" -> \"data analysis\" -> \"platform engineering\" -> \"project planning\" -> \"decision making\" [style=invis];\n}\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 </div>
@@ -1571,14 +1587,14 @@ Figure&nbsp;11: Establishing a datum via FAIR data entity test allows the team t
 </section>
 <section id="appendices" class="level1" data-number="6">
 <h1 data-number="6"><span class="header-section-number">6</span> Appendices</h1>
-<section id="fair-data-test-example-dbt" class="level2" data-number="6.1">
-<h2 data-number="6.1" class="anchored" data-anchor-id="fair-data-test-example-dbt"><span class="header-section-number">6.1</span> Fair data test example DBT</h2>
+<section id="dbt-fde-test-on-invoice-items" class="level2" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="dbt-fde-test-on-invoice-items"><span class="header-section-number">6.1</span> DBT FDE test on invoice items</h2>
 </section>
-<section id="fair-data-test-example-in-python" class="level2" data-number="6.2">
-<h2 data-number="6.2" class="anchored" data-anchor-id="fair-data-test-example-in-python"><span class="header-section-number">6.2</span> Fair data test example in Python</h2>
+<section id="python-fde-test-example-on-image-classification" class="level2" data-number="6.2">
+<h2 data-number="6.2" class="anchored" data-anchor-id="python-fde-test-example-on-image-classification"><span class="header-section-number">6.2</span> Python FDE test example on image classification</h2>
 </section>
-<section id="fair-data-entity-tests-in-r-for-this-singularity" class="level2" data-number="6.3">
-<h2 data-number="6.3" class="anchored" data-anchor-id="fair-data-entity-tests-in-r-for-this-singularity"><span class="header-section-number">6.3</span> FAIR data entity tests in R for this singularity</h2>
+<section id="r-fde-tests-for-this-singularity" class="level2" data-number="6.3">
+<h2 data-number="6.3" class="anchored" data-anchor-id="r-fde-tests-for-this-singularity"><span class="header-section-number">6.3</span> R FDE tests for this singularity</h2>
 <p>In all tests, we ask, what is the minimum thing we can do? Then structure exists and we can expand.</p>
 <section id="generator-fn-to-display" class="level3" data-number="6.3.1">
 <h3 data-number="6.3.1" class="anchored" data-anchor-id="generator-fn-to-display"><span class="header-section-number">6.3.1</span> Generator fn <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>→</mo><annotation encoding="application/x-tex">\to</annotation></semantics></math> display</h3>

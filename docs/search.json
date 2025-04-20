@@ -1258,5 +1258,40 @@
     "title": "Questionable Analytical Observations",
     "section": "6.3 FAIR data entity tests in R for this singularity",
     "text": "6.3 FAIR data entity tests in R for this singularity\nIn all tests, we ask, what is the minimum thing we can do? Then structure exists and we can expand.\n\n6.3.1 Generator fn →\\to display\nTesting the morphism between graph visualisation generator and display.\n\nHow do I call code reusably across both this manuscript, a .qmd file, and a slide deck I’m embedding the same .qmd file?\n\n\n# test where I am\ngetwd()\n\n[1] \"/home/cantabile/Documents/repos/good-enough\"\n\n# need to source\nsource(\"R/test-mooncake.R\")\n\n# test calling from R\nmooncake_test\n\n[1] \"hi Mooncake\""
+  },
+  {
+    "objectID": "qao.html#epistemic-drift-over-time",
+    "href": "qao.html#epistemic-drift-over-time",
+    "title": "Questionable Analytical Observations",
+    "section": "4.1 Epistemic drift over time",
+    "text": "4.1 Epistemic drift over time\nWorse still, living analysis development is recursive. Suppose a stakeholder asks for revenue excluding a soon-to-be-discontinued product. The request is mentioned briefly to the analyst, but never reaches the data engineer. The system remains unchanged.\nConsider game analytics. Player events are commonly instantiated by developers in a nested, tree-like structure, but analysts need flat data. At project start, the analyst verifies a key assumption: the minigame of interest appears only once per level. A dashboard is deployed using a modern stack—for example, Unity Analytics → Redshift → DBT → Redshift → Tableau.\nLater, developers add a second minigame to one of the levels and encode it differently in the tree, unaware that game designers are relying on the dashboard to track average minigame completion time. The analyst, unaware of the schema change, had averaged a nested field assuming uniqueness. That assumption no longer holds. One level now duplicates data, skewing the result. The data engineer doesn’t know it matters. The dashboard updates. It looks fine.\nBut the numbers are now meaningless–Unity Analytics ↛\\not \\to Tableau. The data is still valid, the dashboard still functions, the relationship is no longer valid.\nNo one notices. No one can. The assumption has silently broken."
+  },
+  {
+    "objectID": "qao.html#epistemic-drift-at-scale",
+    "href": "qao.html#epistemic-drift-at-scale",
+    "title": "Questionable Analytical Observations",
+    "section": "4.2 Epistemic drift at scale",
+    "text": "4.2 Epistemic drift at scale\nNow consider a research software engineer assisting a professor with a simulation study. The professor provides synthetic data and a model script for the engineer to fit thousands of models for parameter tuning. At first, the pipeline runs smoothly.\nAs the experiment scales, the professor supplies more and more data—terabytes of it. The dataset now spans billions of rows, far beyond what the engineer can feasibly inspect. The model being fit is a log-based model requiring strictly positive numeric input—an assumption that would be clear in real-world biological data, but is easy to violate in simulation.\nSuppose a single mistake is introduced into the simulated data—negative values that breach the model’s assumptions. That error propagates silently, replicated thousands of times across model fits. Eventually, the pipeline breaks. The engineer, working downstream and unaware of the log constraint embedded in the professor’s script, is left to debug a system that no longer holds, without the contextual understanding of the model the professor has.\nIt can take weeks, even months, to trace such a failure to its source."
+  },
+  {
+    "objectID": "qao.html#dbt-fde-test-on-invoice-items",
+    "href": "qao.html#dbt-fde-test-on-invoice-items",
+    "title": "Questionable Analytical Observations",
+    "section": "6.1 DBT FDE test on invoice items",
+    "text": "6.1 DBT FDE test on invoice items"
+  },
+  {
+    "objectID": "qao.html#python-fde-test-example-on-image-classification",
+    "href": "qao.html#python-fde-test-example-on-image-classification",
+    "title": "Questionable Analytical Observations",
+    "section": "6.2 Python FDE test example on image classification",
+    "text": "6.2 Python FDE test example on image classification"
+  },
+  {
+    "objectID": "qao.html#r-fde-tests-for-this-singularity",
+    "href": "qao.html#r-fde-tests-for-this-singularity",
+    "title": "Questionable Analytical Observations",
+    "section": "6.3 R FDE tests for this singularity",
+    "text": "6.3 R FDE tests for this singularity\nIn all tests, we ask, what is the minimum thing we can do? Then structure exists and we can expand.\n\n6.3.1 Generator fn →\\to display\nTesting the morphism between graph visualisation generator and display.\n\nHow do I call code reusably across both this manuscript, a .qmd file, and a slide deck I’m embedding the same .qmd file?\n\n\n# test where I am\ngetwd()\n\n[1] \"/home/cantabile/Documents/repos/good-enough\"\n\n# need to source\nsource(\"R/test-mooncake.R\")\n\n# test calling from R\nmooncake_test\n\n[1] \"hi Mooncake\""
   }
 ]

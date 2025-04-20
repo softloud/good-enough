@@ -289,6 +289,8 @@ However, what happens when some of the observatations are spurious? Perhaps ther
 
 This is commonly described as the **garbage in, garbage out** problem of data science.
 
+## Epistemic drift over time
+
 Worse still, living analysis development is recursive. Suppose a stakeholder asks for revenue excluding a soon-to-be-discontinued product. The request is mentioned briefly to the analyst, but never reaches the data engineer. The system remains unchanged.
 
 Consider game analytics. Player events are commonly  instantiated by developers in a nested, tree-like structure, but analysts need flat data. At project start, the analyst verifies a key assumption: the minigame of interest appears only once per level. A dashboard is deployed using a modern stack—for example, Unity Analytics → Redshift → DBT → Redshift → Tableau.
@@ -299,9 +301,21 @@ But the numbers are now meaningless--Unity Analytics $\not \to$ Tableau. The dat
 
 No one notices. No one can. The assumption has silently broken.
 
+## Epistemic drift at scale
+
+Now consider a research software engineer assisting a professor with a simulation study. The professor provides synthetic data and a model script for the engineer to fit thousands of models for parameter tuning. At first, the pipeline runs smoothly.
+
+As the experiment scales, the professor supplies more and more data—terabytes of it. The dataset now spans billions of rows, far beyond what the engineer can feasibly inspect. The model being fit is a log-based model requiring strictly positive numeric input—an assumption that would be clear in real-world biological data, but is easy to violate in simulation.
+
+Suppose a single mistake is introduced into the simulated data—negative values that breach the model’s assumptions. That error propagates silently, replicated thousands of times across model fits. Eventually, the pipeline breaks. The engineer, working downstream and unaware of the log constraint embedded in the professor’s script, is left to debug a system that no longer holds, without the contextual understanding of the model the professor has.
+
+It can take weeks, even months, to trace such a failure to its source. 
+
 # Democratising data development
 
 But if we take a category theoretic approach--espoused in texts such as *Category Theory for the Sciences* [@spivak_category_2014]--to data development and privilege verifying not data points, but the *relationships* between data development roles and processes, we have a roadmap to mitigating garbage data. By ensuring integrity is retained between those who generate the data, those who wrangle the data, and those who analyse and report, we find a way of preventing the vacuousness truth of $F \to F$.
+
+If the game developers and the professor described above had living validations that revealed their assumptions from the start, those who understand the data are able to diagnose garbage data far more efficiently.
 
 ::: {#fig-captain-data}
 
@@ -311,6 +325,7 @@ But if we take a category theoretic approach--espoused in texts such as *Categor
 
 :::
 
+The modern data stack is a powerful beast. 
 
 ::: {#fig-fair-entity}
 
@@ -336,11 +351,11 @@ The reality is while data analytic question is reworked, there is little data en
 
 # Appendices
 
-## Fair data test example DBT
+## DBT FDE test on invoice items
 
-## Fair data test example in Python
+## Python FDE test example on image classification
 
-## FAIR data entity tests in R for this singularity
+## R FDE tests for this singularity
 
 In all tests, we ask, what is the minimum thing we can do? Then structure exists and we can expand.
 
