@@ -9,7 +9,7 @@
 <meta name="author" content="Dr Charles T. Gray, Datapunk">
 <meta name="author" content="Mooncake (Impostor Syndrome, ChatGPT 4o)">
 <meta name="author" content="Mooncake (Fields of Singularities, o3-mini-high/o3-mini)">
-<meta name="dcterms.date" content="2025-04-16">
+<meta name="dcterms.date" content="2025-04-21">
 
 <title>Governing Chaos in Ethical Singularities – Good Enough Lab</title>
 <style>
@@ -328,7 +328,7 @@ div.csl-indent {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">April 16, 2025</p>
+      <p class="date">April 21, 2025</p>
     </div>
   </div>
   
@@ -532,9 +532,6 @@ div.csl-indent {
 <p>The Matrix == a triangle with bobbles on</p>
 </blockquote>
 <div class="cell">
-<div class="cell-output cell-output-error">
-<pre><code>Error in library(gt): there is no package called 'gt'</code></pre>
-</div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
@@ -711,42 +708,42 @@ The DCI is designed to quantify the cognitive load and operational challenges in
 </ol>
 <p>Below is an illustrative R code snippet that computes both measures:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># --- Ethical Alignment Measure ---</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Example outcomes: expected vs. actual ethical evaluations</span></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>expected_outcomes <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"ethical"</span>, <span class="st">"ethical"</span>, <span class="st">"unethical"</span>, <span class="st">"ethical"</span>, <span class="st">"ethical"</span>)</span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>actual_outcomes   <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"ethical"</span>, <span class="st">"ethical"</span>, <span class="st">"ethical"</span>, <span class="st">"ethical"</span>, <span class="st">"unethical"</span>)</span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Compute Ethical Alignment as the proportion of outputs that are ethical</span></span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>compute_ethical_alignment <span class="ot">&lt;-</span> <span class="cf">function</span>(expected, actual) {</span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>  alignment <span class="ot">&lt;-</span> expected <span class="sc">==</span> actual</span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>  ethical_alignment <span class="ot">&lt;-</span> <span class="fu">mean</span>(alignment)</span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(ethical_alignment)</span>
-<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>ethical_alignment_metric <span class="ot">&lt;-</span> <span class="fu">compute_ethical_alignment</span>(expected_outcomes, actual_outcomes)</span>
-<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"Ethical Alignment Metric:"</span>, ethical_alignment_metric, <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># --- Ethical Alignment Measure ---</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Example outcomes: expected vs. actual ethical evaluations</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>expected_outcomes <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"ethical"</span>, <span class="st">"ethical"</span>, <span class="st">"unethical"</span>, <span class="st">"ethical"</span>, <span class="st">"ethical"</span>)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>actual_outcomes   <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"ethical"</span>, <span class="st">"ethical"</span>, <span class="st">"ethical"</span>, <span class="st">"ethical"</span>, <span class="st">"unethical"</span>)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Compute Ethical Alignment as the proportion of outputs that are ethical</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>compute_ethical_alignment <span class="ot">&lt;-</span> <span class="cf">function</span>(expected, actual) {</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>  alignment <span class="ot">&lt;-</span> expected <span class="sc">==</span> actual</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>  ethical_alignment <span class="ot">&lt;-</span> <span class="fu">mean</span>(alignment)</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(ethical_alignment)</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>ethical_alignment_metric <span class="ot">&lt;-</span> <span class="fu">compute_ethical_alignment</span>(expected_outcomes, actual_outcomes)</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"Ethical Alignment Metric:"</span>, ethical_alignment_metric, <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Ethical Alignment Metric: 0.6 </code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># --- Development Complexity Index (DCI) ---</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Suppose we collect developer-reported difficulty scores on key tasks (e.g., ggplot interoperability, Shiny UI debugging)</span></span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="co"># For example, each score is on a scale from 0 (no difficulty) to 5 (extreme difficulty)</span></span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>development_difficulties <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">ggplot_interoperability =</span> <span class="dv">3</span>,  <span class="co"># difficulty in integrating ggplot outputs</span></span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">shiny_ui_debugging       =</span> <span class="dv">4</span>,  <span class="co"># difficulty in debugging Shiny UIs</span></span>
-<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>  <span class="at">code_integration         =</span> <span class="dv">2</span>,  <span class="co"># challenges in merging various code components</span></span>
-<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>  <span class="at">overall_system_complexity=</span> <span class="dv">3</span>   <span class="co"># general perceived complexity of the system</span></span>
-<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a><span class="co"># The Development Complexity Index (DCI) is the average of these scores</span></span>
-<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>compute_dev_complexity <span class="ot">&lt;-</span> <span class="cf">function</span>(difficulties) {</span>
-<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>  dev_complexity_index <span class="ot">&lt;-</span> <span class="fu">mean</span>(difficulties)</span>
-<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(dev_complexity_index)</span>
-<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a>dci_metric <span class="ot">&lt;-</span> <span class="fu">compute_dev_complexity</span>(development_difficulties)</span>
-<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"Development Complexity Index (DCI):"</span>, dci_metric, <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># --- Development Complexity Index (DCI) ---</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Suppose we collect developer-reported difficulty scores on key tasks (e.g., ggplot interoperability, Shiny UI debugging)</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="co"># For example, each score is on a scale from 0 (no difficulty) to 5 (extreme difficulty)</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>development_difficulties <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">ggplot_interoperability =</span> <span class="dv">3</span>,  <span class="co"># difficulty in integrating ggplot outputs</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">shiny_ui_debugging       =</span> <span class="dv">4</span>,  <span class="co"># difficulty in debugging Shiny UIs</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>  <span class="at">code_integration         =</span> <span class="dv">2</span>,  <span class="co"># challenges in merging various code components</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>  <span class="at">overall_system_complexity=</span> <span class="dv">3</span>   <span class="co"># general perceived complexity of the system</span></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a><span class="co"># The Development Complexity Index (DCI) is the average of these scores</span></span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>compute_dev_complexity <span class="ot">&lt;-</span> <span class="cf">function</span>(difficulties) {</span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>  dev_complexity_index <span class="ot">&lt;-</span> <span class="fu">mean</span>(difficulties)</span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(dev_complexity_index)</span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a>dci_metric <span class="ot">&lt;-</span> <span class="fu">compute_dev_complexity</span>(development_difficulties)</span>
+<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"Development Complexity Index (DCI):"</span>, dci_metric, <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Development Complexity Index (DCI): 3 </code></pre>
 </div>

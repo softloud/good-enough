@@ -280,22 +280,3 @@ B_graph |>
 :::
 
 Experimented with api-ing some data in. Promising.
-
-```{r eval=FALSE}
-
-library(httr)
-library(jsonlite)
-source("jiraapi.R")
-
-
-auth <- authenticate(jira_email, jira_api)
-jql_query <- list(jql = "project = PANDAN")
-
-response <- GET(jira_url, auth, query = jql_query)
-stop_for_status(response)
-
-jira_data <- fromJSON(content(response, "text", encoding = "UTF-8"))
-
-
-```
-
