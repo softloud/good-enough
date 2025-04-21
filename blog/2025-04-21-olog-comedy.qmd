@@ -137,7 +137,7 @@ $$
 
 which reads as, 
 
-> if $p$ then $q$.
+> if $p$, then $q$.
 
 ---
 
