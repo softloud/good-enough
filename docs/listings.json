@@ -1,7 +1,8 @@
 [
   {
-    "listing": "/index.html",
+    "listing": "/blog.html",
     "items": [
+      "/blog/2025-04-21-olog-comedy.html",
       "/blog/2025-04-16-one-art.html",
       "/blog/2025-03-31-governance.html",
       "/blog/2025-03-24-button.html",
@@ -14,8 +15,9 @@
     ]
   },
   {
-    "listing": "/blog.html",
+    "listing": "/index.html",
     "items": [
+      "/blog/2025-04-21-olog-comedy.html",
       "/blog/2025-04-16-one-art.html",
       "/blog/2025-03-31-governance.html",
       "/blog/2025-03-24-button.html",

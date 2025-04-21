@@ -4,7 +4,7 @@
 
 library(httr)
 library(jsonlite)
-source("jiraapi.R")
+# source("jiraapi.R")
 
 get_jira_data <- function(jira_email, jira_api) {
 
