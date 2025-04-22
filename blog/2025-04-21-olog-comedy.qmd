@@ -217,7 +217,7 @@ A powerful way to do this is to construct an **olog**&mdash;
 
 So, to ensure we are answering the right questions, we must ask this of data:
 
-> What the fuck is your ontology?
+> [What the fuck is your ontology?](../qao.qmd)
 
 # References
 
