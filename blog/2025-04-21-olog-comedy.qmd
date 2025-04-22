@@ -59,9 +59,9 @@ I'd be rude.
 
 So, to make sense of my Jewish Chinese-Transylvanian Australian diasporic identity, I enrolled in cultural studies&mdash;because the only way to sort *that* out was to read essays written in the 1970s by a Palestinian-American deconstructing 19th century opera [@said_orientalism_2014]. 
 
-I found myself in philosophical seminars. Some theorist would deliver a dense analysis of Elizabeth Bishop's treatment of the villanelle in her poem [*One Art*](2025-04-16-one-art.qmd) [@bishop_complete_1983] to be met with a pompous question from some git in the audience, 
+I found myself in philosophical seminars. Some theorist would deliver a dense analysis of Elizabeth Bishop's treatment of the villanelle in her poem *One Art* [@bishop_complete_1983] to be met with a pompous question from some git in the audience, 
 
-> Yes, but *h*what is your *ontology*?
+> [Yes, but *h*what is your *ontology*?](2025-04-16-one-art.qmd)
 
 I've never felt very comfortable with terms like *ontology* and *epistemology*, can never seem to pin down their meaning. My understanding of [ontology](https://en.wikipedia.org/wiki/Ontology) is that it is *the study of being*, how the existence of a thing is defined&mdash;which, frankly, has never once helped me catch a train. 
 
