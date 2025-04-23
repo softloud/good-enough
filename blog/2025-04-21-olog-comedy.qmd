@@ -1,5 +1,5 @@
 ---
-title: If Fish, Then Lamp
+title: If Shrimp, Then Towel
 subtitle: Aarhus Comedy Club Set (May 4th) 
 code-fold: true
 date: "April 21 2025"
@@ -184,15 +184,15 @@ Notably, **none of these people define the question**&mdash;that is, the $p \imp
 
 Instead, they’re employed by *leadership*&mdash;the ones who pose the question&mdash;who, very helpfully, went to business school, **where it seems they were taught that defining $p$ or $q$ is someone else’s job.**
 
-# If fish, then lamp
+# If shrimp, then towel
 
 > What will our revenue be next year? 
 
 Every day, analysts confidently present in boardrooms the results of data analysis,
 
-> If fish, then lamp&mdash;*with 97.2342% accuracy!*
+> If shrimp, then towel&mdash;*with 97.2342% accuracy!*
 
-wherein *fish* and *lamp* stand for numbers that have *nothing* to do with the question posed and *no one knows* how far they've drifted from intention.
+wherein *shrimp* and *towel* stand for numbers that have *nothing* to do with the question posed and *no one knows* how far they've drifted from intention.
 
 # Answering the right question
 
@@ -216,7 +216,9 @@ A powerful way to do this is to construct an **olog**&mdash;
 
 ---
 
-So, to ensure we are answering the right questions, we must ask this of data:
+Douglas Adams had no idea how prescient he was.
+
+So, to ensure we are not doing **if shrimp, then towel** data science, the question that matters is:
 
 > [What the fuck is your ontology?](../qao.qmd)
 
