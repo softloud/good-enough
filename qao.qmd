@@ -172,7 +172,7 @@ digraph G {
     automata [style = "dotted", shape = box]
 
     join [label="data entity"]
-    output [label="analytical observation"]
+    output [label="analytical observation", color=red]
     analysis [color=red]
 
     source_1 -> join [style=dotted]
