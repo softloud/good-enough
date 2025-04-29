@@ -191,7 +191,7 @@ digraph G {
     stakeholder
     
     analyst -> engineer [style=dotted, color=red]
-    stakeholder  ->  analyst
+    stakeholder  ->  analyst [style=dotted]
     
   }
 
