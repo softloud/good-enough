@@ -161,6 +161,43 @@ The tangled anal beads of data development.
 
 The problem of getting tangled in the anal beads of data development (@fig-hairy-anal-beads) lies in the *relationship* between the assumptions of the question--posed, by, say, a machine learning model or business KPI--and the answer reported in a dashboard or report. This is where logic and practice begin to diverge.
 
+```{dot}
+digraph G {
+
+  subgraph cluster_data {
+    style = dotted
+    automata [style = "dotted", shape = box]
+
+    raw -> transform [style=dotted]
+    transform -> output [color = red, style=dotted]
+    analyse
+
+  }
+
+  subgraph cluster_human {
+    style = dotted
+    human [style = "dotted", shape = box]
+      
+    engineer
+    
+    scientist
+    
+    scientist -> engineer [style=dotted]
+    
+  }
+
+  engineer -> raw  
+  output -> scientist [color=red]
+  scientist -> analyse [color=red]
+  
+  title [shape = box, label = "QAO\nHuman and Automata Interoperability", sytle = dashed]
+  
+}
+
+
+```
+
+
 Let's gesture at the structure of logic, and show where it begins to break down in living analysis development. 
 
 In formal terms, any scientific statement from data takes the form:
