@@ -207,7 +207,7 @@ digraph G {
 
 ```
 
-Structured Intelligencee System of a Questionable Analytical Observation. If the analyst does not adequately define the desired analytical observation, then the analysis is spurious.
+Structured Intelligence System of a Questionable Analytical Observation. If the analyst does not adequately define the desired analytical observation, then the analysis is spurious.
 
 :::
 
