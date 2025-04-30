@@ -233,9 +233,7 @@ digraph G {
   engineer -> source_2
   analyst -> analysis 
   analysis -> stakeholder [color=red]
-  
-  title [shape = box, label = "QAO\nHuman and Automata Interoperability", sytle = dashed]
-  
+    
 }
 
 
