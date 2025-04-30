@@ -194,6 +194,58 @@ Every day, analysts confidently present in boardrooms the results of data analys
 
 wherein *shrimp* and *towel* stand for numbers that have *nothing* to do with the question posed and *no one knows* how far they've drifted from intention.
 
+
+::: {#fig-qao}
+
+```{dot}
+digraph G {
+    
+  subgraph cluster_data {
+    style = dotted
+
+    automata [style = "dotted", shape = box]
+
+    join [label="data entity"]
+    output [label="analytical observation", color=red]
+    analysis [color=red]
+
+    source_1 -> join [style=dotted]
+    source_2 -> join [style=dotted]
+    join -> output [color = red, style=dotted]
+    output -> analysis [color = red, style=dotted]
+
+  }
+
+  subgraph cluster_human {
+    style = dotted
+    human [style = "dotted", shape = box]
+      
+    engineer
+    analyst
+    stakeholder
+    
+    analyst -> engineer [style=dotted, color=red]
+    stakeholder  ->  analyst [style=dotted]
+    
+  }
+
+  engineer -> source_1  
+  engineer -> source_2
+  analyst -> analysis 
+  analysis -> stakeholder [color=red]
+  
+  title [shape = box, label = "QAO\nHuman and Automata Interoperability", sytle = dashed]
+  
+}
+
+
+```
+
+[Structured Intelligence System](../singularities.qmd) of a [Questionable Analytical Observation](../qao.qmd). If the analyst does not adequately define the desired analytical observation, then the analysis is spurious.
+
+:::
+
+
 # Answering the right question
 
 Logicians are developing ways to step back and ask, 
