@@ -1,7 +1,6 @@
 ---
 title: "Good Enough Data & Systems Lab"
 subtitle: "Structured Intelligence Governance"
-date: '`r Sys.Date()`'
 listing: 
   contents: blog
   type: table
