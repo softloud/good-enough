@@ -1,6 +1,6 @@
 ---
 title: "Good Enough Data & Systems Lab"
-subtitle: "Mathematical Proofs Implemented in Computational Systems"
+subtitle: "Structured Intelligence Governance"
 date: '`r Sys.Date()`'
 listing: 
   contents: blog
@@ -10,7 +10,15 @@ html-math-method: mathml
 
 ---
 
-*Order from the chaos of existing development, without interfering with team workflow.*
+> The Good Enough Data & Systems Lab was created to diagnose the harm created by misapplied algorithms.
+
+---
+
+![](good-enough-logo.png)
+
+---
+
+We are a collective of data scientists and ethicists who care about finding solutions to the chaos of humans interoperating with automata and metrics. 
 
 ---
 

@@ -5,7 +5,10 @@ project:
 
 website:
   title: "Good Enough Lab"
+  favicon: good-enough-logo.png
+
   navbar:
+    logo: good-enough-logo.png
     left: 
       - text: Development Blog
         href: blog.qmd
