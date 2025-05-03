@@ -395,6 +395,8 @@ and the universalities we are documenting are terrifying in terms of human cost&
 
 ![](../good-enough-logo.png)
 
+> The Good Enough Data & Systems Lab is a voluntary collective of epistemologists, data scientists, and thinkers who work on diagnosing the harm caused by misapplied algorithms.
+
 ---
 
 So, to ensure we are not doing **if shrimp, then towel** science, the question at the heart of life, the universe, and data is:
