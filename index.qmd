@@ -17,7 +17,7 @@ html-math-method: mathml
 
 ---
 
-We are a collective of data scientists and ethicists who care about finding solutions to the chaos of humans interoperating with automata and metrics. 
+We are a collective of data scientists, epistemologists, and ethicists who care about finding solutions to the chaos of humans interoperating with automata and metrics. 
 
 ---
 
