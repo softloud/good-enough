@@ -1,8 +1,8 @@
 ---
-title: If Shrimp, Then Towel
-subtitle: Aarhus English Open Mic Comedy Club Set (May 4th) 
+title: If Shrimp, Then Towel (extended scientific cosplay edition)
+subtitle: Science & Beers (June 26th) -- 10 minutes! 
 code-fold: true
-date: "April 21 2025"
+date: "May 3 2025"
 author: 
   - name: Dr Charles T. Gray, Datapunk
     orcid: 0000-0002-9978-011X
@@ -10,7 +10,7 @@ author:
       - name: Good Enough Data & Systems Lab
 bibliography: ../blog.bib
 csl: ../elsevier-vancouver.csl
-image: college-hey.gif
+image: ../good-enough-logo.png
 ---
 
 # Cultural identity
@@ -243,6 +243,121 @@ digraph G {
 
 :::
 
+And, grrl, it gets *so* much worse than the data theatre of industry. 
+
+Pull up a chair for a manicure, drop your nails in a dish to soak&mdash;'cause I'm gonna *spill* about how *science gets done*. 
+
+# Scientific cosplay
+
+> If there's only one 'real scientist' in the room, 
+> no real science gets done.
+
+Paradoxically, analytical inquiry is centred on a *scientist* who thinks of data production like a chicken laying an egg, with principle investigators towelled-off by "AI" they never asked for.
+
+![](bend-and-snap-legally-blonde.gif)
+
+No one disputes the impressive flourish of their algorithmic **bend and snap** but when someone like me asks them, 
+
+> How do you trust your inputs? 
+
+They don't snap back.
+
+They flinch.
+
+![](legally-blonde-stare.gif)
+
+Then I get 
+
+> Stay in your lane, data peasant. 
+
+![](forever-alone-legally-blonde.gif)
+
+Apparently I do math, stats, code, and data&mdash;
+
+> y'know, *grrl stuff*. 
+
+# Hierarchical fragility
+
+So, I offer scientific collaboration to work *together* to find a way to mitigate problematic data practices.
+
+*Countless* men have slid into my DMs to offer **allyship**...
+
+...but when I suggest we instantiate:
+
+```
+- unique
+- not_null
+```
+
+to validate *their* assumptions, I get; 
+
+> Too theoretical;
+
+> I don't have headspace;
+
+> I downloaded *Category Theory for the Sciences* [@spivak_category_2014], but at 600 pages, I haven't had time to open it. 
+
+![](legally-blonde-elle-woods.gif) 
+
+So, I ask,
+
+> Why do you need to read 600 pages of abstract math to instantiate `unique` and `not_null`? 
+
+
+I'm told by the scientist they spoke to the "data guy", an applied science PhD student who's tasked with
+
+- building the data platform;
+- designing data architecture;
+- advanced data science;
+- all for peanut research assistant wages;
+
+![](legally-blonde-reese-witherspoon.gif) 
+
+and who is so gaslit, so overworked, they would not dare naysay the 'real scientist'&mdash;because data's just an egg to lay, right? 
+
+And *between them*, they decided anything I suggest is just "not viable". 
+
+Now I have a *communication* problem.  
+
+![](legally-blonde-blame.gif)
+
+Apparently, it's a me thing.
+
+# Faux allyship
+
+They wish they could help, but...
+
+They need to bend the *p*,
+
+snap the *q*,
+
+the $p \implies q$ show must go on.
+
+> But don't worry--
+> they're my number one supporter, 
+> and *totally here for me* as a friend.
+
+# The stage
+
+So, I step aside, leaving them *the stage*, back into my lane of logic, math, and philosophical nonsense to ponder:
+
+> If $p$ is false, and $q$ is true, then $p \implies q$ is *vacuously* true.
+
+Which means...
+
+they can bend the $p$, snap the $q$
+
+and still strut out a result that *looks* rigorous&mdash; 
+
+*without anyone noticing it's epistemically hollow*.
+
+It was never about math.
+
+> It was the **question**.
+
+And when the system dictates **who** is allowed to ask the question&mdash;
+
+it already knows who gets to matter in the answer.
 
 # Answering the right question
 
@@ -266,9 +381,31 @@ A powerful way to do this is to construct an **olog**&mdash;
 
 ---
 
-So, to ensure we are not doing **if shrimp, then towel** data science, the question at the heart of life, the universe, and data is:
+A bunch of [us datanerds](https://www.linkedin.com/feed/update/urn:li:activity:7324304390461255680/) have banded together at the Good Enough Data & Systems Lab to olog the shitfuckery of datascience, 
+
+---
+
+![](elle-woods-dangerous.gif)
+
+---
+
+and the universalities we are documenting are terrifying in terms of human cost&mdash;at scale.
+
+---
+
+![](../good-enough-logo.png)
+
+---
+
+So, to ensure we are not doing **if shrimp, then towel** science, the question at the heart of life, the universe, and data is:
 
 > [What the fuck is your ontology?](../qao.qmd)
+
+---
+
+![](legally-blonde-wink.gif)
+
+---
 
 # References
 
