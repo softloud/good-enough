@@ -381,7 +381,7 @@ A powerful way to do this is to construct an **olog**&mdash;
 
 ---
 
-A bunch of [us datanerds](https://www.linkedin.com/feed/update/urn:li:activity:7324304390461255680/) have banded together at the Good Enough Data & Systems Lab to olog the shitfuckery of datascience, 
+A bunch of [us nerds](https://www.linkedin.com/feed/update/urn:li:activity:7324304390461255680/) have banded together (unpaid) at the Good Enough Data & Systems Lab to olog the shitfuckery of datascience, 
 
 ---
 
