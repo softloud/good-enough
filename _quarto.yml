@@ -10,6 +10,12 @@ website:
   navbar:
     logo: good-enough-logo.png
     left: 
+      - text: Advocancy
+        menu:
+          - text: Structured Intelligence Architect Description
+            href: advocacy/sia-description.qmd
+          - text: Coding of Kindness
+            href: advocacy/cok.qmd
       - text: Development Blog
         href: blog.qmd
         menu:
