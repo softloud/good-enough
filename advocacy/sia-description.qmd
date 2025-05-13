@@ -10,6 +10,10 @@ author:
   - name: James P. Morris
     affiliations:
       - name: Good Enough Data & Systems Lab
+  - name: Patrick Robotham
+    affiliations:
+      - name: Good Enough Data & Systems Lab
+
 
 number-sections: true
 code-fold: true
