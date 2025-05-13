@@ -1334,7 +1334,7 @@
     "href": "advocacy/types-of-anlaytics-work.html",
     "title": "Analytics Work",
     "section": "",
-    "text": ":( When data developers work alone, they inherit all the uncertainty, fragility, and fallout.\n:) When data is developed collaboratively, validation becomes distributed, feedback becomes faster, and the team shares responsibility for insight integrity."
+    "text": ":( When data developers work alone, they inherit all the uncertainty, fragility, and fallout.\n:) When data is developed collaboratively, validation becomes distributed, feedback becomes faster, and the team shares responsibility for insight integrity.\n\nTo work together, we need a shared plan.\n\n\n\n\n\n\nFigure 1: Without a shared plan there are many negative consequences."
   },
   {
     "objectID": "advocacy/types-of-anlaytics-work.html#types-of-tasks-in-an-anlaytics-project",
@@ -1355,14 +1355,14 @@
     "href": "advocacy/types-of-anlaytics-work.html#working-together",
     "title": "Analytics Work",
     "section": "",
-    "text": ":( When data developers work alone, they inherit all the uncertainty, fragility, and fallout.\n:) When data is developed collaboratively, validation becomes distributed, feedback becomes faster, and the team shares responsibility for insight integrity."
+    "text": ":( When data developers work alone, they inherit all the uncertainty, fragility, and fallout.\n:) When data is developed collaboratively, validation becomes distributed, feedback becomes faster, and the team shares responsibility for insight integrity.\n\nTo work together, we need a shared plan.\n\n\n\n\n\n\nFigure 1: Without a shared plan there are many negative consequences."
   },
   {
     "objectID": "advocacy/types-of-anlaytics-work.html#data-work-is-software-development",
     "href": "advocacy/types-of-anlaytics-work.html#data-work-is-software-development",
     "title": "Analytics Work",
     "section": "Data work is software development",
-    "text": "Data work is software development\n\nData work is software development: it requires ongoing design, testing, version control, refactoring, and modularity. All of this needs to be understood collaboratively.\nAgile planning principles apply: we iterate toward democratic clarity, not from it. Agile-like collaboration via a tool such as JIRA is industry standard for optimisation of team productivity.\nData is not a static product, project plans need constant updating, for example, to reflect updated line of inquiry.\nTreating analytics as a one-off request breaks observability and continuity and presupposes a static delivery."
+    "text": "Data work is software development\n\nData work is software development: it requires ongoing design, testing, version control, refactoring, and modularity. All of this needs to be understood collaboratively.\nAgile planning principles apply: we iterate toward democratic clarity, not from it. Agile-like collaboration via a tool such as JIRA is industry standard for optimisation of team productivity.\n\n\n\n\n\n\n\nFigure 2: At each stage, the complexity of the project deepens and the line of inquiry becomes more defined.\n\n\n\n\nData is not a static product, project plans need constant updating, for example, to reflect updated line of inquiry.\nTreating analytics as a one-off request breaks observability and continuity and presupposes a static delivery."
   },
   {
     "objectID": "advocacy/types-of-anlaytics-work.html#types-of-tasks-in-an-analytics-project-1",

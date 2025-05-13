@@ -27,10 +27,31 @@ tags: [Data governance]
 - :( When data developers work alone, they inherit all the uncertainty, fragility, and fallout.
 - :) When data is developed collaboratively, validation becomes distributed, feedback becomes faster, and the team shares responsibility for insight integrity.
 
+To work together, we need a shared plan.
+
+::: {#fig-conseq}
+
+![](no-plan-consequences.png)
+
+Without a shared plan there are many negative consequences.
+
+:::
+
 ## Data work is software development
 
 - Data work *is* software development: it requires ongoing design, testing, version control, refactoring, and modularity. All of this needs to be understood collaboratively.
 - Agile planning principles apply: we iterate toward democratic clarity, not from it. Agile-like collaboration via a tool such as JIRA is industry standard for optimisation of team productivity.
+
+::: {#fig-agile}
+
+
+![](advocacy-agile.png)
+
+At each stage, the complexity of the project deepens and the line of inquiry becomes more defined. 
+
+:::
+
+
 - Data is not a static product, project plans need constant updating, for example, to reflect updated line of inquiry.
 - Treating analytics as a one-off request breaks observability and continuity and presupposes a static delivery.
 
