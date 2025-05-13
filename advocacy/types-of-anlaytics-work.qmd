@@ -1,0 +1,55 @@
+---
+title: "Analytics Work"
+subtitle: "Structured Intelligence Governance by People"
+author: 
+  - name: Dr Charles T. Gray, Datapunk
+    orcid: 0000-0002-9978-011X
+    affiliations:
+      - name: Good Enough Data & Systems Lab
+
+  - name: James P. Morris
+    affiliations:
+      - name: Good Enough Data & Systems Lab
+
+number-sections: false
+code-fold: true
+
+execute:
+  echo: false
+  message: false
+  error: true
+
+tags: [Data governance]
+---
+
+## Working together
+
+- :( When data developers work alone, they inherit all the uncertainty, fragility, and fallout.
+- :) When data is developed collaboratively, validation becomes distributed, feedback becomes faster, and the team shares responsibility for insight integrity.
+
+## Data work is software development
+
+- Data work *is* software development: it requires ongoing design, testing, version control, refactoring, and modularity. All of this needs to be understood collaboratively.
+- Agile planning principles apply: we iterate toward democratic clarity, not from it. Agile-like collaboration via a tool such as JIRA is industry standard for optimisation of team productivity.
+- Data is not a static product, project plans need constant updating, for example, to reflect updated line of inquiry.
+- Treating analytics as a one-off request breaks observability and continuity and presupposes a static delivery.
+
+## Types of tasks in an analytics project
+
+Different task types support different aspects of the analytics lifecycle. These roles are **interdependent**: good planning requires design clarity, engineering without documentation creates black boxes, and operations without semantic context leads to silent failures. Structured intelligence depends on the thoughtful composition of these roles.
+
+These task types form a structured system. Each plays a role in the lifecycle of an analytic question. Their composition requires coordination. Some types are core to producing insights; others enable sustainability, scalability, and justice within the system.
+
+| Task type         | Example                                              | Purpose                                         |
+|-------------------|------------------------------------------------------|-------------------------------------------------|
+| **operations**     | resource management, risk and issue handling                  | maintain organisational continuity                      |
+| **planning**       | breaking planning nodes into subnodes, dependency integrity                         | ensure tractable scope                          |
+| **engineering**    | writing DBT models, R functions                     | instantiate logic                               |
+| **design**         | metric specification, schema definition             | align semantics with intent                     |
+| **documentation**  | dbt `description:` blocks, ologs, validation notes  | preserve meaning across time and teams          |
+| **analytics**      | exploratory analysis, KPI trends, regression models | interpret results, generate insights            |
+| **validation**     | FAIR entity tests, cross-source comparisons         | ensure meaningfulness and robustness of results |
+| **coordination**   | wellbeing, collaborative views,  ways of working support                         | enable alignment, reduce drift, resolve blocks  |
+| **governance**     | escalation policies, data contracts, PR reviews     | constrain chaos, maintain coherent boundaries   |
+| **education**      | onboarding, internal demos, mentorship              | cultivate shared understanding and autonomy     |
+| **advocacy**       | stakeholder comms, doc writing, resisting nonsense  | protect question integrity and analyst wellbeing|
