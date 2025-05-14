@@ -25,9 +25,6 @@ tags: [Data governance]
 ## Working together
 
 - :( When data developers work alone, they inherit all the uncertainty, fragility, and fallout.
-- :) When data is developed collaboratively, validation becomes distributed, feedback becomes faster, and the team shares responsibility for insight integrity.
-
-To work together, we need a shared plan.
 
 ::: {#fig-conseq}
 
@@ -36,6 +33,12 @@ To work together, we need a shared plan.
 Without a shared plan there are many negative consequences.
 
 :::
+
+
+- :) When data is developed collaboratively, validation becomes distributed, feedback becomes faster, and the team shares responsibility for insight integrity.
+
+To work together, we need a shared plan.
+
 
 ## Data work is software development
 
