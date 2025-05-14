@@ -14,10 +14,10 @@ website:
         menu:
           - text: Structured Intelligence Architect Description
             href: advocacy/sia-description.qmd
-          - text: Coding of Kindness
-            href: advocacy/cok.qmd
           - text: Analytics Work
             href: advocacy/types-of-anlaytics-work.qmd
+          - text: Coding of Kindness
+            href: advocacy/cok.qmd
       - text: Development Blog
         href: blog.qmd
         menu:
