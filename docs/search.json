@@ -1334,7 +1334,7 @@
     "href": "advocacy/types-of-anlaytics-work.html",
     "title": "Analytics Work",
     "section": "",
-    "text": ":( When data developers work alone, they inherit all the uncertainty, fragility, and fallout.\n\n\n\n\n\n\n\nFigure 1: Without a shared plan there are many negative consequences.\n\n\n\n\n:) When data is developed collaboratively, validation becomes distributed, feedback becomes faster, and the team shares responsibility for insight integrity.\n\nTo work together, we need a shared plan."
+    "text": "Failing to plan is planning to fail. –Patrick Robotham"
   },
   {
     "objectID": "advocacy/types-of-anlaytics-work.html#types-of-tasks-in-an-anlaytics-project",
@@ -1354,8 +1354,8 @@
     "objectID": "advocacy/types-of-anlaytics-work.html#working-together",
     "href": "advocacy/types-of-anlaytics-work.html#working-together",
     "title": "Analytics Work",
-    "section": "",
-    "text": ":( When data developers work alone, they inherit all the uncertainty, fragility, and fallout.\n\n\n\n\n\n\n\nFigure 1: Without a shared plan there are many negative consequences.\n\n\n\n\n:) When data is developed collaboratively, validation becomes distributed, feedback becomes faster, and the team shares responsibility for insight integrity.\n\nTo work together, we need a shared plan."
+    "section": "Working together",
+    "text": "Working together\n\n:( When data developers work alone, they inherit all the uncertainty, fragility, and fallout.\n\n\n\n\n\n\n\nFigure 1: Without a shared plan there are many negative consequences.\n\n\n\n\n:) When data is developed collaboratively, validation becomes distributed, feedback becomes faster, and the team shares responsibility for insight integrity.\n\nTo work together, we need a shared plan."
   },
   {
     "objectID": "advocacy/types-of-anlaytics-work.html#data-work-is-software-development",

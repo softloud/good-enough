@@ -11,6 +11,10 @@ author:
     affiliations:
       - name: Good Enough Data & Systems Lab
 
+  - name: Patrick Robotham
+    affiliations:
+      - name: Good Enough Data & Systems Lab
+
 number-sections: false
 code-fold: true
 
@@ -21,6 +25,8 @@ execute:
 
 tags: [Data governance]
 ---
+
+> Failing to plan is planning to fail. --*Patrick Robotham*
 
 ## Working together
 
