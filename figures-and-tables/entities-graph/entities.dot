@@ -1,0 +1,198 @@
+digraph G {
+  rankdir=BT
+  graph [size="12,6", ratio=fill]
+  node [shape=box]
+
+
+  subgraph cluster_source {
+    style=dashed
+    edge [style=dashed]
+    node [fillcolor=""]
+
+    # title
+    source_title [
+      label="Source",
+      style=dashed
+    ]
+
+    # raw data provided
+    subgraph cluster_raw {
+      style=dotted
+      edge [style=dotted]
+      node [shape=triangle]
+
+      # title
+      raw_title [label="raw", style=dotted, shape=box]
+
+      # provided
+      raw_arunachal
+      raw_tehri
+      raw_sdg    
+    }
+  
+  subgraph cluster_extraction {
+    style=dotted
+    edge [style=dotted]
+    node [shape=invtrapezium]
+
+    # title
+    extraction_title [label="extraction", style=dotted, shape=box]
+
+    # output
+    source_respondents_arunachal
+    source_respondents_tehri
+    source_responses_arunachal
+    source_responses_tehri
+    source_sdg
+
+  }
+      
+
+
+    # 
+    raw_arunachal -> source_respondents_arunachal
+    raw_arunachal -> source_responses_arunachal
+
+    raw_tehri -> source_respondents_tehri
+    raw_tehri -> source_responses_tehri
+
+    raw_sdg -> source_sdg
+
+  }
+
+  subgraph cluster_semantic {
+    style=dashed
+    edge [style=dashed]
+    node [shape=invtrapezium]
+
+    # title
+    semantic_title [
+      label="Semantic",
+      style=dashed,
+      shape=box
+    ]
+
+    subgraph cluster_semantic_responses {
+      style=dotted
+      node [style=dotted, shape=parallelogram]
+      edge [style=invis]
+
+      semantic_responses [style=normal, shape=invtrapezium]
+
+      response_id
+      preference
+      sdg_id
+      unknown_response_attributes [label="?"]      
+
+    }
+
+    subgraph cluster_semantic_respondents {
+      style=dotted
+      node [style=dotted, shape=parallelogram]
+
+      semantic_respondents [style=normal, shape=invtrapezium]
+
+      age
+      gender
+      displacement
+      region
+      unknown_respondent_attributes [label="?"]      
+      
+    }
+
+    respondent_id [shape=doubleoctagon]
+
+    respondent_id -> semantic_responses
+    respondent_id -> semantic_respondents
+
+
+  }
+
+  subgraph cluster_analytical {
+    style=dashed
+    edge [style=dashed]
+
+    # title
+    analytical_title [
+      label="Analytical",
+      style=dashed
+    ]
+
+
+    analytical_responses
+    analytical_respondents
+
+
+  }
+
+  subgraph cluster_people {
+    style=dashed
+    node [shape=ellipse]
+    edge [style=dashed]
+
+    # title
+    people_title [
+      label="People",
+      style=dashed,
+      shape=box
+    ]
+
+    Garima
+
+    Charles
+
+    Garima -> Charles 
+  }
+
+  subgraph cluster_validation {
+    style=dashed
+    edge [style=dashed]
+    node [shape=trapezium]
+
+    validation [label="validation", style=dashed, shape=box]
+
+    data_entity
+    entities
+    migration
+
+    data_entity -> entities -> migration
+
+
+  }
+
+    source_title -> semantic_title -> analytical_title
+    
+    Garima -> raw_sdg
+    Garima -> raw_tehri
+    Garima -> raw_arunachal
+
+    source_sdg -> analytical_responses
+
+    #source_respondents_arunachal -> semantic_respondents
+    #source_respondents_tehri -> semantic_respondents
+
+    #source_responses_arunachal -> semantic_responses
+    #source_responses_tehri -> semantic_responses
+
+    #semantic_respondents -> analytical_responses
+    #semantic_responses -> analytical_responses
+    #semantic_respondents -> analytical_respondents
+    #semantic_responses -> analytical_respondents
+
+    # analytical_responses -> validation 
+    # analytical_respondents -> validation
+
+  
+    # raw_arunachal -> data_entity
+    semantic_title -> entities
+    source_sdg -> entities
+
+    analytical_title -> validation_title
+
+    validation -> Garima
+    Charles -> source_title
+    validation -> Charles
+    analytical_title -> Garima
+    analytical_title -> Charles
+
+}

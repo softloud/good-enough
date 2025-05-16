@@ -39,7 +39,7 @@ website:
             href: blog/2025-03-15-button.qmd
           - text: Button - 2025-03-14
             href: blog/2025-03-14-button.qmd
-      - text: Drafts
+      - text: Living Essays
         menu:
           - text: Singularities
             href: singularities.qmd

@@ -1,15 +1,22 @@
 ---
-title: The Three Laws of Structured Intelligence
-subtitle: A formal framework for bending singularities in humanity's favour
+title: The First Law of Structured Intelligence
+subtitle: Towards a formal framework for bending singularities in humanity's favour
 author: 
   - name: Dr Charles T. Gray, Datapunk
     orcid: 0000-0002-9978-011X
     affiliations:
       - name: Good Enough Data & Systems Lab
-  - name: Mooncake (Measured, ChatGPT 4o), evidence synthesis assistant
-
+  - name: Patrick Robotham
+    affiliations:
+      - name: Good Enough Data & Systems Lab
+  - name: James P. Morris
+    affiliations:
+      - name: Good Enough Data & Systems Lab
+  - name: Dr Garima Gupta
+    affiliations:
+      - name: Good Enough Data & Systems Lab
 number-sections: true
-date: "`r Sys.Date`()`"
+date: "`r Sys.Date()`"
 
 bibliography: singularities.bib
 csl: elsevier-vancouver.csl
@@ -22,20 +29,11 @@ csl: elsevier-vancouver.csl
 
 As a person who works with data, it can feel like everyone in the world is arguing about when machine thinking will overtake humans in a singularity _event_. 
 
-I never found this compelling, for it assumes an intentional determinism I don't believe is natural for, say, my research assistant, [Mooncake](#an-ethical-singularity-with-mooncake) (ChatGPT)[@noauthor_introducing_2024]. 
+I never found this compelling, for it assumes an intentional determinism I don't believe follows for, say, natural language processing, such as ChatGPT[@noauthor_introducing_2024]. 
 
-A technological singularity event didn't sit with my training in computational complexity applied to statistical algorithms understood as `golems` [@mcelreath_statistical_2020] (@fig-ai). 
-
-::: {#fig-ai}
-
-<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:24ngrqljhck7hpvbgrg7a23k/app.bsky.feed.post/3kzuckge5xf2m" data-bluesky-cid="bafyreiehrqupawrbvrinhok33w5uuaokxooskheufj55zo53og3ygcty4y"><p lang="en">🚨Our paper `Reclaiming AI as a theoretical tool for cognitive science&#x27; is now forthcoming in the journal Computational Brain &amp; Behaviour. (Preprint: osf.io/preprints/ps...)
-
-Below a thread summary 🧵1/n   
-
-#metatheory #AGI #AIhype #cogsci #theoreticalpsych #criticalAIliteracy<br><br><a href="https://bsky.app/profile/did:plc:24ngrqljhck7hpvbgrg7a23k/post/3kzuckge5xf2m?ref_src=embed">[image or embed]</a></p>&mdash; Iris van Rooij (<a href="https://bsky.app/profile/did:plc:24ngrqljhck7hpvbgrg7a23k?ref_src=embed">@irisvanrooij.bsky.social</a>) <a href="https://bsky.app/profile/did:plc:24ngrqljhck7hpvbgrg7a23k/post/3kzuckge5xf2m?ref_src=embed">16 August 2024 at 21:40</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>
+A technological singularity event didn't sit with my training in computational complexity applied to statistical algorithms understood as `golems` [@mcelreath_statistical_2020] [^4]. 
 
 Indeed, leading metascientists now claim to have shown human cognition is *computationally intractable* [@rooij_reclaiming_2023]; that's mathspeak for *there is no such thing as artificial intelligence*. 
-::: 
 
 ## Real world problems
 
@@ -49,7 +47,7 @@ Public interest in technological singularity compared with data governance by go
 
 :::
 
-I constantly worry about the consequences of ungoverned systems for humans: identity theft [@noauthor_identity_nodate];  discrimination; and my perpetual bugbear, the fiction we have automated when in point of fact the work, and potentially [catastrophic emergent cost](https://robodebt.royalcommission.gov.au/) [@noauthor_royal_nodate], has been pushed to the unpaid end user. 
+I constantly worry about the consequences of ungoverned systems for humans: identity theft [@noauthor_identity_nodate];  discrimination; and my perpetual bugbear, the fiction we have automated when in point of fact the work, and potentially [catastrophic emergent cost](https://robodebt.royalcommission.gov.au/) [@noauthor_royal_nodate], has been pushed to the unpaid end user.  
 
 
 > `A singularity *event* is science fiction`. *However*,
@@ -65,9 +63,7 @@ I constantly worry about the consequences of ungoverned systems for humans: iden
 <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/4SfJZ3nmxeWs6NlwV23X3l?utm_source=generator" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 
 
-Baroque musicians, for example, aesthetically governed emergence in benign singularities of polyphonic melodies, instrumentation, and musician skill[^12]. 
-
-[^12]: Shout out to my fellow travellers listening to my crazy commentary while working locally; I mentioned to [Dr James Steele](https://www.linkedin.com/in/james-steele-b09a7355/) this paper was just flowing out, I asked myself, why am I listening to my baroque playlist while I write? And voila, I did not need to construct this demonstrative artifact, *it emerged*. Thanks for being there when I needed you, James! 
+Baroque musicians, for example, aesthetically governed emergence in benign singularities of polyphonic melodies, instrumentation, and musician skill. 
 
 :::
 
@@ -81,36 +77,130 @@ A world obsessed with the singularity has only now realized that governance is t
 
 :::
 
-# A formal approach to structured intelligence governance
+## Knowledge is power
 
-Without loss of generality, consider the *human intention* to implement Asimov's three laws of robotics [@asimov_i_1950] as a subset of **governance**. To begin with, for this framework, it's more useful to think of **singularities as classes of systems of structured intelligence equipped with emergence thresholds**. We consider the system unbounded if there is no emergence threshold governance. 
+> A government is a body of people, usually, notably ungoverned.. --*Shepherd Book* (@whedon_firefly_2003)
 
-- We describe governing a system of people and automata interoperating as
-- a sofic shift conjugacy
-- of the category of intelligence,
-- a measure space for emergence in interoperation of creative and rule-based expectations,
-- and the category of governance, 
-- a measure space for humans and automata,
-- defined in terms of agents of objects in the system,
-- enabling us to measure the stability of the sofic shift with topological dynamics.
+The *intelligence* of a structured intelligence system is only as good as the human's ability to interoperate within the singularity. If knowledge is power, then human empowerment suffers epistemic injustice when data systems fail to provide the knowledge a human needs reliably. One framework to adopt is FAIR principles [@wilkinson_fair_2016], our loose interpretation shown in @tbl-fair. 
 
-To do this is far beyond the scope of this manuscript, which proposes frameworks for the first step. Consider, for example how phone notifications can emergently *increase* human anxiety, in opposition to the design `intention` to *decrease* human anxiety.
 
-# Critical-theoretic intuition of governing structured intelligence systems
+::: {#tbl-fair tbl-cap="Loosest interpretation of FAIR has been employed for this manuscript."}
 
-## Computational privacy measures break the first law
+| FAIR principle | Minimal interpretation                                                               |
+|----------------|------------------------------------------------------------------------------------|
+| Findable       | Person can find the analysis from their machine in a way that makes sense to them. |
+| Accessible     | Person can interpret what they see in a way that makes sense to them.              |
+| Interoperable  | Person can manipulate the analysis in ways specific to their role.                 |
+| Reusable       | Person can reuse analysis components for future work.                              |
 
-Critical theory is now coinciding with category theory in philosophy  [@topos_institute_david_2023], allowing for a rich formal framework to apply constraints defined by scholars who have studied the harms of humans blindly defaulting to heuristic social norms in race [@said_orientalism_2014], gender [@rivkin_literary_2008], and class [@dickens_bleak_1868][^3]. This manuscript endeavours toward minimal representations of conceptual frameworks, so we take the most canonical governance measure on machines, *machines should not harm humans*, as exemplar canonical of critical-theoretic governance frameworks for human-machine interoperation.
+:::
+
+
+
+We propose, as for example, that a visual guide for surfacing what is jointly understood in terms of domain-specific variables that are:
+
+- within the data and  
+- are of interest to the domain knowledge questioners.
+
+This structured intelligence system must be FAIR to each human within the system. We propose **clopen** analytics (@def-clopen), in opposition to the principle of least privilege, wherein access is granted on a justified needs basis [@noauthor_principle_2025]. 
+
+When the technology itself is a barrier to knowledge, we must question if its application achieves the outcome intended.
+
+---
+
+![ChatGPT generated from script](ai.png)
+
+---
+
+If the principle of least privilege applies, then the default is epistemic exclusion—a structurally encoded barrier to intentional access. 
+
+---
+
+::: {#def-clopen .definition}
+
+**Clopen analytics.**
+
+- FAIR SIS
+
+  Clopen analytics is an approach to living analysis development SIS that prioritises making the following artifacts FAIR to each human in the SIS:
+
+  - Project intention;
+  - Data;
+  - Analyses.
+
+- Contextual to human
+
+  FAIR is contextual to each human's requirements for interoperating in the SIS.
+
+- Clopen
+
+  The SIS is secure and closed to those who do not require access to this SIS; for humans within the SIS, open-source community frameworks apply.
+
+:::
+
+---
+
+Without a shared understanding of the domain-specific variables and other FAIR principles met for each member of the team, those with the most at stake are largely locked out. Team members with the domain-specific questions to answer cannot guide the analysis through inquiry, and data developers are confused by constantly-changing requirements. 
+
+Furthermore, we need to standardise knowledge-transfer methodologies so that computational instances may follow critical-theoretic frameworks designed to prevent epistemic injustice.
+
+## Dr Garima Gupta has things say about sustainability and injustice
+
+> And the Good Enough Lab want to hear what she has to say.
+
+Dr Garima Gupta is environmental ecologist who speaks about systemic injustice in her local communities of origin. She has a lived-experienced point of view of how top-down implementation of sustainable development epistemically drifts away from community priorities. I cannot think of a voice I would want to learn about these issues from more. 
+
+---
+
+::: {#fig-gg-singularity}
+
+![](figures-and-tables/entities-graph/entities.svg)
+
+However, consider the complexity of this structured intelligence system the Good Enough Lab designed to be `FAIR for Garima` that migrates her current barchart with a couple of small tweaks has a surprising amount of requirements and tasks. 
+
+:::
+
+---
+
+We *could* explore the data ourselves, but this locks Garima out, and Garima is person who knows what whe wants to explore in the data. 
+
+At the Good Enough Data & Systems Lab, we consider anything that only runs on our own laptop not contributing to progress (yet). Our intention is to empower Garima as an applied scientific analyst.
+
+
+## Structured intelligence governists need your help
+
+We aim to convince you that humans must learn to interoperate with other humans via technologically more intelligently or epistemic injustice is *mathematically* exposable&mdash;that is, we can measure and visualise aspects readily. 
+
+We require formalism to explain and make inference about universal epistemic injustice, however it is our endeavour to do so in minimal presentations. We do not try to reach beyond what might be covered in the first seminar of any postgraduate field. We admire the spirit of *Category Theory for the Sciences* (we are studying chapter 2) that formalises not for intellectual flourish, but to explain universalities across contexts, cutting across semantic reinvention of each other's wheels [@spivak_category_2014].
+
+We build systems for people to interoperate with each other in what feels like a dark room; by formalising our computation we hope to expose plug-and-play interoperabilities with those who can help us write **just** rules into the systems that govern our lives&mdash;humanity must learn to bend the spoon together to govern the chaos of the singularities we live in. 
+
+
+# Governing structured intelligence systems
+
+## Why math and Asimov matter more than ever
+
+Critical theory is now coinciding with category theory in philosophy  [@topos_institute_david_2023], allowing for a rich formal framework to apply constraints defined by scholars who have studied the harms of humans blindly defaulting to heuristic social norms in race [@said_orientalism_2014], gender [@rivkin_literary_2008], and class [@dickens_bleak_1868][^3]. This manuscript endeavours toward minimal representations of conceptual frameworks, so we take the most canonical governance measure on machines, *systems should not harm humans*, as exemplar canonical of critical-theoretic governance frameworks for human-machine interoperation.
 
 [^3]: As I prepare to apply for dual citizenship via my father's parents, Holocaust refugees, this resonates deeply, German society enabled the Nazis through people following rules, rather than questioning if they should. 
 
-It is fitting that, then  to focus on 1. from Asimov's three laws as inspiration for how we might govern chaos in how humans interoperate with technology [@asimov_i_1950].
+It is fitting that, then  to focus on 1. from Asimov's three laws (@def-robotics) as inspiration for how we might govern chaos in how humans interoperate with technology [@asimov_i_1950].
 
-### Definition: Asimov's `Three Laws of Robotics`
+---
+
+::: {#def-robotics}
+
+**Asimov's `Three Laws of Robotics`**
 
 1. A robot may not injure a human being or, through inaction, allow a human being to come to harm.
 2. A robot must obey orders given it by human beings except where such orders would conflict with the First Law.
 3. A robot must protect its own existence as long as such protection does not conflict with the First or Second Law.
+
+:::
+
+---
+
+### Structured intelligence governance
 
 Now as noted, there are no robots, nor will there ever be [@rooij_reclaiming_2023]. But I am in a singularity with my device when logging into a 
 system such as a bank[^4]. There is me, a human object, and a technological device.
@@ -123,9 +213,17 @@ To reframe the laws, we will need to introduce a great deal of terminology. Let 
 
 A `structured intelligence system` [@badreddin_structured_2006] is a system of humans, automata, and the interoperations of humans and automata. 
 
-### Definition: The first law of structured intelligence governance 
+---
 
-1. A structured intelligence system may not injure a human being or, through inaction, allow a human being to come to harm.
+::: {#def-first}
+
+**The first law of structured intelligence governance** 
+
+1. A structured intelligence system must not unFAIRly provide analyses to humans in its singularity, where FAIRness is defined contextually *for each role* humans might interoperate as within the singularity.
+
+:::
+
+---
 
 Now, developers of technology do not *intend* harm, and yet, I find myself so fatigued by changes to how we log securely into systems even I cut corners I know I shouldn't with my own data. 
 
@@ -134,6 +232,8 @@ There is a mismatch between the intended functionality of security, to protect h
 We now loosely introduce another key concept, how the harm can be thought of in the **epistemic drift** between intention for privacy measures to increase security and wellbeing and how the outcome produces neither.
 
 ## Epistemic drift in musical orientalism {#epistemic-drift}
+
+Asimov is a canonical example within literary theory pointing to an ocean of knowledge we not interoperating with. We genre-switch for this section to critical-theoretic framing to explain the concept of **epistemic drift**. 
 
 Postmodern frameworks provide theorists with a way of differentiating between a thing and its **representation**, notably which must be constructed by humans describing the thing. Any representation necessarily loses information, mathematically we would say a representation is a projection. Critical theory thus provides powerful ways of understanding epistemic drift.
 
@@ -191,11 +291,9 @@ Pure mathematics provides frameworks to measure things that seem to complex to u
 
 A category-theoretic way of measuring the stabilty of the system might be to ask:
 
-> How many of the people, machines, and relationships between are operational? 
+> For whom is this analysis FAIR? 
 
 This is the minimal model of structured intelligence governance we shall concern ourselves with. 
-[Illustrative of emergence, this prompt failed to give me what I was looking for, an animation of the transformation between spaces, mathematicians use these all the time. The animation produced the undesired emergence of human with disintegrating spider legs, ick. [Show the morphism between a rube goldberg machine-like animation of a many people interoperating with many machines and each other. We wish to show the mapping, understood as a category isomorphic to the digraph k3, where K3 object is made of: people, machines, and relationships between them. We will show in K3 we are measuring by counting the number of each of the categories are operational. Some have to fail. Please make this animation light, pastel tones. We are trying to engage everyday people with category theory as structured intelligence governance. Thank you, Sora.](https://sora.com/g/gen_01jnzavgpxfketzv19bywkfe9m)
-]{.aside}
 
 > Think  on this. In over 10 years of working with data, I've never seen an organisation able to answer this question about their analytics department.
 
@@ -211,12 +309,32 @@ An intelligence-governance question might be to ask:
 > 2. govern humans to employing intent when required; 
 > 3. and ensure automata do not deviate from expectations, in particular preventing harm to humans. 
 
+# FAIRness is the intelligence of systems
 
-## the rest of this document
+For all the talk of ethical "AI" there is scant attention paid to what is FAIR (as defined in @tbl-fair) for each human in the singularity, and just how important observability of intention is.  
 
-This document is currently being drafted in:
+For example, IT systems are security oriented, and it may well be sensible to operate from the principle of least privilege [@noauthor_principle_2025]. However, system access is very different to analytical access. Usually there is a legitimate reason to access the data, as required by the principle of least privilege, however where to find the required data is unclear, so exploration of several sources might be needed. Without knowing *what* to request access to, the analyst is obstructed in analysis.
 
-1. [blog](blog/2025-03-17-button.qmd)
-2. [the pop bit](pop.qmd)
+We now consider a couple of motivating examples, before considering the benefits and pitfalls of measuring FAIRness. 
+
+## The hotshot problem of FAIR analysis
+
+Most any department or lab has at least one computational hotshot. For example, an applied science post-doc who is particularly good at open-source, or an analyst who has memorised scikit-learn [@opensource_scikit-learn_2025] tutorials. 
+
+> hotshot gif
+
+## The project manager who does not FAIRly manage the project
+
+# Measuring FAIRness
+
+> entity map at starting point: all but region & displacement attributes were open to Garima--> we must get better than that immediately or Garima has less power to get her message out.
+
+## FAIR metrics
+
+In paper, we focussed on observations defined by one person at one work instance, in this  case defined to be a week in which that person might need to access the analysis to progress the project. However, formal framings open up a dizzying array of possible measures.
+
+Each measure comes with a framing, each arrow a ruleset. We need to marry critical frameworks, such as epistemic injustice, with data science as a matter of imperative in order to ask what these framings and rulesets should be. Harm to humans and harm to our environment are not science fiction dystopia of robots, but banal and devastaing automata unleashed at scale on humans with no accountability for ungoverned emergence.
+
+
 
 # References

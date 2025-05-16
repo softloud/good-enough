@@ -1,0 +1,7 @@
+Do they have access to the information needed to answer their question?	There is an idea	There's an initial meeting	Clarification is needed	The project manager doesn't know	Someone Asks the Executive	The team is briefed (but the data engineer was sick)	Nobody wrote up the details in Jira	We need some data!	We don't have access to the data :(	The IT Guy is on holiday	Access Granted!	The Data Engineer is cleaning the data
+Stakeholders	Week 0	Week 1	Week 2	Week 3	Week 4	Week 5	Week 6	Week 7	Week 8	Week 9	Week 10	Week 11
+Executive	1	0	0	0	1	0	0	0	0	0	0	0
+Data Scientist	NA	1	0	0	1	1	1	0	0	0	0	0
+Data Engineer	NA	1	0	0	0	0	0	1	0	0	1	1
+IT Guy	NA	1	0	0	0	1	0	1	1	0	1	1
+"Shitty Project Manager"	1	1	1	0	0	1	1	1	0	0	0	0
