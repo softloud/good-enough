@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Dr Charles T. Gray, Datapunk">
-<meta name="author" content="Patrick Robotham">
-<meta name="author" content="James P. Morris">
-<meta name="author" content="Dr Garima Gupta">
+<meta name="author" content="Patrick Robotham, Data scientist">
+<meta name="author" content="James P. Morris, Data Scientist">
+<meta name="author" content="Dr Garima Gupta, Ecologist">
 
 <title>The First Law of Structured Intelligence – Good Enough Lab</title>
 <style>
@@ -193,7 +193,10 @@ div.csl-indent {
   <ul class="collapse">
   <li><a href="#the-wrong-question" id="toc-the-wrong-question" class="nav-link" data-scroll-target="#the-wrong-question"><span class="header-section-number">1.1</span> The wrong question</a></li>
   <li><a href="#real-world-problems" id="toc-real-world-problems" class="nav-link" data-scroll-target="#real-world-problems"><span class="header-section-number">1.2</span> Real world problems</a></li>
-  <li><a href="#knowledge-is-power" id="toc-knowledge-is-power" class="nav-link" data-scroll-target="#knowledge-is-power"><span class="header-section-number">1.3</span> Knowledge is power</a></li>
+  <li><a href="#data-is-knowledge-knowledge-is-power" id="toc-data-is-knowledge-knowledge-is-power" class="nav-link" data-scroll-target="#data-is-knowledge-knowledge-is-power"><span class="header-section-number">1.3</span> Data is knowledge, knowledge is power</a>
+  <ul class="collapse">
+  <li><a href="#making-data-fair" id="toc-making-data-fair" class="nav-link" data-scroll-target="#making-data-fair"><span class="header-section-number">1.3.1</span> Making data FAIR</a></li>
+  </ul></li>
   <li><a href="#dr-garima-gupta-has-things-say-about-sustainability-and-injustice" id="toc-dr-garima-gupta-has-things-say-about-sustainability-and-injustice" class="nav-link" data-scroll-target="#dr-garima-gupta-has-things-say-about-sustainability-and-injustice"><span class="header-section-number">1.4</span> Dr Garima Gupta has things say about sustainability and injustice</a></li>
   <li><a href="#structured-intelligence-governists-need-your-help" id="toc-structured-intelligence-governists-need-your-help" class="nav-link" data-scroll-target="#structured-intelligence-governists-need-your-help"><span class="header-section-number">1.5</span> Structured intelligence governists need your help</a></li>
   </ul></li>
@@ -242,7 +245,7 @@ div.csl-indent {
           </p>
       </div>
     <div class="quarto-title-meta-contents">
-    <p class="author">Patrick Robotham </p>
+    <p class="author">Patrick Robotham, Data scientist </p>
   </div>
   <div class="quarto-title-meta-contents">
         <p class="affiliation">
@@ -250,7 +253,7 @@ div.csl-indent {
           </p>
       </div>
     <div class="quarto-title-meta-contents">
-    <p class="author">James P. Morris </p>
+    <p class="author">James P. Morris, Data Scientist </p>
   </div>
   <div class="quarto-title-meta-contents">
         <p class="affiliation">
@@ -258,7 +261,7 @@ div.csl-indent {
           </p>
       </div>
     <div class="quarto-title-meta-contents">
-    <p class="author">Dr Garima Gupta </p>
+    <p class="author">Dr Garima Gupta, Ecologist </p>
   </div>
   <div class="quarto-title-meta-contents">
         <p class="affiliation">
@@ -289,7 +292,7 @@ div.csl-indent {
 <h1 data-number="1"><span class="header-section-number">1</span> The singularity is here, its chaos must be governed</h1>
 <section id="the-wrong-question" class="level2" data-number="1.1">
 <h2 data-number="1.1" class="anchored" data-anchor-id="the-wrong-question"><span class="header-section-number">1.1</span> The wrong question</h2>
-<p>As a person who works with data, it can feel like everyone in the world is arguing about when machine thinking will overtake humans in a singularity <em>event</em>.</p>
+<p>As a person who works with data, it can feel like everyone in the world is arguing about when machine thinking will overtake humans in a <code>singularity</code> <em>event</em>.</p>
 <p>I never found this compelling, for it assumes an intentional determinism I don’t believe follows for, say, natural language processing, such as ChatGPT<span class="citation" data-cites="noauthor_introducing_2024">[<a href="#ref-noauthor_introducing_2024" role="doc-biblioref">1</a>]</span>.</p>
 <p>A technological singularity event didn’t sit with my training in computational complexity applied to statistical algorithms understood as <code>golems</code> <span class="citation" data-cites="mcelreath_statistical_2020">[<a href="#ref-mcelreath_statistical_2020" role="doc-biblioref">2</a>]</span> <a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>.</p>
 <p>Indeed, leading metascientists now claim to have shown human cognition is <em>computationally intractable</em> <span class="citation" data-cites="rooij_reclaiming_2023">[<a href="#ref-rooij_reclaiming_2023" role="doc-biblioref">3</a>]</span>; that’s mathspeak for <em>there is no such thing as artificial intelligence</em>.</p>
@@ -312,13 +315,11 @@ Figure&nbsp;1: Public interest in technological singularity compared with data g
 <blockquote class="blockquote">
 <p><code>A singularity *event* is science fiction</code>. <em>However</em>,</p>
 </blockquote>
-<div class="tenor-gif-embed" data-postid="22197049" data-share-method="host" data-aspect-ratio="3">
-<a href="https://tenor.com/view/the-matrix-has-you-the-matrix-glitch-code-system-gif-22197049">The Matrix Has You Glitch GIF</a>from <a href="https://tenor.com/search/the+matrix+has+you-gifs">The Matrix Has You GIFs</a>
-</div>
-<script type="text/javascript" async="" src="https://tenor.com/embed.js"></script>
+<p><img src="figures-and-tables/external-content/matrix.gif" class="img-fluid"></p>
 <blockquote class="blockquote">
-<p><code>singularities</code> are already woven into the fabric of humanity’s existence. We have always lived in largely-benign singularities (<a href="#fig-baroque" class="quarto-xref">Figure&nbsp;2</a>), where heuristic and intentional systems interoperate via humans to produce emergent effects; it is only that scale now makes systems powerful in a way they never were before. We must recognize that the challenge is not to prevent a singularity, but to govern the singularities we are already part of, harnessing this power for good, rather than allowing unchecked evils to emerge.</p>
+<p><code>singularities</code> are already woven into the fabric of humanity’s existence. We have always lived in largely-benign singularities (<a href="#fig-baroque" class="quarto-xref">Figure&nbsp;2</a>), where heuristic and intentional systems interoperate via humans to produce emergent effects; it is only that scale now makes systems powerful in a way they never were before.</p>
 </blockquote>
+<p>We must recognize that the challenge is not to prevent a singularity, but to govern the singularities we are already part of, harnessing this power for good, rather than allowing unchecked evils to emerge.</p>
 <div id="fig-baroque" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-baroque-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -330,7 +331,21 @@ Figure&nbsp;2: Baroque musicians, for example, aesthetically governed emergence 
 </figcaption>
 </figure>
 </div>
-<p>A world obsessed with the singularity has only now realized that governance is the missing piece. We need a formal foundation for structured intelligence <span class="citation" data-cites="badreddin_structured_2006">[<a href="#ref-badreddin_structured_2006" role="doc-biblioref">7</a>]</span> governance before chaos overtakes order, and humans cannot do this without machine help. The dinosaurs of technology are out of the park and it is going to take the combined efforts of critical theorists, mathematicians, developers, data scientists, and decision makers to get the raptors back into the enclosure (<a href="#fig-dino" class="quarto-xref">Figure&nbsp;3</a>).</p>
+<p>In order to instantiate ethics computationally, we need to translate to logical statements (predicates) a computer can understand. We provide our first definition of many; each of which is part of this living document, to be discussed and updated as new community join the Good Enough Lab.</p>
+<hr>
+<div id="def-sis" class="theorem definition">
+<p><span class="theorem-title"><strong>Definition 1</strong></span> <strong>Structured Intelligence System (SIS)</strong></p>
+<p>A system composed of humans, automata, and the heuristics by which they interoperate, producing emergent effects.</p>
+</div>
+<hr>
+<p>A world obsessed with the singularity has only now realized that governance is the missing piece. We need a formal foundation for structured intelligence <span class="citation" data-cites="badreddin_structured_2006">[<a href="#ref-badreddin_structured_2006" role="doc-biblioref">7</a>]</span> governance before chaos overtakes order, and humans cannot do this without machine help.</p>
+<hr>
+<div id="def-sig" class="definition theorem">
+<p><span class="theorem-title"><strong>Definition 2</strong></span> <strong>Structured Intelligence Governance (SIG)</strong></p>
+<p>Structured Intelligence Governance (SIG) is the principled coordination of a Structured Intelligence System (SIS), ensuring that the interoperations between humans and automata are governed by just, intentional rules. SIG aims to prevent epistemic drift and emergent harm by aligning heuristic action with human intent.</p>
+</div>
+<hr>
+<p>The dinosaurs of technology are out of the park and it is going to take the combined efforts of critical theorists, mathematicians, developers, data scientists, and decision makers to get the raptors back into the enclosure (<a href="#fig-dino" class="quarto-xref">Figure&nbsp;3</a>).</p>
 <div id="fig-dino" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-dino-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -343,12 +358,18 @@ Figure&nbsp;3: <em>Yeah, yeah, but your scientists were so preoccupied with whet
 </figure>
 </div>
 </section>
-<section id="knowledge-is-power" class="level2" data-number="1.3">
-<h2 data-number="1.3" class="anchored" data-anchor-id="knowledge-is-power"><span class="header-section-number">1.3</span> Knowledge is power</h2>
+<section id="data-is-knowledge-knowledge-is-power" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="data-is-knowledge-knowledge-is-power"><span class="header-section-number">1.3</span> Data is knowledge, knowledge is power</h2>
 <blockquote class="blockquote">
-<p>A government is a body of people, usually, notably ungoverned.. –<em>Shepherd Book</em> (<span class="citation" data-cites="whedon_firefly_2003">[<a href="#ref-whedon_firefly_2003" role="doc-biblioref">9</a>]</span>)</p>
+<p>A government is a body of people, usually, notably ungoverned. –<em>Shepherd Book</em> (<span class="citation" data-cites="whedon_firefly_2003">[<a href="#ref-whedon_firefly_2003" role="doc-biblioref">9</a>]</span>)</p>
 </blockquote>
-<p>The <em>intelligence</em> of a structured intelligence system is only as good as the human’s ability to interoperate within the singularity. If knowledge is power, then human empowerment suffers epistemic injustice when data systems fail to provide the knowledge a human needs reliably. One framework to adopt is FAIR principles <span class="citation" data-cites="wilkinson_fair_2016">[<a href="#ref-wilkinson_fair_2016" role="doc-biblioref">10</a>]</span>, our loose interpretation shown in <a href="#tbl-fair" class="quarto-xref">Table&nbsp;1</a>.</p>
+<p>The <em>intelligence</em> of a structured intelligence system is only as good as the human’s ability to interoperate within the singularity. If knowledge is power, then human empowerment suffers <strong>epistemic injustice</strong>, injustice related to knowledge, when data systems fail to provide the knowledge a human needs reliably. Data development is implemented by humans, usually, notably ungoverned.</p>
+<p>We think structured intelligence governance falls more in the subcategory of epistemological injustice within the theories of epistemic injustice, however there are aspects of systems epistemology that also fall into testimonial or hermeneutical injustice <span class="citation" data-cites="kidd_routledge_2017">[<a href="#ref-kidd_routledge_2017" role="doc-biblioref">10</a>]</span>. However, it’s not for <strong>us</strong> to say, for we are not experts in epistemic injustice.</p>
+<p>We will need the help of those theorists in examining epistemic injustice of inaccess to data. For example, standard information technology procedures, such as the principle of least privilege <span class="citation" data-cites="noauthor_principle_2025">[<a href="#ref-noauthor_principle_2025" role="doc-biblioref">11</a>]</span>, wherein access is granted on a needs basis, often creates barriers to analysis, as we shall explore in [to do link to bit about least privilege].</p>
+<p>Our intention is to build bridges from the world of data science system design to people who understand how to write better rules for structured intelligence systems.</p>
+<section id="making-data-fair" class="level3" data-number="1.3.1">
+<h3 data-number="1.3.1" class="anchored" data-anchor-id="making-data-fair"><span class="header-section-number">1.3.1</span> Making data FAIR</h3>
+<p>One—just one!—way of examining epistemic injustice in data systems is to ask if the system is findable, accessible, interoperable, reusable (FAIR) for domain-knowledge analysts who design questions and answers <span class="citation" data-cites="wilkinson_fair_2016">[<a href="#ref-wilkinson_fair_2016" role="doc-biblioref">12</a>]</span>.</p>
 <div id="tbl-fair" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-fair-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -394,7 +415,7 @@ Table&nbsp;1: Loosest interpretation of FAIR has been employed for this manuscri
 </li>
 <li>are of interest to the domain knowledge questioners.</li>
 </ul>
-<p>This structured intelligence system must be FAIR to each human within the system. We propose <strong>clopen</strong> analytics (<a href="#def-clopen" class="quarto-xref">Definition&nbsp;1</a>), in opposition to the principle of least privilege, wherein access is granted on a justified needs basis <span class="citation" data-cites="noauthor_principle_2025">[<a href="#ref-noauthor_principle_2025" role="doc-biblioref">11</a>]</span>.</p>
+<p>This structured intelligence system must be FAIR to each human within the system. We propose <strong>clopen</strong> analytics (<a href="#def-clopen" class="quarto-xref">Definition&nbsp;3</a>), in opposition to the principle of least privilege, wherein access is granted on a justified needs basis <span class="citation" data-cites="noauthor_principle_2025">[<a href="#ref-noauthor_principle_2025" role="doc-biblioref">11</a>]</span>.</p>
 <p>When the technology itself is a barrier to knowledge, we must question if its application achieves the outcome intended.</p>
 <hr>
 <div class="quarto-figure quarto-figure-center">
@@ -407,7 +428,7 @@ Table&nbsp;1: Loosest interpretation of FAIR has been employed for this manuscri
 <p>If the principle of least privilege applies, then the default is epistemic exclusion—a structurally encoded barrier to intentional access.</p>
 <hr>
 <div id="def-clopen" class="definition theorem">
-<p><span class="theorem-title"><strong>Definition 1</strong></span> <strong>Clopen analytics.</strong></p>
+<p><span class="theorem-title"><strong>Definition 3</strong></span> <strong>Clopen analytics.</strong></p>
 <ul>
 <li><p>FAIR SIS</p>
 <p>Clopen analytics is an approach to living analysis development SIS that prioritises making the following artifacts FAIR to each human in the SIS:</p>
@@ -425,6 +446,7 @@ Table&nbsp;1: Loosest interpretation of FAIR has been employed for this manuscri
 <hr>
 <p>Without a shared understanding of the domain-specific variables and other FAIR principles met for each member of the team, those with the most at stake are largely locked out. Team members with the domain-specific questions to answer cannot guide the analysis through inquiry, and data developers are confused by constantly-changing requirements.</p>
 <p>Furthermore, we need to standardise knowledge-transfer methodologies so that computational instances may follow critical-theoretic frameworks designed to prevent epistemic injustice.</p>
+</section>
 </section>
 <section id="dr-garima-gupta-has-things-say-about-sustainability-and-injustice" class="level2" data-number="1.4">
 <h2 data-number="1.4" class="anchored" data-anchor-id="dr-garima-gupta-has-things-say-about-sustainability-and-injustice"><span class="header-section-number">1.4</span> Dr Garima Gupta has things say about sustainability and injustice</h2>
@@ -445,12 +467,12 @@ Figure&nbsp;4: However, consider the complexity of this structured intelligence 
 </div>
 <hr>
 <p>We <em>could</em> explore the data ourselves, but this locks Garima out, and Garima is person who knows what whe wants to explore in the data.</p>
-<p>At the Good Enough Data &amp; Systems Lab, we consider anything that only runs on our own laptop not contributing to progress (yet). Our intention is to empower Garima as an applied scientific analyst.</p>
+<p>At the Good Enough Data &amp; Systems Lab, we consider anything that only runs on our own laptop not contributing to progress (yet). Our intention is to empower Garima as an applied scientific analyst to design her own questions and lines of inquirty that may or may not involve computational collaboration.</p>
 </section>
 <section id="structured-intelligence-governists-need-your-help" class="level2" data-number="1.5">
 <h2 data-number="1.5" class="anchored" data-anchor-id="structured-intelligence-governists-need-your-help"><span class="header-section-number">1.5</span> Structured intelligence governists need your help</h2>
 <p>We aim to convince you that humans must learn to interoperate with other humans via technologically more intelligently or epistemic injustice is <em>mathematically</em> exposable—that is, we can measure and visualise aspects readily.</p>
-<p>We require formalism to explain and make inference about universal epistemic injustice, however it is our endeavour to do so in minimal presentations. We do not try to reach beyond what might be covered in the first seminar of any postgraduate field. We admire the spirit of <em>Category Theory for the Sciences</em> (we are studying chapter 2) that formalises not for intellectual flourish, but to explain universalities across contexts, cutting across semantic reinvention of each other’s wheels <span class="citation" data-cites="spivak_category_2014">[<a href="#ref-spivak_category_2014" role="doc-biblioref">12</a>]</span>.</p>
+<p>We require formalism to explain and make inference about universal epistemic injustice, however it is our endeavour to do so in minimal presentations. We do not try to reach beyond what might be covered in the first seminar of any postgraduate field. We admire the spirit of <em>Category Theory for the Sciences</em> (we are studying chapter 2) that formalises not for intellectual flourish, but to explain universalities across contexts, cutting across semantic reinvention of each other’s wheels <span class="citation" data-cites="spivak_category_2014">[<a href="#ref-spivak_category_2014" role="doc-biblioref">13</a>]</span>.</p>
 <p>We build systems for people to interoperate with each other in what feels like a dark room; by formalising our computation we hope to expose plug-and-play interoperabilities with those who can help us write <strong>just</strong> rules into the systems that govern our lives—humanity must learn to bend the spoon together to govern the chaos of the singularities we live in.</p>
 </section>
 </section>
@@ -458,11 +480,11 @@ Figure&nbsp;4: However, consider the complexity of this structured intelligence 
 <h1 data-number="2"><span class="header-section-number">2</span> Governing structured intelligence systems</h1>
 <section id="why-math-and-asimov-matter-more-than-ever" class="level2" data-number="2.1">
 <h2 data-number="2.1" class="anchored" data-anchor-id="why-math-and-asimov-matter-more-than-ever"><span class="header-section-number">2.1</span> Why math and Asimov matter more than ever</h2>
-<p>Critical theory is now coinciding with category theory in philosophy <span class="citation" data-cites="topos_institute_david_2023">[<a href="#ref-topos_institute_david_2023" role="doc-biblioref">13</a>]</span>, allowing for a rich formal framework to apply constraints defined by scholars who have studied the harms of humans blindly defaulting to heuristic social norms in race <span class="citation" data-cites="said_orientalism_2014">[<a href="#ref-said_orientalism_2014" role="doc-biblioref">14</a>]</span>, gender <span class="citation" data-cites="rivkin_literary_2008">[<a href="#ref-rivkin_literary_2008" role="doc-biblioref">15</a>]</span>, and class <span class="citation" data-cites="dickens_bleak_1868">[<a href="#ref-dickens_bleak_1868" role="doc-biblioref">16</a>]</span><a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>. This manuscript endeavours toward minimal representations of conceptual frameworks, so we take the most canonical governance measure on machines, <em>systems should not harm humans</em>, as exemplar canonical of critical-theoretic governance frameworks for human-machine interoperation.</p>
-<p>It is fitting that, then to focus on 1. from Asimov’s three laws (<a href="#def-robotics" class="quarto-xref">Definition&nbsp;2</a>) as inspiration for how we might govern chaos in how humans interoperate with technology <span class="citation" data-cites="asimov_i_1950">[<a href="#ref-asimov_i_1950" role="doc-biblioref">17</a>]</span>.</p>
+<p>Critical theory is now coinciding with category theory in philosophy <span class="citation" data-cites="topos_institute_david_2023">[<a href="#ref-topos_institute_david_2023" role="doc-biblioref">14</a>]</span>, allowing for a rich formal framework to apply constraints defined by scholars who have studied the harms of humans blindly defaulting to heuristic social norms in race <span class="citation" data-cites="said_orientalism_2014">[<a href="#ref-said_orientalism_2014" role="doc-biblioref">15</a>]</span>, gender <span class="citation" data-cites="rivkin_literary_2008">[<a href="#ref-rivkin_literary_2008" role="doc-biblioref">16</a>]</span>, and class <span class="citation" data-cites="dickens_bleak_1868">[<a href="#ref-dickens_bleak_1868" role="doc-biblioref">17</a>]</span><a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>. This manuscript endeavours toward minimal representations of conceptual frameworks, so we take the most canonical governance measure on machines, <em>systems should not harm humans</em>, as exemplar canonical of critical-theoretic governance frameworks for human-machine interoperation.</p>
+<p>It is fitting that, then to focus on 1. from Asimov’s three laws (<a href="#def-robotics" class="quarto-xref">Definition&nbsp;4</a>) as inspiration for how we might govern chaos in how humans interoperate with technology <span class="citation" data-cites="asimov_i_1950">[<a href="#ref-asimov_i_1950" role="doc-biblioref">18</a>]</span>.</p>
 <hr>
 <div id="def-robotics" class="theorem definition">
-<p><span class="theorem-title"><strong>Definition 2</strong></span> <strong>Asimov’s <code>Three Laws of Robotics</code></strong></p>
+<p><span class="theorem-title"><strong>Definition 4</strong></span> <strong>Asimov’s <code>Three Laws of Robotics</code></strong></p>
 <ol type="1">
 <li>A robot may not injure a human being or, through inaction, allow a human being to come to harm.</li>
 <li>A robot must obey orders given it by human beings except where such orders would conflict with the First Law.</li>
@@ -473,12 +495,37 @@ Figure&nbsp;4: However, consider the complexity of this structured intelligence 
 <section id="structured-intelligence-governance" class="level3" data-number="2.1.1">
 <h3 data-number="2.1.1" class="anchored" data-anchor-id="structured-intelligence-governance"><span class="header-section-number">2.1.1</span> Structured intelligence governance</h3>
 <p>Now as noted, there are no robots, nor will there ever be <span class="citation" data-cites="rooij_reclaiming_2023">[<a href="#ref-rooij_reclaiming_2023" role="doc-biblioref">3</a>]</span>. But I am in a singularity with my device when logging into a system such as a bank<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>. There is me, a human object, and a technological device.</p>
+<section id="codifying-the-rules-of-singularities" class="level4" data-number="2.1.1.1">
+<h4 data-number="2.1.1.1" class="anchored" data-anchor-id="codifying-the-rules-of-singularities"><span class="header-section-number">2.1.1.1</span> Codifying the rules of singularities</h4>
 <p>If that technological device forces the human to deviate from their governance framework (such as protect my own privacy) through repetive changes to how we interface, humans become fatigued, and look for other paths. Those paths may well be less secure than the governing principle of protecting our own privacy. MFA is a step in the right direction, but humans remain overwhelmed by the process of <em>logging in</em>.</p>
-<p>To reframe the laws, we will need to introduce a great deal of terminology. Let us loosely introduce one term now so that we might map a strategy, define the laws, discuss the intuition, and dive into the technical detail later.</p>
+<p>To diagnose what is unjust about the system, we first need to agree upon what the system is.</p>
+<hr>
+<div id="def-sis" class="theorem definition">
+<p><span class="theorem-title"><strong>Definition 5</strong></span> <strong><em>Structured intelligence system</em></strong></p>
+<p>A structured intelligence system comprises:</p>
+<ul>
+<li>humans</li>
+<li>automata</li>
+<li>heuristics, rules by which humans and automata interoperate</li>
+<li>human-generated intentions to be facilitated by heuristics</li>
+<li>emergences which may cause harm or unexpected good.</li>
+</ul>
+</div>
+<hr>
+<p>We are concerned with unintended emergences that render structured intelligence systems harmful.</p>
+<hr>
+<div id="def-singularity" class="theorem definition">
+<p><span class="theorem-title"><strong>Definition 6</strong></span> <strong><em>Singularity</em></strong></p>
+<p>A singularity represents a structured intelligence system of humans and automata that interoperate by heuristic and intentional relationships in which complexity of interoperation produces unexpected emergence.</p>
+</div>
+<hr>
+</section>
+<section id="structured-intelligence-systems" class="level4" data-number="2.1.1.2">
+<h4 data-number="2.1.1.2" class="anchored" data-anchor-id="structured-intelligence-systems"><span class="header-section-number">2.1.1.2</span> Structured intelligence systems</h4>
 <p>A <code>structured intelligence system</code> <span class="citation" data-cites="badreddin_structured_2006">[<a href="#ref-badreddin_structured_2006" role="doc-biblioref">7</a>]</span> is a system of humans, automata, and the interoperations of humans and automata.</p>
 <hr>
 <div id="def-first" class="theorem definition">
-<p><span class="theorem-title"><strong>Definition 3</strong></span> <strong>The first law of structured intelligence governance</strong></p>
+<p><span class="theorem-title"><strong>Definition 7</strong></span> <strong>The first law of structured intelligence governance</strong></p>
 <ol type="1">
 <li>A structured intelligence system must not unFAIRly provide analyses to humans in its singularity, where FAIRness is defined contextually <em>for each role</em> humans might interoperate as within the singularity.</li>
 </ol>
@@ -489,11 +536,12 @@ Figure&nbsp;4: However, consider the complexity of this structured intelligence 
 <p>We now loosely introduce another key concept, how the harm can be thought of in the <strong>epistemic drift</strong> between intention for privacy measures to increase security and wellbeing and how the outcome produces neither.</p>
 </section>
 </section>
+</section>
 <section id="epistemic-drift" class="level2" data-number="2.2">
 <h2 data-number="2.2" class="anchored" data-anchor-id="epistemic-drift"><span class="header-section-number">2.2</span> Epistemic drift in musical orientalism</h2>
-<p>Asimov is a canonical example within literary theory pointing to an ocean of knowledge we not interoperating with. We genre-switch for this section to critical-theoretic framing to explain the concept of <strong>epistemic drift</strong>.</p>
+<p>Asimov is a canonical example—a Google Scholar search for <code>asimov's laws in literary theory</code> yielded 17,200 results—within literary theory pointing to an ocean of knowledge we not interoperating with. We genre-switch for this section to critical-theoretic framing to explain the concept of <strong>epistemic drift</strong>.</p>
 <p>Postmodern frameworks provide theorists with a way of differentiating between a thing and its <strong>representation</strong>, notably which must be constructed by humans describing the thing. Any representation necessarily loses information, mathematically we would say a representation is a projection. Critical theory thus provides powerful ways of understanding epistemic drift.</p>
-<p>Consider the <strong>intention</strong> of composers in the nineteenth century to ride the wave of exoticism and capture the sound of the orient <span class="citation" data-cites="bellman_exotic_1998">[<a href="#ref-bellman_exotic_1998" role="doc-biblioref">18</a>]</span>. This was prior to sound recordings. Instead, some composers were lucky enough to be present at the Paris Exhibition of 1889 and hear the music of the “Street of Cairo” <span class="citation" data-cites="noauthor_exposition_2025">[<a href="#ref-noauthor_exposition_2025" role="doc-biblioref">19</a>]</span>. Other composers, imitated the music of those composers, baking in an ever-diluted musical conceptualisation of <em>Arab</em> by European composers resulting in harmful consequences a century later (<a href="#fig-aladdin" class="quarto-xref">Figure&nbsp;5</a>).</p>
+<p>Consider the <strong>intention</strong> of composers in the nineteenth century to ride the wave of exoticism and capture the sound of the orient <span class="citation" data-cites="bellman_exotic_1998">[<a href="#ref-bellman_exotic_1998" role="doc-biblioref">19</a>]</span>. This was prior to sound recordings. Instead, some composers were lucky enough to be present at the Paris Exhibition of 1889 and hear the music of the “Street of Cairo” <span class="citation" data-cites="noauthor_exposition_2025">[<a href="#ref-noauthor_exposition_2025" role="doc-biblioref">20</a>]</span>. Other composers, imitated the music of those composers, baking in an ever-diluted musical conceptualisation of <em>Arab</em> by European composers resulting in harmful consequences a century later (<a href="#fig-aladdin" class="quarto-xref">Figure&nbsp;5</a>).</p>
 <div id="fig-aladdin" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-aladdin-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -501,7 +549,7 @@ Figure&nbsp;4: However, consider the complexity of this structured intelligence 
 </iframe>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-aladdin-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;5: Outcry from the Arab-American community caused Disney to amend the lyrics of this song in <em>Aladdin</em> <span class="citation" data-cites="weinger_aladdin_1994">[<a href="#ref-weinger_aladdin_1994" role="doc-biblioref">20</a>]</span>, from <em>where they cut of your hand if they don’t like your face</em> to <em>where it’s flat and immense and the heat is intense</em>. They noted the music and animation of incidental or evil characters were pronounced in Western cliches of “The Arab”, yet the protagonists spoke, acted, sang, and looked like American teenagers <span class="citation" data-cites="tiffin_emperors_2004">[<a href="#ref-tiffin_emperors_2004" role="doc-biblioref">21</a>]</span>. The composers, however, were innocently following musical conventions laid a century before by their heroes <span class="citation" data-cites="said_orientalism_2014">[<a href="#ref-said_orientalism_2014" role="doc-biblioref">14</a>]</span>.
+Figure&nbsp;5: Outcry from the Arab-American community caused Disney to amend the lyrics of this song in <em>Aladdin</em> <span class="citation" data-cites="weinger_aladdin_1994">[<a href="#ref-weinger_aladdin_1994" role="doc-biblioref">21</a>]</span>, from <em>where they cut of your hand if they don’t like your face</em> to <em>where it’s flat and immense and the heat is intense</em>. They noted the music and animation of incidental or evil characters were pronounced in Western cliches of “The Arab”, yet the protagonists spoke, acted, sang, and looked like American teenagers <span class="citation" data-cites="tiffin_emperors_2004">[<a href="#ref-tiffin_emperors_2004" role="doc-biblioref">22</a>]</span>. The composers, however, were innocently following musical conventions laid a century before by their heroes <span class="citation" data-cites="said_orientalism_2014">[<a href="#ref-said_orientalism_2014" role="doc-biblioref">15</a>]</span>.
 </figcaption>
 </figure>
 </div>
@@ -518,7 +566,7 @@ Figure&nbsp;6: An interesting virtuous emergence is the feedback from contempora
 </figure>
 </div>
 <p>In musical exoticism, this story happened over a couple of centuries; music was heard by live performance and sheet music shared globally by ship.</p>
-<p>However, with computational scale and the reach of the internet, these social processes are vastly accelerated. Misinformation at critical times, such as a pandemic, can now spread globally in a matter of hours <span class="citation" data-cites="noauthor_fact-checking_2020">[<a href="#ref-noauthor_fact-checking_2020" role="doc-biblioref">22</a>]</span>. Resistance to harmful emergence may be unexpected creative emergence; we want to foster creative emergences that bring humanity together, and mitigate harmful emergence that divide us.</p>
+<p>However, with computational scale and the reach of the internet, these social processes are vastly accelerated. Misinformation at critical times, such as a pandemic, can now spread globally in a matter of hours <span class="citation" data-cites="noauthor_fact-checking_2020">[<a href="#ref-noauthor_fact-checking_2020" role="doc-biblioref">23</a>]</span>. Resistance to harmful emergence may be unexpected creative emergence; we want to foster creative emergences that bring humanity together, and mitigate harmful emergence that divide us.</p>
 <p>Happily, we have a language that unites critical theory, mathematical chaos, and computation; category theory, which we next intuitively unpack.</p>
 </section>
 <section id="intuition-of-formal-frameworks" class="level2" data-number="2.3">
@@ -574,7 +622,7 @@ Figure&nbsp;7: Pure mathematics provides frameworks to measure things that seem 
 <p>We now consider a couple of motivating examples, before considering the benefits and pitfalls of measuring FAIRness.</p>
 <section id="the-hotshot-problem-of-fair-analysis" class="level2" data-number="3.1">
 <h2 data-number="3.1" class="anchored" data-anchor-id="the-hotshot-problem-of-fair-analysis"><span class="header-section-number">3.1</span> The hotshot problem of FAIR analysis</h2>
-<p>Most any department or lab has at least one computational hotshot. For example, an applied science post-doc who is particularly good at open-source, or an analyst who has memorised scikit-learn <span class="citation" data-cites="opensource_scikit-learn_2025">[<a href="#ref-opensource_scikit-learn_2025" role="doc-biblioref">23</a>]</span> tutorials.</p>
+<p>Most any department or lab has at least one computational hotshot. For example, an applied science post-doc who is particularly good at open-source, or an analyst who has memorised scikit-learn <span class="citation" data-cites="opensource_scikit-learn_2025">[<a href="#ref-opensource_scikit-learn_2025" role="doc-biblioref">24</a>]</span> tutorials.</p>
 <blockquote class="blockquote">
 <p>hotshot gif</p>
 </blockquote>
@@ -630,47 +678,50 @@ Figure&nbsp;7: Pure mathematics provides frameworks to measure things that seem 
 <div id="ref-whedon_firefly_2003" class="csl-entry" role="listitem">
 <div class="csl-left-margin">[9] </div><div class="csl-right-inline">Firefly 2003.</div>
 </div>
-<div id="ref-wilkinson_fair_2016" class="csl-entry" role="listitem">
-<div class="csl-left-margin">[10] </div><div class="csl-right-inline">Wilkinson MD, Dumontier M, Aalbersberg IjJ, Appleton G, Axton M, Baak A, et al. The <span>FAIR</span> <span>Guiding</span> <span>Principles</span> for scientific data management and stewardship. Scientific Data 2016;3:160018. <a href="https://doi.org/10.1038/sdata.2016.18">https://doi.org/10.1038/sdata.2016.18</a>.</div>
+<div id="ref-kidd_routledge_2017" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[10] </div><div class="csl-right-inline">Kidd IJ, Medina J, Pohlhaus G, Jr, editors. The <span>Routledge</span> <span>Handbook</span> of <span>Epistemic</span> <span>Injustice</span>. London: Routledge; 2017. <a href="https://doi.org/10.4324/9781315212043">https://doi.org/10.4324/9781315212043</a>.</div>
 </div>
 <div id="ref-noauthor_principle_2025" class="csl-entry" role="listitem">
 <div class="csl-left-margin">[11] </div><div class="csl-right-inline"><a href="https://en.wikipedia.org/w/index.php?title=Principle_of_least_privilege&amp;oldid=1288935567">Principle of least privilege</a>. Wikipedia 2025.</div>
 </div>
+<div id="ref-wilkinson_fair_2016" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[12] </div><div class="csl-right-inline">Wilkinson MD, Dumontier M, Aalbersberg IjJ, Appleton G, Axton M, Baak A, et al. The <span>FAIR</span> <span>Guiding</span> <span>Principles</span> for scientific data management and stewardship. Scientific Data 2016;3:160018. <a href="https://doi.org/10.1038/sdata.2016.18">https://doi.org/10.1038/sdata.2016.18</a>.</div>
+</div>
 <div id="ref-spivak_category_2014" class="csl-entry" role="listitem">
-<div class="csl-left-margin">[12] </div><div class="csl-right-inline">Spivak DI. Category <span>Theory</span> for the <span>Sciences</span>. MIT Press; 2014.</div>
+<div class="csl-left-margin">[13] </div><div class="csl-right-inline">Spivak DI. Category <span>Theory</span> for the <span>Sciences</span>. MIT Press; 2014.</div>
 </div>
 <div id="ref-topos_institute_david_2023" class="csl-entry" role="listitem">
-<div class="csl-left-margin">[13] </div><div class="csl-right-inline">Topos Institute. <a href="https://www.youtube.com/watch?v=YsWnfr47ViE">David <span>Corfield</span>: "<span>Philosophical</span> perspectives on category theory"</a> 2023.</div>
+<div class="csl-left-margin">[14] </div><div class="csl-right-inline">Topos Institute. <a href="https://www.youtube.com/watch?v=YsWnfr47ViE">David <span>Corfield</span>: "<span>Philosophical</span> perspectives on category theory"</a> 2023.</div>
 </div>
 <div id="ref-said_orientalism_2014" class="csl-entry" role="listitem">
-<div class="csl-left-margin">[14] </div><div class="csl-right-inline">Said EW. Orientalism. 25. anniversary edition with a new preface by the author. New York: Vintage Books Edition; 2014.</div>
+<div class="csl-left-margin">[15] </div><div class="csl-right-inline">Said EW. Orientalism. 25. anniversary edition with a new preface by the author. New York: Vintage Books Edition; 2014.</div>
 </div>
 <div id="ref-rivkin_literary_2008" class="csl-entry" role="listitem">
-<div class="csl-left-margin">[15] </div><div class="csl-right-inline">Rivkin J, editor. Literary theory: An anthology. 6. print. Oxford: Blackwell; 2008.</div>
+<div class="csl-left-margin">[16] </div><div class="csl-right-inline">Rivkin J, editor. Literary theory: An anthology. 6. print. Oxford: Blackwell; 2008.</div>
 </div>
 <div id="ref-dickens_bleak_1868" class="csl-entry" role="listitem">
-<div class="csl-left-margin">[16] </div><div class="csl-right-inline">Dickens C. Bleak <span>House</span>. Chapman; Hall; 1868.</div>
+<div class="csl-left-margin">[17] </div><div class="csl-right-inline">Dickens C. Bleak <span>House</span>. Chapman; Hall; 1868.</div>
 </div>
 <div id="ref-asimov_i_1950" class="csl-entry" role="listitem">
-<div class="csl-left-margin">[17] </div><div class="csl-right-inline">Asimov I. I, <span>Robot</span>. Dennis Dobson; 1950.</div>
+<div class="csl-left-margin">[18] </div><div class="csl-right-inline">Asimov I. I, <span>Robot</span>. Dennis Dobson; 1950.</div>
 </div>
 <div id="ref-bellman_exotic_1998" class="csl-entry" role="listitem">
-<div class="csl-left-margin">[18] </div><div class="csl-right-inline">Bellman J. The <span>Exotic</span> <span>In</span> <span>Western</span> <span>Music</span>. UPNE; 1998.</div>
+<div class="csl-left-margin">[19] </div><div class="csl-right-inline">Bellman J. The <span>Exotic</span> <span>In</span> <span>Western</span> <span>Music</span>. UPNE; 1998.</div>
 </div>
 <div id="ref-noauthor_exposition_2025" class="csl-entry" role="listitem">
-<div class="csl-left-margin">[19] </div><div class="csl-right-inline"><a href="https://en.wikipedia.org/w/index.php?title=Exposition_Universelle_(1889)&amp;oldid=1273740816">Exposition <span>Universelle</span> (1889)</a>. Wikipedia 2025.</div>
+<div class="csl-left-margin">[20] </div><div class="csl-right-inline"><a href="https://en.wikipedia.org/w/index.php?title=Exposition_Universelle_(1889)&amp;oldid=1273740816">Exposition <span>Universelle</span> (1889)</a>. Wikipedia 2025.</div>
 </div>
 <div id="ref-weinger_aladdin_1994" class="csl-entry" role="listitem">
-<div class="csl-left-margin">[20] </div><div class="csl-right-inline">Aladdin 1994.</div>
+<div class="csl-left-margin">[21] </div><div class="csl-right-inline">Aladdin 1994.</div>
 </div>
 <div id="ref-tiffin_emperors_2004" class="csl-entry" role="listitem">
-<div class="csl-left-margin">[21] </div><div class="csl-right-inline">Tiffin J. <a href="https://muse.jhu.edu/pub/27/article/172289">The <span>Emperor</span>’s <span>Old</span> <span>Groove</span>: <span>Decolonizing</span> <span>Disney</span>’s <span>Magic</span> <span>Kingdom</span> (review)</a>. Marvels &amp; Tales 2004;18:329–31.</div>
+<div class="csl-left-margin">[22] </div><div class="csl-right-inline">Tiffin J. <a href="https://muse.jhu.edu/pub/27/article/172289">The <span>Emperor</span>’s <span>Old</span> <span>Groove</span>: <span>Decolonizing</span> <span>Disney</span>’s <span>Magic</span> <span>Kingdom</span> (review)</a>. Marvels &amp; Tales 2004;18:329–31.</div>
 </div>
 <div id="ref-noauthor_fact-checking_2020" class="csl-entry" role="listitem">
-<div class="csl-left-margin">[22] </div><div class="csl-right-inline"><a href="https://www.europarl.europa.eu/news/en/press-room/20200401IPR76306/fact-checking-day-fighting-the-virus-of-disinformation-on-covid-19">Fact-checking <span>Day</span>: <span>Fighting</span> the virus of disinformation on <span>Covid</span>-19 <span></span> <span>News</span> <span></span> <span>European</span> <span>Parliament</span></a> 2020.</div>
+<div class="csl-left-margin">[23] </div><div class="csl-right-inline"><a href="https://www.europarl.europa.eu/news/en/press-room/20200401IPR76306/fact-checking-day-fighting-the-virus-of-disinformation-on-covid-19">Fact-checking <span>Day</span>: <span>Fighting</span> the virus of disinformation on <span>Covid</span>-19 <span></span> <span>News</span> <span></span> <span>European</span> <span>Parliament</span></a> 2020.</div>
 </div>
 <div id="ref-opensource_scikit-learn_2025" class="csl-entry" role="listitem">
-<div class="csl-left-margin">[23] </div><div class="csl-right-inline">OpenSource. <a href="https://scikit-learn.org/stable/">Scikit-learn: Machine learning in <span>Python</span> — scikit-learn 1.6.1 documentation</a> 2025.</div>
+<div class="csl-left-margin">[24] </div><div class="csl-right-inline">OpenSource. <a href="https://scikit-learn.org/stable/">Scikit-learn: Machine learning in <span>Python</span> — scikit-learn 1.6.1 documentation</a> 2025.</div>
 </div>
 </div></section><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
 

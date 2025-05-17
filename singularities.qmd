@@ -6,17 +6,17 @@ author:
     orcid: 0000-0002-9978-011X
     affiliations:
       - name: Good Enough Data & Systems Lab
-  - name: Patrick Robotham
+  - name: Patrick Robotham, Data scientist
     affiliations:
       - name: Good Enough Data & Systems Lab
-  - name: James P. Morris
+  - name: James P. Morris, Data Scientist
     affiliations:
       - name: Good Enough Data & Systems Lab
-  - name: Dr Garima Gupta
+  - name: Dr Garima Gupta, Ecologist
     affiliations:
       - name: Good Enough Data & Systems Lab
 number-sections: true
-date: "`r Sys.Date()`"
+date: '`r Sys.Date()`'
 
 bibliography: singularities.bib
 csl: elsevier-vancouver.csl
@@ -27,7 +27,7 @@ csl: elsevier-vancouver.csl
 
 ## The wrong question
 
-As a person who works with data, it can feel like everyone in the world is arguing about when machine thinking will overtake humans in a singularity _event_. 
+As a person who works with data, it can feel like everyone in the world is arguing about when machine thinking will overtake humans in a `singularity` *event*. 
 
 I never found this compelling, for it assumes an intentional determinism I don't believe follows for, say, natural language processing, such as ChatGPT[@noauthor_introducing_2024]. 
 
@@ -52,11 +52,11 @@ I constantly worry about the consequences of ungoverned systems for humans: iden
 
 > `A singularity *event* is science fiction`. *However*,
 
-<div class="tenor-gif-embed" data-postid="22197049" data-share-method="host" data-aspect-ratio="3"><a href="https://tenor.com/view/the-matrix-has-you-the-matrix-glitch-code-system-gif-22197049">The Matrix Has You Glitch GIF</a>from <a href="https://tenor.com/search/the+matrix+has+you-gifs">The Matrix Has You GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+![](figures-and-tables/external-content/matrix.gif)
 
+> `singularities` are already woven into the fabric of humanity's existence. We have always lived in largely-benign singularities ([@fig-baroque]), where heuristic and intentional systems interoperate via humans to produce emergent effects; it is only that scale now makes systems powerful in a way they never were before. 
 
-
-> `singularities` are already woven into the fabric of humanity's existence. We have always lived in largely-benign singularities ([@fig-baroque]), where heuristic and intentional systems interoperate via humans to produce emergent effects; it is only that scale now makes systems powerful in a way they never were before. We must recognize that the challenge is not to prevent a singularity, but to govern the singularities we are already part of, harnessing this power for good, rather than allowing unchecked evils to emerge.
+We must recognize that the challenge is not to prevent a singularity, but to govern the singularities we are already part of, harnessing this power for good, rather than allowing unchecked evils to emerge.
 
 ::: {#fig-baroque}
 
@@ -67,7 +67,33 @@ Baroque musicians, for example, aesthetically governed emergence in benign singu
 
 :::
 
-A world obsessed with the singularity has only now realized that governance is the missing piece. We need a formal foundation for structured intelligence [@badreddin_structured_2006] governance before chaos overtakes order, and humans cannot do this without machine help. The dinosaurs of technology are out of the park and it is going to take  the  combined efforts of critical theorists, mathematicians, developers, data scientists, and decision makers to get the raptors back into the enclosure ([@fig-dino]).
+In order to instantiate ethics computationally, we need to translate to logical statements (predicates) a computer can understand. We provide our first definition of many; each of which is part of this living document, to be discussed and updated as new community join the Good Enough Lab.
+
+---
+
+::: {#def-sis}
+**Structured Intelligence System (SIS)** 
+
+A system composed of humans, automata, and the heuristics by which they interoperate, producing emergent effects.
+:::
+
+---
+
+A world obsessed with the singularity has only now realized that governance is the missing piece. We need a formal foundation for structured intelligence [@badreddin_structured_2006] governance before chaos overtakes order, and humans cannot do this without machine help. 
+
+---
+
+::: {.definition #def-sig}
+
+**Structured Intelligence Governance (SIG)**
+
+Structured Intelligence Governance (SIG) is the principled coordination of a Structured Intelligence System (SIS), ensuring that the interoperations between humans and automata are governed by just, intentional rules. SIG aims to prevent epistemic drift and emergent harm by aligning heuristic action with human intent.
+
+:::
+
+---
+
+The dinosaurs of technology are out of the park and it is going to take  the  combined efforts of critical theorists, mathematicians, developers, data scientists, and decision makers to get the raptors back into the enclosure ([@fig-dino]).
 
 ::: {#fig-dino}
 
@@ -77,12 +103,21 @@ A world obsessed with the singularity has only now realized that governance is t
 
 :::
 
-## Knowledge is power
+## Data is knowledge, knowledge is power
 
-> A government is a body of people, usually, notably ungoverned.. --*Shepherd Book* (@whedon_firefly_2003)
+> A government is a body of people, usually, notably ungoverned. --*Shepherd Book* (@whedon_firefly_2003)
 
-The *intelligence* of a structured intelligence system is only as good as the human's ability to interoperate within the singularity. If knowledge is power, then human empowerment suffers epistemic injustice when data systems fail to provide the knowledge a human needs reliably. One framework to adopt is FAIR principles [@wilkinson_fair_2016], our loose interpretation shown in @tbl-fair. 
+The *intelligence* of a structured intelligence system is only as good as the human's ability to interoperate within the singularity. If knowledge is power, then human empowerment suffers **epistemic injustice**, injustice related to knowledge, when data systems fail to provide the knowledge a human needs reliably. Data development is implemented by humans, usually, notably ungoverned.
 
+We think structured intelligence governance falls more in the subcategory of epistemological injustice within the theories of epistemic injustice, however there are aspects of systems epistemology that also fall into testimonial or hermeneutical injustice [@kidd_routledge_2017]. However, it's not for **us** to say, for we are not experts in epistemic injustice.  
+
+We will need the help of those theorists in examining epistemic injustice of inaccess to data. For example, standard information technology procedures, such as the principle of least privilege [@noauthor_principle_2025], wherein access is granted on a needs basis, often creates barriers to analysis, as we shall explore in [to do link to bit about least privilege].   
+
+Our intention is to build bridges from the world of data science system design to people who understand how to write better rules for structured intelligence systems.
+
+### Making data FAIR
+
+One&mdash;just one!&mdash;way of examining epistemic injustice in data systems is to ask if the system is findable, accessible, interoperable, reusable (FAIR) for domain-knowledge analysts who design questions and answers [@wilkinson_fair_2016].
 
 ::: {#tbl-fair tbl-cap="Loosest interpretation of FAIR has been employed for this manuscript."}
 
@@ -94,8 +129,6 @@ The *intelligence* of a structured intelligence system is only as good as the hu
 | Reusable       | Person can reuse analysis components for future work.                              |
 
 :::
-
-
 
 We propose, as for example, that a visual guide for surfacing what is jointly understood in terms of domain-specific variables that are:
 
@@ -115,6 +148,8 @@ When the technology itself is a barrier to knowledge, we must question if its ap
 If the principle of least privilege applies, then the default is epistemic exclusion—a structurally encoded barrier to intentional access. 
 
 ---
+
+
 
 ::: {#def-clopen .definition}
 
@@ -164,7 +199,7 @@ However, consider the complexity of this structured intelligence system the Good
 
 We *could* explore the data ourselves, but this locks Garima out, and Garima is person who knows what whe wants to explore in the data. 
 
-At the Good Enough Data & Systems Lab, we consider anything that only runs on our own laptop not contributing to progress (yet). Our intention is to empower Garima as an applied scientific analyst.
+At the Good Enough Data & Systems Lab, we consider anything that only runs on our own laptop not contributing to progress (yet). Our intention is to empower Garima as an applied scientific analyst to design her own questions and lines of inquirty that may or may not involve computational collaboration.
 
 
 ## Structured intelligence governists need your help
@@ -207,9 +242,51 @@ system such as a bank[^4]. There is me, a human object, and a technological devi
 
 [^4]: *Contributor acknowledgement*: This argument was improved by a discussion with my brilliant neighbour Álfrún Freyja Eldberg Agnarsdóttir, age 9, who highlighted that out of notifications, logging in, and advertising, all are intrusive, and the worst is logging in. The effect of this intrusive barrage of technology on children seems dangerously unmonitored. 
 
-If that technological device forces the human to deviate from their governance framework (such as protect my own privacy) through repetive changes to how we interface, humans become fatigued, and look for other paths. Those paths may well be less secure than the governing principle of protecting our own privacy. MFA is a step in the right direction, but humans remain overwhelmed by the process of *logging in*.
+#### Codifying the rules of singularities
 
-To reframe the laws, we will need to introduce a great deal of terminology. Let us loosely introduce one term now so that we might map a strategy, define the laws, discuss the intuition, and dive into the technical detail later.
+If that technological device forces the human to deviate from their governance framework (such as protect my own privacy) through repetive changes to how we interface, humans become fatigued, and look for other paths. Those paths may well be less secure than the governing principle of protecting our own privacy. MFA is a step in the right direction, but humans remain overwhelmed by the process of *logging in*. 
+
+To diagnose what is unjust about the system, we first need to agree upon what the system is.
+
+---
+
+::: {#def-sis}
+
+***Structured intelligence system***
+
+A structured intelligence system comprises:
+
+- humans
+- automata
+- heuristics, rules by which humans and automata interoperate
+- human-generated intentions to be facilitated by heuristics
+- emergences which may cause harm or unexpected good.
+
+:::
+
+---
+
+
+We are concerned with unintended emergences that render structured intelligence systems harmful. 
+
+---
+
+::: {#def-singularity}
+
+***Singularity***
+
+A singularity represents a structured intelligence system of humans and automata that interoperate by heuristic and intentional relationships in which complexity of interoperation produces unexpected emergence.
+
+:::
+
+---
+
+
+
+
+#### Structured intelligence systems
+
+
 
 A `structured intelligence system` [@badreddin_structured_2006] is a system of humans, automata, and the interoperations of humans and automata. 
 
@@ -233,7 +310,7 @@ We now loosely introduce another key concept, how the harm can be thought of in 
 
 ## Epistemic drift in musical orientalism {#epistemic-drift}
 
-Asimov is a canonical example within literary theory pointing to an ocean of knowledge we not interoperating with. We genre-switch for this section to critical-theoretic framing to explain the concept of **epistemic drift**. 
+Asimov is a canonical example&mdash;a Google Scholar search for `asimov's laws in literary theory` yielded 17,200 results&mdash;within literary theory pointing to an ocean of knowledge we not interoperating with. We genre-switch for this section to critical-theoretic framing to explain the concept of **epistemic drift**. 
 
 Postmodern frameworks provide theorists with a way of differentiating between a thing and its **representation**, notably which must be constructed by humans describing the thing. Any representation necessarily loses information, mathematically we would say a representation is a projection. Critical theory thus provides powerful ways of understanding epistemic drift.
 
@@ -261,7 +338,12 @@ In musical exoticism, this story happened over a couple of centuries;  music was
 
 However, with computational scale and the reach of the internet, these social processes are vastly accelerated. Misinformation at critical times, such as a pandemic, can now spread globally in a matter of hours [@noauthor_fact-checking_2020]. Resistance to harmful emergence may be unexpected creative emergence; we want to foster creative emergences that bring humanity together, and mitigate harmful emergence that divide us. 
 
-Happily, we have a language that unites critical theory, mathematical chaos, and computation; category theory, which we next intuitively unpack.
+Happily, we have a language that unites critical theory, mathematical chaos, and computation: category theory&mdash;there's a reason Spivak named his canoncial text, *Category Theory for the Sciences*; it is a grammar across sciences. 
+
+Here is our relational understanding of postcolonialism in graph form.
+
+
+
 
 
 ## Intuition of formal frameworks
