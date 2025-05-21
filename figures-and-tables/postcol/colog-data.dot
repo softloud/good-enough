@@ -1,0 +1,40 @@
+digraph colog_data {
+
+  subgraph cluster_representational {
+    style=dashed
+    edge [style=dashed]
+    node [shape=diamond]
+
+    represented [color=red, fontcolor=red]
+    representation [color=gray,fontcolor=gray]
+
+    representation -> representor
+    representation -> represented
+    represented -> representor [color=red]
+
+  }
+
+  subgraph cluster_data {
+    style=dashed
+    edge [style=dashed]
+
+      people [color=red, fontcolor=red]
+      data [shape=hexagon]
+      analysis [shape=parallelogram, color=gray,fontcolor=gray]
+
+      analysis -> analyst
+      analysis -> data
+      data -> analyst [color=red]   
+      analysis -> people [style=dotted, color=red]
+      people -> analyst [style=dotted]
+
+      people -> data [style=bold,color=gray]
+
+  }
+
+  representation -> analysis
+  represented -> data
+  representor -> analyst
+  represented -> people [style=dotted, color=red]
+
+}

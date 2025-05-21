@@ -1,0 +1,66 @@
+digraph colog_data {
+
+  subgraph cluster_representational {
+    style=dashed
+    edge [style=dashed]
+    node [shape=diamond]
+
+    represented [color=red, fontcolor=red]
+    representation [color=gray,fontcolor=gray]
+
+    representation -> representor [label="as understood by
+      (perspective)"]
+    representation -> represented [color=red,label="is faithful to
+      (intent)"]
+    represented -> representor [color=red, label="as understood by
+      (epistemic claim)"] 
+
+  }
+
+  subgraph cluster_sis {
+
+
+  
+
+    subgraph cluster_data {
+      style=dashed
+      edge [style=dashed]
+
+        data [shape=hexagon]
+        analysis [shape=parallelogram, color=gray,fontcolor=gray]
+
+        analysis -> data
+
+    }
+
+  subgraph cluster_people {
+    style=dashed
+    edge [style=dashed]
+
+      analyst
+
+      people [color=red, fontcolor=red]
+      people -> analyst [style=dotted]
+
+      people -> decisionmaker [color=red, style=dotted]
+
+
+  }
+
+  analysis -> people [style=dotted, color=red]
+  data -> analyst [color=red, style=dashed]   
+  analysis -> analyst [style=dashed]
+
+  people -> data [style=bold,color=gray]
+  analysis -> decisionmaker [color=blue, style=dashed, style=dotted]
+
+  }
+
+  representation -> analysis [color=blue]
+
+  represented -> data
+  representor -> analyst
+  representor -> decisionmaker [style=dotted, color=blue]
+  represented -> people [style=dotted, color=red]
+
+}

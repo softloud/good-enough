@@ -16,12 +16,95 @@ author:
     affiliations:
       - name: Good Enough Data & Systems Lab
 number-sections: true
-date: '`r Sys.Date()`'
+date: "`r Sys.Date()`"
 
-bibliography: singularities.bib
-csl: elsevier-vancouver.csl
+bibliography: ../../singularities.bib
+csl: ../../elsevier-vancouver.csl
+
+image: figures-and-tables/postcol/colog-data.png
+
+code-fold: true
 
 ---
+
+
+# Seeing how systems break
+
+If the analyst cannot find, access, interoperate with, and reuse data representing people, then it becomes very difficult for that analyst to faithfully represent the people the analysis is meant to serve. @fig-colog formalises how human intent is lost in structured intelligence systems when data is unavailable to the analyst.
+
+When we can *see* how systems are failing our intentions, we are more likely to turn our attention from the wrong questions, to the imperatives of reality, such as climate change and inequality. We need to trace representations of human intention to ensure results are as humans intended.
+
+```{r}
+system("./figures-and-tables/postcol/colog-data.sh")
+
+```
+
+::: {#fig-colog}
+
+![](../../figures-and-tables/postcol/colog-data.svg)
+
+This diagram presents a formalised summary of the validity of assumptions about people instantiated in a structured intelligence system. Red and dotted arrows indicate where assumed relationships fail to hold in practice, and grey unvalidatable assumptions—formally exposing points of epistemic injustice between system representation and human priority.
+The views of the population of interest were not faithfully represented, as the analyst lacked FAIR data. The Good Enough Lab is devoted to building contextual data technologies to align representational assumptions through commuting diagrams.
+
+
+
+:::
+
+
+## Critical olog (colog)
+
+A colog may be thought of as a contextual representation, to at least one person, of an assumption that may not hold. 
+
+By defining and applying this construction, we demonstrate the necessity for a critical but computationally implementable response to ethics in technology. That is: we need ethics *expressed in logic*, if we are to encode justice in the systems that increasingly govern our lives.
+
+We propose cologs as governance primitives for exposing&mdash;and ultimately mitigating&mdash;epistemic injustice in data infrastructures.
+
+Our purpose is to apply this framing to an open science problem in order to explain the utility of the following construction.
+
+--- 
+
+::: {#def-rep}
+
+**Representation category**
+
+A *representation category* models the structure of an assumption as a categorical diagram with:
+
+- **Objects**  
+  - `representation`: a symbolic or formal artifact (e.g. chart, document, data)  
+  - `represented`: the real-world entity or concept the representation refers to  
+  - `representor`: the agent (typically human) who creates or interprets the representation
+
+- **Morphisms**  
+  - `representor → representation`: the representation is created or selected by the representor  
+  - `represented → representation`: the representation is intended to encode or reflect the represented  
+  - `represented → representor`: the representor is assumed to understand the represented
+
+A representation category is embedded into a structured intelligence system via a functor or diagram that assigns these roles and relations to instantiated system elements. Morphisms may be annotated as non-functional, non-commutative, or unjust to signal representational failure or epistemic injustice.
+
+:::
+
+---
+
+
+---
+
+::: {#def-sig-colog}
+
+A colog (critical olog) diagrammatically exposes assumptions in an analysis that do not hold about a representation. 
+
+A colog is a projection of a category-theoretic olog, as defined by Spivak [@spivak_category_2014] where objects are elements of a system and at least one object is a human. 
+
+A colog is constructed by applying at least one representation category for each assumption, and summarising the results at the representational level.
+
+:::
+
+
+---
+
+Crucial to the craft of cologging is to constantly challenge what is truth and what is assumption.
+
+A widespread assumption is that *getting the data* is a process akin to a chicken laying an egg, when it is a science as challenging as any applied, as are many of the dark arts of data. We have critical problems in technology, but the zeitgeist feels flooded with "agentic AI" and "vibe coding" hype. At the Good Enough Lab, we think of this as math and code.
+
 
 # The singularity is here, its chaos must be governed
 
@@ -111,7 +194,7 @@ The *intelligence* of a structured intelligence system is only as good as the hu
 
 We think structured intelligence governance falls more in the subcategory of epistemological injustice within the theories of epistemic injustice, however there are aspects of systems epistemology that also fall into testimonial or hermeneutical injustice [@kidd_routledge_2017]. However, it's not for **us** to say, for we are not experts in epistemic injustice.  
 
-We will need the help of those theorists in examining epistemic injustice of inaccess to data. For example, standard information technology procedures, such as the principle of least privilege [@noauthor_principle_2025], wherein access is granted on a needs basis, often creates barriers to analysis, as we shall explore in [to do link to bit about least privilege].   
+We will need the help of those theorists in examining epistemic injustice of inaccess to data. For example, standard information technology procedures, such as the principle of least privilege [@noauthor_principle_2025], wherein access is granted on a needs basis, can create barriers to data when the stakeholder does not know which data to request.   
 
 Our intention is to build bridges from the world of data science system design to people who understand how to write better rules for structured intelligence systems.
 
@@ -340,9 +423,14 @@ However, with computational scale and the reach of the internet, these social pr
 
 Happily, we have a language that unites critical theory, mathematical chaos, and computation: category theory&mdash;there's a reason Spivak named his canoncial text, *Category Theory for the Sciences*; it is a grammar across sciences. 
 
+
 Here is our relational understanding of postcolonialism in graph form.
 
+::: {#fig-postcol}
 
+![](figures-and-tables/postcol/postcol.svg)
+
+:::
 
 
 

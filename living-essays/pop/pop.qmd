@@ -7,7 +7,7 @@ author:
     affiliations:
       - name: Good Enough Data & Systems Lab
 date: '`r Sys.Date()`'
-bibliography: singularities.bib
+bibliography: ../../singularities.bib
 ---
 
 

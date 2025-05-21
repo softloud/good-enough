@@ -1,0 +1,94 @@
+---
+title: a colog of epistemic unFAIRness
+author: "Good Enough Data & Systems Lab"
+
+format: 
+  revealjs:
+    theme: solarized
+
+---
+
+---
+
+### data is knowledge
+
+::: {.callout}
+
+"It ain't what you don't know that gets you into trouble.
+
+It's what you know for sure that just ain't so."
+
+&mdash;*source, debatable*
+
+:::
+
+
+### knowledge is power
+
+
+# the known universe
+
+- people
+- things
+- stories we tell ourselves about people and things
+
+# the known universe
+
+- objects: 
+  - people 
+  - things
+- arrows: 
+  - stories we tell ourselves about people and things
+
+# people
+
+define stories about things
+
+
+## a colog epistemic unFAIRness
+
+> representation category with text labels for failure 
+
+::: {.notes}
+
+This picture tells a story of a scientist who has things to say about something important. It will be our work of this talk to tell the story of this picture.
+
+This scientist is who the world needs to hear from, yet there are so many ways that it can occur that they don't. In this story, the scientist encountered an obstacle. 
+
+- how it illustrates how intelligence is derived partially from knowledge
+- and if that knowledge is spurious, so too is the knowledge
+- furthermore, if knowledge is power, then understanding who has knowledge helps us understand who has power
+- we believe pictures like this are necessary
+- that is, formal frameworks are necessary and understudied
+- we believe we need to build bridges between computational implementation and ethics 
+- we need to invite critical theory into computational development
+- we believe this is how humans can learn to interoperate via computational tools with more intelligence 
+
+:::
+
+
+
+# a scientist analyses some data
+
+ 
+
+# a data-driven decision is reached by analysis
+
+
+
+## assumption
+
+People affected by decision are faithfully represented by the decisionmaker
+
+# tests
+
+## cologging an assumption
+
+
+
+## colog report
+
+- just the representation graph, summarised
+
+
+## colog analysis

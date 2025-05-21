@@ -1,0 +1,56 @@
+digraph PostcolGraph {
+  rankdir=TB
+  
+  node [shape=ellipse]
+
+
+  # Postcolonial cluster
+  subgraph cluster_postcol {
+
+    style=dashed
+    edge [style=dashed]
+
+    postcol_title [
+      label="Postcolonialism challenges
+      representors' assumptions by
+      differentiating between 
+      representation, represented, and representor",
+      shape=box,
+      style=dashed
+    ]
+
+    represented [color=red]
+
+    representation -> represented [label="is faithful to", color=red]
+    representation -> representor [label="was created by"]
+    represented -> representor [label="is understood by", color=red]
+  }
+
+  # Disney cluster
+  subgraph cluster_disney {
+    style=dashed
+    edge [style=dashed]
+
+    arab [color=red]
+
+    aladdin -> arab [color=red]
+    aladdin -> disney
+    arab -> disney [color=red]
+
+    functors [
+      label="Maps from Postcolonial framework to Disney's Aladdin\nare interpreted as:\na contextual instantiation of", 
+      shape=box, 
+      style=dashed]
+
+  }
+
+  # External links
+  representation -> aladdin
+  represented -> arab
+  representor -> disney
+
+
+  {
+    rank=sink
+  }
+}

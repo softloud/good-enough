@@ -7,8 +7,8 @@ author:
     affiliations:
       - name: Good Enough Data & Systems Lab
 
-bibliography: qao.bib
-csl: elsevier-vancouver.csl
+bibliography: ../../qao.bib
+csl: ../../elsevier-vancouver.csl
 
 number-sections: true
 code-fold: true

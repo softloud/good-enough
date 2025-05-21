@@ -168,22 +168,22 @@ digraph G {
 
     source_sdg -> analytical_responses
 
-    #source_respondents_arunachal -> semantic_respondents
-    #source_respondents_tehri -> semantic_respondents
+    source_respondents_arunachal -> semantic_respondents
+    source_respondents_tehri -> semantic_respondents
 
-    #source_responses_arunachal -> semantic_responses
-    #source_responses_tehri -> semantic_responses
+    source_responses_arunachal -> semantic_responses
+    source_responses_tehri -> semantic_responses
 
-    #semantic_respondents -> analytical_responses
-    #semantic_responses -> analytical_responses
-    #semantic_respondents -> analytical_respondents
-    #semantic_responses -> analytical_respondents
+    semantic_respondents -> analytical_responses
+    semantic_responses -> analytical_responses
+    semantic_respondents -> analytical_respondents
+    semantic_responses -> analytical_respondents
 
-    # analytical_responses -> validation 
-    # analytical_respondents -> validation
+    analytical_responses -> validation 
+    analytical_respondents -> validation
 
   
-    # raw_arunachal -> data_entity
+    raw_arunachal -> data_entity
     semantic_title -> entities
     source_sdg -> entities
 

@@ -42,11 +42,11 @@ website:
       - text: Living Essays
         menu:
           - text: Singularities
-            href: singularities.qmd
+            href: living-essays/singularities/singularities.qmd
           - text: Singularities in Pop Culture
             href: pop.qmd
           - text: Questionable Analytical Observations
-            href: qao.qmd
+            href: living-essays/qao/qao.qmd
     right:
       - text: Collaborate
         href: collab.qmd
