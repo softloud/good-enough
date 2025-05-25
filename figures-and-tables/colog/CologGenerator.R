@@ -17,25 +17,41 @@ ExtractLayer <- R6Class("ExtractLayer",
     initialize = function(filepath) {
       self$filepath <- filepath
 
-      private$ass_dat <- read_ods(filepath, range = "A3:K20") |>
-        filter(!is.na(representation)) |>
-        mutate(
-          assumption = 1:n(),
-          representation_represented = str_c(representation, "_", represented),
-          representation_representor = str_c(representation, "_", representor),
-          represented_representor = str_c(represented, "_", representor)
-        )
+      ass <- read_ods(filepath, range = "A3:K20") |>
+      dplyr::filter(!is.na(representation)) |>
+      mutate(
+        assumption = 1:n(),
+        representation_represented = str_c(representation, "_", represented),
+        representation_representor = str_c(representation, "_", representor),
+        represented_representor = str_c(represented, "_", representor)
+      )
 
-      private$node_dat <- read_ods(filepath, range = "I3:K20")
-      private$dependency_dat <- read_ods(filepath, range = "L3:N20")
+      private$ass_dat <- ass
+
+      node_base <- read_ods(filepath, range = "I3:K20")
+
+      rep_nodes <- node_base |>
+        filter(node_type == "represents") |>
+        crossing(assumption = private$ass_dat$assumption) |>
+        mutate(node = str_c(node, "_", assumption)) |>
+        select(-assumption)
+
+      # all others get tagged with assumption 0 for now
+      non_rep_nodes <- node_base |>
+        filter(node_type != "represents")
+
+      private$node_dat <- bind_rows(rep_nodes, non_rep_nodes)      
+      private$dependency_dat <- read_ods(filepath, range = "L3:N20")      
       private$edge_dat <- private$build_edges()
+
     },
 
     # Public accessors
     get_nodes = function() private$node_dat,
     get_assumptions = function() private$ass_dat,
     get_dependencies = function() private$dependency_dat,
-    get_edges = function() private$edge_dat
+    get_edges = function() private$edge_dat,
+    get_rep_edges = function() private$representational_edges
   ),
 
   private = list(
@@ -45,43 +61,61 @@ ExtractLayer <- R6Class("ExtractLayer",
     edge_dat = NULL,
 
     build_edges = function() {
-      bind_rows(
-        private$ass_dat |>
-          mutate(rep_rel = "representation_represented") |>
-          select(
-            assumption,
-            rep_rel,
-            edge_rel = representation_represented,
-            obj_source = representation,
-            obj_target = represented,
-            edge_label = representation_to_represented
-          ),
-        private$ass_dat |>
-          mutate(rep_rel = "representation_representor") |>
-          select(
-            assumption,
-            rep_rel,
-            edge_rel = representation_representor,
-            obj_source = representation,
-            obj_target = representor,
-            edge_label = representation_to_representor
-          ),
-        private$ass_dat |>
-          mutate(rep_rel = "represented_representor") |>
-          select(
-            assumption,
-            rep_rel,
-            edge_rel = represented_representor,
-            obj_source = represented,
-            obj_target = representor,
-            edge_label = represented_to_representor
-          )
+
+      all_edges <- 
+        bind_rows(
+          private$ass_dat |>
+            mutate(rep_rel = "representation_represented") |>
+            select(
+              assumption,
+              rep_rel,
+              edge_rel = representation_represented,
+              obj_source = representation,
+              obj_target = represented,
+              edge_label = representation_to_represented
+            ),
+          private$ass_dat |>
+            mutate(rep_rel = "representation_representor") |>
+            select(
+              assumption,
+              rep_rel,
+              edge_rel = representation_representor,
+              obj_source = representation,
+              obj_target = representor,
+              edge_label = representation_to_representor
+            ),
+          private$ass_dat |>
+            mutate(rep_rel = "represented_representor") |>
+            select(
+              assumption,
+              rep_rel,
+              edge_rel = represented_representor,
+              obj_source = represented,
+              obj_target = representor,
+              edge_label = represented_to_representor
+            )
+        )
+
+    representational_edges <- all_edges |>
+      filter(assumption == 0) |>
+      select(-assumption) |>
+      cross_join(
+        private$ass_dat |> select(assumption)
+      ) |>
+      mutate(obj_source = if_else(
+        str_detect(obj_source, "represent"), str_c(obj_source, "_", assumption), obj_source),
+        obj_target = if_else(
+        str_detect(obj_target, "represent"), str_c(obj_target, "_", assumption), obj_target)
       )
+
+    # set representational edges, this seems out of place probably need to refactor
+    private$representational_edges <- representational_edges
+
+    # return everything
+    bind_rows(all_edges |> filter(assumption != 0), representational_edges)
     }
   )
 )
-
-
 
 # === Semantic Layer ===
 # input extractions
@@ -100,22 +134,23 @@ SemanticLayer <- R6Class("SemanticLayer",
             "representational",
             "sis"
           ),
-          subsubgraph = if_else(
-            node_type == "human",
-            "human",
-            "automata"
-          )
-        ) |>
-        mutate(node_shape = case_when(
-          str_detect(node_type, "represents") ~ "diamond",
+          subsubgraph = case_when(
+            node_type == "human" ~ "human",
+            node_type == "automata" ~ "automata",
+            # need to append with assumption to separate representational categories
+            node_type == "represents" ~  "diamond",
+            TRUE ~ NA
+
+          ),
+          node_shape = case_when(
+          node_type == "represents" ~ "diamond",
           node_type == "human" ~ "ellipse",
           node_type == "automata" ~ "hexagon",
           TRUE ~ "parallelogram"
-
         ),
         node_label = case_when(
           # must do representational first
-          subgraph == "representational" ~ node,
+          subgraph == "representational" ~ str_c(node),
 
           # we want representation names as labels for now
           (subgraph != "representational" & !is.na(node_label)) ~ node_label,
@@ -154,6 +189,8 @@ SemanticLayer <- R6Class("SemanticLayer",
           dot_line
         )
 
+      
+
 
     },
 
@@ -188,7 +225,7 @@ DotMaker <- R6Class("DotMaker",
         str_c(collapse = "\n")
       
       self$dot_graph <- str_c("digraph G {\n",
-        self$generate_subgraph_clusters(),
+        self$generate_nested_subgraphs(),
         "\n",
 
         # is a bit hacky to tack all edges on after clusters
@@ -213,6 +250,32 @@ DotMaker <- R6Class("DotMaker",
   
     str_c(subgraph_blocks, collapse = "\n\n")
   },
+
+  generate_nested_subgraphs = function() {
+  subgraphs <- unique(self$node_df$subgraph)
+
+  subgraph_blocks <- purrr::map_chr(subgraphs, function(sg) {
+    sg_df <- self$node_df |> filter(subgraph == sg)
+    subsubs <- unique(sg_df$subsubgraph)
+
+    subsub_blocks <- purrr::map_chr(subsubs, function(ssg) {
+      ssg_df <- sg_df |> filter(subsubgraph == ssg)
+      dot_lines <- str_c(ssg_df$dot_line, collapse = "\n")
+      glue("\t\tsubgraph cluster_{sg}_{ssg} {{
+\t\t\tlabel = \"{ssg}\"
+{dot_lines}
+\t\t}}")
+    })
+
+    glue("\tsubgraph cluster_{sg} {{
+\t\tlabel = \"{sg}\"
+{str_c(subsub_blocks, collapse = '\n\n')}
+\t}}")
+  })
+
+  str_c(subgraph_blocks, collapse = "\n\n")
+},
+
     
     plot = function() {
       grViz(self$dot_graph)
@@ -223,12 +286,3 @@ DotMaker <- R6Class("DotMaker",
     }
   )
 )
-
-
-layer_1 <- ExtractLayer$new("figures-and-tables/colog/colog_input.ods")
-layer_2 <- SemanticLayer$new(layer_1$get_nodes(), layer_1$get_edges())
-layer_3 <- DotMaker$new(layer_2$nodes, layer_2$edges) 
-
-layer_3$print_dot()
-
-

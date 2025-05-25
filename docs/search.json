@@ -1759,7 +1759,7 @@
   {
     "objectID": "slides/colog.html#assumption",
     "href": "slides/colog.html#assumption",
-    "title": "a colog of epistemic unFAIRness",
+    "title": "Data Stories",
     "section": "assumption",
     "text": "assumption\nPeople affected by decision are faithfully represented by the decisionmaker"
   },
@@ -1773,28 +1773,28 @@
   {
     "objectID": "slides/colog.html#cologging-an-assumption",
     "href": "slides/colog.html#cologging-an-assumption",
-    "title": "a colog of epistemic unFAIRness",
+    "title": "Data Stories",
     "section": "cologging an assumption",
     "text": "cologging an assumption"
   },
   {
     "objectID": "slides/colog.html#colog-report",
     "href": "slides/colog.html#colog-report",
-    "title": "a colog of epistemic unFAIRness",
+    "title": "Data Stories",
     "section": "colog report",
     "text": "colog report\n\njust the representation graph, summarised"
   },
   {
     "objectID": "slides/colog.html#colog-analysis",
     "href": "slides/colog.html#colog-analysis",
-    "title": "a colog of epistemic unFAIRness",
+    "title": "Data Stories",
     "section": "colog analysis",
     "text": "colog analysis"
   },
   {
     "objectID": "slides/colog.html#a-colog-epistemic-unfairness",
     "href": "slides/colog.html#a-colog-epistemic-unfairness",
-    "title": "a colog of epistemic unFAIRness",
+    "title": "Data Stories",
     "section": "a colog epistemic unFAIRness",
     "text": "a colog epistemic unFAIRness\n\nrepresentation category with text labels for failure\n\n\nThis picture tells a story of a scientist who has things to say about something important. It will be our work of this talk to tell the story of this picture.\nThis scientist is who the world needs to hear from, yet there are so many ways that it can occur that they don’t. In this story, the scientist encountered an obstacle.\n\nhow it illustrates how intelligence is derived partially from knowledge\nand if that knowledge is spurious, so too is the knowledge\nfurthermore, if knowledge is power, then understanding who has knowledge helps us understand who has power\nwe believe pictures like this are necessary\nthat is, formal frameworks are necessary and understudied\nwe believe we need to build bridges between computational implementation and ethics\nwe need to invite critical theory into computational development\nwe believe this is how humans can learn to interoperate via computational tools with more intelligence"
   }

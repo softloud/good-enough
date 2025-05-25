@@ -1,7 +1,7 @@
 ---
-title: a colog of epistemic unFAIRness
+title: Data Stories
+subtitle: a colog of epistemic unFAIRness
 author: "Good Enough Data & Systems Lab"
-
 format: 
   revealjs:
     theme: solarized
