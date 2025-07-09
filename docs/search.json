@@ -781,7 +781,7 @@
     "href": "blog.html",
     "title": "Good Enough Lab",
     "section": "",
-    "text": "If Shrimp, Then Towel (extended scientific cosplay edition)\n\n\n\n\n\n\nDr Charles T. Gray, Datapunk\n\n\nMay 3, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nIf Shrimp, Then Towel\n\n\n\n\n\n\nDr Charles T. Gray, Datapunk\n\n\nApr 21, 2025\n\n\n\n\n\n\n\n\n\n\n\nThe Categorical Descent of Loss in Elizabeth Bishop’s One Art\n\n\n\n\n\n\nDr Charles T. Gray, Datapunk\n\n\nApr 16, 2025\n\n\n\n\n\n\n\n\n\n\n\nGovernance of Workflows\n\n\n\n\n\n\nDr Charles T. Gray, Datapunk\n\n\nMar 31, 2025\n\n\n\n\n\n\n\n\n\n\n\nButton - slides and blog vis standardisation\n\n\n\n\n\n\nDr Charles T. Gray, Datapunk\n\n\nMar 24, 2025\n\n\n\n\n\n\n\n\n\n\n\nThe Countable Cave of Language\n\n\n\n\n\n\nDr Charles T. Gray, Mooncake (Smorange Category Theory)\n\n\nMar 23, 2025\n\n\n\n\n\n\n\n\n\n\n\nThe Cave Paradox of Language Models\n\n\n\n\n\n\nDr Charles T. Gray, Datapunk, Mooncake (Measured)\n\n\nMar 20, 2025\n\n\n\n\n\n\n\n\n\n\n\nStructured Intelligence Governance: Formal Definitions & The Repeated Login Problem\n\n\n\n\n\n\nDr Charles T. Gray, Datapunk, Mooncake (Measured)\n\n\nMar 18, 2025\n\n\n\n\n\n\n\n\n\n\n\nMy phone notifications are breaking the first law - generative\n\n\n\n\n\n\nDr Charles T. Gray, Datapunk, Mooncake (Measured)\n\n\nMar 17, 2025\n\n\n\n\n\n\n\n\n\n\n\nA singularity of button\n\n\n\n\n\n\nDr Charles T. Gray, Datapunk\n\n\nMar 15, 2025\n\n\n\n\n\n\n\n\n\n\n\nA singularity of button\n\n\n\n\n\n\nDr Charles T. Gray, Datapunk\n\n\nMar 14, 2025\n\n\n\n\n\n\nNo matching items"
+    "text": "Hard is Easy, and Easy is Hard\n\n\n\n\n\n\nDr Charles T. Gray, Datapunk\n\n\nJul 9, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nIf Shrimp, Then Towel (extended scientific cosplay edition)\n\n\n\n\n\n\nDr Charles T. Gray, Datapunk\n\n\nMay 3, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nIf Shrimp, Then Towel\n\n\n\n\n\n\nDr Charles T. Gray, Datapunk\n\n\nApr 21, 2025\n\n\n\n\n\n\n\n\n\n\n\nThe Categorical Descent of Loss in Elizabeth Bishop’s One Art\n\n\n\n\n\n\nDr Charles T. Gray, Datapunk\n\n\nApr 16, 2025\n\n\n\n\n\n\n\n\n\n\n\nGovernance of Workflows\n\n\n\n\n\n\nDr Charles T. Gray, Datapunk\n\n\nMar 31, 2025\n\n\n\n\n\n\n\n\n\n\n\nButton - slides and blog vis standardisation\n\n\n\n\n\n\nDr Charles T. Gray, Datapunk\n\n\nMar 24, 2025\n\n\n\n\n\n\n\n\n\n\n\nThe Countable Cave of Language\n\n\n\n\n\n\nDr Charles T. Gray, Mooncake (Smorange Category Theory)\n\n\nMar 23, 2025\n\n\n\n\n\n\n\n\n\n\n\nThe Cave Paradox of Language Models\n\n\n\n\n\n\nDr Charles T. Gray, Datapunk, Mooncake (Measured)\n\n\nMar 20, 2025\n\n\n\n\n\n\n\n\n\n\n\nStructured Intelligence Governance: Formal Definitions & The Repeated Login Problem\n\n\n\n\n\n\nDr Charles T. Gray, Datapunk, Mooncake (Measured)\n\n\nMar 18, 2025\n\n\n\n\n\n\n\n\n\n\n\nMy phone notifications are breaking the first law - generative\n\n\n\n\n\n\nDr Charles T. Gray, Datapunk, Mooncake (Measured)\n\n\nMar 17, 2025\n\n\n\n\n\n\n\n\n\n\n\nA singularity of button\n\n\n\n\n\n\nDr Charles T. Gray, Datapunk\n\n\nMar 15, 2025\n\n\n\n\n\n\n\n\n\n\n\nA singularity of button\n\n\n\n\n\n\nDr Charles T. Gray, Datapunk\n\n\nMar 14, 2025\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "living-analyses.html",
@@ -2224,5 +2224,40 @@
     "title": "Good Enough Data & Systems Lab",
     "section": "Industry Partners",
     "text": "Industry Partners\nWe partner with data science and modern data stack tool developers to demonstrate features they want users to know about.\nWe build our demonstrations using open science research collaborations with Systemic Injustice Research Partners, serving a dual purpose of amplifying anlaytics the world needs to see."
+  },
+  {
+    "objectID": "blog/2025-07-09-paradox.html",
+    "href": "blog/2025-07-09-paradox.html",
+    "title": "Hard is Easy, and Easy is Hard",
+    "section": "",
+    "text": "Consulting and choosing the correct statistical approach for diverse problems is unquestionably a challenging conceptual task.\nThis begins with an assumption we have some inputs, let’s call this table XX, and we will get some outputs of interest via algorithmic transformation, let’s call this table YY."
+  },
+  {
+    "objectID": "blog/2025-07-09-paradox.html#statistical-modelling-is-hard",
+    "href": "blog/2025-07-09-paradox.html#statistical-modelling-is-hard",
+    "title": "Hard is Easy, and Easy is Hard",
+    "section": "",
+    "text": "Consulting and choosing the correct statistical approach for diverse problems is unquestionably a challenging conceptual task.\nThis begins with an assumption we have some inputs, let’s call this table XX, and we will get some outputs of interest via algorithmic transformation, let’s call this table YY."
+  },
+  {
+    "objectID": "blog/2025-07-09-paradox.html#hard-is-easy",
+    "href": "blog/2025-07-09-paradox.html#hard-is-easy",
+    "title": "Hard is Easy, and Easy is Hard",
+    "section": "Hard is Easy",
+    "text": "Hard is Easy\nHowever, once the desired shapes of XX and YY have been carefully chosen with sound mathematical reasoning, the implementation of the algorithm that transforms XX to YY has become so trivial it is but a handful of lines of code."
+  },
+  {
+    "objectID": "blog/2025-07-09-paradox.html#easy-is-hard",
+    "href": "blog/2025-07-09-paradox.html#easy-is-hard",
+    "title": "Hard is Easy, and Easy is Hard",
+    "section": "Easy is Hard",
+    "text": "Easy is Hard\n\nThe dirty secret a the heart of data science that leadership are struggling to grasp is this: getting table XX is never easy, it’s always hard.\n\nInstead, we have a set of tables, let’s call them [Z][Z] wherein each table may arrive not on in a different shape but even in different formats.\nAnd the transformation pipeline to shape [Z][Z] to XX represents the vast proportion of development work required. This process can be conceptualised as one enormous directed acyclic graph.\nThis singularity grows, always with a finite number of nodes and edges, but ever increasing in complexity and scale. So that it becomes impossible for humans to govern the logic of the transformations by eyeballing the code.\nWorse still, the entire team need to understand the XX desired, and that XX is subject to change as decisions are made about the desired YY during development. Increasingly, it’s rare for the people getting the XX and computing the YY to be the same people, confusions abound.\n\nWithout tests and validation, we find that a butterfly of shit data can flap its wings and cause a tornado of broken analyses, trauma, and workplace toxicity."
+  },
+  {
+    "objectID": "blog/2025-07-09-paradox.html#a-butterfly-of-shit-data",
+    "href": "blog/2025-07-09-paradox.html#a-butterfly-of-shit-data",
+    "title": "Hard is Easy, and Easy is Hard",
+    "section": "A butterfly of shit data",
+    "text": "A butterfly of shit data"
   }
 ]
