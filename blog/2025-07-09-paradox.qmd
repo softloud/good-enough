@@ -37,7 +37,7 @@ Worse still, the entire team need to understand the $X$ desired, and that $X$ is
 
 ---
 
-Without tests and validation, we find that a butterfly of shit data can flap its wings and cause a tornado of broken analyses, trauma, and workplace toxicity. 
+Without tests and validation to communicate shared assumptions, a butterfly of shit data can flap its wings and cause a tornado of broken analyses, trauma, and workplace toxicity. 
 
 ## A butterfly of shit data 
 
