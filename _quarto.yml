@@ -10,14 +10,12 @@ website:
   navbar:
     logo: good-enough-logo.png
     left: 
-      - text: Advocancy
-        menu:
-          - text: Structured Intelligence Architect Description
-            href: advocacy/sia-description.qmd
-          - text: Analytics Work
-            href: advocacy/types-of-anlaytics-work.qmd
-          - text: Coding of Kindness
-            href: advocacy/cok.qmd
+      - text: Consulting
+        href: consulting/consulting.qmd
+      - text: ESG
+        href: consulting/esg.qmd
+      - text: Research 
+        href: research/research.qmd
       - text: Development Blog
         href: blog.qmd
         menu:
@@ -39,19 +37,11 @@ website:
             href: blog/2025-03-15-button.qmd
           - text: Button - 2025-03-14
             href: blog/2025-03-14-button.qmd
-      - text: Living Essays
-        menu:
-          - text: Singularities
-            href: living-essays/singularities/singularities.qmd
-          - text: Singularities in Pop Culture
-            href: pop.qmd
-          - text: Questionable Analytical Observations
-            href: living-essays/qao/qao.qmd
     right:
-      - text: Collaborate
-        href: collab.qmd
       - text: Lab
         href: lab.qmd
+      - text: Work with us
+        href: collab.qmd
       - text: Values
         href: values.qmd
 

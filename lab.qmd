@@ -2,38 +2,67 @@
 title: Good Enough Data & Systems Lab
 ---
 
+We care about Good Enough Systems, whether they be computational or otherwise. 
 
-[**Dr Charles T. Gray, Data Punk**](https://www.linkedin.com/in/charles-t-gray/) founded Good Enough Data & Systems Lab to address universal failures at the intersection of data, wellbeing, and computational systems.  
+The Good Enough Lab is not only a consultancy, but a community of people who advocate for trustworthiness in science. We study mathematics together, read papers, code together, and develop advocacy materials.
 
-## [Bad data](data.qmd)
+---
 
-Her primary motivation was to address the systemic [*garbage in, garbage out*](https://en.wikipedia.org/wiki/Garbage_in,_garbage_out) she encountered in working with data in scientific research, scale-ups, and the corporate industry. By applying principles of ethical AI, Good Enough Data & Sytems Lab mitigate the common pitfalls of living analysis development lifecycles.
+## Systemic Injustice Research Partners
 
-## [Ethical AI](systems.qmd)
+As the Good Enough Lab's founding Systemic Injustice Research Partner, Garima Gupta's advocacy for biodiversity conservation in the Global South has helped shape the Lab's values and purpose. 
 
-Misunderstood in methodological data governance, such as [FAIR data principles](https://www.go-fair.org/), is the myriad ways this mitigates bad data, whilst democratising AI. Fundamental to this is the distinction between data and a data product, developed by people who work with data, who are riding wave after wave of technological change. 
+Garima Gupta is an interdisciplinary researcher working at the intersection of biodiversity, Indigenous knowledge, and environmental justice. Her work explores how systemic and epistemic injustices shape conservation and sustainability in the Global South, with a focus on the Himalayan region. Drawing on both ecological and social science methods, she investigates community-led governance, plural knowledge systems, and reparative justice. Garima collaborates with the Good Enough Lab to co-develop inclusive, context-sensitive, and politically aware approaches to sustainability.
 
-Good Enough Data & Systems Lab takes a metascientific approach to computational systems, considering what practices within development are questionable. For example, it's questionable to ignore the wellbeing  of people who work with data.
+Garima and Charles collaborate with conservationists for justice, such as our recent publications with Associate Professor Maya Pasgaard from Aarhus University. 
 
-## [Trauma-informed development strategy](values.qmd)
+---
 
-Good Enough Data & Systems recognises data developers and analysts are traumatised by changes to their job descriptions and disruptions to workflows because of stack development. Change management is privileged as otherwise people who work with data will revert to familiar practices that lead to bad data.
+## Dr Charles T. Gray: CTO, Datapunk, Founder
 
-## [Applied abstract algebra](games.qmd)
+Dr Charles T. Gray (she/her) identifies as a datapunk and reformed musician. 
 
-Good Enough Data Lab takes a mathematically-rigorous approach to determining what makes data good enough, pioneering change-management and data strategy for living analysis development and reusable data architecture. 
+Charles' music career has been somewhat eclispsed by her data science, however the twenty years she spent performing and teaching music, suppporting herself as an independent musician, was formative in her approach to the Good Enough Lab. 
 
-## Game Design
+---
+
+### Charles' Performance at the Heidelberg Laureate Forum
+
+<iframe src="https://www.youtube.com/embed/lJtdOsjy59A?start=2119" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+---
+
+She has 3 bachelor degrees (music, arts, mathematics/statistics), 2 masters-level theses (film musicology, pure mathematics), and a PhD in statistical data science and systems epistemology. 
+
+---
+
+![](codelikeagirl.jpg)
+
+Charles has extensive advocacy and outreach experience, with three national tours in Australia  (AMSI, Code Like a Girl, World Science Festival Keynote), as well as individual events, such as chair at the Melbourne Writers Festival.
+
+---
+
+###  [Australian Mathematical Sciences Institute *Choose Maths* campaign](https://www.smh.com.au/education/year-8-dropout-becomes-face-of-a-national-schools-campaign-20170601-gwhz7h.html)
+
+<iframe src="https://www.youtube.com/embed/o0Rqz8Hgacc?si=oQXw6DZ4eg04ICq2&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+---
+
+### Recent presentations
+
+In addition to her scientific publications, Charles has been presenting to coding communities for over 10 years. Here are a selection of her most-recent presentations.
+
+- [GTD Summer Camp 2025](https://vitallearning.dk/gtd-summer-camp-2/)
+- [DBT Meetup Copenhagen 2025/2024](https://www.linkedin.com/posts/charles-t-gray_copenhagen-dbt-meetup-vol-6-wed-mar-26-activity-7298622005187096578-wIol?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAUfEOsBIconzRRBLb3Eyv-XLdA9Q9bX8MQ)
+- [CopenhagenR - useR Group 2024](https://www.meetup.com/copenhagenr-user-group/events/301262743/?eventOrigin=group_events_list)
+- [PyData Copenhagen 2023](https://www.meetup.com/pydata-copenhagen/events/294210771/?eventOrigin=group_events_list)
 
 
-## Data simulation
 
+## Good Enough Advisors
 
-## AI-assisted content
+Patrick Robotham is a data scientist, machine learning engineer, and cofounder of Prophet, a media analytics company. He advises the good enough data and systems lab on an ad hoc basis.
 
-The content of this website was written with the assistance of ChatGPT trained on Good Enough Data & Systems Lab publications, current work, code, and more. 
+Dr Hannah Fraser who specialises in Questionable Research Practices and mathematician/datapunk Dr Danny Fryer also provide insightful advice from time to time. 
 
-## Upcoming talks
-
-- [DBT Meetup Copenhagen](https://www.linkedin.com/posts/charles-t-gray_copenhagen-dbt-meetup-vol-6-wed-mar-26-activity-7298622005187096578-wIol?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAUfEOsBIconzRRBLb3Eyv-XLdA9Q9bX8MQ)
-
+Many other scientists advise in big and small ways in the lab. 

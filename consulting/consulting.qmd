@@ -1,0 +1,95 @@
+---
+title: Good Enough Consulting
+---
+
+> *An algorithm is math on a blackboard—until you make it think.*
+
+We design the living brain of structured intelligence systems (AI).
+
+A structured intelligence system is more than code—it's people and algorithms interoperating.  
+We specialise in optimising the intelligence of that process.
+
+At the Good Enough Lab, we build data systems that don’t just scale—they think.  
+System thinking is a living process: as people evolve their questions, systems must evolve with them.  
+Design can’t be perfected upfront—it must be structured to adapt in a way that's observable and trustworthy for humans.
+
+Our consulting services move organisations from chaos to coherence.  
+We bring opinionated inclusivity, test-driven development, and grounded migration strategies—shaped by over a decade of experience engineering machine-learning pipelines in research, start-ups, scale-ups, and enterprise environments.
+
+We’re not here to optimise your dashboards.  
+We’re here to help you build a system of analytical inquiry you can trust.
+
+---
+
+### Data Architecture Strategy for Migration & Inclusive Automation
+
+> *It ain't what you don't know that gets you into trouble. It's what you know for sure that just ain't so.*  
+
+Most data migrations fail because they forget the humans.  
+We design structured intelligence systems that reflect *real* workflows—not just schemas.
+
+Robust systems maintain clear boundaries between **source**, **semantic**, and **analytic** layers.  
+When these layers are collapsed, data reuse becomes brittle and unsustainable.
+
+It's costly to rewrite pipelines for every analysis.  
+It’s better to build a living architecture of semantically meaningful tables that grow with the organisation—  
+flexible enough to recombine, stable enough to trust.
+
+```{dot}
+digraph pipeline {
+  rankdir=BT
+  bgcolor=transparent
+  node [style=filled, fillcolor=white, shape=box]
+  edge [color=white]
+  raw [label="Ingestion Layer\nEnsures data freshness and source integrity"]
+  source [label="Source Layer\nConverts to source-aligned data entities"]
+  semantic [label="Semantic Layer\nIntegrates data entities across sources"]
+  analytic [label="Analytic Layer\nEnriches data entities for specific analyses"]
+  deploy [label="Deployment Layer\nValidated analyses and data exports that preserve lineage"]
+  raw -> source -> semantic -> analytic -> deploy
+}
+```
+
+
+Our Structured Intelligence Governance starter kit, tailored to **your stack**, includes:
+
+- Test-driven data migration plan (the Lab uses JIRA inhouse, and have experience with ClickUp and Monday)  
+- [FAIR](https://www.go-fair.org/fair-principles/) data entity modelling (we favour DBT, git-based, cloud-native approaches)  
+- Embedded validation and observability  
+- ESG-aligned governance scaffolds
+
+> We make your system smarter—without making your people invisible.
+
+---
+
+### Change Management through FAIR Audits
+
+You don’t need another compliance checklist.  
+You need to know whether your system is FAIR *to the people inside it*.
+
+We conduct in-depth audits—person by person, role by role—to uncover how data practices actually function.  
+We map epistemic flows, surface systemic blockers, and design transitions that earn trust.
+
+- [FAIR](https://www.go-fair.org/fair-principles/) workflow audit  
+- Sociotechnical validation plan  
+- Governance recommendations grounded in lived experience
+
+> This is change management that builds trust *before* transformation.
+
+---
+
+### Speaking & Advisory
+
+Structured intelligence isn’t just a technical upgrade.  
+It’s a shift in how we understand machines, data, and each other.
+
+We offer:
+
+- Keynotes on the brain of structured intelligence systems (AI)  
+- Executive briefings on test-driven governance and epistemic resilience  
+
+---
+
+> Your intelligence system has a nervous system.  
+We help you wire it wisely.
+

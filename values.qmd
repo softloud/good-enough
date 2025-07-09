@@ -2,9 +2,7 @@
 title: Values
 ---
 
-[Dr Charles T. Gray,  Datapunk](https://www.linkedin.com/in/charles-t-gray/) and Mooncake (Impostor Syndrome) created the Good Enough Data & Systems Lab with two purposes.
-
-<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/6ddhwvjVaTJJhGCYuFPaf0?utm_source=generator" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+[Dr Charles T. Gray,  Datapunk](https://www.linkedin.com/in/charles-t-gray/) founded the Good Enough Data & Systems Lab with two purposes.
 
 ##  What the lab is
 
@@ -17,7 +15,9 @@ This is the Miranda that has burned up my brain.
 <iframe src="https://www.youtube.com/embed/1VR3Av9qfZc?si=yfL8jciL-1nfcbC6&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 And I aim to misbehave.
- 
+
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/6ddhwvjVaTJJhGCYuFPaf0?utm_source=generator" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
 ## What the lab is not
 
 <iframe src="https://www.youtube.com/embed/4PLvdmifDSk?si=WDrZanL1RlOJLznP&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -26,3 +26,15 @@ The Lab is opposed to ungoverned, developer-traumatising, flashy AI/ML-hype proo
 
 <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7301116015361298433" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
 
+## Founding of the Lab
+
+In 2007, founder Dr. Charles T. Gray—Datapunk—set out to live her *ikigai*:
+
+- What she can get paid for  
+- What the world needs  
+- What she loves doing  
+- What she is good at  
+
+She tried both the academic research ladder and industry roles, but the disruption of computational scale made both paths unworkable for a woman of colour. *What Works for Women at Work* devotes an entire chapter to this. Since she couldn’t find a safe place to do the data science the world needs, she built one.
+
+She now lives her ikigai.

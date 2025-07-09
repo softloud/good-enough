@@ -31,8 +31,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
 <link href="./good-enough-logo.png" rel="icon" type="image/png">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -70,35 +68,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 
 
 <link rel="stylesheet" href="styles.css">
@@ -124,57 +93,31 @@ ul.task-list li input[type="checkbox"] {
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-advocancy" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Advocancy</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-advocancy">    
-        <li>
-    <a class="dropdown-item" href="./advocacy/sia-description.html">
- <span class="dropdown-text">Structured Intelligence Architect Description</span></a>
+  <li class="nav-item">
+    <a class="nav-link" href="./consulting/consulting.html"> 
+<span class="menu-text">Consulting</span></a>
   </li>  
-        <li>
-    <a class="dropdown-item" href="./advocacy/types-of-anlaytics-work.html">
- <span class="dropdown-text">Analytics Work</span></a>
+  <li class="nav-item">
+    <a class="nav-link" href="./consulting/esg.html"> 
+<span class="menu-text">ESG</span></a>
   </li>  
-        <li>
-    <a class="dropdown-item" href="./advocacy/cok.html">
- <span class="dropdown-text">Coding of Kindness</span></a>
+  <li class="nav-item">
+    <a class="nav-link" href="./research/research.html"> 
+<span class="menu-text">Research</span></a>
   </li>  
-    </ul>
-  </li>
   <li class="nav-item">
     <a class="nav-link" href="./blog.html"> 
 <span class="menu-text">Development Blog</span></a>
   </li>  
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-living-essays" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Living Essays</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-living-essays">    
-        <li>
-    <a class="dropdown-item" href="./living-essays/singularities/singularities.html">
- <span class="dropdown-text">Singularities</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./pop.qmd">
- <span class="dropdown-text">Singularities in Pop Culture</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./living-essays/qao/qao.html">
- <span class="dropdown-text">Questionable Analytical Observations</span></a>
-  </li>  
-    </ul>
-  </li>
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./collab.html"> 
-<span class="menu-text">Collaborate</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="./lab.html"> 
 <span class="menu-text">Lab</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./collab.html"> 
+<span class="menu-text">Work with us</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./values.html"> 
@@ -196,7 +139,9 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#blog" id="toc-blog" class="nav-link active" data-scroll-target="#blog">Blog</a></li>
+  <li><a href="#consulting" id="toc-consulting" class="nav-link active" data-scroll-target="#consulting">Consulting</a></li>
+  <li><a href="#esg-epistemic-integrity" id="toc-esg-epistemic-integrity" class="nav-link" data-scroll-target="#esg-epistemic-integrity">ESG &amp; Epistemic Integrity</a></li>
+  <li><a href="#research" id="toc-research" class="nav-link" data-scroll-target="#research">Research</a></li>
   </ul>
 </nav>
     </div>
@@ -224,238 +169,49 @@ ul.task-list li input[type="checkbox"] {
 
 
 <blockquote class="blockquote">
-<p>The Good Enough Data &amp; Systems Lab was created to diagnose the harm generated by misapplied algorithms.</p>
+<p><em>Order from the chaos of development.</em></p>
 </blockquote>
 <hr>
-<p><img src="good-enough-logo.png" class="img-fluid"></p>
+<p>We are the piano accompanists of science.</p>
+<p>A collective of systems epistemologists, engineers, and scientists asking:</p>
+<blockquote class="blockquote">
+<p><strong>How can society use computational tools more intelligently?</strong></p>
+</blockquote>
+<p>The Lab was founded by Dr Charles T. Gray, a senior data science architect, to design ethical, adaptable, and intelligent infrastructure for inquiry.</p>
+<p>→ <a href="./values.html">Our values</a></p>
 <hr>
-<p>We are a collective of data scientists, epistemologists, and ethicists who care about finding solutions to the chaos of humans interoperating with automata and metrics.</p>
+<section id="consulting" class="level2">
+<h2 class="anchored" data-anchor-id="consulting">Consulting</h2>
+<blockquote class="blockquote">
+<p><em>It ain’t what you don’t know that gets you into trouble. It’s what you know for sure that just ain’t so.</em></p>
+</blockquote>
+<p>We help organisations design data systems at scale that are FAIR to the humans inside them.</p>
+<p>Our consulting services bring test-driven migration, inclusive automation, and change management strategies grounded in broad experience of computational epistemology.</p>
+<p>→ <a href="./consulting/consulting.html">Explore our services</a></p>
 <hr>
-<p>The Good Enough Data &amp; Systems Lab collaborates by computationally applying category theory and abstract mathematics to codebases and digraph-oriented development (e.g., JIRA) plans. Any graph-oriented or flat data structure has potential to be aggregated.</p>
-<p>The Lab uses a mix of category theory, visualisation, and data simulation to explore frameworks such as</p>
-<ul>
-<li>user behaviour</li>
-<li>developer wellbeing</li>
-<li>efficiency</li>
-<li>reliability</li>
-<li>trustworthiness</li>
-<li>expectation</li>
-<li>and most of all, human intentionality in a chaotic system.</li>
-</ul>
-<p>A key priority is to to have <em>no</em> disruption on developer workflow, the Lab works at a metalevel on existing plans, well-masked human resource database extraction, and codebase metadata to provide strategic analyses.</p>
-<p>The Good Enough Data &amp; Systems Lab develops and publishes on a categorically-defined <em>structured intelligence governance</em> framework with collaborators, creating a virtuous cycle between research and industry.</p>
+</section>
+<section id="esg-epistemic-integrity" class="level2">
+<h2 class="anchored" data-anchor-id="esg-epistemic-integrity">ESG &amp; Epistemic Integrity</h2>
+<p>The Lab works with enterprise and public institutions to build structured intelligence systems that meet ESG demands without sacrificing traceability or trust.</p>
+<p>We don’t do checkbox compliance.<br>
+We engineer systems at scale that make sustainability claims <em>auditable, semantic, and human-aligned</em>.</p>
+<p>→ <a href="./consulting/esg.html">Learn more about ESG-aligned system design</a></p>
 <hr>
-<p>Under development - here’s what’s coming:</p>
-<ul>
-<li>data simulation animations of singularities failing</li>
-<li>time-series analysis on real-world data</li>
-<li>two papers</li>
-<li>slides</li>
-<li>a narrative adventure game</li>
-<li>simulations on the narrative adventure game</li>
-<li>category-theoretic analysis on development of the narrative adventure game</li>
-<li>proof-sketches to discuss with applied category theorists</li>
-</ul>
-<section id="blog" class="level1">
-<h1>Blog</h1>
-
+</section>
+<section id="research" class="level2">
+<h2 class="anchored" data-anchor-id="research">Research</h2>
+<p>We work voluntarily with Systemic Injustice Research Partners to build better science.</p>
+<p><strong>Applied</strong><br>
+→ Conservation strategy and epistemic justice in the Global South</p>
+<p><strong>Theoretical</strong><br>
+→ Formalising injustice in code<br>
+→ Designing data architecture at the intersection of critical theory and category theory</p>
+<p>→ <a href="./research/research.html">Learn more about our Good Enough publications</a></p>
 
 
 </section>
 
-<div class="quarto-listing quarto-listing-container-table" id="listing-listing">
-<div class="listing-actions-group">
-   <div class="input-group input-group-sm quarto-listing-sort">
-    <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
-    <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
-      <option value="" disabled="" selected="" hidden="">Order By</option>
-      <option value="index" data-direction="asc">Default</option>
-      <option value="listing-date-sort" data-direction="asc">
-        Date - Oldest
-      </option>
-      <option value="listing-date-sort" data-direction="desc">
-        Date - Newest
-      </option>
-      <option value="listing-title-sort" data-direction="asc">
-        Title
-      </option>
-      <option value="listing-author" data-direction="asc">
-        Author
-      </option>
-    </select>
-  </div>
-    <div class="input-group input-group-sm quarto-listing-filter">
-      <span class="input-group-text"><i class="bi bi-search"></i></span>
-      <input type="text" class="search form-control" placeholder="Filter">
-    </div>
-</div>
-<table class="quarto-listing-table table">
-<thead>
-<tr>
-
-<th>
-<a class="sort" data-sort="listing-date-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Date</a>
-</th>
-
-<th>
-<a class="sort" data-sort="listing-title-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Title</a>
-</th>
-
-<th>
-<a class="sort" data-sort="listing-author" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Author</a>
-</th>
-
-</tr>
-</thead>
-<tbody class="list">
-
-<tr data-index="0" data-listing-date-sort="1746223200000" data-listing-file-modified-sort="1746548374166" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1592" data-listing-title-sort="If Shrimp, Then Towel (extended scientific cosplay edition)" data-listing-filename-sort="2025-05-03-comedy-science-beers.qmd">
-<td>
-<span class="listing-date">May 3, 2025</span>
-</td>
-<td>
-<a href="./blog/2025-05-03-comedy-science-beers.html" class="title listing-title">If Shrimp, Then Towel (extended scientific cosplay edition)</a>
-</td>
-<td>
-<span class="listing-author">Dr Charles T. Gray, Datapunk</span>
-</td>
-
-</tr>
-
-<tr data-index="1" data-listing-date-sort="1745186400000" data-listing-file-modified-sort="1746548374166" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1108" data-listing-title-sort="If Shrimp, Then Towel" data-listing-filename-sort="2025-04-21-olog-comedy.qmd">
-<td>
-<span class="listing-date">Apr 21, 2025</span>
-</td>
-<td>
-<a href="./blog/2025-04-21-olog-comedy.html" class="title listing-title">If Shrimp, Then Towel</a>
-</td>
-<td>
-<span class="listing-author">Dr Charles T. Gray, Datapunk</span>
-</td>
-
-</tr>
-
-<tr data-index="2" data-listing-date-sort="1744754400000" data-listing-file-modified-sort="1744828985639" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="17" data-listing-word-count-sort="3255" data-listing-title-sort="The Categorical Descent of Loss in Elizabeth Bishop's *One Art*" data-listing-filename-sort="2025-04-16-one-art.qmd">
-<td>
-<span class="listing-date">Apr 16, 2025</span>
-</td>
-<td>
-<a href="./blog/2025-04-16-one-art.html" class="title listing-title">The Categorical Descent of Loss in Elizabeth Bishop’s <em>One Art</em></a>
-</td>
-<td>
-<span class="listing-author">Dr Charles T. Gray, Datapunk</span>
-</td>
-
-</tr>
-
-<tr data-index="3" data-listing-date-sort="1743372000000" data-listing-file-modified-sort="1744803350465" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="30" data-listing-word-count-sort="5861" data-listing-title-sort="Governance of Workflows" data-listing-filename-sort="2025-03-31-governance.qmd">
-<td>
-<span class="listing-date">Mar 31, 2025</span>
-</td>
-<td>
-<a href="./blog/2025-03-31-governance.html" class="title listing-title">Governance of Workflows</a>
-</td>
-<td>
-<span class="listing-author">Dr Charles T. Gray, Datapunk</span>
-</td>
-
-</tr>
-
-<tr data-index="4" data-listing-date-sort="1742770800000" data-listing-file-modified-sort="1744803350464" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10" data-listing-word-count-sort="1970" data-listing-title-sort="Button - slides and blog vis standardisation" data-listing-filename-sort="2025-03-24-button.qmd">
-<td>
-<span class="listing-date">Mar 24, 2025</span>
-</td>
-<td>
-<a href="./blog/2025-03-24-button.html" class="title listing-title">Button - slides and blog vis standardisation</a>
-</td>
-<td>
-<span class="listing-author">Dr Charles T. Gray, Datapunk</span>
-</td>
-
-</tr>
-
-<tr data-index="5" data-listing-date-sort="1742684400000" data-listing-file-modified-sort="1744803350464" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="261" data-listing-title-sort="The Countable Cave of Language" data-listing-filename-sort="2025-03-23-cave.qmd">
-<td>
-<span class="listing-date">Mar 23, 2025</span>
-</td>
-<td>
-<a href="./blog/2025-03-23-cave.html" class="title listing-title">The Countable Cave of Language</a>
-</td>
-<td>
-<span class="listing-author">Dr Charles T. Gray, Mooncake (Smorange Category Theory)</span>
-</td>
-
-</tr>
-
-<tr data-index="6" data-listing-date-sort="1742425200000" data-listing-file-modified-sort="1744803350464" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1248" data-listing-title-sort="The Cave Paradox of Language Models" data-listing-filename-sort="2025-03-20-cave.qmd">
-<td>
-<span class="listing-date">Mar 20, 2025</span>
-</td>
-<td>
-<a href="./blog/2025-03-20-cave.html" class="title listing-title">The Cave Paradox of Language Models</a>
-</td>
-<td>
-<span class="listing-author">Dr Charles T. Gray, Datapunk, Mooncake (Measured)</span>
-</td>
-
-</tr>
-
-<tr data-index="7" data-listing-date-sort="1742252400000" data-listing-file-modified-sort="1744803350464" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="903" data-listing-title-sort="Structured Intelligence Governance: Formal Definitions &amp; The Repeated Login Problem" data-listing-filename-sort="2025-03-18-button.qmd">
-<td>
-<span class="listing-date">Mar 18, 2025</span>
-</td>
-<td>
-<a href="./blog/2025-03-18-button.html" class="title listing-title">Structured Intelligence Governance: Formal Definitions &amp; The Repeated Login Problem</a>
-</td>
-<td>
-<span class="listing-author">Dr Charles T. Gray, Datapunk, Mooncake (Measured)</span>
-</td>
-
-</tr>
-
-<tr data-index="8" data-listing-date-sort="1742166000000" data-listing-file-modified-sort="1744803350464" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1155" data-listing-title-sort="My phone notifications are breaking the first law - generative" data-listing-filename-sort="2025-03-17-button.qmd">
-<td>
-<span class="listing-date">Mar 17, 2025</span>
-</td>
-<td>
-<a href="./blog/2025-03-17-button.html" class="title listing-title">My phone notifications are breaking the first law - generative</a>
-</td>
-<td>
-<span class="listing-author">Dr Charles T. Gray, Datapunk, Mooncake (Measured)</span>
-</td>
-
-</tr>
-
-<tr data-index="9" data-listing-date-sort="1741993200000" data-listing-file-modified-sort="1744803350464" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="443" data-listing-title-sort="A singularity of button" data-listing-filename-sort="2025-03-15-button.qmd">
-<td>
-<span class="listing-date">Mar 15, 2025</span>
-</td>
-<td>
-<a href="./blog/2025-03-15-button.html" class="title listing-title">A singularity of button</a>
-</td>
-<td>
-<span class="listing-author">Dr Charles T. Gray, Datapunk</span>
-</td>
-
-</tr>
-
-<tr data-index="10" data-listing-date-sort="1741906800000" data-listing-file-modified-sort="1746548374165" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="844" data-listing-title-sort="A singularity of button" data-listing-filename-sort="2025-03-14-button.qmd">
-<td>
-<span class="listing-date">Mar 14, 2025</span>
-</td>
-<td>
-<a href="./blog/2025-03-14-button.html" class="title listing-title">A singularity of button</a>
-</td>
-<td>
-<span class="listing-author">Dr Charles T. Gray, Datapunk</span>
-</td>
-
-</tr>
-
-</tbody>
-</table>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

@@ -1,0 +1,1251 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.24">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Dr Charles T. Gray, Datapunk">
+<meta name="author" content="Patrick Robotham, Data scientist">
+<meta name="author" content="James P. Morris, Data Scientist">
+<meta name="author" content="Dr Garima Gupta, Ecologist">
+<meta name="dcterms.date" content="2025-06-22">
+
+<title>The First Law of Structured Intelligence – Good Enough Lab</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../good-enough-logo.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-1e438c382a17f6d88d3993662a872df6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-9e8de048a655e476d63a8bc4b1d9f37e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../good-enough-logo.png" alt="" class="navbar-logo">
+    </a>
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Good Enough Lab</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-advocancy" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Advocancy</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-advocancy">    
+        <li>
+    <a class="dropdown-item" href="../../advocacy/sia-description.html">
+ <span class="dropdown-text">Structured Intelligence Architect Description</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../advocacy/types-of-anlaytics-work.html">
+ <span class="dropdown-text">Analytics Work</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../advocacy/cok.html">
+ <span class="dropdown-text">Coding of Kindness</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../../blog.html"> 
+<span class="menu-text">Development Blog</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-living-essays" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Living Essays</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-living-essays">    
+        <li>
+    <a class="dropdown-item" href="../../living-essays/singularities/singularities.html">
+ <span class="dropdown-text">Singularities</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../pop.qmd">
+ <span class="dropdown-text">Singularities in Pop Culture</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../living-essays/qao/qao.html">
+ <span class="dropdown-text">Questionable Analytical Observations</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../collab.html"> 
+<span class="menu-text">Collaborate</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../lab.html"> 
+<span class="menu-text">Lab</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../values.html"> 
+<span class="menu-text">Values</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#seeing-how-systems-break" id="toc-seeing-how-systems-break" class="nav-link active" data-scroll-target="#seeing-how-systems-break"><span class="header-section-number">1</span> Seeing how systems break</a>
+  <ul class="collapse">
+  <li><a href="#critical-olog-colog" id="toc-critical-olog-colog" class="nav-link" data-scroll-target="#critical-olog-colog"><span class="header-section-number">1.1</span> Critical olog (colog)</a></li>
+  </ul></li>
+  <li><a href="#the-singularity-is-here-its-chaos-must-be-governed" id="toc-the-singularity-is-here-its-chaos-must-be-governed" class="nav-link" data-scroll-target="#the-singularity-is-here-its-chaos-must-be-governed"><span class="header-section-number">2</span> The singularity is here, its chaos must be governed</a>
+  <ul class="collapse">
+  <li><a href="#the-wrong-question" id="toc-the-wrong-question" class="nav-link" data-scroll-target="#the-wrong-question"><span class="header-section-number">2.1</span> The wrong question</a></li>
+  <li><a href="#real-world-problems" id="toc-real-world-problems" class="nav-link" data-scroll-target="#real-world-problems"><span class="header-section-number">2.2</span> Real world problems</a></li>
+  <li><a href="#data-is-knowledge-knowledge-is-power" id="toc-data-is-knowledge-knowledge-is-power" class="nav-link" data-scroll-target="#data-is-knowledge-knowledge-is-power"><span class="header-section-number">2.3</span> Data is knowledge, knowledge is power</a>
+  <ul class="collapse">
+  <li><a href="#making-data-fair" id="toc-making-data-fair" class="nav-link" data-scroll-target="#making-data-fair"><span class="header-section-number">2.3.1</span> Making data FAIR</a></li>
+  </ul></li>
+  <li><a href="#dr-garima-gupta-has-things-say-about-sustainability-and-injustice" id="toc-dr-garima-gupta-has-things-say-about-sustainability-and-injustice" class="nav-link" data-scroll-target="#dr-garima-gupta-has-things-say-about-sustainability-and-injustice"><span class="header-section-number">2.4</span> Dr Garima Gupta has things say about sustainability and injustice</a></li>
+  <li><a href="#structured-intelligence-governists-need-your-help" id="toc-structured-intelligence-governists-need-your-help" class="nav-link" data-scroll-target="#structured-intelligence-governists-need-your-help"><span class="header-section-number">2.5</span> Structured intelligence governists need your help</a></li>
+  </ul></li>
+  <li><a href="#governing-structured-intelligence-systems" id="toc-governing-structured-intelligence-systems" class="nav-link" data-scroll-target="#governing-structured-intelligence-systems"><span class="header-section-number">3</span> Governing structured intelligence systems</a>
+  <ul class="collapse">
+  <li><a href="#why-math-and-asimov-matter-more-than-ever" id="toc-why-math-and-asimov-matter-more-than-ever" class="nav-link" data-scroll-target="#why-math-and-asimov-matter-more-than-ever"><span class="header-section-number">3.1</span> Why math and Asimov matter more than ever</a>
+  <ul class="collapse">
+  <li><a href="#structured-intelligence-governance" id="toc-structured-intelligence-governance" class="nav-link" data-scroll-target="#structured-intelligence-governance"><span class="header-section-number">3.1.1</span> Structured intelligence governance</a></li>
+  </ul></li>
+  <li><a href="#epistemic-drift" id="toc-epistemic-drift" class="nav-link" data-scroll-target="#epistemic-drift"><span class="header-section-number">3.2</span> Epistemic drift in musical orientalism</a></li>
+  <li><a href="#intuition-of-formal-frameworks" id="toc-intuition-of-formal-frameworks" class="nav-link" data-scroll-target="#intuition-of-formal-frameworks"><span class="header-section-number">3.3</span> Intuition of formal frameworks</a></li>
+  </ul></li>
+  <li><a href="#fairness-is-the-intelligence-of-systems" id="toc-fairness-is-the-intelligence-of-systems" class="nav-link" data-scroll-target="#fairness-is-the-intelligence-of-systems"><span class="header-section-number">4</span> FAIRness is the intelligence of systems</a>
+  <ul class="collapse">
+  <li><a href="#the-hotshot-problem-of-fair-analysis" id="toc-the-hotshot-problem-of-fair-analysis" class="nav-link" data-scroll-target="#the-hotshot-problem-of-fair-analysis"><span class="header-section-number">4.1</span> The hotshot problem of FAIR analysis</a></li>
+  <li><a href="#the-project-manager-who-does-not-fairly-manage-the-project" id="toc-the-project-manager-who-does-not-fairly-manage-the-project" class="nav-link" data-scroll-target="#the-project-manager-who-does-not-fairly-manage-the-project"><span class="header-section-number">4.2</span> The project manager who does not FAIRly manage the project</a></li>
+  </ul></li>
+  <li><a href="#measuring-fairness" id="toc-measuring-fairness" class="nav-link" data-scroll-target="#measuring-fairness"><span class="header-section-number">5</span> Measuring FAIRness</a>
+  <ul class="collapse">
+  <li><a href="#fair-metrics" id="toc-fair-metrics" class="nav-link" data-scroll-target="#fair-metrics"><span class="header-section-number">5.1</span> FAIR metrics</a></li>
+  </ul></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">6</span> References</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">The First Law of Structured Intelligence</h1>
+<p class="subtitle lead">Towards a formal framework for bending singularities in humanity’s favour</p>
+</div>
+
+
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Authors</div>
+  <div class="quarto-title-meta-heading">Affiliation</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Dr Charles T. Gray, Datapunk <a href="https://orcid.org/0000-0002-9978-011X" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Good Enough Data &amp; Systems Lab
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Patrick Robotham, Data scientist </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Good Enough Data &amp; Systems Lab
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">James P. Morris, Data Scientist </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Good Enough Data &amp; Systems Lab
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Dr Garima Gupta, Ecologist </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Good Enough Data &amp; Systems Lab
+          </p>
+      </div>
+  </div>
+
+<div class="quarto-title-meta">
+
+      
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">June 22, 2025</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="seeing-how-systems-break" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Seeing how systems break</h1>
+<p>If the analyst cannot find, access, interoperate with, and reuse data representing people, then it becomes very difficult for that analyst to faithfully represent the people the analysis is meant to serve. <a href="#fig-colog" class="quarto-xref">Figure&nbsp;1</a> formalises how human intent is lost in structured intelligence systems when data is unavailable to the analyst.</p>
+<p>When we can <em>see</em> how systems are failing our intentions, we are more likely to turn our attention from the wrong questions, to the imperatives of reality, such as climate change and inequality. We need to trace representations of human intention to ensure results are as humans intended.</p>
+<div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">system</span>(<span class="st">"./figures-and-tables/postcol/colog-data.sh"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+<div id="fig-colog" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-colog-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../../figures-and-tables/postcol/colog-data.svg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-colog-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: This diagram presents a formalised summary of the validity of assumptions about people instantiated in a structured intelligence system. Red and dotted arrows indicate where assumed relationships fail to hold in practice, and grey unvalidatable assumptions—formally exposing points of epistemic injustice between system representation and human priority. The views of the population of interest were not faithfully represented, as the analyst lacked FAIR data. The Good Enough Lab is devoted to building contextual data technologies to align representational assumptions through commuting diagrams.
+</figcaption>
+</figure>
+</div>
+<section id="critical-olog-colog" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="critical-olog-colog"><span class="header-section-number">1.1</span> Critical olog (colog)</h2>
+<p>A colog may be thought of as a contextual representation, to at least one person, of an assumption that may not hold.</p>
+<p>By defining and applying this construction, we demonstrate the necessity for a critical but computationally implementable response to ethics in technology. That is: we need ethics <em>expressed in logic</em>, if we are to encode justice in the systems that increasingly govern our lives.</p>
+<p>We propose cologs as governance primitives for exposing—and ultimately mitigating—epistemic injustice in data infrastructures.</p>
+<p>Our purpose is to apply this framing to an open science problem in order to explain the utility of the following construction.</p>
+<hr>
+<div id="def-rep" class="theorem definition">
+<p><span class="theorem-title"><strong>Definition 1</strong></span> <strong>Representation category</strong></p>
+<p>A <em>representation category</em> models the structure of an assumption as a categorical diagram with:</p>
+<ul>
+<li><strong>Objects</strong>
+<ul>
+<li><code>representation</code>: a symbolic or formal artifact (e.g.&nbsp;chart, document, data)<br>
+</li>
+<li><code>represented</code>: the real-world entity or concept the representation refers to<br>
+</li>
+<li><code>representor</code>: the agent (typically human) who creates or interprets the representation</li>
+</ul></li>
+<li><strong>Morphisms</strong>
+<ul>
+<li><code>representor → representation</code>: the representation is created or selected by the representor<br>
+</li>
+<li><code>represented → representation</code>: the representation is intended to encode or reflect the represented<br>
+</li>
+<li><code>represented → representor</code>: the representor is assumed to understand the represented</li>
+</ul></li>
+</ul>
+<p>A representation category is embedded into a structured intelligence system via a functor or diagram that assigns these roles and relations to instantiated system elements. Morphisms may be annotated as non-functional, non-commutative, or unjust to signal representational failure or epistemic injustice.</p>
+</div>
+<hr>
+<hr>
+<div id="def-sig-colog" class="theorem definition">
+<p><span class="theorem-title"><strong>Definition 2</strong></span> A colog (critical olog) diagrammatically exposes assumptions in an analysis that do not hold about a representation.</p>
+<p>A colog is a projection of a category-theoretic olog, as defined by Spivak <span class="citation" data-cites="spivak_category_2014">[<a href="#ref-spivak_category_2014" role="doc-biblioref">1</a>]</span> where objects are elements of a system and at least one object is a human.</p>
+<p>A colog is constructed by applying at least one representation category for each assumption, and summarising the results at the representational level.</p>
+</div>
+<hr>
+<p>Crucial to the craft of cologging is to constantly challenge what is truth and what is assumption.</p>
+<p>A widespread assumption is that <em>getting the data</em> is a process akin to a chicken laying an egg, when it is a science as challenging as any applied, as are many of the dark arts of data. We have critical problems in technology, but the zeitgeist feels flooded with “agentic AI” and “vibe coding” hype. At the Good Enough Lab, we think of this as math and code.</p>
+</section>
+</section>
+<section id="the-singularity-is-here-its-chaos-must-be-governed" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> The singularity is here, its chaos must be governed</h1>
+<section id="the-wrong-question" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="the-wrong-question"><span class="header-section-number">2.1</span> The wrong question</h2>
+<p>As a person who works with data, it can feel like everyone in the world is arguing about when machine thinking will overtake humans in a <code>singularity</code> <em>event</em>.</p>
+<p>I never found this compelling, for it assumes an intentional determinism I don’t believe follows for, say, natural language processing, such as ChatGPT<span class="citation" data-cites="noauthor_introducing_2024">[<a href="#ref-noauthor_introducing_2024" role="doc-biblioref">2</a>]</span>.</p>
+<p>A technological singularity event didn’t sit with my training in computational complexity applied to statistical algorithms understood as <code>golems</code> <span class="citation" data-cites="mcelreath_statistical_2020">[<a href="#ref-mcelreath_statistical_2020" role="doc-biblioref">3</a>]</span> <a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>.</p>
+<p>Indeed, leading metascientists now claim to have shown human cognition is <em>computationally intractable</em> <span class="citation" data-cites="rooij_reclaiming_2023">[<a href="#ref-rooij_reclaiming_2023" role="doc-biblioref">4</a>]</span>; that’s mathspeak for <em>there is no such thing as artificial intelligence</em>.</p>
+</section>
+<section id="real-world-problems" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="real-world-problems"><span class="header-section-number">2.2</span> Real world problems</h2>
+<p>I’ve always been more concerned by the chaotic nature of data stacks, and how little interest there was in governance, relative to science fiction hype (<a href="#fig-trends" class="quarto-xref">Figure&nbsp;2</a>).</p>
+<div id="fig-trends" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-trends-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/4017_RC01/embed_loader.js"></script>
+<script type="text/javascript"> trends.embed.renderExploreWidget("TIMESERIES", {"comparisonItem":[{"keyword":"/m/0f5kk","geo":"","time":"2004-01-01 2025-03-04"},{"keyword":"/m/0fxl7g","geo":"","time":"2004-01-01 2025-03-04"}],"category":0,"property":""}, {"exploreQuery":"date=all&q=%2Fm%2F0f5kk,%2Fm%2F0fxl7g&hl=en","guestPath":"https://trends.google.com:443/trends/embed/"}); </script>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-trends-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: Public interest in technological singularity compared with data governance by google search trends<span class="citation" data-cites="noauthor_google_nodate">[<a href="#ref-noauthor_google_nodate" role="doc-biblioref">5</a>]</span>.
+</figcaption>
+</figure>
+</div>
+<p>I constantly worry about the consequences of ungoverned systems for humans: identity theft <span class="citation" data-cites="noauthor_identity_nodate">[<a href="#ref-noauthor_identity_nodate" role="doc-biblioref">6</a>]</span>; discrimination; and my perpetual bugbear, the fiction we have automated when in point of fact the work, and potentially <a href="https://robodebt.royalcommission.gov.au/">catastrophic emergent cost</a> <span class="citation" data-cites="noauthor_royal_nodate">[<a href="#ref-noauthor_royal_nodate" role="doc-biblioref">7</a>]</span>, has been pushed to the unpaid end user.</p>
+<blockquote class="blockquote">
+<p><code>A singularity *event* is science fiction</code>. <em>However</em>,</p>
+</blockquote>
+<p><img src="figures-and-tables/external-content/matrix.gif" class="img-fluid"></p>
+<blockquote class="blockquote">
+<p><code>singularities</code> are already woven into the fabric of humanity’s existence. We have always lived in largely-benign singularities (<a href="#fig-baroque" class="quarto-xref">Figure&nbsp;3</a>), where heuristic and intentional systems interoperate via humans to produce emergent effects; it is only that scale now makes systems powerful in a way they never were before.</p>
+</blockquote>
+<p>We must recognize that the challenge is not to prevent a singularity, but to govern the singularities we are already part of, harnessing this power for good, rather than allowing unchecked evils to emerge.</p>
+<div id="fig-baroque" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-baroque-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/4SfJZ3nmxeWs6NlwV23X3l?utm_source=generator" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+</iframe>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-baroque-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3: Baroque musicians, for example, aesthetically governed emergence in benign singularities of polyphonic melodies, instrumentation, and musician skill.
+</figcaption>
+</figure>
+</div>
+<p>In order to instantiate ethics computationally, we need to translate to logical statements (predicates) a computer can understand. We provide our first definition of many; each of which is part of this living document, to be discussed and updated as new community join the Good Enough Lab.</p>
+<hr>
+<div id="def-sis" class="theorem definition">
+<p><span class="theorem-title"><strong>Definition 3</strong></span> <strong>Structured Intelligence System (SIS)</strong></p>
+<p>A system composed of humans, automata, and the heuristics by which they interoperate, producing emergent effects.</p>
+</div>
+<hr>
+<p>A world obsessed with the singularity has only now realized that governance is the missing piece. We need a formal foundation for structured intelligence <span class="citation" data-cites="badreddin_structured_2006">[<a href="#ref-badreddin_structured_2006" role="doc-biblioref">8</a>]</span> governance before chaos overtakes order, and humans cannot do this without machine help.</p>
+<hr>
+<div id="def-sig" class="definition theorem">
+<p><span class="theorem-title"><strong>Definition 4</strong></span> <strong>Structured Intelligence Governance (SIG)</strong></p>
+<p>Structured Intelligence Governance (SIG) is the principled coordination of a Structured Intelligence System (SIS), ensuring that the interoperations between humans and automata are governed by just, intentional rules. SIG aims to prevent epistemic drift and emergent harm by aligning heuristic action with human intent.</p>
+</div>
+<hr>
+<p>The dinosaurs of technology are out of the park and it is going to take the combined efforts of critical theorists, mathematicians, developers, data scientists, and decision makers to get the raptors back into the enclosure (<a href="#fig-dino" class="quarto-xref">Figure&nbsp;4</a>).</p>
+<div id="fig-dino" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-dino-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<iframe src="https://www.youtube.com/embed/4PLvdmifDSk?si=lpJgg4dN16QbCdAA&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="">
+</iframe>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-dino-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4: <em>Yeah, yeah, but your scientists were so preoccupied with whether or not they could that they didn’t stop to think if they should.</em> – Dr Ian Malcolm, <em>Jurassic Park</em> <span class="citation" data-cites="spielberg_jurassic_1993">[<a href="#ref-spielberg_jurassic_1993" role="doc-biblioref">9</a>]</span>
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="data-is-knowledge-knowledge-is-power" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="data-is-knowledge-knowledge-is-power"><span class="header-section-number">2.3</span> Data is knowledge, knowledge is power</h2>
+<blockquote class="blockquote">
+<p>A government is a body of people, usually, notably ungoverned. –<em>Shepherd Book</em> (<span class="citation" data-cites="whedon_firefly_2003">[<a href="#ref-whedon_firefly_2003" role="doc-biblioref">10</a>]</span>)</p>
+</blockquote>
+<p>The <em>intelligence</em> of a structured intelligence system is only as good as the human’s ability to interoperate within the singularity. If knowledge is power, then human empowerment suffers <strong>epistemic injustice</strong>, injustice related to knowledge, when data systems fail to provide the knowledge a human needs reliably. Data development is implemented by humans, usually, notably ungoverned.</p>
+<p>We think structured intelligence governance falls more in the subcategory of epistemological injustice within the theories of epistemic injustice, however there are aspects of systems epistemology that also fall into testimonial or hermeneutical injustice <span class="citation" data-cites="kidd_routledge_2017">[<a href="#ref-kidd_routledge_2017" role="doc-biblioref">11</a>]</span>. However, it’s not for <strong>us</strong> to say, for we are not experts in epistemic injustice.</p>
+<p>We will need the help of those theorists in examining epistemic injustice of inaccess to data. For example, standard information technology procedures, such as the principle of least privilege <span class="citation" data-cites="noauthor_principle_2025">[<a href="#ref-noauthor_principle_2025" role="doc-biblioref">12</a>]</span>, wherein access is granted on a needs basis, can create barriers to data when the stakeholder does not know which data to request.</p>
+<p>Our intention is to build bridges from the world of data science system design to people who understand how to write better rules for structured intelligence systems.</p>
+<section id="making-data-fair" class="level3" data-number="2.3.1">
+<h3 data-number="2.3.1" class="anchored" data-anchor-id="making-data-fair"><span class="header-section-number">2.3.1</span> Making data FAIR</h3>
+<p>One—just one!—way of examining epistemic injustice in data systems is to ask if the system is findable, accessible, interoperable, reusable (FAIR) for domain-knowledge analysts who design questions and answers <span class="citation" data-cites="wilkinson_fair_2016">[<a href="#ref-wilkinson_fair_2016" role="doc-biblioref">13</a>]</span>.</p>
+<div id="tbl-fair" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-fair-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;1: Loosest interpretation of FAIR has been employed for this manuscript.
+</figcaption>
+<div aria-describedby="tbl-fair-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 16%">
+<col style="width: 84%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>FAIR principle</th>
+<th>Minimal interpretation</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Findable</td>
+<td>Person can find the analysis from their machine in a way that makes sense to them.</td>
+</tr>
+<tr class="even">
+<td>Accessible</td>
+<td>Person can interpret what they see in a way that makes sense to them.</td>
+</tr>
+<tr class="odd">
+<td>Interoperable</td>
+<td>Person can manipulate the analysis in ways specific to their role.</td>
+</tr>
+<tr class="even">
+<td>Reusable</td>
+<td>Person can reuse analysis components for future work.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>We propose, as for example, that a visual guide for surfacing what is jointly understood in terms of domain-specific variables that are:</p>
+<ul>
+<li>within the data and<br>
+</li>
+<li>are of interest to the domain knowledge questioners.</li>
+</ul>
+<p>This structured intelligence system must be FAIR to each human within the system. We propose <strong>clopen</strong> analytics (<a href="#def-clopen" class="quarto-xref">Definition&nbsp;5</a>), in opposition to the principle of least privilege, wherein access is granted on a justified needs basis <span class="citation" data-cites="noauthor_principle_2025">[<a href="#ref-noauthor_principle_2025" role="doc-biblioref">12</a>]</span>.</p>
+<p>When the technology itself is a barrier to knowledge, we must question if its application achieves the outcome intended.</p>
+<hr>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="ai.png" class="img-fluid figure-img"></p>
+<figcaption>ChatGPT generated from script</figcaption>
+</figure>
+</div>
+<hr>
+<p>If the principle of least privilege applies, then the default is epistemic exclusion—a structurally encoded barrier to intentional access.</p>
+<hr>
+<div id="def-clopen" class="definition theorem">
+<p><span class="theorem-title"><strong>Definition 5</strong></span> <strong>Clopen analytics.</strong></p>
+<ul>
+<li><p>FAIR SIS</p>
+<p>Clopen analytics is an approach to living analysis development SIS that prioritises making the following artifacts FAIR to each human in the SIS:</p>
+<ul>
+<li>Project intention;</li>
+<li>Data;</li>
+<li>Analyses.</li>
+</ul></li>
+<li><p>Contextual to human</p>
+<p>FAIR is contextual to each human’s requirements for interoperating in the SIS.</p></li>
+<li><p>Clopen</p>
+<p>The SIS is secure and closed to those who do not require access to this SIS; for humans within the SIS, open-source community frameworks apply.</p></li>
+</ul>
+</div>
+<hr>
+<p>Without a shared understanding of the domain-specific variables and other FAIR principles met for each member of the team, those with the most at stake are largely locked out. Team members with the domain-specific questions to answer cannot guide the analysis through inquiry, and data developers are confused by constantly-changing requirements.</p>
+<p>Furthermore, we need to standardise knowledge-transfer methodologies so that computational instances may follow critical-theoretic frameworks designed to prevent epistemic injustice.</p>
+</section>
+</section>
+<section id="dr-garima-gupta-has-things-say-about-sustainability-and-injustice" class="level2" data-number="2.4">
+<h2 data-number="2.4" class="anchored" data-anchor-id="dr-garima-gupta-has-things-say-about-sustainability-and-injustice"><span class="header-section-number">2.4</span> Dr Garima Gupta has things say about sustainability and injustice</h2>
+<blockquote class="blockquote">
+<p>And the Good Enough Lab want to hear what she has to say.</p>
+</blockquote>
+<p>Dr Garima Gupta is environmental ecologist who speaks about systemic injustice in her local communities of origin. She has a lived-experienced point of view of how top-down implementation of sustainable development epistemically drifts away from community priorities. I cannot think of a voice I would want to learn about these issues from more.</p>
+<hr>
+<div id="fig-gg-singularity" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-gg-singularity-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures-and-tables/entities-graph/entities.svg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-gg-singularity-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;5: However, consider the complexity of this structured intelligence system the Good Enough Lab designed to be <code>FAIR for Garima</code> that migrates her current barchart with a couple of small tweaks has a surprising amount of requirements and tasks.
+</figcaption>
+</figure>
+</div>
+<hr>
+<p>We <em>could</em> explore the data ourselves, but this locks Garima out, and Garima is person who knows what whe wants to explore in the data.</p>
+<p>At the Good Enough Data &amp; Systems Lab, we consider anything that only runs on our own laptop not contributing to progress (yet). Our intention is to empower Garima as an applied scientific analyst to design her own questions and lines of inquirty that may or may not involve computational collaboration.</p>
+</section>
+<section id="structured-intelligence-governists-need-your-help" class="level2" data-number="2.5">
+<h2 data-number="2.5" class="anchored" data-anchor-id="structured-intelligence-governists-need-your-help"><span class="header-section-number">2.5</span> Structured intelligence governists need your help</h2>
+<p>We aim to convince you that humans must learn to interoperate with other humans via technologically more intelligently or epistemic injustice is <em>mathematically</em> exposable—that is, we can measure and visualise aspects readily.</p>
+<p>We require formalism to explain and make inference about universal epistemic injustice, however it is our endeavour to do so in minimal presentations. We do not try to reach beyond what might be covered in the first seminar of any postgraduate field. We admire the spirit of <em>Category Theory for the Sciences</em> (we are studying chapter 2) that formalises not for intellectual flourish, but to explain universalities across contexts, cutting across semantic reinvention of each other’s wheels <span class="citation" data-cites="spivak_category_2014">[<a href="#ref-spivak_category_2014" role="doc-biblioref">1</a>]</span>.</p>
+<p>We build systems for people to interoperate with each other in what feels like a dark room; by formalising our computation we hope to expose plug-and-play interoperabilities with those who can help us write <strong>just</strong> rules into the systems that govern our lives—humanity must learn to bend the spoon together to govern the chaos of the singularities we live in.</p>
+</section>
+</section>
+<section id="governing-structured-intelligence-systems" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Governing structured intelligence systems</h1>
+<section id="why-math-and-asimov-matter-more-than-ever" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="why-math-and-asimov-matter-more-than-ever"><span class="header-section-number">3.1</span> Why math and Asimov matter more than ever</h2>
+<p>Critical theory is now coinciding with category theory in philosophy <span class="citation" data-cites="topos_institute_david_2023">[<a href="#ref-topos_institute_david_2023" role="doc-biblioref">14</a>]</span>, allowing for a rich formal framework to apply constraints defined by scholars who have studied the harms of humans blindly defaulting to heuristic social norms in race <span class="citation" data-cites="said_orientalism_2014">[<a href="#ref-said_orientalism_2014" role="doc-biblioref">15</a>]</span>, gender <span class="citation" data-cites="rivkin_literary_2008">[<a href="#ref-rivkin_literary_2008" role="doc-biblioref">16</a>]</span>, and class <span class="citation" data-cites="dickens_bleak_1868">[<a href="#ref-dickens_bleak_1868" role="doc-biblioref">17</a>]</span><a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>. This manuscript endeavours toward minimal representations of conceptual frameworks, so we take the most canonical governance measure on machines, <em>systems should not harm humans</em>, as exemplar canonical of critical-theoretic governance frameworks for human-machine interoperation.</p>
+<p>It is fitting that, then to focus on 1. from Asimov’s three laws (<a href="#def-robotics" class="quarto-xref">Definition&nbsp;6</a>) as inspiration for how we might govern chaos in how humans interoperate with technology <span class="citation" data-cites="asimov_i_1950">[<a href="#ref-asimov_i_1950" role="doc-biblioref">18</a>]</span>.</p>
+<hr>
+<div id="def-robotics" class="theorem definition">
+<p><span class="theorem-title"><strong>Definition 6</strong></span> <strong>Asimov’s <code>Three Laws of Robotics</code></strong></p>
+<ol type="1">
+<li>A robot may not injure a human being or, through inaction, allow a human being to come to harm.</li>
+<li>A robot must obey orders given it by human beings except where such orders would conflict with the First Law.</li>
+<li>A robot must protect its own existence as long as such protection does not conflict with the First or Second Law.</li>
+</ol>
+</div>
+<hr>
+<section id="structured-intelligence-governance" class="level3" data-number="3.1.1">
+<h3 data-number="3.1.1" class="anchored" data-anchor-id="structured-intelligence-governance"><span class="header-section-number">3.1.1</span> Structured intelligence governance</h3>
+<p>Now as noted, there are no robots, nor will there ever be <span class="citation" data-cites="rooij_reclaiming_2023">[<a href="#ref-rooij_reclaiming_2023" role="doc-biblioref">4</a>]</span>. But I am in a singularity with my device when logging into a system such as a bank<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>. There is me, a human object, and a technological device.</p>
+<section id="codifying-the-rules-of-singularities" class="level4" data-number="3.1.1.1">
+<h4 data-number="3.1.1.1" class="anchored" data-anchor-id="codifying-the-rules-of-singularities"><span class="header-section-number">3.1.1.1</span> Codifying the rules of singularities</h4>
+<p>If that technological device forces the human to deviate from their governance framework (such as protect my own privacy) through repetive changes to how we interface, humans become fatigued, and look for other paths. Those paths may well be less secure than the governing principle of protecting our own privacy. MFA is a step in the right direction, but humans remain overwhelmed by the process of <em>logging in</em>.</p>
+<p>To diagnose what is unjust about the system, we first need to agree upon what the system is.</p>
+<hr>
+<div id="def-sis" class="theorem definition">
+<p><span class="theorem-title"><strong>Definition 7</strong></span> <strong><em>Structured intelligence system</em></strong></p>
+<p>A structured intelligence system comprises:</p>
+<ul>
+<li>humans</li>
+<li>automata</li>
+<li>heuristics, rules by which humans and automata interoperate</li>
+<li>human-generated intentions to be facilitated by heuristics</li>
+<li>emergences which may cause harm or unexpected good.</li>
+</ul>
+</div>
+<hr>
+<p>We are concerned with unintended emergences that render structured intelligence systems harmful.</p>
+<hr>
+<div id="def-singularity" class="theorem definition">
+<p><span class="theorem-title"><strong>Definition 8</strong></span> <strong><em>Singularity</em></strong></p>
+<p>A singularity represents a structured intelligence system of humans and automata that interoperate by heuristic and intentional relationships in which complexity of interoperation produces unexpected emergence.</p>
+</div>
+<hr>
+</section>
+<section id="structured-intelligence-systems" class="level4" data-number="3.1.1.2">
+<h4 data-number="3.1.1.2" class="anchored" data-anchor-id="structured-intelligence-systems"><span class="header-section-number">3.1.1.2</span> Structured intelligence systems</h4>
+<p>A <code>structured intelligence system</code> <span class="citation" data-cites="badreddin_structured_2006">[<a href="#ref-badreddin_structured_2006" role="doc-biblioref">8</a>]</span> is a system of humans, automata, and the interoperations of humans and automata.</p>
+<hr>
+<div id="def-first" class="theorem definition">
+<p><span class="theorem-title"><strong>Definition 9</strong></span> <strong>The first law of structured intelligence governance</strong></p>
+<ol type="1">
+<li>A structured intelligence system must not unFAIRly provide analyses to humans in its singularity, where FAIRness is defined contextually <em>for each role</em> humans might interoperate as within the singularity.</li>
+</ol>
+</div>
+<hr>
+<p>Now, developers of technology do not <em>intend</em> harm, and yet, I find myself so fatigued by changes to how we log securely into systems even I cut corners I know I shouldn’t with my own data.</p>
+<p>There is a mismatch between the intended functionality of security, to protect humans, and the outcome, an unmanageable deluge of workflow constantly in flux. This is not just a mismatch, but antithetical to <em>intention</em>.</p>
+<p>We now loosely introduce another key concept, how the harm can be thought of in the <strong>epistemic drift</strong> between intention for privacy measures to increase security and wellbeing and how the outcome produces neither.</p>
+</section>
+</section>
+</section>
+<section id="epistemic-drift" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="epistemic-drift"><span class="header-section-number">3.2</span> Epistemic drift in musical orientalism</h2>
+<p>Asimov is a canonical example—a Google Scholar search for <code>asimov's laws in literary theory</code> yielded 17,200 results—within literary theory pointing to an ocean of knowledge we not interoperating with. We genre-switch for this section to critical-theoretic framing to explain the concept of <strong>epistemic drift</strong>.</p>
+<p>Postmodern frameworks provide theorists with a way of differentiating between a thing and its <strong>representation</strong>, notably which must be constructed by humans describing the thing. Any representation necessarily loses information, mathematically we would say a representation is a projection. Critical theory thus provides powerful ways of understanding epistemic drift.</p>
+<p>Consider the <strong>intention</strong> of composers in the nineteenth century to ride the wave of exoticism and capture the sound of the orient <span class="citation" data-cites="bellman_exotic_1998">[<a href="#ref-bellman_exotic_1998" role="doc-biblioref">19</a>]</span>. This was prior to sound recordings. Instead, some composers were lucky enough to be present at the Paris Exhibition of 1889 and hear the music of the “Street of Cairo” <span class="citation" data-cites="noauthor_exposition_2025">[<a href="#ref-noauthor_exposition_2025" role="doc-biblioref">20</a>]</span>. Other composers, imitated the music of those composers, baking in an ever-diluted musical conceptualisation of <em>Arab</em> by European composers resulting in harmful consequences a century later (<a href="#fig-aladdin" class="quarto-xref">Figure&nbsp;6</a>).</p>
+<div id="fig-aladdin" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-aladdin-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/lIYL-PQa010?si=QMlA-9Hj73OlRMh7&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="">
+</iframe>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-aladdin-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6: Outcry from the Arab-American community caused Disney to amend the lyrics of this song in <em>Aladdin</em> <span class="citation" data-cites="weinger_aladdin_1994">[<a href="#ref-weinger_aladdin_1994" role="doc-biblioref">21</a>]</span>, from <em>where they cut of your hand if they don’t like your face</em> to <em>where it’s flat and immense and the heat is intense</em>. They noted the music and animation of incidental or evil characters were pronounced in Western cliches of “The Arab”, yet the protagonists spoke, acted, sang, and looked like American teenagers <span class="citation" data-cites="tiffin_emperors_2004">[<a href="#ref-tiffin_emperors_2004" role="doc-biblioref">22</a>]</span>. The composers, however, were innocently following musical conventions laid a century before by their heroes <span class="citation" data-cites="said_orientalism_2014">[<a href="#ref-said_orientalism_2014" role="doc-biblioref">15</a>]</span>.
+</figcaption>
+</figure>
+</div>
+<p>Now to really bend the spoon of musicololgy, consider an analogous lineage in representation of <em>Asian</em> music, but how this is being reappropriated by Asian cinema (<a href="#fig-exotic" class="quarto-xref">Figure&nbsp;7</a>).</p>
+<div id="fig-exotic" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-exotic-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2LN9uhWbepNnHCY5MVv443?utm_source=generator" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+</iframe>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-exotic-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;7: An interesting virtuous emergence is the feedback from contemporary Asian cinema that not only employs Western conventions of exoticist music, but explicitly invoke the social capital of Western art music by feature artists such as Kathleen Battle in <em>House of Flying Daggers</em> or Ishtak Perlman in <em>Hero</em>.
+</figcaption>
+</figure>
+</div>
+<p>In musical exoticism, this story happened over a couple of centuries; music was heard by live performance and sheet music shared globally by ship.</p>
+<p>However, with computational scale and the reach of the internet, these social processes are vastly accelerated. Misinformation at critical times, such as a pandemic, can now spread globally in a matter of hours <span class="citation" data-cites="noauthor_fact-checking_2020">[<a href="#ref-noauthor_fact-checking_2020" role="doc-biblioref">23</a>]</span>. Resistance to harmful emergence may be unexpected creative emergence; we want to foster creative emergences that bring humanity together, and mitigate harmful emergence that divide us.</p>
+<p>Happily, we have a language that unites critical theory, mathematical chaos, and computation: category theory—there’s a reason Spivak named his canoncial text, <em>Category Theory for the Sciences</em>; it is a grammar across sciences.</p>
+<p>Here is our relational understanding of postcolonialism in graph form.</p>
+<div id="fig-postcol" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-postcol-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures-and-tables/postcol/postcol.svg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-postcol-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="intuition-of-formal-frameworks" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="intuition-of-formal-frameworks"><span class="header-section-number">3.3</span> Intuition of formal frameworks</h2>
+<p>A singularity may be thought of from many perspectives, indeed, infinitely many; we are interested in understandin the interoperability between intentional and heuristic agency in the system.</p>
+<hr>
+<p>Consider this system in terms of three things:</p>
+<ol type="1">
+<li>People.</li>
+<li>Machines.</li>
+<li>Relationships between people and machines.</li>
+</ol>
+<hr>
+<div id="fig-intuitive" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-intuitive-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="tenor-gif-embed" data-postid="6132932" data-share-method="host" data-aspect-ratio="3">
+<a href="https://tenor.com/view/funpic-gif-6132932">Funpic GIF</a>from <a href="https://tenor.com/search/funpic-gifs">Funpic GIFs</a>
+</div>
+<script type="text/javascript" async="" src="https://tenor.com/embed.js"></script>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-intuitive-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;9: Pure mathematics provides frameworks to measure things that seem to complex to understand.
+</figcaption>
+</figure>
+</div>
+<hr>
+<p>A category-theoretic way of measuring the stabilty of the system might be to ask:</p>
+<blockquote class="blockquote">
+<p>For whom is this analysis FAIR?</p>
+</blockquote>
+<p>This is the minimal model of structured intelligence governance we shall concern ourselves with.</p>
+<blockquote class="blockquote">
+<p>Think on this. In over 10 years of working with data, I’ve never seen an organisation able to answer this question about their analytics department.</p>
+</blockquote>
+<p>We want to govern the system opinionatedly towards humans exercising intent, rather than falling on meaningless convention or social hegemonies of oppression, and we wish machines to apply their heuristics in alignment with human intent. We consider other <em>outcomes as emergences</em>.</p>
+<hr>
+<p>An intelligence-governance question might be to ask:</p>
+<blockquote class="blockquote">
+<p>Which rules need to be updated to</p>
+<ol type="1">
+<li>foster creative, virtuous emergence:</li>
+<li>govern humans to employing intent when required;</li>
+<li>and ensure automata do not deviate from expectations, in particular preventing harm to humans.</li>
+</ol>
+</blockquote>
+</section>
+</section>
+<section id="fairness-is-the-intelligence-of-systems" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> FAIRness is the intelligence of systems</h1>
+<p>For all the talk of ethical “AI” there is scant attention paid to what is FAIR (as defined in <a href="#tbl-fair" class="quarto-xref">Table&nbsp;1</a>) for each human in the singularity, and just how important observability of intention is.</p>
+<p>For example, IT systems are security oriented, and it may well be sensible to operate from the principle of least privilege <span class="citation" data-cites="noauthor_principle_2025">[<a href="#ref-noauthor_principle_2025" role="doc-biblioref">12</a>]</span>. However, system access is very different to analytical access. Usually there is a legitimate reason to access the data, as required by the principle of least privilege, however where to find the required data is unclear, so exploration of several sources might be needed. Without knowing <em>what</em> to request access to, the analyst is obstructed in analysis.</p>
+<p>We now consider a couple of motivating examples, before considering the benefits and pitfalls of measuring FAIRness.</p>
+<section id="the-hotshot-problem-of-fair-analysis" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="the-hotshot-problem-of-fair-analysis"><span class="header-section-number">4.1</span> The hotshot problem of FAIR analysis</h2>
+<p>Most any department or lab has at least one computational hotshot. For example, an applied science post-doc who is particularly good at open-source, or an analyst who has memorised scikit-learn <span class="citation" data-cites="opensource_scikit-learn_2025">[<a href="#ref-opensource_scikit-learn_2025" role="doc-biblioref">24</a>]</span> tutorials.</p>
+<blockquote class="blockquote">
+<p>hotshot gif</p>
+</blockquote>
+</section>
+<section id="the-project-manager-who-does-not-fairly-manage-the-project" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="the-project-manager-who-does-not-fairly-manage-the-project"><span class="header-section-number">4.2</span> The project manager who does not FAIRly manage the project</h2>
+</section>
+</section>
+<section id="measuring-fairness" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> Measuring FAIRness</h1>
+<blockquote class="blockquote">
+<p>entity map at starting point: all but region &amp; displacement attributes were open to Garima–&gt; we must get better than that immediately or Garima has less power to get her message out.</p>
+</blockquote>
+<section id="fair-metrics" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="fair-metrics"><span class="header-section-number">5.1</span> FAIR metrics</h2>
+<p>In paper, we focussed on observations defined by one person at one work instance, in this case defined to be a week in which that person might need to access the analysis to progress the project. However, formal framings open up a dizzying array of possible measures.</p>
+<p>Each measure comes with a framing, each arrow a ruleset. We need to marry critical frameworks, such as epistemic injustice, with data science as a matter of imperative in order to ask what these framings and rulesets should be. Harm to humans and harm to our environment are not science fiction dystopia of robots, but banal and devastaing automata unleashed at scale on humans with no accountability for ungoverned emergence.</p>
+</section>
+</section>
+<section id="references" class="level1" data-number="6">
+
+
+
+
+</section>
+
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">6 References</h2><div id="refs" class="references csl-bib-body" data-entry-spacing="0" role="list">
+<div id="ref-spivak_category_2014" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[1] </div><div class="csl-right-inline">Spivak DI. Category <span>Theory</span> for the <span>Sciences</span>. MIT Press; 2014.</div>
+</div>
+<div id="ref-noauthor_introducing_2024" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[2] </div><div class="csl-right-inline"><a href="https://openai.com/index/chatgpt/">Introducing <span>ChatGPT</span></a>. OpenAI 2024.</div>
+</div>
+<div id="ref-mcelreath_statistical_2020" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[3] </div><div class="csl-right-inline">McElreath R. <a href="https://www.routledge.com/Statistical-Rethinking-A-Bayesian-Course-with-Examples-in-R-and-STAN/McElreath/p/book/9780367139919">Statistical <span>Rethinking</span>: <span>A</span> <span>Bayesian</span> <span>Course</span> with <span>Examples</span> in <span>R</span> and <span>STAN</span></a>. Routledge &amp; CRC Press 2020.</div>
+</div>
+<div id="ref-rooij_reclaiming_2023" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[4] </div><div class="csl-right-inline">Rooij I van, Guest O, Adolfi FG, Haan R de, Kolokolova A, Rich P. Reclaiming <span>AI</span> as a theoretical tool for cognitive science 2023. <a href="https://doi.org/10.31234/osf.io/4cbuv">https://doi.org/10.31234/osf.io/4cbuv</a>.</div>
+</div>
+<div id="ref-noauthor_google_nodate" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[5] </div><div class="csl-right-inline"><a href="https://trends.google.com/trends/explore?date=all&amp;q=%2Fm%2F0f5kk,%2Fm%2F0fxl7g&amp;hl=en">Google <span>Trends</span> (<span>Technological</span> <span>Singularity</span>, <span>Data</span> <span>Governance</span>)</a>. Google Trends n.d.</div>
+</div>
+<div id="ref-noauthor_identity_nodate" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[6] </div><div class="csl-right-inline"><a href="https://www.actionfraud.police.uk/a-z-of-fraud/identity-fraud-and-identity-theft">Identity fraud and identity theft</a>. Action Fraud n.d.</div>
+</div>
+<div id="ref-noauthor_royal_nodate" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[7] </div><div class="csl-right-inline"><a href="https://robodebt.royalcommission.gov.au/">Royal <span>Commission</span> into the <span>Robodebt</span> <span>Scheme</span></a> n.d.</div>
+</div>
+<div id="ref-badreddin_structured_2006" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[8] </div><div class="csl-right-inline">Badreddin E, Jipp M. Structured <span>Intelligence</span>. 2006 <span>International</span> <span>Conference</span> on <span>Computational</span> <span>Inteligence</span> for <span>Modelling</span> <span>Control</span> and <span>Automation</span> and <span>International</span> <span>Conference</span> on <span>Intelligent</span> <span>Agents</span> <span>Web</span> <span>Technologies</span> and <span>International</span> <span>Commerce</span> (<span>CIMCA</span>’06), 2006, p. 100–0. <a href="https://doi.org/10.1109/CIMCA.2006.203">https://doi.org/10.1109/CIMCA.2006.203</a>.</div>
+</div>
+<div id="ref-spielberg_jurassic_1993" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[9] </div><div class="csl-right-inline">Spielberg S. Jurassic <span>Park</span> 1993.</div>
+</div>
+<div id="ref-whedon_firefly_2003" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[10] </div><div class="csl-right-inline">Firefly 2003.</div>
+</div>
+<div id="ref-kidd_routledge_2017" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[11] </div><div class="csl-right-inline">Kidd IJ, Medina J, Pohlhaus G, Jr, editors. The <span>Routledge</span> <span>Handbook</span> of <span>Epistemic</span> <span>Injustice</span>. London: Routledge; 2017. <a href="https://doi.org/10.4324/9781315212043">https://doi.org/10.4324/9781315212043</a>.</div>
+</div>
+<div id="ref-noauthor_principle_2025" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[12] </div><div class="csl-right-inline"><a href="https://en.wikipedia.org/w/index.php?title=Principle_of_least_privilege&amp;oldid=1288935567">Principle of least privilege</a>. Wikipedia 2025.</div>
+</div>
+<div id="ref-wilkinson_fair_2016" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[13] </div><div class="csl-right-inline">Wilkinson MD, Dumontier M, Aalbersberg IjJ, Appleton G, Axton M, Baak A, et al. The <span>FAIR</span> <span>Guiding</span> <span>Principles</span> for scientific data management and stewardship. Scientific Data 2016;3:160018. <a href="https://doi.org/10.1038/sdata.2016.18">https://doi.org/10.1038/sdata.2016.18</a>.</div>
+</div>
+<div id="ref-topos_institute_david_2023" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[14] </div><div class="csl-right-inline">Topos Institute. <a href="https://www.youtube.com/watch?v=YsWnfr47ViE">David <span>Corfield</span>: "<span>Philosophical</span> perspectives on category theory"</a> 2023.</div>
+</div>
+<div id="ref-said_orientalism_2014" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[15] </div><div class="csl-right-inline">Said EW. Orientalism. 25. anniversary edition with a new preface by the author. New York: Vintage Books Edition; 2014.</div>
+</div>
+<div id="ref-rivkin_literary_2008" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[16] </div><div class="csl-right-inline">Rivkin J, editor. Literary theory: An anthology. 6. print. Oxford: Blackwell; 2008.</div>
+</div>
+<div id="ref-dickens_bleak_1868" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[17] </div><div class="csl-right-inline">Dickens C. Bleak <span>House</span>. Chapman; Hall; 1868.</div>
+</div>
+<div id="ref-asimov_i_1950" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[18] </div><div class="csl-right-inline">Asimov I. I, <span>Robot</span>. Dennis Dobson; 1950.</div>
+</div>
+<div id="ref-bellman_exotic_1998" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[19] </div><div class="csl-right-inline">Bellman J. The <span>Exotic</span> <span>In</span> <span>Western</span> <span>Music</span>. UPNE; 1998.</div>
+</div>
+<div id="ref-noauthor_exposition_2025" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[20] </div><div class="csl-right-inline"><a href="https://en.wikipedia.org/w/index.php?title=Exposition_Universelle_(1889)&amp;oldid=1273740816">Exposition <span>Universelle</span> (1889)</a>. Wikipedia 2025.</div>
+</div>
+<div id="ref-weinger_aladdin_1994" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[21] </div><div class="csl-right-inline">Aladdin 1994.</div>
+</div>
+<div id="ref-tiffin_emperors_2004" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[22] </div><div class="csl-right-inline">Tiffin J. <a href="https://muse.jhu.edu/pub/27/article/172289">The <span>Emperor</span>’s <span>Old</span> <span>Groove</span>: <span>Decolonizing</span> <span>Disney</span>’s <span>Magic</span> <span>Kingdom</span> (review)</a>. Marvels &amp; Tales 2004;18:329–31.</div>
+</div>
+<div id="ref-noauthor_fact-checking_2020" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[23] </div><div class="csl-right-inline"><a href="https://www.europarl.europa.eu/news/en/press-room/20200401IPR76306/fact-checking-day-fighting-the-virus-of-disinformation-on-covid-19">Fact-checking <span>Day</span>: <span>Fighting</span> the virus of disinformation on <span>Covid</span>-19 <span></span> <span>News</span> <span></span> <span>European</span> <span>Parliament</span></a> 2020.</div>
+</div>
+<div id="ref-opensource_scikit-learn_2025" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[24] </div><div class="csl-right-inline">OpenSource. <a href="https://scikit-learn.org/stable/">Scikit-learn: Machine learning in <span>Python</span> — scikit-learn 1.6.1 documentation</a> 2025.</div>
+</div>
+</div></section><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p><em>Contributor acknowledgement</em>: This argument was improved by a discussion with my brilliant neighbour Álfrún Freyja Eldberg Agnarsdóttir, age 9, who highlighted that out of notifications, logging in, and advertising, all are intrusive, and the worst is logging in. The effect of this intrusive barrage of technology on children seems dangerously unmonitored.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>As I prepare to apply for dual citizenship via my father’s parents, Holocaust refugees, this resonates deeply, German society enabled the Nazis through people following rules, rather than questioning if they should.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p><em>Contributor acknowledgement</em>: This argument was improved by a discussion with my brilliant neighbour Álfrún Freyja Eldberg Agnarsdóttir, age 9, who highlighted that out of notifications, logging in, and advertising, all are intrusive, and the worst is logging in. The effect of this intrusive barrage of technology on children seems dangerously unmonitored.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

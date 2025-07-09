@@ -1,0 +1,40 @@
+---
+title: ESG & Structured Intelligence
+---
+
+> *ESG isn't just reporting. It's reasoning under scrutiny.*
+
+## ESG is a Data Governance Problem
+
+The Good Enough Data & Systems Lab builds structured intelligence systems that meet the demands of enterprise-scale ESG compliance—without compromising human context, traceability, or epistemic trust.
+
+We specialise in:
+
+- ESG-aligned system migration
+- FAIR-by-design data architecture
+- Test-driven governance scaffolds
+- Epistemic validation across human–algorithm systems
+
+We don’t do checkbox compliance.  
+We engineer systems that **make ESG claims trustworthy**.
+
+---
+
+## Why FAIR?
+
+The EU’s Corporate Sustainability Reporting Directive (CSRD), Sustainable Finance Disclosure Regulation (SFDR), and the EU Taxonomy for Sustainable Activities all demand transparency, traceability, and semantic clarity.
+
+But they don’t tell you **how to build the system** that delivers this.
+
+We do.
+
+The [FAIR principles](https://www.go-fair.org/fair-principles/)—Findable, Accessible, Interoperable, Reusable—are the backbone of our approach.  
+We model data systems that are:
+
+- Compliant by construction  
+- Auditable by role  
+- Aligned with lived workflows  
+- Robust to epistemic drift
+
+> FAIR isn’t just a technical standard. It’s how trust enters the system.
+
