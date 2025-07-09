@@ -15,7 +15,7 @@ image: ../good-enough-logo.png
 
 ## Statistical modelling is hard
 
-Consulting and choosing the correct statistical approach for diverse problems is unquestionably a challenging conceptual task. 
+Consulting on a question about real-world data---choosing the correct statistical approach for a problem---is unquestionably a challenging conceptual task. 
 
 This begins with an assumption we have some inputs, let's call this table $X$, and we will get some outputs of interest via algorithmic transformation, let's call this table $Y$.
 
@@ -27,13 +27,15 @@ However, once the desired shapes of $X$ and $Y$ have been carefully chosen with 
 
 > The dirty secret a the heart of data science that leadership are struggling to grasp is this: getting table $X$ is never easy, it's always hard. 
 
-Instead, we have a set of tables, let's call them $[Z]$ wherein each table may arrive not on in a different shape but even in different formats. 
+Instead, we have a set of tables, let's call them $[Z]$ wherein each table may arrive not only in different shapes, but often different formats. 
 
-And the transformation pipeline to shape $[Z]$ to $X$ represents the vast proportion of development work required. This process can be conceptualised as one enormous directed acyclic graph. 
+The transformation pipeline to shape $[Z]$ to $X$ represents the vast proportion of development work required. This process can be conceptualised as one enormous directed acyclic graph. 
 
 This singularity grows, always with a finite number of nodes and edges, but ever increasing in complexity and scale. So that it becomes impossible for humans to govern the logic of the transformations by eyeballing the code.
 
-Worse still, the entire team need to understand the $X$ desired, and that $X$ is subject to change as decisions are made about the desired $Y$ during development. Increasingly, it's rare for the people getting the $X$ and computing the $Y$ to be the same people, confusions abound. 
+Worse still, the entire team need to understand the $X$ desired, and that $X$ is subject to change as decisions are made about the desired $Y$ during development. Increasingly, it's rare for the people getting the $X$ and computing the $Y$ to be the same people. 
+
+Confusions abound. 
 
 ---
 
