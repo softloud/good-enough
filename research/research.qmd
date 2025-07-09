@@ -1,0 +1,65 @@
+---
+title: Good Enough Research
+---
+
+---
+
+## Systemic Injustice in Conservation
+
+Dr Gray and Dr Gupta drive conservation justice research partnerships. This provides a sandbox for the Good Enough Lab to develop methodologies, creating a virtuous cycle between research for social good and the tech industry. 
+
+→ [Decolonizing Sustainability: Indigenous and Local Conservation Systems from India in the Global Climate and Biodiversity Agenda](https://osf.io/preprints/socarxiv/nhjrz_v1) 
+
+---
+
+## Methodological work
+
+→ [On a Plurality of Ontologies: Reparative Justice in Broken Systems](https://drive.google.com/file/d/18PbqXzNXSJCiT-SFDncpBU9oFFLd5EPK/view?usp=sharing)
+
+---
+
+## Founding research
+
+> Select publications. 
+
+→ [Check out Dr Gray's Google Scholar profile for a full publication list](https://scholar.google.com/citations?user=7ZGTepkAAAAJ&hl=en)
+
+The Lab's methodologies are fundamentally shaped by Dr Charles T. Gray's scientific research. 
+
+Dr Gray began working in systems epistemology in 2012, what she does for a living has been rebranded several times in tech hype cycles.
+
+- big data
+- informatics
+- data science
+- machine learning
+- artificial intelligence
+
+Charles calls all this:
+
+> math, data, and code.
+
+---
+
+### Dr Gray's doctoral thesis on data science governance
+
+→ [Towards a Measure of code::proof: A toolchain walkthrough for computationally developing a statistical estimator](https://opal.latrobe.edu.au/articles/thesis/Towards_a_Measure_of_code_proof_A_toolchain_walkthrough_for_computationally_developing_a_statistical_estimator/14099561/1?file=26590526)
+
+The Good Enough Lab is heavily influenced by Charles' research in systems epistemology; how can we **trust** the math, data, and code are answering the question we intended?
+
+---
+
+### Math
+
+The Good Enough Lab draws on Dr Gray's training in abstract algebra and mathematical chaos.
+
+→ [The Homomorphism Lattice Induced by a Finite Algebra](https://arxiv.org/abs/1603.00129)
+
+---
+
+### Data & Code
+
+→ [Truth, Proof, and Reproducibility: There's no counterattack for the codeless](https://arxiv.org/pdf/1907.05947)
+
+→ [code::proof: Prepare for Most Weather Condtiions](https://link.springer.com/chapter/10.1007/978-981-15-1960-4_2)
+
+→ [Novel tools and methods for designing and wrangling multifunctional, machine-readable evidence synthesis databases](https://link.springer.com/article/10.1186/s13750-021-00219-x)

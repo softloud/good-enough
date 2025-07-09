@@ -1,0 +1,14 @@
+digraph logo {
+  ratio=0.6
+
+  repr [label="", style=invis]
+  repn [label="", style=invis]
+  repd [label="", style=invis]
+  good [label="Good Enough Lab"]
+
+  repn -> repd
+  repd -> repr [style=dashed]
+  repn -> repr [style=dotted] 
+
+
+}
