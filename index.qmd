@@ -20,6 +20,14 @@ The Lab was founded by Dr Charles T. Gray, a senior data science architect, to d
 
 ---
 
+## Industry Partners
+
+We partner with data science and modern data stack tool developers to demonstrate features they want users to know about. 
+
+We build our demonstrations using open science research collaborations with Systemic Injustice Research Partners, serving a dual purpose of amplifying anlaytics the world needs to see.
+
+---
+
 ## Consulting
 
 > *It ain't what you don't know that gets you into trouble. It's what you know for sure that just ain't so.*  
@@ -42,6 +50,7 @@ We engineer systems at scale that make sustainability claims *auditable, semanti
 → [Learn more about ESG-aligned system design](consulting/esg.qmd)
 
 ---
+
 
 ## Research
 
