@@ -1,0 +1,44 @@
+---
+title: Hard is Easy, and Easy is Hard
+subtitle: The development paradox of data science   
+code-fold: true
+date: "July 9 2025"
+author: 
+  - name: Dr Charles T. Gray, Datapunk
+    orcid: 0000-0002-9978-011X
+    affiliations:
+      - name: Good Enough Data & Systems Lab
+bibliography: ../blog.bib
+csl: ../elsevier-vancouver.csl
+image: ../good-enough-logo.png
+---
+
+## Statistical modelling is hard
+
+Consulting and choosing the correct statistical approach for diverse problems is unquestionably a challenging conceptual task. 
+
+This begins with an assumption we have some inputs, let's call this table $X$, and we will get some outputs of interest via algorithmic transformation, let's call this table $Y$.
+
+## Hard is Easy
+
+However, once the desired shapes of $X$ and $Y$ have been carefully chosen with sound mathematical reasoning, the implementation of the algorithm that transforms $X$ to $Y$ has become so trivial it is [but a handful of lines of code](https://scikit-learn.org/stable/getting_started.html). 
+
+## Easy is Hard
+
+> The dirty secret a the heart of data science that leadership are struggling to grasp is this: getting table $X$ is never easy, it's always hard. 
+
+Instead, we have a set of tables, let's call them $[Z]$ wherein each table may arrive not on in a different shape but even in different formats. 
+
+And the transformation pipeline to shape $[Z]$ to $X$ represents the vast proportion of development work required. This process can be conceptualised as one enormous directed acyclic graph. 
+
+This singularity grows, always with a finite number of nodes and edges, but ever increasing in complexity and scale. So that it becomes impossible for humans to govern the logic of the transformations by eyeballing the code.
+
+Worse still, the entire team need to understand the $X$ desired, and that $X$ is subject to change as decisions are made about the desired $Y$ during development. Increasingly, it's rare for the people getting the $X$ and computing the $Y$ to be the same people, confusions abound. 
+
+---
+
+Without tests and validation, we find that a butterfly of shit data can flap its wings and cause a tornado of broken analyses, trauma, and workplace toxicity. 
+
+## A butterfly of shit data 
+
+<iframe src="https://www.youtube.com/embed/hAhCEL_rrRc?si=8Yyn6M2wVOquvrFZ&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
