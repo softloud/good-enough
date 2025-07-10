@@ -25,7 +25,7 @@ However, once the desired shapes of $X$ and $Y$ have been carefully chosen with 
 
 ## Easy is Hard
 
-> The dirty secret a the heart of data science that leadership are struggling to grasp is this: getting table $X$ is never easy, it's always hard. 
+> The dirty secret at the heart of data science that leadership are struggling to grasp is this: getting table $X$ is never easy, it's always hard. 
 
 Instead, we have a set of tables, let's call them $[Z]$ wherein each table may arrive not only in different shapes, but often different formats. 
 
