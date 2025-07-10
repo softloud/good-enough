@@ -19,8 +19,6 @@ Get in touch to scope an ESG-aligned system architecture, FAIR data audit, or ch
 
 ## Systemic Injustice Research Partners
 
-> The singularity is here, its chaos must be governed.
-
 The Good Enough Data & Systems Lab offers special rates to research groups with needs in reproducible data science. 
 
 Get in touch to discuss your work in systemic injustice, in any domain. 
@@ -43,9 +41,11 @@ The Good Enough Data & Systems Lab is seeking mentorship/collaborators from seni
 - Industry partners: Dr Gray **needs** to work on the largest scale data platforms to apply her methodologies, it's simply more fun to design.
 - *Charles needs to figure out her EU citizenship via Holocaust descendent and it's very traumatic for many reasons, please send help*
 
-We are building solutions in R, Python, and DBT/Dagstar/Cloud-oriented, and because we implement, theory development is slow. But we are reading theory to understand how to make structured intelligence systems interpretable to humans, who then can govern the ethics of the system thinks. 
+We are building solutions in R, Python, and DBT/Dagstar/Cloud-oriented, and because we implement, theory development is slow. But we are reading theory to understand how to make structured intelligence systems interpretable to humans, who then can govern the ethics of how the system thinks. 
 
-And what we are building is really powerful. The math works. 
+> The singularity is here, its chaos must be governed.
+
+What we are building is really powerful. The math works. 
 
 > What the world needs now is not innovation, but **inclusively-opinionated automation**.
 
