@@ -18,6 +18,8 @@ We specialise in:
 We don’t do checkbox compliance.  
 We engineer systems that **make ESG claims trustworthy**.
 
+→ [Our methodology](consulting.qmd)
+
 ---
 
 ## Why FAIR?
@@ -38,3 +40,4 @@ We model data systems that are:
 
 > FAIR isn’t just a technical standard. It’s how trust enters the system.
 
+→ [Check out Dr Gray's research in FAIR data science](../research/research.qmd#dr-grays-doctoral-thesis-on-data-science-governance)
