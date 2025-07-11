@@ -12,7 +12,7 @@ The Good Enough Lab is not only a consultancy, but a community of people who adv
 
 As the Good Enough Lab's founding Systemic Injustice Research Partner, Garima Gupta's advocacy for biodiversity conservation in the Global South has helped shape the Lab's values and purpose. 
 
-Garima Gupta is an interdisciplinary researcher working at the intersection of biodiversity, Indigenous knowledge, and environmental justice. Her work explores how systemic and epistemic injustices shape conservation and sustainability in the Global South, with a focus on the Himalayan region. Drawing on both ecological and social science methods, she investigates community-led governance, plural knowledge systems, and reparative justice. Garima collaborates with the Good Enough Lab to co-develop inclusive, context-sensitive, and politically aware approaches to sustainability.
+Dr Garima Gupta is an interdisciplinary researcher working at the intersection of biodiversity, Indigenous knowledge, and environmental justice. Her work explores how systemic and epistemic injustices shape conservation and sustainability in the Global South, with a focus on the Himalayan region. Drawing on both ecological and social science methods, she investigates community-led governance, plural knowledge systems, and reparative justice. Garima collaborates with the Good Enough Lab to co-develop inclusive, context-sensitive, and politically aware approaches to sustainability.
 
 ---
 
@@ -22,13 +22,15 @@ Learn more about Dr Gupta's research---UN SDG trade-offs with The Beacon Project
 
 ---
 
-Garima and Charles collaborate with other conservationists for justice, such as our recent publications with Assistant Professor Maya Pasgaard from Aarhus University and Questionable Research Practices expert Dr Hannah Fraser. 
+Garima and Charles collaborate with other conservationists for justice, such as our recent publications with Assistant Professor Maya Pasgaard from Aarhus University. Another influential collaborator is Questionable Research Practices expert Dr Hannah Fraser. 
+
+→ [Learn more about Dr Gupta and Dr Gray's research partnership.](research/research.qmd)
 
 ---
 
 ## Dr Charles T. Gray: CTO, Datapunk, Founder
 
-Dr Charles T. Gray (she/her) identifies as a datapunk and reformed musician. 
+Dr Charles T. Gray (she/her) identifies as a datapunk and good enough pianist. 
 
 Charles' music career has been somewhat eclispsed by her data science, however the twenty years she spent performing and teaching music, suppporting herself as an independent musician, was formative in her approach to the Good Enough Lab. 
 
@@ -42,6 +44,8 @@ Charles' music career has been somewhat eclispsed by her data science, however t
 
 She has 3 bachelor degrees (music, arts, mathematics/statistics), 2 masters-level theses (film musicology, pure mathematics), and a PhD in statistical data science and systems epistemology. 
 
+→ Learn more about [Dr Gray's research](research/research.qmd#founding-research).
+
 ---
 
 ![](codelikeagirl.jpg)
@@ -51,6 +55,10 @@ Charles has extensive advocacy and outreach experience, with three national tour
 ---
 
 ###  [Australian Mathematical Sciences Institute *Choose Maths* campaign](https://www.smh.com.au/education/year-8-dropout-becomes-face-of-a-national-schools-campaign-20170601-gwhz7h.html)
+
+Charles was guided to *not* enrol in mathematics by a highschool mathematics teacher,  "you don't have the trig", at graduation. It took her ten years to work up the courage to undertake a mathematics degree. 
+
+She hopes she changed that story for at least *one* young woman with this campaign. 
 
 <iframe src="https://www.youtube.com/embed/o0Rqz8Hgacc?si=oQXw6DZ4eg04ICq2&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 

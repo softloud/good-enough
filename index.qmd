@@ -26,6 +26,8 @@ We partner with data science and modern data stack tool developers to demonstrat
 
 We build our demonstrations using open science research collaborations with Systemic Injustice Research Partners, serving a dual purpose of amplifying anlaytics the world needs to see.
 
+→ [Partner with the Good Enough Lab](collab.qmd)
+
 ---
 
 ## Consulting
