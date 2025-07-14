@@ -20,6 +20,23 @@ The Lab was founded by Dr Charles T. Gray, a senior data science architect, to d
 
 ---
 
+
+## Research
+
+We work voluntarily with Systemic Injustice Research Partners to build better science.
+
+**Applied**  
+→ Conservation strategy and epistemic justice in the Global South  
+
+**Theoretical**  
+→ Formalising injustice in code  
+→ Designing data architecture at the intersection of critical theory and category theory
+
+→ [Learn more about our Good Enough publications](research/research.qmd)
+
+
+---
+
 ## Industry Partners
 
 We partner with data science and modern data stack tool developers to demonstrate features they want users to know about. 
@@ -51,18 +68,3 @@ We engineer systems at scale that make sustainability claims *auditable, semanti
 
 → [Learn more about ESG-aligned system design](consulting/esg.qmd)
 
----
-
-
-## Research
-
-We work voluntarily with Systemic Injustice Research Partners to build better science.
-
-**Applied**  
-→ Conservation strategy and epistemic justice in the Global South  
-
-**Theoretical**  
-→ Formalising injustice in code  
-→ Designing data architecture at the intersection of critical theory and category theory
-
-→ [Learn more about our Good Enough publications](research/research.qmd)

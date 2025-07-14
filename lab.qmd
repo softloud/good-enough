@@ -73,12 +73,3 @@ In addition to her scientific publications, Charles has been presenting to codin
 - [CopenhagenR - useR Group 2024](https://www.meetup.com/copenhagenr-user-group/events/301262743/?eventOrigin=group_events_list)
 - [PyData Copenhagen 2023](https://www.meetup.com/pydata-copenhagen/events/294210771/?eventOrigin=group_events_list)
 
-
-
-## Good Enough Advisors
-
-Patrick Robotham is a data scientist, machine learning engineer, and cofounder of Prophet, a media analytics company. He advises the good enough data and systems lab on an ad hoc basis.
-
-Dr Hannah Fraser who specialises in Questionable Research Practices and mathematician/datapunk Dr Danny Fryer also provide insightful advice from time to time. 
-
-Many other scientists advise in big and small ways in the lab. 

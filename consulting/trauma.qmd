@@ -1,0 +1,371 @@
+---
+title: WIP - Good Enough Ethics
+subtitle: Structured intelligence governance
+author: 
+  - name: This One-time Trophy Bitch is now a Datapunk
+  - name: Once Kassandra, now mother-fucking Penthesilea
+  - name: Dr Charles T. Gray
+toc-expand: true
+bibliography: ../singularities.bib
+csl: ../elsevier-vancouver.csl
+
+image: figures-and-tables/postcol/colog-data.png
+
+
+--- 
+
+There's a great deal of talk around both ethics in technology and "AI (artificial intelligence)" in the zeitgeist---all tools and hype and almost no substance in my LinkedIn feed. But ethics is about people, so "ethical AI" is about systems caring for people. 
+
+> A government is a body of people, usually, notably ungoverned. -- *Shepherd Book* (@whedon_firefly_2003)
+
+In this essay, we will explore different fields we can draw on to inform the design of systems that care about people.
+
+tl;dr $\to$ table of contents. 
+
+## Structured intelligence governance
+
+> It ain't what you don't know that gets you into trouble. It's what you know for sure that just ain't so. -- [Mark Twain? Josh Billings? Artemus Ward? Kin Hubbard? Will Rogers? Edwin Howard Armstrong? Anonymous?](https://quoteinvestigator.com/2018/11/18/know-trouble/)
+
+Let's define what we mean by a system in the context of "ethical AI".
+
+::: {.callout-note title="Definition"}
+**Structured intelligence systems** are systems of people and computational tools interoperating to answer questions using data. Think of them as directed graphs of people and things, of which might be tools, but they might be, say, tickets in a development plan. Might also be organisational values. Think of the arrows as a plurality of stories, a [*Rashomon*](https://en.wikipedia.org/wiki/Rashomon) of arrows, told about people and things in the system that answers a question using data.
+:::
+
+Defining what it is important, then we can ask questions about how the structured intelligence system "thinks".
+
+::: {.callout-note title="Definition"}
+**Structured intelligence governance** is the methodology humans use to interpret and measure the trustworthiness of the answers provided by the Structured Intelligence System. This is how we know how *intelligent* a system is. Think of this in terms of category theory and mathematical chaos. To figure out how to govern, we need to formalise so we have a grammar of reasoning about how well the structured intelligence system *thinks*.
+:::
+
+Structured intelligence systems devoid of structured intelligence governance are **stupid**, not intelligent. The Good Enough Lab eschews the term "artificial intelligence" as profoundly misleading.
+
+## The singularity is here, its chaos must be governed
+
+When I try to validate a single number on any structured intelligence system, it is always wrong. Every time. It's the rule. It's *not* the exception. This is predictable chaos; a butterfly of an incorrect datum will flap its wings into a frontier psychiatry of corrupt results. It will take me some time to formalise this fully, but my skin now itches with this truth. I see the wheels coming off data product wagons with a prescience in months and years---people getting laid off, real *harm*, and still no reliable numbers. 
+
+::: {.callout-note title="Definition"} 
+A **singularity** [^3] is when chaotic emergence on a structured intelligence system harms or enhances humans. I have some experience in all of these things, I cannot continue to build poor solutions as type `[kassandra]`. We need structured intelligence governance to bend the singularity to virtuous emergence while minimising harm.
+:::
+ [^3]: People work from agile plans. These directed graphs instantiate data lineage preorders, data entities are partial orders, instantiated by SQL, R, and Python. These mathematical structures are deployed via toolstacks (Snowflake, Grafana, Argo, Azure, AWS Redshift, Tableau, Power BI, Shiny, Dagstar, DBT, GitHub, ...) of inputs and outputs written in various languages (yml, SQL, go, rust, python, R, bash, markdown, jinja, regex, ...) commonly called **the modern data stack**. Critical theory is the study of defining erased arrows in society. Testing methodologies provide ways of observing if the system is matching the plain laid in graph-oriented views. Category theory provides methods of instantiating these as higher-dimensional summaries for pluralities of ontologies. Category theory provides a bridge to critical theory so that pluralities of ontologies are honoured. And of course there is statistical modelling and natural language processing, complex transformations in Python and R and so forth, a node or two in the structured intelligence system. Data science provides methods of comparing, by way of mathematical chaos,  emergence, epistemic drift, between project plans, ethical intentions, and instantiations. Everything is hard, everyone is skilled, everyone matters. Strctured intelligence governance is the craft of bending the singularity in humanity's favour.
+We can work this out people. Bend the singularity in humanity's favour[^2].
+
+[^2]: This type `[penthislea]` advocacy isn't because I'm angry, it's because I never been structurally afforded anything to lose. It seems that if people do not understand my expertise before I walk into the room, I am doomed to fail once they parse I'm a woman of colour. I need people to understand they need to do work, too, when they employ me to build computational systems of inquiry. Also, I find the study of structured intelligence systems super fun.
+
+## Asimov's Laws --> ESG -> UN SDGs 
+
+Asimov laid out some pretty clear laws about automata, that is, robots. Structured intelligence systems include stacks of automata interoperating with people. What are the laws of structured intelligence systems? 
+
+::: {.callout-warning}
+The European Commission will require companies to report on [environmental, social, and governance (ESG)](https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/esg-rating-activities_en), with fines levied for greenwashing and incorrect reporting. Thing is, the far greater cause of incorrect reporting is human error caused by epistemic drift in structured intelligence systems, not an individual's fraud. Either way, the European Commission do not have the summary measures required for making governance-level decisions about environmental, social, and governance analyses.
+:::
+
+::: {.callout-important}
+For example, this means efforts to achieve the [seventeen UN sustainable develop goals](https://sdgs.un.org/goals) will be undermined by insufficient evidence. But critical theorists have been talking about how to define hegemonies of oppression, wrought from erased arrows in systems, from pluralities of ontologies for decades.
+:::
+
+## Critical theory 
+
+Critical theory has dealt with ethics for decades, I spent my twenties immersed in the  world of critical  theory. 
+
+I spent untold hours in reading and in conversation with the kinds of people who were writing about how society understands cultural norms through analysing film, music, and books. The coolest cats were talking [category theory and Badiou](https://www.torrossa.com/it/resources/an/5209982) back in the '00s.
+
+::: {.callout-important}
+In particular, I spent a great deal of time thinking about the distinction between a represented thing and its representation, and what that tells us about how the person who creates the representation thinks about the represented thing. 
+:::
+
+---
+
+::: {.cell}
+
+<iframe src="/img/MagrittePipe.jpg" width="100%" height="264px">
+</iframe>
+
+::: {.caption}
+
+By René Magritte(1898-1967) - Image taken from a University of Alabama site, "Approaches to Modernism": <a rel="nofollow" class="external autonumber" href="http://www.tcf.ua.edu/Classes/Jbutler/T311/Modernism.htm">[1]</a>, <a href="//en.wikipedia.org/wiki/File:MagrittePipe.jpg" title="Fair use (Old-50)">Fair use (Old-50)</a>, <a href="https://en.wikipedia.org/w/index.php?curid=555365">Link</a>
+
+:::
+
+:::
+
+
+::: {.callout-tip title="Example"}
+For example, Edward Said's *Orientalism* explains how hegemonies of oppression can arise from one group of people, defining diverse external groups of people collectively as *Other*. 
+:::
+
+::: {.callout-tip title="Example"}
+I learnt about how [second wave Hong Kong cinema](https://www.movementsinfilm.com/hong-kong-new-wave) can be thought of as a societal meditation on diasporic identity. There's an in-betweenness [@yue] that permeates, a sense of forboding of what the end of the [Sino-British Joint Declaration](https://en.wikipedia.org/wiki/Sino-British_Joint_Declaration) will mean. 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/f1w4qnfux-o?si=-WBGPzF0bBPyj41w&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+Shigeru Umebayashi's soundtrack, Christopher Doyle's camerawork, writer-director Wan Kar-Wai's story. Sublime.
+:::
+
+
+### Pluralities of systemic ontologies
+
+This gave me a powerful way of understanding[^4] my place as a Transylvanian Australian Chinese Jewish woman, ordered by innermost identity. 
+
+
+::: {.callout-note title="Plurality of Ontologies"}
+Fundamentally, critical theory trained me to ask about how the world is perceived by different people, and to ask how systems can erase the voices that should be heard. That means when need to think about a structured intelligence systems from at least two perspectives:
+
+- a plurality of viewpoints of comptuational interoperation when receiving the outputs of a structured intelligence system;
+- a plurality of viewpoints of computational interoperation while developing the the structured intelligence system that transforms inputs to outputs,
+- and a plurality of viewpoints of computatational interoperation from the people who produce the inputs.
+:::
+
+[^4]: They're trying to do category theory, 'bless 'em, however here's what I know about mathematics. It's just like piano. Once you get to university, you start meeting real performing jazz and classical musicians. You start playing with them. And how good we are at it really just depends on how much time we have invested in the practice of the craft. The propulsion of any talent fades fast, a booster, after that it's just grit. I used to say to my piano students that there are three Ps---playing, performance, practice---and only one really makes you better technically, practice. Can you imagine what it feels like for me to ask a question in which a mathematician like David Spivak [@spivak_category_2014] is present? I fully grasp the difference between us, but I need to reach out to different communities to *learn* how implement structured intelligence governance. That means doing the study, myself, and asking questions about what to study. 
+
+##  The performing arts
+
+---
+
+::: {.callout-tip}
+I practice mathematical science like music[^1]. 
+
+I'd tell my piano students our work together was to figure out how to make their development feel like flow. Nowadays, I'd say it's cohering these two domains, so that practice is flow.
+:::
+
+[^1]: I had very little talent at piano, but it was the greatest peace I knew in an oft-loud household as a child---no boosters required. By the time I was ten years old I wanted to get up at 6am, before the family, and do an hour of blessed scales in peace. My Transylvanian grandmother was a concert pianist, a Holocaust refugee in exile. My father told me she said she would not interfere in how we were raised except to insist we learn piano. A beautiful, loved, 1930s upright was delivered to our house when I was seven years old. The flowstate of Bach was so all consuming there was no existential pain, there was only beauty. And there was a pull to my European roots, why I read Anne Frank's diary and watched Schindlers list. It's such a dream to be living here in Denmark, just the other day I  was sitting in a pub chatting to the lovely barfolk about the jazz festival and the Murikami my neighbour was reading, the bartender was doing music science. I fit in better here, it's time to learn Danish. 
+
+
+```{dot}
+digraph piano_practice {
+  rankdir=BT
+  node [shape=none]
+  
+  # ordered by development
+  subgraph cluster_dev {
+    label=<<i>development</i>>
+
+    dev_playing [label="playing"]
+    dev_performing [label="performing"]
+    dev_practice [label="practice"]
+
+    # ordered by development
+    dev_playing -> dev_performing -> dev_practice 
+  }
+
+  # ordered by flow
+  subgraph cluster_flow {
+    label=<<i>flow</i>>
+
+    flow_playing [label="playing"]
+    flow_performing [label="performing"]
+    flow_practice [label="practice"]
+
+    flow_practice -> flow_performing -> flow_playing
+
+  }
+}
+
+
+```
+
+
+
+I am exactly as good at each  skill I have as the time I have put into  practicing that craft. And I have practiced a lot of crafts---recently I took on Bachata, and now dance at events where I know no one, with confidence and abandon. For example, I wrote a minor thesis, lived an idea, in mathematical chaos (exquisite sofic shifts) in postgrad. If the world needed me to do that, I would go do that. I loved it so much. But it was unlikely to pay the rent.  
+
+---
+
+::: {.callout-caution}
+CT people, your math is plenty developed—it's imperative the mathematically literate make it useful to those with less formal training. We need dimension-reducing ways of measuring the validity of computational systems of inquiry urgently.
+:::
+
+Mathematicians are currently favouring depth in algorithmic logic with little engagement across disciplines. I think that's going in the wrong direction. It behoves both critical and category theory to explain the basics of each other's fields and learn to interoperate. Arrows over objects. And the arrows between categories of thinking are more important than arrows within them—including category theory. 
+
+::: {.callout-tip}
+I strive for data science should as a live jam session to solve real-world problems: some people compose; some conduct; and some play the score. The audience needs to enjoy it, too. For good enough structured intelligence governance, we need to hone the arrows from mathematics to instantiations.
+:::
+
+### Data ensembles
+
+::: {.callout-important}
+And we gotta bring the devs, they're the people building. Right now there's an utter schism between technology, computational methodology, and leadership. It's like herding cats, all vying for supremacy. We're  at the *Frontier Psychiatry* of data science---and you people are talking artificial ***intelligence***?!
+:::
+
+---
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qLrnkK2YEcE?si=qZEY5l6EqWeihDuy&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+> I have never seen more people, myself included, working more stupidly together in my life. 
+
+My primary income was as an independent musician for twenty years, I started when I was seventeen years old. I have only been full-time data scientist for about five years. 
+
+::: {.callout-important}
+In music, we would *not get the next gig* if we did not deliver! That meant every musician showed up and played the score, follow the chart, as it was written, on the instrument assigned. And there was always a cheaper piano teacher down the road.
+:::
+
+
+## Clopen analytics
+
+In data development, we have plenty of methods, we need to agree on them, and actually use them. Agile frameworks and open source communities have been working on this for decades, we only need to start  with the basics: pass the bus test. 
+
+::: {.callout-note title="The bus test"}
+*Hypothetically, if a team member got hit by a bus tomorrow and could not make work for some time, would the team still be able to answer the questions required?* 
+:::
+
+However, without a score, without clean parts, without a conductor, it is a cacophony and very little of value gets delivered. Not only that, but due to the chaos of development, all best practices are but good intentions laid to waste. Accountability is astonishingly skewed in ineffective leadership's favour, who rarely do labour that arrows the finished product.
+
+::: {.callout-important}
+In plain speak. Decision makers have no way of knowing if the numbers decisions are made from **are  wrong**. *And no one is talking about it.*
+:::
+
+
+::: {.callout-tip title="Lived experience"}
+In almost fifteen years of being employed to answer questions using math, code, and data, I've never been able to have confidence in the answers to the questions due to isolation, chaotic development, and poor data. Found duplicates and missing data on all critical pipelines and this has never been addressed. You cannot implement "machine learning" and "artificial intelligence"---or whatever buzzword---until you sort out how to know if you can trust the answer.
+:::
+
+
+::: {.callout-important}
+**Ego is running rampant**. Data science is an unconducted choir of sopranos who each think it's *their* aria.
+:::
+
+---
+
+![Fahrenheit 451 first edition cover](https://upload.wikimedia.org/wikipedia/en/d/db/Fahrenheit_451_1st_ed_cover.jpg)
+
+*Image source: [Wikipedia](https://en.wikipedia.org/wiki/File:Fahrenheit_451_1st_ed_cover.jpg#metadata)*
+
+
+::: {.callout-tip title="Farenheight 451"}
+The bizarre result is that team members in data analytics operate like the book people in *Fahrenheit 451*, who each memorise a book to preserve in a world that burns them; I am the keeper of this analytics lineage and all must pass through me to access its mystical knowledge. 
+:::
+
+
+This seems to be largely driven by human insecurity, which is why we need management that guides people to feel safe sharing knowledge and feeling valuable. This can hardly be done while the tech industry is treating highly-skilled engineers as a disposable workforce.
+
+
+::: {.callout-note title="Definition"}
+**Clopen analytics** is an approach to answering a question using data that privileges 
+
+- security requirements met above all else
+- graph-oriented project planning accessible to all developers
+- (this graph-oriented project planning is critical to) [structured intelligence governance](#structured-intelligence-governance)
+- open source community methodologies ([DBT core](https://github.com/dbt-labs/dbt-core) is my current [*It Grrl*](https://en.wikipedia.org/wiki/It_girl)])
+- agile frameworks as practiced in open source communities
+- FAIR data principles [@wilkinson_fair_2016]
+:::
+
+::: {.callout-note title="Definition"}
+The **Good Enough Data & Systems Lab** specialises in clopen analytics, optimising answering questions with data in a way that is psychologically safe for those participating in it. 
+:::
+
+## Socio-systemic trauma
+
+I became rather jaded and infuriated as I neared the end of Arts/Music, following very much in the European tradition of the arts and philosophy I was raised with, took a couple of years to get over back in the late '00s. I never cared about a fancy job, it was the slow-dawning realisation I  could not get *any* job with these qualifications.
+
+::: {.callout-tip  title="Lived experience"}
+I began to question how I'd ended up with a thesis: *Aladdin and Mulan: Familiar Strangers in the Disneyian Orient* that was indistinguishable to the untrained eye from the [postmodern generator](https://www.elsewhere.org/journal/pomo/).
+:::
+
+I was  27, staring at the threadbare carpet in my unheated "warehouse" (brick shed) apartment reading the *Subprime Primer* and absorbing that I would never escape the  [precariate class](https://www.weforum.org/stories/2016/11/precariat-global-class-rise-of-populism/) if I didn't act. 
+
+No house. No babies. No stability. 
+
+No passing through the next gate of adulthood. 
+
+Stuck. Forever precarious.
+
+---
+
+<iframe src="/img/subprime.pdf" width="100%" height="450px">
+</iframe>
+
+**Figure:** *The Subprime Primer* (original source: [esp.org](http://www.esp.org/humor/subprime.pdf)).  
+
+---
+
+*I would never escape the precariate class if I didn't act.* 
+
+And escape was at least a decade away.
+
+---
+
+Sometimes humans are affected by systemic forces completely beyond their control. My Transylvanian grandmother was a Holocaust refugee, a Jewish concert pianist in exile, relegated to teaching piano from her loungeroom in Australia. She had once taught at the Vienna Conservatorium.
+
+My solution at the time was to pivoted hard out of music and philosophy, and forge a career in answering scientific questions using math, data, and code, as I figured that was never going to go out of style.
+
+Data systems create ways of experiencing the world for humans---repetitive, intrusive ways. Too often we hear of [dystopian](https://robodebt.royalcommission.gov.au/) data systems. 
+
+### Data development is recursively traumatic
+
+Not only is the tech industry treating technically-skilled employees as a disposable,  precariat workforce, but the working conditions themselves are so traumatic most humans are retreating into a learned epistemic helpnessness in absence of accountability. 
+
+Leadership routinely give the vaguest of verbal directives---answer the questions in these data, report all KPIs in dashboards on a nonexistent platform, please do data quality, automate without data warehousing---to people with high levels of technical skill, but low domain knowledge. 
+
+::: {.callout-important}
+Raw data itself is *not a question*, yet this is what data practitioners are routinely handed. 
+:::
+
+Here's the data, now answer my questions; there are infinitely many questions. The stakeholder needs to define the *stakes*, that is, the questions that need answering. This is setting up data practitioners to not only do all labour, but be scapegoats for leadership's lack of accountability. Strategy deciders need to be accountable in data deliverables, not generate [bullshit  work](https://en.wikipedia.org/wiki/Bullshit_Jobs) in powerpoints and uninstantiated architecture. 
+
+::: {.callout-caution}
+Because no one understands the system, the most disposable are accountable for the system.
+:::
+
+There is nothing psychologically safe about working in industry on the modern data stack; this is a [crisis in change management](https://en.wikipedia.org/wiki/Change_management), accountability for which also falls entirely on the engineers. 
+
+## Complex Post-traumatic Stress Disorder
+
+There's a growing literature recognising that sustained trauma is something [the body literally remembers](https://www.besselvanderkolk.com/resources/the-body-keeps-the-score). CPTSD peer-support groups, such as the [Adult Survivors of Child Abuse](https://www.ascasupport.org/) network, regularly share canonical resources to learn how to go from [surviving to thriving](https://www.pete-walker.com/complex_ptsd_book.html). 
+
+We need to understand that people who are developing systems are entering in a traumatised state, and mitigate how ways of working can further traumatise developers. 
+
+Effective accountability in leadership would be a good start. Structured intelligence systems built without regard for developer trauma will themselves encode the logic of harm.
+
+## The men appear to be, uh, having a moment
+
+- mankeeping
+- kate manne
+- solo comunnity, 4B movement, community of single people
+
+## Technology leadership appear  to be, uh, having a moment
+
+- jira 
+- 
+
+
+## Ethical system design
+
+... is a people problem.
+
+You would not believe how many scientists said "no" when I asked  if I could implement:
+
+```yml
+data_tests:
+  - unique
+  - not_null
+```
+
+on their algorithmic input, citing no time and too much technical complexity. 
+
+And quite frankly people get pretty hostile fast.
+
+People *really* don't like to critically examine their assumptions.
+
+
+
+## Ethical people interoperation
+
+If I make recommendations from my expertise and build impossibly complex structures to answer questions with data, and my *recommendations are not followed* it should not be me who is accountable. I am expected to execute tickets, and wow do I. 
+
+Am done with data x roles in industry, you are hiring for tools and domain when you should hire for conceptual understanding and experience. There's always Teach for Australia, I could do good there. Am burdened with my own product management and change management, am doing too many jobs in one under low titles. 
+
+Change management is a leadership problem. I can tell you what you need to do, it's time people listen to expertise and experience. 
+
+It's time to get radically honest about discrimination in tech. It's time to get radically honest about misplaced accountability in tech. 
+
+Don't worry, I'm here to help. I'm really good at this. There are others like me. I was a piano teacher for 20 years, I can guide you. 
+
+Gigging musicians must show up, play the score, exactly as written, on the instrument assigned. Not toot the flugal horn to a different tune, in a different key. Or we don't get the next gig. 
+
+If the conductor is conducting a different piece of music, they're not in the band.
+
+::: {.callout-warning}
+But ya **gotta** have a score everyone can read.
+:::
+
+## References

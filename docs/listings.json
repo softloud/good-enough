@@ -1,21 +1,5 @@
 [
   {
-    "listing": "/index.html",
-    "items": [
-      "/blog/2025-05-03-comedy-science-beers.html",
-      "/blog/2025-04-21-olog-comedy.html",
-      "/blog/2025-04-16-one-art.html",
-      "/blog/2025-03-31-governance.html",
-      "/blog/2025-03-24-button.html",
-      "/blog/2025-03-23-cave.html",
-      "/blog/2025-03-20-cave.html",
-      "/blog/2025-03-18-button.html",
-      "/blog/2025-03-17-button.html",
-      "/blog/2025-03-15-button.html",
-      "/blog/2025-03-14-button.html"
-    ]
-  },
-  {
     "listing": "/blog.html",
     "items": [
       "/blog/2025-07-09-paradox.html",

@@ -1,0 +1,1258 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.24">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="This One-time Trophy Bitch is now a Datapunk">
+<meta name="author" content="Once Kassandra, now mother-fucking Penthesilea">
+<meta name="author" content="Dr Charles T. Gray">
+
+<title>WIP - Good Enough Ethics – Good Enough Lab</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../good-enough-logo.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-1e438c382a17f6d88d3993662a872df6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-9e8de048a655e476d63a8bc4b1d9f37e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../good-enough-logo.png" alt="" class="navbar-logo">
+    </a>
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Good Enough Lab</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-consulting" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Consulting</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-consulting">    
+        <li>
+    <a class="dropdown-item" href="../consulting/consulting.html">
+ <span class="dropdown-text">Consulting</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../consulting/esg.html">
+ <span class="dropdown-text">ESG</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../research/research.html">
+ <span class="dropdown-text">Research</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../blog.html">
+ <span class="dropdown-text">Development Blog</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link active" href="../consulting/trauma.html" aria-current="page"> 
+<span class="menu-text">Ethics</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../lab.html"> 
+<span class="menu-text">Lab</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../collab.html"> 
+<span class="menu-text">Work with us</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../values.html"> 
+<span class="menu-text">Values</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="99">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#structured-intelligence-governance" id="toc-structured-intelligence-governance" class="nav-link active" data-scroll-target="#structured-intelligence-governance">Structured intelligence governance</a></li>
+  <li><a href="#the-singularity-is-here-its-chaos-must-be-governed" id="toc-the-singularity-is-here-its-chaos-must-be-governed" class="nav-link" data-scroll-target="#the-singularity-is-here-its-chaos-must-be-governed">The singularity is here, its chaos must be governed</a></li>
+  <li><a href="#asimovs-laws-esg---un-sdgs" id="toc-asimovs-laws-esg---un-sdgs" class="nav-link" data-scroll-target="#asimovs-laws-esg---un-sdgs">Asimov’s Laws –&gt; ESG -&gt; UN SDGs</a></li>
+  <li><a href="#critical-theory" id="toc-critical-theory" class="nav-link" data-scroll-target="#critical-theory">Critical theory</a>
+  <ul class="collapse">
+  <li><a href="#pluralities-of-systemic-ontologies" id="toc-pluralities-of-systemic-ontologies" class="nav-link" data-scroll-target="#pluralities-of-systemic-ontologies">Pluralities of systemic ontologies</a></li>
+  </ul></li>
+  <li><a href="#the-performing-arts" id="toc-the-performing-arts" class="nav-link" data-scroll-target="#the-performing-arts">The performing arts</a>
+  <ul class="collapse">
+  <li><a href="#data-ensembles" id="toc-data-ensembles" class="nav-link" data-scroll-target="#data-ensembles">Data ensembles</a></li>
+  </ul></li>
+  <li><a href="#clopen-analytics" id="toc-clopen-analytics" class="nav-link" data-scroll-target="#clopen-analytics">Clopen analytics</a></li>
+  <li><a href="#socio-systemic-trauma" id="toc-socio-systemic-trauma" class="nav-link" data-scroll-target="#socio-systemic-trauma">Socio-systemic trauma</a>
+  <ul class="collapse">
+  <li><a href="#data-development-is-recursively-traumatic" id="toc-data-development-is-recursively-traumatic" class="nav-link" data-scroll-target="#data-development-is-recursively-traumatic">Data development is recursively traumatic</a></li>
+  </ul></li>
+  <li><a href="#complex-post-traumatic-stress-disorder" id="toc-complex-post-traumatic-stress-disorder" class="nav-link" data-scroll-target="#complex-post-traumatic-stress-disorder">Complex Post-traumatic Stress Disorder</a></li>
+  <li><a href="#the-men-appear-to-be-uh-having-a-moment" id="toc-the-men-appear-to-be-uh-having-a-moment" class="nav-link" data-scroll-target="#the-men-appear-to-be-uh-having-a-moment">The men appear to be, uh, having a moment</a></li>
+  <li><a href="#technology-leadership-appear-to-be-uh-having-a-moment" id="toc-technology-leadership-appear-to-be-uh-having-a-moment" class="nav-link" data-scroll-target="#technology-leadership-appear-to-be-uh-having-a-moment">Technology leadership appear to be, uh, having a moment</a></li>
+  <li><a href="#ethical-system-design" id="toc-ethical-system-design" class="nav-link" data-scroll-target="#ethical-system-design">Ethical system design</a></li>
+  <li><a href="#ethical-people-interoperation" id="toc-ethical-people-interoperation" class="nav-link" data-scroll-target="#ethical-people-interoperation">Ethical people interoperation</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">WIP - Good Enough Ethics</h1>
+<p class="subtitle lead">Structured intelligence governance</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Authors</div>
+    <div class="quarto-title-meta-contents">
+             <p>This One-time Trophy Bitch is now a Datapunk </p>
+             <p>Once Kassandra, now mother-fucking Penthesilea </p>
+             <p>Dr Charles T. Gray </p>
+          </div>
+  </div>
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>There’s a great deal of talk around both ethics in technology and “AI (artificial intelligence)” in the zeitgeist—all tools and hype and almost no substance in my LinkedIn feed. But ethics is about people, so “ethical AI” is about systems caring for people.</p>
+<blockquote class="blockquote">
+<p>A government is a body of people, usually, notably ungoverned. – <em>Shepherd Book</em> (<span class="citation" data-cites="whedon_firefly_2003">[<a href="#ref-whedon_firefly_2003" role="doc-biblioref">1</a>]</span>)</p>
+</blockquote>
+<p>In this essay, we will explore different fields we can draw on to inform the design of systems that care about people.</p>
+<p>tl;dr <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>→</mo><annotation encoding="application/x-tex">\to</annotation></semantics></math> table of contents.</p>
+<section id="structured-intelligence-governance" class="level2">
+<h2 class="anchored" data-anchor-id="structured-intelligence-governance">Structured intelligence governance</h2>
+<blockquote class="blockquote">
+<p>It ain’t what you don’t know that gets you into trouble. It’s what you know for sure that just ain’t so. – <a href="https://quoteinvestigator.com/2018/11/18/know-trouble/">Mark Twain? Josh Billings? Artemus Ward? Kin Hubbard? Will Rogers? Edwin Howard Armstrong? Anonymous?</a></p>
+</blockquote>
+<p>Let’s define what we mean by a system in the context of “ethical AI”.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Definition">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Definition
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Structured intelligence systems</strong> are systems of people and computational tools interoperating to answer questions using data. Think of them as directed graphs of people and things, of which might be tools, but they might be, say, tickets in a development plan. Might also be organisational values. Think of the arrows as a plurality of stories, a <a href="https://en.wikipedia.org/wiki/Rashomon"><em>Rashomon</em></a> of arrows, told about people and things in the system that answers a question using data.</p>
+</div>
+</div>
+<p>Defining what it is important, then we can ask questions about how the structured intelligence system “thinks”.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Definition">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Definition
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Structured intelligence governance</strong> is the methodology humans use to interpret and measure the trustworthiness of the answers provided by the Structured Intelligence System. This is how we know how <em>intelligent</em> a system is. Think of this in terms of category theory and mathematical chaos. To figure out how to govern, we need to formalise so we have a grammar of reasoning about how well the structured intelligence system <em>thinks</em>.</p>
+</div>
+</div>
+<p>Structured intelligence systems devoid of structured intelligence governance are <strong>stupid</strong>, not intelligent. The Good Enough Lab eschews the term “artificial intelligence” as profoundly misleading.</p>
+</section>
+<section id="the-singularity-is-here-its-chaos-must-be-governed" class="level2">
+<h2 class="anchored" data-anchor-id="the-singularity-is-here-its-chaos-must-be-governed">The singularity is here, its chaos must be governed</h2>
+<p>When I try to validate a single number on any structured intelligence system, it is always wrong. Every time. It’s the rule. It’s <em>not</em> the exception. This is predictable chaos; a butterfly of an incorrect datum will flap its wings into a frontier psychiatry of corrupt results. It will take me some time to formalise this fully, but my skin now itches with this truth. I see the wheels coming off data product wagons with a prescience in months and years—people getting laid off, real <em>harm</em>, and still no reliable numbers.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Definition">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Definition
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>A <strong>singularity</strong> <a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> is when chaotic emergence on a structured intelligence system harms or enhances humans. I have some experience in all of these things, I cannot continue to build poor solutions as type <code>[kassandra]</code>. We need structured intelligence governance to bend the singularity to virtuous emergence while minimising harm.</p>
+</div>
+</div>
+</section>
+<section id="asimovs-laws-esg---un-sdgs" class="level2">
+<h2 class="anchored" data-anchor-id="asimovs-laws-esg---un-sdgs">Asimov’s Laws –&gt; ESG -&gt; UN SDGs</h2>
+<p>Asimov laid out some pretty clear laws about automata, that is, robots. Structured intelligence systems include stacks of automata interoperating with people. What are the laws of structured intelligence systems?</p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The European Commission will require companies to report on <a href="https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/esg-rating-activities_en">environmental, social, and governance (ESG)</a>, with fines levied for greenwashing and incorrect reporting. Thing is, the far greater cause of incorrect reporting is human error caused by epistemic drift in structured intelligence systems, not an individual’s fraud. Either way, the European Commission do not have the summary measures required for making governance-level decisions about environmental, social, and governance analyses.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>For example, this means efforts to achieve the <a href="https://sdgs.un.org/goals">seventeen UN sustainable develop goals</a> will be undermined by insufficient evidence. But critical theorists have been talking about how to define hegemonies of oppression, wrought from erased arrows in systems, from pluralities of ontologies for decades.</p>
+</div>
+</div>
+</section>
+<section id="critical-theory" class="level2">
+<h2 class="anchored" data-anchor-id="critical-theory">Critical theory</h2>
+<p>Critical theory has dealt with ethics for decades, I spent my twenties immersed in the world of critical theory.</p>
+<p>I spent untold hours in reading and in conversation with the kinds of people who were writing about how society understands cultural norms through analysing film, music, and books. The coolest cats were talking <a href="https://www.torrossa.com/it/resources/an/5209982">category theory and Badiou</a> back in the ’00s.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>In particular, I spent a great deal of time thinking about the distinction between a represented thing and its representation, and what that tells us about how the person who creates the representation thinks about the represented thing.</p>
+</div>
+</div>
+<hr>
+<div class="cell">
+<iframe src="../img/MagrittePipe.jpg" width="100%" height="264px">
+</iframe>
+<div class="caption">
+<p>By René Magritte(1898-1967) - Image taken from a University of Alabama site, “Approaches to Modernism”: <a rel="nofollow" class="external autonumber" href="http://www.tcf.ua.edu/Classes/Jbutler/T311/Modernism.htm">[1]</a>, <a href="//en.wikipedia.org/wiki/File:MagrittePipe.jpg" title="Fair use (Old-50)">Fair use (Old-50)</a>, <a href="https://en.wikipedia.org/w/index.php?curid=555365">Link</a></p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled" title="Example">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Example
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>For example, Edward Said’s <em>Orientalism</em> explains how hegemonies of oppression can arise from one group of people, defining diverse external groups of people collectively as <em>Other</em>.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled" title="Example">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Example
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>I learnt about how <a href="https://www.movementsinfilm.com/hong-kong-new-wave">second wave Hong Kong cinema</a> can be thought of as a societal meditation on diasporic identity. There’s an in-betweenness <span class="citation" data-cites="yue">[<a href="#ref-yue" role="doc-biblioref"><strong>yue?</strong></a>]</span> that permeates, a sense of forboding of what the end of the <a href="https://en.wikipedia.org/wiki/Sino-British_Joint_Declaration">Sino-British Joint Declaration</a> will mean.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/f1w4qnfux-o?si=-WBGPzF0bBPyj41w&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="">
+</iframe>
+<p>Shigeru Umebayashi’s soundtrack, Christopher Doyle’s camerawork, writer-director Wan Kar-Wai’s story. Sublime.</p>
+</div>
+</div>
+<section id="pluralities-of-systemic-ontologies" class="level3">
+<h3 class="anchored" data-anchor-id="pluralities-of-systemic-ontologies">Pluralities of systemic ontologies</h3>
+<p>This gave me a powerful way of understanding<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> my place as a Transylvanian Australian Chinese Jewish woman, ordered by innermost identity.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Plurality of Ontologies">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Plurality of Ontologies
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Fundamentally, critical theory trained me to ask about how the world is perceived by different people, and to ask how systems can erase the voices that should be heard. That means when need to think about a structured intelligence systems from at least two perspectives:</p>
+<ul>
+<li>a plurality of viewpoints of comptuational interoperation when receiving the outputs of a structured intelligence system;</li>
+<li>a plurality of viewpoints of computational interoperation while developing the the structured intelligence system that transforms inputs to outputs,</li>
+<li>and a plurality of viewpoints of computatational interoperation from the people who produce the inputs.</li>
+</ul>
+</div>
+</div>
+</section>
+</section>
+<section id="the-performing-arts" class="level2">
+<h2 class="anchored" data-anchor-id="the-performing-arts">The performing arts</h2>
+<hr>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>I practice mathematical science like music<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>.</p>
+<p>I’d tell my piano students our work together was to figure out how to make their development feel like flow. Nowadays, I’d say it’s cohering these two domains, so that practice is flow.</p>
+</div>
+</div>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<svg width="672" height="480" viewbox="0.00 0.00 220.00 244.80" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" style="; max-width: none; max-height: none">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 240.8)">
+<title>piano_practice</title>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-240.8 216,-240.8 216,4 -4,4"></polygon>
+<g id="clust2" class="cluster">
+<title>cluster_flow</title>
+<polygon fill="none" stroke="black" points="110,-8 110,-228.8 204,-228.8 204,-8 110,-8"></polygon>
+<text text-anchor="start" x="144.94" y="-17.2" font-family="Times,serif" font-style="italic" font-size="14.00">flow</text>
+</g>
+<g id="clust1" class="cluster">
+<title>cluster_dev</title>
+<polygon fill="none" stroke="black" points="8,-8 8,-228.8 102,-228.8 102,-8 8,-8"></polygon>
+<text text-anchor="start" x="19.63" y="-17.2" font-family="Times,serif" font-style="italic" font-size="14.00">development</text>
+</g>
+<!-- dev_playing -->
+<g id="node1" class="node">
+<title>dev_playing</title>
+<text text-anchor="middle" x="55" y="-54.6" font-family="Times,serif" font-size="14.00">playing</text>
+</g>
+<!-- dev_performing -->
+<g id="node2" class="node">
+<title>dev_performing</title>
+<text text-anchor="middle" x="55" y="-126.6" font-family="Times,serif" font-size="14.00">performing</text>
+</g>
+<!-- dev_playing&#45;&gt;dev_performing -->
+<g id="edge1" class="edge">
+<title>dev_playing-&gt;dev_performing</title>
+<path fill="none" stroke="black" d="M55,-77.1C55,-84.82 55,-94.09 55,-102.69"></path>
+<polygon fill="black" stroke="black" points="51.5,-102.7 55,-112.7 58.5,-102.7 51.5,-102.7"></polygon>
+</g>
+<!-- dev_practice -->
+<g id="node3" class="node">
+<title>dev_practice</title>
+<text text-anchor="middle" x="55" y="-198.6" font-family="Times,serif" font-size="14.00">practice</text>
+</g>
+<!-- dev_performing&#45;&gt;dev_practice -->
+<g id="edge2" class="edge">
+<title>dev_performing-&gt;dev_practice</title>
+<path fill="none" stroke="black" d="M55,-149.1C55,-156.82 55,-166.09 55,-174.69"></path>
+<polygon fill="black" stroke="black" points="51.5,-174.7 55,-184.7 58.5,-174.7 51.5,-174.7"></polygon>
+</g>
+<!-- flow_playing -->
+<g id="node4" class="node">
+<title>flow_playing</title>
+<text text-anchor="middle" x="157" y="-198.6" font-family="Times,serif" font-size="14.00">playing</text>
+</g>
+<!-- flow_performing -->
+<g id="node5" class="node">
+<title>flow_performing</title>
+<text text-anchor="middle" x="157" y="-126.6" font-family="Times,serif" font-size="14.00">performing</text>
+</g>
+<!-- flow_performing&#45;&gt;flow_playing -->
+<g id="edge4" class="edge">
+<title>flow_performing-&gt;flow_playing</title>
+<path fill="none" stroke="black" d="M157,-149.1C157,-156.82 157,-166.09 157,-174.69"></path>
+<polygon fill="black" stroke="black" points="153.5,-174.7 157,-184.7 160.5,-174.7 153.5,-174.7"></polygon>
+</g>
+<!-- flow_practice -->
+<g id="node6" class="node">
+<title>flow_practice</title>
+<text text-anchor="middle" x="157" y="-54.6" font-family="Times,serif" font-size="14.00">practice</text>
+</g>
+<!-- flow_practice&#45;&gt;flow_performing -->
+<g id="edge3" class="edge">
+<title>flow_practice-&gt;flow_performing</title>
+<path fill="none" stroke="black" d="M157,-77.1C157,-84.82 157,-94.09 157,-102.69"></path>
+<polygon fill="black" stroke="black" points="153.5,-102.7 157,-112.7 160.5,-102.7 153.5,-102.7"></polygon>
+</g>
+</g>
+</svg>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<p>I am exactly as good at each skill I have as the time I have put into practicing that craft. And I have practiced a lot of crafts—recently I took on Bachata, and now dance at events where I know no one, with confidence and abandon. For example, I wrote a minor thesis, lived an idea, in mathematical chaos (exquisite sofic shifts) in postgrad. If the world needed me to do that, I would go do that. I loved it so much. But it was unlikely to pay the rent.</p>
+<hr>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Caution
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>CT people, your math is plenty developed—it’s imperative the mathematically literate make it useful to those with less formal training. We need dimension-reducing ways of measuring the validity of computational systems of inquiry urgently.</p>
+</div>
+</div>
+<p>Mathematicians are currently favouring depth in algorithmic logic with little engagement across disciplines. I think that’s going in the wrong direction. It behoves both critical and category theory to explain the basics of each other’s fields and learn to interoperate. Arrows over objects. And the arrows between categories of thinking are more important than arrows within them—including category theory.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>I strive for data science should as a live jam session to solve real-world problems: some people compose; some conduct; and some play the score. The audience needs to enjoy it, too. For good enough structured intelligence governance, we need to hone the arrows from mathematics to instantiations.</p>
+</div>
+</div>
+<section id="data-ensembles" class="level3">
+<h3 class="anchored" data-anchor-id="data-ensembles">Data ensembles</h3>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>And we gotta bring the devs, they’re the people building. Right now there’s an utter schism between technology, computational methodology, and leadership. It’s like herding cats, all vying for supremacy. We’re at the <em>Frontier Psychiatry</em> of data science—and you people are talking artificial <strong><em>intelligence</em></strong>?!</p>
+</div>
+</div>
+<hr>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qLrnkK2YEcE?si=qZEY5l6EqWeihDuy&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="">
+</iframe>
+<blockquote class="blockquote">
+<p>I have never seen more people, myself included, working more stupidly together in my life.</p>
+</blockquote>
+<p>My primary income was as an independent musician for twenty years, I started when I was seventeen years old. I have only been full-time data scientist for about five years.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>In music, we would <em>not get the next gig</em> if we did not deliver! That meant every musician showed up and played the score, follow the chart, as it was written, on the instrument assigned. And there was always a cheaper piano teacher down the road.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="clopen-analytics" class="level2">
+<h2 class="anchored" data-anchor-id="clopen-analytics">Clopen analytics</h2>
+<p>In data development, we have plenty of methods, we need to agree on them, and actually use them. Agile frameworks and open source communities have been working on this for decades, we only need to start with the basics: pass the bus test.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="The bus test">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+The bus test
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><em>Hypothetically, if a team member got hit by a bus tomorrow and could not make work for some time, would the team still be able to answer the questions required?</em></p>
+</div>
+</div>
+<p>However, without a score, without clean parts, without a conductor, it is a cacophony and very little of value gets delivered. Not only that, but due to the chaos of development, all best practices are but good intentions laid to waste. Accountability is astonishingly skewed in ineffective leadership’s favour, who rarely do labour that arrows the finished product.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>In plain speak. Decision makers have no way of knowing if the numbers decisions are made from <strong>are wrong</strong>. <em>And no one is talking about it.</em></p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled" title="Lived experience">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Lived experience
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>In almost fifteen years of being employed to answer questions using math, code, and data, I’ve never been able to have confidence in the answers to the questions due to isolation, chaotic development, and poor data. Found duplicates and missing data on all critical pipelines and this has never been addressed. You cannot implement “machine learning” and “artificial intelligence”—or whatever buzzword—until you sort out how to know if you can trust the answer.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Ego is running rampant</strong>. Data science is an unconducted choir of sopranos who each think it’s <em>their</em> aria.</p>
+</div>
+</div>
+<hr>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://upload.wikimedia.org/wikipedia/en/d/db/Fahrenheit_451_1st_ed_cover.jpg" class="img-fluid figure-img"></p>
+<figcaption>Fahrenheit 451 first edition cover</figcaption>
+</figure>
+</div>
+<p><em>Image source: <a href="https://en.wikipedia.org/wiki/File:Fahrenheit_451_1st_ed_cover.jpg#metadata">Wikipedia</a></em></p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Farenheight 451">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Farenheight 451
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The bizarre result is that team members in data analytics operate like the book people in <em>Fahrenheit 451</em>, who each memorise a book to preserve in a world that burns them; I am the keeper of this analytics lineage and all must pass through me to access its mystical knowledge.</p>
+</div>
+</div>
+<p>This seems to be largely driven by human insecurity, which is why we need management that guides people to feel safe sharing knowledge and feeling valuable. This can hardly be done while the tech industry is treating highly-skilled engineers as a disposable workforce.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Definition">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Definition
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Clopen analytics</strong> is an approach to answering a question using data that privileges</p>
+<ul>
+<li>security requirements met above all else</li>
+<li>graph-oriented project planning accessible to all developers</li>
+<li>(this graph-oriented project planning is critical to) <a href="#structured-intelligence-governance">structured intelligence governance</a></li>
+<li>open source community methodologies (<a href="https://github.com/dbt-labs/dbt-core">DBT core</a> is my current <a href="https://en.wikipedia.org/wiki/It_girl"><em>It Grrl</em></a>])</li>
+<li>agile frameworks as practiced in open source communities</li>
+<li>FAIR data principles <span class="citation" data-cites="wilkinson_fair_2016">[<a href="#ref-wilkinson_fair_2016" role="doc-biblioref">3</a>]</span></li>
+</ul>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled" title="Definition">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Definition
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The <strong>Good Enough Data &amp; Systems Lab</strong> specialises in clopen analytics, optimising answering questions with data in a way that is psychologically safe for those participating in it.</p>
+</div>
+</div>
+</section>
+<section id="socio-systemic-trauma" class="level2">
+<h2 class="anchored" data-anchor-id="socio-systemic-trauma">Socio-systemic trauma</h2>
+<p>I became rather jaded and infuriated as I neared the end of Arts/Music, following very much in the European tradition of the arts and philosophy I was raised with, took a couple of years to get over back in the late ’00s. I never cared about a fancy job, it was the slow-dawning realisation I could not get <em>any</em> job with these qualifications.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Lived experience">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Lived experience
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>I began to question how I’d ended up with a thesis: <em>Aladdin and Mulan: Familiar Strangers in the Disneyian Orient</em> that was indistinguishable to the untrained eye from the <a href="https://www.elsewhere.org/journal/pomo/">postmodern generator</a>.</p>
+</div>
+</div>
+<p>I was 27, staring at the threadbare carpet in my unheated “warehouse” (brick shed) apartment reading the <em>Subprime Primer</em> and absorbing that I would never escape the <a href="https://www.weforum.org/stories/2016/11/precariat-global-class-rise-of-populism/">precariate class</a> if I didn’t act.</p>
+<p>No house. No babies. No stability.</p>
+<p>No passing through the next gate of adulthood.</p>
+<p>Stuck. Forever precarious.</p>
+<hr>
+<iframe src="../img/subprime.pdf" width="100%" height="450px">
+</iframe>
+<p><strong>Figure:</strong> <em>The Subprime Primer</em> (original source: <a href="http://www.esp.org/humor/subprime.pdf">esp.org</a>).</p>
+<hr>
+<p><em>I would never escape the precariate class if I didn’t act.</em></p>
+<p>And escape was at least a decade away.</p>
+<hr>
+<p>Sometimes humans are affected by systemic forces completely beyond their control. My Transylvanian grandmother was a Holocaust refugee, a Jewish concert pianist in exile, relegated to teaching piano from her loungeroom in Australia. She had once taught at the Vienna Conservatorium.</p>
+<p>My solution at the time was to pivoted hard out of music and philosophy, and forge a career in answering scientific questions using math, data, and code, as I figured that was never going to go out of style.</p>
+<p>Data systems create ways of experiencing the world for humans—repetitive, intrusive ways. Too often we hear of <a href="https://robodebt.royalcommission.gov.au/">dystopian</a> data systems.</p>
+<section id="data-development-is-recursively-traumatic" class="level3">
+<h3 class="anchored" data-anchor-id="data-development-is-recursively-traumatic">Data development is recursively traumatic</h3>
+<p>Not only is the tech industry treating technically-skilled employees as a disposable, precariat workforce, but the working conditions themselves are so traumatic most humans are retreating into a learned epistemic helpnessness in absence of accountability.</p>
+<p>Leadership routinely give the vaguest of verbal directives—answer the questions in these data, report all KPIs in dashboards on a nonexistent platform, please do data quality, automate without data warehousing—to people with high levels of technical skill, but low domain knowledge.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Raw data itself is <em>not a question</em>, yet this is what data practitioners are routinely handed.</p>
+</div>
+</div>
+<p>Here’s the data, now answer my questions; there are infinitely many questions. The stakeholder needs to define the <em>stakes</em>, that is, the questions that need answering. This is setting up data practitioners to not only do all labour, but be scapegoats for leadership’s lack of accountability. Strategy deciders need to be accountable in data deliverables, not generate <a href="https://en.wikipedia.org/wiki/Bullshit_Jobs">bullshit work</a> in powerpoints and uninstantiated architecture.</p>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Caution
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Because no one understands the system, the most disposable are accountable for the system.</p>
+</div>
+</div>
+<p>There is nothing psychologically safe about working in industry on the modern data stack; this is a <a href="https://en.wikipedia.org/wiki/Change_management">crisis in change management</a>, accountability for which also falls entirely on the engineers.</p>
+</section>
+</section>
+<section id="complex-post-traumatic-stress-disorder" class="level2">
+<h2 class="anchored" data-anchor-id="complex-post-traumatic-stress-disorder">Complex Post-traumatic Stress Disorder</h2>
+<p>There’s a growing literature recognising that sustained trauma is something <a href="https://www.besselvanderkolk.com/resources/the-body-keeps-the-score">the body literally remembers</a>. CPTSD peer-support groups, such as the <a href="https://www.ascasupport.org/">Adult Survivors of Child Abuse</a> network, regularly share canonical resources to learn how to go from <a href="https://www.pete-walker.com/complex_ptsd_book.html">surviving to thriving</a>.</p>
+<p>We need to understand that people who are developing systems are entering in a traumatised state, and mitigate how ways of working can further traumatise developers.</p>
+<p>Effective accountability in leadership would be a good start. Structured intelligence systems built without regard for developer trauma will themselves encode the logic of harm.</p>
+</section>
+<section id="the-men-appear-to-be-uh-having-a-moment" class="level2">
+<h2 class="anchored" data-anchor-id="the-men-appear-to-be-uh-having-a-moment">The men appear to be, uh, having a moment</h2>
+<ul>
+<li>mankeeping</li>
+<li>kate manne</li>
+<li>solo comunnity, 4B movement, community of single people</li>
+</ul>
+</section>
+<section id="technology-leadership-appear-to-be-uh-having-a-moment" class="level2">
+<h2 class="anchored" data-anchor-id="technology-leadership-appear-to-be-uh-having-a-moment">Technology leadership appear to be, uh, having a moment</h2>
+<ul>
+<li>jira</li>
+<li></li>
+</ul>
+</section>
+<section id="ethical-system-design" class="level2">
+<h2 class="anchored" data-anchor-id="ethical-system-design">Ethical system design</h2>
+<p>… is a people problem.</p>
+<p>You would not believe how many scientists said “no” when I asked if I could implement:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode yml code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">data_tests</span><span class="kw">:</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="kw">-</span><span class="at"> unique</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="kw">-</span><span class="at"> not_null</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>on their algorithmic input, citing no time and too much technical complexity.</p>
+<p>And quite frankly people get pretty hostile fast.</p>
+<p>People <em>really</em> don’t like to critically examine their assumptions.</p>
+</section>
+<section id="ethical-people-interoperation" class="level2">
+<h2 class="anchored" data-anchor-id="ethical-people-interoperation">Ethical people interoperation</h2>
+<p>If I make recommendations from my expertise and build impossibly complex structures to answer questions with data, and my <em>recommendations are not followed</em> it should not be me who is accountable. I am expected to execute tickets, and wow do I.</p>
+<p>Am done with data x roles in industry, you are hiring for tools and domain when you should hire for conceptual understanding and experience. There’s always Teach for Australia, I could do good there. Am burdened with my own product management and change management, am doing too many jobs in one under low titles.</p>
+<p>Change management is a leadership problem. I can tell you what you need to do, it’s time people listen to expertise and experience.</p>
+<p>It’s time to get radically honest about discrimination in tech. It’s time to get radically honest about misplaced accountability in tech.</p>
+<p>Don’t worry, I’m here to help. I’m really good at this. There are others like me. I was a piano teacher for 20 years, I can guide you.</p>
+<p>Gigging musicians must show up, play the score, exactly as written, on the instrument assigned. Not toot the flugal horn to a different tune, in a different key. Or we don’t get the next gig.</p>
+<p>If the conductor is conducting a different piece of music, they’re not in the band.</p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>But ya <strong>gotta</strong> have a score everyone can read.</p>
+</div>
+</div>
+</section>
+<section id="references" class="level2">
+
+
+
+
+</section>
+
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body" data-entry-spacing="0" role="list">
+<div id="ref-whedon_firefly_2003" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[1] </div><div class="csl-right-inline">Firefly 2003.</div>
+</div>
+<div id="ref-spivak_category_2014" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[2] </div><div class="csl-right-inline">Spivak DI. Category <span>Theory</span> for the <span>Sciences</span>. MIT Press; 2014.</div>
+</div>
+<div id="ref-wilkinson_fair_2016" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[3] </div><div class="csl-right-inline">Wilkinson MD, Dumontier M, Aalbersberg IjJ, Appleton G, Axton M, Baak A, et al. The <span>FAIR</span> <span>Guiding</span> <span>Principles</span> for scientific data management and stewardship. Scientific Data 2016;3:160018. <a href="https://doi.org/10.1038/sdata.2016.18">https://doi.org/10.1038/sdata.2016.18</a>.</div>
+</div>
+</div></section><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>People work from agile plans. These directed graphs instantiate data lineage preorders, data entities are partial orders, instantiated by SQL, R, and Python. These mathematical structures are deployed via toolstacks (Snowflake, Grafana, Argo, Azure, AWS Redshift, Tableau, Power BI, Shiny, Dagstar, DBT, GitHub, …) of inputs and outputs written in various languages (yml, SQL, go, rust, python, R, bash, markdown, jinja, regex, …) commonly called <strong>the modern data stack</strong>. Critical theory is the study of defining erased arrows in society. Testing methodologies provide ways of observing if the system is matching the plain laid in graph-oriented views. Category theory provides methods of instantiating these as higher-dimensional summaries for pluralities of ontologies. Category theory provides a bridge to critical theory so that pluralities of ontologies are honoured. And of course there is statistical modelling and natural language processing, complex transformations in Python and R and so forth, a node or two in the structured intelligence system. Data science provides methods of comparing, by way of mathematical chaos, emergence, epistemic drift, between project plans, ethical intentions, and instantiations. Everything is hard, everyone is skilled, everyone matters. Strctured intelligence governance is the craft of bending the singularity in humanity’s favour. We can work this out people. Bend the singularity in humanity’s favour[^2].<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>They’re trying to do category theory, ’bless ’em, however here’s what I know about mathematics. It’s just like piano. Once you get to university, you start meeting real performing jazz and classical musicians. You start playing with them. And how good we are at it really just depends on how much time we have invested in the practice of the craft. The propulsion of any talent fades fast, a booster, after that it’s just grit. I used to say to my piano students that there are three Ps—playing, performance, practice—and only one really makes you better technically, practice. Can you imagine what it feels like for me to ask a question in which a mathematician like David Spivak <span class="citation" data-cites="spivak_category_2014">[<a href="#ref-spivak_category_2014" role="doc-biblioref">2</a>]</span> is present? I fully grasp the difference between us, but I need to reach out to different communities to <em>learn</em> how implement structured intelligence governance. That means doing the study, myself, and asking questions about what to study.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>I had very little talent at piano, but it was the greatest peace I knew in an oft-loud household as a child—no boosters required. By the time I was ten years old I wanted to get up at 6am, before the family, and do an hour of blessed scales in peace. My Transylvanian grandmother was a concert pianist, a Holocaust refugee in exile. My father told me she said she would not interfere in how we were raised except to insist we learn piano. A beautiful, loved, 1930s upright was delivered to our house when I was seven years old. The flowstate of Bach was so all consuming there was no existential pain, there was only beauty. And there was a pull to my European roots, why I read Anne Frank’s diary and watched Schindlers list. It’s such a dream to be living here in Denmark, just the other day I was sitting in a pub chatting to the lovely barfolk about the jazz festival and the Murikami my neighbour was reading, the bartender was doing music science. I fit in better here, it’s time to learn Danish.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
