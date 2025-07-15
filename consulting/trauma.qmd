@@ -2,10 +2,9 @@
 title: WIP - Good Enough Ethics
 subtitle: Structured intelligence governance
 author: 
-  - name: This One-time Trophy Bitch is now a Datapunk
-  - name: Once Kassandra, now mother-fucking Penthesilea
-  - name: Dr Charles T. Gray
-toc-expand: true
+  - name: Dr Charles T. Gray, structured intelligence architect
+  - name: "*Composer, conductor, and player of algorithmic music*"
+toc-expand: false
 bibliography: ../singularities.bib
 csl: ../elsevier-vancouver.csl
 
@@ -14,13 +13,31 @@ image: figures-and-tables/postcol/colog-data.png
 
 --- 
 
-There's a great deal of talk around both ethics in technology and "AI (artificial intelligence)" in the zeitgeist---all tools and hype and almost no substance in my LinkedIn feed. But ethics is about people, so "ethical AI" is about systems caring for people. 
+There's a great deal of talk around both ethics in technology and "AI (artificial intelligence)" in the zeitgeist---all tools and hype and almost no substance in my LinkedIn feed. But ethics is about people, so "ethical AI" is about systems---*made by people*---caring for people. 
 
 > A government is a body of people, usually, notably ungoverned. -- *Shepherd Book* (@whedon_firefly_2003)
 
-In this essay, we will explore different fields we can draw on to inform the design of systems that care about people.
+It's time I said something from my [expertise and experience](https://www.linkedin.com/in/charles-t-gray/). We will explore different fields I believe do not get enough attention in how to design systems that care about people.
+
+::: {.callout-important title="Opinionatedly-inclusive automation"}
+What the world needs now is not innovation, but **opinatedly-inclusive automation**.
+:::
+
+So that people and computational tools can interoperate for chaotic good. 
 
 tl;dr $\to$ table of contents. 
+
+::: {.callout-tip title="Good Enough Soundtrack"}
+Otherwise, strap in, put the soundtrack[^7] on, and read an [Undisciplined take](https://undisciplinedenvironments.org/2019/10/01/undisciplining-political-ecology-a-minifesto/). 
+
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/155tTRTI5ttHtcWJqlprFF?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+:::
+
+[^7]: You can hear in 1940s musicals optimism about Roosevelt's New Deal, however, a weariness from the Great Depression, and a mounting horror at WWII.
+
+::: {.callout-warning title="Grrl talk"}
+It's time for [grrl talk](../blog/2025-07-09-paradox.qmd) on "ethical AI". 
+:::
 
 ## Structured intelligence governance
 
@@ -63,7 +80,7 @@ Asimov laid out some pretty clear laws about automata, that is, robots [@asimov_
 :::{.callout-note title="The Three Laws of Robotics"}
 1. A robot may not injure a human being or, through inaction, allow a human being to come to harm.
 2. A robot must obey the orders given it by human beings except where such orders would conflict with the First Law.
-3. A robot must protect its own existence as long as such protection does not conflict with the First or Second Law.´
+3. A robot must protect its own existence as long as such protection does not conflict with the First or Second Law.
 :::
 
 Structured intelligence systems include stacks of automata interoperating with people. What are the laws of structured intelligence systems?
@@ -72,9 +89,24 @@ Structured intelligence systems include stacks of automata interoperating with p
 The European Commission will require companies to report on [environmental, social, and governance (ESG)](https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/esg-rating-activities_en), with fines levied for greenwashing and incorrect reporting. Thing is, the far greater cause of incorrect reporting is human error caused by epistemic drift in structured intelligence systems, not an individual's fraud. Either way, the European Commission do not have the summary measures required for making governance-level decisions about environmental, social, and governance analyses.
 :::
 
+What rules do companies enact in ESG reporting to ensure [robust computational evidence synthesis](https://www.eshackathon.org/)?
+
 ::: {.callout-important title="UN SDGs"}
 For example, this means efforts to achieve the [seventeen UN sustainable develop goals](https://sdgs.un.org/goals) will be undermined by insufficient evidence. But critical theorists have been talking about how to define hegemonies of oppression, wrought from erased arrows in systems, from pluralities of ontologies for decades.
 :::
+
+How do we ensure workflows that are computationally safe for domain-knowledge experts? 
+
+::: {.callout-tip title="IDEMS"}
+I recently heard IDEMs' presentation at the Topos Institute about the systemic challenges for change in human trafficking. 
+
+I asked what data people could do to help. Kate Fleming said a big challenge was the interoperation of domain-knowledge experts, survivors, who could correctly classify data, and the analysis pipeline.
+
+We have so many tools, data scientists love to build. How do we develop better interoperability for stakeholders?
+:::
+
+The oft-considered boring bits of data science---not the statistical algorithm applied (e.g., regression, random forests, natural language processing, image classification)---that is, documentation and tests, are where we have most mathematically and ethically challenging problems.
+
 
 ## Critical theory 
 
@@ -177,10 +209,10 @@ I am exactly as good at each  skill I have as the time I have put into  practici
 :::
 
 ::: {.callout-caution title="Data practitioners need the help of the formal community"}
-CT people, your math is plenty developed—it's imperative the mathematically literate make it useful to those with less formal training. We need dimension-reducing ways of measuring the validity of computational systems of inquiry urgently.
+CT people, your math is plenty developed—it's imperative the mathematically literate make it useful to those with less formal training. We need dimension-reducing ways of measuring the validity of computational systems of inquiry urgently[^8].
 :::
 
-Mathematicians are currently favouring depth in algorithmic logic with little engagement across disciplines. I think that's going in the wrong direction. It behoves both critical and category theory to explain the basics of each other's fields and learn to interoperate. Arrows over objects. And the arrows between categories of thinking are more important than arrows within them—including category theory. 
+[^8]: Mathematicians are currently favouring depth in algorithmic logic with little engagement across disciplines. I think that's going in the wrong direction. It behoves both critical and category theory to explain the basics of each other's fields and learn to interoperate. Arrows over objects. And the arrows between categories of thinking are more important than arrows within them—including category theory. 
 
 ::: {.callout-tip title="Datajamming"}
 I strive for data science lived as an open jam session to solve real-world problems: some people compose; some conduct; and some play the score. The audience needs to enjoy it, too. For good enough structured intelligence governance, we need to hone the arrows from mathematics to instantiations.
@@ -230,7 +262,7 @@ In almost fifteen years of being employed to answer questions using math, code, 
 Data science is an unconducted choir of sopranos who each think it's *their* aria.
 :::
 
-::: {.callout-tip title="Farenheight 451"}
+::: {.callout-tip title="The book people of *Farenheight 451*"}
 
 ![Fahrenheit 451 first edition cover](https://upload.wikimedia.org/wikipedia/en/d/db/Fahrenheit_451_1st_ed_cover.jpg)
 
@@ -294,12 +326,14 @@ And escape was at least a decade away.
 
 
 ::: {.callout-tip title="Intergenerational trauma"}
-Sometimes humans are affected by systemic forces completely beyond their control. My Transylvanian grandmother was a Holocaust refugee, a Jewish concert pianist in exile, relegated to teaching piano from her loungeroom in Australia. She had once taught at the Vienna Conservatorium.
+Sometimes humans are affected by systemic forces completely beyond their control. My Transylvanian grandmother was a Holocaust refugee, a Jewish concert pianist in exile, relegated to teaching piano from her loungeroom in Australia. She had once taught at the Vienna Conservatorium. 
 :::
 
 My solution at the time was to pivoted hard out of music and philosophy, and forge a career in answering scientific questions using math, data, and code, as I figured that was never going to go out of style.
 
 Data systems create ways of experiencing the world for humans---repetitive, intrusive ways. Too often we hear of [dystopian](https://robodebt.royalcommission.gov.au/) data systems. 
+
+
 
 ### Data development is recursively traumatic
 
@@ -327,20 +361,29 @@ We need to understand that people who are developing systems are entering in a t
 
 Effective accountability in leadership would be a good start. Structured intelligence systems built without regard for developer trauma will themselves encode the logic of harm.
 
-### The men appear to be, uh, having a moment
 
-- mankeeping
-- kate manne
-- solo comunnity, 4B movement, community of single people
+::: {.callout-tip title="Mankeeping"}
+Another social force is a [mankeeping](https://www.theguardian.com/lifeandstyle/2025/jun/16/mankeeping-why-single-women-are-giving-up-dating) crisis wherein women are eschewing relationship rather than interoperate with someone who hasn't done foundational work in healthy communication---I feel statements, comprommise on one issue, etc., which can be found in a multitude of pop psychology resources. And the data industry is almost entirely dominated by white cishet men. Many men have not been socialised to work toward and end goal that does not center their ideas. This is making which tools or techniques they stake their identity on unncessaary battlegrouns in development.
+:::
 
-### Technology leadership appear  to be, uh, having a moment
+::: {.callout-tip title="Veritcal and horizontal interoperability"}
+Kate Manne patiently explained we are not in a post-patriarchal world [@manne], *What Works for Women at Work* devotes an entire chapter to systemic "problem" woman of colour in science [@_what_].
 
-- jira 
+![The "Problem" Woman Woman of Colour in the Workplace](https://coco-net.org/wp-content/uploads/2018/03/WoC-in-Organizations-Tool-FINAL-EN-450x582.jpg)
 
+Adopting inclusively-agile frameworks is the only way to control for people who interoperate vertically in a system, only taking inputs from those they believe are above them. 
+
+:::
+
+::: {.callout-note title="Agile Manifesto"}
+Good Enough Ethics agile in the spirit of the [Agile Manifesto](https://agilemanifesto.org/), interpreted as democratisation of project narrative and optimisation of team wellbeing.  
+:::
 
 ## Ethical system design
 
 ... is a people problem.
+
+::: {.callout-tip title="People don't feel safe in their methodologies"}
 
 You would not believe how many scientists said "no" when I asked  if I could implement:
 
@@ -354,28 +397,150 @@ on their algorithmic input, citing no time and too much technical complexity.
 
 And quite frankly people get pretty hostile fast.
 
-People *really* don't like to critically examine their assumptions.
+People *really* don't like to critically examine their systemic assumptions.
+
+In which case, do not hire scapegoats to automate in the first place; there is widespread trauma forming amongst data developers. 
+
+Continue with your known epistemic problems.
+
+:::
+
+
+::: {.callout-tip title="Good Enough test achitecture"}
+
+What is an analytical assumption is answered differently by each person who needs to interoperate in the analysis. 
+
+For data engineers, explicitly, the Good Enough Lab mentors in defining Good Enough Entities, for example, if the organisation is DBT-oriented, then we design a minimal workflow for data entity design via a yaml that describes:
+
+- the name of the table
+- the columns in the table and what they mean to you
+- what you expect the columns to contain
+
+From this test architecture, more assumptions can be observed by telling data engineers what you expect, in terms of the columns you defined. 
+
+Data testing is a central tool in rendering a structured intelligence system *governable*. 
+
+[This involves test architecture in semantically-defined observable layers](consulting.qmd).
+
+This yaml can then be linked on a branch via a kanban ticket, with pull-request tagged with ticket number. 
+
+:::
 
 
 
 ## Ethical people interoperation
 
-If I make recommendations from my expertise and build impossibly complex structures to answer questions with data, and my *recommendations are not followed* it should not be me who is accountable. I am expected to execute tickets, and wow do I. 
-
-Am done with data x roles in industry, you are hiring for tools and domain when you should hire for conceptual understanding and experience. There's always Teach for Australia, I could do good there. Am burdened with my own product management and change management, am doing too many jobs in one under low titles. 
-
-Change management is a leadership problem. I can tell you what you need to do, it's time people listen to expertise and experience. 
-
 It's time to get radically honest about discrimination in tech. It's time to get radically honest about misplaced accountability in tech. 
 
-Don't worry, I'm here to help. I'm really good at this. There are others like me. I was a piano teacher for 20 years, I can guide you. 
+No one  wants it to be like this. We have to work together to bend the singularity of what the zeitgeist is calling "AI" in humanity's favour. 
 
+::: {.callout-warning title="Ways of working must incorporate change-management"}
+But ya **gotta** have a score everyone can read.
+
+Automation is not something you can buy, it's a culture change.
+:::
+
+## The score
+
+::: {.callout-tip title="A single source of truth for everyone"}
 Gigging musicians must show up, play the score, exactly as written, on the instrument assigned. Not toot the flugal horn to a different tune, in a different key. Or we don't get the next gig. 
 
-If the conductor is conducting a different piece of music, they're not in the band.
+If the conductor is conducting a different piece of music, unheard by the instrumentalists, they're not in the band.
 
-::: {.callout-warning}
-But ya **gotta** have a score everyone can read.
+Jazz musicians improvise, however, they follow a score made of predictably structured phrases, for example, a $II-V-I$ progression in the dominant, then the tonic, $\to II/V \to V/V \to I/V \to I/V \to II \to V \to I \to I \to$. However, a classical musician might think of a $II-V-I$ in terms of a composition of interrupted cadence and perfect cadence, first in the dominant, then the tonic.
+
+In either genre, instrumentalists are trained to wield dissonance and consonance according to the conductor's direction. Composers write the instructions the conductor follows.
+
 :::
+
+
+::: {.callout-note title="Good Enough Clopen Analytics"}
+
+Trying to communicate and structure data transformation in a way that is usable by not only anyone  else, but also *your future self*. Although code *feels* 
+
+> self commenting---Senior engineer to me in enterprise
+
+on the day you write it, in two years time it reads like my [homlattice proofs](https://arxiv.org/abs/1603.00129) do to me now. It's like playing Chopin's *Nocturne in E minor*, I used it for my Con audition, it takes some weeks to get fluent again each time. More so now I'm utterly out of practice. 
+
+Still I just think in arrows, and I don't need all the theorems. I need the definitions and theorems that will help me answer my questions about the arrows, help Dr Gupta answer questions about the arrows. 
+
+![](https://github.com/softloud/gg/raw/main/dot/fair-structure.svg)
+
+Our working methodology is this: 
+
+- `dontpanic` test 
+- test duplicates and missingness on a data entity
+- migrate an existing an analysis and validate it
+- all other work is scoped downstream in the graph-oriented project plan
+
+Currently, I have completed [a collection of individually renderable documents](https://github.com/softloud/gg/blob/main/README.md). There's a descriptive README, but likely doesn't reflect the latest changes, we pivoted to colloborate on *Decolonising Sustainability*, as there was virtuous academic emergence.
+
+And for this I need to show Dr Gupta how I will do my part of the research project. For this, the Good Enough Lab constructs Good Enough Stories.
+
+:::
+
+::: {.callout-note title="Good Enough Stories"}
+
+Think of a project plan as a gantt chart, now throw away the time estimates, only the links remain. 
+
+It will change, different parts will become important and unimportant over time.
+
+Different people have different inquiries:
+
+> What SQL error am I trying to debug? 
+
+> There is a fire between the data engineering and platform team and no one understands why.
+
+A graph of 3 levels
+
+- Highest level tell the story of the organisaation: *If this endeavour were a movie, what is the story so far, and do I like the ending?* 
+- Middle level tell the story of the team: *As a group, our next puzzle to solve is this. How do we break these things down in way that reflects our skills and enthusiasm?*
+- Lowest level tell the story of the individuals: *Alright, what am I working on today? What do I do if I get stuck?*
+
+Project planners need to embrace maintaining the livning *score* via:
+
+- Relation integrity views
+- Node integrity views
+- Edge integrity views
+
+All tools do this in different ways. The Good Enough Lab uses JIRA with GTD principles [@allen_getting_2015]. 
+
+How to view and use the system is the score.
+
+- Plan - Dependency graph - for viewing the different levels of the graph, consulting with different ontologies
+- Plan - Timeline: for editing arrows 
+- Plan - List: for editing tickets
+
+We need to onboard management to dimension-reducing, graph-oriented conceptualisation, or they will avoid interoperating with the most critical component of development, the score. 
+
+:::
+
+::: {.callout-tip title="In development"}
+
+- Questionable Analytical Observations Paper from the Give a Dam  project, close to completion, summarises use case in .Rmd for reproducible scientific research
+- Formalise structured intelligence governance such that data analysis is FAIR (Singularities paper)
+- Develop grammar and build iteratively:
+  - JIRA-DBT-Dagstar-Github stack to this site showing dimension-reduced analyses on our development plan
+  - JIRA-DBT-Dagstar-Github stack to this site showing dimension-reduced analyses on our codebase
+- and ever develop our skills for justice in systems of inquiry
+:::
+
+::: {.callout-tip title="O-Ren Ishii's monologue"}
+
+No subject will ever be under taboo.
+
+Except, of course the assumption that:
+
+- raw data is a substitute for defining analytics delivery;
+- the blood wrought from exploitation has embittered me;
+- systems do not need to care about people.
+
+<iframe src="https://www.youtube.com/embed/OLvz5E61UNs?si=e6_vL6YiCTrvp7AJ&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+:::
+
+[Jam with the Good Enough Lab](../collab.qmd).
+
+
 
 ## References
