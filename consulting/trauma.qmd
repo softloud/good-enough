@@ -13,11 +13,13 @@ image: figures-and-tables/postcol/colog-data.png
 
 --- 
 
+## Why we should play algorithms like music
+
 There's a great deal of talk around both ethics in technology and "AI (artificial intelligence)" in the zeitgeist---all tools and hype and almost no substance in my LinkedIn feed. But ethics is about people, so "ethical AI" is about systems---*made by people*---caring for people. 
 
 > A government is a body of people, usually, notably ungoverned. -- *Shepherd Book* (@whedon_firefly_2003)
 
-It's time I said something from my [expertise and experience](https://www.linkedin.com/in/charles-t-gray/). We will explore different fields I believe do not get enough attention in how to design systems that care about people.
+It's time I said something from my [expertise and experience](https://www.linkedin.com/in/charles-t-gray/). We will explore different fields that do not get enough attention in how to design systems that care about people.
 
 ::: {.callout-important title="Opinionatedly-inclusive automation"}
 What the world needs now is not innovation, but **opinionatedly-inclusive automation**.
@@ -27,7 +29,7 @@ This means the system cares about people *by design*.
 
 So that people and computational tools can interoperate for chaotic good. 
 
-And we can't expect people to be best [@wilson_best_2014], we need to start with good enough [@wilson_good_2017].
+And we can't expect people to be best [@wilson_best_2014], we need to start with good enough [@wilson_good_2017]. And to know if they've done a good enough job? They need a **score** to follow, analogous to what a session musicians require.
 
 tl;dr $\to$ table of contents. 
 
