@@ -20,10 +20,14 @@ There's a great deal of talk around both ethics in technology and "AI (artificia
 It's time I said something from my [expertise and experience](https://www.linkedin.com/in/charles-t-gray/). We will explore different fields I believe do not get enough attention in how to design systems that care about people.
 
 ::: {.callout-important title="Opinionatedly-inclusive automation"}
-What the world needs now is not innovation, but **opinatedly-inclusive automation**.
+What the world needs now is not innovation, but **opinionatedly-inclusive automation**.
+
+This means the system cares about people *by design*.
 :::
 
 So that people and computational tools can interoperate for chaotic good. 
+
+And we can't expect people to be best [@wilson_best_2014], we need to start with good enough [@wilson_good_2017].
 
 tl;dr $\to$ table of contents. 
 
@@ -36,7 +40,7 @@ Otherwise, strap in, put the soundtrack[^7] on, and read an [Undisciplined take]
 [^7]: You can hear in 1940s musicals optimism about Roosevelt's New Deal, however, a weariness from the Great Depression, and a mounting horror at WWII.
 
 ::: {.callout-warning title="Grrl talk"}
-It's time for [grrl talk](../blog/2025-07-09-paradox.qmd) on "ethical AI". 
+It's time for some [grrl talk](../blog/2025-07-09-paradox.qmd) on "ethical AI". 
 :::
 
 ## Structured intelligence governance
@@ -75,7 +79,7 @@ We can work this out people. Bend the singularity in humanity's favour[^2].
 
 ## Asimov's Laws --> ESG -> UN SDGs 
 
-Asimov laid out some pretty clear laws about automata, that is, robots [@asimov_i_1950].  
+Asimov is proposed governance lawes for automata, that is, robots [@asimov_i_1950].  
 
 :::{.callout-note title="The Three Laws of Robotics"}
 1. A robot may not injure a human being or, through inaction, allow a human being to come to harm.
@@ -221,14 +225,12 @@ I strive for data science lived as an open jam session to solve real-world probl
 ### Data ensembles
 
 ::: {.callout-important title="Frontier psychiatry of data science"}
-And we gotta bring the devs, they're the people building. Right now there's an utter schism between technology, computational methodology, and leadership. It's like herding cats, all vying for supremacy. We're  at the *Frontier Psychiatry* of data science---and you people are talking artificial ***intelligence***?!
+And we gotta bring the devs, they're the people building. Right now there's an utter schism between technology, computational methodology, and leadership. It's like herding cats, all vying for supremacy. We're  at the *Frontier Psychiatry*[^9] of data science---and you people are talking artificial ***intelligence***?!
 
 <iframe src="https://www.youtube.com/embed/qLrnkK2YEcE?si=qZEY5l6EqWeihDuy&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-:::
+[^9]: I have never seen more people, myself included, working more stupidly together in my life. It's an absurdist orchestra of broken dashboards and misrepresented numbers.
 
-::: {.callout-warning title="Lived experience"}
-I have never seen more people, myself included, working more stupidly together in my life. 
 :::
 
 My primary income was as an independent musician for twenty years, I started when I was seventeen years old. I have only been full-time data scientist for about five years. 
@@ -383,7 +385,7 @@ Good Enough Ethics agile in the spirit of the [Agile Manifesto](https://agileman
 
 ... is a people problem.
 
-::: {.callout-tip title="People don't feel safe in their methodologies"}
+::: {.callout-tip title="Stakeholders & scientists are epistemically insecure"}
 
 You would not believe how many scientists said "no" when I asked  if I could implement:
 
@@ -393,9 +395,9 @@ data_tests:
   - not_null
 ```
 
-on their algorithmic input, citing no time and too much technical complexity. 
+on their algorithmic input, citing no time and too much technical complexity[^10]. 
 
-And quite frankly people get pretty hostile fast.
+[^10]: And quite frankly people get pretty hostile fast. The pattern is psychologically breathtaking in its consistency, when people are confronted with systems epistemology, they balk at being a node in a system. This is where the literature of mankeeping and so forth can support technology leadership in creating a safe workplace that honours a plurality of technical expertise. There's a reason tech is so male dominated, it doesn't need to be like this.
 
 People *really* don't like to critically examine their systemic assumptions.
 
