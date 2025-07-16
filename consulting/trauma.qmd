@@ -19,24 +19,28 @@ There's a great deal of talk around both ethics in technology and "AI (artificia
 
 > A government is a body of people, usually, notably ungoverned. -- *Shepherd Book* (@whedon_firefly_2003)
 
-It's time I said something from my [expertise and experience](https://www.linkedin.com/in/charles-t-gray/). We will explore different fields that do not get enough attention in how to design systems that care about people.
+We will explore different fields I've experienced, as [an indepndent musician](https://www.linkedin.com/in/charles-t-gray/), that do not get enough attention in how to design systems that care about people.
 
 ::: {.callout-important title="Opinionatedly-inclusive automation"}
 What the world needs now is not innovation, but **opinionatedly-inclusive automation**.
 
-This means the system cares about people *by design*.
+A system that cares about people *by design*.
 :::
 
-So that people and computational tools can interoperate for chaotic good. 
+So that people and computational tools can interoperate for [chaotic good](https://easydamus.com/chaoticgood.html). 
 
-And we can't expect people to be best [@wilson_best_2014], we need to start with good enough [@wilson_good_2017]. And to know if they've done a good enough job? They need a **score** to follow, analogous to what a session musicians require.
+And we can't design the best system at inception [@wilson_best_2014], we need to start with good enough [@wilson_good_2017]. 
 
-tl;dr $\to$ table of contents. 
+For people to know if they are doing a good enough job, they need a **score** to follow, analogous to what session musicians require.
+
+::: {.callout-tip title="Give me the dot points"}
+*tldr $\to$ table of contents.* 
+:::
 
 ::: {.callout-tip title="Good Enough Soundtrack"}
-Otherwise, strap in, put the soundtrack[^7] on, and read an [Undisciplined take](https://undisciplinedenvironments.org/2019/10/01/undisciplining-political-ecology-a-minifesto/). 
+Otherwise, spin up the soundtrack[^7], and strap in for an [Undisciplined take](https://undisciplinedenvironments.org/2019/10/01/undisciplining-political-ecology-a-minifesto/). 
 
-<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/155tTRTI5ttHtcWJqlprFF?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/155tTRTI5ttHtcWJqlprFF?utm_source=generator&theme=0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 :::
 
 [^7]: You can hear in 1940s musicals optimism about Roosevelt's New Deal, however, a weariness from the Great Depression, and a mounting horror at WWII.
@@ -51,25 +55,31 @@ It's time for some [grrl talk](../blog/2025-07-09-paradox.qmd) on "ethical AI".
 
 Let's define what we mean by a system in the context of "ethical AI".
 
-::: {.callout-note title="Structured intelligence governance"}
+::: {.callout-note title="Structured intelligence system"}
 **Structured intelligence systems** are systems of people and computational tools interoperating to answer questions using data. Think of them as directed graphs of people and things, of which might be tools, but they might be, say, tickets in a development plan. Might also be organisational values. Think of the arrows as a plurality of stories, a [*Rashomon*](https://en.wikipedia.org/wiki/Rashomon) of arrows, told about people and things in the system that answers a question using data.
 :::
 
-Defining what it is important, then we can ask questions about how the structured intelligence system "thinks".
+Now we can ask questions about how the structured intelligence system "thinks" in the ways defined.
 
 ::: {.callout-note title="Structured intelligence governance"}
-**Structured intelligence governance** is the methodology humans use to interpret and measure the trustworthiness of the answers provided by the Structured Intelligence System. This is how we know how *intelligent* a system is. Think of this in terms of category theory and mathematical chaos. To figure out how to govern, we need to formalise so we have a grammar of reasoning about how well the structured intelligence system *thinks*.
+**Structured intelligence governance** is the methodology humans use to interpret and measure the trustworthiness of the answers provided by the structured intelligence system. This is how we know how *intelligent* a system is. Think of this in terms of category theory and mathematical chaos. To figure out how to govern, we need to formalise so we have a grammar of reasoning about how well the structured intelligence system *thinks*.
 :::
 
-Structured intelligence systems devoid of structured intelligence governance are **stupid**, not intelligent. The Good Enough Lab eschews the term "artificial intelligence" as profoundly misleading.
+Structured intelligence systems devoid of structured intelligence governance are mindless golems [@mcelreath_statistical_2020]. The Good Enough Lab eschews the term "artificial intelligence" as profoundly misleading.
 
 ## The singularity is here, its chaos must be governed
 
+::: {.callout-tip title="Duplicates & missingness"}
+When I try to validate a single number on any structured intelligence system, it is always wrong. Duplicates or missingness. Every time. It's the rule. It's *not* the exception. 
 
-::: {.callout-tip title="Lived experience"}
-When I try to validate a single number on any structured intelligence system, it is always wrong. Every time. It's the rule. It's *not* the exception. This is predictable chaos; a butterfly of an incorrect datum will flap its wings into a frontier psychiatry of corrupt results. It will take me some time to formalise this fully, but my skin now itches with this truth. I see the wheels coming off data product wagons with a prescience in months and years---people getting laid off, real *harm*, and still no reliable numbers. 
+This is predictable chaos; a butterfly of an incorrect datum---a single SQL, R, or Python milsaligned assumption in just one line of code---will flap its wings into a frontier psychiatry of corrupt results. 
+
+It will take me some time to formalise this fully, but the memory of minor thesis in mathematical chaos[^11] itches with topological dynamics in data system development. Everything is a directed graph.  
+
+I see the wheels coming off data product wagons with a prescience in months and years---people getting laid off, real *harm*, and still no reliable numbers. 
 :::
 
+[^11]: I have such fond memories of sofic shifts and John Banks' *Mathematical Chaos* [@banks_chaos_2003]. 
 
 ::: {.callout-note title="Singularity"} 
 A **singularity** [^3] is when chaotic emergence on a structured intelligence system harms or enhances humans. I have some experience in all of these things, I cannot continue to build poor solutions as type `[kassandra]`. We need structured intelligence governance to bend the singularity to virtuous emergence while minimising harm.
@@ -111,14 +121,12 @@ I asked what data people could do to help. Kate Fleming said a big challenge was
 We have so many tools, data scientists love to build. How do we develop better interoperability for stakeholders?
 :::
 
-The oft-considered boring bits of data science---not the statistical algorithm applied (e.g., regression, random forests, natural language processing, image classification)---that is, documentation and tests, are where we have most mathematically and ethically challenging problems.
+The oft-considered boring bits of data science---not the statistical algorithm applied (e.g., regression, random forests, natural language processing, image classification)---say, accessibility, interoperability, documentation, tests---are where we have most mathematically and ethically challenging problems.
 
 
 ## Critical theory 
 
-Critical theory has dealt with ethics for decades, I spent my twenties immersed in the  world of critical  theory. 
-
-I spent untold hours in reading and in conversation with the kinds of people who were writing about how society understands cultural norms through analysing film, music, and books. The coolest cats were talking [category theory and Badiou](https://www.torrossa.com/it/resources/an/5209982) back in the '00s.
+In the 00s, I spent untold hours reading and in conversation with people who were writing about how society understands cultural norms through analysing film, music, and books. The coolest cats in my circle were talking [category theory and Badiou](https://www.torrossa.com/it/resources/an/5209982).
 
 ::: {.callout-tip title="Ceci n'est pas une datum"}
 In particular, I spent a great deal of time thinking about the distinction between a represented thing and its representation, and what that tells us about how the person who creates the representation thinks about the represented thing. 
@@ -215,7 +223,7 @@ I am exactly as good at each  skill I have as the time I have put into  practici
 :::
 
 ::: {.callout-caution title="Data practitioners need the help of the formal community"}
-CT people, your math is plenty developed—it's imperative the mathematically literate make it useful to those with less formal training. We need dimension-reducing ways of measuring the validity of computational systems of inquiry urgently[^8].
+CT and chaos people, your math is plenty developed—it's imperative the mathematically literate make it useful to those with less formal training. We need dimension-reducing ways of measuring the validity of computational systems of inquiry urgently[^8].
 :::
 
 [^8]: Mathematicians are currently favouring depth in algorithmic logic with little engagement across disciplines. I think that's going in the wrong direction. It behoves both critical and category theory to explain the basics of each other's fields and learn to interoperate. Arrows over objects. And the arrows between categories of thinking are more important than arrows within them—including category theory. 
@@ -238,7 +246,7 @@ And we gotta bring the devs, they're the people building. Right now there's an u
 My primary income was as an independent musician for twenty years, I started when I was seventeen years old. I have only been full-time data scientist for about five years. 
 
 ::: {.callout-tip title="Follow the score"}
-In music, we would *not get the next gig* if we did not deliver! That meant every musician showed up and played the score, follow the chart, as it was written, on the instrument assigned. And there was always a cheaper piano teacher down the road.
+In music, we would *not get the next gig* if we did not show up, played the score, follow the chart, as it was written, following the conductor's direction, on the instrument assigned. And there was always a cheaper piano teacher down the road.
 :::
 
 
@@ -367,7 +375,7 @@ Effective accountability in leadership would be a good start. Structured intelli
 
 
 ::: {.callout-tip title="Mankeeping"}
-Another social force is a [mankeeping](https://www.theguardian.com/lifeandstyle/2025/jun/16/mankeeping-why-single-women-are-giving-up-dating) crisis wherein women are eschewing relationship rather than interoperate with someone who hasn't done foundational work in healthy communication---I feel statements, comprommise on one issue, etc., which can be found in a multitude of pop psychology resources. And the data industry is almost entirely dominated by white cishet men. Many men have not been socialised to work toward and end goal that does not center their ideas. This is making which tools or techniques they stake their identity on unncessaary battlegrouns in development.
+Another social force is a [mankeeping](https://www.theguardian.com/lifeandstyle/2025/jun/16/mankeeping-why-single-women-are-giving-up-dating) crisis wherein women are eschewing relationship rather than interoperate with someone who hasn't done foundational work in healthy communication---I feel statements, comprommise on one issue, etc., which can be found in a multitude of pop psychology resources. And the data industry is almost entirely dominated by white cishet men. Many men have not been socialised to work toward an end goal that does not center their ideas. And there are a lot of new ideas emerging in methodologies now, for example, the shift to the modern data stack.
 :::
 
 ::: {.callout-tip title="Veritcal and horizontal interoperability"}
@@ -426,7 +434,80 @@ Data testing is a central tool in rendering a structured intelligence system *go
 
 [This involves test architecture in semantically-defined observable layers](consulting.qmd).
 
-This yaml can then be linked on a branch via a kanban ticket, with pull-request tagged with ticket number. 
+```yml
+
+exposures:
+  - name: Analysis
+    owner [TODO LOOK THIS UP]: Someone overburdened
+    description: Needed by [these people] to do [some analyses]...
+    I forget what goes here:
+      - this_analytic_entity
+      - that_analytic_entity 
+
+
+sources: 
+  - name: this_source
+    description: We need this for this_entity analyses...
+    data_tests:
+      - unique
+        config:
+          columns: "source_unique_a || source_unique_b"
+      - not_null
+        config:
+          columns: "source_unique_a || source_unique_b"
+      - freshness:
+        config:
+          ... I forget, honestly, will look up
+
+
+models: 
+  - name: this_source_entity
+    description: We understand this model in 
+      terms of these columns...
+    columns:
+      - name: entity_id
+        data_tests:
+          - unique
+          - not_null
+      - name: source_id
+        data_tests:
+          - not_null
+  - name: this_data_entity
+    description: This data entity comprises a 
+      summary of this_entity sources, 
+      where each row may thought of as....
+    columns:
+      - name: entity_id
+        data_tests:
+          - unique
+          - not_null
+      - name: source_id
+        data_tests:
+          - not_null
+  - name: this_analytic_entity
+    description: This analytical model provides 
+    observations associated with this_data_entity, 
+    enriched with attributes from another_entity. 
+    It is in production to....
+    columns: 
+      - name: this_data_entity
+        description: This data entity comprises a 
+          summary of this_entity sources, 
+          enriched with that_entity attributes, 
+          where each row may thought of as....
+        data_tests:
+          - unique
+          - not_null
+      - name: source_id
+        data_tests:
+          - not_null
+
+        
+  
+  
+```
+
+This yaml can then be linked on a branch via a kanban ticket, with pull-request tagged with ticket number, ar attached as a file. 
 
 :::
 
@@ -451,7 +532,7 @@ Gigging musicians must show up, play the score, exactly as written, on the instr
 
 If the conductor is conducting a different piece of music, unheard by the instrumentalists, they're not in the band.
 
-Jazz musicians improvise, however, they follow a score made of predictably structured phrases, for example, a $II-V-I$ progression in the dominant, then the tonic, $\to II/V \to V/V \to I/V \to I/V \to II \to V \to I \to I \to$. However, a classical musician might think of a $II-V-I$ in terms of a composition of interrupted cadence and perfect cadence, first in the dominant, then the tonic.
+Jazz musicians improvise, however, they follow a score made of predictably structured phrases, for example, a $II-V-I$ progression in the dominant, then the tonic, $\to II/V \to V/V \to I/V \to I/V \to II \to V \to I \to I \to$. However, a classical musician might think of a $II-V-I$ in terms of a composition $\text{Dominant}(\text{Imperfect} \to \text{Perfect}) \to \text{Tonic}(\text{Imperfect} \to \text{Perfect})$ of Imperfect cadence and perfect cadence, first in the dominant, then the tonic.
 
 In either genre, instrumentalists are trained to wield dissonance and consonance according to the conductor's direction. Composers write the instructions the conductor follows.
 
@@ -511,9 +592,17 @@ All tools do this in different ways. The Good Enough Lab uses JIRA with GTD prin
 
 How to view and use the system is the score.
 
+## Composers & conductors  
+
 - Plan - Dependency graph - for viewing the different levels of the graph, consulting with different ontologies
 - Plan - Timeline: for editing arrows 
 - Plan - List: for editing tickets
+- Team achievement dashboards
+
+## Instrumentalists
+
+- Individual kanban 
+- Personal achievement dashboards
 
 We need to onboard management to dimension-reducing, graph-oriented conceptualisation, or they will avoid interoperating with the most critical component of development, the score. 
 
@@ -521,23 +610,27 @@ We need to onboard management to dimension-reducing, graph-oriented conceptualis
 
 ::: {.callout-tip title="In development"}
 
+- Pressabuttonnow! The AI & Analytics Job simulator, a text-based video game powered by a finite state automata of postits on my wall
 - Questionable Analytical Observations Paper from the Give a Dam  project, close to completion, summarises use case in .Rmd for reproducible scientific research
 - Formalise structured intelligence governance such that data analysis is FAIR (Singularities paper)
 - Develop grammar and build iteratively:
   - JIRA-DBT-Dagstar-Github stack to this site showing dimension-reduced analyses on our development plan
   - JIRA-DBT-Dagstar-Github stack to this site showing dimension-reduced analyses on our codebase
 - and ever develop our skills for justice in systems of inquiry
+
 :::
 
 ::: {.callout-tip title="O-Ren Ishii's monologue"}
 
 No subject will ever be under taboo.
 
-Except, of course the assumption that:
+Except, of course, any assumption that:
 
+- *artificial intelligence* is highest priority
 - raw data is a substitute for defining analytics delivery;
 - the blood wrought from exploitation has embittered me;
-- systems do not need to care about people.
+- systems do not need to care about people;
+- doing everything in this page can be "automated" by one low-titled person.
 
 <iframe src="https://www.youtube.com/embed/OLvz5E61UNs?si=e6_vL6YiCTrvp7AJ&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
