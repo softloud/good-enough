@@ -19,7 +19,7 @@ There's a great deal of talk around both ethics in technology and "AI (artificia
 
 > A government is a body of people, usually, notably ungoverned. -- *Shepherd Book* (@whedon_firefly_2003)
 
-We will explore different fields I've experienced, as [an indepndent musician](https://www.linkedin.com/in/charles-t-gray/), that do not get enough attention in how to design systems that care about people.
+We will explore different fields I've experienced, as [an independent musician](https://www.linkedin.com/in/charles-t-gray/), that do not get enough attention in how to design systems that care about people.
 
 ::: {.callout-important title="Opinionatedly-inclusive automation"}
 What the world needs now is not innovation, but **opinionatedly-inclusive automation**.
@@ -31,7 +31,7 @@ So that people and computational tools can interoperate for [chaotic good](https
 
 And we can't design the best system at inception [@wilson_best_2014], we need to start with good enough [@wilson_good_2017]. 
 
-For people to know if they are doing a good enough job, they need a **score** to follow, analogous to what session musicians require.
+For people to know if they are doing a good enough job they need a score to follow, analogous to what session musicians require.
 
 ::: {.callout-tip title="Give me the dot points"}
 *tldr $\to$ table of contents.* 
@@ -46,7 +46,7 @@ Otherwise, spin up the soundtrack[^7], and strap in for an [Undisciplined take](
 [^7]: You can hear in 1940s musicals optimism about Roosevelt's New Deal, however, a weariness from the Great Depression, and a mounting horror at WWII.
 
 ::: {.callout-warning title="Grrl talk"}
-It's time for some [grrl talk](../blog/2025-07-09-paradox.qmd) on "ethical AI". 
+It's time for some [grrl talk](../blog/2025-07-09-paradox.qmd) on "ethical AI". Working in data science sounds like [Orchestra Fail](https://www.youtube.com/watch?v=sOUsbtUrXHk&list=RDsOUsbtUrXHk&start_radio=1), I need you to hear it, too. We can solve this, people.
 :::
 
 ## Structured intelligence governance
@@ -91,7 +91,7 @@ We can work this out people. Bend the singularity in humanity's favour[^2].
 
 ## Asimov's Laws --> ESG -> UN SDGs 
 
-Asimov is proposed governance lawes for automata, that is, robots [@asimov_i_1950].  
+In the '50s, Asimov proposed governance laws for automata, that is, robots [@asimov_i_1950].  
 
 :::{.callout-note title="The Three Laws of Robotics"}
 1. A robot may not injure a human being or, through inaction, allow a human being to come to harm.
@@ -151,7 +151,7 @@ For example, Edward Said's *Orientalism* explains how hegemonies of oppression c
 :::
 
 ::: {.callout-tip title="Second-wave Hong Kong cinema"}
-I learnt about how [second wave Hong Kong cinema](https://www.movementsinfilm.com/hong-kong-new-wave) can be thought of as a societal meditation on diasporic identity. There's an in-betweenness [@yue] that permeates, a sense of forboding of what the end of the [Sino-British Joint Declaration](https://en.wikipedia.org/wiki/Sino-British_Joint_Declaration) will mean. 
+I learnt about how [second wave Hong Kong cinema](https://www.movementsinfilm.com/hong-kong-new-wave) can be thought of as a societal meditation on diasporic identity. There's an in-betweenness [@yue] that permeates, a nostalgic melancholy at what the end of the [Sino-British Joint Declaration](https://en.wikipedia.org/wiki/Sino-British_Joint_Declaration) will mean. 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/f1w4qnfux-o?si=-WBGPzF0bBPyj41w&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -323,10 +323,7 @@ Stuck. Forever precarious.
 
 ---
 
-<iframe src="/img/subprime.pdf" width="100%" height="450px">
-</iframe>
-
-**Figure:** *The Subprime Primer* (original source: [esp.org](http://www.esp.org/humor/subprime.pdf)).  
+The Subprime Primer (original source: [esp.org](http://www.esp.org/humor/subprime.pdf)).  
 
 ---
 
@@ -525,16 +522,22 @@ But ya **gotta** have a score everyone can read.
 Automation is not something you can buy, it's a culture change.
 :::
 
-## The score
+## The score {.label="score"}
 
 ::: {.callout-tip title="A single source of truth for everyone"}
 Gigging musicians must show up, play the score, exactly as written, on the instrument assigned. Not toot the flugal horn to a different tune, in a different key. Or we don't get the next gig. 
 
 If the conductor is conducting a different piece of music, unheard by the instrumentalists, they're not in the band.
 
-Jazz musicians improvise, however, they follow a score made of predictably structured phrases, for example, a $II-V-I$ progression in the dominant, then the tonic, $\to II/V \to V/V \to I/V \to I/V \to II \to V \to I \to I \to$. However, a classical musician might think of a $II-V-I$ in terms of a composition $\text{Dominant}(\text{Imperfect} \to \text{Perfect}) \to \text{Tonic}(\text{Imperfect} \to \text{Perfect})$ of Imperfect cadence and perfect cadence, first in the dominant, then the tonic.
+Jazz musicians improvise, however, they follow a score made of predictably structured phrases, for example, a $II-V-I$ progression in the dominant, then the tonic, $\to II/V \to V/V \to I/V \to I/V \to II \to V \to I \to I \to$. However, a classical musician might think of a $II-V-I$ in terms of a composition $\text{Dominant}(\text{Imperfect} \to \text{Perfect}) \to \text{Tonic}(\text{Imperfect} \to \text{Perfect})$ of Imperfect cadence and perfect cadence, first in the dominant, then the tonic. 
 
 In either genre, instrumentalists are trained to wield dissonance and consonance according to the conductor's direction. Composers write the instructions the conductor follows.
+
+Understanding phrasing in any genre is critical. Let us take jazz orchestra musicians from the swing era (I specialise in [**balboa**](https://www.youtube.com/watch?v=Sb6I2OXeOy0)) as exemplar. These instrumentalists didn't necessarily know every song, but they could play because it was predictable that the music would comprise either a twelve-bar blues or a thirty-two-bar standard, of four bar or eight bar phrases, respectively, each of which had a cadential turnaround of dissonance at the end.
+
+Functional harmony has conceptualised music as nothing but the [balance of tension (dissonance) and resolution (consonance)](https://www.beyondmusictheory.org/the-essentials-of-functional-harmony/) for hundreds of years.
+
+The Good Enough Lab are composers who also play in the pit, we collaborate with conductors and instrumentalists to make algorithmic music.
 
 :::
 
