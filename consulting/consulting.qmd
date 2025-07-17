@@ -60,7 +60,80 @@ Our Structured Intelligence Governance starter kit, tailored to **your stack**, 
 
 > We make your system smarter—without making your people invisible.
 
----
+
+```yml
+
+exposures:
+  - name: Analysis
+    owner [TODO LOOK THIS UP]: Someone overburdened
+    description: Needed by [these people] to do [some analyses]...
+    I forget what goes here:
+      - this_analytic_entity
+      - that_analytic_entity 
+
+
+sources: 
+  - name: this_source
+    description: We need this for this_entity analyses...
+    data_tests:
+      - unique
+        config:
+          columns: "source_unique_a || source_unique_b"
+      - not_null
+        config:
+          columns: "source_unique_a || source_unique_b"
+      - freshness:
+        config:
+          ... I forget, honestly, will look up
+
+
+models: 
+  - name: this_source_entity
+    description: We understand this model in 
+      terms of these columns...
+    columns:
+      - name: entity_id
+        data_tests:
+          - unique
+          - not_null
+      - name: source_id
+        data_tests:
+          - not_null
+  - name: this_data_entity
+    description: This data entity comprises a 
+      summary of this_entity sources, 
+      where each row may thought of as....
+    columns:
+      - name: entity_id
+        data_tests:
+          - unique
+          - not_null
+      - name: source_id
+        data_tests:
+          - not_null
+  - name: this_analytic_entity
+    description: This analytical model provides 
+    observations associated with this_data_entity, 
+    enriched with attributes from another_entity. 
+    It is in production to....
+    columns: 
+      - name: this_data_entity
+        description: This data entity comprises a 
+          summary of this_entity sources, 
+          enriched with that_entity attributes, 
+          where each row may thought of as....
+        data_tests:
+          - unique
+          - not_null
+      - name: source_id
+        data_tests:
+          - not_null
+
+        
+  
+  
+```
+
 
 ### Change Management through FAIR Audits
 
