@@ -19,7 +19,7 @@ There's a great deal of talk around both ethics in technology and "AI (artificia
 
 > A government is a body of people, usually, notably ungoverned. -- *Shepherd Book* [@whedon_firefly_2003]
 
-We will explore different fields I've experienced, as [an independent musician](https://www.linkedin.com/in/charles-t-gray/), that do not get enough attention in how to design systems that care about people.
+We will explore different fields I've experienced, as [an aspiring film music composer](https://www.linkedin.com/in/charles-t-gray/), that do not get enough attention in how to design systems that care about people.
 
 ::: {.callout-important title="Opinionatedly-inclusive automation"}
 What the world needs now is not innovation, but **opinionatedly-inclusive automation**.
@@ -32,6 +32,12 @@ So that people and computational tools can interoperate for [chaotic good](https
 And we can't design the best system at inception [@wilson_best_2014], we need to start with good enough [@wilson_good_2017]. 
 
 For people to know if they are doing a good enough job they need a score to follow, analogous to what session musicians require.
+
+
+::: {.callout-tip title="Show me the math"}
+In the final section, I get to the tricky part. We need a score to follow (data governance), that score requires a grammar (category theory), and ways of deciding if we like how it sounds (mathematical chaos). I'm trying to use functional harmony as well, would love some help, it's an awfully hard problem to compose, conduct, and play alone. 
+:::
+
 
 ::: {.callout-tip title="Give me the dot points"}
 *tldr $\to$ table of contents.* 
@@ -116,9 +122,15 @@ Structured intelligence systems include stacks of automata interoperating with p
 
 ::: {.callout-warning  title="ESG"}
 The European Commission will require companies to report on [environmental, social, and governance (ESG)](https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/esg-rating-activities_en), with fines levied for greenwashing and incorrect reporting. Thing is, the far greater cause of incorrect reporting is human error caused by epistemic drift in structured intelligence systems, not an individual's fraud. Either way, the European Commission do not have the summary measures required for making governance-level decisions about environmental, social, and governance analyses.
+
+Charles has enterprise experience in ESG reporting; *FAIR* was unheard of [@wilkinson_fair_2016].
 :::
 
-What rules do companies enact in ESG reporting to ensure [robust computational evidence synthesis](https://www.eshackathon.org/)?
+What rules do companies enact in ESG[^14] reporting to ensure [robust computational evidence synthesis](https://www.eshackathon.org/)?
+
+
+[^14]: Where is the data industry at with this? Any modern data stack methodology is dismissed as FAIRy talk. Engineers trust tools, so it needs to be served to them in opinionated features in their chosen stack.  
+
 
 ::: {.callout-important title="UN SDGs"}
 For example, this means efforts to achieve the [seventeen UN sustainable develop goals](https://sdgs.un.org/goals) will be undermined by insufficient evidence. But critical theorists have been talking about how to define hegemonies of oppression, wrought from erased arrows in systems, from pluralities of ontologies for decades.
@@ -242,7 +254,7 @@ I am exactly as good at each  skill I have as the time I have put into  practici
 :::
 
 ::: {.callout-caution title="Data practitioners need the help of the formal community"}
-CT and chaos people, your math is plenty developed—it's imperative the mathematically literate make it useful to those with less formal training. We need dimension-reducing ways of measuring the validity of computational systems of inquiry urgently[^8].
+CT and chaos people, your math is plenty developed—it's imperative the mathematically literate make it useful to those with less formal training. We need dimension-reducing ways of measuring the validity of computational systems of inquiry urgently[^8] this helps all developers optimise flow to  development and ways for composers and conductors to interoperate with the score. We need to formalise viewpoints, so that we know who the stories are for. What limited projections are surfacing in data development are *not ethical*, not by any framework, this is because the complexity of the directed graph, is shrugged off as too hard. 
 :::
 
 [^8]: Mathematicians are currently favouring depth in algorithmic logic with little engagement across disciplines. I think that's going in the wrong direction. It behoves both critical and category theory to explain the basics of each other's fields and learn to interoperate. Arrows over objects. And the arrows between categories of thinking are more important than arrows within them—including category theory. 
@@ -285,9 +297,8 @@ In plain speak. Decision makers have no way of knowing if the numbers decisions 
 
 [^11]: In almost fifteen years of being employed to answer questions using math, code, and data, I've never been able to have confidence in the answers to the questions due to isolation, chaotic development, and poor data. Found duplicates and missing data on all critical pipelines and this has never been addressed. You cannot implement "machine learning" and "artificial intelligence"---or whatever buzzword---until you sort out how to know if you can trust the answer.
 
-::: {.callout-important title="Ego is running rampant"}
+
 Data science is an unconducted choir of sopranos who each think it's *their* aria.
-:::
 
 ::: {.callout-tip title="The book people of *Farenheight 451*"}
 
@@ -490,9 +501,11 @@ Gigging musicians must show up, play the score, exactly as written, on the instr
 
 If the conductor is conducting a different piece of music, unheard by the instrumentalists, they're not in the band.
 
-Jazz musicians improvise, however, they follow a score made of predictably structured phrases, for example, a $II-V-I$ progression in the dominant, then the tonic, $\to II/V \to V/V \to I/V \to I/V \to II \to V \to I \to I \to$. However, a classical musician might think of a $II-V-I$ in terms of a composition $\text{Dominant}(\text{Imperfect} \to \text{Perfect}) \to \text{Tonic}(\text{Imperfect} \to \text{Perfect})$ of imperfect cadence and perfect cadence, first in the dominant, then the tonic. 
+Jazz musicians improvise, however, they follow a score made of predictably structured phrases, for example, a $II-V-I$ progression in the dominant, then the tonic, $\to II/V \to V/V \to I/V \to I/V \to II \to V \to I \to I \to$. However, a classical musician might think of this harmonic sequence in terms of a composition $\text{dominant}(\text{imperfect} \to \text{perfect}) \to \text{tonic}(\text{imperfect} \to \text{perfect})$ of imperfect cadence and perfect cadence, first in the dominant, then the tonic. 
 
-Under first species counterpoint, we may well think simply dominant $\to$ tonic. But look, let's not start me my newborn thoughts of categories of species counterpoint... *Seven Sketches* is really doing a number on me [@fong], the logo turtle in my mind says, 
+Under first species counterpoint, we may well think simply dominant $\to$ tonic[^13]. 
+
+[^13]: But look, let's not start me my newborn thoughts of categories of species counterpoint... *Seven Sketches* is really doing a number on me [@fong], the logo turtle in my mind says, 
 
 ![By NightElfik - Own work, CC0, https://commons.wikimedia.org/w/index.php?curid=14738522](https://upload.wikimedia.org/wikipedia/commons/0/09/KochTurtleAnim.gif)
 
@@ -578,6 +591,16 @@ How to view and use the system is the score.
 - Personal achievement dashboards
 
 We need to onboard management to dimension-reducing, graph-oriented conceptualisation, or they will avoid interoperating with the most critical component of development, the score. 
+
+The good enough lab develops solutions with collaborators and sandboxes methodologies with systemic injustice research partners.
+
+## Everyone does all roles to some extent
+
+Teams need to have a fair amount of compositional autonomy within their subgraph, so will have compositional needs at this level. At this level, it's more analogous to band practice, where you are also writing songs together. Still, there's a chart, often on a grubby napkin or whatever, but there's a chart. And there are those that drive the creative vision, compose, and those who come to play.
+
+All agile-oriented project planning tools (e.g., JIRA, Clickup, Monday) have ways of saving views with filters. All have dashboard and summary views. There's always a way of finding a map if you don't fight the tool. 
+
+By formalising these projections we can examine what arrows have been erased, what stories we are telling. It's better than a frontier psychiatry of orchestra fail.
 
 :::
 
