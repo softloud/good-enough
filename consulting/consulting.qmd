@@ -19,7 +19,7 @@ We bring opinionated inclusivity, test-driven development, and grounded migratio
 We’re not here to optimise your dashboards.  
 We’re here to help you build a system of analytical inquiry you can trust.
 
----
+$\to$ [Learn more about good enough methodology research](../research/research.qmd)
 
 ### Data Architecture Strategy for Migration & Inclusive Automation
 
@@ -57,6 +57,8 @@ Our Structured Intelligence Governance starter kit, tailored to **your stack**, 
 - [FAIR](https://www.go-fair.org/fair-principles/) data entity modelling (we favour DBT, git-based, cloud-native approaches)  
 - Embedded validation and observability  
 - ESG-aligned governance scaffolds
+
+$\to$ [More on ESG](esg.qmd)
 
 > We make your system smarter—without making your people invisible.
 
