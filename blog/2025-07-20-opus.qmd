@@ -1,0 +1,44 @@
+---
+title: Pieces of music
+subtitle: Outputs of scientific ensemble   
+code-fold: true
+date: "July 20 2025"
+author: 
+  - name: Dr Charles T. Gray, Datapunk
+    orcid: 0000-0002-9978-011X
+    affiliations:
+      - name: Good Enough Data & Systems Lab
+bibliography: ../blog.bib
+csl: ../elsevier-vancouver.csl
+image: ../good-enough-logo.png
+---
+
+## What are my current pieces?
+
+In the twenty-odd years I took music craft really seriously, I considered it practicing if I had a stack of pieces with which I was working toward some technical goals, usually with a teacher.
+
+Historically, I've stumbled from one post to another, without discernment, taking the next contract offered. It's all fun. Research software engineering, data science, enterprise data engineering. I like to build math in code, scratches an itch. 
+
+## Questions
+
+I have a few questions to tease out.
+
+- What is my own structured intelligence system?
+- What is the status of my structured intelligence system?
+- What are the pieces I'm working on?
+
+## Dagster-dbt turtles all the way down
+
+
+### The Give a Dam modern data stack piece
+
+I have hit a point of refactoring where it's worth building a dbt pipe for Garima's project. The data extraction is compasses several questions and I'm tired of working in such an unstructured way. Garima is happy to work with surface layer data; I just need to make the pipeline semntically observable to her, so port the architecture to DAGster-DBT.
+
+### The self-SIG piece
+
+I need a separate dagster-dbt pipeline for my own jira and codebase analyses, extract metadata from dagstar and dbt, join to jira. But crucially this is separate.
+
+## In agile
+
+So now I need to ensure these two outcomes are instantiated as highest-nodes in the planning graph, then they will pop in the story of what I'm doing. 
+
