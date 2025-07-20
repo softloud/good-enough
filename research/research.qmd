@@ -9,12 +9,29 @@ Dr Gray and Dr Gupta drive conservation justice research partnerships. This prov
 
 → [Decolonizing Sustainability: Indigenous and Local Conservation Systems from India in the Global Climate and Biodiversity Agenda](https://osf.io/preprints/socarxiv/nhjrz_v1) 
 
+::: {.callout-tip title="Give a Dam about UN SDG tradeoffs"}
+In development, we have the give a dam project. This involves analysis of survey data. 
+
+In this case, the obstacle is extraction of semantic attributes, that is, things we know about respondents in the survey.
+
+
+![](https://github.com/softloud/gg/raw/main/dot/fair-structure.svg)
+
+Am now building the DBT-dagstar pipeline from [this .Rmd proof of concept](https://github.com/softloud/gg/blob/main/README.md). 
+
+:::
 
 ## Methodological work
 
 $\to$ [Why we should play algorithms like music](../consulting/trauma.qmd)
+
 $\to$ [On a Plurality of Ontologies: Reparative Justice in Broken Systems](https://osf.io/preprints/socarxiv/m9n6a_v1)
 
+::: {.callout-tip title="Forthcoming publications"}
+
+Questionable Analytical Observations — on bad data and what to do about it — and Structured Intelligence Governance, a call to formalise the musical score of ensemble algorithms, are both well underway. The text is largely complete; I’m now building production-grade visualisation tools to support their arguments.
+
+:::
 
 ## Founding research
 
@@ -64,7 +81,7 @@ It's not enough for me to theorise, I always need to instantiate.
 - [digmus](https://github.com/softloud/digmus#digmus) for animating a melody as a graph object (useR Group Copenhagen)
 - [dbt career lineage](https://github.com/softloud/dbt_career_lineage) a dbt pipeline that shows my career as a dbt graph (DBT Meetup Copenhagen)
 - [supermetroid](https://softloud.github.io/supermetroid/) analysis of open video game player data (PyData Copenhagen)
-- [retention](https://softloud.github.io/retention/) simulate video game play behaviour data to explore good enough analytics for that industry
+- [retention](https://softloud.github.io/retention/) simulate gameplay data to explore good enough analytics for video games 
 
 ### Select publications
 
