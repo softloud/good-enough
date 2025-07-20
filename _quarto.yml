@@ -22,25 +22,6 @@ website:
             href: research/research.qmd
           - text: Development Blog
             href: blog.qmd
-            menu:
-              - text: One Art - 2025-04-16
-                href: blog/2025-04-16-one-art.qmd
-              - text: governance - 2025-03-31
-                href: blog/2025-03-31-governance.qmd
-              - text: button - 2025-03-24
-                href: blog/2025-03-24-button.qmd
-              - text: Cave - 2025-03-23
-                href: blog/2025-03-23-cave.qmd
-              - text: Cave - 2025-03-20
-                href: blog/2025-03-20-cave.qmd
-              - text: Login - 2025-03-19
-                href: blog/2025-03-18.qmd
-              - text: Phone - 2025-03-17
-                href: blog/2025-03-17-button.qmd
-              - text: Button - 2025-03-15
-                href: blog/2025-03-15-button.qmd
-              - text: Button - 2025-03-14
-                href: blog/2025-03-14-button.qmd
       - text: Ethics
         href: consulting/trauma.qmd
     right:
