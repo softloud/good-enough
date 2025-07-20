@@ -2,7 +2,6 @@
 title: Good Enough Research
 ---
 
----
 
 ## Systemic Injustice in Conservation
 
@@ -10,13 +9,12 @@ Dr Gray and Dr Gupta drive conservation justice research partnerships. This prov
 
 → [Decolonizing Sustainability: Indigenous and Local Conservation Systems from India in the Global Climate and Biodiversity Agenda](https://osf.io/preprints/socarxiv/nhjrz_v1) 
 
----
 
 ## Methodological work
 
-→ [On a Plurality of Ontologies: Reparative Justice in Broken Systems](https://drive.google.com/file/d/18PbqXzNXSJCiT-SFDncpBU9oFFLd5EPK/view?usp=sharing)
+$\to$ [Why we shold play algorithms like music](../consulting/trauma.qmd)
+$\to$ [On a Plurality of Ontologies: Reparative Justice in Broken Systems](https://osf.io/preprints/socarxiv/m9n6a_v1)
 
----
 
 ## Founding research
 
@@ -38,15 +36,12 @@ Charles calls all this:
 
 > math, data, and code.
 
----
-
 ### Dr Gray's doctoral thesis on data science governance
 
 → [Towards a Measure of code::proof: A toolchain walkthrough for computationally developing a statistical estimator](https://opal.latrobe.edu.au/articles/thesis/Towards_a_Measure_of_code_proof_A_toolchain_walkthrough_for_computationally_developing_a_statistical_estimator/14099561/1?file=26590526)
 
 The Good Enough Lab is heavily influenced by Charles' research in systems epistemology; how can we **trust** the math, data, and code are answering the question we intended?
 
----
 
 ### Math
 
@@ -54,12 +49,25 @@ The Good Enough Lab draws on Dr Gray's training in abstract algebra and mathemat
 
 → [The Homomorphism Lattice Induced by a Finite Algebra](https://arxiv.org/abs/1603.00129)
 
----
+### Data simulation & research software engineering
+
+It's not enough for me to theorise, I always need to instantiate.
+
+- [simeta](https://softloud.github.io/simeta/) for simulating  meta-analysis data
+- [varameta](https://github.com/softloud/varameta#varameta) for estimating the variance of the sample median
+- [parameterpal](https://softloud.github.io/parameterpal/) for interpretable beta distribution parameters
+- [pcheck](https://github.com/softloud/pcheck) shiny app for exploring possible p-values 
+- [panda](https://github.com/softloud/panda#panda) visualising pandas as scatter plots
+- [good enough site source](https://github.com/softloud/good-enough) this website is made using quarto
+- [digmus](https://github.com/softloud/digmus#digmus) for animating a melody as a graph object
+- [dbt career lineage](https://github.com/softloud/dbt_career_lineage) a dbt pipeline that shows my career as a dbt graph
+- [supermetroid](https://softloud.github.io/supermetroid/) for PyData Copenhagen, analysis of open video game player data
+- [retention](https://softloud.github.io/retention/) simulate video game play behaviour data to explore good enough analytics for that industry
 
 ### Data & Code
 
 → [Truth, Proof, and Reproducibility: There's no counterattack for the codeless](https://arxiv.org/pdf/1907.05947)
 
-→ [code::proof: Prepare for Most Weather Condtiions](https://link.springer.com/chapter/10.1007/978-981-15-1960-4_2)
+→ [code::proof: Prepare for Most Weather Condtions](https://link.springer.com/chapter/10.1007/978-981-15-1960-4_2)
 
 → [Novel tools and methods for designing and wrangling multifunctional, machine-readable evidence synthesis databases](https://link.springer.com/article/10.1186/s13750-021-00219-x)
