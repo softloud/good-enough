@@ -12,7 +12,7 @@ Dr Gray and Dr Gupta drive conservation justice research partnerships. This prov
 
 ## Methodological work
 
-$\to$ [Why we shold play algorithms like music](../consulting/trauma.qmd)
+$\to$ [Why we should play algorithms like music](../consulting/trauma.qmd)
 $\to$ [On a Plurality of Ontologies: Reparative Justice in Broken Systems](https://osf.io/preprints/socarxiv/m9n6a_v1)
 
 
@@ -49,7 +49,9 @@ The Good Enough Lab draws on Dr Gray's training in abstract algebra and mathemat
 
 → [The Homomorphism Lattice Induced by a Finite Algebra](https://arxiv.org/abs/1603.00129)
 
-### Data simulation & research software engineering
+## Data simulation, visualisation, and scientific computing
+
+### Code
 
 It's not enough for me to theorise, I always need to instantiate.
 
@@ -59,12 +61,12 @@ It's not enough for me to theorise, I always need to instantiate.
 - [pcheck](https://github.com/softloud/pcheck) shiny app for exploring possible p-values 
 - [panda](https://github.com/softloud/panda#panda) visualising pandas as scatter plots
 - [good enough site source](https://github.com/softloud/good-enough) this website is made using quarto
-- [digmus](https://github.com/softloud/digmus#digmus) for animating a melody as a graph object
-- [dbt career lineage](https://github.com/softloud/dbt_career_lineage) a dbt pipeline that shows my career as a dbt graph
-- [supermetroid](https://softloud.github.io/supermetroid/) for PyData Copenhagen, analysis of open video game player data
+- [digmus](https://github.com/softloud/digmus#digmus) for animating a melody as a graph object (useR Group Copenhagen)
+- [dbt career lineage](https://github.com/softloud/dbt_career_lineage) a dbt pipeline that shows my career as a dbt graph (DBT Meetup Copenhagen)
+- [supermetroid](https://softloud.github.io/supermetroid/) analysis of open video game player data (PyData Copenhagen)
 - [retention](https://softloud.github.io/retention/) simulate video game play behaviour data to explore good enough analytics for that industry
 
-### Data & Code
+### Select publications
 
 → [Truth, Proof, and Reproducibility: There's no counterattack for the codeless](https://arxiv.org/pdf/1907.05947)
 
