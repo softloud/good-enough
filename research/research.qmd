@@ -1,0 +1,92 @@
+---
+title: Good Enough Research
+---
+
+
+## Systemic Injustice in Conservation
+
+Dr Gray and Dr Gupta drive conservation justice research partnerships. This provides a sandbox for the Good Enough Lab to develop methodologies, creating a virtuous cycle between research for social good and the tech industry. 
+
+→ [Decolonizing Sustainability: Indigenous and Local Conservation Systems from India in the Global Climate and Biodiversity Agenda](https://osf.io/preprints/socarxiv/nhjrz_v1) 
+
+::: {.callout-tip title="Give a Dam about UN SDG tradeoffs"}
+In development, we have the give a dam project. This involves analysis of survey data. 
+
+In this case, the obstacle is extraction of semantic attributes, that is, things we know about respondents in the survey.
+
+
+![](https://github.com/softloud/gg/raw/main/dot/fair-structure.svg)
+
+Am now building the DBT-dagstar pipeline from [this .Rmd proof of concept](https://github.com/softloud/gg/blob/main/README.md). 
+
+:::
+
+## Methodological work
+
+$\to$ [Why we should play algorithms like music](../consulting/trauma.qmd)
+
+$\to$ [On a Plurality of Ontologies: Reparative Justice in Broken Systems](https://osf.io/preprints/socarxiv/m9n6a_v1)
+
+::: {.callout-tip title="Forthcoming publications"}
+
+Questionable Analytical Observations — on bad data and what to do about it — and Structured Intelligence Governance, a call to formalise the musical score of ensemble algorithms, are both well underway. The text is largely complete; I’m now building production-grade visualisation tools to support their arguments.
+
+:::
+
+## Founding research
+
+> Select publications. 
+
+→ [Check out Dr Gray's Google Scholar profile for a full publication list](https://scholar.google.com/citations?user=7ZGTepkAAAAJ&hl=en)
+
+The Lab's methodologies are fundamentally shaped by Dr Charles T. Gray's scientific research. 
+
+Dr Gray began working in systems epistemology in 2012, what she does for a living has been rebranded several times in tech hype cycles.
+
+- big data
+- informatics
+- data science
+- machine learning
+- artificial intelligence
+
+Charles calls all this:
+
+> math, data, and code.
+
+### Dr Gray's doctoral thesis on data science governance
+
+→ [Towards a Measure of code::proof: A toolchain walkthrough for computationally developing a statistical estimator](https://opal.latrobe.edu.au/articles/thesis/Towards_a_Measure_of_code_proof_A_toolchain_walkthrough_for_computationally_developing_a_statistical_estimator/14099561/1?file=26590526)
+
+The Good Enough Lab is heavily influenced by Charles' research in systems epistemology; how can we **trust** the math, data, and code are answering the question we intended?
+
+
+### Math
+
+The Good Enough Lab draws on Dr Gray's training in abstract algebra and mathematical chaos.
+
+→ [The Homomorphism Lattice Induced by a Finite Algebra](https://arxiv.org/abs/1603.00129)
+
+## Data simulation, visualisation, and scientific computing
+
+### Code
+
+It's not enough for me to theorise, I always need to instantiate.
+
+- [simeta](https://softloud.github.io/simeta/) for simulating  meta-analysis data
+- [varameta](https://github.com/softloud/varameta#varameta) for estimating the variance of the sample median
+- [parameterpal](https://softloud.github.io/parameterpal/) for interpretable beta distribution parameters
+- [pcheck](https://github.com/softloud/pcheck) shiny app for exploring possible p-values 
+- [panda](https://github.com/softloud/panda#panda) visualising pandas as scatter plots
+- [good enough site source](https://github.com/softloud/good-enough) this website is made using quarto
+- [digmus](https://github.com/softloud/digmus#digmus) for animating a melody as a graph object (useR Group Copenhagen)
+- [dbt career lineage](https://github.com/softloud/dbt_career_lineage) a dbt pipeline that shows my career as a dbt graph (DBT Meetup Copenhagen)
+- [supermetroid](https://softloud.github.io/supermetroid/) analysis of open video game player data (PyData Copenhagen)
+- [retention](https://softloud.github.io/retention/) simulate gameplay data to explore good enough analytics for video games 
+
+### Select publications
+
+→ [Truth, Proof, and Reproducibility: There's no counterattack for the codeless](https://arxiv.org/pdf/1907.05947)
+
+→ [code::proof: Prepare for Most Weather Condtions](https://link.springer.com/chapter/10.1007/978-981-15-1960-4_2)
+
+→ [Novel tools and methods for designing and wrangling multifunctional, machine-readable evidence synthesis databases](https://link.springer.com/article/10.1186/s13750-021-00219-x)
