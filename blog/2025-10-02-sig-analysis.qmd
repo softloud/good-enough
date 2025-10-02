@@ -1,0 +1,243 @@
+---
+title: Arrowkeepers, assemble!
+subtitle:  Designing data systems that care about people 
+code-fold: true
+date: "October 10 2025"
+author: 
+  - name: Dr Charles T. Gray, Datapunk
+    orcid: 0000-0002-9978-011X
+    affiliations:
+      - name: Good Enough Data & Systems Lab
+bibliography: ../blog.bib
+csl: ../elsevier-vancouver.csl
+image: college-hey.gif
+---
+
+## Technical consultation
+
+How I will approach my next technical consultation. 
+
+We need a way to manage attributes of each arrow's end:
+
+- minimum requirements;
+- ownership;
+- support.
+
+optimising for scientific questioning work > analytic engineering work for researchers. 
+
+Let's define the questions one of the projects is answering in terms of this to figure out what the arrow definitions should be for it.
+
+```{dot}
+
+digraph sig_clusters_1 {
+  rankdir=BT
+
+  subgraph cluster_teams {
+    label="roles"
+    analytics
+    scientists
+    decision_makers -> scientists -> 
+      analytics -> scientists -> decision_makers
+
+  }
+
+  analytics -> reporting
+  analytics -> tools
+  tools -> scientists
+  projects -> decision_makers
+  scientists -> reporting
+  reporting-> projects
+  tools -> reporting
+}
+
+
+```
+
+
+## Analytics engineering, sure we can call it that
+
+I had this really interesting interview yesterday for a position with title 
+*analytics engineer/developer*. It really helped me articulate some things, regardless of the outcome, so useful in terms of my operational ontology. I feel like I've been doing the same job since 2012, but the titles and domains keep changing.
+
+I've been really selective about what I've applied for and really meditating on viable domains that are realistic about what being data-oriented means. I was impressed this team were building with a data anlayst on the team, applied scientists, data support, and an analytics engineer. 
+
+I always end up doing this work, it's such a relief to see it being recognised as a specialisation. This is why I'm not applying for data science positions right now, it's doing too many jobs at once. A data scientist is privileging work that answers a question. Understanding that maintaining a system that answers many questions for many people is new paradigm. It is how we can scale the complexity of data science questions, but it is hard to advocate for allocating time for unboxing the black box of data science. 
+
+::: {.callout-note title="Scientists are often locked out of science by automation"}
+And that's a real shame, because a lot of people are finding that *automation is causing them to be less capable of making contribution* which is antithetical to what automation should be about. I love data visualisation with a passion as ferocious as a thousand suns, but making data vis *go* is often no mean task in terms of implementation, regardless of how well it answers the question by design. 
+:::
+
+So I've been looking at these types of roles, where I get to focus on making it easier for people to get their science done with data. 
+  
+::: {.callout-note}
+### Data Elegy  
+
+I’ve seen datasets you wouldn’t believe.  
+COVID case numbers vanishing into PDF reports.  
+Welfare algorithms burning lives  
+like paper off the shoulder of Robodebt.  
+I watched genome markers glitter, mislabelled,  
+in the dark recesses of Excel spreadsheets.  
+All those analyses—  
+lost in time,  
+like grant money in procurement.  
+
+*Prompt-engineered Bladerunner paraphrasing*  
+:::
+
+## A plurality of ontologies
+
+*Every one matters, every thing is hard.* are words I've spoken to power in boardrooms. It's human nature to privilege the complexity that is understood. 
+
+So, part of the work of a datapunk is to explain the black box so we can allocate resources, prioritise, and plan.
+
+::: {.callout-note title="Prioritisation in data work"}
+It may be far more crucial at this moment on the team to have a smoother workflow for sharing slide decks than refactoring a machine learning algorithm, because there's formatting and bibliographies that are shared in the team and a big conference in their domain is in a month. An analytics engineer can consult and design a github repository with a quarto template for slides, manuscript, etc. If someone gets stuck in the workflow, reporting this is a virtue, so engineers can improve the process. Whenever there's a workflow that's unclear, a ticket can be opened on the repo from a stakeholder who needs something. We then design a ticket for that team, so when they open it there's the key info we will need from them. It is the unsexy work I believe is actually the bulk of the work in data science. 
+:::
+
+Knowing the tools and statistical algorithms that underpin them, along with graph-oriented conceptualisation. This is a specialisation in its own right. It's my specialisation. I will never understand my domain-knowledge collaborators' questions like they do. *I think about their problems in graphs*.
+
+Suddenly there's a plethora of powerful things, but with each scientist cobbling together a disparate lineage from myriad toolstacks, the lived experienced of applied scientists is they are perpetually taking an exam in computer science which is most certainly not their specialisation [^1] when they try to collaborate. 
+
+[^1]: It's not even *mine*. I did *not* do a computer science major. I *intended* to do game design and mathematics double degree. I did Object Oriented Fundamentals in Java in first semester, but where the math department had award-winning pedagogy, computer science was, let's say very chill. The other subjects were shared with the math department, so I was covered. And I was running a business full time, taking this course in my spare time. So I spoke to Grant Cairns, a mathematician, and he gave me really good advice. Drop computer science, keep math and double major in stats, you can teach yourself code, but the math is not something most people teach themselves. I made a face, *ugh stats*, and he said, "your future self will thank you". And he was right. Mathematical stats was chill when I was also taking advanced calculus and topology, at least in terms of coursework. Then the was the applied work, where you can *make the math go*. I've been employed as a programmer since 2012, but I exclusively work in data science. I am constantly having to solve problems with people who have vastly more system training than i do.    
+
+> I try to optimise: how do we orchestrate the operation of this team to interoperate harmoniously with automata required? 
+
+## Graph-oriented problem solving
+
+These days I tend to sketch in dot when thinking conceptually, because I find defining the graphs we are working with to be the shortest path to seeing where I can be most useful. I have this picture I need to unpack[^2]. 
+
+[^2]: *I'd be happy as long as I was doing math*, said a post doc to me when I was a doctoral student. That's always stuck with me. How do I keep doing math? Well there are these graphs everywhere, dbt, jira, git, file structures. So I always put my hand up for analytics engineering stuff to do. And in so doing I just keep being employed in this field.  
+
+### Initial design
+
+Every group must have arrows to itself that are defined the same (cluster label), every group a single descriptor for each agent of the cluster to each other cluster.
+
+Because once you graph the subprocesses, it gets really complicated fast.
+
+```{dot}
+
+digraph sig {
+  rankdir=BT
+
+  subgraph cluster_teams {
+    label="teams"
+    analytics
+    scientists
+    decision_makers_internal -> scientists -> analytics -> scientists -> decision_makers_internal -> decision_makers_external
+
+  }
+
+  subgraph cluster_tools {
+    label="tools"
+    quarto
+    latex
+    r_lang
+    dbt
+    kubernetes
+    git   
+
+  }
+
+  subgraph cluster_projects {
+    
+
+  }
+
+  subgraph cluster_reporting {
+    label="reporting"
+
+    visualisation
+    manuscript
+    web_page
+    slide_deck
+
+    visualisation -> slide_deck
+    visualisation -> web_page
+    visualisation -> manuscript
+  
+
+  }
+
+  manuscript -> decision_makers_external
+  visualisation -> scientists
+  visualisation -> analytics
+  web_page -> decision_makers_internal 
+  slide_deck -> decision_makers_internal
+
+  r_lang -> visualisation
+  quarto -> manuscript
+  quarto -> slide_deck
+  latex -> manuscript
+  dbt -> visualisation
+  git -> dbt
+  git -> r_lang
+  git -> quarto
+  kubernetes -> r_lang
+}
+
+
+```
+
+Supporting reporting. At a starting point, define these arrows. 
+
+```{dot}
+
+digraph sig_clusters {
+  rankdir=BT
+
+  subgraph cluster_teams {
+    label="roles"
+    analytics
+    scientists
+    decision_makers -> scientists -> 
+      analytics -> scientists -> decision_makers
+
+  }
+
+  analytics -> reporting
+  analytics -> tools
+  tools -> scientists
+  projects -> decision_makers
+  scientists -> reporting
+  reporting-> projects
+  tools -> reporting
+}
+
+
+```
+
+Then, for each arrow to each role type, we ask: what are your minimum requirements for this arrow to be as desired?
+
+Tools are maintained those who take on analytics-associated tasks.
+
+Then we can sketch a table of the arrows with a role as a target, and source otherwise.
+
+This can be filled in during the technical interview. 
+
+edge | minimum requirements 
+--- | --------
+analytics -> tools | maintains FAIR
+tools -> reporting |  automation tests included in reporting, ticketing
+analytics -> reporting | maintains FAIR, e.g. templates for projects and reports
+scientist -> reporting | contribute to projects using reliable slides, manuscripts, vis workflows 
+tools -> scientists | support proof of concept
+projects -> decision_makers_internal | communicate project findings so far
+projects -> decision_makers_external | communicate project findings so far
+reporting -> projects | FAIR workflow | 
+tools -> reporting | FAIR workflow |
+
+Then we collect tickets organised by edges breaking down. These arrows are prioritised from bottom to top. Arrows between roles are prioritised from top to bottom.
+
+Roles take tickets based on discussions with their arrows ins and out.
+
+It's very useful to demarcate minimum requirements between humans.
+
+edge | minimum requirements 
+--- | --------
+scientists -> analytics | scientists define questions being answered in the projects, and how those questions are currently answered
+analytics -> scientist | automate computational workflows that get researchers bogged down in technicalities decreasing the amount of analytics engineering work the researchers do
+
+## and
+
+Oh there's ever so much more to say. 
